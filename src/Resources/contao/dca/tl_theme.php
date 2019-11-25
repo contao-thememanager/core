@@ -1,6 +1,6 @@
 <?php
 
-// Add operation
+// Add operations
 $GLOBALS['TL_DCA']['tl_theme']['list']['operations']['themeConfig'] = array
 (
     'label'               => &$GLOBALS['TL_LANG']['tl_theme']['themeConfig'],
