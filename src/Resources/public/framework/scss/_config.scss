@@ -1,5 +1,9 @@
-/* Fonts */
-$font-size-base:            16px !default;
+// Defaults
+$browser-context:           16 !default;
+
+// Typography
+$font-family-base:          "Helvetica Neue", Arial, sans-serif !default;
+$font-size-base:            #{$browser-context}px !default;
 
 $h1-font-size:              $font-size-base * 2.5 !default;
 $h2-font-size:              $font-size-base * 2 !default;
@@ -8,7 +12,15 @@ $h4-font-size:              $font-size-base * 1.5 !default;
 $h5-font-size:              $font-size-base * 1.25 !default;
 $h6-font-size:              $font-size-base !default;
 
-/* Breakpoints */
+$font-weight-light:         300 !default;
+$font-weight-regular:       400 !default;
+$font-weight-medium:        500 !default;
+$font-weight-semibold:      600 !default;
+$font-weight-bold:          700 !default;
+
+$font-weight-base:          $font-weight-regular !default;
+
+// Breakpoints
 $breakpoints: (
     xs: 600px,
     s:  768px,
@@ -17,9 +29,17 @@ $breakpoints: (
     xl: 1920px
 ) !default;
 
-/* Grid */
+// Grid
 $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 $grid-gutter-bottom:        15px !default;
 
-/* Boxed */
+// Icon
+$icon-font-family:          'fontello' !default;
+
+// Article
+
+// Components
+
+// Styles
+$box-shadow:                0 .5rem 1rem rgba(#000, .15) !default;

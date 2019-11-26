@@ -1,0 +1,11 @@
+@mixin icon($content, $font-size: 1em, $line-height: 1){
+  content: $content;
+
+  font: #{$font-size}/#{$line-height} $icon-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}

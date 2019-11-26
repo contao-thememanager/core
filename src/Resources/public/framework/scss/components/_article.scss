@@ -1,4 +1,22 @@
 .mod_article{
-  margin-right: grid-gutter();
-  margin-left: grid-gutter();
+
+  &.grid{
+
+    > .inside{
+      //margin-right: grid-gutter();
+      //margin-left: grid-gutter();
+    }
+  }
+}
+
+@include media-breakpoint('m') {
+  .mod_article{
+
+    &.grid{
+
+      > .inside{
+
+      }
+    }
+  }
 }

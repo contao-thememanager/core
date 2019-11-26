@@ -5,14 +5,6 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-
-    > div {
-      flex-grow: 0;
-      flex-shrink: 0;
-      padding-right: grid-gutter();
-      padding-left: grid-gutter();
-      padding-bottom: $grid-gutter-bottom;
-    }
   }
 
   &.no-gutter {
@@ -48,6 +40,14 @@
   &.auto-height .col > .inside {
     height: 100%;
   }
+}
+
+[class*="col-"]{
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-right: grid-gutter();
+  padding-left: grid-gutter();
+  padding-bottom: $grid-gutter-bottom;
 }
 
 $grid-breakpoints: map-merge((0),$breakpoints);
