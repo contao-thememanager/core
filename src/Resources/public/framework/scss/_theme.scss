@@ -1,3 +1,8 @@
-@import "components/font/_font.scss";
-@import "components/component.scss";
-@import "_test.scss";
+// Mixins
+@import "mixins/breakpoints";
+
+// Defaults
+@import "defaults";
+
+// Components
+@import "components/boxed";

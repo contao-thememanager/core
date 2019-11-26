@@ -1,2 +1,25 @@
-$fontsize:  12px !default;
-$fontcolor: #000 !default;
+/* Fonts */
+$font-size-base:            16 !default;
+
+$h1-font-size:              $font-size-base * 2.5 !default;
+$h2-font-size:              $font-size-base * 2 !default;
+$h3-font-size:              $font-size-base * 1.75 !default;
+$h4-font-size:              $font-size-base * 1.5 !default;
+$h5-font-size:              $font-size-base * 1.25 !default;
+$h6-font-size:              $font-size-base !default;
+
+/* Breakpoints */
+$breakpoints: (
+    xs: 600,
+    s:  768,
+    m:  1024,
+    l:  1230,
+    xl: 1920
+) !default;
+
+/* Grid */
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$grid-gutter-bottom:          15px !default;
+
+/* Boxed */
