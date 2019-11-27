@@ -1,0 +1,25 @@
+@mixin box-sizing($value: border-box){
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  box-sizing: $value;
+}
+
+@mixin box-shadow($value: $box-shadow, $inset: false){
+  @if($inset){
+    -webkit-box-shadow: inset $value;
+    box-shadow: inset $value;
+  }
+  @else{
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+  }
+}
+
+@mixin user-select($value: none){
+  -webkit-touch-callout: $value;
+  -webkit-user-select: $value;
+  -khtml-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}

@@ -1,4 +1,0 @@
-// Return the gutter for each side
-@function grid-gutter($gutter: $grid-gutter-width) {
-  @return $gutter / 2;
-}

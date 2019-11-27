@@ -1,11 +1,12 @@
 // Mixins
 @import "mixins/utils";
-@import "mixins/grid";
+@import "mixins/attributes";
 @import "mixins/breakpoint";
 @import "mixins/icon";
 
 // Defaults
 @import "defaults";
+@import "typography";
 
 // Components
 @import "components/contao";

@@ -3,8 +3,8 @@
   &.grid{
 
     > .inside{
-      //margin-right: grid-gutter();
-      //margin-left: grid-gutter();
+      //margin-right: divide($grid-gutter-width, 2);
+      //margin-left: divide($grid-gutter-width, 2);
     }
   }
 }
