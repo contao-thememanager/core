@@ -8,7 +8,12 @@
 @import "defaults";
 @import "typography";
 
+// Mics
+@import "misc/background";
+@import "misc/icon";
+
 // Components
 @import "components/contao";
 @import "components/article";
 @import "components/boxed";
+

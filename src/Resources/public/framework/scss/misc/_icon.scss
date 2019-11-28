@@ -1,0 +1,6 @@
+.icon {
+
+  &:before {
+    @include icon(attr(data-icon));
+  }
+}

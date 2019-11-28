@@ -1,3 +1,6 @@
+$primary:                   #f00 !default;
+$secondary:                 #888 !default;
+
 // Defaults
 $browser-context:           16 !default;
 
@@ -5,18 +8,39 @@ $browser-context:           16 !default;
 $font-family-base:          Arial, sans-serif !default;
 $font-size-base:            #{$browser-context}px !default;
 
-$h1-font-size:              $font-size-base * 2.5 !default;
+$font-weight-light:         300 !default;
+$font-weight-regular:       400 !default;
+$font-weight-medium:        500 !default;
+$font-weight-semibold:      600 !default;
+$font-weight-bold:          700 !default;
+
+$h1-font-size:              ($font-size-base * 2.5) !default;
 $h2-font-size:              $font-size-base * 2 !default;
 $h3-font-size:              $font-size-base * 1.75 !default;
 $h4-font-size:              $font-size-base * 1.5 !default;
 $h5-font-size:              $font-size-base * 1.25 !default;
 $h6-font-size:              $font-size-base !default;
 
-$font-weight-light:         300 !default;
-$font-weight-regular:       400 !default;
-$font-weight-medium:        500 !default;
-$font-weight-semibold:      600 !default;
-$font-weight-bold:          700 !default;
+$h1-font-weight:            $font-weight-medium !default;
+$h2-font-weight:            $font-weight-medium !default;
+$h3-font-weight:            $font-weight-medium !default;
+$h4-font-weight:            $font-weight-medium !default;
+$h5-font-weight:            $font-weight-medium !default;
+$h6-font-weight:            $font-weight-medium !default;
+
+$h1-color:                  #000 !default;
+$h2-color:                  #000 !default;
+$h3-color:                  #000 !default;
+$h4-color:                  #000 !default;
+$h5-color:                  #000 !default;
+$h6-color:                  #000 !default;
+
+$headings-line-height:      1.2 !default;
+
+$link-color:                $primary !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     none !default;
 
 $font-weight-base:          $font-weight-regular !default;
 
@@ -31,8 +55,8 @@ $breakpoints: (
 
 // Grid
 $grid-columns:              12 !default;
-$grid-gutter-width:         30px !default;
-$grid-gutter-bottom:        15px !default;
+$grid-gutter-width:         1rem !default;
+$grid-gutter-bottom:        $grid-gutter-width !default;
 
 // Icon
 $icon-font-family:          'fontello' !default;

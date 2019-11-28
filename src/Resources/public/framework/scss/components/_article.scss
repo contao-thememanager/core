@@ -1,22 +1,3 @@
-.mod_article{
+.x-spacing {
 
-  &.grid{
-
-    > .inside{
-      //margin-right: divide($grid-gutter-width, 2);
-      //margin-left: divide($grid-gutter-width, 2);
-    }
-  }
-}
-
-@include media-breakpoint('m') {
-  .mod_article{
-
-    &.grid{
-
-      > .inside{
-
-      }
-    }
-  }
 }
