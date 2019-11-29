@@ -2,6 +2,10 @@
 
 <?php $this->block('content'); ?>
 
+<?php if(!$this->buttonText && $this->buttonLink): ?>
+  <a href="<?=$this->buttonLink?>"<?=($this->modal?' rel="'.(strpos($this->buttonLink, "http") === 0 ? 'lightvideo' : 'lightbox').'"':'')?><?=$this->window?' target="_blank"':''?>>
+<?php endif; ?>
+
 <div class="ce_image<?=$this->imageCssClass ? ' '.$this->imageCssClass:''?> block">
     <figure class="image_container">
         <?php if ($image = $this->getImageObject($this->image, $this->imgSize)): ?>
@@ -17,5 +21,9 @@
         </p>
     <?php endif; ?>
 </div>
+
+<?php if(!$this->buttonText && $this->buttonLink): ?>
+  </a>
+<?php endif; ?>
 
 <?php $this->endblock(); ?>
