@@ -1,0 +1,21 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<div class="ce_image<?=$this->imageCssClass ? ' '.$this->imageCssClass:''?> block">
+    <figure class="image_container">
+        <?php if ($image = $this->getImageObject($this->image, $this->imgSize)): ?>
+            <?php $this->insert('picture_default', $image->picture) ?>
+        <?php endif ?>
+    </figure>
+</div>
+<div class="ce_text block">
+    <?= $this->text ?>
+    <?php if($this->buttonText && $this->buttonLink): ?>
+        <p class="button<?=$this->buttonClass?' '.$this->buttonClass:''?>">
+            <a href="<?=$this->buttonLink?>"<?=($this->modal?' rel="'.(strpos($this->buttonLink, "http") === 0 ? 'lightvideo' : 'lightbox').'"':'')?><?=$this->window?' target="_blank"':''?><?=$this->buttonClass?' class="'.$this->buttonClass.'"':''?>><?=$this->buttonText?></a>
+        </p>
+    <?php endif; ?>
+</div>
+
+<?php $this->endblock(); ?>
