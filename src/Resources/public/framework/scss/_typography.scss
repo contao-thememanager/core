@@ -4,39 +4,39 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: $headings-line-height;
 }
 
-h1, .h1 {
+h1, .h1 > * {
   color: $h1-color;
-  font-size: $h1-font-size;
+  font-size: $h1-font-size-small;
   font-weight: $h1-font-weight;
 }
 
-h2, .h2 {
+h2, .h2 > * {
   color: $h2-color;
-  font-size: rem($h2-font-size);
+  font-size: $h2-font-size-small;
   font-weight: $h2-font-weight;
 }
 
-h3, .h3 {
+h3, .h3 > * {
   color: $h3-color;
-  font-size: rem($h3-font-size);
+  font-size: $h3-font-size-small;
   font-weight: $h3-font-weight;
 }
 
-h4, .h4 {
+h4, .h4 > * {
   color: $h4-color;
-  font-size: rem($h4-font-size);
+  font-size: $h4-font-size-small;
   font-weight: $h4-font-weight;
 }
 
-h5, .h5 {
+h5, .h5 > * {
   color: $h5-color;
-  font-size: rem($h5-font-size);
+  font-size: $h5-font-size-small;
   font-weight: $h5-font-weight;
 }
 
-h6, .h6 {
+h6, .h6 > * {
   color: $h6-color;
-  font-size: rem($h6-font-size);
+  font-size: $h6-font-size-small;
   font-weight: $h6-font-weight;
 }
 
@@ -57,4 +57,56 @@ a {
 
 b, strong {
   font-weight: $font-weight-bold;
+}
+
+@include media-breakpoint('xs') {
+  h1, .h1 > * {
+    font-size: $h1-font-size-medium;
+  }
+
+  h2, .h2 > * {
+    font-size: $h2-font-size-medium;
+  }
+
+  h3, .h3 > * {
+    font-size: $h3-font-size-medium;
+  }
+
+  h4, .h4 > * {
+    font-size: $h4-font-size-medium;
+  }
+
+  h5, .h5 > * {
+    font-size: $h5-font-size-medium;
+  }
+
+  h6, .h6 > * {
+    font-size: $h6-font-size-medium;
+  }
+}
+
+@include media-breakpoint('m') {
+  h1, .h1 > * {
+    font-size: $h1-font-size;
+  }
+
+  h2, .h2 > * {
+    font-size: $h2-font-size;
+  }
+
+  h3, .h3 > * {
+    font-size: $h3-font-size;
+  }
+
+  h4, .h4 > * {
+    font-size: $h4-font-size;
+  }
+
+  h5, .h5 > * {
+    font-size: $h5-font-size;
+  }
+
+  h6, .h6 > * {
+    font-size: $h6-font-size;
+  }
 }

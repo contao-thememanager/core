@@ -1,0 +1,39 @@
+.article-headline-small > * {
+  margin-bottom: 1rem;
+}
+
+.article-headline-medium > * {
+  margin-bottom: 1rem;
+}
+
+.article-headline-large > * {
+  margin-bottom: 1rem;
+}
+
+@include media-breakpoint('xs') {
+  .article-headline-small > * {
+    margin-bottom: 1rem;
+  }
+
+  .article-headline-medium > * {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-headline-large > * {
+    margin-bottom: 2rem;
+  }
+}
+
+@include media-breakpoint('m') {
+  .article-headline-small > * {
+    margin-bottom: 2rem;
+  }
+
+  .article-headline-medium > * {
+    margin-bottom: 2.5rem;
+  }
+
+  .article-headline-large > * {
+    margin-bottom: 3rem;
+  }
+}

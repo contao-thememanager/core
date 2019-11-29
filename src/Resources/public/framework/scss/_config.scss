@@ -14,12 +14,26 @@ $font-weight-medium:        500 !default;
 $font-weight-semibold:      600 !default;
 $font-weight-bold:          700 !default;
 
-$h1-font-size:              ($font-size-base * 2.5) !default;
-$h2-font-size:              $font-size-base * 2 !default;
-$h3-font-size:              $font-size-base * 1.75 !default;
-$h4-font-size:              $font-size-base * 1.5 !default;
-$h5-font-size:              $font-size-base * 1.25 !default;
-$h6-font-size:              $font-size-base !default;
+$h1-font-size-small:        1.5rem !default;
+$h2-font-size-small:        1.4rem !default;
+$h3-font-size-small:        1.3rem !default;
+$h4-font-size-small:        1.2rem !default;
+$h5-font-size-small:        1.1rem !default;
+$h6-font-size-small:        1rem !default;
+
+$h1-font-size-medium:       2rem !default;
+$h2-font-size-medium:       1.8rem !default;
+$h3-font-size-medium:       1.6rem !default;
+$h4-font-size-medium:       1.4rem !default;
+$h5-font-size-medium:       1.2rem !default;
+$h6-font-size-medium:       1rem !default;
+
+$h1-font-size:              2.5rem !default;
+$h2-font-size:              2rem !default;
+$h3-font-size:              1.75rem !default;
+$h4-font-size:              1.5rem !default;
+$h5-font-size:              1.25rem !default;
+$h6-font-size:              1rem !default;
 
 $h1-font-weight:            $font-weight-medium !default;
 $h2-font-weight:            $font-weight-medium !default;

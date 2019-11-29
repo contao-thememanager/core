@@ -1,0 +1,42 @@
+@include media-breakpoint('s') {
+
+  #container > .inside {
+    display: flex;
+  }
+
+  #main {
+    order: 1;
+    width: 66.6666%;
+  }
+
+  #left {
+    order: 0;
+    width: 33.3333%;
+  }
+}
+
+@include media-breakpoint('m') {
+
+  #main {
+    order: 1;
+    width: 70%;
+  }
+
+  #left {
+    order: 0;
+    width: 30%;
+  }
+}
+
+@include media-breakpoint('l') {
+
+  #main {
+    order: 1;
+    width: 75%;
+  }
+
+  #left {
+    order: 0;
+    width: 25%;
+  }
+}

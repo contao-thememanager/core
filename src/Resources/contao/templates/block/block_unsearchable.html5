@@ -1,0 +1,17 @@
+
+<!-- indexer::stop -->
+<div class="<?= $this->class ?> block">
+  <div class="inside"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+    <?php $this->block('headline'); ?>
+      <?php if ($this->headline): ?>
+        <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+      <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <?php $this->block('content'); ?>
+    <?php $this->endblock(); ?>
+
+  </div>
+</div>
+<!-- indexer::continue -->

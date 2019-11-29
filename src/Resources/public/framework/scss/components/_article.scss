@@ -1,3 +1,188 @@
-.x-spacing {
+.y-spacing-small > .inside, .y-spacing-small #container > .inside {
+  margin-top: 2rem;
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
 
+.top-spacing-small > .inside {
+  margin-top: 2rem;
+}
+
+.bottom-spacing-small > .inside {
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
+
+.y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+  margin-top: 2rem;
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
+
+.top-spacing-medium > .inside {
+  margin-top: 2rem;
+}
+
+.bottom-spacing-medium > .inside {
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
+
+.y-spacing-large > .inside, .y-spacing-large #container > .inside {
+  margin-top: 2rem;
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
+
+.top-spacing-large > .inside {
+  margin-top: 2rem;
+}
+
+.bottom-spacing-large > .inside {
+  margin-bottom: 2rem - $grid-gutter-bottom;
+}
+
+@include media-breakpoint('s') {
+  .y-spacing-small > .inside, .y-spacing-small #container > .inside {
+    margin-top: 2rem;
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-small > .inside {
+    margin-top: 2rem;
+  }
+
+  .bottom-spacing-small > .inside {
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    margin-top: 2rem;
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-medium > .inside {
+    margin-top: 2rem;
+  }
+
+  .bottom-spacing-medium > .inside {
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    margin-top: 3rem;
+    margin-bottom: 3rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-large > .inside {
+    margin-top: 3rem;
+  }
+
+  .bottom-spacing-large > .inside {
+    margin-bottom: 3rem - $grid-gutter-bottom;
+  }
+}
+
+@include media-breakpoint('m') {
+  .x-spacing-large > .inside {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .y-spacing-small > .inside, .y-spacing-small #container > .inside {
+    margin-top: 2rem;
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-small > .inside {
+    margin-top: 2rem;
+  }
+
+  .bottom-spacing-small > .inside {
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    margin-top: 3rem;
+    margin-bottom: 3rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-medium > .inside {
+    margin-top: 3rem;
+  }
+
+  .bottom-spacing-medium > .inside {
+    margin-bottom: 3rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    margin-top: 5rem;
+    margin-bottom: 5rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-large > .inside {
+    margin-top: 5rem;
+  }
+
+  .bottom-spacing-large > .inside {
+    margin-bottom: 5rem - $grid-gutter-bottom;
+  }
+}
+
+@include media-breakpoint('l') {
+  .x-spacing-medium > .inside, .x-spacing-medium #container > .inside {
+    width: calc(1200px + 1rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .x-spacing-large > .inside, .x-spacing-large #container > .inside {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .y-spacing-small > .inside, .y-spacing-small #container > .inside {
+    margin-top: 2rem;
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-small > .inside {
+    margin-top: 2rem;
+  }
+
+  .bottom-spacing-small > .inside {
+    margin-bottom: 2rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    margin-top: 4rem;
+    margin-bottom: 4rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-medium > .inside {
+    margin-top: 4rem;
+  }
+
+  .bottom-spacing-medium > .inside {
+    margin-bottom: 4rem - $grid-gutter-bottom;
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    margin-top: 6rem;
+    margin-bottom: 6rem - $grid-gutter-bottom;
+  }
+
+  .top-spacing-large > .inside {
+    margin-top: 6rem;
+  }
+
+  .bottom-spacing-large > .inside {
+    margin-bottom: 6rem - $grid-gutter-bottom;
+  }
+}
+
+@media (min-width: 1332px) {
+
+  .x-spacing-small > .inside, .x-spacing-small #container > .inside {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

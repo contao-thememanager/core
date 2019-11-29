@@ -1,0 +1,81 @@
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+@include media-breakpoint('xs') {
+  .align-xs-left {
+    text-align: left;
+  }
+
+  .align-xs-center {
+    text-align: center;
+  }
+
+  .align-xs-right {
+    text-align: right;
+  }
+}
+
+@include media-breakpoint('s') {
+  .align-s-left {
+    text-align: left;
+  }
+
+  .align-s-center {
+    text-align: center;
+  }
+
+  .align-s-right {
+    text-align: right;
+  }
+}
+
+@include media-breakpoint('m') {
+  .align-m-left {
+    text-align: left;
+  }
+
+  .align-m-center {
+    text-align: center;
+  }
+
+  .align-m-right {
+    text-align: right;
+  }
+}
+
+@include media-breakpoint('l') {
+  .align-l-left {
+    text-align: left;
+  }
+
+  .align-l-center {
+    text-align: center;
+  }
+
+  .align-l-right {
+    text-align: right;
+  }
+}
+
+@include media-breakpoint('xl') {
+  .align-xl-left {
+    text-align: left;
+  }
+
+  .align-xl-center {
+    text-align: center;
+  }
+
+  .align-xl-right {
+    text-align: right;
+  }
+}
