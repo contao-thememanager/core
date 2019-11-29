@@ -19,3 +19,6 @@ $GLOBALS['TC_SOURCES'] = array(
         '_theme.scss'
     )
 );
+
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'extendHeadlineField');
+$GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'addHeadlineFieldsToTemplate');

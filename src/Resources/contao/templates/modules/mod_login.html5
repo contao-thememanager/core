@@ -4,7 +4,12 @@
   <div class="inside">
 
     <?php if ($this->headline): ?>
-      <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+      <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>>
+        <?= $this->headline ?>
+      </<?= $this->hl ?>>
+      <?php if ($this->headline2): ?>
+        <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+      <?php endif; ?>
     <?php endif; ?>
 
     <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> id="<?= $this->formId ?>" method="post">

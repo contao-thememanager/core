@@ -37,6 +37,10 @@
     align-items: baseline;
   }
 
+  &.auto-height [class*="col-"] > .inside {
+    height: 100%;
+  }
+
   &.justify-left > .inside {
     justify-content: flex-start;
   }
@@ -47,10 +51,6 @@
 
   &.justify-right > .inside {
     justify-content: flex-end;
-  }
-
-  &.auto-height [class*="col-"] > .inside {
-    height: 100%;
   }
 }
 
