@@ -1,80 +1,80 @@
 .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-  margin-top: 2rem;
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: 2rem;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 .top-spacing-small > .inside {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .bottom-spacing-small > .inside {
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-  margin-top: 2rem;
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: 2rem;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 .top-spacing-medium > .inside {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .bottom-spacing-medium > .inside {
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-  margin-top: 2rem;
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: 2rem;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 .top-spacing-large > .inside {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .bottom-spacing-large > .inside {
-  margin-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: 2rem - $grid-gutter-bottom;
 }
 
 @include media-breakpoint('s') {
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    margin-top: 2rem;
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: 2rem;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .bottom-spacing-small > .inside {
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    margin-top: 2rem;
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: 2rem;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .bottom-spacing-medium > .inside {
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    margin-top: 3rem;
-    margin-bottom: 3rem - $grid-gutter-bottom;
+    padding-top: 3rem;
+    padding-bottom: 3rem - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
 
   .bottom-spacing-large > .inside {
-    margin-bottom: 3rem - $grid-gutter-bottom;
+    padding-bottom: 3rem - $grid-gutter-bottom;
   }
 }
 
@@ -86,42 +86,42 @@
   }
 
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    margin-top: 2rem;
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: 2rem;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .bottom-spacing-small > .inside {
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    margin-top: 3rem;
-    margin-bottom: 3rem - $grid-gutter-bottom;
+    padding-top: 3rem;
+    padding-bottom: 3rem - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
 
   .bottom-spacing-medium > .inside {
-    margin-bottom: 3rem - $grid-gutter-bottom;
+    padding-bottom: 3rem - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    margin-top: 5rem;
-    margin-bottom: 5rem - $grid-gutter-bottom;
+    padding-top: 5rem;
+    padding-bottom: 5rem - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
 
   .bottom-spacing-large > .inside {
-    margin-bottom: 5rem - $grid-gutter-bottom;
+    padding-bottom: 5rem - $grid-gutter-bottom;
   }
 }
 
@@ -139,42 +139,42 @@
   }
 
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    margin-top: 2rem;
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: 2rem;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .bottom-spacing-small > .inside {
-    margin-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: 2rem - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    margin-top: 4rem;
-    margin-bottom: 4rem - $grid-gutter-bottom;
+    padding-top: 4rem;
+    padding-bottom: 4rem - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
 
   .bottom-spacing-medium > .inside {
-    margin-bottom: 4rem - $grid-gutter-bottom;
+    padding-bottom: 4rem - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    margin-top: 6rem;
-    margin-bottom: 6rem - $grid-gutter-bottom;
+    padding-top: 6rem;
+    padding-bottom: 6rem - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    margin-top: 6rem;
+    padding-top: 6rem;
   }
 
   .bottom-spacing-large > .inside {
-    margin-bottom: 6rem - $grid-gutter-bottom;
+    padding-bottom: 6rem - $grid-gutter-bottom;
   }
 }
 
