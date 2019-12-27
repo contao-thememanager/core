@@ -1,80 +1,80 @@
 .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-  padding-top: 2rem;
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: $article-spacing-xs-small;
+  padding-bottom: $article-spacing-xs-small - $grid-gutter-bottom;
 }
 
 .top-spacing-small > .inside {
-  padding-top: 2rem;
+  padding-top: $article-spacing-xs-small;
 }
 
 .bottom-spacing-small > .inside {
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: $article-spacing-xs-small - $grid-gutter-bottom;
 }
 
 .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-  padding-top: 2rem;
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: $article-spacing-xs-medium;
+  padding-bottom: $article-spacing-xs-medium - $grid-gutter-bottom;
 }
 
 .top-spacing-medium > .inside {
-  padding-top: 2rem;
+  padding-top: $article-spacing-xs-medium;
 }
 
 .bottom-spacing-medium > .inside {
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: $article-spacing-xs-medium - $grid-gutter-bottom;
 }
 
 .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-  padding-top: 2rem;
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-top: $article-spacing-xs-large;
+  padding-bottom: $article-spacing-xs-large - $grid-gutter-bottom;
 }
 
 .top-spacing-large > .inside {
-  padding-top: 2rem;
+  padding-top: $article-spacing-xs-large;
 }
 
 .bottom-spacing-large > .inside {
-  padding-bottom: 2rem - $grid-gutter-bottom;
+  padding-bottom: $article-spacing-xs-large - $grid-gutter-bottom;
 }
 
 @include media-breakpoint('s') {
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    padding-top: 2rem;
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-s-small;
+    padding-bottom: $article-spacing-s-small - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    padding-top: 2rem;
+    padding-top: $article-spacing-s-small;
   }
 
   .bottom-spacing-small > .inside {
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-s-small - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: 2rem;
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-s-medium;
+    padding-bottom: $article-spacing-s-medium - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    padding-top: 2rem;
+    padding-top: $article-spacing-s-medium;
   }
 
   .bottom-spacing-medium > .inside {
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-s-medium - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: 3rem;
-    padding-bottom: 3rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-s-large;
+    padding-bottom: $article-spacing-s-large - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    padding-top: 3rem;
+    padding-top: $article-spacing-s-large;
   }
 
   .bottom-spacing-large > .inside {
-    padding-bottom: 3rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-s-large - $grid-gutter-bottom;
   }
 }
 
@@ -86,42 +86,42 @@
   }
 
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    padding-top: 2rem;
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-m-small;
+    padding-bottom: $article-spacing-m-small - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    padding-top: 2rem;
+    padding-top: $article-spacing-m-small;
   }
 
   .bottom-spacing-small > .inside {
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-m-small - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: 3rem;
-    padding-bottom: 3rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-m-medium;
+    padding-bottom: $article-spacing-m-medium - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    padding-top: 3rem;
+    padding-top: $article-spacing-m-medium;
   }
 
   .bottom-spacing-medium > .inside {
-    padding-bottom: 3rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-m-medium - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: 5rem;
-    padding-bottom: 5rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-m-large;
+    padding-bottom: $article-spacing-m-large - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    padding-top: 5rem;
+    padding-top: $article-spacing-m-large;
   }
 
   .bottom-spacing-large > .inside {
-    padding-bottom: 5rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-m-large - $grid-gutter-bottom;
   }
 }
 
@@ -139,42 +139,83 @@
   }
 
   .y-spacing-small > .inside, .y-spacing-small #container > .inside {
-    padding-top: 2rem;
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-l-small;
+    padding-bottom: $article-spacing-l-small - $grid-gutter-bottom;
   }
 
   .top-spacing-small > .inside {
-    padding-top: 2rem;
+    padding-top: $article-spacing-l-small;
   }
 
   .bottom-spacing-small > .inside {
-    padding-bottom: 2rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-l-small - $grid-gutter-bottom;
   }
 
   .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: 4rem;
-    padding-bottom: 4rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-l-medium;
+    padding-bottom: $article-spacing-l-medium - $grid-gutter-bottom;
   }
 
   .top-spacing-medium > .inside {
-    padding-top: 4rem;
+    padding-top: $article-spacing-l-medium;
   }
 
   .bottom-spacing-medium > .inside {
-    padding-bottom: 4rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-l-medium - $grid-gutter-bottom;
   }
 
   .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: 6rem;
-    padding-bottom: 6rem - $grid-gutter-bottom;
+    padding-top: $article-spacing-l-large;
+    padding-bottom: $article-spacing-l-large - $grid-gutter-bottom;
   }
 
   .top-spacing-large > .inside {
-    padding-top: 6rem;
+    padding-top: $article-spacing-l-large;
   }
 
   .bottom-spacing-large > .inside {
-    padding-bottom: 6rem - $grid-gutter-bottom;
+    padding-bottom: $article-spacing-l-large - $grid-gutter-bottom;
+  }
+}
+
+@include media-breakpoint('xl') {
+  .y-spacing-small > .inside, .y-spacing-small #container > .inside {
+    padding-top: $article-spacing-xl-small;
+    padding-bottom: $article-spacing-xl-small - $grid-gutter-bottom;
+  }
+
+  .top-spacing-small > .inside {
+    padding-top: $article-spacing-xl-small;
+  }
+
+  .bottom-spacing-small > .inside {
+    padding-bottom: $article-spacing-xl-small - $grid-gutter-bottom;
+  }
+
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    padding-top: $article-spacing-xl-medium;
+    padding-bottom: $article-spacing-xl-medium - $grid-gutter-bottom;
+  }
+
+  .top-spacing-medium > .inside {
+    padding-top: $article-spacing-xl-medium;
+  }
+
+  .bottom-spacing-medium > .inside {
+    padding-bottom: $article-spacing-xl-medium - $grid-gutter-bottom;
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    padding-top: $article-spacing-xl-large;
+    padding-bottom: $article-spacing-xl-large - $grid-gutter-bottom;
+  }
+
+  .top-spacing-large > .inside {
+    padding-top: $article-spacing-xl-large;
+  }
+
+  .bottom-spacing-large > .inside {
+    padding-bottom: $article-spacing-xl-large - $grid-gutter-bottom;
   }
 }
 

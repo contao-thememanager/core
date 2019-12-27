@@ -1,3 +1,8 @@
+$body-bg:                   #fff !default;
+
+$text-color-dark:           #000 !default;
+$text-color-light:          #fff !default;
+
 $primary:                   #36c !default;
 $secondary:                 #9cf !default;
 
@@ -5,8 +10,9 @@ $secondary:                 #9cf !default;
 $browser-context:           16 !default;
 
 // Typography
-$font-family-base:          Arial, sans-serif !default;
+$font-family-base:          "Raleway", Arial, sans-serif !default;
 $font-size-base:            #{$browser-context}px !default;
+$line-height-base:          1.5 !default;
 
 $font-weight-light:         300 !default;
 $font-weight-regular:       400 !default;
@@ -35,19 +41,26 @@ $h4-font-size:              1.5rem !default;
 $h5-font-size:              1.25rem !default;
 $h6-font-size:              1rem !default;
 
-$h1-font-weight:            $font-weight-medium !default;
-$h2-font-weight:            $font-weight-medium !default;
-$h3-font-weight:            $font-weight-medium !default;
-$h4-font-weight:            $font-weight-medium !default;
-$h5-font-weight:            $font-weight-medium !default;
-$h6-font-weight:            $font-weight-medium !default;
+$h1-font-weight:            $font-weight-bold !default;
+$h2-font-weight:            $font-weight-bold !default;
+$h3-font-weight:            $font-weight-bold !default;
+$h4-font-weight:            $font-weight-bold !default;
+$h5-font-weight:            $font-weight-bold !default;
+$h6-font-weight:            $font-weight-bold !default;
 
-$h1-color:                  #000 !default;
-$h2-color:                  #000 !default;
-$h3-color:                  #000 !default;
-$h4-color:                  #000 !default;
-$h5-color:                  #000 !default;
-$h6-color:                  #000 !default;
+$h1-color:                  $text-color-dark !default;
+$h2-color:                  $text-color-dark !default;
+$h3-color:                  $text-color-dark !default;
+$h4-color:                  $text-color-dark !default;
+$h5-color:                  $text-color-dark !default;
+$h6-color:                  $text-color-dark !default;
+
+$h1-letter-spacing:         0em !default;
+$h2-letter-spacing:         0em !default;
+$h3-letter-spacing:         0em !default;
+$h4-letter-spacing:         0em !default;
+$h5-letter-spacing:         0em !default;
+$h6-letter-spacing:         0em !default;
 
 $headings-line-height:      1.2 !default;
 
@@ -76,7 +89,23 @@ $grid-gutter-bottom:        $grid-gutter-width !default;
 $icon-font-family:          'fontello' !default;
 
 // Article
+$article-spacing-xs-small:  30px !default;
+$article-spacing-s-small:   30px !default;
+$article-spacing-m-small:   30px !default;
+$article-spacing-l-small:   30px !default;
+$article-spacing-xl-small:  $article-spacing-l-small !default;
 
+$article-spacing-xs-medium: 30px !default;
+$article-spacing-s-medium:  30px !default;
+$article-spacing-m-medium:  60px !default;
+$article-spacing-l-medium:  90px !default;
+$article-spacing-xl-medium: $article-spacing-l-medium !default;
+
+$article-spacing-xs-large:  30px !default;
+$article-spacing-s-large:   50px !default;
+$article-spacing-m-large:   80px !default;
+$article-spacing-l-large:   150px !default;
+$article-spacing-xl-large:  $article-spacing-l-large !default;
 
 // Components
 

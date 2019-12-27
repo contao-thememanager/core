@@ -1,16 +1,18 @@
-html, body{
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
+  @include box-sizing;
 }
 
 body {
+  background-color: $body-bg;
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
-}
-
-* {
-  @include box-sizing;
+  line-height: $line-height-base;
+  margin: 0; // Remove margin in all browsers.
+  -webkit-text-size-adjust: 100%; // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+  -webkit-tap-highlight-color: rgba(#000, 0); // Change the default tap highlight to be completely transparent in iOS.
 }
 
 img {

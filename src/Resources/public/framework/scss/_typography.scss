@@ -8,36 +8,42 @@ h1, .h1 > * {
   color: $h1-color;
   font-size: $h1-font-size-small;
   font-weight: $h1-font-weight;
+  letter-spacing: $h1-letter-spacing;
 }
 
 h2, .h2 > * {
   color: $h2-color;
   font-size: $h2-font-size-small;
   font-weight: $h2-font-weight;
+  letter-spacing: $h2-letter-spacing;
 }
 
 h3, .h3 > * {
   color: $h3-color;
   font-size: $h3-font-size-small;
   font-weight: $h3-font-weight;
+  letter-spacing: $h3-letter-spacing;
 }
 
 h4, .h4 > * {
   color: $h4-color;
   font-size: $h4-font-size-small;
   font-weight: $h4-font-weight;
+  letter-spacing: $h4-letter-spacing;
 }
 
 h5, .h5 > * {
   color: $h5-color;
   font-size: $h5-font-size-small;
   font-weight: $h5-font-weight;
+  letter-spacing: $h5-letter-spacing;
 }
 
 h6, .h6 > * {
   color: $h6-color;
   font-size: $h6-font-size-small;
   font-weight: $h6-font-weight;
+  letter-spacing: $h6-letter-spacing;
 }
 
 p {
