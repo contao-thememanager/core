@@ -1,3 +1,7 @@
+.inside {
+  display: block;
+}
+
 @include media-breakpoint('s') {
 
   #container > .inside {
