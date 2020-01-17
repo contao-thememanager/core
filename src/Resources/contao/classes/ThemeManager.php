@@ -24,6 +24,7 @@ class ThemeManager
 
         foreach ($arrEntities as $strTable => $strLegend)
         {
+            \Controller::loadLanguageFile($strTable);
             \Controller::loadDataContainer($strTable);
 
             foreach ($GLOBALS['TL_DCA'][$strTable]['palettes'] as $name => $palette)
