@@ -1,7 +1,11 @@
 .ce_rsce_image_text {
 
-  .ce_image {
+  .image {
     margin-bottom: 1rem;
+  }
+
+  a.inside {
+    color: $text-color-dark;
   }
 
   /*&.boxed {

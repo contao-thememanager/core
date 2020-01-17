@@ -87,6 +87,7 @@ $grid-breakpoints: map-merge((0),$breakpoints);
     .col#{$infix}-middle  { align-self: center; }
     .col#{$infix}-bottom  { align-self: flex-end;}
     .col#{$infix}-baseline{ align-self: baseline; }
+    .col#{$infix}-stretch { align-self: stretch; }
     .order#{$infix}-first { order: -1; }
     .order#{$infix}-last  { order: $grid-columns + 1; }
 

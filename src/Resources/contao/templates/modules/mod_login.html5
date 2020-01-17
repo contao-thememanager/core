@@ -39,7 +39,7 @@
           <?php endif; ?>
         <?php endif; ?>
         <div class="widget widget-submit">
-          <button type="submit" class="submit"><?= $this->slabel ?></button>
+          <button type="submit" class="submit<?= $this->styleManager->get('buttonStyles') ? ' '.$this->styleManager->get('buttonStyles')  : '' ?>"><?= $this->slabel ?></button>
         </div>
       </div>
     </form>

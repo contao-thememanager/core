@@ -1,9 +1,9 @@
-button, .button {
+button, a.button {
   border-radius: 0; // config
   border-color: $primary; // config
   border-style: solid; // config
   border-width: 0; // config
-  color: #fff; // config
+  color: $text-color-light; // config
   cursor: pointer;
   background-color: $primary; // config
   display: inline-block;
@@ -12,51 +12,118 @@ button, .button {
 
   &:hover {
     background-color: darken($primary, 10); // config
-    color: #fff; // config
+    color: $text-color-light; // config
   }
 
-  &.secondary {
+  &.size-small {
+    padding: .5rem 1rem; // config
+  }
+
+  &.size-large {
+    padding: 1rem 2rem; // config
+  }
+
+  &.size-super {
+    font-size: rem(18); // config
+    padding: 1.5rem 3rem; // config
+  }
+
+  &.design-outlined {
+    background-color: transparent; // config
+    box-shadow: inset 0 0 0 2px $primary; // config
+    color: $primary; // config
+
+    &:hover {
+      background-color: $primary; // config
+      color: #fff; // config
+    }
+
+    &.color-primary {
+      background-color: transparent; // config
+      box-shadow: inset 0 0 0 2px $primary; // config
+      color: $primary; // config
+
+      &:hover {
+        background-color: $primary; // config
+        color: #fff; // config
+      }
+    }
+
+    &.color-secondary {
+      background-color: transparent; // config
+      box-shadow: inset 0 0 0 2px $secondary; // config
+      color: $secondary; // config
+
+      &:hover {
+        background-color: $secondary; // config
+        color: #fff; // config
+      }
+    }
+
+    &.color-dark {
+      background-color: transparent; // config
+      box-shadow: inset 0 0 0 2px $text-color-dark; // config
+      color: $text-color-dark; // config
+
+      &:hover {
+        background-color: $text-color-dark; // config
+        color: #fff; // config
+      }
+    }
+
+    &.color-light {
+      background-color: transparent; // config
+      box-shadow: inset 0 0 0 2px $text-color-light; // config
+      color: $text-color-light; // config
+
+      &:hover {
+        background-color: $text-color-light; // config
+        color: $text-color-dark; // config
+      }
+    }
+  }
+
+  &.color-primary {
+    border-color: $primary; // config
+    background-color: $primary; // config
+    color: $text-color-light;
+
+    &:hover {
+      background-color: darken($primary, 10); // config
+      color: $text-color-light; // config
+    }
+  }
+
+  &.color-secondary {
     border-color: $secondary; // config
     background-color: $secondary; // config
+    color: $text-color-light;
 
     &:hover {
       background-color: darken($secondary, 10); // config
-      color: #fff; // config
+      color: $text-color-light; // config
     }
   }
-}
 
-.button-small {
-  padding: .5rem 1rem; // config
-}
-
-.button-large {
-  padding: 1rem 2rem; // config
-}
-
-.button-super {
-  font-size: rem(18); // config
-  padding: 1.5rem 3rem; // config
-}
-
-.button-outlined {
-  background-color: transparent; // config
-  box-shadow: inset 0 0 0 2px $primary; // config
-  color: $primary; // config
-
-  &:hover {
-    background-color: $primary; // config
-    color: #fff; // config
-  }
-
-  &.secondary {
-    background-color: transparent; // config
-    box-shadow: inset 0 0 0 2px $secondary; // config
-    color: $secondary; // config
+  &.color-dark {
+    border-color: $text-color-dark; // config
+    background-color: $text-color-dark; // config
+    color: $text-color-light;
 
     &:hover {
-      background-color: $secondary; // config
-      color: #fff; // config
+      background-color: darken($text-color-dark, 10); // config
+      color: $text-color-light; // config
+    }
+  }
+
+  &.color-light {
+    border-color: $text-color-light; // config
+    background-color: $text-color-light; // config
+    color: $text-color-dark;
+
+    &:hover {
+      background-color: darken($text-color-light, 10); // config
+      color: $text-color-dark; // config
     }
   }
 }

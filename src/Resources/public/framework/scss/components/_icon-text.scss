@@ -1,0 +1,56 @@
+.ce_rsce_icon_text {
+
+  a.inside {
+    color: $text-color-dark;
+  }
+
+  .c_icon {
+    text-align: center;
+  }
+
+  &.layout-top {
+
+    .c_icon {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &.layout-left {
+
+    .inside {
+      display: flex;
+    }
+
+    .c_icon {
+      margin-right: 1rem;
+    }
+  }
+
+  &.layout-right {
+
+    .inside {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .c_icon {
+      margin-left: 1rem;
+    }
+  }
+
+  &.layout-float-left {
+
+    .c_icon {
+      float: left;
+      margin-right: 1rem;
+    }
+  }
+
+  &.layout-float-right {
+
+    .c_icon {
+      float: right;
+      margin-left: 1rem;
+    }
+  }
+}

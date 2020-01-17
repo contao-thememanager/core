@@ -1,6 +1,101 @@
 .icon {
+  display: inline-block;
 
   &:before {
     @include icon(attr(data-icon));
+    font-size: 4rem; // config
+    height: 4rem; // config
+    width: 4rem; // config
+  }
+
+  &.size-tiny:before {
+    font-size: 2rem; // config
+    height: 2rem; // config
+    width: 2rem; // config
+  }
+
+  &.size-small:before {
+    font-size: 3rem; // config
+    height: 3rem; // config
+    width: 3rem; // config
+  }
+
+  &.size-large:before {
+    font-size: 5rem; // config
+    height: 5rem; // config
+    width: 5rem; // config
+  }
+
+  &.size-super:before {
+    font-size: 6rem; // config
+    height: 6rem; // config
+    width: 6rem; // config
+  }
+
+  &.design-filled {
+    background: $text-color-dark;
+    color: $text-color-light;
+    padding: 1.5rem; // config
+  }
+
+  &.design-outlined {
+    box-shadow: inset 0 0 0 2px $text-color-dark;
+    padding: 1.5rem; // config
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.color-primary {
+    color: $primary;
+
+    &.design-filled {
+      background: $primary;
+      color: $text-color-light;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 2px $primary;
+    }
+  }
+
+  &.color-secondary {
+    color: $secondary;
+
+    &.design-filled {
+      background: $secondary;
+      color: $text-color-light;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 2px $secondary;
+    }
+  }
+
+  &.color-dark {
+    color: $text-color-dark;
+
+    &.design-filled {
+      background: $text-color-dark;
+      color: $text-color-light;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 2px $text-color-dark;
+    }
+  }
+
+  &.color-light {
+    color: $text-color-light;
+
+    &.design-filled {
+      background: $text-color-light;
+      color: $text-color-dark;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 2px $text-color-light;
+    }
   }
 }
