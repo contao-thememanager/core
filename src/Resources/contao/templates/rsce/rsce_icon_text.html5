@@ -1,17 +1,41 @@
-<?php $this->extend('block_searchable'); ?>
 
-<?php $this->block('content'); ?>
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <?php if(!$this->linkText && $this->url): ?>
+        <a href="<?=$this->url?>" class="inside"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
+    <?php else: ?>
+        <div class="inside">
+    <?php endif; ?>
 
-<div class="ce_rsce_icon<?=$this->iconClass ? ' '.$this->iconClass:''?> block">
-    <span class="icon" data-icon="&#x<?= $this->icon ?>;"></span>
-</div>
-<div class="ce_text block">
-    <?= $this->text ?>
-    <?php if($this->buttonText && $this->buttonLink): ?>
-        <p class="button<?=$this->buttonClass?' '.$this->buttonClass:''?>">
-            <a href="<?=$this->buttonLink?>"<?=($this->modal?' rel="'.(strpos($this->buttonLink, "http") === 0 ? 'lightvideo' : 'lightbox').'"':'')?><?=$this->window?' target="_blank"':''?><?=$this->buttonClass?' class="'.$this->buttonClass.'"':''?>><?=$this->buttonText?></a>
-        </p>
+    <?php $this->block('headline'); ?>
+        <?php if ($this->headline || $this->headline2): ?>
+            <div class="c_headline">
+        <?php endif; ?>
+        <?php if ($this->headline): ?>
+            <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+        <?php endif; ?>
+        <?php if ($this->headline2): ?>
+            <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+        <?php endif; ?>
+        <?php if ($this->headline || $this->headline2): ?>
+            </div>
+        <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <div class="c_icon">
+        <span class="icon<?= $this->styleManager->get('iconStyles') ? ' '.$this->styleManager->get('iconStyles')  : '' ?>" data-icon="&#x<?= $this->icon ?>;"></span>
+    </div>
+    <div class="c_text">
+        <?= $this->text ?>
+        <?php if($this->linkText && $this->url): ?>
+            <p>
+                <a href="<?=$this->url?>"<?= $this->styleManager->get('buttonStyles') ? ' class="'.$this->styleManager->get('buttonStyles').'"' : '' ?><?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+            </p>
+        <?php endif; ?>
+    </div>
+
+    <?php if(!$this->linkText && $this->url): ?>
+        </a>
+    <?php else: ?>
+        </div>
     <?php endif; ?>
 </div>
-
-<?php $this->endblock(); ?>

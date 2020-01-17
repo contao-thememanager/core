@@ -12,77 +12,69 @@ return array(
         ),
     ),
     'types' => array('content'),
-    'contentCategory' => 'texts',
-    'standardFields' => array('cssID'),
+    'contentCategory' => 'components',
+    'standardFields' => array('headline', 'cssID'),
     'fields' => array(
         'icon' => array(
             'label' => array(
-                'de' => array('Icon', ''),
-                'en' => array('Icon', ''),
+                'de' => array('Icon', 'Bitte wählen Sie ein Icon aus der Iconübersicht.'),
+                'en' => array('Icon', 'Please select an icon from the icon overview.'),
             ),
             'inputType' => 'rocksolid_icon_picker',
-            'eval' => array(
-                'iconFont' => 'files/assets/fontello/font/fontello.svg',
-            ),
-        ),
-        'iconClass' => array(
-            'label' => array(
-                'de' => array('Icon CSS-Klasse', ''),
-                'en' => array('Icon CSS-Class', ''),
-            ),
-            'inputType' => 'text',
-            'eval'      => array('tl_class'=>'w50')
+            'eval' => array('iconFont' => 'files/assets/fontello/font/fontello.svg'),
         ),
         'text' => array(
             'label' => array(
-                'de' => array('Text', ''),
-                'en' => array('Text', ''),
+                'de' => array('Text', 'Sie können HTML-Tags verwenden, um den Text zu formatieren.'),
+                'en' => array('Text', 'You can use HTML tags to format the text.'),
             ),
             'inputType' => 'textarea',
-            'eval' => array('rte' => 'tinyMCE', 'tl_class'=>'clr', 'mandatory'=>true),
+            'eval' => array('mandatory'=>true, 'rte'=>'tinyMCE', 'helpwizard'=>true, 'tl_class'=>'clr'),
+            'explanation' => 'insertTags',
         ),
-        'buttonText' => array(
+        'url' => array(
             'label' => array(
-                'de' => array('Button Text', 'Lassen Sie diese Feld frei, um keinen Button anzuzeigen'),
-                'en' => array('Button Text', ''),
-            ),
-            'inputType' => 'text',
-            'eval'      => array('tl_class'=>'w50')
-        ),
-        'buttonLink' => array(
-            'label' => array(
-                'de' => array('Link', 'Sofern kein Button-Text angegeben ist, wird ausschließlich das Bild verlinkt'),
-                'en' => array('Link', ''),
+                'de' => array('Link-Adresse', 'Geben Sie eine Web-Adresse (http://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein.'),
+                'en' => array('Link target', 'Please enter a web address (http://…), an e-mail address (mailto:…) or an insert tag.'),
             ),
             'inputType' => 'text',
             'eval'      => array('rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'dcaPicker'=>true, 'tl_class'=>'w50 wizard'),
         ),
-        'buttonClass' => array(
+        'target' => array(
             'label' => array(
-                'de' => array('Button CSS-Klasse', 'Vergeben Sie hier eine individuelle CSS-Klasse für den Button'),
-                'en' => array('Button CSS-Class', ''),
+                'de' => array('In neuem Fenster öffnen', 'Den Link in einem neuen Browserfenster öffnen.'),
+                'en' => array('Open in new window', 'Open the link in a new browser window.'),
+            ),
+            'inputType' => 'checkbox',
+            'eval'      => array('tl_class'=>'w50 m12'),
+        ),
+        'linkText' => array(
+            'label' => array(
+                'de' => array('Link-Text', 'Der Link-Text gibt an, ob eine Weiterleitung ausgegeben wird, oder die gesamte Komponente klickbar ist.'),
+                'en' => array('Link text', 'The link text indicates if a link would be printed or if the whole component is clickable.'),
             ),
             'inputType' => 'text',
-            'eval'      => array('tl_class'=>'w50')
+            'eval'      => array('maxlength'=>255, 'tl_class'=>'w50'),
         ),
-        'modal' => array(
+        'titleText' => array(
             'label' => array(
-                'de' => array('Lightbox', 'Öffnet den Link in einer Loghtbox über der Seite ohne diese zu verlassen'),
-                'en' => array('Lightbox', 'Opens the link in a loghtbox above the page without leaving it'),
+                'de' => array('Link-Titel', 'Der Link-Titel wird als <em>title</em>-Attribut im HTML-Markup eingefügt.'),
+                'en' => array('Link title', 'The link title is added as <em>title</em> attribute in the HTML markup.'),
             ),
-            'eval'       => array('tl_class'=>'w50 m12 clr'),
-            'inputType'  => 'checkbox'
+            'inputType' => 'text',
+            'eval'      => array('maxlength'=>255, 'tl_class'=>'w50'),
         ),
-        'window' => array(
+        'rel' => array(
             'label' => array(
-                'de' => array('Neues Fenster', 'Öffnet den Link in einem neuen Tab'),
-                'en' => array('Open in new Tab', 'Opens the link in a new tab'),
+                'de' => array('Lightbox', 'Hier können Sie ein <em>rel</em>-Attribut eingeben, um die Lightbox anzusteuern.'),
+                'en' => array('Lightbox', 'To trigger the lightbox, enter a <em>rel</em> attribute here.'),
             ),
-            'eval'       => array('tl_class'=>'w50 m12'),
-            'inputType'  => 'checkbox'
+            'inputType' => 'text',
+            'eval'      => array('maxlength'=>64, 'tl_class'=>'w50'),
         )
     ),
     'onloadCallback' => array(
+        array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'extendHeadlinePalette'),
         array('Oveleon\ContaoComponentStyleManager\Support', 'extendRockSolidCustomElementsPalettes')
     )
 );
