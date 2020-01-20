@@ -1,0 +1,190 @@
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+
+  &.tns-slider {
+    margin: 0;
+
+    > div {
+      padding: 0;
+    }
+
+    &.tns-vertical > div {
+      padding: 0 1rem 1rem;
+     }
+  }
+
+  > div {
+    padding: 0 1rem 1rem;
+  }
+
+  &.list-1 > div {
+    width: 100%
+  }
+
+  &.list-2 > div {
+    width: 50%
+  }
+
+  &.list-3 > div {
+    width: 33.3333%
+  }
+
+  &.list-4 > div {
+    width: 25%
+  }
+
+  &.list-5 > div {
+    width: 20%
+  }
+
+  &.list-6 > div {
+    width: 16.6666%
+  }
+}
+
+@include media-breakpoint('xs') {
+  .grid-list {
+
+    &.list-xs-1 > div {
+      width: 100%
+    }
+
+    &.list-xs-2 > div {
+      width: 50%
+    }
+
+    &.list-xs-3 > div {
+      width: 33.3333%
+    }
+
+    &.list-xs-4 > div {
+      width: 25%
+    }
+
+    &.list-xs-5 > div {
+      width: 20%
+    }
+
+    &.list-xs-6 > div {
+      width: 16.6666%
+    }
+  }
+}
+
+@include media-breakpoint('s') {
+  .grid-list {
+
+    &.list-s-1 > div {
+      width: 100%
+    }
+
+    &.list-s-2 > div {
+      width: 50%
+    }
+
+    &.list-s-3 > div {
+      width: 33.3333%
+    }
+
+    &.list-s-4 > div {
+      width: 25%
+    }
+
+    &.list-s-5 > div {
+      width: 20%
+    }
+
+    &.list-s-6 > div {
+      width: 16.6666%
+    }
+  }
+}
+
+@include media-breakpoint('m') {
+  .grid-list {
+
+    &.list-m-1 > div {
+      width: 100%
+    }
+
+    &.list-m-2 > div {
+      width: 50%
+    }
+
+    &.list-m-3 > div {
+      width: 33.3333%
+    }
+
+    &.list-m-4 > div {
+      width: 25%
+    }
+
+    &.list-m-5 > div {
+      width: 20%
+    }
+
+    &.list-m-6 > div {
+      width: 16.6666%
+    }
+  }
+}
+
+@include media-breakpoint('l') {
+  .grid-list {
+
+    &.list-l-1 > div {
+      width: 100%
+    }
+
+    &.list-l-2 > div {
+      width: 50%
+    }
+
+    &.list-l-3 > div {
+      width: 33.3333%
+    }
+
+    &.list-l-4 > div {
+      width: 25%
+    }
+
+    &.list-l-5 > div {
+      width: 20%
+    }
+
+    &.list-l-6 > div {
+      width: 16.6666%
+    }
+  }
+}
+
+@include media-breakpoint('xl') {
+  .grid-list {
+
+    &.list-xl-1 > div {
+      width: 100%
+    }
+
+    &.list-xl-2 > div {
+      width: 50%
+    }
+
+    &.list-xl-3 > div {
+      width: 33.3333%
+    }
+
+    &.list-xl-4 > div {
+      width: 25%
+    }
+
+    &.list-xl-5 > div {
+      width: 20%
+    }
+
+    &.list-xl-6 > div {
+      width: 16.6666%
+    }
+  }
+}

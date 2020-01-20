@@ -1,0 +1,32 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<div class="c_list grid-list<?= $this->styleManager->get('gridListStyles') ? ' '.$this->styleManager->get('gridListStyles')  : '' ?>">
+    <?php foreach ($this->list as $item): ?>
+        <div class="ce_rsce_text block">
+            <?php if(!$item->linkText && $item->url): ?>
+                <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
+            <?php else: ?>
+                <div class="inside">
+            <?php endif; ?>
+
+            <div class="c_text">
+                <?= $item->text ?>
+                <?php if($item->linkText && $item->url): ?>
+                    <p>
+                        <a href="<?=$item->url?>"<?= $this->styleManager->get('buttonStyles') ? ' class="'.$this->styleManager->get('buttonStyles').'"' : '' ?><?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+                    </p>
+                <?php endif; ?>
+            </div>
+
+            <?php if(!$item->linkText && $item->url): ?>
+                </a>
+            <?php else: ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    <?php endforeach ?>
+</div>
+
+<?php $this->endblock(); ?>
