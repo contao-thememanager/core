@@ -2,7 +2,7 @@
 
 <?php $this->block('content'); ?>
 
-<div class="c_list grid-list<?= $this->styleManager->get('gridListStyles') ? ' '.$this->styleManager->get('gridListStyles')  : '' ?>">
+<div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?><?=$this->styleManager->prepare('sliderConfig', ['init'])->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
     <?php foreach ($this->list as $item): ?>
         <div class="ce_rsce_icon_text block">
             <?php if(!$item->linkText && $item->url): ?>
@@ -12,13 +12,13 @@
             <?php endif; ?>
 
             <div class="c_icon">
-                <span class="icon<?= $this->styleManager->get('iconStyles') ? ' '.$this->styleManager->get('iconStyles')  : '' ?>" data-icon="&#x<?= $item->icon ?>;"></span>
+                <span class="icon<?= $this->styleManager->prepare('icon')->format(' %s')?>" data-icon="&#x<?= $item->icon ?>;"></span>
             </div>
             <div class="c_text">
                 <?= $item->text ?>
                 <?php if($item->linkText && $item->url): ?>
                     <p>
-                        <a href="<?=$item->url?>"<?= $this->styleManager->get('buttonStyles') ? ' class="'.$this->styleManager->get('buttonStyles').'"' : '' ?><?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+                        <a href="<?=$item->url?>"<?=$this->styleManager->prepare('button')->format(' class="%s"')?><?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
                     </p>
                 <?php endif; ?>
             </div>

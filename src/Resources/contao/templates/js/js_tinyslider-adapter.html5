@@ -1,0 +1,104 @@
+<?php
+    $GLOBALS['TL_CSS'][] = '/bundles/contaooveleonthememanager/framework/assets/tiny-slider/tiny-slider.css|static';
+    $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/contaooveleonthememanager/framework/assets/tiny-slider/tiny-slider.js';
+?>
+
+<!--ToDo: Adding preset data-->
+
+<script>
+    var extend = function () {
+        // Variables
+        var extended = {};
+        var deep = false;
+        var i = 0;
+        var length = arguments.length;
+
+        // Check if a deep merge
+        if ( Object.prototype.toString.call( arguments[0] ) === '[object Boolean]' ) {
+            deep = arguments[0];
+            i++;
+        }
+
+        // Merge the object into the extended object
+        var merge = function (obj) {
+            for ( var prop in obj ) {
+                if ( Object.prototype.hasOwnProperty.call( obj, prop ) ) {
+                    // If deep merge and property is an object, merge properties
+                    if ( deep && Object.prototype.toString.call(obj[prop]) === '[object Object]' ) {
+                        extended[prop] = extend( true, extended[prop], obj[prop] );
+                    } else {
+                        extended[prop] = obj[prop];
+                    }
+                }
+            }
+        };
+
+        // Loop through each object and conduct a merge
+        for ( ; i < length; i++ ) {
+            var obj = arguments[i];
+            merge(obj);
+        }
+
+        return extended;
+    };
+
+    (function() {
+        const tnsBreakpoints = {
+            'slider':   0,
+            'sliderXs': 600,
+            'sliderS':  768,
+            'sliderM':  1024,
+            'sliderL':  1230,
+            'sliderXl': 1920
+        };
+
+        let tnsSliders = document.querySelectorAll('.init-tns-slider'), i=0;
+
+        for (;i<tnsSliders.length; i++){
+            let defaults = {};
+            let settings = {container: tnsSliders[i]};
+            let config = tnsSliders[i].dataset;
+
+            // set preset
+            if(config.hasOwnProperty('sliderConfig')){
+                let preset = JSON.parse(config.sliderConfig)['preset'];
+
+                // ToDo: Get vars from preset and set them as default settings
+
+                // set default settings by preset
+                defaults = {};
+
+                // delete from dataset
+                delete config['sliderConfig'];
+            }
+
+            // build config object
+            for(let k in config){
+
+                if(tnsBreakpoints.hasOwnProperty(k)){
+
+                    let data = JSON.parse(config[k]);
+
+                    if(tnsBreakpoints[k] !== 0){
+                        // if the slider is disabled, we do not need any further properties
+                        if(data.hasOwnProperty('disable') && data.disable) {
+                            data = {disable: true};
+                        }
+
+                        settings = extend(true, settings, {
+                            'responsive': {
+                                [tnsBreakpoints[k]]: data
+                            }
+                        });
+                    }else{
+                        settings = extend(true, settings, data);
+                    }
+                }
+            }
+
+            console.log(settings);
+
+            tns(extend(true, defaults, settings));
+        }
+    })();
+</script>
