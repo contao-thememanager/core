@@ -71,6 +71,19 @@ $link-hover-decoration:     none !default;
 
 $font-weight-base:          $font-weight-regular !default;
 
+// Headline-Spacing
+$headline-spacing-small:    15px !default;
+$headline-spacing-s-small:  30px !default;
+$headline-spacing-l-small:  50px !default;
+
+$headline-spacing-medium:   15px !default;
+$headline-spacing-s-medium: 40px !default;
+$headline-spacing-l-medium: 90px !default;
+
+$headline-spacing-large:    15px !default;
+$headline-spacing-s-large:  70px !default;
+$headline-spacing-l-large: 110px !default;
+
 // Breakpoints
 $breakpoints: (
     xs: 600px,
@@ -80,9 +93,15 @@ $breakpoints: (
     xl: 1920px
 ) !default;
 
+// Layout
+$layout-column-width-s:     260px !default;
+$layout-column-width-m:     300px !default;
+$layout-column-width-l:     330px !default;
+$layout-column-gutter:      30px !default;
+
 // Grid
 $grid-columns:              12 !default;
-$grid-gutter-width:         1rem !default;
+$grid-gutter-width:         2rem !default;
 $grid-gutter-bottom:        $grid-gutter-width !default;
 
 // Icon

@@ -1,9 +1,10 @@
-
 <div class="<?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-  <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>>
-    <?= $this->headline ?>
-  </<?= $this->hl ?>>
-  <?php if ($this->headline2): ?>
-    <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
-  <?php endif; ?>
+    <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+      <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>>
+        <?= $this->headline ?>
+      </<?= $this->hl ?>>
+      <?php if ($this->headline2): ?>
+        <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+      <?php endif; ?>
+    </div>
 </div>

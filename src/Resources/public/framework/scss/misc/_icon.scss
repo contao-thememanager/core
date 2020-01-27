@@ -1,3 +1,31 @@
+.text-color-light {
+
+  .icon {
+    color: $text-color-light;
+  }
+}
+
+.text-color-dark {
+
+  .icon {
+    color: $text-color-dark;
+  }
+}
+
+.text-color-primary {
+
+  .icon {
+    color: $primary;
+  }
+}
+
+.text-color-secondary{
+
+  .icon {
+    color: $secondary;
+  }
+}
+
 .icon {
   display: inline-block;
 

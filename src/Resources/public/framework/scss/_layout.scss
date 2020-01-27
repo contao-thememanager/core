@@ -8,39 +8,66 @@
     display: flex;
   }
 
-  #main {
-    order: 1;
-    width: 66.6666%;
+  #left {
+    order: 5;
+    width: $layout-column-width-s;
+    margin-right: $layout-column-gutter;
   }
 
-  #left {
-    order: 0;
-    width: 33.3333%;
+  #main {
+    order: 10;
+    width: 100%;
+  }
+
+  .layout-content-1 #main{
+    width: calc(100% - #{$layout-column-width-s} - #{$layout-column-gutter});
+  }
+
+  .layout-content-2 #main{
+    width: calc(100% - ((#{$layout-column-width-s} + #{$layout-column-gutter}) * 2));
+  }
+
+  #right {
+    order: 15;
+    width: $layout-column-width-s;
+    margin-left: $layout-column-gutter;
   }
 }
 
 @include media-breakpoint('m') {
 
-  #main {
-    order: 1;
-    width: 70%;
+  #left {
+    width: $layout-column-width-m;
   }
 
-  #left {
-    order: 0;
-    width: 30%;
+  .layout-content-1 #main{
+    width: calc(100% - #{$layout-column-width-m} - #{$layout-column-gutter});
+  }
+
+  .layout-content-2 #main{
+    width: calc(100% - ((#{$layout-column-width-m} + #{$layout-column-gutter}) * 2));
+  }
+
+  #right {
+    width: $layout-column-width-m;
   }
 }
 
 @include media-breakpoint('l') {
 
-  #main {
-    order: 1;
-    width: 75%;
+  #left {
+    width: $layout-column-width-l;
   }
 
-  #left {
-    order: 0;
-    width: 25%;
+  .layout-content-1 #main{
+    width: calc(100% - #{$layout-column-width-l} - #{$layout-column-gutter});
+  }
+
+  .layout-content-2 #main{
+    width: calc(100% - ((#{$layout-column-width-l} + #{$layout-column-gutter}) * 2));
+  }
+
+  #right {
+    width: $layout-column-width-l;
   }
 }

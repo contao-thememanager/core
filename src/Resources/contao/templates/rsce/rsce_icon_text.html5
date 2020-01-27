@@ -8,7 +8,7 @@
 
     <?php $this->block('headline'); ?>
         <?php if ($this->headline || $this->headline2): ?>
-            <div class="c_headline">
+            <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
         <?php endif; ?>
         <?php if ($this->headline): ?>
             <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
@@ -22,13 +22,13 @@
     <?php $this->endblock(); ?>
 
     <div class="c_icon">
-        <span class="icon<?= $this->styleManager->get('iconStyles') ? ' '.$this->styleManager->get('iconStyles')  : '' ?>" data-icon="&#x<?= $this->icon ?>;"></span>
+        <span class="icon<?= $this->styleManager->prepare('icon')->format(' %s')?>" data-icon="&#x<?= $this->icon ?>;"></span>
     </div>
     <div class="c_text">
         <?= $this->text ?>
         <?php if($this->linkText && $this->url): ?>
             <p>
-                <a href="<?=$this->url?>"<?= $this->styleManager->get('buttonStyles') ? ' class="'.$this->styleManager->get('buttonStyles').'"' : '' ?><?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+                <a href="<?=$this->url?>"<?= $this->styleManager->prepare('button')->format(' class="%s"')?><?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
             </p>
         <?php endif; ?>
     </div>

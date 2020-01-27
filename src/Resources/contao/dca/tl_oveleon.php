@@ -13,7 +13,7 @@ $GLOBALS['TL_DCA']['tl_oveleon'] = array
         'dataContainer'               => 'Config',
         'ptable'                      => 'tl_theme',
         'configField'                 => 'themeConfig',
-        'configFile'                  => 'oveleon-theme-config',
+        'configFile'                  => 'oveleon-theme-config.html5',
         'onload_callback' => array
         (
             array('tl_oveleon', 'checkPermission')

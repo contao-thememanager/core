@@ -17,7 +17,7 @@
     "contao/core-bundle":"^4.4",
     "oveleon/contao-theme-compiler-bundle":"^0.1",
     "oveleon/contao-config-driver-bundle":"^0.1",
-    "oveleon/contao-component-style-manager":"^2.0",
+    "oveleon/contao-component-style-manager":"^2.1",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
     "madeyourday/contao-rocksolid-icon-picker": "^2.0"
   },

@@ -64,7 +64,6 @@
                 let preset = JSON.parse(config.sliderConfig)['preset'];
 
                 // ToDo: Get vars from preset and set them as default settings
-
                 // set default settings by preset
                 defaults = {};
 
@@ -95,8 +94,6 @@
                     }
                 }
             }
-
-            console.log(settings);
 
             tns(extend(true, defaults, settings));
         }

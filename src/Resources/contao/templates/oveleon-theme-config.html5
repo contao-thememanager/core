@@ -1,0 +1,22 @@
+<?php
+return array(
+    'palettes' => array(
+        'default'  => '{grid_legend},grid-gutter-width,grid-gutter-bottom'
+    ),
+    'fields'   => array(
+        'grid-gutter-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-width'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'grid-gutter-bottom' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-bottom'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        )
+    )
+);

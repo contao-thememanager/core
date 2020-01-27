@@ -9,7 +9,7 @@
         <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
       </div>
       <div class="widget widget-submit">
-        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $this->styleManager->get('buttonStyles') ? ' '.$this->styleManager->get('buttonStyles')  : '' ?>"><?= $this->search ?></button>
+        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?>"><?= $this->search ?></button>
       </div>
       <?php if ($this->advanced): ?>
         <div class="widget widget-radio">
