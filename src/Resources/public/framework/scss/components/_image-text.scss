@@ -1,21 +1,60 @@
 .ce_rsce_image_text {
 
-  .image {
+  /*a.inside {
+    color: $text-color-regular;
+  }*/
+
+  .c_image {
     margin-bottom: 1rem;
   }
 
-  a.inside {
-    color: $text-color-dark;
-  }
+  &.layout-top {
 
-  /*&.boxed {
-
-    .ce_image {
+    .c_image {
       left: -1rem;
       margin-bottom: 0;
       position: relative;
       top: -1rem;
       width: calc(100% + 2rem);
     }
-  }*/
+  }
+
+  &.layout-left {
+
+    .inside {
+      display: flex;
+    }
+
+    .c_image {
+      margin-right: 1rem;
+    }
+  }
+
+  &.layout-right {
+
+    .inside {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .c_image {
+      margin-left: 1rem;
+    }
+  }
+
+  &.layout-float-left {
+
+    .c_image {
+      float: left;
+      margin-right: 1rem;
+    }
+  }
+
+  &.layout-float-right {
+
+    .c_image {
+      float: right;
+      margin-left: 1rem;
+    }
+  }
 }

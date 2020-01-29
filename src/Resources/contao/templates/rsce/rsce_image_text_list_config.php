@@ -15,6 +15,19 @@ return array(
     'contentCategory' => 'componentLists',
     'standardFields' => array('headline', 'cssID'),
     'fields' => array(
+        'size' => array(
+            'label' => array(
+                'de' => array('Bildgröße', 'Hier können Sie die Abmessungen der Bilder und den Skalierungsmodus festlegen.'),
+                'en' => array('Image Size', 'Here you can set the image dimensions and the resize mode.'),
+            ),
+            'inputType'        => 'imageSize',
+            'reference'        => &$GLOBALS['TL_LANG']['MSC'],
+            'eval'             => array('rgxp'=>'natural', 'includeBlankOption'=>true, 'nospace'=>true, 'tl_class'=>'w50'),
+            'options_callback' => function ()
+            {
+                return System::getContainer()->get('contao.image.image_sizes')->getOptionsForUser(BackendUser::getInstance());
+            }
+        ),
         'list' => array(
             'label' => array(
                 'de' => array(
@@ -39,19 +52,6 @@ return array(
                     ),
                     'inputType' => 'fileTree',
                     'eval' => array('filesOnly' => true, 'fieldType' => 'radio', 'extensions' => 'jpg,jpeg,png,gif,svg', 'mandatory'=>true, 'tl_class'=>'clr'),
-                ),
-                'size' => array(
-                    'label' => array(
-                        'de' => array('Bildgröße', 'Hier können Sie die Abmessungen des Bildes und den Skalierungsmodus festlegen.'),
-                        'en' => array('Image Size', 'Here you can set the image dimensions and the resize mode.'),
-                    ),
-                    'inputType'        => 'imageSize',
-                    'reference'        => &$GLOBALS['TL_LANG']['MSC'],
-                    'eval'             => array('rgxp'=>'natural', 'includeBlankOption'=>true, 'nospace'=>true, 'tl_class'=>'w50'),
-                    'options_callback' => function ()
-                    {
-                        return System::getContainer()->get('contao.image.image_sizes')->getOptionsForUser(BackendUser::getInstance());
-                    }
                 ),
                 'text' => array(
                     'label' => array(

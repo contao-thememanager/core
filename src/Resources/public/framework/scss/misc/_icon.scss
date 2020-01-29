@@ -1,28 +1,14 @@
-.text-color-light {
+.text-color-invert {
 
   .icon {
-    color: $text-color-light;
+    color: $text-color-invert;
   }
 }
 
-.text-color-dark {
+.text-color-regular {
 
   .icon {
-    color: $text-color-dark;
-  }
-}
-
-.text-color-primary {
-
-  .icon {
-    color: $primary;
-  }
-}
-
-.text-color-secondary{
-
-  .icon {
-    color: $secondary;
+    color: $text-color-regular;
   }
 }
 
@@ -61,13 +47,13 @@
   }
 
   &.design-filled {
-    background: $text-color-dark;
-    color: $text-color-light;
+    background: $text-color-regular;
+    color: $text-color-invert;
     padding: 1.5rem; // config
   }
 
   &.design-outlined {
-    box-shadow: inset 0 0 0 2px $text-color-dark;
+    box-shadow: inset 0 0 0 2px $text-color-regular;
     padding: 1.5rem; // config
   }
 
@@ -80,7 +66,7 @@
 
     &.design-filled {
       background: $primary;
-      color: $text-color-light;
+      color: $text-color-invert;
     }
 
     &.design-outlined {
@@ -93,7 +79,7 @@
 
     &.design-filled {
       background: $secondary;
-      color: $text-color-light;
+      color: $text-color-invert;
     }
 
     &.design-outlined {
@@ -102,28 +88,28 @@
   }
 
   &.color-dark {
-    color: $text-color-dark;
+    color: $text-color-regular;
 
     &.design-filled {
-      background: $text-color-dark;
-      color: $text-color-light;
+      background: $text-color-regular;
+      color: $text-color-invert;
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $text-color-dark;
+      box-shadow: inset 0 0 0 2px $text-color-regular;
     }
   }
 
   &.color-light {
-    color: $text-color-light;
+    color: $text-color-invert;
 
     &.design-filled {
-      background: $text-color-light;
-      color: $text-color-dark;
+      background: $text-color-invert;
+      color: $text-color-regular;
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $text-color-light;
+      box-shadow: inset 0 0 0 2px $text-color-invert;
     }
   }
 }
