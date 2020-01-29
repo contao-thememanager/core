@@ -4,3 +4,33 @@
     outline: 0 none;
   }
 }
+
+.tns-nav{
+
+  > button{
+    display: inline-block;
+
+    width: $tns-dot-size;
+    height: $tns-dot-size;
+
+    padding: 0;
+    margin-left: $tns-dot-spacing;
+    margin-right: $tns-dot-spacing;
+
+    outline: 0 none;
+    border-radius: 50%;
+    background-color: $tns-dot-color-regular;
+
+    &.tns-nav-active, &:hover{
+      background-color: $tns-dot-color-regular-active;
+    }
+  }
+}
+
+.tns-controls{
+  outline: 0 none;
+
+  > button {
+    outline: 0 none;
+  }
+}

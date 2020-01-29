@@ -126,7 +126,18 @@ $article-spacing-m-large:   80px !default;
 $article-spacing-l-large:   150px !default;
 $article-spacing-xl-large:  $article-spacing-l-large !default;
 
-// Components
+// Tiny Slider
+$tns-dot-size:                 12px;
+$tns-dot-spacing:              3px;
+
+$tns-dot-color-regular:        rgba(90,90,90,.6);
+$tns-dot-color-regular-active: rgba(90,90,90,1);
+
+$tns-dot-color-invert:         rgba(255,255,255,.6);
+$tns-dot-color-invert-active:  rgba(255,255,255,1);
+
+$tns-dot-color-extra:          rgba($primary,.6);
+$tns-dot-color-extra-active:   rgba($primary,1);
 
 
 // Styles
