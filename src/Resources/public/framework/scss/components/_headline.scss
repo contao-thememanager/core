@@ -32,47 +32,25 @@
 }
 
 // Color
-.text-color-light {
+.text-color-invert {
 
   h1, h2, h3, h4, h5, h6 {
-    color: $text-color-light;
+    color: $text-color-invert;
   }
 
   .hl-design-lined:after{
-    background-color: $text-color-light;
+    background-color: $text-color-invert;
   }
 }
 
-.text-color-dark {
+.text-color-regular {
 
   h1, h2, h3, h4, h5, h6 {
-    color: $text-color-dark;
+    color: $text-color-regular;
   }
 
   .hl-design-lined:after{
-    background-color: $text-color-dark;
-  }
-}
-
-.text-color-primary {
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $primary;
-  }
-
-  .hl-design-lined:after{
-    background-color: $primary;
-  }
-}
-
-.text-color-secondary{
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $secondary;
-  }
-
-  .hl-design-lined:after{
-    background-color: $secondary;
+    background-color: $text-color-regular;
   }
 }
 

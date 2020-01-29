@@ -1,5 +1,5 @@
 a.color-light{
-  color: $text-color-light;
+  color: $text-color-invert;
 
   &:hover {
     color: darken($primary, 10);
@@ -7,7 +7,7 @@ a.color-light{
 }
 
 a.color-dark {
-  color: $text-color-dark;
+  color: $text-color-regular;
 
   &:hover {
     color: darken($primary, 10);

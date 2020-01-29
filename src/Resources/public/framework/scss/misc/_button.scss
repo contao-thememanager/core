@@ -3,16 +3,17 @@ button, a.button {
   border-color: $primary; // config
   border-style: solid; // config
   border-width: 0; // config
-  color: $text-color-light; // config
+  color: $text-color-invert; // config
   cursor: pointer;
   background-color: $primary; // config
   display: inline-block;
   font-size: rem(16); // config
   padding: .75rem 1.5rem; // config
+  text-decoration: none;
 
   &:hover {
     background-color: darken($primary, 10); // config
-    color: $text-color-light; // config
+    color: $text-color-invert; // config
   }
 
   &.size-small {
@@ -62,23 +63,23 @@ button, a.button {
 
     &.color-dark {
       background-color: transparent; // config
-      box-shadow: inset 0 0 0 2px $text-color-dark; // config
-      color: $text-color-dark; // config
+      box-shadow: inset 0 0 0 2px $text-color-regular; // config
+      color: $text-color-regular; // config
 
       &:hover {
-        background-color: $text-color-dark; // config
+        background-color: $text-color-regular; // config
         color: #fff; // config
       }
     }
 
     &.color-light {
       background-color: transparent; // config
-      box-shadow: inset 0 0 0 2px $text-color-light; // config
-      color: $text-color-light; // config
+      box-shadow: inset 0 0 0 2px $text-color-invert; // config
+      color: $text-color-invert; // config
 
       &:hover {
-        background-color: $text-color-light; // config
-        color: $text-color-dark; // config
+        background-color: $text-color-invert; // config
+        color: $text-color-regular; // config
       }
     }
   }
@@ -86,44 +87,44 @@ button, a.button {
   &.color-primary {
     border-color: $primary; // config
     background-color: $primary; // config
-    color: $text-color-light;
+    color: $text-color-invert;
 
     &:hover {
       background-color: darken($primary, 10); // config
-      color: $text-color-light; // config
+      color: $text-color-invert; // config
     }
   }
 
   &.color-secondary {
     border-color: $secondary; // config
     background-color: $secondary; // config
-    color: $text-color-light;
+    color: $text-color-invert;
 
     &:hover {
       background-color: darken($secondary, 10); // config
-      color: $text-color-light; // config
+      color: $text-color-invert; // config
     }
   }
 
   &.color-dark {
-    border-color: $text-color-dark; // config
-    background-color: $text-color-dark; // config
-    color: $text-color-light;
+    border-color: $text-color-regular; // config
+    background-color: $text-color-regular; // config
+    color: $text-color-invert;
 
     &:hover {
-      background-color: darken($text-color-dark, 10); // config
-      color: $text-color-light; // config
+      background-color: darken($text-color-regular, 10); // config
+      color: $text-color-invert; // config
     }
   }
 
   &.color-light {
-    border-color: $text-color-light; // config
-    background-color: $text-color-light; // config
-    color: $text-color-dark;
+    border-color: $text-color-invert; // config
+    background-color: $text-color-invert; // config
+    color: $text-color-regular;
 
     &:hover {
-      background-color: darken($text-color-light, 10); // config
-      color: $text-color-dark; // config
+      background-color: darken($text-color-invert, 10); // config
+      color: $text-color-regular; // config
     }
   }
 }

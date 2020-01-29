@@ -16,7 +16,7 @@
   }
 
   > div {
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 2rem;
   }
 
   &.list-1 > div {
@@ -41,6 +41,13 @@
 
   &.list-6 > div {
     width: 16.6666%
+  }
+}
+
+.boxed {
+
+  .grid-list {
+    margin: 0 -1rem -2rem;
   }
 }
 
