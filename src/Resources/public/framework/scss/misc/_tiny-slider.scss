@@ -6,6 +6,7 @@
 }
 
 .tns-nav{
+  margin: $grid-gutter-bottom 0;
 
   > button{
     display: inline-block;
@@ -19,18 +20,235 @@
 
     outline: 0 none;
     border-radius: 50%;
-    background-color: $tns-dot-color-regular;
+    background-color: $tns-color-regular;
 
     &.tns-nav-active, &:hover{
-      background-color: $tns-dot-color-regular-active;
+      background-color: $tns-color-regular-active;
     }
   }
 }
 
 .tns-controls{
   outline: 0 none;
+  margin: $grid-gutter-bottom 0;
 
   > button {
     outline: 0 none;
+
+    color: $tns-color-invert;
+    background-color: $tns-color-regular;
+
+    &:hover{
+      color: $tns-color-invert-active;
+      background-color: $tns-color-regular-active;
+    }
   }
 }
+
+.text-color-invert, .tns-nav-color-invert{
+
+  .tns-nav{
+
+    > button{
+      background-color: $tns-color-invert;
+
+      &.tns-nav-active, &:hover{
+        background-color: $tns-color-invert-active;
+      }
+    }
+  }
+}
+
+.text-color-invert, .tns-controls-color-invert{
+
+  .tns-controls{
+
+    > button {
+      color: $tns-color-regular;
+      background-color: $tns-color-invert;
+
+      &:hover{
+        color: $tns-color-regular-active;
+        background-color: $tns-color-invert-active;
+      }
+    }
+  }
+}
+
+.tns-nav-color-extra{
+
+  .tns-nav{
+
+    > button{
+      background-color: $tns-color-extra;
+
+      &.tns-nav-active, &:hover{
+        background-color: $tns-color-extra-active;
+      }
+    }
+  }
+}
+
+.tns-controls-color-extra{
+
+  .tns-controls{
+
+    > button {
+      color: $tns-color-invert;
+      background-color: $tns-color-extra;
+
+      &:hover {
+        color: $tns-color-invert-active;
+        background-color: $tns-color-extra-active;
+      }
+    }
+  }
+}
+
+.tns-nav-color-regular{
+
+  .tns-nav{
+
+    > button{
+      background-color: $tns-color-regular;
+
+      &.tns-nav-active, &:hover{
+        background-color: $tns-color-regular-active;
+      }
+    }
+  }
+}
+
+.tns-controls-color-regular{
+
+  .tns-controls{
+
+    > button {
+      color: $tns-color-invert;
+      background-color: $tns-color-regular;
+
+      &:hover {
+        color: $tns-color-invert-active;
+        background-color: $tns-color-regular-active;
+      }
+    }
+  }
+}
+
+@mixin tns-controls-design-inner{
+  .tns-outer{
+    position: relative;
+
+    .tns-controls{
+      display: flex;
+      position: absolute;
+      pointer-events: none;
+      justify-content: space-between;
+      align-items: center;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+
+      button[data-controls="prev"],
+      button[data-controls="next"]{
+        pointer-events: all;
+      }
+
+      @content;
+    }
+  }
+}
+
+@mixin tns-controls-design-outer{
+  &.block{
+    overflow: visible;
+  }
+
+  .tns-outer{
+    position: relative;
+
+    .tns-controls{
+      display: flex;
+      position: absolute;
+      pointer-events: none;
+      justify-content: space-between;
+      align-items: center;
+
+      top: 0;
+      bottom: 0;
+      left: -#{$tns-controls-outer-offset};
+      right: -#{$tns-controls-outer-offset};
+      margin: 0;
+
+      button[data-controls="prev"],
+      button[data-controls="next"]{
+        pointer-events: all;
+      }
+
+      @content;
+    }
+  }
+}
+
+.tns-controls-design-inner{
+  @include tns-controls-design-inner;
+}
+
+.tns-controls-design-outer{
+  @include tns-controls-design-outer;
+}
+
+@include media-breakpoint('xs') {
+  .tns-controls-design-xs-inner{
+    @include tns-controls-design-inner;
+  }
+
+  .tns-controls-design-xs-outer{
+    @include tns-controls-design-outer;
+  }
+}
+
+@include media-breakpoint('s') {
+  .tns-controls-design-s-inner{
+    @include tns-controls-design-inner;
+  }
+
+  .tns-controls-design-s-outer{
+    @include tns-controls-design-outer;
+  }
+}
+
+@include media-breakpoint('m') {
+  .tns-controls-design-m-inner{
+    @include tns-controls-design-inner;
+  }
+
+  .tns-controls-design-m-outer{
+    @include tns-controls-design-outer;
+  }
+}
+
+@include media-breakpoint('l') {
+  .tns-controls-design-l-inner{
+    @include tns-controls-design-inner;
+  }
+
+  .tns-controls-design-l-outer{
+    @include tns-controls-design-outer;
+  }
+}
+
+@include media-breakpoint('xl') {
+
+  .tns-controls-design-xl-inner{
+    @include tns-controls-design-inner;
+  }
+
+  .tns-controls-design-xl-outer{
+    @include tns-controls-design-outer;
+  }
+}
+
