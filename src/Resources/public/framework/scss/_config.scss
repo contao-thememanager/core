@@ -1,98 +1,98 @@
-$body-bg:                   #fff !default;
+$body-bg:                             #fff !default;
 
-$text-color-regular:           #000 !default;
-$text-color-invert:          #fff !default;
+$text-color-regular:                  #000 !default;
+$text-color-invert:                   #fff !default;
 
-$primary:                   #36c !default;
-$secondary:                 #9cf !default;
+$primary:                             #36c !default;
+$secondary:                           #9cf !default;
 
 // Defaults
-$browser-context:           16 !default;
+$browser-context:                     16 !default;
 
 // Typography
-$font-family-base:          "Raleway", Arial, sans-serif !default;
-$font-size-base:            #{$browser-context}px !default;
-$line-height-base:          1.5 !default;
+$font-family-base:                    "Raleway", Arial, sans-serif !default;
+$font-size-base:                      #{$browser-context}px !default;
+$line-height-base:                    1.5 !default;
 
-$font-weight-light:         300 !default;
-$font-weight-regular:       400 !default;
-$font-weight-medium:        500 !default;
-$font-weight-semibold:      600 !default;
-$font-weight-bold:          700 !default;
+$font-weight-light:                   300 !default;
+$font-weight-regular:                 400 !default;
+$font-weight-medium:                  500 !default;
+$font-weight-semibold:                600 !default;
+$font-weight-bold:                    700 !default;
 
-$h1-font-size-small:        1.5rem !default;
-$h2-font-size-small:        1.4rem !default;
-$h3-font-size-small:        1.3rem !default;
-$h4-font-size-small:        1.2rem !default;
-$h5-font-size-small:        1.1rem !default;
-$h6-font-size-small:        1rem !default;
+$h1-font-size-small:                  1.5rem !default;
+$h2-font-size-small:                  1.4rem !default;
+$h3-font-size-small:                  1.3rem !default;
+$h4-font-size-small:                  1.2rem !default;
+$h5-font-size-small:                  1.1rem !default;
+$h6-font-size-small:                  1rem !default;
 
-$h1-font-size-medium:       2rem !default;
-$h2-font-size-medium:       1.8rem !default;
-$h3-font-size-medium:       1.6rem !default;
-$h4-font-size-medium:       1.4rem !default;
-$h5-font-size-medium:       1.2rem !default;
-$h6-font-size-medium:       1rem !default;
+$h1-font-size-medium:                 2rem !default;
+$h2-font-size-medium:                 1.8rem !default;
+$h3-font-size-medium:                 1.6rem !default;
+$h4-font-size-medium:                 1.4rem !default;
+$h5-font-size-medium:                 1.2rem !default;
+$h6-font-size-medium:                 1rem !default;
 
-$h1-font-size:              2.5rem !default;
-$h2-font-size:              2rem !default;
-$h3-font-size:              1.75rem !default;
-$h4-font-size:              1.5rem !default;
-$h5-font-size:              1.25rem !default;
-$h6-font-size:              1rem !default;
+$h1-font-size:                        2.5rem !default;
+$h2-font-size:                        2rem !default;
+$h3-font-size:                        1.75rem !default;
+$h4-font-size:                        1.5rem !default;
+$h5-font-size:                        1.25rem !default;
+$h6-font-size:                        1rem !default;
 
-$h1-font-weight:            $font-weight-bold !default;
-$h2-font-weight:            $font-weight-bold !default;
-$h3-font-weight:            $font-weight-bold !default;
-$h4-font-weight:            $font-weight-bold !default;
-$h5-font-weight:            $font-weight-bold !default;
-$h6-font-weight:            $font-weight-bold !default;
+$h1-font-weight:                      $font-weight-bold !default;
+$h2-font-weight:                      $font-weight-bold !default;
+$h3-font-weight:                      $font-weight-bold !default;
+$h4-font-weight:                      $font-weight-bold !default;
+$h5-font-weight:                      $font-weight-bold !default;
+$h6-font-weight:                      $font-weight-bold !default;
 
-$h1-color: $text-color-regular !default;
-$h2-color: $text-color-regular !default;
-$h3-color: $text-color-regular !default;
-$h4-color: $text-color-regular !default;
-$h5-color: $text-color-regular !default;
-$h6-color: $text-color-regular !default;
+$h1-color:                            $text-color-regular !default;
+$h2-color:                            $text-color-regular !default;
+$h3-color:                            $text-color-regular !default;
+$h4-color:                            $text-color-regular !default;
+$h5-color:                            $text-color-regular !default;
+$h6-color:                            $text-color-regular !default;
 
-$h1-letter-spacing:         0em !default;
-$h2-letter-spacing:         0em !default;
-$h3-letter-spacing:         0em !default;
-$h4-letter-spacing:         0em !default;
-$h5-letter-spacing:         0em !default;
-$h6-letter-spacing:         0em !default;
+$h1-letter-spacing:                   0em !default;
+$h2-letter-spacing:                   0em !default;
+$h3-letter-spacing:                   0em !default;
+$h4-letter-spacing:                   0em !default;
+$h5-letter-spacing:                   0em !default;
+$h6-letter-spacing:                   0em !default;
 
-$headings-line-height:      1.2 !default;
+$headings-line-height:                1.2 !default;
 
-$link-color-regular:        $primary !default;
-$link-hover-color-regular:  darken($link-color-regular, 15%) !default;
-$link-decoration-regular:   none !default;
-$link-hover-decoration-regular: none !default;
+$link-color-regular:                  $primary !default;
+$link-hover-color-regular:            darken($link-color-regular, 15%) !default;
+$link-decoration-regular:             none !default;
+$link-hover-decoration-regular:       none !default;
 
-$link-color-invert: $text-color-invert !default;
-$link-hover-color-invert: $text-color-invert !default;
-$link-decoration-invert:    underline !default;
-$link-hover-decoration-invert: none !default;
+$link-color-invert:                   $text-color-invert !default;
+$link-hover-color-invert:             $text-color-invert !default;
+$link-decoration-invert:              underline !default;
+$link-hover-decoration-invert:        none !default;
 
-$link-color-extra:          red !default;
-$link-hover-color-extra:    green !default;
-$link-decoration-extra:     none !default;
-$link-hover-decoration-extra: underline !default;
+$link-color-extra:                    red !default;
+$link-hover-color-extra:              green !default;
+$link-decoration-extra:               none !default;
+$link-hover-decoration-extra:         underline !default;
 
-$font-weight-base:          $font-weight-regular !default;
+$font-weight-base:                    $font-weight-regular !default;
 
 // Headline-Spacing
-$headline-spacing-small:    15px !default;
-$headline-spacing-s-small:  30px !default;
-$headline-spacing-l-small:  50px !default;
+$headline-spacing-small:              15px !default;
+$headline-spacing-s-small:            30px !default;
+$headline-spacing-l-small:            50px !default;
 
-$headline-spacing-medium:   15px !default;
-$headline-spacing-s-medium: 40px !default;
-$headline-spacing-l-medium: 90px !default;
+$headline-spacing-medium:             15px !default;
+$headline-spacing-s-medium:           40px !default;
+$headline-spacing-l-medium:           90px !default;
 
-$headline-spacing-large:    15px !default;
-$headline-spacing-s-large:  70px !default;
-$headline-spacing-l-large: 110px !default;
+$headline-spacing-large:              15px !default;
+$headline-spacing-s-large:            70px !default;
+$headline-spacing-l-large:            110px !default;
 
 // Breakpoints
 $breakpoints: (
@@ -104,51 +104,92 @@ $breakpoints: (
 ) !default;
 
 // Layout
-$layout-column-width-s:     260px !default;
-$layout-column-width-m:     300px !default;
-$layout-column-width-l:     330px !default;
-$layout-column-gutter:      30px !default;
+$layout-column-small-break:           's';
+$layout-column-medium-break:          'm';
+$layout-column-large-break:           'l';
+
+$layout-column-width-small:           200px !default;
+$layout-column-width-medium:          300px !default;
+$layout-column-width-large:           330px !default;
+
+$layout-column-gutter-small:          20px !default;
+$layout-column-gutter-medium:         30px !default;
+$layout-column-gutter-large:          40px !default;
 
 // Grid
-$grid-columns:              12 !default;
-$grid-gutter-width:         2rem !default;
-$grid-gutter-bottom:        $grid-gutter-width !default;
+$grid-columns:                        12 !default;
+$grid-gutter-width:                   2rem !default;
+$grid-gutter-bottom:                  $grid-gutter-width !default;
+
+// Form
+$form-grid-gutter-width:              1rem !default;
+$form-grid-gutter-bottom:             $form-grid-gutter-width !default;
+
+$form-label-color:                    red !default;
+$form-label-font-size:                $font-size-base !default;
+$form-label-font-weight:              $font-weight-regular !default;
+$form-label-spacing:                  4px !default;
+
+$form-input-font-family:              $font-family-base !default;
+$form-input-font-size:                $font-size-base !default;
+$form-input-font-weight:              $font-weight-regular !default;
+
+$form-input-padding:                  10px 15px;
+$form-input-border-radius:            0;
+$form-input-border-width:             1px !default;
+$form-input-border-style:             solid !default;
+
+$form-input-color:                    $text-color-regular !default;
+$form-input-background:               #fff !default;
+$form-input-border-color:             #ccc !default;
+$form-input-placeholder-color:        #ccc !default;
+
+$form-input-color-hover:              $text-color-regular !default;
+$form-input-background-hover:         #fff !default;
+$form-input-border-color-hover:       #b4b4b4 !default;
+$form-input-placeholder-color-hover:  #b4b4b4 !default;
+
+$form-input-color-focus:              $text-color-regular !default;
+$form-input-background-focus:         #fff !default;
+$form-input-border-color-focus:       #b4b4b4 !default;
+$form-input-placeholder-color-focus:  #b4b4b4 !default;
 
 // Icon
-$icon-font-family:          'fontello' !default;
+$icon-font-family:                    'fontello' !default;
 
 // Article
-$article-spacing-xs-small:  30px !default;
-$article-spacing-s-small:   30px !default;
-$article-spacing-m-small:   30px !default;
-$article-spacing-l-small:   30px !default;
-$article-spacing-xl-small:  $article-spacing-l-small !default;
+$article-spacing-xs-small:            30px !default;
+$article-spacing-s-small:             30px !default;
+$article-spacing-m-small:             30px !default;
+$article-spacing-l-small:             30px !default;
+$article-spacing-xl-small:            $article-spacing-l-small !default;
 
-$article-spacing-xs-medium: 30px !default;
-$article-spacing-s-medium:  30px !default;
-$article-spacing-m-medium:  60px !default;
-$article-spacing-l-medium:  90px !default;
-$article-spacing-xl-medium: $article-spacing-l-medium !default;
+$article-spacing-xs-medium:           30px !default;
+$article-spacing-s-medium:            30px !default;
+$article-spacing-m-medium:            60px !default;
+$article-spacing-l-medium:            90px !default;
+$article-spacing-xl-medium:           $article-spacing-l-medium !default;
 
-$article-spacing-xs-large:  30px !default;
-$article-spacing-s-large:   50px !default;
-$article-spacing-m-large:   80px !default;
-$article-spacing-l-large:   150px !default;
-$article-spacing-xl-large:  $article-spacing-l-large !default;
+$article-spacing-xs-large:            30px !default;
+$article-spacing-s-large:             50px !default;
+$article-spacing-m-large:             80px !default;
+$article-spacing-l-large:             150px !default;
+$article-spacing-xl-large:            $article-spacing-l-large !default;
 
 // Tiny Slider
-$tns-dot-size:              12px;
-$tns-dot-spacing:           5px;
-$tns-controls-outer-offset: 100px;
+$tns-dot-size:                        12px !default;
+$tns-dot-spacing:                     5px !default;
+$tns-controls-outer-offset:           100px !default;
 
-$tns-color-regular:         rgba(0,0,0,.6);
-$tns-color-regular-active:  rgba(0,0,0,1);
+$tns-color-regular:                   rgba(0,0,0,.6) !default;
+$tns-color-regular-active:            rgba(0,0,0,1) !default;
+$tns-color-invert:                    rgba(255,255,255,.6) !default;
+$tns-color-invert-active:             rgba(255,255,255,1) !default;
+$tns-color-extra:                     rgba($primary,.6) !default;
+$tns-color-extra-active:              rgba($primary,1) !default;
 
-$tns-color-invert:          rgba(255,255,255,.6);
-$tns-color-invert-active:   rgba(255,255,255,1);
+// Mist
+$box-shadow:                          0 .5rem 1rem rgba(#000, .15) !default;
 
-$tns-color-extra:           rgba($primary,.6);
-$tns-color-extra-active:    rgba($primary,1);
-
-// Styles
-$box-shadow:                0 .5rem 1rem rgba(#000, .15) !default;
+$selection-color:                     $text-color-invert !default;
+$selection-background-color:          $primary !default;

@@ -55,7 +55,7 @@
   }
 }
 
-[class*="col-"]{
+div[class*="col-"]{
   flex-grow: 0;
   flex-shrink: 0;
   padding-right: divide($grid-gutter-width, 2);
@@ -71,33 +71,33 @@ $grid-breakpoints: map-merge((0),$breakpoints);
   @include media-breakpoint($breakpoint, $grid-breakpoints) {
 
     @for $i from 1 through $grid-columns {
-      .col#{$infix}-#{$i} {
+      div.col#{$infix}-#{$i} {
         flex-basis: percentage($i / $grid-columns);
         max-width: percentage($i / $grid-columns);
       }
     }
 
-    .col#{$infix}-auto {
+    div.col#{$infix}-auto {
       flex-grow: 1;
       flex-basis: 0;
       max-width: 100%;
     }
 
-    .col#{$infix}-top     { align-self: flex-start; }
-    .col#{$infix}-middle  { align-self: center; }
-    .col#{$infix}-bottom  { align-self: flex-end;}
-    .col#{$infix}-baseline{ align-self: baseline; }
-    .col#{$infix}-stretch { align-self: stretch; }
-    .order#{$infix}-first { order: -1; }
-    .order#{$infix}-last  { order: $grid-columns + 1; }
+    div.col#{$infix}-top     { align-self: flex-start; }
+    div.col#{$infix}-middle  { align-self: center; }
+    div.col#{$infix}-bottom  { align-self: flex-end;}
+    div.col#{$infix}-baseline{ align-self: baseline; }
+    div.col#{$infix}-stretch { align-self: stretch; }
+    div.order#{$infix}-first { order: -1; }
+    div.order#{$infix}-last  { order: $grid-columns + 1; }
 
     @for $i from 0 through $grid-columns {
-      .order#{$infix}-#{$i} { order: $i; }
+      div.order#{$infix}-#{$i} { order: $i; }
     }
 
     @for $i from 0 through ($grid-columns - 1) {
       @if not ($infix == "" and $i == 0) {
-        .offset#{$infix}-#{$i} {
+        div.offset#{$infix}-#{$i} {
           margin-left: percentage($i / $grid-columns);
         }
       }

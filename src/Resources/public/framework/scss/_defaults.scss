@@ -4,6 +4,15 @@
   @include box-sizing;
 }
 
+::selection {
+  color: $selection-color;
+  background: $selection-background-color;
+}
+::-moz-selection {
+  color: $selection-color;
+  background: $selection-background-color;
+}
+
 body {
   background-color: $body-bg;
   color: $text-color-regular;
@@ -41,4 +50,10 @@ iframe {
 
 address {
   font-style: normal;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }

@@ -52,10 +52,26 @@
             'sliderXl': 1920
         };
 
+        let defaults = {
+            controls: false,
+            nav: false,
+            controlsPosition: 'bottom',
+            navPosition: 'bottom',
+            autoplayPosition: 'bottom',
+            gutter: 0,
+            controlsText: [
+                '<span class="prev">prev</span>',
+                '<span class="next">next</span>'
+            ],
+            autoplayText: [
+                '<span class="start">start</span>',
+                '<span class="stop">stop</span>'
+            ]
+        };
+
         let tnsSliders = document.querySelectorAll('.init-tns-slider'), i=0;
 
         for (;i<tnsSliders.length; i++){
-            let defaults = {};
             let settings = {container: tnsSliders[i]};
             let config = tnsSliders[i].dataset;
 
@@ -65,7 +81,7 @@
 
                 // ToDo: Get vars from preset and set them as default settings
                 // set default settings by preset
-                defaults = {};
+                // defaults = extend(true, defaults, preset);
 
                 // delete from dataset
                 delete config['sliderConfig'];
