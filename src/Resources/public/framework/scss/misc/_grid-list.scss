@@ -42,6 +42,10 @@
   &.list-6 > div {
     width: 16.6666%
   }
+
+  &.auto-height .inside {
+    height: 100%;
+  }
 }
 
 .boxed {

@@ -1,3 +1,11 @@
+.grid.no-gutter[class*='x-spacing'] {
+
+  > .inside {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .y-spacing-small > .inside, .y-spacing-small #container > .inside {
   padding-top: $article-spacing-xs-small;
   padding-bottom: calc(#{$article-spacing-xs-small} - #{$grid-gutter-bottom}); // ToDo: CALC funktion ergänzen um einheitlichen Wert anhand verschiedener Maßeinheiten zu berechnen.

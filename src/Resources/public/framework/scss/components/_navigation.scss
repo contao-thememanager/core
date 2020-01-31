@@ -1,4 +1,4 @@
-/*.navigation {
+.navigation {
   overflow: visible;
 
   ul {
@@ -6,14 +6,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
+  }
 
-    ul {
-      flex-direction: column;
-    }
+  strong {
+    cursor: default;
   }
 
   a, strong {
-    background-color: #ccc;
     display: block;
     padding: .5rem 1rem;
     font-weight: 400;
@@ -24,33 +23,10 @@
 
     ul {
       display: none;
-      position: absolute;
     }
   }
 
-  .level_2 {
-
-    li {
-      min-width: 200px;
-    }
-  }
-
-  .submenu {
-    position: relative;
-
-    &:hover {
-
-      > ul {
-        display: flex;
-      }
-    }
-
-    ul ul {
-      left: 100%;
-      top: 0;
-    }
-  }
-
+  // Justify navigation elements level 1
   &.justify-start {
 
     .level_1 {
@@ -95,56 +71,67 @@
 }
 
 .navigation-vertical {
-  width: 200px;
 
   ul {
     flex-direction: column;
-  }
-
-  .submenu {
-
-    ul {
-      left: 100%;
-      top: 0;
-    }
-  }
-}*/
-
-.navigation {
-  overflow: visible;
-
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    ul {
-      flex-direction: column;
-    }
-  }
-
-  a, strong {
-    background-color: #ccc;
-    display: block;
-    padding: .5rem 1rem;
-    font-weight: 400;
-    white-space: nowrap;
   }
 
   .level_1 {
 
     ul {
-      display: none;
+      display: flex;
     }
   }
 }
 
-.navigation-vertical {
-  width: 200px;
+.navigation-hover {
 
-  ul {
-    flex-direction: column;
+  .level_1 {
+
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+    }
+  }
+
+  .level_2 {
+
+    li {
+      min-width: 200px;
+    }
+  }
+
+  .submenu {
+    position: relative;
+
+    &:hover {
+
+      > ul {
+        display: flex;
+      }
+    }
+  }
+
+  &.navigation {
+
+    .level_1 {
+
+      ul ul {
+        left: 100%;
+        top: 0;
+      }
+    }
+  }
+
+  &.navigation-vertical {
+
+    .level_1 {
+
+      ul {
+        left: 100%;
+        top: 0;
+      }
+    }
   }
 }
-
