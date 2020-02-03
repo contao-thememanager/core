@@ -2,9 +2,27 @@
   display: block;
 }
 
-#container > .inside {
-  display: flex;
-  flex-direction: column;
+#container{
+  display: none;
+
+  > .inside {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.layout-content, .layout-content-1, .layout-content-2{
+
+  #container{
+    display: block;
+  }
+}
+
+.layout-content{
+
+  #right, #left{
+    display: none;
+  }
 }
 
 #main {
