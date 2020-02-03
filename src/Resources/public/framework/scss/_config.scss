@@ -125,7 +125,7 @@ $grid-gutter-bottom:                  $grid-gutter-width !default;
 $form-grid-gutter-width:              1rem !default;
 $form-grid-gutter-bottom:             $form-grid-gutter-width !default;
 
-$form-label-color:                    red !default;
+$form-label-color:                    $text-color-regular !default;
 $form-label-font-size:                $font-size-base !default;
 $form-label-font-weight:              $font-weight-regular !default;
 $form-label-spacing:                  4px !default;
@@ -151,8 +151,23 @@ $form-input-placeholder-color-hover:  #b4b4b4 !default;
 
 $form-input-color-focus:              $text-color-regular !default;
 $form-input-background-focus:         #fff !default;
-$form-input-border-color-focus:       #b4b4b4 !default;
+$form-input-border-color-focus:       #979797 !default;
 $form-input-placeholder-color-focus:  #b4b4b4 !default;
+
+$form-input-color-error:              $text-color-regular !default;
+$form-input-background-error:         #ffe5df !default;
+$form-input-border-color-error:       #b46869 !default;
+$form-input-placeholder-color-error:  #b46869 !default;
+
+$form-checkbox-radio-label-color:     $text-color-regular !default;
+$form-checkbox-radio-label-font-size: $font-size-base !default;
+$form-checkbox-radio-size:            20px !default;
+
+$form-input-explanation-color:        $text-color-regular !default;
+$form-input-explanation-font-size:    $font-size-base !default;
+
+$form-input-mandatory-symbol-color:   #ccc !default;
+$form-input-symbol-color:             $primary !default;
 
 // Icon
 $icon-font-family:                    'fontello' !default;
