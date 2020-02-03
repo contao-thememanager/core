@@ -1,22 +1,92 @@
 <?php
 return array(
-    'palettes' => array(
+    /*'palettes' => array(
         'default'  => '{grid_legend},grid-gutter-width,grid-gutter-bottom'
-    ),
+    ),*/
     'fields'   => array(
-        'grid-gutter-width' => array
+        // Color 2
+        'color2' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-width'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['color2'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        // Color 1
+        'color1' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['color1'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'size'=>1, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        // Number
+        'number' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['number'],
+            'inputType'               => 'number',
+            'eval'                    => array('rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        // Unit
+        'unit' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['unitMandatory'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        // Unit (Blank)
+        'unitBlank' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['unitBlank'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
-        'grid-gutter-bottom' => array
+        // Text
+        'text' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-bottom'],
-            'inputType'               => 'inputUnit',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['text'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        // Text Decoration
+        'text-decoration' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['text-decoration'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'underline', 'wavy'),
+            'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        // Border Width / Padding
+        'borderwidth' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['borderwidth'],
+            'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
-        )
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        // Style
+        'border-style' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['border-style'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        // Border Radius
+        'borderradius' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['borderradius'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
+        ),
+        // Padding
+        'padding' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
+        ),
     )
 );
