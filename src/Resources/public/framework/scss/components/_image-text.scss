@@ -1,17 +1,17 @@
 .ce_rsce_image_text {
 
   .c_image {
-    margin-bottom: 1rem;
+    margin-bottom: $component-inner-spacing;
   }
 
   &.layout-top {
 
     .c_image {
-      left: -1rem;
+      left: -#{$boxed-spacing};
       margin-bottom: 0;
       position: relative;
-      top: -1rem;
-      width: calc(100% + 2rem);
+      top: -#{$boxed-spacing};
+      width: calc(100% + #{multiply($boxed-spacing, 2)});
     }
   }
 
@@ -22,7 +22,7 @@
     }
 
     .c_image {
-      margin-right: 1rem;
+      margin-right: $component-inner-spacing;
     }
   }
 
@@ -34,7 +34,7 @@
     }
 
     .c_image {
-      margin-left: 1rem;
+      margin-left: $component-inner-spacing;
     }
   }
 
@@ -42,7 +42,7 @@
 
     .c_image {
       float: left;
-      margin-right: 1rem;
+      margin-right: $component-inner-spacing;
     }
   }
 
@@ -50,7 +50,7 @@
 
     .c_image {
       float: right;
-      margin-left: 1rem;
+      margin-left: $component-inner-spacing;
     }
   }
 }

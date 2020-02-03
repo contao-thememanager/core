@@ -15,7 +15,7 @@
     }
 
     &.tns-vertical > div {
-      padding: 0 1rem 1rem;
+      padding: 0 divide($grid-gutter-width, 2) divide($grid-gutter-width, 2);
     }
   }
 }

@@ -3,44 +3,44 @@
 
   &:before {
     @include icon(attr(data-icon));
-    font-size: 4rem; // config
-    height: 4rem; // config
-    width: 4rem; // config
+    font-size: $icon-size-medium;
+    height: $icon-size-medium;
+    width: $icon-size-medium;
   }
 
   &.size-tiny:before {
-    font-size: 2rem; // config
-    height: 2rem; // config
-    width: 2rem; // config
+    font-size: $icon-size-tiny;
+    height: $icon-size-tiny;
+    width: $icon-size-tiny;
   }
 
   &.size-small:before {
-    font-size: 3rem; // config
-    height: 3rem; // config
-    width: 3rem; // config
+    font-size: $icon-size-small;
+    height: $icon-size-small;
+    width: $icon-size-small;
   }
 
   &.size-large:before {
-    font-size: 5rem; // config
-    height: 5rem; // config
-    width: 5rem; // config
+    font-size: $icon-size-large;
+    height: $icon-size-large;
+    width: $icon-size-large;
   }
 
   &.size-super:before {
-    font-size: 6rem; // config
-    height: 6rem; // config
-    width: 6rem; // config
+    font-size: $icon-size-super;
+    height: $icon-size-super;
+    width: $icon-size-super;
   }
 
   &.design-filled {
     background: $text-color-regular;
     color: $text-color-invert;
-    padding: 1.5rem; // config
+    padding: $icon-shape-spacing;
   }
 
   &.design-outlined {
     box-shadow: inset 0 0 0 2px $text-color-regular;
-    padding: 1.5rem; // config
+    padding: $icon-shape-spacing;
   }
 
   &.circle {
@@ -56,7 +56,7 @@
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $primary;
+      box-shadow: inset 0 0 0 $icon-outlined-width $primary;
     }
   }
 
@@ -69,7 +69,7 @@
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $secondary;
+      box-shadow: inset 0 0 0 $icon-outlined-width $secondary;
     }
   }
 
@@ -82,7 +82,7 @@
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $text-color-regular;
+      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-regular;
     }
   }
 
@@ -95,7 +95,7 @@
     }
 
     &.design-outlined {
-      box-shadow: inset 0 0 0 2px $text-color-invert;
+      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-invert;
     }
   }
 }

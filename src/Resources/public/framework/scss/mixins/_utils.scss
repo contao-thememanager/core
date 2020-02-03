@@ -6,3 +6,81 @@
 @function divide($a, $b) {
   @return $a / $b;
 }
+
+@function multiply($a, $b) {
+  @return $a * $b;
+}
+
+@function parse($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@function sum($a, $b, $f: 'rem') {
+  @if(unit($a) == 'px') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return $a + $b;
+    }
+    @else if ($f == 'rem') {
+      @return unquote("#{(parse($a) + parse($b)) / $browser-context}rem");
+    }
+  }
+  @else if(unit($a) == 'px') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return $a + (parse($b) * $browser-context);
+    }
+    @else if ($f == 'rem') {
+      @return (parse($a) / $browser-context) + $b;
+    }
+  }
+  @else if(unit($a) == 'rem') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return (parse($a) * $browser-context) + $b;
+    }
+    @else if ($f == 'rem') {
+      @return $a + (parse($b) / $browser-context);
+    }
+  }
+  @else if(unit($a) == 'rem') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return unquote("#{(parse($a) + parse($b)) * $browser-context}px");
+    }
+    @else if ($f == 'rem') {
+      @return $a + $b;
+    }
+  }
+}
+
+@function sub($a, $b, $f: 'rem') {
+  @if(unit($a) == 'px') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return $a - $b;
+    }
+    @else if ($f == 'rem') {
+      @return unquote("#{(parse($a) - parse($b)) / $browser-context}rem");
+    }
+  }
+  @else if(unit($a) == 'px') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return $a - (parse($b) * $browser-context);
+    }
+    @else if ($f == 'rem') {
+      @return (parse($a) / $browser-context) - $b;
+    }
+  }
+  @else if(unit($a) == 'rem') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return (parse($a) * $browser-context) - $b;
+    }
+    @else if ($f == 'rem') {
+      @return $a - (parse($b) / $browser-context);
+    }
+  }
+  @else if(unit($a) == 'rem') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return unquote("#{(parse($a) - parse($b)) * $browser-context}px");
+    }
+    @else if ($f == 'rem') {
+      @return $a - $b;
+    }
+  }
+}

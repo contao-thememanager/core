@@ -13,10 +13,13 @@ $text-color-extra:                    $primary !default;
 $browser-context:                     16 !default;
 
 // Typography
-$font-family-base:                    "Raleway", Arial, sans-serif !default;
+$font-family-base:                    Arial, sans-serif !default;
 $font-size-base:                      #{$browser-context}px !default;
-$line-height-base:                    1.5 !default;
 
+$line-height-base:                    1.5 !default;
+$line-height-headline:                1.2 !default;
+
+$font-weight-base:                    400 !default;
 $font-weight-light:                   300 !default;
 $font-weight-regular:                 400 !default;
 $font-weight-medium:                  500 !default;
@@ -58,14 +61,12 @@ $h4-color:                            $text-color-regular !default;
 $h5-color:                            $text-color-regular !default;
 $h6-color:                            $text-color-regular !default;
 
-$h1-letter-spacing:                   0em !default;
-$h2-letter-spacing:                   0em !default;
-$h3-letter-spacing:                   0em !default;
-$h4-letter-spacing:                   0em !default;
-$h5-letter-spacing:                   0em !default;
-$h6-letter-spacing:                   0em !default;
-
-$headings-line-height:                1.2 !default;
+$h1-letter-spacing:                   0rem !default;
+$h2-letter-spacing:                   0rem !default;
+$h3-letter-spacing:                   0rem !default;
+$h4-letter-spacing:                   0rem !default;
+$h5-letter-spacing:                   0rem !default;
+$h6-letter-spacing:                   0rem !default;
 
 $link-color-regular:                  $primary !default;
 $link-hover-color-regular:            darken($link-color-regular, 15%) !default;
@@ -77,33 +78,50 @@ $link-hover-color-invert:             $text-color-invert !default;
 $link-decoration-invert:              underline !default;
 $link-hover-decoration-invert:        none !default;
 
-$link-color-extra:                    red !default;
-$link-hover-color-extra:              green !default;
+$link-color-extra:                    #3bc !default;
+$link-hover-color-extra:              darken($link-color-extra, 15%) !default;
 $link-decoration-extra:               none !default;
-$link-hover-decoration-extra:         underline !default;
+$link-hover-decoration-extra:         none !default;
 
-$font-weight-base:                    $font-weight-regular !default;
+$strong-font-weight:                  $font-weight-bold !default;
 
-// Headline-Spacing
-$headline-spacing-small:              15px !default;
-$headline-spacing-s-small:            30px !default;
-$headline-spacing-l-small:            50px !default;
+$paragraph-spacing:                   1rem !default;
+$headline-spacing:                    1rem !default;
 
-$headline-spacing-medium:             15px !default;
-$headline-spacing-s-medium:           40px !default;
-$headline-spacing-l-medium:           90px !default;
+// Responsive Headline-Spacings
+$headline-spacing-small:              1rem !default;
+$headline-spacing-s-small:            2rem !default;
+$headline-spacing-l-small:            4rem !default;
 
-$headline-spacing-large:              15px !default;
-$headline-spacing-s-large:            70px !default;
-$headline-spacing-l-large:            110px !default;
+$headline-spacing-medium:             1rem !default;
+$headline-spacing-s-medium:           2.5rem !default;
+$headline-spacing-l-medium:           5rem !default;
+
+$headline-spacing-large:              1rem !default;
+$headline-spacing-s-large:            3rem !default;
+$headline-spacing-l-large:            6rem !default;
+
+$x-spacing-large-m:                   900px !default;
+$x-spacing-large-l:                   1100px !default;
+$x-spacing-small:                     1400px !default;
+
+// Icons
+$icon-size-tiny:                      2rem !default;
+$icon-size-small:                     3rem !default;
+$icon-size-medium:                    4rem !default;
+$icon-size-large:                     5rem !default;
+$icon-size-super:                     6rem !default;
+
+$icon-shape-spacing:                  1.5rem !default;
+$icon-outlined-width:                 2px !default;
 
 // Breakpoints
 $breakpoints: (
-    xs: 600px,
-    s:  768px,
-    m:  1024px,
-    l:  1230px,
-    xl: 1920px
+    xs: 600px,  // 37.5rem
+    s:  768px,  // 48 rem
+    m:  1024px, // 64rem
+    l:  1230px, // 76rem
+    xl: 1920px  // 120rem
 ) !default;
 
 // Layout
@@ -115,9 +133,9 @@ $layout-column-width-small:           200px !default;
 $layout-column-width-medium:          300px !default;
 $layout-column-width-large:           330px !default;
 
-$layout-column-gutter-small:          20px !default;
-$layout-column-gutter-medium:         30px !default;
-$layout-column-gutter-large:          40px !default;
+$layout-column-gutter-small:          1rem !default;
+$layout-column-gutter-medium:         2rem !default;
+$layout-column-gutter-large:          3rem !default;
 
 // Grid
 $grid-columns:                        12 !default;
@@ -183,23 +201,34 @@ $divider-style:                       solid;
 $divider-color:                       #ccc;
 
 // Article
-$article-spacing-xs-small:            30px !default;
-$article-spacing-s-small:             30px !default;
-$article-spacing-m-small:             30px !default;
-$article-spacing-l-small:             30px !default;
+$article-spacing-xs-small:            2rem !default;
+$article-spacing-s-small:             2rem !default;
+$article-spacing-m-small:             2rem !default;
+$article-spacing-l-small:             2rem !default;
 $article-spacing-xl-small:            $article-spacing-l-small !default;
 
-$article-spacing-xs-medium:           30px !default;
-$article-spacing-s-medium:            30px !default;
-$article-spacing-m-medium:            60px !default;
-$article-spacing-l-medium:            90px !default;
+$article-spacing-xs-medium:           2rem !default;
+$article-spacing-s-medium:            2rem !default;
+$article-spacing-m-medium:            4rem !default;
+$article-spacing-l-medium:            6rem !default;
 $article-spacing-xl-medium:           $article-spacing-l-medium !default;
 
-$article-spacing-xs-large:            30px !default;
-$article-spacing-s-large:             50px !default;
-$article-spacing-m-large:             80px !default;
-$article-spacing-l-large:             150px !default;
+$article-spacing-xs-large:            2rem !default;
+$article-spacing-s-large:             3rem !default;
+$article-spacing-m-large:             6rem !default;
+$article-spacing-l-large:             10rem !default;
 $article-spacing-xl-large:            $article-spacing-l-large !default;
+
+// Boxed
+$boxed-background-color:              $body-bg !default;
+$boxed-spacing:                       1rem !default;
+$boxed-border-color:                  #e3e3e3 !default;
+$boxed-border-style:                  solid !default;
+$boxed-border-width:                  1px !default;
+$boxed-border-radius:                 0 !default;
+
+// Components
+$component-inner-spacing:             1rem !default;
 
 // Tiny Slider
 $tns-dot-size:                        12px !default;
