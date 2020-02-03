@@ -1,4 +1,3 @@
-// Designs
 .hl-design-lined{
   position: relative;
   padding-bottom: $headline-spacing-small;
@@ -31,36 +30,7 @@
   }
 }
 
-// Color
-.text-color-invert {
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $text-color-invert;
-  }
-
-  .hl-design-lined:after{
-    background-color: $text-color-invert;
-  }
-}
-
-.text-color-regular {
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $text-color-regular;
-  }
-
-  .hl-design-lined:after{
-    background-color: $text-color-regular;
-  }
-}
-
-// Spacings
-.hl-spacing-global-small{
-  margin-bottom: $headline-spacing-small;
-}
-
 .hl-spacing-global-medium{
-  margin-bottom: $headline-spacing-medium;
 
   &.hl-design-lined {
     padding-bottom: $headline-spacing-small;
@@ -68,7 +38,6 @@
 }
 
 .hl-spacing-global-large{
-  margin-bottom: $headline-spacing-large;
 
   &.hl-design-lined {
     padding-bottom: $headline-spacing-large;
@@ -76,7 +45,6 @@
 }
 
 .hl-spacing-small{
-  margin-bottom: $headline-spacing-medium;
 
   &.hl-design-lined {
     padding-bottom: $headline-spacing-medium;
@@ -84,7 +52,6 @@
 }
 
 .hl-spacing-medium{
-  margin-bottom: $headline-spacing-s-medium;
 
   &.hl-design-lined {
     padding-bottom: $headline-spacing-s-medium;
@@ -92,7 +59,6 @@
 }
 
 .hl-spacing-large{
-  margin-bottom: $headline-spacing-l-medium;
 
   &.hl-design-lined {
     padding-bottom: $headline-spacing-l-medium;
@@ -102,7 +68,6 @@
 .hl-spacing-global-small{
 
   &.hl-spacing-small{
-    margin-bottom: $headline-spacing-small;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-small;
@@ -110,7 +75,6 @@
   }
 
   &.hl-spacing-medium{
-    margin-bottom: $headline-spacing-s-small;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-small;
@@ -118,7 +82,6 @@
   }
 
   &.hl-spacing-large{
-    margin-bottom: $headline-spacing-l-small;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-small;
@@ -129,7 +92,6 @@
 .hl-spacing-global-medium{
 
   &.hl-spacing-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -137,7 +99,6 @@
   }
 
   &.hl-spacing-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -145,7 +106,6 @@
   }
 
   &.hl-spacing-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -156,7 +116,6 @@
 .hl-spacing-global-large{
 
   &.hl-spacing-small{
-    margin-bottom: $headline-spacing-large;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-large;
@@ -164,7 +123,6 @@
   }
 
   &.hl-spacing-medium{
-    margin-bottom: $headline-spacing-s-large;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-large;
@@ -172,7 +130,6 @@
   }
 
   &.hl-spacing-large{
-    margin-bottom: $headline-spacing-l-large;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-large;
@@ -180,14 +137,9 @@
   }
 }
 
-div[class*="hl-spacing"] > *:last-child{
-    margin-bottom: 0;
-}
-
 @include media-breakpoint('xs') {
 
   .hl-spacing-xs-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -195,7 +147,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-xs-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -203,7 +154,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-xs-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -213,7 +163,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-small{
 
     &.hl-spacing-xs-small{
-      margin-bottom: $headline-spacing-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-small;
@@ -221,7 +170,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-medium{
-      margin-bottom: $headline-spacing-s-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-small;
@@ -229,7 +177,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-large{
-      margin-bottom: $headline-spacing-l-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-small;
@@ -240,7 +187,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-medium{
 
     &.hl-spacing-xs-small{
-      margin-bottom: $headline-spacing-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-medium;
@@ -248,7 +194,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-medium{
-      margin-bottom: $headline-spacing-s-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-medium;
@@ -256,7 +201,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-large{
-      margin-bottom: $headline-spacing-l-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-medium;
@@ -267,7 +211,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-large{
 
     &.hl-spacing-xs-small{
-      margin-bottom: $headline-spacing-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-large;
@@ -275,7 +218,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-medium{
-      margin-bottom: $headline-spacing-s-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-large;
@@ -283,7 +225,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xs-large{
-      margin-bottom: $headline-spacing-l-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-large;
@@ -295,7 +236,6 @@ div[class*="hl-spacing"] > *:last-child{
 @include media-breakpoint('s') {
 
   .hl-spacing-global-small{
-    margin-bottom: $headline-spacing-s-small;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-small;
@@ -303,7 +243,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-global-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -311,7 +250,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-global-large{
-    margin-bottom: $headline-spacing-s-large;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-large;
@@ -319,7 +257,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-s-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -327,7 +264,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-s-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -335,7 +271,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-s-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -345,7 +280,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-small{
 
     &.hl-spacing-s-small{
-      margin-bottom: $headline-spacing-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-small;
@@ -353,7 +287,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-medium{
-      margin-bottom: $headline-spacing-s-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-small;
@@ -361,7 +294,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-large{
-      margin-bottom: $headline-spacing-l-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-small;
@@ -372,7 +304,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-medium{
 
     &.hl-spacing-s-small{
-      margin-bottom: $headline-spacing-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-medium;
@@ -380,7 +311,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-medium{
-      margin-bottom: $headline-spacing-s-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-medium;
@@ -388,7 +318,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-large{
-      margin-bottom: $headline-spacing-l-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-medium;
@@ -399,7 +328,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-large{
 
     &.hl-spacing-s-small{
-      margin-bottom: $headline-spacing-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-large;
@@ -407,7 +335,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-medium{
-      margin-bottom: $headline-spacing-s-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-large;
@@ -415,7 +342,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-s-large{
-      margin-bottom: $headline-spacing-l-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-large;
@@ -427,7 +353,6 @@ div[class*="hl-spacing"] > *:last-child{
 @include media-breakpoint('m') {
 
   .hl-spacing-m-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -435,7 +360,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-m-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -443,7 +367,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-m-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -453,7 +376,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-small{
 
     &.hl-spacing-m-small{
-      margin-bottom: $headline-spacing-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-small;
@@ -461,7 +383,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-medium{
-      margin-bottom: $headline-spacing-s-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-small;
@@ -469,7 +390,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-large{
-      margin-bottom: $headline-spacing-l-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-small;
@@ -480,7 +400,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-medium{
 
     &.hl-spacing-m-small{
-      margin-bottom: $headline-spacing-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-medium;
@@ -488,7 +407,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-medium{
-      margin-bottom: $headline-spacing-s-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-medium;
@@ -496,7 +414,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-large{
-      margin-bottom: $headline-spacing-l-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-medium;
@@ -507,7 +424,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-large{
 
     &.hl-spacing-m-small{
-      margin-bottom: $headline-spacing-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-large;
@@ -515,7 +431,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-medium{
-      margin-bottom: $headline-spacing-s-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-large;
@@ -523,7 +438,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-m-large{
-      margin-bottom: $headline-spacing-l-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-large;
@@ -535,7 +449,6 @@ div[class*="hl-spacing"] > *:last-child{
 @include media-breakpoint('l') {
 
   .hl-spacing-global-small{
-    margin-bottom: $headline-spacing-l-small;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-small;
@@ -543,7 +456,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-global-medium{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -551,7 +463,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-global-large{
-    margin-bottom: $headline-spacing-l-large;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-large;
@@ -559,7 +470,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-l-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -567,7 +477,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-l-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -575,7 +484,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-l-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -585,7 +493,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-small{
 
     &.hl-spacing-l-small{
-      margin-bottom: $headline-spacing-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-small;
@@ -593,7 +500,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-medium{
-      margin-bottom: $headline-spacing-s-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-small;
@@ -601,7 +507,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-large{
-      margin-bottom: $headline-spacing-l-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-small;
@@ -612,7 +517,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-medium{
 
     &.hl-spacing-l-small{
-      margin-bottom: $headline-spacing-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-medium;
@@ -620,7 +524,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-medium{
-      margin-bottom: $headline-spacing-s-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-medium;
@@ -628,7 +531,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-large{
-      margin-bottom: $headline-spacing-l-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-medium;
@@ -639,7 +541,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-large{
 
     &.hl-spacing-l-small{
-      margin-bottom: $headline-spacing-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-large;
@@ -647,7 +548,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-medium{
-      margin-bottom: $headline-spacing-s-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-large;
@@ -655,7 +555,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-l-large{
-      margin-bottom: $headline-spacing-l-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-large;
@@ -667,7 +566,6 @@ div[class*="hl-spacing"] > *:last-child{
 @include media-breakpoint('xl') {
 
   .hl-spacing-xl-small{
-    margin-bottom: $headline-spacing-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-medium;
@@ -675,7 +573,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-xl-medium{
-    margin-bottom: $headline-spacing-s-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-s-medium;
@@ -683,7 +580,6 @@ div[class*="hl-spacing"] > *:last-child{
   }
 
   .hl-spacing-xl-large{
-    margin-bottom: $headline-spacing-l-medium;
 
     &.hl-design-lined {
       padding-bottom: $headline-spacing-l-medium;
@@ -693,7 +589,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-small{
 
     &.hl-spacing-xl-small{
-      margin-bottom: $headline-spacing-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-small;
@@ -701,7 +596,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-medium{
-      margin-bottom: $headline-spacing-s-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-small;
@@ -709,7 +603,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-large{
-      margin-bottom: $headline-spacing-l-small;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-small;
@@ -720,7 +613,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-medium{
 
     &.hl-spacing-xl-small{
-      margin-bottom: $headline-spacing-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-medium;
@@ -728,7 +620,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-medium{
-      margin-bottom: $headline-spacing-s-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-medium;
@@ -736,7 +627,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-large{
-      margin-bottom: $headline-spacing-l-medium;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-medium;
@@ -747,7 +637,6 @@ div[class*="hl-spacing"] > *:last-child{
   .hl-spacing-global-large{
 
     &.hl-spacing-xl-small{
-      margin-bottom: $headline-spacing-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-large;
@@ -755,7 +644,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-medium{
-      margin-bottom: $headline-spacing-s-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-s-large;
@@ -763,7 +651,6 @@ div[class*="hl-spacing"] > *:last-child{
     }
 
     &.hl-spacing-xl-large{
-      margin-bottom: $headline-spacing-l-large;
 
       &.hl-design-lined {
         padding-bottom: $headline-spacing-l-large;

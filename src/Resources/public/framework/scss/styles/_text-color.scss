@@ -1,0 +1,96 @@
+.text-color-invert {
+
+  @include headings {
+    color: $text-color-invert;
+  }
+
+  p {
+    color: $text-color-invert;
+  }
+
+  a {
+    color: $link-color-invert;
+    text-decoration: $link-decoration-invert;
+
+    &:hover {
+      color: $link-hover-color-invert;
+      text-decoration: $link-hover-decoration-invert;
+    }
+  }
+
+  .icon {
+    color: $text-color-invert;
+  }
+
+  .hl-design-lined:after{
+    background-color: $text-color-invert;
+  }
+}
+
+.text-color-regular {
+
+  @include headings {
+    color: $text-color-regular;
+  }
+
+  p {
+    color: $text-color-regular;
+  }
+
+  a {
+    color: $link-color-regular;
+    text-decoration: $link-decoration-regular;
+
+    &:hover {
+      color: $link-hover-color-regular;
+      text-decoration: $link-hover-decoration-regular;
+    }
+  }
+
+  .icon {
+    color: $text-color-regular;
+  }
+
+  .hl-design-lined:after{
+    background-color: $text-color-regular;
+  }
+}
+
+.link-color-invert {
+
+  a {
+    color: $link-color-invert;
+    text-decoration: $link-decoration-invert;
+
+    &:hover {
+      color: $link-hover-color-invert;
+      text-decoration: $link-hover-decoration-invert;
+    }
+  }
+}
+
+.link-color-extra {
+
+  a {
+    color: $link-color-extra;
+    text-decoration: $link-decoration-extra;
+
+    &:hover {
+      color: $link-hover-color-extra;
+      text-decoration: $link-hover-decoration-extra;
+    }
+  }
+}
+
+.link-color-regular {
+
+  a {
+    color: $link-color-regular;
+    text-decoration: $link-decoration-regular;
+
+    &:hover {
+      color: $link-hover-color-regular;
+      text-decoration: $link-hover-decoration-regular;
+    }
+  }
+}

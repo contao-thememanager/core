@@ -1,12 +1,15 @@
 $body-bg:                             #fff !default;
 
-$text-color-regular:                  #000 !default;
-$text-color-invert:                   #fff !default;
-
 $primary:                             #36c !default;
 $secondary:                           #9cf !default;
+$light:                               #f3f3f3 !default;
+$dark:                                #2b2b2b !default;
 
-// Defaults
+$text-color-regular:                  #000 !default;
+$text-color-invert:                   #fff !default;
+$text-color-extra:                    $primary !default;
+
+  // Defaults
 $browser-context:                     16 !default;
 
 // Typography
