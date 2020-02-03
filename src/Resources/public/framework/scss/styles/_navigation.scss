@@ -14,8 +14,9 @@
 
   a, strong {
     display: block;
-    padding: .5rem 1rem;
-    font-weight: 400;
+    font-size: $navigation-item-font-size;
+    font-weight: $navigation-item-font-weight;
+    padding: $navigation-item-padding;
     white-space: nowrap;
   }
 

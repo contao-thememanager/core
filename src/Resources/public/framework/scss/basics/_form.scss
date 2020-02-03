@@ -20,7 +20,7 @@ select {
     color: #000;
 
     &[disabled]{
-      color: #858585;
+      color: $form-input-color-disabled;
     }
   }
 }
@@ -75,7 +75,7 @@ select, input, textarea {
 }
 
 select, input{
-  height: 44px;
+  height: $form-input-height;
 }
 
 textarea {
@@ -118,7 +118,6 @@ textarea {
   }
 
   &.widget-textarea{
-
 
     &.mandatory:after {
       bottom: 20px;

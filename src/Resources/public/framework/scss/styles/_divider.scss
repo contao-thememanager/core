@@ -1,11 +1,15 @@
 .divider {
 
   &-top {
-    border-top: 1px solid #ccc;
+    border-width: $divider-size 0 0 0;
+    border-style: $divider-style;
+    border-color: $divider-color;
   }
 
   &-bottom {
-    border-bottom: 1px solid #ccc;
+    border-width: 0 0 $divider-size 0;
+    border-style: $divider-style;
+    border-color: $divider-color;
   }
 }
 
@@ -17,10 +21,10 @@
 
       &:before, &:after {
         position: absolute;
-        height: 1px;
+        height: $divider-size;
         left: divide($grid-gutter-width, 2);
         right: divide($grid-gutter-width, 2);
-        background-color: #ccc;
+        background-color: $divider-color;
       }
     }
   }
