@@ -2,6 +2,10 @@
   margin-top: 0;
   margin-bottom: $headline-spacing;
   line-height: $line-height-headline;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h1, .h1 {

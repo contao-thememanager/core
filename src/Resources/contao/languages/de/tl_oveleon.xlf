@@ -69,6 +69,10 @@
         <source>Navigation</source>
         <target>Navigation</target>
       </trans-unit>
+      <trans-unit id="tl_oveleon.misc_legend">
+        <source>Misc</source>
+        <target>Sonstiges</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
