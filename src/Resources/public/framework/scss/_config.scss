@@ -106,6 +106,8 @@ $x-spacing-large-l:                   1100px !default;
 $x-spacing-small:                     1400px !default;
 
 // Icons
+$icon-font-family:                    'fontello' !default;
+
 $icon-size-tiny:                      2rem !default;
 $icon-size-small:                     3rem !default;
 $icon-size-medium:                    4rem !default;
@@ -192,8 +194,29 @@ $form-input-explanation-font-size:    $font-size-base !default;
 $form-input-mandatory-symbol-color:   #ccc !default;
 $form-input-symbol-color:             $primary !default;
 
-// Icon
-$icon-font-family:                    'fontello' !default;
+// Button
+$button-font-size-small:              1rem;
+$button-font-size-medium:             1rem;
+$button-font-size-large:              1rem;
+$button-font-size-super:              rem(18);
+
+$button-padding-small:                .5rem 1rem;
+$button-padding-medium:               .75rem 1.5rem;
+$button-padding-large:                1rem 2rem;
+$button-padding-super:                1.5rem 3rem;
+
+$button-background-regular:           $primary !default;
+$button-color-regular:                $text-color-invert !default;
+$button-hover-background-regular:     darken($button-background-regular, 10) !default;
+$button-hover-color-regular:          $text-color-invert !default;
+
+$button-background-alt:               transparent !default;
+$button-color-alt:                    $primary !default;
+$button-hover-background-alt:         $primary !default;
+$button-hover-color-alt:              $text-color-invert !default;
+
+$button-border-radius:                0 !default;
+$button-border-width:                 2px !default;
 
 // Divider
 $divider-size:                        1px;
@@ -221,7 +244,7 @@ $article-spacing-xl-large:            $article-spacing-l-large !default;
 
 // Boxed
 $boxed-background-color:              $body-bg !default;
-$boxed-spacing:                       1rem !default;
+$boxed-padding:                       1rem !default;
 $boxed-border-color:                  #e3e3e3 !default;
 $boxed-border-style:                  solid !default;
 $boxed-border-width:                  1px !default;
