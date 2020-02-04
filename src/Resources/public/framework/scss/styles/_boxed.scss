@@ -1,13 +1,15 @@
 .boxed {
 
   > .inside {
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 0;
-    padding: 1rem;
+    background-color: $boxed-background-color;
+    border-color: $boxed-border-color;
+    border-radius: $boxed-border-radius;
+    border-style: $boxed-border-style;
+    border-width: $boxed-border-width;
+    padding: $boxed-padding;
   }
 
   .grid-list {
-    margin: 0 -1rem -2rem;
+    margin: 0 -#{divide($grid-gutter-width, 2)} -#{$grid-gutter-bottom};
   }
 }

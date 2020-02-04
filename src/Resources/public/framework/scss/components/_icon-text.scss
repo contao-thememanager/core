@@ -7,7 +7,7 @@
   &.layout-top {
 
     .c_icon {
-      margin-bottom: 1rem;
+      margin-bottom: $component-inner-spacing;
     }
   }
 
@@ -18,7 +18,7 @@
     }
 
     .c_icon {
-      margin-right: 1rem;
+      margin-right: $component-inner-spacing;
     }
   }
 
@@ -30,7 +30,7 @@
     }
 
     .c_icon {
-      margin-left: 1rem;
+      margin-left: $component-inner-spacing;
     }
   }
 
@@ -38,7 +38,7 @@
 
     .c_icon {
       float: left;
-      margin-right: 1rem;
+      margin-right: $component-inner-spacing;
     }
   }
 
@@ -46,7 +46,7 @@
 
     .c_icon {
       float: right;
-      margin-left: 1rem;
+      margin-left: $component-inner-spacing;
     }
   }
 }
