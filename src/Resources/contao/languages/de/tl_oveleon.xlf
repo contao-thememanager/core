@@ -1,0 +1,42 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_oveleon.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_oveleon.default_legend">
+        <source>Base-Settings</source>
+        <target>Grundeinstellungen</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.color_legend">
+        <source>Base-Colors</source>
+        <target>Grundfarben</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.font_legend">
+        <source>Fonts</source>
+        <target>Schrift</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.headings_legend">
+        <source>Headings</source>
+        <target>Überschriften</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.heading_spacing_legend">
+        <source>Heading-Spacing</source>
+        <target>Überschriften Abstand</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.link_legend">
+        <source>Links</source>
+        <target>Links</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.layout_legend">
+        <source>Layout</source>
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.grid_legend">
+        <source>Grid</source>
+        <target>Grid</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.form_legend">
+        <source>Form</source>
+        <target>Formular</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
