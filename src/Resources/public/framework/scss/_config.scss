@@ -7,7 +7,6 @@ $dark:                                #2b2b2b !default;
 
 $text-color-regular:                  #000 !default;
 $text-color-invert:                   #fff !default;
-$text-color-extra:                    $primary !default;
 
 // Defaults
 $browser-context:                     16 !default;
@@ -68,6 +67,7 @@ $h4-letter-spacing:                   0rem !default;
 $h5-letter-spacing:                   0rem !default;
 $h6-letter-spacing:                   0rem !default;
 
+// Links
 $link-color-regular:                  $primary !default;
 $link-hover-color-regular:            darken($link-color-regular, 15%) !default;
 $link-decoration-regular:             none !default;
