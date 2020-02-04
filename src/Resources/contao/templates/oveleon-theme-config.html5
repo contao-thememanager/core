@@ -3,13 +3,22 @@ return array(
     'palettes' => array(
         'default'  => '{default_legend:hide},browser-context,body-bg;' .
                       '{color_legend:hide},primary,secondary,light,dark;' .
-                      '{font_legend:hide},font-family-base,font-size-base,line-height-base,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,text-color-regular,text-color-invert;' .
+                      '{font_legend:hide},font-family-base,font-size-base,line-height-base,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,text-color-regular,text-color-invert,paragraph-spacing,strong-font-weight;' .
                       '{headings_legend:hide},headings-line-height,h1-font-size-small,h2-font-size-small,h3-font-size-small,h4-font-size-small,h5-font-size-small,h6-font-size-small,h1-font-size-medium,h2-font-size-medium,h3-font-size-medium,h4-font-size-medium,h5-font-size-medium,h6-font-size-medium,h1-font-size,h2-font-size,h3-font-size,h4-font-size,h5-font-size,h6-font-size,h1-font-weight,h2-font-weight,h3-font-weight,h4-font-weight,h5-font-weight,h6-font-weight,h1-color,h2-color,h3-color,h4-color,h5-color,h6-color,h1-letter-spacing,h2-letter-spacing,h3-letter-spacing,h4-letter-spacing,h5-letter-spacing,h6-letter-spacing;' .
-                      '{heading_spacing_legend:hide},headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
+                      '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
                       '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
                       '{layout_legend:hide},breakpoints,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
+                      '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
                       '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
-                      '{form_legend:hide},form-grid-gutter-width,form-grid-gutter-bottom,form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;'
+                      '{form_legend:hide},form-grid-gutter-width,form-grid-gutter-bottom,form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
+                      '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
+                      '{button_legend:hide},button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super,button-background-regular,button-color-regular,button-hover-background-regular,button-hover-color-regular,button-background-alt,button-color-alt,button-hover-background-alt,button-hover-color-alt,button-border-radius,button-border-width;' .
+                      '{divider_legend:hide},divider-size,divider-style,divider-color;' .
+                      '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
+                      '{component_legend:hide},component-inner-spacing;' .
+                      '{tns_legend:hide},tns-dot-size,tns-dot-spacing,tns-controls-outer-offset,tns-color-regular,tns-color-regular-active,tns-color-invert,tns-color-invert-active,tns-color-extra,tns-color-extra-active;' .
+                      '{nav_legend:hide},navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
+                      '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
     ),
     'fields'   => array(
 
@@ -118,6 +127,19 @@ return array(
         'font-weight-base' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['font-weight-base'],
+            'inputType'               => 'text',
+            'eval'                    => array('rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'paragraph-spacing' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['paragraph-spacing'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'strong-font-weight' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['strong-font-weight'],
             'inputType'               => 'text',
             'eval'                    => array('rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
@@ -377,6 +399,13 @@ return array(
         ),
 
         // Heading Spacing
+        'headline-spacing' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['headline-spacing'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
         'headline-spacing-small' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['headline-spacing-small'],
@@ -436,6 +465,137 @@ return array(
         'headline-spacing-l-large' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['headline-spacing-l-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        // Article Spacing
+        'x-spacing-large-m' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['x-spacing-large-m'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'x-spacing-large-l' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['x-spacing-large-l'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'x-spacing-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['x-spacing-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'article-spacing-xs-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xs-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'article-spacing-s-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-s-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-m-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-m-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-l-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-l-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-xl-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xl-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'article-spacing-xs-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xs-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'article-spacing-s-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-s-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-m-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-m-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-l-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-l-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-xl-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xl-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'article-spacing-xs-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xs-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'article-spacing-s-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-s-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-m-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-m-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-l-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-l-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'article-spacing-xl-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['article-spacing-xl-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
@@ -593,6 +753,63 @@ return array(
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
 
+        // Icons
+        'icon-font-family' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-font-family'],
+            'inputType'               => 'text',
+            'eval'                    => array('rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'icon-size-tiny' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-tiny'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'icon-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'icon-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'icon-size-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'icon-size-super' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-super'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'icon-shape-spacing' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-size-super'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'icon-outlined-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['icon-outlined-width'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
         // Form
         'form-grid-gutter-width' => array
         (
@@ -665,14 +882,14 @@ return array(
         ),
         'form-input-padding' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['form-input-padding'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-input-padding'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
         ),
         'form-input-border-radius' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['form-input-border-radius'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-input-border-radius'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
@@ -846,6 +1063,304 @@ return array(
             'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
 
+        // Button
+        'button-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-font-size-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-font-size-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-font-size-super' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-font-size-super'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'button-padding-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-padding-small'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-padding-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-padding-medium'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-padding-large' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-padding-large'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-padding-super' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-padding-super'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+
+        'button-background-regular' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-background-regular'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-color-regular' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-color-regular'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-background-regular' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-background-regular'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-color-regular' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-color-regular'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+
+        'button-background-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-background-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-color-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-background-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-background-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-color-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+
+        'button-border-radius' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-color-alt'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50 clr'),
+        ),
+        'button-border-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+
+        // Divider
+        'divider-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['divider-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'divider-style' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['divider-style'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('includeBlankOption'=>true, 'maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'divider-color' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['divider-color'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+
+        // Boxed
+        'boxed-background-color' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-background-color'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'boxed-padding' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'boxed-border-color' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-border-color'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'boxed-border-style' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-border-style'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('includeBlankOption'=>true, 'maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'boxed-border-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'boxed-border-radius' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['boxed-border-radius'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50 clr'),
+        ),
+
+        // Components
+        'component-inner-spacing' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['component-inner-spacing'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        // Tiny Slider
+        'tns-dot-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-dot-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'tns-dot-spacing' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-dot-spacing'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'tns-controls-outer-offset' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-controls-outer-offset'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'tns-color-regular' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-regular'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'tns-color-regular-active' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-regular-active'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'tns-color-invert' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-invert'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'tns-color-invert-active' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-invert-active'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'tns-color-extra' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-extra'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'tns-color-extra-active' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['tns-color-extra-active'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+
+        // Navigation
+        'navigation-item-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['navigation-item-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'navigation-item-font-weight' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['navigation-item-font-weight'],
+            'inputType'               => 'text',
+            'eval'                    => array('rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'navigation-item-padding' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['navigation-item-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+
+        // Misc
+        'box-shadow' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['text'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'selection-color' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['selection-color'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
+        ),
+        'selection-background-color' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['selection-background-color'],
+            'inputType'               => 'text',
+            'eval'                    => array('maxlength'=>6, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
 
         // Color 2
         'color2' => array
@@ -902,7 +1417,7 @@ return array(
         // Border Width / Padding
         'borderwidth' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['borderwidth'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['borderwidth'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
@@ -918,7 +1433,7 @@ return array(
         // Border Radius
         'borderradius' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['borderradius'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['borderradius'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
@@ -926,7 +1441,7 @@ return array(
         // Padding
         'padding' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_style']['padding'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['padding'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),

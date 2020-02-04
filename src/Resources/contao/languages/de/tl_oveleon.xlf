@@ -37,6 +37,38 @@
         <source>Form</source>
         <target>Formular</target>
       </trans-unit>
+      <trans-unit id="tl_oveleon.article_legend">
+        <source>Article</source>
+        <target>Artikel</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.icon_legend">
+        <source>Icon</source>
+        <target>Icon</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.button_legend">
+        <source>Button</source>
+        <target>Button</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.divider_legend">
+        <source>Divider</source>
+        <target>Linien</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.boxed_legend">
+        <source>Boxed</source>
+        <target>Box</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.component_legend">
+        <source>Component</source>
+        <target>Komponenten</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.tns_legend">
+        <source>Tiny-Slider</source>
+        <target>Tiny-Slider</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.nav_legend">
+        <source>Navigation</source>
+        <target>Navigation</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
