@@ -1,0 +1,198 @@
+.left-spacing-small .inside {
+  margin-left: $spacing-small;
+}
+
+.left-spacing-medium .inside {
+  margin-left: $spacing-medium;
+}
+
+.left-spacing-large .inside {
+  margin-left: $spacing-large;
+}
+
+.right-spacing-small .inside {
+  margin-right: $spacing-small;
+}
+
+.right-spacing-medium .inside {
+  margin-right: $spacing-medium;
+}
+
+.right-spacing-large .inside {
+  margin-right: $spacing-large;
+}
+
+@include media-breakpoint('xs') {
+
+  .left-spacing-xs-reset .inside {
+    margin-left: 0;
+  }
+
+  .left-spacing-xs-small .inside {
+    margin-left: $spacing-small;
+  }
+
+  .left-spacing-xs-medium .inside {
+    margin-left: $spacing-medium;
+  }
+
+  .left-spacing-xs-large .inside {
+    margin-left: $spacing-large;
+  }
+
+  .right-spacing-xs-reset .inside {
+    margin-right: 0;
+  }
+
+  .right-spacing-xs-small .inside {
+    margin-right: $spacing-small;
+  }
+
+  .right-spacing-xs-medium .inside {
+    margin-right: $spacing-medium;
+  }
+
+  .right-spacing-xs-large .inside {
+    margin-right: $spacing-large;
+  }
+}
+
+@include media-breakpoint('s') {
+
+  .left-spacing-s-reset .inside {
+    margin-left: 0;
+  }
+
+  .left-spacing-s-small .inside {
+    margin-left: $spacing-small;
+  }
+
+  .left-spacing-s-medium .inside {
+    margin-left: $spacing-medium;
+  }
+
+  .left-spacing-s-large .inside {
+    margin-left: $spacing-large;
+  }
+
+  .right-spacing-s-reset .inside {
+    margin-right: 0;
+  }
+
+  .right-spacing-s-small .inside {
+    margin-right: $spacing-small;
+  }
+
+  .right-spacing-s-medium .inside {
+    margin-right: $spacing-medium;
+  }
+
+  .right-spacing-s-large .inside {
+    margin-right: $spacing-large;
+  }
+}
+
+@include media-breakpoint('m') {
+
+  .left-spacing-m-reset .inside {
+    margin-left: 0;
+  }
+
+  .left-spacing-m-small .inside {
+    margin-left: $spacing-small;
+  }
+
+  .left-spacing-m-medium .inside {
+    margin-left: $spacing-medium;
+  }
+
+  .left-spacing-m-large .inside {
+    margin-left: $spacing-large;
+  }
+
+  .right-spacing-m-reset .inside {
+    margin-right: 0;
+  }
+
+  .right-spacing-m-small .inside {
+    margin-right: $spacing-small;
+  }
+
+  .right-spacing-m-medium .inside {
+    margin-right: $spacing-medium;
+  }
+
+  .right-spacing-m-large .inside {
+    margin-right: $spacing-large;
+  }
+}
+
+@include media-breakpoint('l') {
+
+  .left-spacing-l-reset .inside {
+    margin-left: 0;
+  }
+
+  .left-spacing-l-small .inside {
+    margin-left: $spacing-small;
+  }
+
+  .left-spacing-l-medium .inside {
+    margin-left: $spacing-medium;
+  }
+
+  .left-spacing-l-large .inside {
+    margin-left: $spacing-large;
+  }
+
+  .right-spacing-l-reset .inside {
+    margin-right: 0;
+  }
+
+  .right-spacing-l-small .inside {
+    margin-right: $spacing-small;
+  }
+
+  .right-spacing-l-medium .inside {
+    margin-right: $spacing-medium;
+  }
+
+  .right-spacing-l-large .inside {
+    margin-right: $spacing-large;
+  }
+}
+
+@include media-breakpoint('xl') {
+
+  .left-spacing-xl-reset .inside {
+    margin-left: 0;
+  }
+
+  .left-spacing-xl-small .inside {
+    margin-left: $spacing-small;
+  }
+
+  .left-spacing-xl-medium .inside {
+    margin-left: $spacing-medium;
+  }
+
+  .left-spacing-xl-large .inside {
+    margin-left: $spacing-large;
+  }
+
+  .right-spacing-xl-reset .inside {
+    margin-right: 0;
+  }
+
+  .right-spacing-xl-small .inside {
+    margin-right: $spacing-small;
+  }
+
+  .right-spacing-xl-medium .inside {
+    margin-right: $spacing-medium;
+  }
+
+  .right-spacing-xl-large .inside {
+    margin-right: $spacing-large;
+  }
+}
