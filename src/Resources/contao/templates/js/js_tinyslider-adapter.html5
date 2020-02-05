@@ -66,6 +66,7 @@
         let defaults = {
             controls: false,
             nav: false,
+            mouseDrag: true,
             controlsPosition: 'bottom',
             navPosition: 'bottom',
             autoplayPosition: 'bottom',
