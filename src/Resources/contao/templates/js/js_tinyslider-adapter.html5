@@ -3,8 +3,6 @@
     $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/contaooveleonthememanager/framework/assets/tiny-slider/tiny-slider.js';
 ?>
 
-<!--ToDo: Adding preset data-->
-
 <script>
     var extend = function () {
         // Variables
@@ -42,6 +40,19 @@
         return extended;
     };
 
+    var parseJSON = function(strJson){
+        try {
+            var o = JSON.parse(strJson);
+
+            if (o && typeof o === "object") {
+                return o;
+            }
+        }
+        catch (e) { }
+
+        return false;
+    };
+
     (function() {
         const tnsBreakpoints = {
             'slider':   0,
@@ -77,11 +88,15 @@
 
             // set preset
             if(config.hasOwnProperty('sliderConfig')){
-                let preset = JSON.parse(config.sliderConfig)['preset'];
+                let jsonConfig = parseJSON(config.sliderConfig);
 
-                // ToDo: Get vars from preset and set them as default settings
-                // set default settings by preset
-                // defaults = extend(true, defaults, preset);
+                if(jsonConfig && jsonConfig.hasOwnProperty('preset')){
+                    let preset = parseJSON(jsonConfig['preset']);
+
+                    if(preset){
+                        defaults = extend(true, defaults, preset);
+                    }
+                }
 
                 // delete from dataset
                 delete config['sliderConfig'];
