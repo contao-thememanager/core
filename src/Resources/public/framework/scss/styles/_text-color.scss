@@ -1,7 +1,27 @@
 .text-color-invert {
 
-  @include headings {
-    color: $text-color-invert;
+  h1, .h1 {
+    color: $h1-color-invert;
+  }
+
+  h2, .h2 {
+    color: $h2-color-invert;
+  }
+
+  h3, .h3 {
+    color: $h3-color-invert;
+  }
+
+  h4, .h4 {
+    color: $h4-color-invert;
+  }
+
+  h5, .h5 {
+    color: $h5-color-invert;
+  }
+
+  h6, .h6 {
+    color: $h6-color-invert;
   }
 
   p {
@@ -29,8 +49,28 @@
 
 .text-color-regular {
 
-  @include headings {
-    color: $text-color-regular;
+  h1, .h1 {
+    color: $h1-color;
+  }
+
+  h2, .h2 {
+    color: $h2-color;
+  }
+
+  h3, .h3 {
+    color: $h3-color;
+  }
+
+  h4, .h4 {
+    color: $h4-color;
+  }
+
+  h5, .h5 {
+    color: $h5-color;
+  }
+
+  h6, .h6 {
+    color: $h6-color;
   }
 
   p {

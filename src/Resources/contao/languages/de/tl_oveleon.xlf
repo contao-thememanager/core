@@ -49,6 +49,10 @@
         <source>Button</source>
         <target>Button</target>
       </trans-unit>
+      <trans-unit id="tl_oveleon.element_legend">
+        <source>Element-Spacing</source>
+        <target>Element Abstand</target>
+      </trans-unit>
       <trans-unit id="tl_oveleon.divider_legend">
         <source>Divider</source>
         <target>Linien</target>
@@ -471,6 +475,54 @@
           <target>$h6-color</target>
       </trans-unit>
       <trans-unit id="tl_oveleon.h6-color.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h1-color-invert.0">
+          <source>$h1-color-invert</source>
+          <target>$h1-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h1-color-invert.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h2-color-invert.0">
+          <source>$h2-color-invert</source>
+          <target>$h2-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h2-color-invert.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h3-color-invert.0">
+          <source>$h3-color-invert</source>
+          <target>$h3-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h3-color-invert.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h4-color-invert.0">
+          <source>$h4-color-invert</source>
+          <target>$h4-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h4-color-invert.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h5-color-invert.0">
+          <source>$h5-color-invert</source>
+          <target>$h5-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h5-color-invert.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h6-color-invert.0">
+          <source>$h6-color-invert</source>
+          <target>$h6-color-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.h6-color-invert.1">
           <source></source>
           <target></target>
       </trans-unit>
@@ -1431,6 +1483,126 @@
           <target>$button-border-width</target>
       </trans-unit>
       <trans-unit id="tl_oveleon.button-border-width.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-small.0">
+          <source>$element-spacing-xs-small</source>
+          <target>$element-spacing-xs-small</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-small.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-small.0">
+          <source>$element-spacing-s-small</source>
+          <target>$element-spacing-s-small</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-small.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-small.0">
+          <source>$element-spacing-m-small</source>
+          <target>$element-spacing-m-small</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-small.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-small.0">
+          <source>$element-spacing-l-small</source>
+          <target>$element-spacing-l-small</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-small.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-small.0">
+          <source>$element-spacing-xl-small</source>
+          <target>$element-spacing-xl-small</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-small.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-medium.0">
+          <source>$element-spacing-xs-medium</source>
+          <target>$element-spacing-xs-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-medium.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-medium.0">
+          <source>$element-spacing-s-medium</source>
+          <target>$element-spacing-s-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-medium.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-medium.0">
+          <source>$element-spacing-m-medium</source>
+          <target>$element-spacing-m-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-medium.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-medium.0">
+          <source>$element-spacing-l-medium</source>
+          <target>$element-spacing-l-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-medium.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-medium.0">
+          <source>$element-spacing-xl-medium</source>
+          <target>$element-spacing-xl-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-medium.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-large.0">
+          <source>$element-spacing-xs-large</source>
+          <target>$element-spacing-xs-large</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xs-large.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-large.0">
+          <source>$element-spacing-s-large</source>
+          <target>$element-spacing-s-large</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-s-large.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-large.0">
+          <source>$element-spacing-m-large</source>
+          <target>$element-spacing-m-large</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-m-large.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-large.0">
+          <source>$element-spacing-l-large</source>
+          <target>$element-spacing-l-large</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-l-large.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-large.0">
+          <source>$element-spacing-xl-large</source>
+          <target>$element-spacing-xl-large</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.element-spacing-xl-large.1">
           <source></source>
           <target></target>
       </trans-unit>

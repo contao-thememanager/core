@@ -7,10 +7,10 @@
   &.layout-top {
 
     .c_image {
-      left: -#{$boxed-padding};
+      left: -#{sub($boxed-padding, $boxed-border-width)};
       margin-bottom: 0;
       position: relative;
-      top: -#{$boxed-padding};
+      top: -#{sub($boxed-padding, $boxed-border-width)};
       width: calc(100% + #{multiply($boxed-padding, 2)});
     }
   }

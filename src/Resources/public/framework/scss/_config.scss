@@ -60,6 +60,13 @@ $h4-color:                            $text-color-regular !default;
 $h5-color:                            $text-color-regular !default;
 $h6-color:                            $text-color-regular !default;
 
+$h1-color-invert:                     $text-color-invert !default;
+$h2-color-invert:                     $text-color-invert !default;
+$h3-color-invert:                     $text-color-invert !default;
+$h4-color-invert:                     $text-color-invert !default;
+$h5-color-invert:                     $text-color-invert !default;
+$h6-color-invert:                     $text-color-invert !default;
+
 $h1-letter-spacing:                   0rem !default;
 $h2-letter-spacing:                   0rem !default;
 $h3-letter-spacing:                   0rem !default;
@@ -217,6 +224,25 @@ $button-hover-color-alt:              $text-color-invert !default;
 
 $button-border-radius:                0 !default;
 $button-border-width:                 2px !default;
+
+// Element Spacing
+$element-spacing-xs-small:            1rem !default;
+$element-spacing-s-small:             1rem !default;
+$element-spacing-m-small:             1.1rem !default;
+$element-spacing-l-small:             1.2rem !default;
+$element-spacing-xl-small:            1.3rem !default;
+
+$element-spacing-xs-medium:           1rem !default;
+$element-spacing-s-medium:            1rem !default;
+$element-spacing-m-medium:            1.2rem !default;
+$element-spacing-l-medium:            1.35rem !default;
+$element-spacing-xl-medium:           1.5rem !default;
+
+$element-spacing-xs-large:            1rem !default;
+$element-spacing-s-large:             1rem !default;
+$element-spacing-m-large:             1.5rem !default;
+$element-spacing-l-large:             1.8rem !default;
+$element-spacing-xl-large:            2.2rem !default;
 
 // Divider
 $divider-size:                        1px;

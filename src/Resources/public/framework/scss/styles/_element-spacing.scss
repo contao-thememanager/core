@@ -1,0 +1,131 @@
+.el-spacing-top-small{
+  margin-bottom: $element-spacing-xs-small;
+}
+
+.el-spacing-bottom-small{
+  margin-bottom: $element-spacing-xs-small;
+}
+
+.el-spacing-top-medium{
+  margin-bottom: $element-spacing-xs-medium;
+}
+
+.el-spacing-bottom-medium{
+  margin-bottom: $element-spacing-xs-medium;
+}
+
+.el-spacing-top-large{
+  margin-bottom: $element-spacing-xs-large;
+}
+
+.el-spacing-bottom-large{
+  margin-bottom: $element-spacing-xs-large;
+}
+
+@include media-breakpoint('s') {
+
+  .el-spacing-top-small{
+    margin-bottom: $element-spacing-s-small;
+  }
+
+  .el-spacing-bottom-small{
+    margin-bottom: $element-spacing-s-small;
+  }
+
+  .el-spacing-top-medium{
+    margin-bottom: $element-spacing-s-medium;
+  }
+
+  .el-spacing-bottom-medium{
+    margin-bottom: $element-spacing-s-medium;
+  }
+
+  .el-spacing-top-large{
+    margin-bottom: $element-spacing-s-large;
+  }
+
+  .el-spacing-bottom-large{
+    margin-bottom: $element-spacing-s-large;
+  }
+}
+
+@include media-breakpoint('m') {
+
+  .el-spacing-top-small{
+    margin-bottom: $element-spacing-m-small;
+  }
+
+  .el-spacing-bottom-small{
+    margin-bottom: $element-spacing-m-small;
+  }
+
+  .el-spacing-top-medium{
+    margin-bottom: $element-spacing-m-medium;
+  }
+
+  .el-spacing-bottom-medium{
+    margin-bottom: $element-spacing-m-medium;
+  }
+
+  .el-spacing-top-large{
+    margin-bottom: $element-spacing-m-large;
+  }
+
+  .el-spacing-bottom-large{
+    margin-bottom: $element-spacing-m-large;
+  }
+}
+
+@include media-breakpoint('l') {
+
+  .el-spacing-top-small{
+    margin-bottom: $element-spacing-l-small;
+  }
+
+  .el-spacing-bottom-small{
+    margin-bottom: $element-spacing-l-small;
+  }
+
+  .el-spacing-top-medium{
+    margin-bottom: $element-spacing-l-medium;
+  }
+
+  .el-spacing-bottom-medium{
+    margin-bottom: $element-spacing-l-medium;
+  }
+
+  .el-spacing-top-large{
+    margin-bottom: $element-spacing-l-large;
+  }
+
+  .el-spacing-bottom-large{
+    margin-bottom: $element-spacing-l-large;
+  }
+}
+
+@include media-breakpoint('xl') {
+
+  .el-spacing-top-small{
+    margin-bottom: $element-spacing-xl-small;
+  }
+
+  .el-spacing-bottom-small{
+    margin-bottom: $element-spacing-xl-small;
+  }
+
+  .el-spacing-top-medium{
+    margin-bottom: $element-spacing-xl-medium;
+  }
+
+  .el-spacing-bottom-medium{
+    margin-bottom: $element-spacing-xl-medium;
+  }
+
+  .el-spacing-top-large{
+    margin-bottom: $element-spacing-xl-large;
+  }
+
+  .el-spacing-bottom-large{
+    margin-bottom: $element-spacing-xl-large;
+  }
+}
