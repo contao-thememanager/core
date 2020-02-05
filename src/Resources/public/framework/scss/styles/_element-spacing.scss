@@ -1,5 +1,5 @@
 .el-spacing-top-small{
-  margin-bottom: $element-spacing-xs-small;
+  margin-top: $element-spacing-xs-small;
 }
 
 .el-spacing-bottom-small{
@@ -7,7 +7,7 @@
 }
 
 .el-spacing-top-medium{
-  margin-bottom: $element-spacing-xs-medium;
+  margin-top: $element-spacing-xs-medium;
 }
 
 .el-spacing-bottom-medium{
@@ -15,7 +15,7 @@
 }
 
 .el-spacing-top-large{
-  margin-bottom: $element-spacing-xs-large;
+  margin-top: $element-spacing-xs-large;
 }
 
 .el-spacing-bottom-large{
@@ -25,7 +25,7 @@
 @include media-breakpoint('s') {
 
   .el-spacing-top-small{
-    margin-bottom: $element-spacing-s-small;
+    margin-top: $element-spacing-s-small;
   }
 
   .el-spacing-bottom-small{
@@ -33,7 +33,7 @@
   }
 
   .el-spacing-top-medium{
-    margin-bottom: $element-spacing-s-medium;
+    margin-top: $element-spacing-s-medium;
   }
 
   .el-spacing-bottom-medium{
@@ -41,7 +41,7 @@
   }
 
   .el-spacing-top-large{
-    margin-bottom: $element-spacing-s-large;
+    margin-top: $element-spacing-s-large;
   }
 
   .el-spacing-bottom-large{
@@ -52,7 +52,7 @@
 @include media-breakpoint('m') {
 
   .el-spacing-top-small{
-    margin-bottom: $element-spacing-m-small;
+    margin-top: $element-spacing-m-small;
   }
 
   .el-spacing-bottom-small{
@@ -60,7 +60,7 @@
   }
 
   .el-spacing-top-medium{
-    margin-bottom: $element-spacing-m-medium;
+    margin-top: $element-spacing-m-medium;
   }
 
   .el-spacing-bottom-medium{
@@ -68,7 +68,7 @@
   }
 
   .el-spacing-top-large{
-    margin-bottom: $element-spacing-m-large;
+    margin-top: $element-spacing-m-large;
   }
 
   .el-spacing-bottom-large{
@@ -79,7 +79,7 @@
 @include media-breakpoint('l') {
 
   .el-spacing-top-small{
-    margin-bottom: $element-spacing-l-small;
+    margin-top: $element-spacing-l-small;
   }
 
   .el-spacing-bottom-small{
@@ -87,7 +87,7 @@
   }
 
   .el-spacing-top-medium{
-    margin-bottom: $element-spacing-l-medium;
+    margin-top: $element-spacing-l-medium;
   }
 
   .el-spacing-bottom-medium{
@@ -95,7 +95,7 @@
   }
 
   .el-spacing-top-large{
-    margin-bottom: $element-spacing-l-large;
+    margin-top: $element-spacing-l-large;
   }
 
   .el-spacing-bottom-large{
@@ -106,7 +106,7 @@
 @include media-breakpoint('xl') {
 
   .el-spacing-top-small{
-    margin-bottom: $element-spacing-xl-small;
+    margin-top: $element-spacing-xl-small;
   }
 
   .el-spacing-bottom-small{
@@ -114,7 +114,7 @@
   }
 
   .el-spacing-top-medium{
-    margin-bottom: $element-spacing-xl-medium;
+    margin-top: $element-spacing-xl-medium;
   }
 
   .el-spacing-bottom-medium{
@@ -122,7 +122,7 @@
   }
 
   .el-spacing-top-large{
-    margin-bottom: $element-spacing-xl-large;
+    margin-top: $element-spacing-xl-large;
   }
 
   .el-spacing-bottom-large{
