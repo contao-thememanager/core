@@ -1262,22 +1262,22 @@
       <trans-unit id="tl_oveleon.component-inner-spacing.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-small.0">
           <source>$component-inner-spacing</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-small.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-medium.0">
           <source>$component-inner-spacing</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-medium.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-large.0">
           <source>$component-inner-spacing</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-large.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_oveleon.tns-dot-size.0">
@@ -1352,10 +1352,10 @@
       <trans-unit id="tl_oveleon.navigation-item-padding.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.text.0">
-          <source>$text</source>
+      <trans-unit id="tl_oveleon.box-shadow.0">
+          <source>$box-shadow</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.text.1">
+      <trans-unit id="tl_oveleon.box-shadow.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_oveleon.selection-color.0">

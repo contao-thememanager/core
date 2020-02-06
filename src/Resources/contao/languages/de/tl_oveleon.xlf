@@ -1806,11 +1806,11 @@
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.text.0">
-          <source>$text</source>
-          <target>$text</target>
+      <trans-unit id="tl_oveleon.box-shadow.0">
+          <source>$box-shadow</source>
+          <target>$box-shadow</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.text.1">
+      <trans-unit id="tl_oveleon.box-shadow.1">
           <source></source>
           <target></target>
       </trans-unit>

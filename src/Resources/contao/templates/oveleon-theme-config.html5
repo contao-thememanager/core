@@ -1513,7 +1513,7 @@ return array(
         // Misc
         'box-shadow' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['text'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['box-shadow'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'0 .5rem 1rem rgba(#000, .15)', 'maxlength' => 255, 'tl_class'=>'w50'),
         ),
