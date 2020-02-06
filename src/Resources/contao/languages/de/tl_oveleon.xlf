@@ -1686,27 +1686,27 @@
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-small.0">
           <source>$component-inner-spacing</source>
           <target>$component-inner-spacing</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-small.1">
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-medium.0">
           <source>$component-inner-spacing</source>
           <target>$component-inner-spacing</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-medium.1">
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.0">
+      <trans-unit id="tl_oveleon.spacing-large.0">
           <source>$component-inner-spacing</source>
           <target>$component-inner-spacing</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.component-inner-spacing.1">
+      <trans-unit id="tl_oveleon.spacing-large.1">
           <source></source>
           <target></target>
       </trans-unit>

@@ -150,11 +150,10 @@ $layout-column-gutter-large:          3rem !default;
 $grid-columns:                        12 !default;
 $grid-gutter-width:                   2rem !default;
 $grid-gutter-bottom:                  $grid-gutter-width !default;
+$grid-gutter-small-width:             1rem !default;
+$grid-gutter-small-bottom:            $grid-gutter-small-width !default;
 
 // Form
-$form-grid-gutter-width:              1rem !default;
-$form-grid-gutter-bottom:             $form-grid-gutter-width !default;
-
 $form-label-color:                    $text-color-regular !default;
 $form-label-font-size:                $font-size-base !default;
 $form-label-font-weight:              $font-weight-regular !default;

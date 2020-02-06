@@ -6,6 +6,26 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+
+    > * {
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-right: divide($grid-gutter-width, 2);
+      padding-left: divide($grid-gutter-width, 2);
+      padding-bottom: $grid-gutter-bottom;
+    }
+  }
+
+  &.small-gutter {
+
+    > .inside {
+
+      > * {
+        padding-right: divide($grid-gutter-small-width, 2);
+        padding-left: divide($grid-gutter-small-width, 2);
+        padding-bottom: $grid-gutter-small-bottom;
+      }
+    }
   }
 
   &.no-gutter {
@@ -53,53 +73,50 @@
   &.justify-right > .inside {
     justify-content: flex-end;
   }
-
-  [class*="col-"]{
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding-right: divide($grid-gutter-width, 2);
-    padding-left: divide($grid-gutter-width, 2);
-    padding-bottom: $grid-gutter-bottom;
-  }
 }
 
-$grid-breakpoints: map-merge((0),$breakpoints);
+$grid-breakpoints: map-merge((0:0),$breakpoints);
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
   @include media-breakpoint($breakpoint, $grid-breakpoints) {
 
-    .grid {
+    .grid > .inside {
+
+      > * {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
 
       @for $i from 1 through $grid-columns {
-        .col#{$infix}-#{$i} {
+        > .col#{$infix}-#{$i} {
           flex-basis: percentage($i / $grid-columns);
           max-width: percentage($i / $grid-columns);
         }
       }
 
-      .col#{$infix}-auto {
+      > .col#{$infix}-auto {
         flex-grow: 1;
         flex-basis: 0;
         max-width: 100%;
       }
 
-      .col#{$infix}-top     { align-self: flex-start; }
-      .col#{$infix}-middle  { align-self: center; }
-      .col#{$infix}-bottom  { align-self: flex-end;}
-      .col#{$infix}-baseline{ align-self: baseline; }
-      .col#{$infix}-stretch { align-self: stretch; }
-      .order#{$infix}-first { order: -1; }
-      .order#{$infix}-last  { order: $grid-columns + 1; }
+      > .col#{$infix}-top     { align-self: flex-start; }
+      > .col#{$infix}-middle  { align-self: center; }
+      > .col#{$infix}-bottom  { align-self: flex-end;}
+      > .col#{$infix}-baseline{ align-self: baseline; }
+      > .col#{$infix}-stretch { align-self: stretch; }
+      > .order#{$infix}-first { order: -1; }
+      > .order#{$infix}-last  { order: $grid-columns + 1; }
 
       @for $i from 0 through $grid-columns {
-        .order#{$infix}-#{$i} { order: $i; }
+        > .order#{$infix}-#{$i} { order: $i; }
       }
 
       @for $i from 0 through ($grid-columns - 1) {
         @if not ($infix == "" and $i == 0) {
-          .offset#{$infix}-#{$i} {
+          > .offset#{$infix}-#{$i} {
             margin-left: percentage($i / $grid-columns);
           }
         }

@@ -9,8 +9,8 @@ return array(
                       '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
                       '{layout_legend:hide},breakpoints,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
                       '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
-                      '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
-                      '{form_legend:hide},form-grid-gutter-width,form-grid-gutter-bottom,form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
+                      '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
+                      '{form_legend:hide},form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
                       '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
                       '{button_legend:hide},button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super,button-background-regular,button-color-regular,button-hover-background-regular,button-hover-color-regular,button-background-alt,button-color-alt,button-hover-background-alt,button-hover-color-alt,button-border-radius,button-border-width;' .
                       '{element_legend:hide},element-spacing-xs-small,element-spacing-s-small,element-spacing-m-small,element-spacing-l-small,element-spacing-xl-small,element-spacing-xs-medium,element-spacing-s-medium,element-spacing-m-medium,element-spacing-l-medium,element-spacing-xl-medium,element-spacing-xs-large,element-spacing-s-large,element-spacing-m-large,element-spacing-l-large,element-spacing-xl-large;' .
@@ -791,6 +791,20 @@ return array(
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'$grid-gutter-width', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
+        'grid-gutter-small-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-small-width'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'grid-gutter-small-bottom' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['grid-gutter-small-bottom'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'$grid-gutter-small-width', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
 
         // Icons
         'icon-font-family' => array
@@ -850,21 +864,6 @@ return array(
         ),
 
         // Form
-        'form-grid-gutter-width' => array
-        (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-grid-gutter-width'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
-        ),
-        'form-grid-gutter-bottom' => array
-        (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-grid-gutter-bottom'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'$form-grid-gutter-width', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
-        ),
-
         'form-label-color' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-label-color'],
