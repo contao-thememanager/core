@@ -73,6 +73,22 @@
   &.justify-right > .inside {
     justify-content: flex-end;
   }
+
+  &.justify-space-between > .inside {
+    justify-content: space-between;
+  }
+
+  &.justify-space-around > .inside {
+    justify-content: space-around;
+  }
+
+  &.justify-space-evenly > .inside {
+    justify-content: space-evenly;
+  }
+
+  &.justify-revert > .inside {
+    justify-content: revert;
+  }
 }
 
 $grid-breakpoints: map-merge((0:0),$breakpoints);
