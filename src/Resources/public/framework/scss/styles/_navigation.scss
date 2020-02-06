@@ -107,6 +107,7 @@
     position: relative;
 
     &:hover {
+      z-index: 1;
 
       > ul {
         display: flex;
