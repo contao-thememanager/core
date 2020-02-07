@@ -34,6 +34,7 @@
     margin-right: $tns-dot-spacing;
 
     outline: 0 none;
+    border: 0 none;
     border-radius: 50%;
     background-color: $tns-color-regular;
 
@@ -49,6 +50,7 @@
 
   > button {
     outline: 0 none;
+    border: 0 none;
 
     color: $tns-color-invert;
     background-color: $tns-color-regular;
