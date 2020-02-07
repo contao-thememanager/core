@@ -22,6 +22,24 @@
   padding-bottom: sub($article-spacing-xs-large, $grid-gutter-small-bottom);
 }
 
+
+.y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+  padding-top: $article-spacing-xs-medium;
+  padding-bottom: sub($article-spacing-xs-medium, $grid-gutter-bottom);
+}
+.y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
+  padding-bottom: sub($article-spacing-xs-medium, $grid-gutter-small-bottom);
+}
+
+.y-spacing-large > .inside, .y-spacing-large #container > .inside {
+  padding-top: $article-spacing-xs-large;
+  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-bottom);
+}
+.y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
+  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-small-bottom);
+}
+
+
 .top-spacing-small > .inside {
   padding-top: $article-spacing-xs-small;
 }
@@ -33,14 +51,6 @@
   padding-bottom: sub($article-spacing-xs-small, $grid-gutter-small-bottom);
 }
 
-.y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-  padding-top: $article-spacing-xs-medium;
-  padding-bottom: sub($article-spacing-xs-medium, $grid-gutter-bottom);
-}
-.y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
-  padding-bottom: sub($article-spacing-xs-medium, $grid-gutter-small-bottom);
-}
-
 .top-spacing-medium > .inside {
   padding-top: $article-spacing-xs-medium;
 }
@@ -50,14 +60,6 @@
 }
 .bottom-spacing-medium.small-gutter > .inside {
   padding-bottom: sub($article-spacing-xs-medium, $grid-gutter-small-bottom);
-}
-
-.y-spacing-large > .inside, .y-spacing-large #container > .inside {
-  padding-top: $article-spacing-xs-large;
-  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-bottom);
-}
-.y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
-  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-small-bottom);
 }
 
 .top-spacing-large > .inside {
@@ -80,6 +82,22 @@
     padding-bottom: sub($article-spacing-s-small, $grid-gutter-small-bottom);
   }
 
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    padding-top: $article-spacing-s-medium;
+    padding-bottom: sub($article-spacing-s-medium, $grid-gutter-bottom);
+  }
+  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-s-medium, $grid-gutter-small-bottom);
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    padding-top: $article-spacing-s-large;
+    padding-bottom: sub($article-spacing-s-large, $grid-gutter-bottom);
+  }
+  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-s-large, $grid-gutter-small-bottom);
+  }
+
   .top-spacing-small > .inside {
     padding-top: $article-spacing-s-small;
   }
@@ -91,14 +109,6 @@
     padding-bottom: sub($article-spacing-s-small, $grid-gutter-small-bottom);
   }
 
-  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: $article-spacing-s-medium;
-    padding-bottom: sub($article-spacing-s-medium, $grid-gutter-bottom);
-  }
-  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-s-medium, $grid-gutter-small-bottom);
-  }
-
   .top-spacing-medium > .inside {
     padding-top: $article-spacing-s-medium;
   }
@@ -108,14 +118,6 @@
   }
   .bottom-spacing-medium.small-gutter > .inside {
     padding-bottom: sub($article-spacing-s-medium, $grid-gutter-small-bottom);
-  }
-
-  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: $article-spacing-s-large;
-    padding-bottom: sub($article-spacing-s-large, $grid-gutter-bottom);
-  }
-  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-s-large, $grid-gutter-small-bottom);
   }
 
   .top-spacing-large > .inside {
@@ -145,6 +147,22 @@
     padding-bottom: sub($article-spacing-m-small, $grid-gutter-small-bottom);
   }
 
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    padding-top: $article-spacing-m-medium;
+    padding-bottom: sub($article-spacing-m-medium, $grid-gutter-bottom);
+  }
+  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-m-medium, $grid-gutter-small-bottom);
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    padding-top: $article-spacing-m-large;
+    padding-bottom: sub($article-spacing-m-large, $grid-gutter-bottom);
+  }
+  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-m-large, $grid-gutter-small-bottom);
+  }
+
   .top-spacing-small > .inside {
     padding-top: $article-spacing-m-small;
   }
@@ -156,14 +174,6 @@
     padding-bottom: sub($article-spacing-m-small, $grid-gutter-small-bottom);
   }
 
-  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: $article-spacing-m-medium;
-    padding-bottom: sub($article-spacing-m-medium, $grid-gutter-bottom);
-  }
-  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-m-medium, $grid-gutter-small-bottom);
-  }
-
   .top-spacing-medium > .inside {
     padding-top: $article-spacing-m-medium;
   }
@@ -173,14 +183,6 @@
   }
   .bottom-spacing-medium.small-gutter > .inside {
     padding-bottom: sub($article-spacing-m-medium, $grid-gutter-small-bottom);
-  }
-
-  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: $article-spacing-m-large;
-    padding-bottom: sub($article-spacing-m-large, $grid-gutter-bottom);
-  }
-  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-m-large, $grid-gutter-small-bottom);
   }
 
   .top-spacing-large > .inside {
@@ -231,6 +233,22 @@
     padding-bottom: sub($article-spacing-l-small, $grid-gutter-small-bottom);
   }
 
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    padding-top: $article-spacing-l-medium;
+    padding-bottom: sub($article-spacing-l-medium, $grid-gutter-bottom);
+  }
+  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-l-medium, $grid-gutter-small-bottom);
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    padding-top: $article-spacing-l-large;
+    padding-bottom: sub($article-spacing-l-large, $grid-gutter-bottom);
+  }
+  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-l-large, $grid-gutter-small-bottom);
+  }
+
   .top-spacing-small > .inside {
     padding-top: $article-spacing-l-small;
   }
@@ -242,14 +260,6 @@
     padding-bottom: sub($article-spacing-l-small, $grid-gutter-small-bottom);
   }
 
-  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: $article-spacing-l-medium;
-    padding-bottom: sub($article-spacing-l-medium, $grid-gutter-bottom);
-  }
-  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-l-medium, $grid-gutter-small-bottom);
-  }
-
   .top-spacing-medium > .inside {
     padding-top: $article-spacing-l-medium;
   }
@@ -259,14 +269,6 @@
   }
   .bottom-spacing-medium.small-gutter > .inside {
     padding-bottom: sub($article-spacing-l-medium, $grid-gutter-small-bottom);
-  }
-
-  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: $article-spacing-l-large;
-    padding-bottom: sub($article-spacing-l-large, $grid-gutter-bottom);
-  }
-  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-l-large, $grid-gutter-small-bottom);
   }
 
   .top-spacing-large > .inside {
@@ -290,6 +292,22 @@
     padding-bottom: sub($article-spacing-xl-small, $grid-gutter-small-bottom);
   }
 
+  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
+    padding-top: $article-spacing-xl-medium;
+    padding-bottom: sub($article-spacing-xl-medium, $grid-gutter-bottom);
+  }
+  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-xl-medium, $grid-gutter-small-bottom);
+  }
+
+  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
+    padding-top: $article-spacing-xl-large;
+    padding-bottom: sub($article-spacing-xl-large, $grid-gutter-bottom);
+  }
+  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
+    padding-bottom: sub($article-spacing-xl-large, $grid-gutter-small-bottom);
+  }
+
   .top-spacing-small > .inside {
     padding-top: $article-spacing-xl-small;
   }
@@ -301,14 +319,6 @@
     padding-bottom: sub($article-spacing-xl-small, $grid-gutter-small-bottom);
   }
 
-  .y-spacing-medium > .inside, .y-spacing-medium #container > .inside {
-    padding-top: $article-spacing-xl-medium;
-    padding-bottom: sub($article-spacing-xl-medium, $grid-gutter-bottom);
-  }
-  .y-spacing-medium.small-gutter > .inside, .y-spacing-medium.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-xl-medium, $grid-gutter-small-bottom);
-  }
-
   .top-spacing-medium > .inside {
     padding-top: $article-spacing-xl-medium;
   }
@@ -318,14 +328,6 @@
   }
   .bottom-spacing-medium.small-gutter > .inside {
     padding-bottom: sub($article-spacing-xl-medium, $grid-gutter-small-bottom);
-  }
-
-  .y-spacing-large > .inside, .y-spacing-large #container > .inside {
-    padding-top: $article-spacing-xl-large;
-    padding-bottom: sub($article-spacing-xl-large, $grid-gutter-bottom);
-  }
-  .y-spacing-large.small-gutter > .inside, .y-spacing-large.small-gutter #container > .inside {
-    padding-bottom: sub($article-spacing-xl-large, $grid-gutter-small-bottom);
   }
 
   .top-spacing-large > .inside {
