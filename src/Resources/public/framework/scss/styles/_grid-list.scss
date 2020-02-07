@@ -1,7 +1,7 @@
 .grid-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -#{divide($grid-gutter-width, 2)};
+  margin: 0 -#{divide($grid-gutter-width, 2)} -#{$grid-gutter-bottom};
 
   > div {
     padding-right: divide($grid-gutter-width, 2);
