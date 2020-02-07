@@ -1470,11 +1470,11 @@
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.button-hover-color-alt.0">
-          <source>$button-hover-color-alt</source>
-          <target>$button-hover-color-alt</target>
+      <trans-unit id="tl_oveleon.button-border-radius.0">
+          <source>$button-border-radius</source>
+          <target>$button-border-radius</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.button-hover-color-alt.1">
+      <trans-unit id="tl_oveleon.button-border-radius.1">
           <source></source>
           <target></target>
       </trans-unit>

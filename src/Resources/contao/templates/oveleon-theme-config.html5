@@ -1212,7 +1212,7 @@ return array(
 
         'button-border-radius' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-hover-color-alt'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['button-border-radius'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50 clr'),
@@ -1515,7 +1515,7 @@ return array(
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['box-shadow'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'0 .5rem 1rem rgba(#000, .15)', 'maxlength' => 255, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'0 .5rem 1rem rgba(#000, .15)', 'maxlength' => 255, 'decodeEntities'=>true, 'tl_class'=>'w50'),
         ),
         'selection-color' => array
         (

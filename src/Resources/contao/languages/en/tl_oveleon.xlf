@@ -1100,10 +1100,10 @@
       <trans-unit id="tl_oveleon.button-hover-color-alt.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.button-hover-color-alt.0">
-          <source>$button-hover-color-alt</source>
+      <trans-unit id="tl_oveleon.button-border-radius.0">
+          <source>$button-border-radius</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.button-hover-color-alt.1">
+      <trans-unit id="tl_oveleon.button-border-radius.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_oveleon.button-border-width.0">
