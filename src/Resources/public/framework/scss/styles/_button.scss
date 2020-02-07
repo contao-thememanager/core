@@ -1,5 +1,5 @@
 button, a.button {
-  border: 0 none;
+  border: $button-border-width none;
   border-radius: $button-border-radius;
   color: $button-color-regular;
   cursor: pointer;
