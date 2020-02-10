@@ -1076,7 +1076,7 @@ return array(
 
         'form-input-explanation-color' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-checkbox-radio-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['form-input-explanation-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
         ),

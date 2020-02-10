@@ -980,10 +980,10 @@
       <trans-unit id="tl_oveleon.form-checkbox-radio-size.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.form-checkbox-radio-label-color.0">
-          <source>$form-checkbox-radio-label-color</source>
+      <trans-unit id="tl_oveleon.form-input-explanation-color.0">
+          <source>$form-input-explanation-color</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.form-checkbox-radio-label-color.1">
+      <trans-unit id="tl_oveleon.form-input-explanation-color.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_oveleon.form-input-explanation-font-size.0">
