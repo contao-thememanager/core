@@ -470,7 +470,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['headline-spacing-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'headline-spacing-s-medium' => array
         (
@@ -491,7 +491,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['headline-spacing-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'headline-spacing-s-large' => array
         (

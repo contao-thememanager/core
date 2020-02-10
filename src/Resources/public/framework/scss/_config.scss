@@ -15,7 +15,7 @@ $browser-context:                     16 !default;
 $font-family-base:                    Arial, sans-serif !default;
 $font-size-base:                      #{$browser-context}px !default;
 
-$line-height-base:                    1.5 !default;
+$line-height-base:                    1.687 !default;
 $line-height-headline:                1.2 !default;
 
 $font-weight-base:                    400 !default;
@@ -26,10 +26,10 @@ $font-weight-semibold:                600 !default;
 $font-weight-bold:                    700 !default;
 
 $h1-font-size-small:                  1.5rem !default;
-$h2-font-size-small:                  1.4rem !default;
-$h3-font-size-small:                  1.3rem !default;
-$h4-font-size-small:                  1.2rem !default;
-$h5-font-size-small:                  1.1rem !default;
+$h2-font-size-small:                  1.35rem !default;
+$h3-font-size-small:                  1.187rem !default;
+$h4-font-size-small:                  1.12rem !default;
+$h5-font-size-small:                  1.031rem !default;
 $h6-font-size-small:                  1rem !default;
 
 $h1-font-size-medium:                 2rem !default;
@@ -39,11 +39,11 @@ $h4-font-size-medium:                 1.4rem !default;
 $h5-font-size-medium:                 1.2rem !default;
 $h6-font-size-medium:                 1rem !default;
 
-$h1-font-size:                        2.5rem !default;
-$h2-font-size:                        2rem !default;
-$h3-font-size:                        1.75rem !default;
-$h4-font-size:                        1.5rem !default;
-$h5-font-size:                        1.25rem !default;
+$h1-font-size:                        2.8rem !default;
+$h2-font-size:                        2.187rem !default;
+$h3-font-size:                        1.437rem !default;
+$h4-font-size:                        1.25rem !default;
+$h5-font-size:                        1.125rem !default;
 $h6-font-size:                        1rem !default;
 
 $h1-font-weight:                      $font-weight-bold !default;
@@ -97,16 +97,16 @@ $headline-spacing:                    1rem !default;
 
 // Responsive Headline-Spacings
 $headline-spacing-small:              1rem !default;
-$headline-spacing-s-small:            2rem !default;
-$headline-spacing-l-small:            4rem !default;
+$headline-spacing-s-small:            1.25rem !default;
+$headline-spacing-l-small:            1.75rem !default;
 
 $headline-spacing-medium:             1rem !default;
-$headline-spacing-s-medium:           2.5rem !default;
-$headline-spacing-l-medium:           5rem !default;
+$headline-spacing-s-medium:           1.562rem !default;
+$headline-spacing-l-medium:           2.187rem !default;
 
 $headline-spacing-large:              1rem !default;
-$headline-spacing-s-large:            3rem !default;
-$headline-spacing-l-large:            6rem !default;
+$headline-spacing-s-large:            1.875rem !default;
+$headline-spacing-l-large:            3rem !default;
 
 $x-spacing-large-m:                   900px !default;
 $x-spacing-large-l:                   1100px !default;
@@ -249,22 +249,22 @@ $divider-style:                       solid;
 $divider-color:                       #ccc;
 
 // Article
-$article-spacing-xs-small:            2rem !default;
-$article-spacing-s-small:             2rem !default;
-$article-spacing-m-small:             2rem !default;
-$article-spacing-l-small:             2rem !default;
+$article-spacing-xs-small:            2.5rem !default;
+$article-spacing-s-small:             3.125rem !default;
+$article-spacing-m-small:             3.75rem !default;
+$article-spacing-l-small:             4.375rem !default;
 $article-spacing-xl-small:            $article-spacing-l-small !default;
 
-$article-spacing-xs-medium:           2rem !default;
-$article-spacing-s-medium:            2rem !default;
-$article-spacing-m-medium:            4rem !default;
-$article-spacing-l-medium:            6rem !default;
+$article-spacing-xs-medium:           2.5rem !default;
+$article-spacing-s-medium:            3.75rem !default;
+$article-spacing-m-medium:            5rem !default;
+$article-spacing-l-medium:            7.5rem !default;
 $article-spacing-xl-medium:           $article-spacing-l-medium !default;
 
-$article-spacing-xs-large:            2rem !default;
-$article-spacing-s-large:             3rem !default;
-$article-spacing-m-large:             6rem !default;
-$article-spacing-l-large:             10rem !default;
+$article-spacing-xs-large:            2.5rem !default;
+$article-spacing-s-large:             4.375rem !default;
+$article-spacing-m-large:             5.9375rem !default;
+$article-spacing-l-large:             9.375rem !default;
 $article-spacing-xl-large:            $article-spacing-l-large !default;
 
 // Boxed
