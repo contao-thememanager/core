@@ -9,6 +9,24 @@
     padding-bottom: $grid-gutter-bottom;
   }
 
+  &.small-gutter {
+
+    > div {
+      padding-right: divide($grid-gutter-small-width, 2);
+      padding-left: divide($grid-gutter-small-width, 2);
+      padding-bottom: $grid-gutter-small-bottom;
+    }
+  }
+
+  &.no-gutter{
+
+    > div {
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+  }
+
   &.list-1 > div {
     width: 100%
   }
