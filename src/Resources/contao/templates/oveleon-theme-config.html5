@@ -18,7 +18,7 @@ return array(
                       '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
                       '{component_legend:hide},component-inner-spacing,spacing-small,spacing-medium,spacing-large;' .
                       '{tns_legend:hide},tns-dot-size,tns-dot-spacing,tns-controls-outer-offset,tns-color-regular,tns-color-regular-active,tns-color-invert,tns-color-invert-active,tns-color-extra,tns-color-extra-active;' .
-                      '{nav_legend:hide},navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
+                      '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
                       '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
     ),
     'fields'   => array(
@@ -1489,12 +1489,19 @@ return array(
         ),
 
         // Navigation
+        'navigation-behaviour-min-width' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['navigation-behaviour-min-width'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'768px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
         'navigation-item-font-size' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['navigation-item-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'navigation-item-font-weight' => array
         (

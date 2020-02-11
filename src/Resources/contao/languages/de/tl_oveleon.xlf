@@ -230,11 +230,11 @@
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.headings-line-height.0">
-          <source>$headings-line-height</source>
-          <target>$headings-line-height</target>
+      <trans-unit id="tl_oveleon.line-height-headline.0">
+          <source>$line-height-headline</source>
+          <target>$line-height-headline</target>
       </trans-unit>
-      <trans-unit id="tl_oveleon.headings-line-height.1">
+      <trans-unit id="tl_oveleon.line-height-headline.1">
           <source></source>
           <target></target>
       </trans-unit>
@@ -1779,6 +1779,14 @@
           <target>$tns-color-extra-active</target>
       </trans-unit>
       <trans-unit id="tl_oveleon.tns-color-extra-active.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.navigation-behaviour-min-width.0">
+          <source>$navigation-behaviour-min-width</source>
+          <target>$navigation-behaviour-min-width</target>
+      </trans-unit>
+      <trans-unit id="tl_oveleon.navigation-behaviour-min-width.1">
           <source></source>
           <target></target>
       </trans-unit>
