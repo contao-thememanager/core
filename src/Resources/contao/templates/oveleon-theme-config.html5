@@ -115,7 +115,7 @@ return array(
         ),
         'font-weight-semibold' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['font-weight-light'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_oveleon']['font-weight-semibold'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'600', 'rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),

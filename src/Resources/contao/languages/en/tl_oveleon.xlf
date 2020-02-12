@@ -140,10 +140,10 @@
       <trans-unit id="tl_oveleon.font-weight-medium.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.font-weight-light.0">
-          <source>$font-weight-light</source>
+      <trans-unit id="tl_oveleon.font-weight-semibold.0">
+          <source>$font-weight-semibold</source>
       </trans-unit>
-      <trans-unit id="tl_oveleon.font-weight-light.1">
+      <trans-unit id="tl_oveleon.font-weight-semibold.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_oveleon.font-weight-bold.0">
