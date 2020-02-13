@@ -16,10 +16,10 @@
 
 .y-spacing-small > .inside, .y-spacing-small #container > .inside {
   padding-top: $article-spacing-xs-small;
-  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-bottom);
+  padding-bottom: sub($article-spacing-xs-small, $grid-gutter-bottom);
 }
 .y-spacing-small.small-gutter > .inside, .y-spacing-small.small-gutter #container > .inside {
-  padding-bottom: sub($article-spacing-xs-large, $grid-gutter-small-bottom);
+  padding-bottom: sub($article-spacing-xs-small, $grid-gutter-small-bottom);
 }
 
 
