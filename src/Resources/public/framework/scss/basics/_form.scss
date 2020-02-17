@@ -223,11 +223,14 @@ textarea {
       border-color: $form-input-border-color;
       border-radius: $form-input-border-radius;
 
+      background-color: $form-input-background;
+
       vertical-align: middle;
     }
 
     &:hover:before {
       border-color: $form-input-border-color-hover;
+      background-color: $form-input-background-hover;
     }
   }
 
