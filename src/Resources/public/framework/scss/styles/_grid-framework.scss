@@ -42,6 +42,30 @@
     }
   }
 
+  .grid {
+
+    > .inside {
+      margin-left: -#{divide($grid-gutter-width, 2)};
+      margin-right: -#{divide($grid-gutter-width, 2)};
+    }
+
+    &.small-gutter {
+
+      > .inside {
+        margin-left: -#{divide($grid-gutter-small-width, 2)};
+        margin-right: -#{divide($grid-gutter-small-width, 2)};
+      }
+    }
+
+    &.no-gutter {
+
+      > .inside {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   &.align-top > .inside {
     align-items: flex-start;
   }
