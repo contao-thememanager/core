@@ -67,6 +67,7 @@
             controls: false,
             nav: false,
             mouseDrag: true,
+            swipeAngle: 30,
             controlsPosition: 'bottom',
             navPosition: 'bottom',
             autoplayPosition: 'bottom',
