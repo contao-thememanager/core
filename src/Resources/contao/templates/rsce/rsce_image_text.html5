@@ -1,5 +1,5 @@
 
-<div class="<?= $this->class ?><?= $this->styleManager->prepare('layout', ['imageText', 'boxedListElement'])->format(' %s')?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<div class="<?= $this->class ?><?= $this->styleManager->prepare('layout', ['imageText'])->format(' %s')?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <?php if(!$this->linkText && $this->url): ?>
         <a href="<?=$this->url?>" class="inside"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
     <?php else: ?>
