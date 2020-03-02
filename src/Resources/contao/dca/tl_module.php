@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of ContaoOveleonThemeManagerBundle.
+ * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
 */

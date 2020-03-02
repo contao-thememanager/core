@@ -106,7 +106,7 @@ return array(
         )
     ),
     'onloadCallback' => array(
-        array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'extendHeadlinePalette'),
+        array('ContaoThemeManager\Core\ThemeManager', 'extendHeadlinePalette'),
         array('Oveleon\ContaoComponentStyleManager\Support', 'extendRockSolidCustomElementsPalettes')
     )
 );
