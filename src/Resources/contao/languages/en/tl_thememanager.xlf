@@ -1,0 +1,1381 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_thememanager.php" source-language="en">
+    <body>
+      <trans-unit id="tl_thememanager.default_legend">
+        <source>Base-Settings</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.color_legend">
+        <source>Base-Colors</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font_legend">
+        <source>Fonts</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headings_legend">
+        <source>Headings</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.heading_spacing_legend">
+        <source>Heading-Spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link_legend">
+        <source>Links</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout_legend">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid_legend">
+        <source>Grid</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_legend">
+        <source>Form</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article_legend">
+        <source>Article</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon_legend">
+        <source>Icon</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_legend">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider_legend">
+        <source>Divider</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed_legend">
+        <source>Boxed</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component_legend">
+        <source>Component</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns_legend">
+        <source>Tiny-Slider</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.nav_legend">
+        <source>Navigation</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.misc_legend">
+        <source>Misc</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.browser-context.0">
+          <source>$browser-context</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.browser-context.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.body-bg.0">
+          <source>$body-bg</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.body-bg.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.primary.0">
+          <source>$primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.secondary.0">
+          <source>$secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.light.0">
+          <source>$light</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.light.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.dark.0">
+          <source>$dark</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.dark.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-family-base.0">
+          <source>$font-family-base</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-family-base.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-size-base.0">
+          <source>$font-size-base</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-size-base.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.line-height-base.0">
+          <source>$line-height-base</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.line-height-base.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-regular.0">
+          <source>$text-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-invert.0">
+          <source>$text-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-light.0">
+          <source>$font-weight-light</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-light.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-regular.0">
+          <source>$font-weight-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-medium.0">
+          <source>$font-weight-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-semibold.0">
+          <source>$font-weight-semibold</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-semibold.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-bold.0">
+          <source>$font-weight-bold</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-bold.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-base.0">
+          <source>$font-weight-base</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-base.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.paragraph-spacing.0">
+          <source>$paragraph-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.paragraph-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.strong-font-weight.0">
+          <source>$strong-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.strong-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.line-height-headline.0">
+          <source>$line-height-headline</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.line-height-headline.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size-small.0">
+          <source>$h1-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size-small.0">
+          <source>$h2-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size-small.0">
+          <source>$h3-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size-small.0">
+          <source>$h4-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size-small.0">
+          <source>$h5-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size-small.0">
+          <source>$h6-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size-medium.0">
+          <source>$h1-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size-medium.0">
+          <source>$h2-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size-medium.0">
+          <source>$h3-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size-medium.0">
+          <source>$h4-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size-medium.0">
+          <source>$h5-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size-medium.0">
+          <source>$h6-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size.0">
+          <source>$h1-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size.0">
+          <source>$h2-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size.0">
+          <source>$h3-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size.0">
+          <source>$h4-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size.0">
+          <source>$h5-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size.0">
+          <source>$h6-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-weight.0">
+          <source>$h1-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-weight.0">
+          <source>$h2-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-weight.0">
+          <source>$h3-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-weight.0">
+          <source>$h4-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-weight.0">
+          <source>$h5-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-weight.0">
+          <source>$h6-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-color.0">
+          <source>$h1-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-color.0">
+          <source>$h2-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-color.0">
+          <source>$h3-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-color.0">
+          <source>$h4-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-color.0">
+          <source>$h5-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-color.0">
+          <source>$h6-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-color-invert.0">
+          <source>$h1-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-color-invert.0">
+          <source>$h2-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-color-invert.0">
+          <source>$h3-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-color-invert.0">
+          <source>$h4-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-color-invert.0">
+          <source>$h5-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-color-invert.0">
+          <source>$h6-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-letter-spacing.0">
+          <source>$h1-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-letter-spacing.0">
+          <source>$h2-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-letter-spacing.0">
+          <source>$h3-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-letter-spacing.0">
+          <source>$h4-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-letter-spacing.0">
+          <source>$h5-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-letter-spacing.0">
+          <source>$h6-letter-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-letter-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing.0">
+          <source>$headline-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-small.0">
+          <source>$headline-spacing-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-small.0">
+          <source>$headline-spacing-s-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-small.0">
+          <source>$headline-spacing-l-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-medium.0">
+          <source>$headline-spacing-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-medium.0">
+          <source>$headline-spacing-s-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-medium.0">
+          <source>$headline-spacing-l-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-large.0">
+          <source>$headline-spacing-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-large.0">
+          <source>$headline-spacing-s-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-s-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-large.0">
+          <source>$headline-spacing-l-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline-spacing-l-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-large-m.0">
+          <source>$x-spacing-large-m</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-large-m.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-large-l.0">
+          <source>$x-spacing-large-l</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-large-l.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-small.0">
+          <source>$x-spacing-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.x-spacing-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
+          <source>$article-spacing-xs-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-small.0">
+          <source>$article-spacing-s-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-small.0">
+          <source>$article-spacing-m-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-small.0">
+          <source>$article-spacing-l-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-small.0">
+          <source>$article-spacing-xl-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-medium.0">
+          <source>$article-spacing-xs-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-medium.0">
+          <source>$article-spacing-s-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-medium.0">
+          <source>$article-spacing-m-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-medium.0">
+          <source>$article-spacing-l-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-medium.0">
+          <source>$article-spacing-xl-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-large.0">
+          <source>$article-spacing-xs-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xs-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-large.0">
+          <source>$article-spacing-s-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-s-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-large.0">
+          <source>$article-spacing-m-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-m-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-large.0">
+          <source>$article-spacing-l-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-l-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-large.0">
+          <source>$article-spacing-xl-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-xl-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-regular.0">
+          <source>$link-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-regular.0">
+          <source>$link-hover-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-regular.0">
+          <source>$link-decoration-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-regular.0">
+          <source>$link-hover-decoration-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-invert.0">
+          <source>$link-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-invert.0">
+          <source>$link-hover-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-invert.0">
+          <source>$link-decoration-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-invert.0">
+          <source>$link-hover-decoration-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-extra.0">
+          <source>$link-color-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-extra.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-extra.0">
+          <source>$link-hover-color-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-extra.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-extra.0">
+          <source>$link-decoration-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-extra.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-extra.0">
+          <source>$link-hover-decoration-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-extra.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text.0">
+          <source>$text</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-small.0">
+          <source>$layout-column-width-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-medium.0">
+          <source>$layout-column-width-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-large.0">
+          <source>$layout-column-width-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-width-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-small.0">
+          <source>$layout-column-gutter-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-medium.0">
+          <source>$layout-column-gutter-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-large.0">
+          <source>$layout-column-gutter-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-gutter-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-columns.0">
+          <source>$grid-columns</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-columns.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-width.0">
+          <source>$grid-gutter-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-bottom.0">
+          <source>$grid-gutter-bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-bottom.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-font-family.0">
+          <source>$icon-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-font-family.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-tiny.0">
+          <source>$icon-size-tiny</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-tiny.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-small.0">
+          <source>$icon-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-medium.0">
+          <source>$icon-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-large.0">
+          <source>$icon-size-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.0">
+          <source>$icon-size-super</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.0">
+          <source>$icon-size-super</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-outlined-width.0">
+          <source>$icon-outlined-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-outlined-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-grid-gutter-width.0">
+          <source>$form-grid-gutter-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-grid-gutter-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-grid-gutter-bottom.0">
+          <source>$form-grid-gutter-bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-grid-gutter-bottom.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.0">
+          <source>$form-label-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-size.0">
+          <source>$form-label-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.0">
+          <source>$form-label-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-spacing.0">
+          <source>$form-label-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-family.0">
+          <source>$form-input-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-family.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size.0">
+          <source>$form-input-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-weight.0">
+          <source>$form-input-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-height.0">
+          <source>$form-input-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-height.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-padding.0">
+          <source>$form-input-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-padding.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-radius.0">
+          <source>$form-input-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-radius.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-width.0">
+          <source>$form-input-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-style.0">
+          <source>$form-input-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-style.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.0">
+          <source>$form-label-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-disabled.0">
+          <source>$form-input-color-disabled</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-disabled.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background.0">
+          <source>$form-input-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color.0">
+          <source>$form-input-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.0">
+          <source>$form-label-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-hover.0">
+          <source>$form-input-color-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-hover.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-hover.0">
+          <source>$form-input-background-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-hover.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-hover.0">
+          <source>$form-input-border-color-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-hover.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.0">
+          <source>$form-label-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-focus.0">
+          <source>$form-input-color-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-focus.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-focus.0">
+          <source>$form-input-background-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-focus.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-focus.0">
+          <source>$form-input-border-color-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-focus.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-focus.0">
+          <source>$form-input-placeholder-color-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-focus.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-error.0">
+          <source>$form-input-color-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-color-error.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-error.0">
+          <source>$form-input-background-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-background-error.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-error.0">
+          <source>$form-input-border-color-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-border-color-error.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-error.0">
+          <source>$form-input-placeholder-color-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-error.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.0">
+          <source>$form-checkbox-radio-label-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.0">
+          <source>$form-checkbox-radio-label-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">
+          <source>$form-checkbox-radio-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-explanation-color.0">
+          <source>$form-input-explanation-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-explanation-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-explanation-font-size.0">
+          <source>$form-input-explanation-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-explanation-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color.0">
+          <source>$form-input-mandatory-symbol-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-color.0">
+          <source>$form-input-symbol-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-small.0">
+          <source>$button-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-medium.0">
+          <source>$button-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-large.0">
+          <source>$button-font-size-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-super.0">
+          <source>$button-font-size-super</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-size-super.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-small.0">
+          <source>$button-padding-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-medium.0">
+          <source>$button-padding-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-large.0">
+          <source>$button-padding-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-super.0">
+          <source>$button-padding-super</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-padding-super.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-background-regular.0">
+          <source>$button-background-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-background-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-regular.0">
+          <source>$button-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-background-regular.0">
+          <source>$button-hover-background-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-background-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-regular.0">
+          <source>$button-hover-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-background-alt.0">
+          <source>$button-background-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-background-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt.0">
+          <source>$button-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-background-alt.0">
+          <source>$button-hover-background-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-background-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt.0">
+          <source>$button-hover-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius.0">
+          <source>$button-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width.0">
+          <source>$button-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-small.0">
+          <source>$element-spacing-xs-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-small.0">
+          <source>$element-spacing-s-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-small.0">
+          <source>$element-spacing-m-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-small.0">
+          <source>$element-spacing-l-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-small.0">
+          <source>$element-spacing-xl-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-medium.0">
+          <source>$element-spacing-xs-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-medium.0">
+          <source>$element-spacing-s-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-medium.0">
+          <source>$element-spacing-m-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-medium.0">
+          <source>$element-spacing-l-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-medium.0">
+          <source>$element-spacing-xl-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-large.0">
+          <source>$element-spacing-xs-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xs-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-large.0">
+          <source>$element-spacing-s-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-s-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-large.0">
+          <source>$element-spacing-m-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-m-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-large.0">
+          <source>$element-spacing-l-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-l-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-large.0">
+          <source>$element-spacing-xl-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element-spacing-xl-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-size.0">
+          <source>$divider-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.0">
+          <source>$divider-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.0">
+          <source>$divider-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-background-color.0">
+          <source>$boxed-background-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-background-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-padding.0">
+          <source>$boxed-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-padding.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-color.0">
+          <source>$boxed-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-style.0">
+          <source>$boxed-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-style.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-width.0">
+          <source>$boxed-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-radius.0">
+          <source>$boxed-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-radius.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-inner-spacing.0">
+          <source>$component-inner-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-inner-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-small.0">
+          <source>$component-inner-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-medium.0">
+          <source>$component-inner-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-large.0">
+          <source>$component-inner-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing-large.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-dot-size.0">
+          <source>$tns-dot-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-dot-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-dot-spacing.0">
+          <source>$tns-dot-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-dot-spacing.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-controls-outer-offset.0">
+          <source>$tns-controls-outer-offset</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-controls-outer-offset.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-regular.0">
+          <source>$tns-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-regular.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-regular-active.0">
+          <source>$tns-color-regular-active</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-regular-active.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-invert.0">
+          <source>$tns-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-invert.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-invert-active.0">
+          <source>$tns-color-invert-active</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-invert-active.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-extra.0">
+          <source>$tns-color-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-extra.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-extra-active.0">
+          <source>$tns-color-extra-active</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns-color-extra-active.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
+          <source>$navigation-behaviour-min-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-size.0">
+          <source>$navigation-item-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.0">
+          <source>$navigation-item-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-padding.0">
+          <source>$navigation-item-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-padding.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.box-shadow.0">
+          <source>$box-shadow</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.box-shadow.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-color.0">
+          <source>$selection-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-background-color.0">
+          <source>$selection-background-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-background-color.1">
+          <source></source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
