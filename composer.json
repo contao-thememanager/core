@@ -1,7 +1,7 @@
 {
-  "name":"oveleon/contao-oveleon-theme-manager-bundle",
+  "name":"contao-thememanager/core",
   "type":"contao-bundle",
-  "description":"Contao Oveleon Theme-Manager",
+  "description":"Contao Theme-Manager",
   "keywords":["contao","theme","css","manager"],
   "homepage":"https://www.oveleon.de/",
   "license":"MIT",
@@ -31,7 +31,7 @@
   },
   "autoload":{
     "psr-4": {
-      "Oveleon\\ContaoOveleonThemeManagerBundle\\": "src/"
+      "ContaoThemeManager\\Core\\": "src/"
     },
     "classmap": [
       "src/Resources/contao/"
@@ -44,6 +44,6 @@
     ]
   },
   "extra":{
-    "contao-manager-plugin": "Oveleon\\ContaoOveleonThemeManagerBundle\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "ContaoThemeManager\\Core\\ContaoManager\\Plugin"
   }
 }

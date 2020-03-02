@@ -3,18 +3,18 @@
 declare(strict_types=1);
 
 /*
- * This file is part of ContaoOveleonThemeManagerBundle.
+ * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
  */
 
-namespace Oveleon\ContaoOveleonThemeManagerBundle\ContaoManager;
+namespace ContaoThemeManagerCore\Core\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Oveleon\ContaoOveleonThemeManagerBundle\ContaoOveleonThemeManagerBundle;
+use ContaoThemeManagerCore\Core\ContaoThemeManagerCore;
 use Oveleon\ContaoThemeCompilerBundle\ContaoThemeCompilerBundle;
 
 class Plugin implements BundlePluginInterface
@@ -25,9 +25,9 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(ContaoOveleonThemeManagerBundle::class)
+            BundleConfig::create(ContaoThemeManagerCore::class)
                 ->setLoadAfter([ContaoCoreBundle::class, ContaoThemeCompilerBundle::class])
-                ->setReplace(['oveleon-theme-manager']),
+                ->setReplace(['contao-thememanager']),
         ];
     }
 }

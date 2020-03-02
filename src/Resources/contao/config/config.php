@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of ContaoOveleonThemeManagerBundle.
+ * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
  */
 
 // Add configuration dca for themes
-$GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_oveleon';
+$GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 
 // Add sources
 $GLOBALS['TC_SOURCES'] = array(
-    'basePath'    => 'bundles/contaooveleonthememanager/framework/scss/',
+    'basePath'    => 'bundles/contaothememanagercore/framework/scss/',
     'configFile'  => '_config.scss',
     'configField' => 'themeConfig',
     'files'       => array
@@ -27,5 +27,5 @@ array_insert($GLOBALS['TL_CTE'], 2, array
     'componentLists' => array()
 ));
 
-$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'extendHeadlineField');
-$GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('Oveleon\ContaoOveleonThemeManagerBundle\ThemeManager', 'addHeadlineFieldsToTemplate');
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('ContaoThemeManagerCore\Core\ThemeManager', 'extendHeadlineField');
+$GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('ContaoThemeManagerCore\Core\ThemeManager', 'addHeadlineFieldsToTemplate');

@@ -1,11 +1,11 @@
 <?php
 /*
- * This file is part of ContaoOveleonThemeManagerBundle.
+ * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
 */
 
-$GLOBALS['TL_DCA']['tl_oveleon'] = array
+$GLOBALS['TL_DCA']['tl_thememanager'] = array
 (
     // Config
     'config' => array
@@ -13,10 +13,10 @@ $GLOBALS['TL_DCA']['tl_oveleon'] = array
         'dataContainer'               => 'Config',
         'ptable'                      => 'tl_theme',
         'configField'                 => 'themeConfig',
-        'configFile'                  => 'oveleon-theme-config.html5',
+        'configFile'                  => 'theme-manager-config.html5',
         'onload_callback' => array
         (
-            array('tl_oveleon', 'checkPermission')
+            array('tl_thememanager', 'checkPermission')
         )
     )
 );
@@ -27,7 +27,7 @@ $GLOBALS['TL_DCA']['tl_oveleon'] = array
  *
  * @author Daniele Sciannimanica <daniele@oveleon.de>
  */
-class tl_oveleon extends \Backend
+class tl_thememanager extends \Backend
 {
     /**
      * Import the back end user object

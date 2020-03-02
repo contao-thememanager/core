@@ -1,11 +1,11 @@
 <?php
 /*
- * This file is part of ContaoComponentStyleManager.
+ * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
  */
 
-namespace Oveleon\ContaoOveleonThemeManagerBundle;
+namespace ContaoThemeManagerCore\Core;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 
