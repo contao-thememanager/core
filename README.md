@@ -35,6 +35,9 @@ Each theme now has two more buttons (compile, configure). The configure contains
 
 The supplied configuration file `theme-manager-config.html5` can be adapted or extended via templates in the backend.
 
-To set up a new theme or skin based on the framework, you can attach your own CSS or SCSS files under Themes (edit) as skin files. These are taken into account during compilation. 
+To set up a new theme or skin based on the framework, you can attach your own CSS or SCSS files under Themes (edit) as skin files. These are taken into account during compilation. It is possible to use all SCSS variables of the framework for the skin. 
 
-> ✏ Documentation is under construction. For questions or early use of the extension please contact us directly via www.oveleon.de
+<br/>
+
+> ✏ Documentation is under construction.<br/>
+> ❓ For questions or early use of the extension please contact us directly via www.oveleon.de
