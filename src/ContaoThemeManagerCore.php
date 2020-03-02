@@ -8,7 +8,7 @@ declare(strict_types=1);
  * (c) https://www.oveleon.de/
  */
 
-namespace ContaoThemeManagerCore\Core;
+namespace ContaoThemeManager\Core;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

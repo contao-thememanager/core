@@ -5,7 +5,7 @@
  * (c) https://www.oveleon.de/
  */
 
-namespace ContaoThemeManagerCore\Core;
+namespace ContaoThemeManager\Core;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 

@@ -8,13 +8,13 @@ declare(strict_types=1);
  * (c) https://www.oveleon.de/
  */
 
-namespace ContaoThemeManagerCore\Core\ContaoManager;
+namespace ContaoThemeManager\Core\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use ContaoThemeManagerCore\Core\ContaoThemeManagerCore;
+use ContaoThemeManager\Core\ContaoThemeManagerCore;
 use Oveleon\ContaoThemeCompilerBundle\ContaoThemeCompilerBundle;
 
 class Plugin implements BundlePluginInterface
