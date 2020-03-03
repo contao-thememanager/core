@@ -6,6 +6,9 @@
     <a href="https://github.com/contao-thememanager/core"><img src="https://img.shields.io/badge/stable-master-83aa0e?style=flat-square"/></a>
     <a href="https://packagist.org/packages/contao-thememanager/core"><img src="https://img.shields.io/packagist/dt/contao-thememanager/core?color=0A7BBC&style=flat-square"/></a>
 </p>
+<br/>
+
+---
 
 #### Framework:
 - Grid
