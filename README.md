@@ -10,7 +10,7 @@
 
 ---
 
-#### Framework:
+### Framework:
 - Grid
 - Layout
 - Colors
@@ -22,18 +22,16 @@
 - New Content-Elements (based on Rocksolid Custom Elements) [🔗](https://github.com/madeyourday/contao-rocksolid-custom-elements)
 - _and more ..._
 
-#### Tools: 
+### Tools: 
 - Backend Config for SCSS-Variables
 - Theme-Compiler for generate/renew CSS-Files from Config
 - StyleManager
 - __Custom Skin integration to customize the whole website based on this framework__ 🎭
 
 
-
-### Framework Extensions
+### Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - _Further extensions will follow ..._
-
 
 
 ### Further Links
