@@ -20,19 +20,17 @@
 - Article and component spacing
 - Icons
 - New Content-Elements (based on Rocksolid Custom Elements) [🔗](https://github.com/madeyourday/contao-rocksolid-custom-elements)
-- and more ...
-
-
-- __Custom Skin integration to customize the whole website / framework__ 🎭
+- _and more ..._
 
 #### Tools: 
 - Backend Config for SCSS-Variables
 - Theme-Compiler for generate/renew CSS-Files from Config
 - StyleManager
+- __Custom Skin integration to customize the whole website based on this framework__ 🎭
 
 ### Framework Extensions
-- Slider integration (Default: TinySlider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
-- Further extensions will follow ...
+- Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
+- _Further extensions will follow ..._
 <br/>
 
 ### Further Links
