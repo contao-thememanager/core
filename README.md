@@ -13,41 +13,27 @@
 #### Framework:
 - Grid
 - Layout
-- Navigations
-- Basic colors
+- Colors
 - Headings and Fonts
 - Links and Buttons
 - Default component styling
-- Article-Spacing
+- Article and component spacing
 - Icons
-- Slider integration (Default: TinySlider) [🔗](https://github.com/ganlanyuan/tiny-slider)
 - New Content-Elements (based on Rocksolid Custom Elements) [🔗](https://github.com/madeyourday/contao-rocksolid-custom-elements)
-- Custom Skin integration to customize the whole website / framework 🎭
-- and more...
+- and more ...
+
+
+- __Custom Skin integration to customize the whole website / framework__ 🎭
 
 #### Tools: 
-- Backend Config for SCSS-Variables [🔗](https://github.com/oveleon/contao-config-driver-bundle)
-- Theme-Compiler for generate/renew CSS-Files from Config [🔗](https://github.com/oveleon/contao-theme-compiler-bundle)
-- StyleManager [🔗](https://github.com/oveleon/contao-component-style-manager)
+- Backend Config for SCSS-Variables
+- Theme-Compiler for generate/renew CSS-Files from Config
+- StyleManager
+
+### Framework Extensions
+- Slider integration (Default: TinySlider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
+- Further extensions will follow ...
 <br/>
 
-### Quick Install / Usage
-1. Install via Composer, Contao Manager or directly from Github
-    - Composer:
-    `$ composer require contao-thememanager/core`
-2. Update Database via contao/install
-3. Go to StyleManager in the backend and import the provided `templates/stlye-manager-x.x.x.xml`
-4. Go to your theme and click on edit. Here you will now find under "Theme Compiler" the option to select the location of the compiled files, as well as your skin files 
-5. Ready for use
-
-#### Change Theme Variables and Compile
-Each theme now has two more buttons (compile, configure). The configure contains all SCSS variables provided by the framework. The effects only become active when the theme files are recompiled (Also possible in system maintenance).
-
-The supplied configuration file `theme-manager-config.html5` can be adapted or extended via templates in the backend.
-
-To set up a new theme or skin based on the framework, you can attach your own CSS or SCSS files under Themes (edit) as skin files. These are taken into account during compilation. It is possible to use all SCSS variables of the framework for the skin. 
-
-<br/>
-
-> ✏ Documentation is under construction.<br/>
-> ❓ For questions or early use of the extension please contact us directly via www.oveleon.de or try by your own ;-)
+### Further Links
+- [Documentation](https://github.com/contao-thememanager/docs)
