@@ -14,6 +14,7 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = array
         'ptable'                      => 'tl_theme',
         'configField'                 => 'themeConfig',
         'configFile'                  => 'theme-manager-config.html5',
+        'multipleConfigFiles'         => true,
         'onload_callback' => array
         (
             array('tl_thememanager', 'checkPermission')

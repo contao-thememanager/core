@@ -282,18 +282,6 @@ $spacing-small:                       1rem !default;
 $spacing-medium:                      2rem !default;
 $spacing-large:                       3rem !default;
 
-// Tiny Slider
-$tns-dot-size:                        12px !default;
-$tns-dot-spacing:                     5px !default;
-$tns-controls-outer-offset:           100px !default;
-
-$tns-color-regular:                   rgba(0,0,0,.6) !default;
-$tns-color-regular-active:            rgba(0,0,0,1) !default;
-$tns-color-invert:                    rgba(255,255,255,.6) !default;
-$tns-color-invert-active:             rgba(255,255,255,1) !default;
-$tns-color-extra:                     rgba($primary,.6) !default;
-$tns-color-extra-active:              rgba($primary,1) !default;
-
 // Navigation
 $navigation-behaviour-min-width:      768px;
 $navigation-item-padding:             .5rem 1rem;

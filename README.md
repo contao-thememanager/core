@@ -29,6 +29,7 @@
 - Backend Config for SCSS-Variables [🔗](https://github.com/oveleon/contao-config-driver-bundle)
 - Theme-Compiler for generate/renew CSS-Files from Config [🔗](https://github.com/oveleon/contao-theme-compiler-bundle)
 - StyleManager [🔗](https://github.com/oveleon/contao-component-style-manager)
+<br/>
 
 ### Quick Install / Usage
 1. Install via Composer, Contao Manager or directly from Github

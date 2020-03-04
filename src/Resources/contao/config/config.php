@@ -10,14 +10,12 @@ $GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 
 // Add sources
 $GLOBALS['TC_SOURCES'] = array(
-    'basePath'    => 'bundles/contaothememanagercore/framework/scss/',
-    'configFile'  => '_config.scss',
+    'configFiles' => ['bundles/contaothememanagercore/framework/scss/_config.scss'],
     'configField' => 'themeConfig',
-    'files'       => array
-    (
-        '_grid.scss',
-        '_theme.scss'
-    )
+    'files'       => [
+        'bundles/contaothememanagercore/framework/scss/_grid.scss',
+        'bundles/contaothememanagercore/framework/scss/_theme.scss'
+    ]
 );
 
 // Add content element components group
