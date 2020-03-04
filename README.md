@@ -28,10 +28,13 @@
 - StyleManager
 - __Custom Skin integration to customize the whole website based on this framework__ 🎭
 
+
+
 ### Framework Extensions
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - _Further extensions will follow ..._
-<br/>
+
+
 
 ### Further Links
 - [Documentation](https://github.com/contao-thememanager/docs)
