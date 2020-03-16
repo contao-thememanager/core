@@ -8,11 +8,34 @@
     &.width-25 .image_container{
       width: 25%;
     }
+
     &.width-33 .image_container{
       width: 33.333%;
     }
+
     &.width-50 .image_container{
       width: 50%;
+    }
+
+    .image_container{
+
+      &.float_right{
+        margin-left: divide($grid-gutter-width, 2);
+        margin-bottom: $grid-gutter-bottom;
+      }
+
+      &.float_left{
+        margin-right: divide($grid-gutter-width, 2);
+        margin-bottom: $grid-gutter-bottom;
+      }
+
+      &.float_above{
+        margin-bottom: $grid-gutter-bottom;
+      }
+
+      &.float_below{
+        margin-top: $grid-gutter-bottom;
+      }
     }
   }
 }
