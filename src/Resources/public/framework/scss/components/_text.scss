@@ -1,12 +1,18 @@
 .ce_text{
 
-  &.width-25 .image_container{
-    width: 25%;
-  }
-  &.width-33 .image_container{
-    width: 33.333%;
-  }
-  &.width-50 .image_container{
-    width: 50%;
+}
+
+@include media-breakpoint('xs') {
+  .ce_text{
+
+    &.width-25 .image_container{
+      width: 25%;
+    }
+    &.width-33 .image_container{
+      width: 33.333%;
+    }
+    &.width-50 .image_container{
+      width: 50%;
+    }
   }
 }
