@@ -53,6 +53,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: $paragraph-spacing;
+  word-break: break-word;
 
   &:last-child {
     margin-bottom: 0;
