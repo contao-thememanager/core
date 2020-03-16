@@ -1,198 +1,198 @@
-.left-spacing-small .inside {
+.left-spacing-small > .inside {
   margin-left: $spacing-small;
 }
 
-.left-spacing-medium .inside {
+.left-spacing-medium > .inside {
   margin-left: $spacing-medium;
 }
 
-.left-spacing-large .inside {
+.left-spacing-large > .inside {
   margin-left: $spacing-large;
 }
 
-.right-spacing-small .inside {
+.right-spacing-small > .inside {
   margin-right: $spacing-small;
 }
 
-.right-spacing-medium .inside {
+.right-spacing-medium > .inside {
   margin-right: $spacing-medium;
 }
 
-.right-spacing-large .inside {
+.right-spacing-large > .inside {
   margin-right: $spacing-large;
 }
 
 @include media-breakpoint('xs') {
 
-  .left-spacing-xs-reset .inside {
+  .left-spacing-xs-reset > .inside {
     margin-left: 0;
   }
 
-  .left-spacing-xs-small .inside {
+  .left-spacing-xs-small > .inside {
     margin-left: $spacing-small;
   }
 
-  .left-spacing-xs-medium .inside {
+  .left-spacing-xs-medium > .inside {
     margin-left: $spacing-medium;
   }
 
-  .left-spacing-xs-large .inside {
+  .left-spacing-xs-large > .inside {
     margin-left: $spacing-large;
   }
 
-  .right-spacing-xs-reset .inside {
+  .right-spacing-xs-reset > .inside {
     margin-right: 0;
   }
 
-  .right-spacing-xs-small .inside {
+  .right-spacing-xs-small > .inside {
     margin-right: $spacing-small;
   }
 
-  .right-spacing-xs-medium .inside {
+  .right-spacing-xs-medium > .inside {
     margin-right: $spacing-medium;
   }
 
-  .right-spacing-xs-large .inside {
+  .right-spacing-xs-large > .inside {
     margin-right: $spacing-large;
   }
 }
 
 @include media-breakpoint('s') {
 
-  .left-spacing-s-reset .inside {
+  .left-spacing-s-reset > .inside {
     margin-left: 0;
   }
 
-  .left-spacing-s-small .inside {
+  .left-spacing-s-small > .inside {
     margin-left: $spacing-small;
   }
 
-  .left-spacing-s-medium .inside {
+  .left-spacing-s-medium > .inside {
     margin-left: $spacing-medium;
   }
 
-  .left-spacing-s-large .inside {
+  .left-spacing-s-large > .inside {
     margin-left: $spacing-large;
   }
 
-  .right-spacing-s-reset .inside {
+  .right-spacing-s-reset > .inside {
     margin-right: 0;
   }
 
-  .right-spacing-s-small .inside {
+  .right-spacing-s-small > .inside {
     margin-right: $spacing-small;
   }
 
-  .right-spacing-s-medium .inside {
+  .right-spacing-s-medium > .inside {
     margin-right: $spacing-medium;
   }
 
-  .right-spacing-s-large .inside {
+  .right-spacing-s-large > .inside {
     margin-right: $spacing-large;
   }
 }
 
 @include media-breakpoint('m') {
 
-  .left-spacing-m-reset .inside {
+  .left-spacing-m-reset > .inside {
     margin-left: 0;
   }
 
-  .left-spacing-m-small .inside {
+  .left-spacing-m-small > .inside {
     margin-left: $spacing-small;
   }
 
-  .left-spacing-m-medium .inside {
+  .left-spacing-m-medium > .inside {
     margin-left: $spacing-medium;
   }
 
-  .left-spacing-m-large .inside {
+  .left-spacing-m-large > .inside {
     margin-left: $spacing-large;
   }
 
-  .right-spacing-m-reset .inside {
+  .right-spacing-m-reset > .inside {
     margin-right: 0;
   }
 
-  .right-spacing-m-small .inside {
+  .right-spacing-m-small > .inside {
     margin-right: $spacing-small;
   }
 
-  .right-spacing-m-medium .inside {
+  .right-spacing-m-medium > .inside {
     margin-right: $spacing-medium;
   }
 
-  .right-spacing-m-large .inside {
+  .right-spacing-m-large > .inside {
     margin-right: $spacing-large;
   }
 }
 
 @include media-breakpoint('l') {
 
-  .left-spacing-l-reset .inside {
+  .left-spacing-l-reset > .inside {
     margin-left: 0;
   }
 
-  .left-spacing-l-small .inside {
+  .left-spacing-l-small > .inside {
     margin-left: $spacing-small;
   }
 
-  .left-spacing-l-medium .inside {
+  .left-spacing-l-medium > .inside {
     margin-left: $spacing-medium;
   }
 
-  .left-spacing-l-large .inside {
+  .left-spacing-l-large > .inside {
     margin-left: $spacing-large;
   }
 
-  .right-spacing-l-reset .inside {
+  .right-spacing-l-reset > .inside {
     margin-right: 0;
   }
 
-  .right-spacing-l-small .inside {
+  .right-spacing-l-small > .inside {
     margin-right: $spacing-small;
   }
 
-  .right-spacing-l-medium .inside {
+  .right-spacing-l-medium > .inside {
     margin-right: $spacing-medium;
   }
 
-  .right-spacing-l-large .inside {
+  .right-spacing-l-large > .inside {
     margin-right: $spacing-large;
   }
 }
 
 @include media-breakpoint('xl') {
 
-  .left-spacing-xl-reset .inside {
+  .left-spacing-xl-reset > .inside {
     margin-left: 0;
   }
 
-  .left-spacing-xl-small .inside {
+  .left-spacing-xl-small > .inside {
     margin-left: $spacing-small;
   }
 
-  .left-spacing-xl-medium .inside {
+  .left-spacing-xl-medium > .inside {
     margin-left: $spacing-medium;
   }
 
-  .left-spacing-xl-large .inside {
+  .left-spacing-xl-large > .inside {
     margin-left: $spacing-large;
   }
 
-  .right-spacing-xl-reset .inside {
+  .right-spacing-xl-reset > .inside {
     margin-right: 0;
   }
 
-  .right-spacing-xl-small .inside {
+  .right-spacing-xl-small > .inside {
     margin-right: $spacing-small;
   }
 
-  .right-spacing-xl-medium .inside {
+  .right-spacing-xl-medium > .inside {
     margin-right: $spacing-medium;
   }
 
-  .right-spacing-xl-large .inside {
+  .right-spacing-xl-large > .inside {
     margin-right: $spacing-large;
   }
 }
