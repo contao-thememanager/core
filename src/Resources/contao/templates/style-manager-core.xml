@@ -2573,6 +2573,31 @@
         <field title="pid">172</field>
         <field title="cssClass"></field>
       </child>
+      <child alias="direction">
+        <field title="id">1147</field>
+        <field title="tstamp">1584438150</field>
+        <field title="alias">direction</field>
+        <field title="title">Direction</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:9:"left-menu";s:5:"value";s:9:"Left Menu";}}</field>
+        <field title="extendPage">1</field>
+        <field title="extendArticle"></field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="chosen"></field>
+        <field title="extendLayout"></field>
+        <field title="extendForm"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendFormFields"></field>
+        <field title="modules">NULL</field>
+        <field title="extendModule"></field>
+        <field title="extendEvents"></field>
+        <field title="extendNews"></field>
+        <field title="passToTemplate"></field>
+        <field title="sorting">256</field>
+        <field title="pid">172</field>
+        <field title="cssClass"></field>
+      </child>
     </children>
   </archive>
 </archives>
