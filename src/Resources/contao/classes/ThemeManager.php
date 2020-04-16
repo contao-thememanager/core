@@ -16,6 +16,8 @@ class ThemeManager
      */
     public function extendHeadlineField()
     {
+        \Controller::loadLanguageFile('default');
+
         $arrEntities = array
         (
             'tl_content' => 'type_legend',
