@@ -1,6 +1,7 @@
 .grid-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0 -#{divide($grid-gutter-width, 2)} -#{$grid-gutter-bottom};
 
   > div {
@@ -52,8 +53,12 @@
     width: 16.6666%
   }
 
-  &.auto-height .inside {
-    height: 100%;
+  &.auto-height{
+    align-items: stretch;
+
+    .inside {
+      height: 100%;
+    }
   }
 
   &.justify-left {
