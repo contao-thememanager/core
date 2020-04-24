@@ -11,6 +11,7 @@
   }
 
   &.small-gutter {
+    margin: 0 -#{divide($grid-gutter-small-width, 2)} -#{$grid-gutter-small-bottom};
 
     > div {
       padding-right: divide($grid-gutter-small-width, 2);
