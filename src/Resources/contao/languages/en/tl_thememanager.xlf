@@ -284,6 +284,114 @@
       <trans-unit id="tl_thememanager.h6-font-size.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size-small.0">
+          <source>$h1-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size-small.0">
+          <source>$h2-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size-small.0">
+          <source>$h3-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size-small.0">
+          <source>$h4-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size-small.0">
+          <source>$h5-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size-small.0">
+          <source>$h6-content-font-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size-small.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size-medium.0">
+          <source>$h1-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size-medium.0">
+          <source>$h2-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size-medium.0">
+          <source>$h3-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size-medium.0">
+          <source>$h4-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size-medium.0">
+          <source>$h5-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size-medium.0">
+          <source>$h6-content-font-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size-medium.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size.0">
+          <source>$h1-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h1-content-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size.0">
+          <source>$h2-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h2-content-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size.0">
+          <source>$h3-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h3-content-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size.0">
+          <source>$h4-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h4-content-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size.0">
+          <source>$h5-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h5-content-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size.0">
+          <source>$h6-content-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.h6-content-font-size.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.h1-font-weight.0">
           <source>$h1-font-weight</source>
       </trans-unit>
