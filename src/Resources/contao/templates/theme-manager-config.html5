@@ -850,7 +850,7 @@ return array(
         // ToDo: Help-Wizard for defaults
         'breakpoints' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['text'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
             'inputType'               => 'keyValueWizard',
             'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
         ),
@@ -977,7 +977,7 @@ return array(
         ),
         'icon-shape-spacing' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-super'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-shape-spacing'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
@@ -1076,7 +1076,7 @@ return array(
 
         'form-input-color' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
         ),
@@ -1100,7 +1100,7 @@ return array(
         ),
         'form-input-placeholder-color' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-placeholder-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'ccc', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
@@ -1125,7 +1125,7 @@ return array(
         ),
         'form-input-placeholder-color-hover' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-placeholder-color-hover'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'b4b4b4', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
@@ -1535,21 +1535,21 @@ return array(
         ),
         'spacing-small' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'spacing-medium' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
         'spacing-large' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),

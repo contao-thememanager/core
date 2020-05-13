@@ -872,10 +872,10 @@
       <trans-unit id="tl_thememanager.icon-size-super.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-super.0">
-          <source>$icon-size-super</source>
+      <trans-unit id="tl_thememanager.icon-shape-spacing.0">
+          <source>$icon-shape-spacing</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-super.1">
+      <trans-unit id="tl_thememanager.icon-shape-spacing.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.icon-outlined-width.0">
@@ -968,10 +968,10 @@
       <trans-unit id="tl_thememanager.form-input-border-style.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.0">
-          <source>$form-label-color</source>
+      <trans-unit id="tl_thememanager.form-input-color.0">
+          <source>$form-input-color</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.1">
+      <trans-unit id="tl_thememanager.form-input-color.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-color-disabled.0">
@@ -992,10 +992,10 @@
       <trans-unit id="tl_thememanager.form-input-border-color.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.0">
-          <source>$form-label-color</source>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color.0">
+          <source>$form-input-placeholder-color</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.1">
+      <trans-unit id="tl_thememanager.form-input-placeholder-color.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-color-hover.0">
@@ -1016,10 +1016,10 @@
       <trans-unit id="tl_thememanager.form-input-border-color-hover.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.0">
-          <source>$form-label-color</source>
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-hover.0">
+          <source>$form-input-placeholder-color-hover</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-color.1">
+      <trans-unit id="tl_thememanager.form-input-placeholder-color-hover.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-color-focus.0">
@@ -1371,19 +1371,19 @@
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-small.0">
-          <source>$component-inner-spacing</source>
+          <source>$spacing-small</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-small.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-medium.0">
-          <source>$component-inner-spacing</source>
+          <source>$spacing-medium</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-medium.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-large.0">
-          <source>$component-inner-spacing</source>
+          <source>$spacing-large</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing-large.1">
           <source></source>
