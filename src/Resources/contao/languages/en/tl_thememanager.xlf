@@ -776,10 +776,10 @@
       <trans-unit id="tl_thememanager.link-hover-decoration-extra.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.text.0">
-          <source>$text</source>
+      <trans-unit id="tl_thememanager.breakpoints.0">
+          <source>$breakpoints</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.text.1">
+      <trans-unit id="tl_thememanager.breakpoints.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-width-small.0">

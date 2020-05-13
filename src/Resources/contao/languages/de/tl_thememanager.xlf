@@ -1042,11 +1042,11 @@
           <source></source>
           <target></target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.text.0">
-          <source>$text</source>
-          <target>$text</target>
+      <trans-unit id="tl_thememanager.breakpoints.0">
+          <source>$breakpoints</source>
+          <target>$breakpoints</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.text.1">
+      <trans-unit id="tl_thememanager.breakpoints.1">
           <source></source>
           <target></target>
       </trans-unit>
