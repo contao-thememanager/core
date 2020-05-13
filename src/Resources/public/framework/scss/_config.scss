@@ -155,9 +155,9 @@ $breakpoints: (
 ) !default;
 
 // Layout
-$layout-column-small-break:           's';
-$layout-column-medium-break:          'm';
-$layout-column-large-break:           'l';
+$layout-column-small-break:           's' !default;
+$layout-column-medium-break:          'm' !default;
+$layout-column-large-break:           'l' !default;
 
 $layout-column-width-small:           200px !default;
 $layout-column-width-medium:          300px !default;

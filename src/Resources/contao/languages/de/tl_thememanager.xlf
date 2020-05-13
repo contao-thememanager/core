@@ -1050,6 +1050,30 @@
           <source></source>
           <target></target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-small-break.0">
+          <source>$layout-column-small-break</source>
+          <target>$layout-column-small-break</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-small-break.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.0">
+          <source>$layout-column-medium-break</source>
+          <target>$layout-column-medium-break</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-large-break.0">
+          <source>$layout-column-large-break</source>
+          <target>$layout-column-large-break</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-large-break.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-width-small.0">
           <source>$layout-column-width-small</source>
           <target>$layout-column-width-small</target>

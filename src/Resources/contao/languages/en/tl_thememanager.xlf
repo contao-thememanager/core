@@ -782,6 +782,24 @@
       <trans-unit id="tl_thememanager.breakpoints.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-small-break.0">
+          <source>$layout-column-small-break</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-small-break.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.0">
+          <source>$layout-column-medium-break</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-large-break.0">
+          <source>$layout-column-large-break</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout-column-large-break.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-width-small.0">
           <source>$layout-column-width-small</source>
       </trans-unit>
