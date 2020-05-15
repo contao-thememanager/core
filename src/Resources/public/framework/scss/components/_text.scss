@@ -1,5 +1,16 @@
 .ce_text{
 
+  .image_container{
+    width: 100%;
+
+    &.float_right, &.float_left, &.float_above{
+      margin-bottom: divide($grid-gutter-width, 2);
+    }
+
+    &.float_below{
+      margin-top: divide($grid-gutter-width, 2);
+    }
+  }
 }
 
 @include media-breakpoint('xs') {
@@ -21,20 +32,10 @@
 
       &.float_right{
         margin-left: divide($grid-gutter-width, 2);
-        margin-bottom: $grid-gutter-bottom;
       }
 
       &.float_left{
         margin-right: divide($grid-gutter-width, 2);
-        margin-bottom: $grid-gutter-bottom;
-      }
-
-      &.float_above{
-        margin-bottom: $grid-gutter-bottom;
-      }
-
-      &.float_below{
-        margin-top: $grid-gutter-bottom;
       }
     }
   }
