@@ -31,6 +31,7 @@
 
 ### Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
+- EstateManager (Contao EstateManager) [🔗](https://github.com/contao-thememanager/ctm-estatemanager)
 - _Further extensions will follow ..._
 
 

@@ -15,6 +15,7 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use ContaoThemeManager\Core\ContaoThemeManagerCore;
+use Oveleon\ContaoComponentStyleManager\ContaoComponentStyleManager;
 use Oveleon\ContaoThemeCompilerBundle\ContaoThemeCompilerBundle;
 
 class Plugin implements BundlePluginInterface
@@ -26,7 +27,7 @@ class Plugin implements BundlePluginInterface
     {
         return [
             BundleConfig::create(ContaoThemeManagerCore::class)
-                ->setLoadAfter([ContaoCoreBundle::class, ContaoThemeCompilerBundle::class])
+                ->setLoadAfter([ContaoCoreBundle::class, ContaoComponentStyleManager::class, ContaoThemeCompilerBundle::class])
                 ->setReplace(['contao-thememanager']),
         ];
     }

@@ -5,9 +5,10 @@ return array(
                       '{color_legend:hide},primary,secondary,light,dark;' .
                       '{font_legend:hide},font-family-base,font-size-base,line-height-base,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,text-color-regular,text-color-invert,paragraph-spacing,strong-font-weight;' .
                       '{headings_legend:hide},line-height-headline,h1-font-size-small,h2-font-size-small,h3-font-size-small,h4-font-size-small,h5-font-size-small,h6-font-size-small,h1-font-size-medium,h2-font-size-medium,h3-font-size-medium,h4-font-size-medium,h5-font-size-medium,h6-font-size-medium,h1-font-size,h2-font-size,h3-font-size,h4-font-size,h5-font-size,h6-font-size,h1-font-weight,h2-font-weight,h3-font-weight,h4-font-weight,h5-font-weight,h6-font-weight,h1-color,h2-color,h3-color,h4-color,h5-color,h6-color,h1-color-invert,h2-color-invert,h3-color-invert,h4-color-invert,h5-color-invert,h6-color-invert,h1-letter-spacing,h2-letter-spacing,h3-letter-spacing,h4-letter-spacing,h5-letter-spacing,h6-letter-spacing;' .
+                      '{content_headings_legend:hide},h1-content-font-size-small,h2-content-font-size-small,h3-content-font-size-small,h4-content-font-size-small,h5-content-font-size-small,h6-content-font-size-small,h1-content-font-size-medium,h2-content-font-size-medium,h3-content-font-size-medium,h4-content-font-size-medium,h5-content-font-size-medium,h6-content-font-size-medium,h1-content-font-size,h2-content-font-size,h3-content-font-size,h4-content-font-size,h5-content-font-size,h6-content-font-size;' .
                       '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
                       '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
-                      '{layout_legend:hide},breakpoints,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
+                      '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
                       '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
                       '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
                       '{form_legend:hide},form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
@@ -86,7 +87,7 @@ return array(
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['text-color-regular'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'000', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'000', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'),
         ),
         'text-color-invert' => array
         (
@@ -98,7 +99,7 @@ return array(
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['font-weight-light'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'300', 'rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'300', 'rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'font-weight-regular' => array
         (
@@ -237,7 +238,6 @@ return array(
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
-
         'h1-font-size' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-font-size'],
@@ -281,6 +281,134 @@ return array(
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
 
+        'h1-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'h2-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h2-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h3-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h3-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h4-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h4-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h5-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h5-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h6-content-font-size-small' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h6-content-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'h1-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'h2-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h2-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.8rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h3-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h3-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.6rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h4-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h4-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h5-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h5-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h6-content-font-size-medium' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h6-content-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+
+        'h1-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
+        ),
+        'h2-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h2-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h3-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h3-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h4-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h4-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h5-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h5-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1.25rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'h6-content-font-size' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h6-content-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
         'h1-font-weight' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-font-weight'],
@@ -722,9 +850,30 @@ return array(
         // ToDo: Help-Wizard for defaults
         'breakpoints' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['text'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
             'inputType'               => 'keyValueWizard',
             'eval'                    => array('maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'layout-column-small-break' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-small-break'],
+            'inputType'               => 'text',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'s', 'maxlength' => 2, 'tl_class'=>'w50 clr'),
+        ),
+        'layout-column-medium-break' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-medium-break'],
+            'inputType'               => 'text',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'m', 'maxlength' => 2, 'tl_class'=>'w50'),
+        ),
+        'layout-column-large-break' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-large-break'],
+            'inputType'               => 'text',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'l', 'maxlength' => 2, 'tl_class'=>'w50'),
         ),
         'layout-column-width-small' => array
         (
@@ -752,7 +901,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'layout-column-gutter-medium' => array
         (
@@ -781,7 +930,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-gutter-width'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'grid-gutter-bottom' => array
         (
@@ -849,10 +998,10 @@ return array(
         ),
         'icon-shape-spacing' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-super'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-shape-spacing'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'),
         ),
         'icon-outlined-width' => array
         (
@@ -948,7 +1097,7 @@ return array(
 
         'form-input-color' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
         ),
@@ -972,7 +1121,7 @@ return array(
         ),
         'form-input-placeholder-color' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-placeholder-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'ccc', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
@@ -997,7 +1146,7 @@ return array(
         ),
         'form-input-placeholder-color-hover' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-color'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-placeholder-color-hover'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'b4b4b4', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
@@ -1266,7 +1415,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xs-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'element-spacing-s-medium' => array
         (
@@ -1302,7 +1451,7 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xs-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'element-spacing-s-large' => array
         (
@@ -1407,21 +1556,21 @@ return array(
         ),
         'spacing-small' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'spacing-medium' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
         ),
         'spacing-large' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
