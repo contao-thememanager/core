@@ -1100,6 +1100,12 @@
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-border-radius.0">
+          <source>$form-checkbox-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-border-radius.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">
           <source>$form-checkbox-radio-size</source>
       </trans-unit>
