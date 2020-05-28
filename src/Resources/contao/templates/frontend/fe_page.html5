@@ -59,7 +59,7 @@
 
             <?php $this->block('left'); ?>
               <?php if ($this->left): ?>
-                <aside id="left">
+                <aside id="left" class="grid">
                   <div class="inside">
                     <?= $this->left ?>
                   </div>
@@ -69,7 +69,7 @@
 
             <?php $this->block('right'); ?>
               <?php if ($this->right): ?>
-                <aside id="right">
+                <aside id="right" class="grid">
                   <div class="inside">
                     <?= $this->right ?>
                   </div>
