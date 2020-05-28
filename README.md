@@ -19,6 +19,7 @@
 - Default component styling
 - Article and component spacing
 - Icons
+- Boxed-Elements
 - New Content-Elements (based on Rocksolid Custom Elements) [🔗](https://github.com/madeyourday/contao-rocksolid-custom-elements)
 - _and more ..._
 
