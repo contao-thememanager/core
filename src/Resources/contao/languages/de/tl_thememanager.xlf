@@ -1482,6 +1482,14 @@
           <source></source>
           <target></target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-border-radius.0">
+          <source>$form-checkbox-border-radius</source>
+          <target>$form-checkbox-border-radius</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-border-radius.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-input-explanation-color.0">
           <source>$form-input-explanation-color</source>
           <target>$form-input-explanation-color</target>
