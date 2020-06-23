@@ -7,11 +7,11 @@
   &.layout-top {
 
     .c_image {
-      left: -#{sub($boxed-padding, $boxed-border-width)};
+      left: -#{sum($boxed-padding, $boxed-border-width)};
       margin-bottom: 0;
       position: relative;
-      top: -#{sub($boxed-padding, $boxed-border-width)};
-      width: calc(100% + #{multiply($boxed-padding, 2)});
+      top: -#{sum($boxed-padding, $boxed-border-width)};
+      width: calc(100% + #{multiply(sum($boxed-border-width, $boxed-padding), 2)});
     }
   }
 
