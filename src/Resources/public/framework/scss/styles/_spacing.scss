@@ -208,13 +208,13 @@
   }
 
   .x-spacing-medium > .inside, .x-spacing-medium #container > .inside {
-    width: sub(1200px, $grid-gutter-width, 'px');
+    width: sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px');
     margin-left: auto;
     margin-right: auto;
   }
 
   .x-spacing-medium.small-gutter > .inside, .x-spacing-medium.small-gutter #container > .inside {
-    width: sub(1200px, $grid-gutter-small-width, 'px');
+    width: sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px');
     margin-left: auto;
     margin-right: auto;
   }
