@@ -84,3 +84,38 @@
     }
   }
 }
+
+@function standardize($a: ()) {
+  @if (length($a) == 1){
+    @return nth($a, 1) nth($a, 1) nth($a, 1) nth($a, 1);
+  }
+  @else if(length($a) == 2){
+    @return nth($a, 1) nth($a, 2) nth($a, 1) nth($a, 2);
+  }
+  @else if(length($a) == 3){
+    @return nth($a, 1) nth($a, 2) nth($a, 3) nth($a, 2);
+  }
+  @else if(length($a) == 4){
+    @return $a;
+  }
+  @else{
+    @return nth($a, 1) nth($a, 2) nth($a, 3) nth($a, 4);
+  }
+}
+
+@function button-padding($padding, $border-width) {
+  $a: standardize($padding);
+  $b: standardize($border-width);
+  $result: '';
+  @for $i from 1 through 4 {
+    $suffix : '';
+    @if ($i != 4){
+      $suffix: ' ';
+    }
+    @else {
+      $suffix: '';
+    }
+    $result: #{$result} + (sub(nth($a, $i), nth($b, $i))) + $suffix;
+  }
+  @return unquote($result);
+}
