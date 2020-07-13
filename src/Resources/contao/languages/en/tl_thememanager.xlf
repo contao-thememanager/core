@@ -34,8 +34,20 @@
       <trans-unit id="tl_thememanager.icon_legend">
         <source>Icon</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button_legend">
-        <source>Button</source>
+      <trans-unit id="tl_thememanager.button_properties_legend">
+        <source>Button-Properties</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_design_primary_legend">
+        <source>Button-Design-Primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_design_secondary_legend">
+        <source>Button-Design-Secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_design_alt_legend">
+        <source>Button-Design-Alternative</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.element_legend">
+        <source>Element-Spacing</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.divider_legend">
         <source>Divider</source>
@@ -1136,6 +1148,12 @@
       <trans-unit id="tl_thememanager.form-input-symbol-color.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-line-height.0">
+          <source>$button-line-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-line-height.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.button-font-size-small.0">
           <source>$button-font-size-small</source>
       </trans-unit>
@@ -1184,34 +1202,160 @@
       <trans-unit id="tl_thememanager.button-padding-super.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-background-regular.0">
-          <source>$button-background-regular</source>
+      <trans-unit id="tl_thememanager.button-font-weight-primary.0">
+          <source>$button-font-weight-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-background-regular.1">
+      <trans-unit id="tl_thememanager.button-font-weight-primary.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-regular.0">
-          <source>$button-color-regular</source>
+      <trans-unit id="tl_thememanager.button-transform-primary.0">
+          <source>$button-transform-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-regular.1">
+      <trans-unit id="tl_thememanager.button-transform-primary.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-background-regular.0">
-          <source>$button-hover-background-regular</source>
+      <trans-unit id="tl_thememanager.button-bg-primary.0">
+          <source>$button-bg-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-background-regular.1">
+      <trans-unit id="tl_thememanager.button-bg-primary.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-regular.0">
-          <source>$button-hover-color-regular</source>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary.0">
+          <source>$button-hover-bg-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-regular.1">
+      <trans-unit id="tl_thememanager.button-hover-bg-primary.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-background-alt.0">
-          <source>$button-background-alt</source>
+      <trans-unit id="tl_thememanager.button-color-primary.0">
+          <source>$button-color-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-background-alt.1">
+      <trans-unit id="tl_thememanager.button-color-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary.0">
+          <source>$button-hover-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-primary.0">
+          <source>$button-border-radius-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.0">
+          <source>$button-border-width-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.0">
+          <source>$button-border-style-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary.0">
+          <source>$button-border-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary.0">
+          <source>$button-hover-border-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-secondary.0">
+          <source>$button-font-weight-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-secondary.0">
+          <source>$button-transform-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary.0">
+          <source>$button-bg-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary.0">
+          <source>$button-hover-bg-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary.0">
+          <source>$button-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary.0">
+          <source>$button-hover-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
+          <source>$button-border-radius-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.0">
+          <source>$button-border-width-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.0">
+          <source>$button-border-style-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary.0">
+          <source>$button-border-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.0">
+          <source>$button-hover-border-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-alt.0">
+          <source>$button-font-weight-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-alt.0">
+          <source>$button-transform-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt.0">
+          <source>$button-bg-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt.0">
+          <source>$button-hover-bg-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button-color-alt.0">
@@ -1220,28 +1364,40 @@
       <trans-unit id="tl_thememanager.button-color-alt.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-background-alt.0">
-          <source>$button-hover-background-alt</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-background-alt.1">
-          <source></source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-color-alt.0">
           <source>$button-hover-color-alt</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-color-alt.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius.0">
-          <source>$button-border-radius</source>
+      <trans-unit id="tl_thememanager.button-border-radius-alt.0">
+          <source>$button-border-radius-alt</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius.1">
+      <trans-unit id="tl_thememanager.button-border-radius-alt.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width.0">
-          <source>$button-border-width</source>
+      <trans-unit id="tl_thememanager.button-border-width-alt.0">
+          <source>$button-border-width-alt</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width.1">
+      <trans-unit id="tl_thememanager.button-border-width-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.0">
+          <source>$button-border-style-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt.0">
+          <source>$button-border-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt.0">
+          <source>$button-hover-border-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.element-spacing-xs-small.0">

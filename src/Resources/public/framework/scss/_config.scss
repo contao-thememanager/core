@@ -147,11 +147,11 @@ $icon-outlined-width:                 2px !default;
 
 // Breakpoints
 $breakpoints: (
-    xs: 600px,  // 37.5rem
-    s:  768px,  // 48 rem
-    m:  1024px, // 64rem
-    l:  1232px, // 76rem
-    xl: 1921px  // 120rem
+        xs: 600px,  // 37.5rem
+        s:  768px,  // 48rem
+        m:  1024px, // 64rem
+        l:  1232px, // 77rem
+        xl: 1921px  // 120rem
 ) !default;
 
 // Layout
@@ -223,6 +223,7 @@ $form-input-mandatory-symbol-color:   #ccc !default;
 $form-input-symbol-color:             $primary !default;
 
 // Button
+$button-line-height:                  1 !default;
 $button-font-size-small:              1rem;
 $button-font-size-medium:             1rem;
 $button-font-size-large:              1rem;
@@ -233,18 +234,53 @@ $button-padding-medium:               .75rem 1.5rem;
 $button-padding-large:                1rem 2rem;
 $button-padding-super:                1.5rem 3rem;
 
-$button-background-regular:           $primary !default;
-$button-color-regular:                $text-color-invert !default;
-$button-hover-background-regular:     darken($button-background-regular, 10) !default;
-$button-hover-color-regular:          $text-color-invert !default;
+// Button design primary
+$button-font-weight-primary:          $font-weight-base !default;
+$button-transform-primary:            none !default;
 
-$button-background-alt:               transparent !default;
-$button-color-alt:                    $primary !default;
-$button-hover-background-alt:         $primary !default;
+$button-bg-primary:                   $primary !default;
+$button-hover-bg-primary:             darken($button-bg-primary, 10) !default;
+$button-color-primary:                $text-color-invert !default;
+$button-hover-color-primary:          $text-color-invert !default;
+
+$button-border-radius-primary:        0 !default;
+$button-border-style-primary:         solid !default;
+$button-border-width-primary:         2px !default;
+
+$button-border-color-primary:         $button-bg-primary !default;
+$button-hover-border-color-primary:   $button-hover-bg-primary !default;
+
+// Button design secondary
+$button-font-weight-secondary:        $font-weight-base !default;
+$button-transform-secondary:          none !default;
+
+$button-bg-secondary:                 transparent !default;
+$button-hover-bg-secondary:           $primary !default;
+$button-color-secondary:              $primary !default;
+$button-hover-color-secondary:        $text-color-invert !default;
+
+$button-border-radius-secondary:      0 !default;
+$button-border-style-secondary:       solid !default;
+$button-border-width-secondary:       2px !default;
+
+$button-border-color-secondary:       $button-color-secondary !default;
+$button-hover-border-color-secondary: $button-hover-bg-secondary !default;
+
+// Button design alternative
+$button-font-weight-alt:              $font-weight-base !default;
+$button-transform-alt:                none !default;
+
+$button-bg-alt:                       $secondary !default;
+$button-hover-bg-alt:                 darken($button-bg-alt, 10) !default;
+$button-color-alt:                    $text-color-invert !default;
 $button-hover-color-alt:              $text-color-invert !default;
 
-$button-border-radius:                0 !default;
-$button-border-width:                 0 !default;
+$button-border-radius-alt:            0 !default;
+$button-border-style-alt:             solid !default;
+$button-border-width-alt:             2px !default;
+
+$button-border-color-alt:             $button-bg-alt !default;
+$button-hover-border-color-alt:       $button-hover-bg-alt !default;
 
 // Element Spacing
 $element-spacing-xs-small:            1rem !default;

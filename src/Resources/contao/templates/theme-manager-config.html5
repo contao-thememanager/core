@@ -2,24 +2,27 @@
 return array(
     'palettes' => array(
         'default'  => '{default_legend:hide},browser-context,body-bg;' .
-                      '{color_legend:hide},primary,secondary,light,dark;' .
-                      '{font_legend:hide},font-family-base,font-size-base,line-height-base,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,text-color-regular,text-color-invert,paragraph-spacing,strong-font-weight;' .
-                      '{headings_legend:hide},line-height-headline,h1-font-size-small,h2-font-size-small,h3-font-size-small,h4-font-size-small,h5-font-size-small,h6-font-size-small,h1-font-size-medium,h2-font-size-medium,h3-font-size-medium,h4-font-size-medium,h5-font-size-medium,h6-font-size-medium,h1-font-size,h2-font-size,h3-font-size,h4-font-size,h5-font-size,h6-font-size,h1-font-weight,h2-font-weight,h3-font-weight,h4-font-weight,h5-font-weight,h6-font-weight,h1-color,h2-color,h3-color,h4-color,h5-color,h6-color,h1-color-invert,h2-color-invert,h3-color-invert,h4-color-invert,h5-color-invert,h6-color-invert,h1-letter-spacing,h2-letter-spacing,h3-letter-spacing,h4-letter-spacing,h5-letter-spacing,h6-letter-spacing;' .
-                      '{content_headings_legend:hide},h1-content-font-size-small,h2-content-font-size-small,h3-content-font-size-small,h4-content-font-size-small,h5-content-font-size-small,h6-content-font-size-small,h1-content-font-size-medium,h2-content-font-size-medium,h3-content-font-size-medium,h4-content-font-size-medium,h5-content-font-size-medium,h6-content-font-size-medium,h1-content-font-size,h2-content-font-size,h3-content-font-size,h4-content-font-size,h5-content-font-size,h6-content-font-size;' .
-                      '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
-                      '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
-                      '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-                      '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
-                      '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
-                      '{form_legend:hide},form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-checkbox-border-radius,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
-                      '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
-                      '{button_legend:hide},button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super,button-background-regular,button-color-regular,button-hover-background-regular,button-hover-color-regular,button-background-alt,button-color-alt,button-hover-background-alt,button-hover-color-alt,button-border-radius,button-border-width;' .
-                      '{element_legend:hide},element-spacing-xs-small,element-spacing-s-small,element-spacing-m-small,element-spacing-l-small,element-spacing-xl-small,element-spacing-xs-medium,element-spacing-s-medium,element-spacing-m-medium,element-spacing-l-medium,element-spacing-xl-medium,element-spacing-xs-large,element-spacing-s-large,element-spacing-m-large,element-spacing-l-large,element-spacing-xl-large;' .
-                      '{divider_legend:hide},divider-size,divider-style,divider-color;' .
-                      '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
-                      '{component_legend:hide},component-inner-spacing,spacing-small,spacing-medium,spacing-large;' .
-                      '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
-                      '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
+            '{color_legend:hide},primary,secondary,light,dark;' .
+            '{font_legend:hide},font-family-base,font-size-base,line-height-base,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,text-color-regular,text-color-invert,paragraph-spacing,strong-font-weight;' .
+            '{headings_legend:hide},line-height-headline,h1-font-size-small,h2-font-size-small,h3-font-size-small,h4-font-size-small,h5-font-size-small,h6-font-size-small,h1-font-size-medium,h2-font-size-medium,h3-font-size-medium,h4-font-size-medium,h5-font-size-medium,h6-font-size-medium,h1-font-size,h2-font-size,h3-font-size,h4-font-size,h5-font-size,h6-font-size,h1-font-weight,h2-font-weight,h3-font-weight,h4-font-weight,h5-font-weight,h6-font-weight,h1-color,h2-color,h3-color,h4-color,h5-color,h6-color,h1-color-invert,h2-color-invert,h3-color-invert,h4-color-invert,h5-color-invert,h6-color-invert,h1-letter-spacing,h2-letter-spacing,h3-letter-spacing,h4-letter-spacing,h5-letter-spacing,h6-letter-spacing;' .
+            '{content_headings_legend:hide},h1-content-font-size-small,h2-content-font-size-small,h3-content-font-size-small,h4-content-font-size-small,h5-content-font-size-small,h6-content-font-size-small,h1-content-font-size-medium,h2-content-font-size-medium,h3-content-font-size-medium,h4-content-font-size-medium,h5-content-font-size-medium,h6-content-font-size-medium,h1-content-font-size,h2-content-font-size,h3-content-font-size,h4-content-font-size,h5-content-font-size,h6-content-font-size;' .
+            '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
+            '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
+            '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
+            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
+            '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
+            '{form_legend:hide},form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-size,form-checkbox-border-radius,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-symbol-color;' .
+            '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
+            '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
+            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-bg-primary,button-hover-bg-primary,button-color-primary,button-hover-color-primary,button-border-radius-primary,button-border-style-primary,button-border-width-primary,button-border-color-primary,button-hover-border-color-primary;' .
+            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-color-secondary,button-hover-color-secondary,button-border-radius-secondary,button-border-style-secondary,button-border-width-secondary,button-border-color-secondary,button-hover-border-color-secondary;' .
+            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-color-alt,button-hover-color-alt,button-border-radius-alt,button-border-style-alt,button-border-width-alt,button-border-color-alt,button-hover-border-color-alt;' .
+            '{element_legend:hide},element-spacing-xs-small,element-spacing-s-small,element-spacing-m-small,element-spacing-l-small,element-spacing-xl-small,element-spacing-xs-medium,element-spacing-s-medium,element-spacing-m-medium,element-spacing-l-medium,element-spacing-xl-medium,element-spacing-xs-large,element-spacing-s-large,element-spacing-m-large,element-spacing-l-large,element-spacing-xl-large;' .
+            '{divider_legend:hide},divider-size,divider-style,divider-color;' .
+            '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
+            '{component_legend:hide},component-inner-spacing,spacing-small,spacing-medium,spacing-large;' .
+            '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
+            '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
     ),
     'fields'   => array(
 
@@ -1256,13 +1259,18 @@ return array(
             'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
 
-        // Button
+        // Button properties
+        'button-line-height' => array (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-line-height'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'1', 'rgxp'=>'digit', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
         'button-font-size-small' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 20, 'tl_class'=>'w50 clr'),
         ),
         'button-font-size-medium' => array
         (
@@ -1315,48 +1323,181 @@ return array(
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
         ),
 
-        'button-background-regular' => array
+        // Button design primary
+        'button-font-weight-primary' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-background-regular'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-primary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$font-weight-base', 'rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-transform-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-primary'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'uppercase', 'lowercase', 'capitalize'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (none)', 'maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'button-bg-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
-        'button-color-regular' => array
+        'button-hover-bg-primary' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-regular'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-color-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-default'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
-        'button-hover-background-regular' => array
+        'button-hover-color-primary' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-background-regular'],
-            'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'darken($button-background-regular, 10)', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
-        'button-hover-color-regular' => array
-        (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-regular'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-default'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-border-radius-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-primary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
+        ),
+        'button-border-style-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-primary'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (solid)', 'maxlength' => 255, 'tl_class'=>'w50 clr'),
+        ),
+        'button-border-width-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-primary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-border-color-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-default'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-bg-primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-border-color-primary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-default'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-hover-bg-primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
 
-        'button-background-alt' => array
+        // Button design secondary
+        'button-font-weight-secondary' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-background-alt'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$font-weight-base', 'rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-transform-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-secondary'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'uppercase', 'lowercase', 'capitalize'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (none)', 'maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'button-bg-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'transparent', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-bg-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-color-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-color-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-border-radius-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-secondary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
+        ),
+        'button-border-style-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-secondary'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (solid)', 'maxlength' => 255, 'tl_class'=>'w50 clr'),
+        ),
+        'button-border-width-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-secondary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['TL_CSS_UNITS'],
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-border-color-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-color-secondary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-border-color-secondary' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+
+        // Button design alternative
+        'button-font-weight-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$font-weight-base', 'rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
+        ),
+        'button-transform-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-alt'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'uppercase', 'lowercase', 'capitalize'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (none)', 'maxlength' => 255, 'tl_class'=>'w50'),
+        ),
+        'button-bg-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$secondary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-bg-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
         'button-color-alt' => array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
-        'button-hover-background-alt' => array
-        (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-background-alt'],
-            'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
         'button-hover-color-alt' => array
         (
@@ -1364,20 +1505,38 @@ return array(
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
-
-        'button-border-radius' => array
+        'button-border-radius-alt' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-alt'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
-            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50 clr'),
+            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
         ),
-        'button-border-width' => array
+        'button-border-style-alt' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-alt'],
+            'inputType'               => 'select',
+            'options'                 => array('none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'),
+            'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (solid)', 'maxlength' => 255, 'tl_class'=>'w50 clr'),
+        ),
+        'button-border-width-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-alt'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['TL_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
+        ),
+        'button-border-color-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-bg-alt', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+        ),
+        'button-hover-border-color-alt' => array
+        (
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$button-hover-bg-alt', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
 
         // Element
