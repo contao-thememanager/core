@@ -1,127 +1,106 @@
 button, a.button, input.button {
-  border-width: $button-border-width;
-  border-style: solid;
-  border-radius: $button-border-radius;
-  color: $button-color-regular;
+  font-family: $font-family-base;
+  font-weight: $button-font-weight-primary;
+  line-height: $button-line-height;
+  text-transform: $button-transform-primary;
+
+  background-color: $button-bg-primary;
+  color: $button-color-primary;
+
+  border-radius: $button-border-radius-primary;
+  border: $button-border-style-primary $button-border-color-primary;
+  border-width: $button-border-width-primary;
+
   cursor: pointer;
-  background-color: $button-background-regular;
   display: inline-block;
+
   font-size: $button-font-size-medium;
-  padding: $button-padding-medium;
+  padding: button-padding($button-padding-medium, $button-border-width-primary);
+
   text-decoration: none;
 
   &:hover {
-    background-color: $button-hover-background-regular;
-    color: $button-hover-color-regular;
+    background-color: $button-hover-bg-primary;
+    color: $button-hover-color-primary;
+    border-color: $button-hover-border-color-primary;
   }
 
   &.size-small {
     font-size: $button-font-size-small;
-    padding: $button-padding-small;
+    padding: button-padding($button-padding-small, $button-border-width-primary);
   }
 
   &.size-large {
     font-size: $button-font-size-large;
-    padding: $button-padding-large;
+    padding: button-padding($button-padding-large, $button-border-width-primary);
   }
 
   &.size-super {
     font-size: $button-font-size-super;
-    padding: $button-padding-super;
+    padding: button-padding($button-padding-super, $button-border-width-primary);
+  }
+
+  &.design-secondary {
+    font-weight: $button-font-weight-secondary;
+    text-transform: $button-transform-secondary;
+
+    background-color: $button-bg-secondary;
+    color: $button-color-secondary;
+
+    border-radius: $button-border-radius-secondary;
+    border: $button-border-style-secondary $button-border-color-secondary;
+    border-width: $button-border-width-secondary;
+
+    padding: button-padding($button-padding-medium, $button-border-width-secondary);
+
+    &:hover {
+      background-color: $button-hover-bg-secondary;
+      color: $button-hover-color-secondary;
+      border-color: $button-hover-border-color-secondary;
+    }
+
+    &.size-small {
+      padding: button-padding($button-padding-small, $button-border-width-secondary);
+    }
+
+    &.size-large {
+      padding: button-padding($button-padding-large, $button-border-width-secondary);
+    }
+
+    &.size-super {
+      padding: button-padding($button-padding-super, $button-border-width-secondary);
+    }
   }
 
   &.design-alt {
-    background-color: $button-background-alt;
-    box-shadow: inset 0 0 0 $button-border-width $button-color-alt;
+    font-weight: $button-font-weight-alt;
+    text-transform: $button-transform-alt;
+
+    background-color: $button-bg-alt;
     color: $button-color-alt;
 
+    border-radius: $button-border-radius-alt;
+    border: $button-border-style-alt $button-border-color-alt;
+    border-width: $button-border-width-alt;
+
+    padding: button-padding($button-padding-medium, $button-border-width-alt);
+
     &:hover {
-      background-color: $button-hover-background-alt;
+      background-color: $button-hover-bg-alt;
       color: $button-hover-color-alt;
+      border-color: $button-hover-border-color-alt;
     }
 
-    &.color-primary {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 $button-border-width $primary;
-      color: $primary;
-
-      &:hover {
-        background-color: $primary;
-        color: $text-color-invert;
-      }
+    &.size-small {
+      padding: button-padding($button-padding-small, $button-border-width-alt);
     }
 
-    &.color-secondary {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 $button-border-width $secondary;
-      color: $secondary;
-
-      &:hover {
-        background-color: $secondary;
-        color: $text-color-invert;
-      }
+    &.size-large {
+      padding: button-padding($button-padding-large, $button-border-width-alt);
     }
 
-    &.color-regular {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 $button-border-width $text-color-regular;
-      color: $text-color-regular;
-
-      &:hover {
-        background-color: $text-color-regular;
-        color: $text-color-invert;
-      }
-    }
-
-    &.color-invert {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 $button-border-width $text-color-invert;
-      color: $text-color-invert;
-
-      &:hover {
-        background-color: $text-color-invert;
-        color: $text-color-regular;
-      }
-    }
-  }
-
-  &.color-primary {
-    background-color: $primary;
-    color: $text-color-invert;
-
-    &:hover {
-      background-color: darken($primary, 10);
-      color: $text-color-invert;
-    }
-  }
-
-  &.color-secondary {
-    background-color: $secondary;
-    color: $text-color-invert;
-
-    &:hover {
-      background-color: darken($secondary, 10);
-      color: $text-color-invert;
-    }
-  }
-
-  &.color-regular {
-    background-color: $text-color-regular;
-    color: $text-color-invert;
-
-    &:hover {
-      background-color: darken($text-color-regular, 10);
-      color: $text-color-invert;
-    }
-  }
-
-  &.color-invert {
-    background-color: $text-color-invert;
-    color: $text-color-regular;
-
-    &:hover {
-      background-color: darken($text-color-invert, 10);
-      color: $text-color-regular;
+    &.size-super {
+      padding: button-padding($button-padding-super, $button-border-width-alt);
     }
   }
 }
