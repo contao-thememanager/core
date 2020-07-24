@@ -29,6 +29,7 @@ return array(
         // Defaults
         'browser-context' => array
         (
+            'default'                 => 16,
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['browser-context'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'16', 'rgxp'=>'natural', 'maxlength' => 20, 'tl_class'=>'w50'),
