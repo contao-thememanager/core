@@ -23,3 +23,15 @@
     @content;
   }
 }
+
+// Returns a max-width breakpoint
+@mixin max-breakpoint($name, $breakpoints: $breakpoints) {
+  $max: breakpoint-min($name, $breakpoints);
+  @if $max {
+    @media (max-width: sub($max, 1px, 'px')) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
