@@ -13,6 +13,12 @@
       top: -#{sum($boxed-padding, $boxed-border-width)};
       width: calc(100% + #{multiply(sum($boxed-border-width, $boxed-padding), 2)});
     }
+
+    &.boxed {
+      figure, img {
+        border-radius: $boxed-border-radius $boxed-border-radius 0 0;
+      }
+    }
   }
 
   &.layout-left {
