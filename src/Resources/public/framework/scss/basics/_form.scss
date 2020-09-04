@@ -109,18 +109,23 @@ textarea {
     content: '*';
 
     position: absolute;
-    right: 15px;
-    bottom: 35px;
+    right: 5px;
+    bottom: #{sub($form-input-height, (15px + 5px), 'px')};
 
     font-size: 15px;
     font-weight: $font-weight-medium;
     color: $form-input-mandatory-symbol-color;
+
+    line-height: 1;
+    width: 7px;
   }
 
-  &.widget-textarea{
+  &.widget-textarea, &.widget-range {
+    font-size: 0;
 
     &.mandatory:after {
-      bottom: 20px;
+      top: 5px;
+      bottom: unset;
     }
   }
 
@@ -131,13 +136,13 @@ textarea {
       content: '⮟';
 
       position: absolute;
-      bottom: 32px;
-      right: 20px;
+      bottom: #{divide(sub($form-input-height, $form-input-symbol-font-size, 'px'), 2)};
+      right: 12px;
 
-      line-height: 12px;
-      height: 12px;
+      line-height: 1;
+      height: 1em;
       width: 1em;
-      margin: auto 0;
+      font-size: $form-input-symbol-font-size;
 
       text-align: center;
       text-decoration: inherit;
@@ -284,5 +289,47 @@ textarea {
 
   input {
     order: 3;
+  }
+}
+
+.widget-range {
+
+  > input {
+    height: inherit;
+    padding: 0;
+  }
+}
+
+.grid.small-gutter {
+
+  .widget {
+
+    &.mandatory:after {
+      right: #{sum(divide($grid-gutter-small-width, 2), 5px, 'px')};
+      bottom: #{sum(sub($form-input-height, (15px + 5px), 'px'), $grid-gutter-small-bottom, 'px')};
+    }
+
+    &.widget-textarea, &.widget-range {
+
+      &.mandatory:after {
+        top: 5px;
+        bottom: initial;
+      }
+    }
+
+    &.select {
+
+      &:before {
+        right: #{sum(divide($grid-gutter-small-width, 2), 12px, 'px')};
+        bottom: #{sum(divide(sub($form-input-height, $form-input-symbol-font-size, 'px'), 2), $grid-gutter-small-bottom, 'px')};
+      }
+    }
+  }
+
+  .widget-checkbox, .widget-radio {
+
+    &.mandatory:after {
+      bottom: initial;
+    }
   }
 }

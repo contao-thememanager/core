@@ -1148,6 +1148,12 @@
       <trans-unit id="tl_thememanager.form-input-symbol-color.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-font-size.0">
+          <source>$form-input-symbol-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.button-line-height.0">
           <source>$button-line-height</source>
       </trans-unit>
