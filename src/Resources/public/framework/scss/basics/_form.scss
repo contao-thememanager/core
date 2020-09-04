@@ -85,6 +85,10 @@ textarea {
 .widget {
   position: relative;
 
+  .input-container {
+    position: relative;
+  }
+
   &.error{
 
     select, input, textarea {
@@ -104,13 +108,34 @@ textarea {
     }
   }
 
-  &.mandatory:after {
+  &-checkbox,
+  &-radio,
+  &-range {
+
+    &.mandatory:after {
+      display: block;
+      content: '*';
+
+      position: absolute;
+      top: 5px;
+      right: 5px;
+
+      font-size: 15px;
+      font-weight: $font-weight-medium;
+      color: $form-input-mandatory-symbol-color;
+
+      line-height: 1;
+      width: 7px;
+    }
+  }
+
+  &.mandatory .input-container:after {
     display: block;
     content: '*';
 
     position: absolute;
+    top: 5px;
     right: 5px;
-    bottom: #{sub($form-input-height, (15px + 5px), 'px')};
 
     font-size: 15px;
     font-weight: $font-weight-medium;
@@ -121,15 +146,12 @@ textarea {
   }
 
   &.widget-textarea, &.widget-range {
-    font-size: 0;
-
-    &.mandatory:after {
-      top: 5px;
-      bottom: unset;
+    .input-container {
+      font-size: 0;
     }
   }
 
-  &.select{
+  &.select .input-container {
 
     &:before {
       display: inline-block;
@@ -167,7 +189,6 @@ textarea {
 }
 
 .widget-checkbox, .widget-radio {
-  position: relative;
 
   input {
     position: absolute;
@@ -294,42 +315,32 @@ textarea {
 
 .widget-range {
 
-  > input {
+  &.mandatory .input-container:after {
+    content: none;
+  }
+
+  input {
     height: inherit;
     padding: 0;
+    margin: 0;
   }
 }
 
-.grid.small-gutter {
+.widget-upload {
 
-  .widget {
+  input {
+    height: inherit;
+  }
+}
+
+.grid.small-gutter .widget {
+
+  &-checkbox,
+  &-radio,
+  &-range {
 
     &.mandatory:after {
       right: #{sum(divide($grid-gutter-small-width, 2), 5px, 'px')};
-      bottom: #{sum(sub($form-input-height, (15px + 5px), 'px'), $grid-gutter-small-bottom, 'px')};
-    }
-
-    &.widget-textarea, &.widget-range {
-
-      &.mandatory:after {
-        top: 5px;
-        bottom: initial;
-      }
-    }
-
-    &.select {
-
-      &:before {
-        right: #{sum(divide($grid-gutter-small-width, 2), 12px, 'px')};
-        bottom: #{sum(divide(sub($form-input-height, $form-input-symbol-font-size, 'px'), 2), $grid-gutter-small-bottom, 'px')};
-      }
-    }
-  }
-
-  .widget-checkbox, .widget-radio {
-
-    &.mandatory:after {
-      bottom: initial;
     }
   }
 }
