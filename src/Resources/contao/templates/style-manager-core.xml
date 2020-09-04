@@ -614,10 +614,10 @@
     <field title="sorting">512</field>
     <children>
       <child alias="design">
-        <field title="id">25</field>
+        <field title="id">24</field>
         <field title="pid">5</field>
         <field title="sorting">96</field>
-        <field title="tstamp">1594645263</field>
+        <field title="tstamp">1599224720</field>
         <field title="alias">design</field>
         <field title="title">Design</field>
         <field title="description"></field>
@@ -629,7 +629,7 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields">1</field>
+        <field title="extendFormFields"></field>
         <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:8:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_icon_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:14:"rsce_text_list";i:6;s:9:"hyperlink";i:7;s:7:"toplink";}</field>
@@ -639,10 +639,10 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="size">
-        <field title="id">26</field>
+        <field title="id">25</field>
         <field title="pid">5</field>
         <field title="sorting">128</field>
-        <field title="tstamp">1581683236</field>
+        <field title="tstamp">1599224728</field>
         <field title="alias">size</field>
         <field title="title">Size</field>
         <field title="description"></field>
@@ -654,7 +654,7 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields">1</field>
+        <field title="extendFormFields"></field>
         <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:8:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_icon_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:14:"rsce_text_list";i:6;s:9:"hyperlink";i:7;s:7:"toplink";}</field>
@@ -664,7 +664,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="topSpacing">
-        <field title="id">27</field>
+        <field title="id">26</field>
         <field title="pid">5</field>
         <field title="sorting">256</field>
         <field title="tstamp">1594645369</field>
@@ -689,7 +689,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="spacingBottom">
-        <field title="id">28</field>
+        <field title="id">27</field>
         <field title="pid">5</field>
         <field title="sorting">384</field>
         <field title="tstamp">1580895200</field>
@@ -713,6 +713,56 @@
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
+      <child alias="form-design">
+        <field title="id">96</field>
+        <field title="pid">5</field>
+        <field title="sorting">512</field>
+        <field title="tstamp">1599224704</field>
+        <field title="alias">form-design</field>
+        <field title="title">Design</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:14:"design-primary";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:16:"design-secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:10:"design-alt";s:5:"value";s:11:"Alternative";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">a:28:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:14:"accordionStart";i:14;s:11:"sliderStart";i:15;s:9:"hyperlink";i:16;s:5:"image";i:17;s:7:"gallery";i:18;s:6:"player";i:19;s:7:"youtube";i:20;s:5:"vimeo";i:21;s:8:"download";i:22;s:9:"downloads";i:23;s:5:"alias";i:24;s:4:"form";i:25;s:6:"module";i:26;s:6:"teaser";i:27;s:8:"comments";}</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+      <child alias="form-size">
+        <field title="id">97</field>
+        <field title="pid">5</field>
+        <field title="sorting">640</field>
+        <field title="tstamp">1599224692</field>
+        <field title="alias">form-size</field>
+        <field title="title">Size</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"size-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"size-large";s:5:"value";s:5:"Large";}i:2;a:2:{s:3:"key";s:10:"size-super";s:5:"value";s:5:"Super";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">a:8:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_icon_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:14:"rsce_text_list";i:6;s:9:"hyperlink";i:7;s:7:"toplink";}</field>
+        <field title="extendModule"></field>
+        <field title="modules">a:4:{i:0;s:5:"login";i:1;s:12:"registration";i:2;s:12:"lostPassword";i:3;s:6:"search";}</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
     </children>
   </archive>
   <archive identifier="icon">
@@ -724,7 +774,7 @@
     <field title="sorting">640</field>
     <children>
       <child alias="design">
-        <field title="id">29</field>
+        <field title="id">28</field>
         <field title="pid">6</field>
         <field title="sorting">0</field>
         <field title="tstamp">1579275893</field>
@@ -749,7 +799,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="shape">
-        <field title="id">30</field>
+        <field title="id">29</field>
         <field title="pid">6</field>
         <field title="sorting">0</field>
         <field title="tstamp">1579275902</field>
@@ -774,7 +824,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="color">
-        <field title="id">31</field>
+        <field title="id">30</field>
         <field title="pid">6</field>
         <field title="sorting">0</field>
         <field title="tstamp">1579275884</field>
@@ -799,7 +849,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="size">
-        <field title="id">32</field>
+        <field title="id">31</field>
         <field title="pid">6</field>
         <field title="sorting">0</field>
         <field title="tstamp">1579275911</field>
@@ -834,7 +884,7 @@
     <field title="sorting">645</field>
     <children>
       <child alias="scale">
-        <field title="id">33</field>
+        <field title="id">32</field>
         <field title="pid">7</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580914847</field>
@@ -859,7 +909,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="width">
-        <field title="id">34</field>
+        <field title="id">33</field>
         <field title="pid">7</field>
         <field title="sorting">256</field>
         <field title="tstamp">1584357401</field>
@@ -894,7 +944,7 @@
     <field title="sorting">1920</field>
     <children>
       <child alias="topDivider">
-        <field title="id">35</field>
+        <field title="id">34</field>
         <field title="pid">8</field>
         <field title="sorting">128</field>
         <field title="tstamp">1579530411</field>
@@ -919,7 +969,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="bottomDivider">
-        <field title="id">36</field>
+        <field title="id">35</field>
         <field title="pid">8</field>
         <field title="sorting">256</field>
         <field title="tstamp">1579530432</field>
@@ -954,7 +1004,7 @@
     <field title="sorting">2000</field>
     <children>
       <child alias="color">
-        <field title="id">37</field>
+        <field title="id">36</field>
         <field title="pid">9</field>
         <field title="sorting">128</field>
         <field title="tstamp">1579863350</field>
@@ -979,7 +1029,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="image">
-        <field title="id">38</field>
+        <field title="id">37</field>
         <field title="pid">9</field>
         <field title="sorting">256</field>
         <field title="tstamp">1579863355</field>
@@ -1014,7 +1064,7 @@
     <field title="sorting">768</field>
     <children>
       <child alias="topBottomSpacing">
-        <field title="id">39</field>
+        <field title="id">38</field>
         <field title="pid">10</field>
         <field title="sorting">128</field>
         <field title="tstamp">1586848519</field>
@@ -1039,7 +1089,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="leftRightSpacing">
-        <field title="id">40</field>
+        <field title="id">39</field>
         <field title="pid">10</field>
         <field title="sorting">256</field>
         <field title="tstamp">1586848519</field>
@@ -1064,7 +1114,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="top-spacing">
-        <field title="id">41</field>
+        <field title="id">40</field>
         <field title="pid">10</field>
         <field title="sorting">384</field>
         <field title="tstamp">1578330862</field>
@@ -1089,7 +1139,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="bottom-spacing">
-        <field title="id">42</field>
+        <field title="id">41</field>
         <field title="pid">10</field>
         <field title="sorting">512</field>
         <field title="tstamp">1578330882</field>
@@ -1124,7 +1174,7 @@
     <field title="sorting">890</field>
     <children>
       <child alias="formGrid">
-        <field title="id">43</field>
+        <field title="id">42</field>
         <field title="pid">11</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580976963</field>
@@ -1159,7 +1209,7 @@
     <field title="sorting">896</field>
     <children>
       <child alias="columns">
-        <field title="id">44</field>
+        <field title="id">43</field>
         <field title="pid">12</field>
         <field title="sorting">128</field>
         <field title="tstamp">1581691034</field>
@@ -1184,7 +1234,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="columns-xs">
-        <field title="id">45</field>
+        <field title="id">44</field>
         <field title="pid">12</field>
         <field title="sorting">192</field>
         <field title="tstamp">1581691069</field>
@@ -1209,7 +1259,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="columns-s">
-        <field title="id">46</field>
+        <field title="id">45</field>
         <field title="pid">12</field>
         <field title="sorting">256</field>
         <field title="tstamp">1581691069</field>
@@ -1234,7 +1284,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="columns-m">
-        <field title="id">47</field>
+        <field title="id">46</field>
         <field title="pid">12</field>
         <field title="sorting">320</field>
         <field title="tstamp">1581691069</field>
@@ -1259,7 +1309,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="columns-l">
-        <field title="id">48</field>
+        <field title="id">47</field>
         <field title="pid">12</field>
         <field title="sorting">384</field>
         <field title="tstamp">1581691069</field>
@@ -1284,7 +1334,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="columns-xl">
-        <field title="id">49</field>
+        <field title="id">48</field>
         <field title="pid">12</field>
         <field title="sorting">896</field>
         <field title="tstamp">1581691069</field>
@@ -1319,7 +1369,7 @@
     <field title="sorting">1024</field>
     <children>
       <child alias="offset">
-        <field title="id">50</field>
+        <field title="id">49</field>
         <field title="pid">13</field>
         <field title="sorting">64</field>
         <field title="tstamp">1581691104</field>
@@ -1344,7 +1394,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="offset-xs">
-        <field title="id">51</field>
+        <field title="id">50</field>
         <field title="pid">13</field>
         <field title="sorting">224</field>
         <field title="tstamp">1581691104</field>
@@ -1369,7 +1419,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="offset-s">
-        <field title="id">52</field>
+        <field title="id">51</field>
         <field title="pid">13</field>
         <field title="sorting">304</field>
         <field title="tstamp">1581691104</field>
@@ -1394,7 +1444,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="offset-m">
-        <field title="id">53</field>
+        <field title="id">52</field>
         <field title="pid">13</field>
         <field title="sorting">384</field>
         <field title="tstamp">1581691104</field>
@@ -1419,7 +1469,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="offset-l">
-        <field title="id">54</field>
+        <field title="id">53</field>
         <field title="pid">13</field>
         <field title="sorting">480</field>
         <field title="tstamp">1581691104</field>
@@ -1444,7 +1494,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="offset-xl">
-        <field title="id">55</field>
+        <field title="id">54</field>
         <field title="pid">13</field>
         <field title="sorting">576</field>
         <field title="tstamp">1581691104</field>
@@ -1479,7 +1529,7 @@
     <field title="sorting">1088</field>
     <children>
       <child alias="order">
-        <field title="id">56</field>
+        <field title="id">55</field>
         <field title="pid">14</field>
         <field title="sorting">64</field>
         <field title="tstamp">1581691134</field>
@@ -1504,7 +1554,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="order-xs">
-        <field title="id">57</field>
+        <field title="id">56</field>
         <field title="pid">14</field>
         <field title="sorting">192</field>
         <field title="tstamp">1581691134</field>
@@ -1529,7 +1579,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="order-s">
-        <field title="id">58</field>
+        <field title="id">57</field>
         <field title="pid">14</field>
         <field title="sorting">320</field>
         <field title="tstamp">1581691134</field>
@@ -1554,7 +1604,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="order-m">
-        <field title="id">59</field>
+        <field title="id">58</field>
         <field title="pid">14</field>
         <field title="sorting">448</field>
         <field title="tstamp">1581691134</field>
@@ -1579,7 +1629,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="order-l">
-        <field title="id">60</field>
+        <field title="id">59</field>
         <field title="pid">14</field>
         <field title="sorting">576</field>
         <field title="tstamp">1581691134</field>
@@ -1604,7 +1654,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="order-xl">
-        <field title="id">61</field>
+        <field title="id">60</field>
         <field title="pid">14</field>
         <field title="sorting">704</field>
         <field title="tstamp">1581691134</field>
@@ -1639,7 +1689,7 @@
     <field title="sorting">1152</field>
     <children>
       <child alias="gridHorizontalAlignment">
-        <field title="id">62</field>
+        <field title="id">61</field>
         <field title="pid">15</field>
         <field title="sorting">64</field>
         <field title="tstamp">1580993497</field>
@@ -1664,7 +1714,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridVerticalAlignment">
-        <field title="id">63</field>
+        <field title="id">62</field>
         <field title="pid">15</field>
         <field title="sorting">96</field>
         <field title="tstamp">1580915202</field>
@@ -1689,7 +1739,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignment">
-        <field title="id">64</field>
+        <field title="id">63</field>
         <field title="pid">15</field>
         <field title="sorting">128</field>
         <field title="tstamp">1581691173</field>
@@ -1714,7 +1764,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignmentXS">
-        <field title="id">65</field>
+        <field title="id">64</field>
         <field title="pid">15</field>
         <field title="sorting">256</field>
         <field title="tstamp">1581691173</field>
@@ -1739,7 +1789,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignmentS">
-        <field title="id">66</field>
+        <field title="id">65</field>
         <field title="pid">15</field>
         <field title="sorting">384</field>
         <field title="tstamp">1581691173</field>
@@ -1764,7 +1814,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignmentM">
-        <field title="id">67</field>
+        <field title="id">66</field>
         <field title="pid">15</field>
         <field title="sorting">512</field>
         <field title="tstamp">1581691173</field>
@@ -1789,7 +1839,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignmentL">
-        <field title="id">68</field>
+        <field title="id">67</field>
         <field title="pid">15</field>
         <field title="sorting">640</field>
         <field title="tstamp">1581691173</field>
@@ -1814,7 +1864,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gridAlignmentAlignmentXL">
-        <field title="id">69</field>
+        <field title="id">68</field>
         <field title="pid">15</field>
         <field title="sorting">768</field>
         <field title="tstamp">1581691173</field>
@@ -1849,7 +1899,7 @@
     <field title="sorting">1155</field>
     <children>
       <child alias="gutter">
-        <field title="id">70</field>
+        <field title="id">69</field>
         <field title="pid">16</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580990286</field>
@@ -1884,7 +1934,7 @@
     <field title="sorting">1408</field>
     <children>
       <child alias="grid-list">
-        <field title="id">71</field>
+        <field title="id">70</field>
         <field title="pid">17</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580915395</field>
@@ -1909,7 +1959,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="grid-list-xs">
-        <field title="id">72</field>
+        <field title="id">71</field>
         <field title="pid">17</field>
         <field title="sorting">256</field>
         <field title="tstamp">1580915395</field>
@@ -1934,7 +1984,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="grid-list-s">
-        <field title="id">73</field>
+        <field title="id">72</field>
         <field title="pid">17</field>
         <field title="sorting">384</field>
         <field title="tstamp">1580915395</field>
@@ -1959,7 +2009,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="grid-list-m">
-        <field title="id">74</field>
+        <field title="id">73</field>
         <field title="pid">17</field>
         <field title="sorting">512</field>
         <field title="tstamp">1580915395</field>
@@ -1984,7 +2034,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="grid-list-l">
-        <field title="id">75</field>
+        <field title="id">74</field>
         <field title="pid">17</field>
         <field title="sorting">640</field>
         <field title="tstamp">1580915395</field>
@@ -2009,7 +2059,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="grid-list-xl">
-        <field title="id">76</field>
+        <field title="id">75</field>
         <field title="pid">17</field>
         <field title="sorting">768</field>
         <field title="tstamp">1580915395</field>
@@ -2034,7 +2084,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="autoHeight">
-        <field title="id">77</field>
+        <field title="id">76</field>
         <field title="pid">17</field>
         <field title="sorting">896</field>
         <field title="tstamp">1580915395</field>
@@ -2059,7 +2109,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="justify">
-        <field title="id">78</field>
+        <field title="id">77</field>
         <field title="pid">17</field>
         <field title="sorting">1024</field>
         <field title="tstamp">1580993955</field>
@@ -2084,7 +2134,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="gutter">
-        <field title="id">79</field>
+        <field title="id">78</field>
         <field title="pid">17</field>
         <field title="sorting">1152</field>
         <field title="tstamp">1581322343</field>
@@ -2119,7 +2169,7 @@
     <field title="sorting">1948</field>
     <children>
       <child alias="left-spacing">
-        <field title="id">80</field>
+        <field title="id">79</field>
         <field title="pid">18</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580915226</field>
@@ -2144,7 +2194,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="left-spacing-xs">
-        <field title="id">81</field>
+        <field title="id">80</field>
         <field title="pid">18</field>
         <field title="sorting">160</field>
         <field title="tstamp">1580915226</field>
@@ -2169,7 +2219,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="left-spacing-s">
-        <field title="id">82</field>
+        <field title="id">81</field>
         <field title="pid">18</field>
         <field title="sorting">288</field>
         <field title="tstamp">1580915226</field>
@@ -2194,7 +2244,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="left-spacing-m">
-        <field title="id">83</field>
+        <field title="id">82</field>
         <field title="pid">18</field>
         <field title="sorting">416</field>
         <field title="tstamp">1580915226</field>
@@ -2219,7 +2269,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="left-spacing-l">
-        <field title="id">84</field>
+        <field title="id">83</field>
         <field title="pid">18</field>
         <field title="sorting">544</field>
         <field title="tstamp">1580915226</field>
@@ -2244,7 +2294,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="left-spacing-xl">
-        <field title="id">85</field>
+        <field title="id">84</field>
         <field title="pid">18</field>
         <field title="sorting">672</field>
         <field title="tstamp">1580915226</field>
@@ -2279,7 +2329,7 @@
     <field title="sorting">1974</field>
     <children>
       <child alias="right-spacing">
-        <field title="id">86</field>
+        <field title="id">85</field>
         <field title="pid">19</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580915260</field>
@@ -2304,7 +2354,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="right-spacing-xs">
-        <field title="id">87</field>
+        <field title="id">86</field>
         <field title="pid">19</field>
         <field title="sorting">160</field>
         <field title="tstamp">1580915260</field>
@@ -2329,7 +2379,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="right-spacing-s">
-        <field title="id">88</field>
+        <field title="id">87</field>
         <field title="pid">19</field>
         <field title="sorting">288</field>
         <field title="tstamp">1580915260</field>
@@ -2354,7 +2404,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="right-spacing-m">
-        <field title="id">89</field>
+        <field title="id">88</field>
         <field title="pid">19</field>
         <field title="sorting">416</field>
         <field title="tstamp">1580915260</field>
@@ -2379,7 +2429,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="right-spacing-l">
-        <field title="id">90</field>
+        <field title="id">89</field>
         <field title="pid">19</field>
         <field title="sorting">544</field>
         <field title="tstamp">1580915260</field>
@@ -2404,7 +2454,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="right-spacing-xl">
-        <field title="id">91</field>
+        <field title="id">90</field>
         <field title="pid">19</field>
         <field title="sorting">672</field>
         <field title="tstamp">1580915260</field>
@@ -2439,7 +2489,7 @@
     <field title="sorting">1980</field>
     <children>
       <child alias="topSpacing">
-        <field title="id">92</field>
+        <field title="id">91</field>
         <field title="pid">20</field>
         <field title="sorting">128</field>
         <field title="tstamp">1581587719</field>
@@ -2464,7 +2514,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="bottomSpacing">
-        <field title="id">93</field>
+        <field title="id">92</field>
         <field title="pid">20</field>
         <field title="sorting">192</field>
         <field title="tstamp">1581587726</field>
@@ -2499,7 +2549,7 @@
     <field title="sorting">2128</field>
     <children>
       <child alias="navigation">
-        <field title="id">94</field>
+        <field title="id">93</field>
         <field title="pid">21</field>
         <field title="sorting">64</field>
         <field title="tstamp">1580311197</field>
@@ -2524,7 +2574,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="justifyNavigation">
-        <field title="id">95</field>
+        <field title="id">94</field>
         <field title="pid">21</field>
         <field title="sorting">128</field>
         <field title="tstamp">1580297593</field>
@@ -2549,7 +2599,7 @@
         <field title="extendEvents"></field>
       </child>
       <child alias="direction">
-        <field title="id">96</field>
+        <field title="id">95</field>
         <field title="pid">21</field>
         <field title="sorting">256</field>
         <field title="tstamp">1584438150</field>
