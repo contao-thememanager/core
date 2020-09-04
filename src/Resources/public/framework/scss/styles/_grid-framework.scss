@@ -47,6 +47,7 @@
     > .inside {
       margin-left: -#{divide($grid-gutter-width, 2)};
       margin-right: -#{divide($grid-gutter-width, 2)};
+      margin-bottom: -#{$grid-gutter-bottom};
     }
 
     &.small-gutter {
@@ -54,6 +55,7 @@
       > .inside {
         margin-left: -#{divide($grid-gutter-small-width, 2)};
         margin-right: -#{divide($grid-gutter-small-width, 2)};
+        margin-bottom: -#{$grid-gutter-small-bottom};
       }
     }
 
