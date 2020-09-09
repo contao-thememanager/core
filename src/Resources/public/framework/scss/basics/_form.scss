@@ -11,6 +11,10 @@ label, legend{
   margin-bottom: $form-label-spacing;
 }
 
+legend {
+  width: 100%;
+}
+
 select {
   text-overflow: '';
   -webkit-appearance: none;
@@ -104,7 +108,12 @@ textarea {
 
     p.error{
       display: block;
-      color: $form-label-color;
+      color: $form-input-color-error;
+      font-size: $form-input-font-size-error;
+    }
+
+    &.mandatory:after, &.mandatory .input-container:after {
+      color: $form-input-mandatory-symbol-color-error;
     }
   }
 
@@ -199,8 +208,7 @@ textarea {
     &:checked + label {
 
       &:before {
-        background: $form-input-background-focus;
-        border-color: $form-input-border-color-focus;
+        border-color: $form-checkbox-radio-border-color-focus;
       }
 
       &:after {
@@ -247,7 +255,7 @@ textarea {
 
       border-width: $form-input-border-width;
       border-style: $form-input-border-style;
-      border-color: $form-input-border-color;
+      border-color: $form-checkbox-radio-border-color;
       border-radius: $form-checkbox-border-radius;
 
       background-color: $form-input-background;
@@ -256,7 +264,7 @@ textarea {
     }
 
     &:hover:before {
-      border-color: $form-input-border-color-hover;
+      border-color: $form-checkbox-radio-border-color-hover;
       background-color: $form-input-background-hover;
     }
   }
@@ -341,6 +349,21 @@ textarea {
 
     &.mandatory:after {
       right: #{sum(divide($grid-gutter-small-width, 2), 5px, 'px')};
+    }
+  }
+}
+
+.widget-checkbox, .widget-radio {
+
+  .grid-list.small-gutter {
+
+    legend {
+      padding-right: divide($grid-gutter-small-width, 2);
+      padding-left: divide($grid-gutter-small-width, 2);
+    }
+
+    label {
+      margin-bottom: 0;
     }
   }
 }
