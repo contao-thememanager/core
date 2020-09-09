@@ -1,0 +1,89 @@
+.form-image.widget {
+
+  &:before {
+    content: '';
+    display: block;
+    position: static;
+
+    width: $form-image-width;
+    height: $form-image-height;
+
+    margin: 0 auto $grid-gutter-small-bottom;
+
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &.widget-checkbox,
+  &.widget-radio {
+
+    label {
+      padding: 0;
+      margin: 0;
+
+      &:before {
+        content: '';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: static;
+
+        width: $form-image-width;
+        height: $form-image-height;
+
+        margin: 0 auto $grid-gutter-small-bottom;
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+
+.form-image.is--left {
+
+  &.widget,
+  &.widget-checkbox label,
+  &.widget-radio label {
+
+    &:before {
+      margin-left: initial;
+      margin-right: auto;
+    }
+  }
+
+  &.widget-checkbox label,
+  &.widget-radio label {
+    text-align: left;
+  }
+}
+
+.form-image.is--right {
+
+  &.widget,
+  &.widget-checkbox label,
+  &.widget-radio label {
+
+    &:before {
+      margin-left: auto;
+      margin-right: initial;
+    }
+  }
+
+  &.widget-checkbox label,
+  &.widget-radio label {
+    text-align: right;
+  }
+}
