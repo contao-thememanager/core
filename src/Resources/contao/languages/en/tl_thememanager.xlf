@@ -1100,6 +1100,12 @@
       <trans-unit id="tl_thememanager.form-input-placeholder-color-error.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size-error.0">
+          <source>$form-input-font-size-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size-error.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.0">
           <source>$form-checkbox-radio-label-color</source>
       </trans-unit>
@@ -1110,6 +1116,24 @@
           <source>$form-checkbox-radio-label-font-size</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.0">
+          <source>$form-checkbox-radio-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.0">
+          <source>$form-checkbox-radio-border-color-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.0">
+          <source>$form-checkbox-radio-border-color-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-border-radius.0">
@@ -1142,6 +1166,12 @@
       <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color-error.0">
+          <source>$form-input-mandatory-symbol-color-error</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color-error.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-color.0">
           <source>$form-input-symbol-color</source>
       </trans-unit>
@@ -1152,6 +1182,18 @@
           <source>$form-input-symbol-font-size</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-width.0">
+          <source>$form-image-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-height.0">
+          <source>$form-image-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-height.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button-line-height.0">

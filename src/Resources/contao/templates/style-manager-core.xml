@@ -1055,6 +1055,91 @@
       </child>
     </children>
   </archive>
+  <archive identifier="formimage">
+    <field title="id">23</field>
+    <field title="tstamp">1599465116</field>
+    <field title="title">Image</field>
+    <field title="identifier">formimage</field>
+    <field title="groupAlias">Form</field>
+    <field title="sorting">2256</field>
+    <children>
+      <child alias="formimage">
+        <field title="id">99</field>
+        <field title="pid">23</field>
+        <field title="sorting">128</field>
+        <field title="tstamp">1599647169</field>
+        <field title="alias">formimage</field>
+        <field title="title">Form Image</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:10:"form-image";s:5:"value";s:5:"Aktiv";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+      <child alias="formimage-align">
+        <field title="id">105</field>
+        <field title="pid">23</field>
+        <field title="sorting">192</field>
+        <field title="tstamp">1599655971</field>
+        <field title="alias">formimage-align</field>
+        <field title="title">Alignment</field>
+        <field title="description">Here you can set the alignment for the form image</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"is--left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:9:"is--right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+      <child alias="formitem-img">
+        <field title="id">104</field>
+        <field title="pid">23</field>
+        <field title="sorting">256</field>
+        <field title="tstamp">1599649396</field>
+        <field title="alias">formitem-img</field>
+        <field title="title">Image</field>
+        <field title="description">Here you can choose an image for your formular field</field>
+        <field title="cssClasses">a:10:{i:0;a:2:{s:3:"key";s:10:"form-img-1";s:5:"value";s:7:"Image 1";}i:1;a:2:{s:3:"key";s:10:"form-img-2";s:5:"value";s:7:"Image 2";}i:2;a:2:{s:3:"key";s:10:"form-img-3";s:5:"value";s:7:"Image 3";}i:3;a:2:{s:3:"key";s:10:"form-img-4";s:5:"value";s:7:"Image 4";}i:4;a:2:{s:3:"key";s:10:"form-img-5";s:5:"value";s:7:"Image 5";}i:5;a:2:{s:3:"key";s:10:"form-img-6";s:5:"value";s:7:"Image 6";}i:6;a:2:{s:3:"key";s:10:"form-img-7";s:5:"value";s:7:"Image 7";}i:7;a:2:{s:3:"key";s:10:"form-img-8";s:5:"value";s:7:"Image 8";}i:8;a:2:{s:3:"key";s:10:"form-img-9";s:5:"value";s:7:"Image 9";}i:9;a:2:{s:3:"key";s:11:"form-img-10";s:5:"value";s:8:"Image 10";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+    </children>
+  </archive>
   <archive identifier="articleSpacing">
     <field title="id">10</field>
     <field title="tstamp">1579772003</field>
@@ -1937,7 +2022,7 @@
         <field title="id">70</field>
         <field title="pid">17</field>
         <field title="sorting">128</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645153</field>
         <field title="alias">grid-list</field>
         <field title="title">Columns</field>
         <field title="description"></field>
@@ -1949,8 +2034,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -1962,7 +2047,7 @@
         <field title="id">71</field>
         <field title="pid">17</field>
         <field title="sorting">256</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645213</field>
         <field title="alias">grid-list-xs</field>
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
         <field title="description"></field>
@@ -1974,8 +2059,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -1987,7 +2072,7 @@
         <field title="id">72</field>
         <field title="pid">17</field>
         <field title="sorting">384</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645213</field>
         <field title="alias">grid-list-s</field>
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
         <field title="description"></field>
@@ -1999,8 +2084,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2012,7 +2097,7 @@
         <field title="id">73</field>
         <field title="pid">17</field>
         <field title="sorting">512</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645213</field>
         <field title="alias">grid-list-m</field>
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
         <field title="description"></field>
@@ -2024,8 +2109,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2037,7 +2122,7 @@
         <field title="id">74</field>
         <field title="pid">17</field>
         <field title="sorting">640</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645213</field>
         <field title="alias">grid-list-l</field>
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
         <field title="description"></field>
@@ -2049,8 +2134,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2062,7 +2147,7 @@
         <field title="id">75</field>
         <field title="pid">17</field>
         <field title="sorting">768</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599645213</field>
         <field title="alias">grid-list-xl</field>
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
         <field title="description"></field>
@@ -2074,8 +2159,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2087,7 +2172,7 @@
         <field title="id">76</field>
         <field title="pid">17</field>
         <field title="sorting">896</field>
-        <field title="tstamp">1580915395</field>
+        <field title="tstamp">1599646195</field>
         <field title="alias">autoHeight</field>
         <field title="title">Auto-Height</field>
         <field title="description"></field>
@@ -2100,7 +2185,7 @@
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2112,7 +2197,7 @@
         <field title="id">77</field>
         <field title="pid">17</field>
         <field title="sorting">1024</field>
-        <field title="tstamp">1580993955</field>
+        <field title="tstamp">1599645214</field>
         <field title="alias">justify</field>
         <field title="title">Justify Content</field>
         <field title="description"></field>
@@ -2124,8 +2209,8 @@
         <field title="extendPage"></field>
         <field title="extendArticle"></field>
         <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule"></field>
@@ -2137,7 +2222,7 @@
         <field title="id">78</field>
         <field title="pid">17</field>
         <field title="sorting">1152</field>
-        <field title="tstamp">1581322343</field>
+        <field title="tstamp">1599636811</field>
         <field title="alias">gutter</field>
         <field title="title">Gutter</field>
         <field title="description"></field>

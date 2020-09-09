@@ -1470,6 +1470,14 @@
           <source></source>
           <target></target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size-error.0">
+        <source>$form-input-font-size-error</source>
+        <target>$form-input-font-size-error</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-font-size-error.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.0">
           <source>$form-checkbox-radio-label-color</source>
           <target>$form-checkbox-radio-label-color</target>
@@ -1483,6 +1491,30 @@
           <target>$form-checkbox-radio-label-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.0">
+          <source>$form-checkbox-radio-border-color</source>
+          <target>$form-checkbox-radio-border-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.0">
+          <source>$form-checkbox-radio-border-color-focus</source>
+          <target>$form-checkbox-radio-border-color-focus</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.0">
+          <source>$form-checkbox-radio-border-color-hover</source>
+          <target>$form-checkbox-radio-border-color-hover</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.1">
           <source></source>
           <target></target>
       </trans-unit>
@@ -1526,6 +1558,14 @@
           <source></source>
           <target></target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color-error.0">
+          <source>$form-input-mandatory-symbol-color-error</source>
+          <target>$form-input-mandatory-symbol-color-error</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color-error.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-color.0">
           <source>$form-input-symbol-color</source>
           <target>$form-input-symbol-color</target>
@@ -1539,6 +1579,22 @@
           <target>$form-input-symbol-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-width.0">
+          <source>$form-image-width</source>
+          <target>$form-image-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-width.1">
+          <source></source>
+          <target></target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-height.0">
+          <source>$form-image-height</source>
+          <target>$form-image-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-image-height.1">
           <source></source>
           <target></target>
       </trans-unit>
