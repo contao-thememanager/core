@@ -27,8 +27,7 @@
   "conflict": {
     "contao/core": "*",
     "contao/core-bundle": "4.4.1",
-    "contao/manager-plugin": "<2.0 || >=3.0",
-    "scssphp/scssphp": "1.2"
+    "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "autoload":{
     "psr-4": {
