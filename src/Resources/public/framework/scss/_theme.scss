@@ -1,9 +1,5 @@
 // Mixins
-@import "mixins/attributes";
-@import "mixins/breakpoint";
-@import "mixins/icon";
-@import "mixins/typography";
-@import "mixins/utils";
+@import "mixins/mixins";
 
 // Basics
 @import "basics/defaults";
@@ -27,6 +23,7 @@
 @import "styles/spacing";
 @import "styles/text-color";
 @import "styles/form-image";
+@import "styles/form-input-icon";
 
 // Dependency Styles
 @import "styles/button";
