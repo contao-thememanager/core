@@ -219,7 +219,7 @@ $form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !defaul
 $form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
 
 $form-checkbox-radio-size:                20px !default;
-$form-checkbox-border-radius:             $form-input-border-radius;
+$form-checkbox-border-radius:             0;
 
 $form-input-explanation-color:            $text-color-regular !default;
 $form-input-explanation-font-size:        $font-size-base !default;
@@ -229,9 +229,13 @@ $form-input-mandatory-symbol-color-error: #b46869 !default;
 $form-input-symbol-color:                 $primary !default;
 $form-input-symbol-font-size:             16px !default;
 
-// Form Image
-$form-image-width:                        100px !default;
-$form-image-height:                       $form-image-width !default;
+// Form Field
+$form-field-image-width:                  100px !default;
+$form-field-image-height:                 $form-field-image-width !default;
+
+$form-field-icon-color:                   $form-input-color !default;
+$form-field-icon-background:              #e3e3e3 !default;
+$form-field-icon-size:                    $form-input-font-size !default;
 
 // Button
 $button-line-height:                      1 !default;
