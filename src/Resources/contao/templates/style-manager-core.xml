@@ -1055,23 +1055,83 @@
       </child>
     </children>
   </archive>
+  <archive identifier="formInputIcon">
+    <field title="id">26</field>
+    <field title="tstamp">1599834552</field>
+    <field title="title">Form-Input-Icon</field>
+    <field title="identifier">formInputIcon</field>
+    <field title="groupAlias">FormField</field>
+    <field title="sorting">1128</field>
+    <children>
+      <child alias="formInputIconAlignment">
+        <field title="id">109</field>
+        <field title="pid">26</field>
+        <field title="sorting">128</field>
+        <field title="tstamp">1599834620</field>
+        <field title="alias">formInputIconAlignment</field>
+        <field title="title">Alignment</field>
+        <field title="description">Here you can choose the direction for a form input icon</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:27:"form-input-icon f-icon-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:28:"form-input-icon f-icon-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:4:"text";i:1;s:8:"password";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+      <child alias="formInputIcons">
+        <field title="id">112</field>
+        <field title="pid">26</field>
+        <field title="sorting">256</field>
+        <field title="tstamp">1599834640</field>
+        <field title="alias">formInputIcons</field>
+        <field title="title">Icon</field>
+        <field title="description">Here you can choose the icon which should be displayed</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"f-icon-m2";s:5:"value";s:3:"m²";}i:1;a:2:{s:3:"key";s:9:"f-icon-at";s:5:"value";s:1:"@";}i:2;a:2:{s:3:"key";s:11:"f-icon-euro";s:5:"value";s:3:"€";}i:3;a:2:{s:3:"key";s:13:"f-icon-dollar";s:5:"value";s:1:"$";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:4:"text";i:1;s:8:"password";}</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+    </children>
+  </archive>
   <archive identifier="formimage">
     <field title="id">23</field>
-    <field title="tstamp">1599465116</field>
-    <field title="title">Image</field>
+    <field title="tstamp">1599834524</field>
+    <field title="title">Form-Field-Image</field>
     <field title="identifier">formimage</field>
-    <field title="groupAlias">Form</field>
+    <field title="groupAlias">FormField</field>
     <field title="sorting">2256</field>
     <children>
-      <child alias="formimage">
-        <field title="id">99</field>
+      <child alias="formitem-img">
+        <field title="id">104</field>
         <field title="pid">23</field>
-        <field title="sorting">128</field>
-        <field title="tstamp">1599647169</field>
-        <field title="alias">formimage</field>
-        <field title="title">Form Image</field>
-        <field title="description"></field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:10:"form-image";s:5:"value";s:5:"Aktiv";}}</field>
+        <field title="sorting">160</field>
+        <field title="tstamp">1599834897</field>
+        <field title="alias">formitem-img</field>
+        <field title="title">Image</field>
+        <field title="description">Here you can choose an image for your formular field</field>
+        <field title="cssClasses">a:10:{i:0;a:2:{s:3:"key";s:21:"form-image form-img-1";s:5:"value";s:7:"Image 1";}i:1;a:2:{s:3:"key";s:21:"form-image form-img-2";s:5:"value";s:7:"Image 2";}i:2;a:2:{s:3:"key";s:21:"form-image form-img-3";s:5:"value";s:7:"Image 3";}i:3;a:2:{s:3:"key";s:21:"form-image form-img-4";s:5:"value";s:7:"Image 4";}i:4;a:2:{s:3:"key";s:21:"form-image form-img-5";s:5:"value";s:7:"Image 5";}i:5;a:2:{s:3:"key";s:21:"form-image form-img-6";s:5:"value";s:7:"Image 6";}i:6;a:2:{s:3:"key";s:21:"form-image form-img-7";s:5:"value";s:7:"Image 7";}i:7;a:2:{s:3:"key";s:21:"form-image form-img-8";s:5:"value";s:7:"Image 8";}i:8;a:2:{s:3:"key";s:21:"form-image form-img-9";s:5:"value";s:7:"Image 9";}i:9;a:2:{s:3:"key";s:22:"form-image form-img-10";s:5:"value";s:8:"Image 10";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="passToTemplate"></field>
@@ -1097,31 +1157,6 @@
         <field title="title">Alignment</field>
         <field title="description">Here you can set the alignment for the form image</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"is--left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:9:"is--right";s:5:"value";s:5:"Right";}}</field>
-        <field title="cssClass"></field>
-        <field title="chosen">1</field>
-        <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
-        <field title="extendArticle"></field>
-        <field title="extendForm"></field>
-        <field title="extendFormFields">1</field>
-        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
-        <field title="extendContentElement"></field>
-        <field title="contentElements">NULL</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
-        <field title="extendNews"></field>
-        <field title="extendEvents"></field>
-      </child>
-      <child alias="formitem-img">
-        <field title="id">104</field>
-        <field title="pid">23</field>
-        <field title="sorting">256</field>
-        <field title="tstamp">1599649396</field>
-        <field title="alias">formitem-img</field>
-        <field title="title">Image</field>
-        <field title="description">Here you can choose an image for your formular field</field>
-        <field title="cssClasses">a:10:{i:0;a:2:{s:3:"key";s:10:"form-img-1";s:5:"value";s:7:"Image 1";}i:1;a:2:{s:3:"key";s:10:"form-img-2";s:5:"value";s:7:"Image 2";}i:2;a:2:{s:3:"key";s:10:"form-img-3";s:5:"value";s:7:"Image 3";}i:3;a:2:{s:3:"key";s:10:"form-img-4";s:5:"value";s:7:"Image 4";}i:4;a:2:{s:3:"key";s:10:"form-img-5";s:5:"value";s:7:"Image 5";}i:5;a:2:{s:3:"key";s:10:"form-img-6";s:5:"value";s:7:"Image 6";}i:6;a:2:{s:3:"key";s:10:"form-img-7";s:5:"value";s:7:"Image 7";}i:7;a:2:{s:3:"key";s:10:"form-img-8";s:5:"value";s:7:"Image 8";}i:8;a:2:{s:3:"key";s:10:"form-img-9";s:5:"value";s:7:"Image 9";}i:9;a:2:{s:3:"key";s:11:"form-img-10";s:5:"value";s:8:"Image 10";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="passToTemplate"></field>
