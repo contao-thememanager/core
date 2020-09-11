@@ -5,8 +5,8 @@
     display: block;
     position: static;
 
-    width: $form-image-width;
-    height: $form-image-height;
+    width: $form-field-image-width;
+    height: $form-field-image-height;
 
     margin: 0 auto $grid-gutter-small-bottom;
 
@@ -30,8 +30,8 @@
 
         position: static;
 
-        width: $form-image-width;
-        height: $form-image-height;
+        width: $form-field-image-width;
+        height: $form-field-image-height;
 
         margin: 0 auto $grid-gutter-small-bottom;
 
@@ -87,3 +87,6 @@
     text-align: right;
   }
 }
+
+@include form-field-image(1,'\e808',true,4rem) {color: blue;};
+@include form-field-image(2,'/files/theme/images/backgrounds/icon-pin-bg.svg');
