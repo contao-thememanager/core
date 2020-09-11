@@ -28,6 +28,9 @@
       <trans-unit id="tl_thememanager.form_legend">
         <source>Form</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form_field_legend">
+        <source>Form-field</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article_legend">
         <source>Article</source>
       </trans-unit>
@@ -866,6 +869,18 @@
       <trans-unit id="tl_thememanager.grid-gutter-bottom.1">
           <source></source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-small-width.0">
+          <source>$grid-gutter-small-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-small-width.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-small-bottom.0">
+          <source>$grid-gutter-small-bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-small-bottom.1">
+          <source></source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.icon-font-family.0">
           <source>$icon-font-family</source>
       </trans-unit>
@@ -1184,16 +1199,34 @@
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-image-width.0">
-          <source>$form-image-width</source>
+      <trans-unit id="tl_thememanager.form-field-image-width.0">
+          <source>$form-field-image-width</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-image-width.1">
+      <trans-unit id="tl_thememanager.form-field-image-width.1">
           <source></source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-image-height.0">
-          <source>$form-image-height</source>
+      <trans-unit id="tl_thememanager.form-field-image-height.0">
+          <source>$form-field-image-height</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-image-height.1">
+      <trans-unit id="tl_thememanager.form-field-image-height.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-color.0">
+          <source>$form-field-icon-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-color.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-background.0">
+          <source>$form-field-icon-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-background.1">
+          <source></source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-size.0">
+          <source>$form-field-icon-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-field-icon-size.1">
           <source></source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button-line-height.0">
