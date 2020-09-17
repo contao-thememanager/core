@@ -15,6 +15,7 @@
 - Layout
 - Colors
 - Headings and Fonts
+- Forms and Formfield explanation icons / images
 - Links and Buttons
 - Default component styling
 - Article and component spacing
@@ -33,6 +34,7 @@
 ### Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - EstateManager (Contao EstateManager) [🔗](https://github.com/contao-thememanager/ctm-estatemanager)
+- AdvancedForm (Contao AdvancedForm) [🔗](https://github.com/contao-thememanager/ctm-advanced-form)
 - _Further extensions will follow ..._
 
 
