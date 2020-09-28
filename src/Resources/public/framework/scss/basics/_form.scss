@@ -219,8 +219,8 @@ textarea {
         left: 1px;
         top: 1px;
 
-        width: 20px;
-        line-height: 20px;
+        width: $form-checkbox-radio-size;
+        line-height: $form-checkbox-radio-size;
         color: $form-input-color;
 
         text-decoration: inherit;
