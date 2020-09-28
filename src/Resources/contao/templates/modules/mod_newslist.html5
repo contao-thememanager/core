@@ -1,0 +1,14 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<?php if (empty($this->articles)): ?>
+    <p class="empty"><?= $this->empty ?></p>
+<?php else: ?>
+    <div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?><?=$this->styleManager->prepare('sliderConfig', ['init'])->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
+        <?= implode('', $this->articles) ?>
+    </div>
+    <?= $this->pagination ?>
+<?php endif; ?>
+
+<?php $this->endblock(); ?>
