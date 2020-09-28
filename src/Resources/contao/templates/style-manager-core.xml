@@ -2057,7 +2057,7 @@
         <field title="id">70</field>
         <field title="pid">17</field>
         <field title="sorting">128</field>
-        <field title="tstamp">1599645153</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list</field>
         <field title="title">Columns</field>
         <field title="description"></field>
@@ -2073,8 +2073,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2082,7 +2082,7 @@
         <field title="id">71</field>
         <field title="pid">17</field>
         <field title="sorting">256</field>
-        <field title="tstamp">1599645213</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list-xs</field>
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
         <field title="description"></field>
@@ -2098,8 +2098,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2107,7 +2107,7 @@
         <field title="id">72</field>
         <field title="pid">17</field>
         <field title="sorting">384</field>
-        <field title="tstamp">1599645213</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list-s</field>
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
         <field title="description"></field>
@@ -2123,8 +2123,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2132,7 +2132,7 @@
         <field title="id">73</field>
         <field title="pid">17</field>
         <field title="sorting">512</field>
-        <field title="tstamp">1599645213</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list-m</field>
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
         <field title="description"></field>
@@ -2148,8 +2148,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2157,7 +2157,7 @@
         <field title="id">74</field>
         <field title="pid">17</field>
         <field title="sorting">640</field>
-        <field title="tstamp">1599645213</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list-l</field>
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
         <field title="description"></field>
@@ -2173,8 +2173,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2182,7 +2182,7 @@
         <field title="id">75</field>
         <field title="pid">17</field>
         <field title="sorting">768</field>
-        <field title="tstamp">1599645213</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">grid-list-xl</field>
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
         <field title="description"></field>
@@ -2198,8 +2198,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2207,7 +2207,7 @@
         <field title="id">76</field>
         <field title="pid">17</field>
         <field title="sorting">896</field>
-        <field title="tstamp">1599646195</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">autoHeight</field>
         <field title="title">Auto-Height</field>
         <field title="description"></field>
@@ -2223,8 +2223,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2232,7 +2232,7 @@
         <field title="id">77</field>
         <field title="pid">17</field>
         <field title="sorting">1024</field>
-        <field title="tstamp">1599645214</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">justify</field>
         <field title="title">Justify Content</field>
         <field title="description"></field>
@@ -2248,8 +2248,8 @@
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -2257,7 +2257,7 @@
         <field title="id">78</field>
         <field title="pid">17</field>
         <field title="sorting">1152</field>
-        <field title="tstamp">1599636811</field>
+        <field title="tstamp">1601276804</field>
         <field title="alias">gutter</field>
         <field title="title">Gutter</field>
         <field title="description"></field>
@@ -2273,8 +2273,8 @@
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newslist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
