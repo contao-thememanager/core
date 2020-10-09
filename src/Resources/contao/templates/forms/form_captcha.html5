@@ -20,7 +20,7 @@
     <script>
       (function() {
         var e = document.getElementById('ctrl_<?= $this->id ?>'),
-            p = e.parentNode, f = p.parentNode;
+            p = e.parentNode.parentNode, f = p.parentNode.parentNode;
 
         if ('fieldset' === f.nodeName.toLowerCase() && 1 === f.children.length) {
           p = f;
