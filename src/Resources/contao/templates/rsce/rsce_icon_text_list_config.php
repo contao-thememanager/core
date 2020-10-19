@@ -38,7 +38,7 @@ return array(
                         'en' => array('Icon', 'Please select an icon from the icon overview.'),
                     ),
                     'inputType' => 'rocksolid_icon_picker',
-                    'eval' => array('iconFont' => 'files/assets/fontello/font/fontello.svg'),
+                    'eval' => array('iconFont' => $GLOBALS['CTM_SETTINGS']['iconFont']),
                 ),
                 'text' => array(
                     'label' => array(

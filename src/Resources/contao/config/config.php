@@ -5,6 +5,9 @@
  * (c) https://www.oveleon.de/
  */
 
+// Contao ThemeManager
+$GLOBALS['CTM_SETTINGS']['iconFont'] = 'files/assets/fontello/font/fontello.svg';
+
 // Add configuration dca for themes
 $GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 
