@@ -14,29 +14,20 @@ class ThemeManager
     /**
      * Extends the headline field for modules and content elements.
      */
-    public function extendHeadlineField()
+    public function extendHeadlineField($dc)
     {
-        \Controller::loadLanguageFile('default');
-
-        $arrEntities = array
-        (
-            'tl_content' => 'type_legend',
-            'tl_module'  => 'title_legend'
-        );
-
-        foreach ($arrEntities as $strTable => $strLegend)
+        foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
         {
-            \Controller::loadLanguageFile($strTable);
-            \Controller::loadDataContainer($strTable);
-
-            foreach ($GLOBALS['TL_DCA'][$strTable]['palettes'] as $name => $palette)
+            if($name === '__selector__')
             {
-                if (!is_array($palette) && strpos($palette, 'headline') !== false)
-                {
-                    PaletteManipulator::create()
-                        ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline')
-                        ->applyToPalette($name, $strTable);
-                }
+                continue;
+            }
+
+            if (!is_array($palette) && strpos($palette, 'headline') !== false)
+            {
+                PaletteManipulator::create()
+                    ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline')
+                    ->applyToPalette($name, $dc->table);
             }
         }
     }

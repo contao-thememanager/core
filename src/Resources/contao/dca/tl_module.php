@@ -35,3 +35,5 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = array
     'eval'                    => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
     'sql'                     => "varchar(2) NOT NULL default ''"
 );
+
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = array('ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField');
