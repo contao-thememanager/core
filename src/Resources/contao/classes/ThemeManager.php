@@ -16,6 +16,9 @@ class ThemeManager
      */
     public function extendHeadlineField($dc)
     {
+        $palette = PaletteManipulator::create()
+            ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline');
+
         foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
         {
             if($name === '__selector__')
@@ -25,9 +28,7 @@ class ThemeManager
 
             if (!is_array($palette) && strpos($palette, 'headlineStyle') === false && strpos($palette, 'headline') !== false)
             {
-                PaletteManipulator::create()
-                    ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline')
-                    ->applyToPalette($name, $dc->table);
+                $palette->applyToPalette($name, $dc->table);
             }
         }
     }
