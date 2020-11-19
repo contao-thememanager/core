@@ -23,7 +23,7 @@ class ThemeManager
                 continue;
             }
 
-            if (!is_array($palette) && strpos($palette, 'headline') !== false)
+            if (!is_array($palette) && strpos($palette, 'headlineStyle') === false && strpos($palette, 'headline') !== false)
             {
                 PaletteManipulator::create()
                     ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline')
