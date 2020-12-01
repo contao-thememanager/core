@@ -3,7 +3,7 @@
   "type":"contao-bundle",
   "description":"Contao Theme-Manager",
   "keywords":["contao","theme","css","manager"],
-  "homepage":"https://www.oveleon.de/",
+  "homepage":"https://www.oveleon.de/thememanager.html",
   "license":"MIT",
   "authors":[
     {
