@@ -8,6 +8,7 @@
 namespace ContaoThemeManager\Core;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
+use Contao\DataContainer;
 
 class ThemeManager
 {
@@ -34,37 +35,14 @@ class ThemeManager
     }
 
     /**
-     * Extends the headline field for modules and content elements.
-     *
-     * @param $context
-     */
-    public function addHeadlineFieldsToTemplate(&$context)
-    {
-        $arrHeadline2 = \StringUtil::deserialize($context->headline2);
-        $context->headline2 = \is_array($arrHeadline2) ? $arrHeadline2['value'] : $arrHeadline2;
-        $context->hl2 = \is_array($arrHeadline2) ? $arrHeadline2['unit'] : 'h1';
-    }
-
-    /**
-     *
+     * Extends the headline palette for modules and content elements.
      *
      * @param DataContainer $dc
+     *
+     * @deprecated Deprecated since ThemeManager 1.2.4, to be removed in ThemeManager 2.0.
      */
     public function extendHeadlinePalette($dc)
     {
-        foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $key => &$palette)
-        {
-            if (!is_array($palette) && strpos($key, 'rsce_') === 0)
-            {
-                preg_match_all('/(.*,headline)(.*)/', $palette, $matches);
-
-                if (!count($matches[0]))
-                {
-                    return;
-                }
-
-                $palette = $matches[1][0] . ',headlineStyle,headline2,headline2Style' . $matches[2][0];
-            }
-        }
+        return;
     }
 }

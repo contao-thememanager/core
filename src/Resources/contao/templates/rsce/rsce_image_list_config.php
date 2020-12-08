@@ -87,9 +87,5 @@ return array(
                 )
             )
         )
-    ),
-    'onloadCallback' => array(
-        array('ContaoThemeManager\Core\ThemeManager', 'extendHeadlinePalette'),
-        array('Oveleon\ContaoComponentStyleManager\Support', 'extendRockSolidCustomElementsPalettes')
     )
 );

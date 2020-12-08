@@ -29,7 +29,7 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = array
  *
  * @author Daniele Sciannimanica <daniele@oveleon.de>
  */
-class tl_thememanager extends \Backend
+class tl_thememanager extends Contao\Backend
 {
     /**
      * Import the back end user object

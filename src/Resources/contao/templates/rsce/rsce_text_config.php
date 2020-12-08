@@ -64,9 +64,5 @@ return array(
             'inputType' => 'text',
             'eval'      => array('maxlength'=>64, 'tl_class'=>'w50'),
         )
-    ),
-    'onloadCallback' => array(
-        array('ContaoThemeManager\Core\ThemeManager', 'extendHeadlinePalette'),
-        array('Oveleon\ContaoComponentStyleManager\Support', 'extendRockSolidCustomElementsPalettes')
     )
 );
