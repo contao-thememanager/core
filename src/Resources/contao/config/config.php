@@ -27,3 +27,5 @@ array_insert($GLOBALS['TL_CTE'], 2, array
     'components' => array(),
     'componentLists' => array()
 ));
+
+$GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate');
