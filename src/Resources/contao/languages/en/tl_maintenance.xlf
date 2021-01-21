@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_maintenance.php" source-language="en">
+    <body>
+      <trans-unit id="tl_maintenance.disableRsceConvert">
+        <source>This area has been disabled by the ThemeManager. If you are sure and want to convert custom elements to standard HTML modules, please edit the template "be_rsce_convert.html5" and follow the instructions it contains.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
