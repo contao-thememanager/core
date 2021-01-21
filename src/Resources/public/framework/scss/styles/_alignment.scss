@@ -10,6 +10,10 @@
   text-align: right;
 }
 
+.align-justify {
+  text-align: justify;
+}
+
 @include media-breakpoint('xs') {
   .align-xs-left {
     text-align: left;
@@ -21,6 +25,10 @@
 
   .align-xs-right {
     text-align: right;
+  }
+
+  .align-xs-justify {
+    text-align: justify;
   }
 }
 
@@ -36,6 +44,10 @@
   .align-s-right {
     text-align: right;
   }
+
+  .align-s-justify {
+    text-align: justify;
+  }
 }
 
 @include media-breakpoint('m') {
@@ -49,6 +61,10 @@
 
   .align-m-right {
     text-align: right;
+  }
+
+  .align-m-justify {
+    text-align: justify;
   }
 }
 
@@ -64,6 +80,10 @@
   .align-l-right {
     text-align: right;
   }
+
+  .align-l-justify {
+    text-align: justify;
+  }
 }
 
 @include media-breakpoint('xl') {
@@ -77,5 +97,9 @@
 
   .align-xl-right {
     text-align: right;
+  }
+
+  .align-xl-justify {
+    text-align: justify;
   }
 }
