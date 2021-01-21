@@ -722,6 +722,12 @@
       <trans-unit id="tl_thememanager.article-spacing-xl-large.1">
         <source>Here you can set the large vertical padding for articles for extra large devices.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.link-font-weight.0">
+        <source>$link-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-font-weight.1">
+        <source>Here you can set the font-weight for &quot;link&quot; - elements.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.link-color-regular.0">
         <source>$link-color-regular</source>
       </trans-unit>

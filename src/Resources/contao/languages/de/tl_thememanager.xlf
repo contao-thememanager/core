@@ -199,7 +199,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-regular.1">
         <source>Here you can set the regular font-weight for the theme.</source>
-        <target>Hier können Sie die das &quot;regular&quot; Schriftgewicht (font-weight) für das Theme einstellen.</target>
+        <target>Hier können Sie die das &quot;regular&quot; Schriftdicke (font-weight) für das Theme einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-medium.0">
         <source>$font-weight-medium</source>
@@ -207,7 +207,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-medium.1">
         <source>Here you can set the medium font-weight for the theme.</source>
-        <target>Hier können Sie die das &quot;medium&quot; Schriftgewicht (font-weight) für das Theme einstellen.</target>
+        <target>Hier können Sie die das &quot;medium&quot; Schriftdicke (font-weight) für das Theme einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-semibold.0">
         <source>$font-weight-semibold</source>
@@ -215,7 +215,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-semibold.1">
         <source>Here you can set the semibold font-weight for the theme.</source>
-        <target>Hier können Sie die das &quot;semibold&quot; Schriftgewicht (font-weight) für das Theme einstellen.</target>
+        <target>Hier können Sie die das &quot;semibold&quot; Schriftdicke (font-weight) für das Theme einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-bold.0">
         <source>$font-weight-bold</source>
@@ -223,7 +223,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-bold.1">
         <source>Here you can set the bold font-weight for the theme.</source>
-        <target>Hier können Sie die das &quot;bold&quot; Schriftgewicht (font-weight) für das Theme einstellen.</target>
+        <target>Hier können Sie die das &quot;bold&quot; Schriftdicke (font-weight) für das Theme einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-base.0">
         <source>$font-weight-base</source>
@@ -231,7 +231,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-base.1">
         <source>Here you can set the body font-weight the theme.</source>
-        <target>Hier können Sie das Standard Schriftgewicht für das Theme einstellen.</target>
+        <target>Hier können Sie das Standard Schriftdicke für das Theme einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.paragraph-spacing.0">
         <source>$paragraph-spacing</source>
@@ -247,7 +247,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.strong-font-weight.1">
         <source>Here you can set the font-weight for &quot;strong&quot; - elements.</source>
-        <target>Hier können Sie das Schriftgewicht für &quot;strong&quot; - Elemente einstellen.</target>
+        <target>Hier können Sie das Schriftdicke für &quot;strong&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.line-height-headline.0">
         <source>$line-height-headline</source>
@@ -960,6 +960,14 @@
       <trans-unit id="tl_thememanager.article-spacing-xl-large.1">
         <source>Here you can set the large vertical padding for articles for extra large devices.</source>
         <target>Hier können Sie den großen vertikalen Polster (padding) für Artikel auf sehr großen Geräten einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-font-weight.0">
+        <source>$link-font-weight</source>
+        <target>$link-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-font-weight.1">
+        <source>Here you can set the font-weight for &quot;link&quot; - elements.</source>
+        <target>Hier können Sie das Schriftdicke für &quot;Link&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.link-color-regular.0">
         <source>$link-color-regular</source>
