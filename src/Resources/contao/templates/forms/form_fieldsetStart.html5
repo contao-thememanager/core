@@ -1,0 +1,6 @@
+
+<div class="<?= ($this->class)? $this->class.' ' : ''  ?>grid" role="group">
+  <div class="inside">
+    <?php if ($this->label): ?>
+      <label><?= $this->label ?></label>
+    <?php endif; ?>
