@@ -111,10 +111,6 @@
   &.justify-space-evenly > .inside {
     justify-content: space-evenly;
   }
-
-  &.justify-revert > .inside {
-    justify-content: revert;
-  }
 }
 
 $grid-breakpoints: map-merge((0:0),$breakpoints);
