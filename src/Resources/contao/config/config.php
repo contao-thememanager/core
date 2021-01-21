@@ -8,6 +8,9 @@
 // Contao ThemeManager
 $GLOBALS['CTM_SETTINGS']['iconFont'] = 'files/assets/fontello/font/fontello.svg';
 
+// Register the supported CSS units for ThemeManager
+$GLOBALS['CTM_CSS_UNITS'] = array('px', 'rem');
+
 // Add configuration dca for themes
 $GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 

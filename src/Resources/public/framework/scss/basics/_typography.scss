@@ -89,6 +89,7 @@ p {
 
 a {
   color: $link-color-regular;
+  font-weight: $link-font-weight;
   text-decoration: $link-decoration-regular;
 
   &:hover {

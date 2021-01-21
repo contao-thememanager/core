@@ -7,11 +7,11 @@
   &.layout-top {
 
     .c_image {
-      left: -#{sum($boxed-padding, $boxed-border-width)};
+      left: -#{sum(nth(standardize($boxed-padding), 4), nth(standardize($boxed-border-width), 4))};
       margin-bottom: 0;
       position: relative;
-      top: -#{sum($boxed-padding, $boxed-border-width)};
-      width: calc(100% + #{multiply(sum($boxed-border-width, $boxed-padding), 2)});
+      top: -#{sum(nth(standardize($boxed-padding), 1), nth(standardize($boxed-border-width), 1))};
+      width: calc(100% + #{sum(nth(standardize($boxed-border-width),2),nth(standardize($boxed-padding),2),'rem')} + #{sum(nth(standardize($boxed-border-width),4),nth(standardize($boxed-padding),4),'rem')});
     }
 
     &.boxed {

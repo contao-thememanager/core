@@ -96,6 +96,8 @@ $h5-letter-spacing:                       0rem !default;
 $h6-letter-spacing:                       0rem !default;
 
 // Links
+$link-font-weight:                        $font-weight-base !default;
+
 $link-color-regular:                      $primary !default;
 $link-hover-color-regular:                darken($link-color-regular, 15%) !default;
 $link-decoration-regular:                 none !default;

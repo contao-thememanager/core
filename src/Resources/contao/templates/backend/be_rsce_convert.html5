@@ -1,0 +1,43 @@
+<div id="tl_maintenance_rsce_convert" class="maintenance_<?= $this->isActive ? 'active' : 'inactive' ?>">
+
+	<h2 class="sub_headline"><?= $GLOBALS['TL_LANG']['rocksolid_custom_elements']['convert_headline'] ?></h2>
+
+	<?php if ($this->isActive): ?>
+
+		<?php if ($this->failedElements): ?>
+			<div class="tl_message">
+				<?php foreach ($this->failedElements as $element): ?>
+					<p class="tl_error"><b>FAILED:</b> <?= $element[0] ?>-element, ID: <?= $element[1] ?>, Template: <?= $element[2] ?></p>
+				<?php endforeach ?>
+			</div>
+		<?php endif ?>
+		<div class="tl_message">
+			<p class="tl_confirm"><?= sprintf($GLOBALS['TL_LANG']['rocksolid_custom_elements']['convert_success'], $this->elementsCount) ?>
+		</div>
+
+	<?php else: ?>
+
+		<form action="<?= $this->action ?>" class="tl_form" method="get" onsubmit="return window.confirm(<?= htmlspecialchars(json_encode($GLOBALS['TL_LANG']['rocksolid_custom_elements']['convert_confirm'])) ?>)">
+			<div class="tl_formbody_edit">
+				<input type="hidden" name="act" value="rsce_convert">
+				<input type="hidden" name="do" value="maintenance">
+				<input type="hidden" name="rt" value="<?= REQUEST_TOKEN ?>">
+				<div class="tl_tbox">
+					<p><?= $GLOBALS['TL_LANG']['rocksolid_custom_elements']['convert_description'] ?></p>
+				</div>
+			</div>
+			<div class="tl_submit_container">
+                <p class="tl_info"><?= $GLOBALS['TL_LANG']['tl_maintenance']['disableRsceConvert'] ?></p>
+                <!-----------------------------------------------------------------------------------------
+                !                                                                                         !
+                ! To allow the conversion again, please remove the attribute "disable" from line 35 as    !
+                ! well as the entire line 30 and save this template under the same name.                  !
+                !                                                                                         !
+                ------------------------------------------------------------------------------------------>
+				<input type="submit" id="rsce_convert" class="tl_submit" value="<?= $GLOBALS['TL_LANG']['rocksolid_custom_elements']['convert_submit'] ?>" disabled>
+			</div>
+		</form>
+
+	<?php endif ?>
+
+</div>
