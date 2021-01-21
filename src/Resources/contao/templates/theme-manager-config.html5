@@ -7,7 +7,7 @@ return array(
             '{headings_legend:hide},line-height-headline,h1-font-size-small,h2-font-size-small,h3-font-size-small,h4-font-size-small,h5-font-size-small,h6-font-size-small,h1-font-size-medium,h2-font-size-medium,h3-font-size-medium,h4-font-size-medium,h5-font-size-medium,h6-font-size-medium,h1-font-size,h2-font-size,h3-font-size,h4-font-size,h5-font-size,h6-font-size,h1-font-weight,h2-font-weight,h3-font-weight,h4-font-weight,h5-font-weight,h6-font-weight,h1-color,h2-color,h3-color,h4-color,h5-color,h6-color,h1-color-invert,h2-color-invert,h3-color-invert,h4-color-invert,h5-color-invert,h6-color-invert,h1-letter-spacing,h2-letter-spacing,h3-letter-spacing,h4-letter-spacing,h5-letter-spacing,h6-letter-spacing;' .
             '{content_headings_legend:hide},h1-content-font-size-small,h2-content-font-size-small,h3-content-font-size-small,h4-content-font-size-small,h5-content-font-size-small,h6-content-font-size-small,h1-content-font-size-medium,h2-content-font-size-medium,h3-content-font-size-medium,h4-content-font-size-medium,h5-content-font-size-medium,h6-content-font-size-medium,h1-content-font-size,h2-content-font-size,h3-content-font-size,h4-content-font-size,h5-content-font-size,h6-content-font-size;' .
             '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
-            '{link_legend:hide},link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
+            '{link_legend:hide},link-font-weight,link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
             '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
             '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
             '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
@@ -879,12 +879,19 @@ return array(
         ),
 
         // Links
+        'link-font-weight' => array
+        (
+            'default'                 => '$font-weight-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-font-weight'],
+            'inputType'               => 'text',
+            'eval'                    => array('placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+        ),
         'link-color-regular' => array
         (
             'default'                 => '$primary',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-regular'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
         ),
         'link-hover-color-regular' => array
         (
