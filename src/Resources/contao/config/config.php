@@ -24,11 +24,20 @@ $GLOBALS['TC_SOURCES'] = array(
     ]
 );
 
-// Add content element components group
+// Add content elements and components group
 array_insert($GLOBALS['TL_CTE'], 2, array
 (
-    'components' => array(),
-    'componentLists' => array()
+    'components'     => array(),
+    'componentLists' => array(),
+    'wrapper'        => array(
+        'wrapperStart' => 'ContaoThemeManager\Core\ContentWrapperStart',
+        'wrapperStop'  => 'ContaoThemeManager\Core\ContentWrapperStop'
+    ),
 ));
 
+// Wrapper elements
+$GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
+$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
+
+// Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate');

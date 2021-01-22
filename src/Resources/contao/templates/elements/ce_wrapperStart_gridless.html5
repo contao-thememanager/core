@@ -1,0 +1,2 @@
+<div class="ce_wrapper block <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <div class="inside">
