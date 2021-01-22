@@ -1249,6 +1249,14 @@
         <source>Here you can set the border-width for outlined icons.</source>
         <target>Hier können Sie die Rahmenbreite (border-width) für umrandete Icons einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-textarea-line-height.0">
+        <source>$form-textarea-line-height</source>
+        <target>$form-textarea-line-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-textarea-line-height.1">
+        <source>Here you can set the line-height for textarea - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) für Textarea - Elemente einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-label-color.0">
         <source>$form-label-color</source>
         <target>$form-label-color</target>

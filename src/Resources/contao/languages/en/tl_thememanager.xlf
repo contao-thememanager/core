@@ -938,6 +938,12 @@
       <trans-unit id="tl_thememanager.icon-outlined-width.1">
         <source>Here you can set the border-width for outlined icons.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-textarea-line-height.0">
+        <source>$form-textarea-line-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-textarea-line-height.1">
+        <source>Here you can set the line-height for textarea - elements.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-label-color.0">
         <source>$form-label-color</source>
       </trans-unit>
