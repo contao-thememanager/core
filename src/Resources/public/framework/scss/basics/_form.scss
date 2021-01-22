@@ -84,6 +84,7 @@ select, input{
 
 textarea {
   resize: none;
+  line-height: $form-textarea-line-height;
 }
 
 .widget {
