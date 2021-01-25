@@ -87,6 +87,3 @@
     text-align: right;
   }
 }
-
-@include form-field-image(1,'\e808',true,4rem) {color: blue;};
-@include form-field-image(2,'/files/theme/images/backgrounds/icon-pin-bg.svg');
