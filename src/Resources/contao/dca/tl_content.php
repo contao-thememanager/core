@@ -7,6 +7,8 @@
 $GLOBALS['TL_DCA']['tl_content']['palettes']['wrapperStart'] = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['wrapperStop']  = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
 
+$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div');
+
 $GLOBALS['TL_DCA']['tl_content']['fields']['headlineStyle'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['headlineStyle'],
