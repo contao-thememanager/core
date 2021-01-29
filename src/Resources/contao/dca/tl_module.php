@@ -4,6 +4,7 @@
  *
  * (c) https://www.oveleon.de/
 */
+$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div');
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = array
 (
