@@ -1,233 +1,227 @@
-.hl-design-lined{
-  position: relative;
-  padding-bottom: $headline-spacing-small;
+.hl-design-lined {
 
-  &:after{
+  &:after {
     content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
+    display: inline-block;
+
+    height: rem(2);
     width: 100px;
+
+    text-align: inherit;
+    vertical-align: middle;
+
+    position: relative;
+    bottom: 1px;
+
     background: $primary;
   }
 }
 
-.align-center{
+.hl-spacing-global-small {
 
-  .hl-design-lined:after{
-    left: 50%;
-    transform: translateX(-50%);
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
   }
 }
 
-.align-right{
+.hl-spacing-global-medium {
 
-  .hl-design-lined:after{
-    left: initial;
-    right: 0;
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
   }
 }
 
-.hl-spacing-global-medium{
+.hl-spacing-global-large {
 
-  &.hl-design-lined {
-    padding-bottom: $headline-spacing-small;
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
   }
 }
 
-.hl-spacing-global-large{
+.hl-spacing-small {
 
-  &.hl-design-lined {
-    padding-bottom: $headline-spacing-large;
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
   }
 }
 
-.hl-spacing-small{
+.hl-spacing-medium {
 
-  &.hl-design-lined {
-    padding-bottom: $headline-spacing-medium;
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
   }
 }
 
-.hl-spacing-medium{
+.hl-spacing-large {
 
-  &.hl-design-lined {
-    padding-bottom: $headline-spacing-s-medium;
+  &.hl-design-lined:after {
+    bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
   }
 }
 
-.hl-spacing-large{
+.hl-spacing-global-small {
 
-  &.hl-design-lined {
-    padding-bottom: $headline-spacing-l-medium;
-  }
-}
+  &.hl-spacing-small {
 
-.hl-spacing-global-small{
-
-  &.hl-spacing-small{
-
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-small;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
     }
   }
 
-  &.hl-spacing-medium{
+  &.hl-spacing-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-small;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
     }
   }
 
-  &.hl-spacing-large{
+  &.hl-spacing-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-small;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
     }
   }
 }
 
-.hl-spacing-global-medium{
+.hl-spacing-global-medium {
 
-  &.hl-spacing-small{
+  &.hl-spacing-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  &.hl-spacing-medium{
+  &.hl-spacing-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  &.hl-spacing-large{
+  &.hl-spacing-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 }
 
-.hl-spacing-global-large{
+.hl-spacing-global-large {
 
-  &.hl-spacing-small{
+  &.hl-spacing-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-large;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
     }
   }
 
-  &.hl-spacing-medium{
+  &.hl-spacing-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-large;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
     }
   }
 
-  &.hl-spacing-large{
+  &.hl-spacing-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-large;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
     }
   }
 }
 
 @include media-breakpoint('xs') {
 
-  .hl-spacing-xs-small{
+  .hl-spacing-xs-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-xs-medium{
+  .hl-spacing-xs-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-xs-large{
+  .hl-spacing-xs-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-spacing-xs-small{
+    &.hl-spacing-xs-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xs-medium{
+    &.hl-spacing-xs-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xs-large{
+    &.hl-spacing-xs-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-small;
-      }
-    }
-  }
-
-  .hl-spacing-global-medium{
-
-    &.hl-spacing-xs-small{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-medium;
-      }
-    }
-
-    &.hl-spacing-xs-medium{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-medium;
-      }
-    }
-
-    &.hl-spacing-xs-large{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-medium;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
       }
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-medium {
 
-    &.hl-spacing-xs-small{
+    &.hl-spacing-xs-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xs-medium{
+    &.hl-spacing-xs-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xs-large{
+    &.hl-spacing-xs-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
+      }
+    }
+  }
+
+  .hl-spacing-global-large {
+
+    &.hl-spacing-xs-small {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-xs-medium {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-xs-large {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
       }
     }
   }
@@ -235,116 +229,116 @@
 
 @include media-breakpoint('s') {
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-small;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-medium{
+  .hl-spacing-global-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-large;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
     }
   }
 
-  .hl-spacing-s-small{
+  .hl-spacing-s-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-s-medium{
+  .hl-spacing-s-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-s-large{
+  .hl-spacing-s-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-spacing-s-small{
+    &.hl-spacing-s-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-s-medium{
+    &.hl-spacing-s-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-s-large{
+    &.hl-spacing-s-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-small;
-      }
-    }
-  }
-
-  .hl-spacing-global-medium{
-
-    &.hl-spacing-s-small{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-medium;
-      }
-    }
-
-    &.hl-spacing-s-medium{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-medium;
-      }
-    }
-
-    &.hl-spacing-s-large{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-medium;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
       }
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-medium {
 
-    &.hl-spacing-s-small{
+    &.hl-spacing-s-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-s-medium{
+    &.hl-spacing-s-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-s-large{
+    &.hl-spacing-s-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
+      }
+    }
+  }
+
+  .hl-spacing-global-large {
+
+    &.hl-spacing-s-small {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-s-medium {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-s-large {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
       }
     }
   }
@@ -352,95 +346,95 @@
 
 @include media-breakpoint('m') {
 
-  .hl-spacing-m-small{
+  .hl-spacing-m-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-m-medium{
+  .hl-spacing-m-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-m-large{
+  .hl-spacing-m-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-spacing-m-small{
+    &.hl-spacing-m-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-m-medium{
+    &.hl-spacing-m-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-m-large{
+    &.hl-spacing-m-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-small;
-      }
-    }
-  }
-
-  .hl-spacing-global-medium{
-
-    &.hl-spacing-m-small{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-medium;
-      }
-    }
-
-    &.hl-spacing-m-medium{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-medium;
-      }
-    }
-
-    &.hl-spacing-m-large{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-medium;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
       }
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-medium {
 
-    &.hl-spacing-m-small{
+    &.hl-spacing-m-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-m-medium{
+    &.hl-spacing-m-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-m-large{
+    &.hl-spacing-m-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
+      }
+    }
+  }
+
+  .hl-spacing-global-large {
+
+    &.hl-spacing-m-small {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-m-medium {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-m-large {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
       }
     }
   }
@@ -448,116 +442,116 @@
 
 @include media-breakpoint('l') {
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-small;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-medium{
+  .hl-spacing-global-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-large;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
     }
   }
 
-  .hl-spacing-l-small{
+  .hl-spacing-l-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-l-medium{
+  .hl-spacing-l-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-l-large{
+  .hl-spacing-l-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-spacing-l-small{
+    &.hl-spacing-l-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-l-medium{
+    &.hl-spacing-l-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-l-large{
+    &.hl-spacing-l-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-small;
-      }
-    }
-  }
-
-  .hl-spacing-global-medium{
-
-    &.hl-spacing-l-small{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-medium;
-      }
-    }
-
-    &.hl-spacing-l-medium{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-medium;
-      }
-    }
-
-    &.hl-spacing-l-large{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-medium;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
       }
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-medium {
 
-    &.hl-spacing-l-small{
+    &.hl-spacing-l-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-l-medium{
+    &.hl-spacing-l-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-l-large{
+    &.hl-spacing-l-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
+      }
+    }
+  }
+
+  .hl-spacing-global-large {
+
+    &.hl-spacing-l-small {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-l-medium {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-l-large {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
       }
     }
   }
@@ -565,95 +559,95 @@
 
 @include media-breakpoint('xl') {
 
-  .hl-spacing-xl-small{
+  .hl-spacing-xl-small {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-xl-medium{
+  .hl-spacing-xl-medium {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-s-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-xl-large{
+  .hl-spacing-xl-large {
 
-    &.hl-design-lined {
-      padding-bottom: $headline-spacing-l-medium;
+    &.hl-design-lined:after {
+      bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
     }
   }
 
-  .hl-spacing-global-small{
+  .hl-spacing-global-small {
 
-    &.hl-spacing-xl-small{
+    &.hl-spacing-xl-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xl-medium{
+    &.hl-spacing-xl-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-small;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-small, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xl-large{
+    &.hl-spacing-xl-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-small;
-      }
-    }
-  }
-
-  .hl-spacing-global-medium{
-
-    &.hl-spacing-xl-small{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-medium;
-      }
-    }
-
-    &.hl-spacing-xl-medium{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-medium;
-      }
-    }
-
-    &.hl-spacing-xl-large{
-
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-medium;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-small, 2), 1px)};
       }
     }
   }
 
-  .hl-spacing-global-large{
+  .hl-spacing-global-medium {
 
-    &.hl-spacing-xl-small{
+    &.hl-spacing-xl-small {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xl-medium{
+    &.hl-spacing-xl-medium {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-s-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-medium, 2), 1px)};
       }
     }
 
-    &.hl-spacing-xl-large{
+    &.hl-spacing-xl-large {
 
-      &.hl-design-lined {
-        padding-bottom: $headline-spacing-l-large;
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-medium, 2), 1px)};
+      }
+    }
+  }
+
+  .hl-spacing-global-large {
+
+    &.hl-spacing-xl-small {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-xl-medium {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-s-large, 2), 1px)};
+      }
+    }
+
+    &.hl-spacing-xl-large {
+
+      &.hl-design-lined:after {
+        bottom: -#{sub(divide($headline-spacing-l-large, 2), 1px)};
       }
     }
   }

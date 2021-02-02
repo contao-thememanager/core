@@ -19,6 +19,10 @@ button, a.button, input.button {
 
   text-decoration: none;
 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   &:hover {
     background-color: $button-hover-bg-primary;
     color: $button-hover-color-primary;
