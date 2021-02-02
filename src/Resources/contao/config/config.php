@@ -30,14 +30,18 @@ array_insert($GLOBALS['TL_CTE'], 2, array
     'components'     => array(),
     'componentLists' => array(),
     'wrapper'        => array(
-        'wrapperStart' => 'ContaoThemeManager\Core\ContentWrapperStart',
-        'wrapperStop'  => 'ContaoThemeManager\Core\ContentWrapperStop'
+        'wrapperStart'      => 'ContaoThemeManager\Core\ContentWrapperStart',
+        'wrapperStop'       => 'ContaoThemeManager\Core\ContentWrapperStop',
+        'wrapperStartBoxed' => 'ContaoThemeManager\Core\ContentWrapperStartBoxed',
+        'wrapperStopBoxed'  => 'ContaoThemeManager\Core\ContentWrapperStopBoxed'
     ),
 ));
 
 // Wrapper elements
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
+$GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartBoxed';
+$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopBoxed';
 
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate');

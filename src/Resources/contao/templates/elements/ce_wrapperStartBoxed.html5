@@ -1,0 +1,4 @@
+<div class="ce_wrapper block boxed <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <div class="inside">
+        <div class="grid">
+            <div class="inside<?=$this->styleManager->prepare('sliderConfig', ['init'])->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>

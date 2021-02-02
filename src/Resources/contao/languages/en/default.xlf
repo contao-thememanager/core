@@ -10,6 +10,31 @@
       <trans-unit id="CTE.componentLists">
         <source>Component lists</source>
       </trans-unit>
+
+      <trans-unit id="CTE.wrapperStart.0">
+        <source>Wrapper start</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStart.1">
+        <source>Generates the opening part of the wrapper.</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.0">
+        <source>Wrapper stop</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.1">
+        <source>Generates the closing part of the wrapper.</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStartBoxed.0">
+        <source>Wrapper start (boxed)</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStartBoxed.1">
+        <source>Generates the opening part of the wrapper (boxed).</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStopBoxed.0">
+        <source>Wrapper stop (boxed)</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStopBoxed.1">
+        <source>Generates the closing part of the wrapper (boxed).</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
