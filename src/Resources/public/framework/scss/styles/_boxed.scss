@@ -21,6 +21,10 @@
     margin: -#{divide($grid-gutter-width, 2)};
     overflow: hidden;
 
+    > .c_headline {
+      padding: divide($grid-gutter-width, 2) divide($grid-gutter-width, 2) 0;
+    }
+
     > .grid-list {
       margin: divide($grid-gutter-width, 2) sub(divide($grid-gutter-width, 2), divide($grid-gutter-width, 2)) sub(divide($grid-gutter-width, 2), $grid-gutter-bottom);
 
