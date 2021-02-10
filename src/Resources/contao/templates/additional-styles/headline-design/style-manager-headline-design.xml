@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archives>
+  <archive identifier="headline">
+    <field title="id">258</field>
+    <field title="tstamp">1579862691</field>
+    <field title="title">Headlines</field>
+    <field title="identifier">headline</field>
+    <field title="groupAlias">Design</field>
+    <field title="sorting">130</field>
+    <children>
+      <child alias="design">
+        <field title="id">1527</field>
+        <field title="pid">258</field>
+        <field title="sorting">896</field>
+        <field title="tstamp">1612955814</field>
+        <field title="alias">design</field>
+        <field title="title">Design</field>
+        <field title="description">Here you can choose from various display options for the headings</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:15:"hl-design-lined";s:5:"value";s:4:"Line";}}</field>
+        <field title="cssClass">seperator</field>
+        <field title="chosen">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:24:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:11:"sliderStart";i:14;s:9:"hyperlink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:4:"form";i:23;s:8:"comments";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:4:"form";i:17;s:6:"search";i:18;s:8:"comments";i:19;s:7:"listing";i:20;s:11:"articlelist";i:21;s:11:"randomImage";i:22;s:9:"rssReader";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+        <field title="realEstateExposeModules">NULL</field>
+        <field title="extendRealEstateExposeModule"></field>
+        <field title="realEstateFilterItems">NULL</field>
+        <field title="extendRealEstateFilterItem"></field>
+        <field title="extendRealEstateFilter"></field>
+      </child>
+    </children>
+  </archive>
+</archives>
