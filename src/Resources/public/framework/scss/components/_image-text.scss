@@ -16,7 +16,7 @@
 
     &.boxed {
       figure, img {
-        border-radius: $boxed-border-radius $boxed-border-radius 0 0;
+        border-radius: nth(standardize($boxed-border-radius), 1) nth(standardize($boxed-border-radius), 2) 0 0;
       }
     }
   }
