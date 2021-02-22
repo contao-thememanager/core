@@ -1601,6 +1601,22 @@
         <source>Here you can set the font-size for the ⮟ select symbol.</source>
         <target>Hier können Sie die Schriftgröße für das ⮟ Auswählen-Symbol einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-color.0">
+        <source>$form-select-option-color</source>
+        <target>$form-select-option-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-color.1">
+        <source>Here you can set the color for select options.</source>
+        <target>Hier können Sie die Schriftfarbe für Auswahlfelder einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-background.0">
+        <source>$form-select-option-background</source>
+        <target>$form-select-option-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-background.1">
+        <source>Here you can set the background-color for select options.</source>
+        <target>Hier können Sie die Hintergrundfarbe für Auswahlfelder einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-field-image-width.0">
         <source>$form-field-image-width</source>
         <target>$form-field-image-width</target>

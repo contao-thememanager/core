@@ -21,7 +21,8 @@ select {
   -moz-appearance: none;
 
   option {
-    color: #000;
+    color: $form-select-option-color;
+    background-color: $form-select-option-background;
 
     &[disabled]{
       color: $form-input-color-disabled;

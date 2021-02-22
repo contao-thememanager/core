@@ -1202,6 +1202,18 @@
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
         <source>Here you can set the font-size for the ⮟ select symbol.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-color.0">
+        <source>$form-select-option-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-color.1">
+        <source>Here you can set the color for select options.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-background.0">
+        <source>$form-select-option-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-option-background.1">
+        <source>Here you can set the background-color for select options.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-field-image-width.0">
         <source>$form-field-image-width</source>
       </trans-unit>
