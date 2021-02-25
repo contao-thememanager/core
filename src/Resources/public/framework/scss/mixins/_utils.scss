@@ -119,3 +119,12 @@
   }
   @return unquote($result);
 }
+
+@function shorten-decimal-value($number) {
+  @if unitless($number) {
+    @return (floor($number * 1000000) / 1000000);
+  }
+  @else {
+    @return $number;
+  }
+}
