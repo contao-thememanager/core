@@ -1617,6 +1617,14 @@
         <source>Here you can set the background-color for select options.</source>
         <target>Hier können Sie die Hintergrundfarbe für Auswahlfelder einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-validation.0">
+        <source>$form-validation</source>
+        <target>$form-validation</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-validation.1">
+        <source>Here you can activate whether invalid form fields should be shown with the error color.</source>
+        <target>Hier können Sie einstellen ob invalide Formular-Felder farblich hervorgehoben werden sollen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form-field-image-width.0">
         <source>$form-field-image-width</source>
         <target>$form-field-image-width</target>

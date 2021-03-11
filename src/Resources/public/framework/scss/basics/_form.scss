@@ -98,14 +98,10 @@ textarea {
   &.error{
 
     select, input, textarea {
-      color: $form-input-color-error;
-      background: $form-input-background-error;
-      border-color: $form-input-border-color-error;
 
-      &::-webkit-input-placeholder { color: $form-input-placeholder-color-error; }
-      &::-moz-placeholder { color: $form-input-placeholder-color-error; }
-      &:-ms-input-placeholder { color: $form-input-placeholder-color-error; }
-      &:-moz-placeholder { color: $form-input-placeholder-color-error; }
+      &:not(:valid) {
+        @extend %form-error-styles;
+      }
     }
 
     p.error{
@@ -197,6 +193,18 @@ textarea {
       }
     }
   }
+}
+
+/* Error Styles */
+%form-error-styles {
+  color: $form-input-color-error;
+  background: $form-input-background-error;
+  border-color: $form-input-border-color-error;
+
+  &::-webkit-input-placeholder { color: $form-input-placeholder-color-error; }
+  &::-moz-placeholder { color: $form-input-placeholder-color-error; }
+  &:-ms-input-placeholder { color: $form-input-placeholder-color-error; }
+  &:-moz-placeholder { color: $form-input-placeholder-color-error; }
 }
 
 .widget-checkbox, .widget-radio {
@@ -366,6 +374,24 @@ textarea {
 
     label {
       margin-bottom: 0;
+    }
+  }
+}
+
+// Form-validation
+
+@if ($form-validation == 'Focus') {
+  input, select, textarea {
+    &:required:focus:invalid {
+      @extend %form-error-styles;
+    }
+  }
+}
+
+@else if ($form-validation == 'Always') {
+  input, select, textarea {
+    &:required:invalid {
+      @extend %form-error-styles;
     }
   }
 }
