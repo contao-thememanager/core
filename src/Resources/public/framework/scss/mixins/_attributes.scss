@@ -14,3 +14,8 @@
     box-shadow: $value;
   }
 }
+
+@mixin user-select($value: none){
+  -webkit-user-select: $value;
+  user-select: $value;
+}
