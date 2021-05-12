@@ -107,4 +107,8 @@ button, a.button, input.button {
       padding: button-padding($button-padding-super, $button-border-width-alt);
     }
   }
+
+  &.is-block {
+    display: block;
+  }
 }
