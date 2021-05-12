@@ -1,0 +1,23 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<?php if (!!$this->styleManager->prepare('gridList', ['grid-list-activation'])->format('%s')): ?>
+  <div class="<?=$this->styleManager->prepare('gridList')->format('%s')?>">
+    <?php foreach ($this->files as $file): ?>
+      <div class="download-element ext-<?= $file['extension'] ?>">
+        <a class="<?=$this->styleManager->prepare('button')->format('%s')?> inside" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
+      </div>
+    <?php endforeach; ?>
+  </div>
+<?php else: ?>
+  <ul>
+    <?php foreach ($this->files as $file): ?>
+      <li class="download-element ext-<?= $file['extension'] ?>">
+        <a class="<?=$this->styleManager->prepare('button')->format('%s')?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
+      </li>
+    <?php endforeach; ?>
+  </ul>
+<?php endif ?>
+
+<?php $this->endblock(); ?>
