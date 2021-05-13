@@ -11,6 +11,16 @@
   }
 }
 
+.layout-float-left,
+.layout-float-right {
+
+  > .inside:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 .layout-content, .layout-content-1, .layout-content-2{
 
   #container{
