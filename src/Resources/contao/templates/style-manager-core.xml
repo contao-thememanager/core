@@ -2554,32 +2554,6 @@
         <field title="extendEvents"></field>
         <field title="blankOption">1</field>
       </child>
-      <child alias="grid-list-activation">
-        <field title="id">1364</field>
-        <field title="pid">242</field>
-        <field title="sorting">832</field>
-        <field title="tstamp">1620842925</field>
-        <field title="alias">grid-list-activation</field>
-        <field title="title">Grid-List</field>
-        <field title="description">Aktiviert die Grid-Liste für dieses Inhaltselement</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:9:"grid-list";s:5:"value";s:5:"Aktiv";}}</field>
-        <field title="cssClass">separator</field>
-        <field title="chosen">1</field>
-        <field title="passToTemplate">1</field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
-        <field title="extendArticle"></field>
-        <field title="extendForm"></field>
-        <field title="extendFormFields"></field>
-        <field title="formFields">NULL</field>
-        <field title="extendContentElement">1</field>
-        <field title="contentElements">a:1:{i:0;s:9:"downloads";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
-        <field title="extendNews"></field>
-        <field title="extendEvents"></field>
-        <field title="blankOption">1</field>
-      </child>
       <child alias="autoHeight">
         <field title="id">1366</field>
         <field title="pid">242</field>
