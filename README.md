@@ -30,11 +30,11 @@
 - StyleManager
 - __Custom Skin integration to customize the whole website based on this framework__ 🎭
 
-
 ### Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - EstateManager (Contao EstateManager) [🔗](https://github.com/contao-thememanager/ctm-estatemanager)
 - AdvancedForm (Contao AdvancedForm) [🔗](https://github.com/contao-thememanager/ctm-advanced-form)
+- Recommendation (Contao Recommendation) [🔗](https://github.com/contao-thememanager/ctm-recommendation)
 - _Further extensions will follow ..._
 
 
