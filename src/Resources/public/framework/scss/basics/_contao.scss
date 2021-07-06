@@ -2,14 +2,6 @@
   overflow:hidden;
 }
 
-.ov{
-  overflow: visible;
-
-  > .inside {
-    overflow: visible;
-  }
-}
-
 .clear, #clear {
   height:0.1px;
   font-size:0.1px;
