@@ -1079,7 +1079,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-small-break.1">
         <source>Here you can set the breakpoint for small column behaviour in column layouts (left or right columns).</source>
-        <target>Hier können Sie den Bruchpunkt für die das kleine Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
+        <target>Hier können Sie den Bruchpunkt für das kleine Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-medium-break.0">
         <source>$layout-column-medium-break</source>
@@ -1087,7 +1087,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-medium-break.1">
         <source>Here you can set the breakpoint for medium column behaviour in column layouts (left or right columns).</source>
-        <target>Hier können Sie den Bruchpunkt für die das mittlere Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
+        <target>Hier können Sie den Bruchpunkt für das mittlere Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-large-break.0">
         <source>$layout-column-large-break</source>
@@ -1095,7 +1095,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-large-break.1">
         <source>Here you can set the breakpoint for large column behaviour in column layouts (left or right columns).</source>
-        <target>Hier können Sie den Bruchpunkt für die das große Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
+        <target>Hier können Sie den Bruchpunkt für das große Spalten-Verhalten einstellen (linke oder rechte Spalte).</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.layout-column-width-small.0">
         <source>$layout-column-width-small</source>
