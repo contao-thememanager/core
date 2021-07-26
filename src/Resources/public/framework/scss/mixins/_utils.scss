@@ -1,27 +1,104 @@
-@function rem($p, $c: $browser-context)
-{
-  @return unquote("#{$p / $c}rem");
+// Checks if a unit is px or rem
+//
+// @example
+// isValidUnit(px) => true
+// isValidUnit(em) => false
+//
+@function isValidUnit($f) {
+  @if (index(['px', 'rem'], $f) == null) {
+    @return false
+  }
+  @else {
+    @return true;
+  }
 }
 
-@function divide($a, $b) {
-  @return $a / $b;
-}
 
-@function multiply($a, $b) {
-  @return $a * $b;
-}
-
+// Strips unit from a value.
+//
+// @example
+// parse(40px) => 40
+// parse(2rem) => 2
+//
 @function parse($n) {
   @return $n / ($n * 0 + 1);
 }
 
+
+// Converts a px value or a unitless number into a rem value.
+//
+// @example
+// $browser-context: 16
+//
+// rem(32px) => 2rem
+// rem(48) => 3rem
+//
+@function rem($p, $c: $browser-context) {
+  @if (unit($p) == 'px') {
+    @return parse($p) / $c * 1rem;
+  }
+  @else {
+    @return $p / $c * 1rem;
+  }
+}
+
+
+// Converts a rem value into a px value.
+//
+// @example
+// $browser-context: 16
+//
+// px(2rem) => 32px
+//
+@function px($r, $c: $browser-context) {
+  @if (unit($r) == 'rem') {
+    @return parse($r) * $c * 1px;
+  }
+  @else {
+    @return $r;
+  }
+}
+
+
+// Divides two numbers.
+//
+// @example
+// divide(30, 2) => 15
+// divide(40rem, 2) => 20rem
+//
+@function divide($a, $b) {
+  @return $a / $b;
+}
+
+
+// Multiplies two numbers.
+//
+// @example
+// multiply(10, 2) => 20
+// multiply(5rem, 2) => 10rem
+//
+@function multiply($a, $b) {
+  @return $a * $b;
+}
+
+
+// Returns the sum of two units and works with rem and px values.
+// The output can be changed to rem or px.
+//
+// @example
+// sum(3rem, 2rem) => 5rem
+// sum(48px, 32px, 'px') => 80px
+//
+// sum(48px, 2rem) => 5rem
+// sum(48px, 2rem, 'px') => 80px
+//
 @function sum($a, $b, $f: 'rem') {
   @if(unit($a) == 'px') and (unit($b) == 'px') {
     @if ($f == 'px') {
       @return $a + $b;
     }
     @else if ($f == 'rem') {
-      @return unquote("#{(parse($a) + parse($b)) / $browser-context}rem");
+      @return (parse($a) + parse($b)) / $browser-context * 1rem;
     }
   }
   @else if(unit($a) == 'px') and (unit($b) == 'rem') {
@@ -42,7 +119,7 @@
   }
   @else if(unit($a) == 'rem') and (unit($b) == 'rem') {
     @if ($f == 'px') {
-      @return unquote("#{(parse($a) + parse($b)) * $browser-context}px");
+      @return (parse($a) + parse($b)) * $browser-context * 1px;
     }
     @else if ($f == 'rem') {
       @return $a + $b;
@@ -50,13 +127,24 @@
   }
 }
 
+
+// Returns the difference of two units and works with rem and px values.
+// The output can be changed to rem or px.
+//
+// @example
+// sub(3rem, 2rem) => 1rem
+// sub(48px, 32px, 'px') => 16px
+//
+// sub(48px, 2rem) => 1rem
+// sub(48px, 2rem, 'px') => 16px
+//
 @function sub($a, $b, $f: 'rem') {
   @if(unit($a) == 'px') and (unit($b) == 'px') {
     @if ($f == 'px') {
       @return $a - $b;
     }
     @else if ($f == 'rem') {
-      @return unquote("#{(parse($a) - parse($b)) / $browser-context}rem");
+      @return (parse($a) - parse($b)) / $browser-context * 1rem;
     }
   }
   @else if(unit($a) == 'px') and (unit($b) == 'rem') {
@@ -77,7 +165,7 @@
   }
   @else if(unit($a) == 'rem') and (unit($b) == 'rem') {
     @if ($f == 'px') {
-      @return unquote("#{(parse($a) - parse($b)) * $browser-context}px");
+      @return (parse($a) - parse($b)) * $browser-context * 1px;
     }
     @else if ($f == 'rem') {
       @return $a - $b;
@@ -85,6 +173,14 @@
   }
 }
 
+
+// Returns a shorthand-notation with four values.
+//
+// @example
+// standardize(5px) => 5px 5px 5px 5px
+// standardize(4px 2px) => 4px 2px 4px 2px
+// standardize(4px 3px 2px) => 4px 3px 2px 3px
+//
 @function standardize($a: ()) {
   @if (length($a) == 1){
     @return nth($a, 1) nth($a, 1) nth($a, 1) nth($a, 1);
@@ -103,24 +199,223 @@
   }
 }
 
-@function button-padding($padding, $border-width) {
-  $a: standardize($padding);
-  $b: standardize($border-width);
-  $result: '';
-  @for $i from 1 through 4 {
-    $suffix : '';
-    @if ($i != 4){
-      $suffix: ' ';
-    }
-    @else {
-      $suffix: '';
-    }
-    $result: #{$result} + (sub(nth($a, $i), nth($b, $i))) + $suffix;
+
+// Returns the sum of two shorthand values.
+// The output is a shorthand property with four values
+// and can be changed to rem or px.
+//
+// @example
+// sumList(4rem 2rem, 1rem) => 5rem 3rem 5rem 3rem
+// sumList(4px 3px 2px 1px, 1px, 'px') => 5px 4px 3px 2px
+//
+@function sumList($list1, $list2, $unit: 'rem') {
+  $a: standardize($list1);
+  $b: standardize($list2);
+
+  $sumList: sum(nth($a, 1), nth($b, 1), $unit);
+
+  @for $i from 2 through 4 {
+    $sumList: join($sumList, sum(nth($a, $i), nth($b, $i), $unit));
   }
-  @return unquote($result);
+
+  @return $sumList;
 }
 
+
+// Returns the difference of two shorthand values.
+// The output is a shorthand property with four values
+// and can be changed to rem or px.
+//
+// @example
+// subList(4rem 2rem, 1rem) => 3rem 1rem 3rem 1rem
+// subList(4px 3px 2px 1px, 1px, 'px') => 3px 2px 1px 0px
+//
+@function subList($list1, $list2, $unit: 'rem') {
+  $a: standardize($list1);
+  $b: standardize($list2);
+
+  $subList: sub(nth($a, 1), nth($b, 1), $unit);
+
+  @for $i from 2 through 4 {
+    $subList: join($subList, sub(nth($a, $i), nth($b, $i), $unit));
+  }
+
+  @return $subList;
+}
+
+
+// Converts a unitless number to a percentage with four decimal places.
+// This function is helpful to reduce your file size
+// when using many percentage() functions.
+//
+// @example
+// percentage(1/12) => 8.3333333333%
+// shortPercentage(1/12) => 8.3333%
+//
+@function shortPercentage($number) {
+  @if unitless($number) {
+    @return percentage(floor($number * 1000000) / 1000000);
+  }
+  @else {
+    @return $number;
+  }
+}
+
+
+// Finds the minimum or maximum of two unitless values.
+// Parameter $c is used to check for min or max.
+//
+// @example
+// compare(5, 3, 'min') => 3
+// compare(5, 3, 'max') => 5
+//
+@function compare($a, $b, $c: 'min') {
+  @if ($c == 'min') {
+    @if ($a <= $b) {
+      @return $a;
+    }
+    @else {
+      @return $b;
+    }
+  }
+  @else if ($c == 'max') {
+    @if ($a >= $b) {
+      @return $a;
+    }
+    @else {
+      @return $b;
+    }
+  }
+  @else {
+    @return $a;
+  }
+}
+
+
+// Compares two values and returns the minimum or
+// maximum value based on parameter $c.
+// The output can be changed to rem or px.
+//
+// @example
+// i.e. $browser-context: 16
+//
+// compareUnit(3rem, 32px, 'min', 'rem') => 2rem
+// compareUnit(3rem, 32px, 'min', 'px') => 32px
+// compareUnit(20px, 4rem, 'max', 'rem') => 5rem
+// compareUnit(20px, 4rem, 'max', 'px') => 64px
+//
+@function compareUnit($a, $b, $c: 'min', $f: 'rem') {
+  // Check whether the output unit is valid or not
+  /*@if not isValidUnit($f) {
+    @error "$f argument for output must be of type [px] or [rem]; was [#{$f}]";
+  }*/
+
+  // Check units of $a and $b
+  @if (unit($a) == 'px') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return compare($a, $b, $c);
+    }
+    @else if ($f == 'rem') {
+      @return rem(compare($a, $b, $c));
+    }
+  }
+  @else if (unit($a) == 'rem') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return px(compare($a, $b, $c));
+    }
+    @else if ($f == 'rem') {
+      @return compare($a, $b, $c)
+    }
+  }
+  @else if (unit($a) == 'px') and (unit($b) == 'rem') {
+    @if ($f == 'px') {
+      @return compare($a, px($b), $c)
+    }
+    @else if ($f == 'rem') {
+      @return compare(rem($a), $b, $c);
+    }
+  }
+  @else if (unit($a) == 'rem') and (unit($b) == 'px') {
+    @if ($f == 'px') {
+      @return compare(px($a), $b, $c);
+    }
+    @else if ($f == 'rem') {
+      @return compare($a, rem($b), $c);
+    }
+  }
+  @else if (unit($a) == '') {
+    @if ($f == 'px') and (unit($b) == 'rem') {
+      @return compare($a, px($b), $c);
+    }
+    @else if ($f == 'rem') and (unit($b) == 'px') {
+      @return compare($a, rem($b), $c);
+    }
+    @else {
+      @return compare($a, $b, $c);
+    }
+  }
+  @else if (unit($b) == '') {
+    @if ($f == 'px') and (unit($a) == 'rem') {
+      @return compare(px($a), $b, $c);
+    }
+    @else if ($f == 'rem') and (unit($a) == 'px') {
+      @return compare($a, rem($b), $c);
+    }
+    @else {
+      @return compare($a, $b, $c);
+    }
+  }
+  @else {
+    @return compare($a, $b, $c);
+  }
+}
+
+
+// Compares two values and returns the minimum.
+// The output can be changed to rem or px.
+//
+// @see compareUnit
+//
+// @example
+// minUnit(32px, 1rem, 'rem') => 1rem
+// minUnit(32px, 1rem, 'px') => 16px
+//
+@function minUnit($a, $b, $f: 'rem') {
+  @return compareUnit($a, $b, 'min', $f);
+}
+
+// Compares two values and returns the maximum.
+// The output can be changed to rem or px.
+//
+// @see compareUnit
+//
+// @example
+// maxUnit(32px, 1rem, 'rem') => 2rem
+// maxUnit(32px, 1rem, 'px') => 32px
+//
+@function maxUnit($a, $b, $f: 'rem') {
+  @return compareUnit($a, $b, 'max', $f);
+}
+
+
+// Below is a list of deprecated functions that will be removed in the future
+//
+// [1]  button-padding(): This was replaced with the more generic subList()
+// [2]  shorten-decimal-value(): Was used in combination with percentage() and
+//      was replaced with shortPercentage
+//
+
+// [1]
+@function button-padding($padding, $border-width) {
+  @warn "The function 'button-padding() is deprecated and will be removed in ContaoThemeManager v.2, use subList() instead.";
+
+  @return subList($padding, $border-width);
+}
+
+// [2]
 @function shorten-decimal-value($number) {
+  @warn "The function 'shorten-decimal-value()' is deprecated and will be removed in ContaoThemeManager v.2, use shortPercentage() instead.";
+
   @if unitless($number) {
     @return (floor($number * 1000000) / 1000000);
   }
