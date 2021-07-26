@@ -45,6 +45,14 @@
   .hl-design-lined:after{
     background-color: $text-color-invert;
   }
+
+  .widget-checkbox,
+  .widget-radio {
+
+    label {
+      color: $form-checkbox-radio-label-color-invert;
+    }
+  }
 }
 
 .text-color-regular {
@@ -93,6 +101,14 @@
 
   .hl-design-lined:after{
     background-color: $text-color-regular;
+  }
+
+  .widget-checkbox,
+  .widget-radio {
+
+    label {
+      color: $form-checkbox-radio-label-color;
+    }
   }
 }
 
