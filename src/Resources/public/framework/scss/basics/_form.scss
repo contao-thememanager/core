@@ -207,7 +207,8 @@ textarea {
   &:-moz-placeholder { color: $form-input-placeholder-color-error; }
 }
 
-.widget-checkbox, .widget-radio {
+.widget-checkbox,
+.widget-radio {
 
   input {
     position: absolute;
@@ -219,6 +220,7 @@ textarea {
 
       &:before {
         border-color: $form-checkbox-radio-border-color-focus;
+        background-color: $form-checkbox-radio-background-focus;
       }
 
       &:after {
@@ -229,10 +231,11 @@ textarea {
         left: 1px;
         top: 1px;
 
-        width: $form-checkbox-radio-size;
+        width: sub($form-checkbox-radio-size, 1px, 'px');
         line-height: $form-checkbox-radio-size;
-        color: $form-input-color;
+        color: $form-checkbox-radio-symbol-color;
 
+        font-size: $form-checkbox-radio-symbol-font-size;
         text-decoration: inherit;
         text-align: center;
         text-transform: none;
@@ -247,7 +250,8 @@ textarea {
 
     color: $form-checkbox-radio-label-color;
     font-size: $form-checkbox-radio-label-font-size;
-    padding-left: 30px;
+    // Calculate offset for the label
+    padding-left: sum($form-checkbox-radio-size, 10px, 'px');
     margin-bottom: 15px;
 
     cursor: pointer;
@@ -263,19 +267,19 @@ textarea {
       width: $form-checkbox-radio-size;
       height: $form-checkbox-radio-size;
 
-      border-width: $form-input-border-width;
-      border-style: $form-input-border-style;
+      border-width: $form-checkbox-radio-border-width;
+      border-style: $form-checkbox-radio-border-style;
       border-color: $form-checkbox-radio-border-color;
       border-radius: $form-checkbox-border-radius;
 
-      background-color: $form-input-background;
+      background-color: $form-checkbox-radio-background;
 
       vertical-align: middle;
     }
 
     &:hover:before {
       border-color: $form-checkbox-radio-border-color-hover;
-      background-color: $form-input-background-hover;
+      background-color: $form-checkbox-radio-background-hover;
     }
   }
 
