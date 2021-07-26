@@ -15,7 +15,7 @@ button, a.button, input.button {
   display: inline-block;
 
   font-size: $button-font-size-medium;
-  padding: button-padding($button-padding-medium, $button-border-width-primary);
+  padding: subList($button-padding-medium, $button-border-width-primary);
 
   text-decoration: none;
 
@@ -31,17 +31,17 @@ button, a.button, input.button {
 
   &.size-small {
     font-size: $button-font-size-small;
-    padding: button-padding($button-padding-small, $button-border-width-primary);
+    padding: subList($button-padding-small, $button-border-width-primary);
   }
 
   &.size-large {
     font-size: $button-font-size-large;
-    padding: button-padding($button-padding-large, $button-border-width-primary);
+    padding: subList($button-padding-large, $button-border-width-primary);
   }
 
   &.size-super {
     font-size: $button-font-size-super;
-    padding: button-padding($button-padding-super, $button-border-width-primary);
+    padding: subList($button-padding-super, $button-border-width-primary);
   }
 
   &.design-secondary {
@@ -55,7 +55,7 @@ button, a.button, input.button {
     border: $button-border-style-secondary $button-border-color-secondary;
     border-width: $button-border-width-secondary;
 
-    padding: button-padding($button-padding-medium, $button-border-width-secondary);
+    padding: subList($button-padding-medium, $button-border-width-secondary);
 
     &:hover {
       background-color: $button-hover-bg-secondary;
@@ -64,15 +64,15 @@ button, a.button, input.button {
     }
 
     &.size-small {
-      padding: button-padding($button-padding-small, $button-border-width-secondary);
+      padding: subList($button-padding-small, $button-border-width-secondary);
     }
 
     &.size-large {
-      padding: button-padding($button-padding-large, $button-border-width-secondary);
+      padding: subList($button-padding-large, $button-border-width-secondary);
     }
 
     &.size-super {
-      padding: button-padding($button-padding-super, $button-border-width-secondary);
+      padding: subList($button-padding-super, $button-border-width-secondary);
     }
   }
 
@@ -87,7 +87,7 @@ button, a.button, input.button {
     border: $button-border-style-alt $button-border-color-alt;
     border-width: $button-border-width-alt;
 
-    padding: button-padding($button-padding-medium, $button-border-width-alt);
+    padding: subList($button-padding-medium, $button-border-width-alt);
 
     &:hover {
       background-color: $button-hover-bg-alt;
@@ -96,15 +96,15 @@ button, a.button, input.button {
     }
 
     &.size-small {
-      padding: button-padding($button-padding-small, $button-border-width-alt);
+      padding: subList($button-padding-small, $button-border-width-alt);
     }
 
     &.size-large {
-      padding: button-padding($button-padding-large, $button-border-width-alt);
+      padding: subList($button-padding-large, $button-border-width-alt);
     }
 
     &.size-super {
-      padding: button-padding($button-padding-super, $button-border-width-alt);
+      padding: subList($button-padding-super, $button-border-width-alt);
     }
   }
 
