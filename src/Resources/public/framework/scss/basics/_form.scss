@@ -235,7 +235,10 @@ textarea {
         line-height: $form-checkbox-radio-size;
         color: $form-checkbox-radio-symbol-color;
 
-        font-size: $form-checkbox-radio-symbol-font-size;
+        // Calculation: Do not allow font-sizes bigger than the width of the the checkbox
+        $checkboxInnerWidth: sub($form-checkbox-radio-size, multiply($form-checkbox-radio-border-width, 2), 'px');
+        font-size: minUnit($form-checkbox-radio-symbol-font-size, $checkboxInnerWidth, 'px');
+
         text-decoration: inherit;
         text-align: center;
         text-transform: none;
