@@ -28,11 +28,23 @@
       <trans-unit id="tl_thememanager.grid_legend">
         <source>Grid</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form_legend">
-        <source>Form</source>
+      <trans-unit id="tl_thememanager.form_textarea_legend">
+        <source>Form: Textarea</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_label_legend">
+        <source>Form: Label / Legend</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_input_legend">
+        <source>Form: Select / Input / Textarea</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_checkbox_radio_legend">
+        <source>Form: Checkbox / Radio</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_miscellaneous_legend">
+        <source>Form: Miscellaneous</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form_field_legend">
-        <source>Form-field</source>
+        <source>Form-field: Image / Icon</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article_legend">
         <source>Article</source>
@@ -990,7 +1002,7 @@
         <source>$form-input-height</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-height.1">
-        <source>Here you can set the height for form-fields.</source>
+        <source>Here you can set the height for select and input fields (Not textarea).</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-padding.0">
         <source>$form-input-padding</source>
@@ -1124,35 +1136,29 @@
       <trans-unit id="tl_thememanager.form-input-font-size-error.1">
         <source>Here you can set the font-size for error messages.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.0">
-        <source>$form-checkbox-radio-label-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.1">
-        <source>Here you can set the color for checkbox and radio elements.</source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.0">
         <source>$form-checkbox-radio-label-font-size</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-label-font-size.1">
         <source>Here you can set the font-size for checkbox and radio elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.0">
-        <source>$form-checkbox-radio-border-color</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.0">
+        <source>$form-checkbox-radio-label-color</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.1">
-        <source>Here you can set the border-color for checkbox and radio elements.</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color.1">
+        <source>Here you can set the color for checkbox and radio elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.0">
-        <source>$form-checkbox-radio-border-color-focus</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color-invert.0">
+        <source>$form-checkbox-radio-label-color-invert</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.1">
-        <source>Here you can set the border-color for checkbox and radio elements when focused.</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-color-invert.1">
+        <source>Here you can set the invert-color for checkbox and radio elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.0">
-        <source>$form-checkbox-radio-border-color-hover</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">
+        <source>$form-checkbox-radio-size</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.1">
-        <source>Here you can set the border-color for checkbox and radio elements when hovered.</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-size.1">
+        <source>Here you can set the size for checkbox elements.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-border-radius.0">
         <source>$form-checkbox-border-radius</source>
@@ -1160,11 +1166,65 @@
       <trans-unit id="tl_thememanager.form-checkbox-border-radius.1">
         <source>Here you can set the border-radius for checkbox elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">
-        <source>$form-checkbox-radio-size</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-width.0">
+        <source>$form-checkbox-radio-border-width</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-checkbox-radio-size.1">
-        <source>Here you can set the size for checkbox elements.</source>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-width.1">
+        <source>Here you can set the border-width for checkbox and radio elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-style.0">
+        <source>$form-checkbox-radio-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-style.1">
+        <source>Here you can choose the border-style for checkbox and radio elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background.0">
+        <source>$form-checkbox-radio-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background.1">
+        <source>Here you can set the background-color checkbox and radio elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.0">
+        <source>$form-checkbox-radio-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color.1">
+        <source>Here you can set the border-color for checkbox and radio elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background-hover.0">
+        <source>$form-checkbox-radio-background-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background-hover.1">
+        <source>Here you can set the background-color for checkbox and radio elements when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.0">
+        <source>$form-checkbox-radio-border-color-hover</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-hover.1">
+        <source>Here you can set the border-color for checkbox and radio elements when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background-focus.0">
+        <source>$form-checkbox-radio-background-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-background-focus.1">
+        <source>Here you can set the background-color for checkbox and radio elements when checked.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.0">
+        <source>$form-checkbox-radio-border-color-focus</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-border-color-focus.1">
+        <source>Here you can set the border-color for checkbox and radio elements when checked.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-size.0">
+        <source>$form-checkbox-radio-symbol-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-size.1">
+        <source>Here you can set the font-size for the ✔ checked symbol. If the font-size is higher than $form-checkbox-radio-size, it won't be used.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-color.0">
+        <source>$form-checkbox-radio-symbol-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-color.1">
+        <source>Here you can set the color for the ✔ checked symbol.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-explanation-color.0">
         <source>$form-input-explanation-color</source>
@@ -1190,17 +1250,17 @@
       <trans-unit id="tl_thememanager.form-input-mandatory-symbol-color-error.1">
         <source>Here you can set the color for the &quot;*&quot; mandatory symbol when an error appears.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-input-symbol-color.0">
-        <source>$form-input-symbol-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.form-input-symbol-color.1">
-        <source>Here you can set the color for the ⮟ select symbol.</source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.0">
         <source>$form-input-symbol-font-size</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-input-symbol-font-size.1">
         <source>Here you can set the font-size for the ⮟ select symbol.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-color.0">
+        <source>$form-input-symbol-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-input-symbol-color.1">
+        <source>Here you can set the color for the ⮟ select symbol.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-option-color.0">
         <source>$form-select-option-color</source>

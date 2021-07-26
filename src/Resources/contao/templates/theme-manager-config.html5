@@ -11,7 +11,11 @@ return array(
             '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
             '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large;' .
             '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom,grid-gutter-small-width,grid-gutter-small-bottom;' .
-            '{form_legend:hide},form-textarea-line-height,form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing,form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-input-font-size-error,form-checkbox-radio-label-color,form-checkbox-radio-label-font-size,form-checkbox-radio-border-color,form-checkbox-radio-border-color-focus,form-checkbox-radio-border-color-hover,form-checkbox-radio-size,form-checkbox-border-radius,form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error,form-input-symbol-color,form-input-symbol-font-size,form-select-option-color,form-select-option-background,form-validation;' .
+            '{form_textarea_legend:hide},form-textarea-line-height;' .
+			'{form_label_legend:hide},form-label-color,form-label-font-size,form-label-font-weight,form-label-spacing;' .
+			'{form_input_legend:hide},form-input-font-family,form-input-font-size,form-input-font-weight,form-input-height,form-input-padding,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-color,form-input-color-disabled,form-input-background,form-input-border-color,form-input-placeholder-color,form-input-color-hover,form-input-background-hover,form-input-border-color-hover,form-input-placeholder-color-hover,form-input-color-focus,form-input-background-focus,form-input-border-color-focus,form-input-placeholder-color-focus,form-input-color-error,form-input-background-error,form-input-border-color-error,form-input-placeholder-color-error,form-input-font-size-error;' .
+			'{form_checkbox_radio_legend:hide},form-checkbox-radio-label-font-size,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert,form-checkbox-radio-size,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-background,form-checkbox-radio-border-color,form-checkbox-radio-background-hover,form-checkbox-radio-border-color-hover,form-checkbox-radio-background-focus,form-checkbox-radio-border-color-focus,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color;' .
+			'{form_miscellaneous_legend:hide},form-input-explanation-color,form-input-explanation-font-size,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error,form-input-symbol-font-size,form-input-symbol-color,form-select-option-color,form-select-option-background,form-validation;' .
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-color,form-field-icon-background,form-field-icon-size;' .
             '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
             '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
@@ -1165,7 +1169,7 @@ return array(
             'default'                 => '$line-height-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-textarea-line-height'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$line-height-base', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'$line-height-base', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
         'form-label-color' => array
         (
@@ -1187,7 +1191,7 @@ return array(
             'default'                 => '$font-weight-regular',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-label-font-weight'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
         'form-label-spacing' => array
         (
@@ -1203,7 +1207,7 @@ return array(
             'default'                 => '$font-family-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-font-family'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$font-family-base', 'maxlength' => 255, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'$font-family-base', 'maxlength' => 255, 'tl_class'=>'w50 clr'),
         ),
         'form-input-font-size' => array
         (
@@ -1389,45 +1393,31 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-font-size-error'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
 
+		'form-checkbox-radio-label-font-size' => array
+		(
+			'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-font-size'],
+			'inputType'               => 'inputUnit',
+			'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+			'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
+		),
         'form-checkbox-radio-label-color' => array
         (
             'default'                 => '$text-color-regular',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-color'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
+            'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
-        'form-checkbox-radio-label-font-size' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-font-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'form-checkbox-radio-border-color' => array
-        (
-            'default'                 => 'a:2:{i:0;s:24:"$form-input-border-color";i:1;s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color'],
-            'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$form-input-border-color', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
-        'form-checkbox-radio-border-color-focus' => array
-        (
-            'default'                 => 'a:2:{i:0;s:30:"$form-input-border-color-focus";i:1;s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color-focus'],
-            'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$form-input-border-color-focus', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
-        'form-checkbox-radio-border-color-hover' => array
-        (
-            'default'                 => 'a:2:{i:0;s:30:"$form-input-border-color-hover";i:1;s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color-hover'],
-            'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$form-input-border-color-hover', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
+		'form-checkbox-radio-label-color-invert' => array
+		(
+			'default'                 => '$text-color-invert',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-color-invert'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$text-color-invert', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
+		),
 
         'form-checkbox-radio-size' => array
         (
@@ -1445,6 +1435,78 @@ return array(
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
         ),
+		'form-checkbox-radio-border-width' => array
+		(
+			'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-width'],
+			'inputType'               => 'inputUnit',
+			'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+			'eval'                    => array('placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+		),
+		'form-checkbox-radio-border-style' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-style'],
+			'inputType'               => 'select',
+			'options'                 => array('none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'),
+			'eval'                    => array('includeBlankOption'=>true, 'blankOptionLabel' =>'Default (solid)', 'maxlength' => 255, 'tl_class'=>'w50'),
+		),
+		'form-checkbox-radio-background' => array
+		(
+			'default'                 => 'a:2:{i:0;s:22:"$form-input-background";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-background'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-background', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-border-color' => array
+		(
+			'default'                 => 'a:2:{i:0;s:24:"$form-input-border-color";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-border-color', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-background-hover' => array
+		(
+			'default'                 => 'a:2:{i:0;s:28:"$form-input-background-hover";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-background-hover'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-background-hover', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-border-color-hover' => array
+		(
+			'default'                 => 'a:2:{i:0;s:30:"$form-input-border-color-hover";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color-hover'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-border-color-hover', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-background-focus' => array
+		(
+			'default'                 => 'a:2:{i:0;s:28:"$form-input-background-focus";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-background-focus'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-background-focus', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-border-color-focus' => array
+		(
+			'default'                 => 'a:2:{i:0;s:30:"$form-input-border-color-focus";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-color-focus'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-border-color-focus', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
+		'form-checkbox-radio-symbol-font-size' => array
+		(
+			'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-symbol-font-size'],
+			'inputType'               => 'inputUnit',
+			'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+			'eval'                    => array('placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
+		),
+		'form-checkbox-radio-symbol-color' => array
+		(
+			'default'                 => 'a:2:{i:0;s:17:"$form-input-color";i:1;s:0:"";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-symbol-color'],
+			'inputType'               => 'text',
+			'eval'                    => array('placeholder'=>'$form-input-color', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+		),
 
         'form-input-explanation-color' => array
         (
@@ -1476,6 +1538,14 @@ return array(
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'b46869', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
+		'form-input-symbol-font-size' => array
+		(
+			'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"16";}',
+			'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-symbol-font-size'],
+			'inputType'               => 'inputUnit',
+			'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+			'eval'                    => array('placeholder'=>'16px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
+		),
         'form-input-symbol-color' => array
         (
             'default'                 => 'a:2:{i:0;s:8:"$primary";i:1;s:0:"";}',
@@ -1483,20 +1553,12 @@ return array(
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$primary', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
-        'form-input-symbol-font-size' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"16";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-symbol-font-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'16px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
         'form-select-option-color' => array
         (
             'default'                 => '$text-color-regular',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-select-option-color'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'$text-color-regular', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard clr'),
         ),
         'form-select-option-background' => array
         (
