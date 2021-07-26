@@ -179,11 +179,13 @@ $grid-gutter-small-bottom:                $grid-gutter-small-width !default;
 // Form
 $form-textarea-line-height:               $line-height-base !default;
 
+// Form-Label
 $form-label-color:                        $text-color-regular !default;
 $form-label-font-size:                    $font-size-base !default;
 $form-label-font-weight:                  $font-weight-regular !default;
 $form-label-spacing:                      4px !default;
 
+// Form-Input
 $form-input-font-family:                  $font-family-base !default;
 $form-input-font-size:                    $font-size-base !default;
 $form-input-font-weight:                  $font-weight-regular !default;
@@ -216,22 +218,36 @@ $form-input-border-color-error:           #b46869 !default;
 $form-input-placeholder-color-error:      #b46869 !default;
 $form-input-font-size-error:              $font-size-base !default;
 
-$form-checkbox-radio-label-color:         $text-color-regular !default;
+// Form-Checkbox
 $form-checkbox-radio-label-font-size:     $font-size-base !default;
-$form-checkbox-radio-border-color:        $form-input-border-color !default;
-$form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !default;
-$form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
+$form-checkbox-radio-label-color:         $text-color-regular !default;
+$form-checkbox-radio-label-color-invert:  $text-color-invert !default;
 
 $form-checkbox-radio-size:                20px !default;
 $form-checkbox-border-radius:             0;
+$form-checkbox-radio-border-width:        1px !default;
+$form-checkbox-radio-border-style:        solid !default;
 
+$form-checkbox-radio-background:          $form-input-background !default;
+$form-checkbox-radio-border-color:        $form-input-border-color !default;
+
+$form-checkbox-radio-background-hover:    $form-input-background-hover !default;
+$form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
+
+$form-checkbox-radio-background-focus:    $form-input-background-focus !default;
+$form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !default;
+
+$form-checkbox-radio-symbol-font-size:    $font-size-base !default;
+$form-checkbox-radio-symbol-color:        $form-input-color !default;
+
+// Form-Explanation
 $form-input-explanation-color:            $text-color-regular !default;
 $form-input-explanation-font-size:        $font-size-base !default;
 
 $form-input-mandatory-symbol-color:       #ccc !default;
 $form-input-mandatory-symbol-color-error: #b46869 !default;
-$form-input-symbol-color:                 $primary !default;
 $form-input-symbol-font-size:             16px !default;
+$form-input-symbol-color:                 $primary !default;
 $form-select-option-color:                $text-color-regular !default;
 $form-select-option-background:           $body-bg !default;
 $form-validation:                         '' !default;
