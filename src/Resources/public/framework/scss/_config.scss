@@ -13,7 +13,7 @@ $browser-context:                         16 !default;
 
 // Typography
 $font-family-base:                        Arial, sans-serif !default;
-$font-size-base:                          #{$browser-context}px !default;
+$font-size-base:                          $browser-context * 1px !default;
 
 $line-height-base:                        1.687 !default;
 $line-height-headline:                    1.2 !default;
