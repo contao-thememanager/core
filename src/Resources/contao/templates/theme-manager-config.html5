@@ -83,7 +83,7 @@ return array(
             'default'                 => 'Arial, sans-serif',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['font-family-base'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'Arial, sans-serif', 'maxlength' => 255, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'Arial, sans-serif', 'maxlength' => 255, 'preserveTags'=>true, 'tl_class'=>'w50'),
         ),
         'font-size-base' => array
         (
@@ -1104,7 +1104,7 @@ return array(
             'default'                 => '"fontello"',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-font-family'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'"fontello"', 'maxlength' => 255, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'"fontello"', 'maxlength' => 255, 'preserveTags'=>true, 'tl_class'=>'w50'),
         ),
         'icon-size-tiny' => array
         (
@@ -1207,7 +1207,7 @@ return array(
             'default'                 => '$font-family-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-font-family'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$font-family-base', 'maxlength' => 255, 'tl_class'=>'w50 clr'),
+            'eval'                    => array('placeholder'=>'$font-family-base', 'maxlength' => 255, 'preserveTags'=>true, 'tl_class'=>'w50 clr'),
         ),
         'form-input-font-size' => array
         (
