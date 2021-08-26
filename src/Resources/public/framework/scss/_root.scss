@@ -1,0 +1,34 @@
+:root {
+  --body-bg: #{$body-bg};
+  --body-bg-rgb: #{red($body-bg), green($body-bg), blue($body-bg)};
+
+  --color-primary: #{$primary};
+  --color-primary-rgb: #{red($primary), green($primary), blue($primary)};
+
+  --color-secondary: #{$secondary};
+  --color-secondary-rgb: #{red($secondary), green($secondary), blue($secondary)};
+
+  --color-light: #{$light};
+  --color-light-rgb: #{red($light), green($light), blue($light)};
+
+  --color-dark: #{$dark};
+  --color-dark-rgb: #{red($dark), green($dark), blue($dark)};
+
+  --color-text-regular: #{$text-color-regular};
+  --color-text-invert: #{$text-color-invert};
+
+  --font-family-base: #{$font-family-base};
+  --font-size-base: #{$font-size-base};
+
+  --line-height-base: #{$line-height-base};
+  --line-height-headline: #{$line-height-headline};
+
+  --font-weight-base: #{$font-weight-base};
+  --font-weight-light:  #{$font-weight-light};
+  --font-weight-regular:  #{$font-weight-regular};
+  --font-weight-medium: #{$font-weight-medium};
+  --font-weight-semibold: #{$font-weight-semibold};
+  --font-weight-bold: #{$font-weight-bold};
+
+  --box-shadow: #{$box-shadow};
+}
