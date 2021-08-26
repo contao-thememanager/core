@@ -16,7 +16,7 @@
     "php":"^5.6 || ^7.0",
     "contao/core-bundle":"^4.4",
     "oveleon/contao-component-style-manager":"^2.4",
-    "oveleon/contao-theme-compiler-bundle":"^1.0",
+    "oveleon/contao-theme-compiler-bundle":"^1.1",
     "oveleon/contao-config-driver-bundle":"^1.0",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
     "madeyourday/contao-rocksolid-icon-picker": "^2.0"

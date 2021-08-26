@@ -19,8 +19,19 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = array
         'onload_callback' => array
         (
             array('tl_thememanager', 'checkPermission')
-        )
-    )
+        ),
+		'onsubmit_callback' => array
+		(
+			array(Oveleon\ContaoThemeCompilerBundle\CompilerUtils::class, 'redirectMaintenanceAndCompile')
+		)
+    ),
+	'edit' => array
+	(
+		'buttons_callback' => array
+		(
+			array(Oveleon\ContaoThemeCompilerBundle\CompilerUtils::class, 'addSaveNCompileButton')
+		)
+	)
 );
 
 
