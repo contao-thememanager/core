@@ -1,5 +1,5 @@
 <?php
-// rsce_text_image_list.php
+// rsce_text_list.php
 return array(
     'label' => array(
         'de' => array(
@@ -7,7 +7,7 @@ return array(
             'Text Content-Element Liste',
         ),
         'en' => array(
-            'Text-Liste',
+            'Text-List',
             'Text content element list',
         ),
     ),
