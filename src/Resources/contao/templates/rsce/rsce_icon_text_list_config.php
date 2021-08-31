@@ -1,5 +1,5 @@
 <?php
-// rsce_icon_text_list_config.php
+// rsce_icon_text_list.php
 return array(
     'label' => array(
         'de' => array(

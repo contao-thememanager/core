@@ -1,5 +1,5 @@
 <?php
-// rsce_image_text_list_config.php
+// rsce_image_list.php
 return array(
     'label' => array(
         'de' => array(
