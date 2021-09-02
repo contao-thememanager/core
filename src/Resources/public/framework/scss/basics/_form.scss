@@ -162,7 +162,7 @@ textarea {
 
     &:before {
       display: inline-block;
-      content: '⮟';
+      content: '\25BC';
 
       position: absolute;
       bottom: #{divide(sub($form-input-height, $form-input-symbol-font-size, 'px'), 2)};
