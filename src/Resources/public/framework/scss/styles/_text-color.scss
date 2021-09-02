@@ -24,7 +24,7 @@
     color: $h6-color-invert;
   }
 
-  p, ol, ul {
+  p, ol, ul, .captcha_text {
     color: $text-color-invert;
   }
 
@@ -81,7 +81,7 @@
     color: $h6-color;
   }
 
-  p, ol, ul {
+  p, ol, ul, .captcha_text {
     color: $text-color-regular;
   }
 
