@@ -18,10 +18,6 @@
     <?= $this->stylesheets ?>
     <?= $this->mooScripts ?>
     <?= $this->head ?>
-
-    <?php $this->block('html5shiv'); ?>
-      <!--[if lt IE 9]><script src="<?= TL_ASSETS_URL ?>assets/html5shiv/js/html5shiv-printshiv.min.js"></script><![endif]-->
-    <?php $this->endblock(); ?>
   <?php $this->endblock(); ?>
 
 </head>
