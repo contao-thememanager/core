@@ -102,6 +102,15 @@ b, strong {
   font-weight: $strong-font-weight;
 }
 
+ul, ol {
+  margin: 0;
+}
+
+li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 @include media-breakpoint('xs') {
   h1, .h1 {
     font-size: $h1-font-size-medium;
