@@ -2,22 +2,12 @@
 
 <?php $this->block('content'); ?>
 
-<?php if (!!$this->styleManager->prepare('gridList')->format('%s')): ?>
-  <div class="grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?>">
-    <?php foreach ($this->files as $file): ?>
-      <div class="download-element ext-<?= $file['extension'] ?>">
-        <a class="<?=$this->styleManager->prepare('button')->format('%s')?> inside" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
-      </div>
-    <?php endforeach; ?>
-  </div>
-<?php else: ?>
-  <ul>
+  <ul class="c_list<?=$this->styleManager->prepare('list')->format(' %s')?>">
     <?php foreach ($this->files as $file): ?>
       <li class="download-element ext-<?= $file['extension'] ?>">
         <a class="<?=$this->styleManager->prepare('button')->format('%s')?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
       </li>
     <?php endforeach; ?>
   </ul>
-<?php endif ?>
 
 <?php $this->endblock(); ?>
