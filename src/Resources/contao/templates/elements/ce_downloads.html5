@@ -5,6 +5,11 @@
   <ul class="c_list<?=$this->styleManager->prepare('list')->format(' %s')?>">
     <?php foreach ($this->files as $file): ?>
       <li class="download-element ext-<?= $file['extension'] ?>">
+        <?php if ($file['previews']): ?>
+            <?php foreach ($file['previews'] as $preview): ?>
+                <?php $this->insert('image', $preview->getLegacyTemplateData()) ?>
+            <?php endforeach ?>
+        <?php endif ?>
         <a class="<?=$this->styleManager->prepare('button')->format('%s')?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
       </li>
     <?php endforeach; ?>
