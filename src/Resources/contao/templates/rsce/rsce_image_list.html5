@@ -2,7 +2,7 @@
 
 <?php $this->block('content'); ?>
 
-<div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?><?=$this->styleManager->prepare('sliderConfig', ['init'])->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
+<div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
     <?php foreach ($this->list as $item): ?>
         <div class="ce_rsce_image block<?= $this->styleManager->prepare('layout', ['imageText', 'boxedListElement'])->format(' %s')?>">
             <?php if($item->url): ?>
