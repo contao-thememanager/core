@@ -2,14 +2,12 @@
 
 <?php $this->block('content'); ?>
 
-
-  <ul class="c_list<?=$this->styleManager->prepare('list')->format(' %s')?>">
-    <?php foreach ($this->list as $item): ?>
-      <li>
-        <a href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
-      </li>
-    <?php endforeach ?>
-  </ul>
-
+<ul class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?><?=$this->styleManager->prepare('list')->format(' %s')?>">
+  <?php foreach ($this->list as $item): ?>
+    <li<?=$this->styleManager->prepare('layout', ['boxedListElement'])->format(' class="%s"')?>>
+      <a href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+    </li>
+  <?php endforeach ?>
+</ul>
 
 <?php $this->endblock(); ?>
