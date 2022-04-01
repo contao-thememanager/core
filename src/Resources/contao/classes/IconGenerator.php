@@ -7,9 +7,10 @@
 
 namespace ContaoThemeManager\Core;
 
-use Contao\Folder;
 use Contao\StringUtil;
 use Contao\System;
+use Oveleon\ContaoComponentStyleManager\StyleManagerArchiveModel;
+use Oveleon\ContaoComponentStyleManager\StyleManagerModel;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 use Contao\File;
 use Webmozart\PathUtil\Path;
@@ -81,7 +82,7 @@ class IconGenerator
         }
 
         // Scan files
-        $arrFiles = Folder::scan($absFontPath);
+        $arrFiles = scan($absFontPath);
         $arrFileInformation = [];
 
         foreach ($arrFiles as $file)
@@ -158,151 +159,40 @@ class IconGenerator
 
     private function createStyleManagerXML($glyphs): string
     {
-        // Create xml
-        $xml = new \DOMDocument('1.0', 'UTF-8');
-        $xml->formatOutput = true;
+        $xmlPath = 'templates/style-manager-icon';
 
-        // ToDo: Move to IconStructure class
-        $arrArchiveFields = [
-            'id' => '6',
-            'tstamp' => time(),
-            'title' => 'Icons',
-            'desc' => null,
-            'identifier' => 'icon',
-            'groupAlias' => 'Design',
-            'sorting' => '640'
-        ];
-
-        $arrChildrenData = [
-            'id' => '234',
-            'pid' => '6',
-            'sorting' => '128',
-            'tstamp' => time(),
-            'alias' => 'icon',
-            'title' => 'Icon',
-            'description' => 'Icons for list elements and buttons',
-            'cssClasses' => serialize($glyphs),
-            'cssClass' => 'seperator',
-            'chosen' => 1,
-            'blankOption' => 1,
-            'passToTemplate' => 1,
-            'extendLayout' => '',
-            'extendPage' => '',
-            'extendArticle' => '',
-            'extendForm' => '',
-            'extendFormFields' => '',
-            'formFields' => null,
-            'extendContentElement' => 1,
-            'contentElements' => 'a:10:{i:0;s:4:"list";i:1;s:17:"rsce_hero_article";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_text";i:4;s:9:"rsce_text";i:5;s:19:"rsce_hyperlink_list";i:6;s:15:"rsce_image_list";i:7;s:20:"rsce_image_text_list";i:8;s:14:"rsce_text_list";i:9;s:9:"hyperlink";}',
-            'extendModule' => '',
-            'modules' => null,
-            'extendNews' => '',
-            'extendEvents' => '',
-        ];
-
-        $objArchive = new \stdClass();
+        $objArchive = new StyleManagerArchiveModel();
+        $objArchive->id = '1001';
+        $objArchive->title = 'Icon';
         $objArchive->identifier = 'icon';
-        $objArchive->archiveFields = $arrArchiveFields;
-        $objArchive->children = $arrChildrenData;
+        $objArchive->groupAlias = 'Design';
+        $objArchive->sorting = '640';
 
-        // Create structure
-        $xml->appendChild($archives = $xml->createElement('archives'));
-        $this->addArchiveData($xml, $archives, $objArchive);
+        $objChild = new StyleManagerModel();
+        $objChild->pid = '1001';
+        $objChild->alias = 'icon';
+        $objChild->title = 'Icon';
+        $objChild->description = 'Icons for list elements and buttons';
+        $objChild->cssClass = 'seperator';
+        $objChild->chosen = 1;
+        $objChild->blankOption = 1;
+        $objChild->passToTemplate = 1;
+        $objChild->cssClasses = serialize($glyphs);
+        $objChild->extendContentElement = 1;
+        $objChild->contentElements = 'a:1:{i:0;s:9:"rsce_text";}';
 
         // Create file
-
-        $objFile = new File($iconXmlPath = 'templates/style-manager-icon.xml');
-
-        $blnSuccess = $objFile->write($xml->saveXML());
-        $objFile->close();
-
-        // Unprotect ctmcore folder for stylemanager visibility
-        //(new Folder('templates/ctmcore/'))->unprotect();
+        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, $objChild, $xmlPath);
 
         if($blnSuccess)
         {
-            $this->compiler->msg('File created: ' . $iconXmlPath, FileCompiler::MSG_SUCCESS);
-            return $iconXmlPath;
+            $this->compiler->msg('File created: ' . $xmlPath . '.xml' , FileCompiler::MSG_SUCCESS);
+            return $xmlPath.'.xml';
         }
 
-        $this->compiler->msg('Could not create style-manager-icon.xml', FileCompiler::MSG_ERROR);
+        $this->compiler->msg('Could not ' . $xmlPath . '.xml', FileCompiler::MSG_ERROR);
 
         return false;
-    }
-
-    /**
-     * Add an archive data row to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMNode $archives
-     */
-    private function addArchiveData(\DOMDocument $xml, \DOMNode $archives, $objArchive)
-    {
-
-        // Add archive node
-        $row = $xml->createElement('archive');
-        $row->setAttribute('identifier', $objArchive->identifier);
-        $row = $archives->appendChild($row);
-
-        // Add field data
-        $this->addRowData($xml, $row, $objArchive->archiveFields);
-
-        // Add children data
-        $this->addChildrenData($xml, $row, $objArchive->children);
-    }
-
-    /**
-     * Add a children data row to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMNode|\DOMElement $archive
-     * @param int $pid
-     */
-    private function addChildrenData(\DOMDocument $xml, \DOMElement $archive, Array $arrChildren)
-    {
-        // Add children node
-        $children = $xml->createElement('children');
-        $children = $archive->appendChild($children);
-
-        if(null === $arrChildren)
-        {
-            return;
-        }
-
-        $row = $xml->createElement('child');
-
-        // ToDo: Make passed alias variable
-        $row->setAttribute('alias', 'icon');
-        $row = $children->appendChild($row);
-
-        // Add field data
-        $this->addRowData($xml, $row, $arrChildren);
-
-    }
-
-    /**
-     * Add field data to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMNode $row
-     * @param array $arrData
-     */
-    private function addRowData(\DOMDocument $xml, \DOMNode $row, array $arrData)
-    {
-        foreach ($arrData as $k=>$v)
-        {
-            $field = $xml->createElement('field');
-            $field->setAttribute('title', $k);
-            $field = $row->appendChild($field);
-
-            if ($v === null)
-            {
-                $v = 'NULL';
-            }
-
-            $value = $xml->createTextNode($v);
-            $field->appendChild($value);
-        }
     }
 
     private function generateIconStyleSheet($glyphs, $fontPath): ?string
