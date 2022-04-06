@@ -25,6 +25,10 @@
         <figure class="image_container">
             <?php if ($image = $this->getImageObject($this->singleSRC, $this->size)): ?>
                 <?php $this->insert('picture_default', $image->picture) ?>
+
+                <?php if($image->caption): ?>
+                    <figcaption><?php echo $image->caption ?></figcaption>
+                <?php endif; ?>
             <?php endif ?>
         </figure>
     </div>
