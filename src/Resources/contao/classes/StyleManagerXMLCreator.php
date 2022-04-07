@@ -9,6 +9,67 @@ use Oveleon\ContaoComponentStyleManager\StyleManagerArchiveModel;
 class StyleManagerXMLCreator
 {
     /**
+     * Creates a StyleManager archive
+     *
+     * @param int $id
+     * @param string $title
+     * @param string $identifier
+     * @param string|null $groupAlias
+     * @param int|null $sorting
+     * @return StyleManagerArchiveModel
+     */
+    public static function createStyleManagerArchive(int $id, string $title, string $identifier, ?string $groupAlias, ?int $sorting): StyleManagerArchiveModel
+    {
+        $objArchive = new StyleManagerArchiveModel();
+        $objArchive->id = $id;
+        $objArchive->title = $title;
+        $objArchive->identifier = $identifier;
+        $objArchive->groupAlias = $groupAlias ?? '';
+        $objArchive->sorting = $sorting ?? '0';
+
+        return $objArchive;
+    }
+
+    /**
+     * Creates a StyleManager child
+     *
+     * @param int $pid
+     * @param string $title
+     * @param string $alias
+     * @param array $cssClasses
+     * @param array $elements
+     * @param array|null $options
+     * @return StyleManagerModel
+     */
+    public static function createStyleManagerChild(int $pid, string $title, string $alias, array $cssClasses, array $elements, ?array $options): StyleManagerModel
+    {
+        $objChild = new StyleManagerModel();
+        $objChild->pid = $pid;
+        $objChild->title = $title;
+        $objChild->alias = $alias;
+        $objChild->cssClasses = serialize($cssClasses);
+
+        // Add elements
+        foreach($elements as $k => $v)
+        {
+            if(\is_array($v) && !empty($v))
+            {
+                $v = serialize($v);
+            }
+
+            $objChild->$k = $v;
+        }
+
+        // Add options
+        foreach($options as $k => $v)
+        {
+            $objChild->$k = $v;
+        }
+
+        return $objChild;
+    }
+
+    /**
      * Creates a style-manager xml file and saves it
      *
      * @param StyleManagerArchiveModel  $objArchive // Style-Manager archive
