@@ -9,8 +9,6 @@ namespace ContaoThemeManager\Core;
 
 use Contao\StringUtil;
 use Contao\System;
-use Oveleon\ContaoComponentStyleManager\StyleManagerArchiveModel;
-use Oveleon\ContaoComponentStyleManager\StyleManagerModel;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 use Contao\File;
 use Webmozart\PathUtil\Path;
@@ -52,7 +50,7 @@ class IconGenerator
             $arrGlyphs = $this->getIcons($iconPath);
 
             // Generate xml file (style manager)
-            $this->createStyleManagerXML($arrGlyphs);
+            $this->createXML($arrGlyphs);
 
             // Generate css for frontend (theme compiler)
             if($filePath = $this->generateIconStyleSheet($arrGlyphs, $iconPath))
@@ -157,29 +155,30 @@ class IconGenerator
         return $glyphs;
     }
 
-    private function createStyleManagerXML($glyphs): string
+    private function createXML(array $classes): string
     {
         $xmlPath = 'templates/style-manager-icon';
 
-        $objArchive = new StyleManagerArchiveModel();
-        $objArchive->id = '1001';
-        $objArchive->title = 'Icon';
-        $objArchive->identifier = 'icon';
-        $objArchive->groupAlias = 'Design';
-        $objArchive->sorting = '640';
+        $arrElements = [
+            'extendContentElement' => 1,
+            'contentElements' => [
+                'rsce_text',
+                'list',
+                'hyperlink'
+            ]
+        ];
 
-        $objChild = new StyleManagerModel();
-        $objChild->pid = '1001';
-        $objChild->alias = 'icon';
-        $objChild->title = 'Icon';
-        $objChild->description = 'Icons for list elements and buttons';
-        $objChild->cssClass = 'seperator';
-        $objChild->chosen = 1;
-        $objChild->blankOption = 1;
-        $objChild->passToTemplate = 1;
-        $objChild->cssClasses = serialize($glyphs);
-        $objChild->extendContentElement = 1;
-        $objChild->contentElements = 'a:1:{i:0;s:9:"rsce_text";}';
+        $arrOptions = [
+            'description' => 'Icons for list elements and buttons',
+            'cssClass' => 'seperator',
+            'chosen' => 1,
+            'blankOption' => 1,
+            'passToTemplate' => 1
+        ];
+
+        // Create XML objects
+        $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(1001, 'Icon', 'icon', 'Design', 640);
+        $objChild = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, $arrElements, $arrOptions);
 
         // Create file
         $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, $objChild, $xmlPath);
@@ -191,7 +190,6 @@ class IconGenerator
         }
 
         $this->compiler->msg('Could not ' . $xmlPath . '.xml', FileCompiler::MSG_ERROR);
-
         return false;
     }
 
