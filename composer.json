@@ -13,8 +13,10 @@
     }
   ],
   "require":{
-    "php":"^7.0 || ^8.0",
-    "contao/core-bundle":"^4.4",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "php":"^7.2 || ^8.0",
+    "contao/core-bundle":"^4.9",
     "oveleon/contao-component-style-manager":"^2.4",
     "oveleon/contao-theme-compiler-bundle":"^1.1",
     "oveleon/contao-config-driver-bundle":"^1.0",

@@ -16,7 +16,9 @@ $GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 
 // Add sources
 $GLOBALS['TC_SOURCES'] = array(
-    'configFiles' => ['bundles/contaothememanagercore/framework/scss/_config.scss'],
+    'configFiles' => [
+        'bundles/contaothememanagercore/framework/scss/_config.scss'
+    ],
     'configField' => 'themeConfig',
     'files'       => [
         'bundles/contaothememanagercore/framework/scss/_grid.scss',
@@ -24,6 +26,8 @@ $GLOBALS['TC_SOURCES'] = array(
 		'bundles/contaothememanagercore/framework/scss/_root.scss'
     ]
 );
+
+$GLOBALS['TC_HOOKS']['beforeCompile'][] = array('ContaoThemeManager\Core\IconGenerator', 'generateIconSet');
 
 // Add content elements and components group
 array_insert($GLOBALS['TL_CTE'], 2, array
@@ -49,3 +53,15 @@ array_insert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/framework/
 
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = array('ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate');
+
+// Add icon css
+if (TL_MODE == 'BE') {
+
+    $projectDir = System::getContainer()->getParameter('kernel.project_dir');
+    $GLOBALS['TL_CSS'][] = 'bundles/contaothememanagercore/css/ctmcore.css|static';
+
+    if (file_exists($iconCSSPath = $projectDir . '/' . 'assets/ctmcore/css/_icon.css'))
+    {
+        $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
+    }
+}
