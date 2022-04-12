@@ -27,6 +27,11 @@ class IconGenerator
      */
     private $clsPrefix = 'i-';
 
+    /**
+     * @var string
+     */
+    private $fIconPrefix = 'f-icon-';
+
 
     /**
      * @var string
@@ -50,7 +55,8 @@ class IconGenerator
             $arrGlyphs = $this->getIcons($iconPath);
 
             // Generate xml file (style manager)
-            $this->createXML($arrGlyphs);
+            $this->createIconXML($arrGlyphs);
+            $this->createFormIconXML($arrGlyphs);
 
             // Generate css for frontend (theme compiler)
             if($filePath = $this->generateIconStyleSheet($arrGlyphs, $iconPath))
@@ -135,7 +141,8 @@ class IconGenerator
                         $glyphs[] = [
                             'key' => $this->clsPrefix . $glyph['glyph-name'],
                             'value' => $char . ' ' . ucwords(str_replace("_", " ", $glyph['glyph-name'])),
-                            'code' => $code
+                            'code' => $code,
+                            'fkey' => $this->fIconPrefix . $glyph['glyph-name']
                         ];
 
                         $intSuccessCount++;
@@ -155,7 +162,7 @@ class IconGenerator
         return $glyphs;
     }
 
-    private function createXML(array $classes): string
+    private function createIconXML(array $classes): string
     {
         $xmlPath = 'templates/style-manager-icon';
 
@@ -193,6 +200,54 @@ class IconGenerator
         return false;
     }
 
+    private function createFormIconXML(array $classes): string
+    {
+        $xmlPath = 'templates/style-manager-form-icon';
+
+        // Create form icon classes
+        $arrClasses = [];
+
+
+
+        foreach($classes as $icon)
+        {
+            $arrClasses[] = [
+                'key' =>  'form-input-icon fi ' . $icon['fkey'],
+                'value' => $icon['value']
+            ];
+        }
+
+        $arrElements = [
+            'extendFormFields' => 1,
+            'formFields' => [
+                'text',
+                'password'
+            ]
+        ];
+
+        $arrOptions = [
+            'description' => 'Here you can choose the icon which should be displayed within the form field.',
+            'chosen' => 1,
+            'blankOption' => 1
+        ];
+
+        // Create XML objects
+        $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(11, 'Form-Input-Icon', 'formInputIcon', 'FormField', 1128);
+        $objChildIcons = StyleManagerXMLCreator::createStyleManagerChild(11, 'Icon', 'formInputIcons', $arrClasses, $arrElements, $arrOptions);
+
+        // Create file
+        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, $objChildIcons, $xmlPath);
+
+        if($blnSuccess)
+        {
+            $this->compiler->msg('File created: ' . $xmlPath . '.xml' , FileCompiler::MSG_SUCCESS);
+            return $xmlPath.'.xml';
+        }
+
+        $this->compiler->msg('Could not ' . $xmlPath . '.xml', FileCompiler::MSG_ERROR);
+        return false;
+    }
+
     private function generateIconStyleSheet($glyphs, $fontPath): ?string
     {
         $css = '';
@@ -211,16 +266,25 @@ class IconGenerator
 
         // Add icon styles
         $iconSelector = '[class^="i-"],[class*=" i-"]';
-        $css .= vsprintf("$iconSelector{%s};$iconSelector:before{font-family:'%s';%s}", [
+        $formIconSelector = '.form-input-icon.fi>.input-container:before';
+        $css .= vsprintf("$iconSelector{%s};$iconSelector:before,$formIconSelector{font-family:'%s';%s}", [
             'vertical-align: middle;',
             $this->iconFontFamily,
-            'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;padding-right:0.3em;'
+            'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
         ]);
+
+        // Prepend additional css
+        $css .= $iconSelector . ':before{padding-right:0.3em;}';
+        $css .= $formIconSelector . '{display: flex;}';
 
         // Add icons
         foreach ($glyphs as $icon)
         {
-            $css .= '.' . $icon['key'] .":before{content:'\\" .  $icon['code'] . "'};";
+            $css .= vsprintf(".%s:before,.%s>.input-container:before{content:'\\%s'}", [
+                $icon['key'],
+                $icon['fkey'],
+                $icon['code']
+            ]);
         }
 
         // Prepare CSS
