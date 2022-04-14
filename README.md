@@ -25,15 +25,14 @@
 - _and more ..._
 
 ### Tools: 
-- Backend Config for SCSS-Variables
-- Theme-Compiler for generate/renew CSS-Files from Config
-- StyleManager
+- Backend Config for SCSS-Variables [🔗](https://github.com/oveleon/contao-config-driver-bundle)
+- Theme-Compiler for generate/renew CSS-Files from Config [🔗](https://github.com/oveleon/contao-theme-compiler-bundle)
+- StyleManager [🔗](https://github.com/oveleon/contao-component-style-manager)
 - __Custom Skin integration to customize the whole website based on this framework__ 🎭
 
 ### Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - EstateManager (Contao EstateManager) [🔗](https://github.com/contao-thememanager/ctm-estatemanager)
-- AdvancedForm (Contao AdvancedForm) [🔗](https://github.com/contao-thememanager/ctm-advanced-form)
 - Recommendation (Contao Recommendation) [🔗](https://github.com/contao-thememanager/ctm-recommendation)
 - _Further extensions will follow ..._
 
