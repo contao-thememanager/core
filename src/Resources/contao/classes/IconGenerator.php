@@ -212,7 +212,7 @@ class IconGenerator
         foreach($classes as $icon)
         {
             $arrClasses[] = [
-                'key' =>  'form-input-icon fi ' . $icon['fkey'],
+                'key' =>  'fi ' . $icon['fkey'],
                 'value' => $icon['value']
             ];
         }
@@ -266,7 +266,7 @@ class IconGenerator
 
         // Add icon styles
         $iconSelector = '[class^="i-"],[class*=" i-"]';
-        $formIconSelector = '.form-input-icon.fi>.input-container:before';
+        $formIconSelector = '.widget.fi>.input-container:before';
         $css .= vsprintf("$iconSelector{%s};$iconSelector:before,$formIconSelector{font-family:'%s';%s}", [
             'vertical-align: middle;',
             $this->iconFontFamily,
@@ -275,7 +275,6 @@ class IconGenerator
 
         // Prepend additional css
         $css .= $iconSelector . ':before{padding-right:0.3em;}';
-        $css .= $formIconSelector . '{display: flex;}';
 
         // Add icons
         foreach ($glyphs as $icon)
