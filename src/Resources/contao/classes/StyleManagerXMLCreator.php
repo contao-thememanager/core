@@ -73,14 +73,14 @@ class StyleManagerXMLCreator
      * Creates a style-manager xml file and saves it
      *
      * @param StyleManagerArchiveModel  $objArchive // Style-Manager archive
-     * @param StyleManagerModel         $objChild   // Style-Manager child
+     * @param array                     $arrChildren   // Style-Manager children
      * @param string                    $strPath    // Path without suffix
      * @return bool
      * @throws \DOMException
      */
-    public static function createFile(StyleManagerArchiveModel $objArchive, StyleManagerModel $objChild, string $strPath): bool
+    public static function createFile(StyleManagerArchiveModel $objArchive, array $arrChildren, string $strPath): bool
     {
-        $strData = self::createStructure($objArchive, $objChild);
+        $strData = self::createStructure($objArchive, $arrChildren);
 
         $objFile = new File($strPath.'.xml');
         $blnSuccess = $objFile->write($strData);
@@ -93,18 +93,18 @@ class StyleManagerXMLCreator
      * Creates the xml structure and returns it as a string
      *
      * @param StyleManagerArchiveModel $objArchive
-     * @param StyleManagerModel $objChild
+     * @param array $arrChildren
      * @return string
      * @throws \DOMException
      */
-    public static function createStructure(StyleManagerArchiveModel $objArchive, StyleManagerModel $objChild): string
+    public static function createStructure(StyleManagerArchiveModel $objArchive, array $arrChildren): string
     {
         // Create xml
         $xml = new \DOMDocument('1.0', 'UTF-8');
         $xml->formatOutput = true;
 
         $xml->appendChild($archives = $xml->createElement('archives'));
-        self::addArchiveData($xml, $archives, $objArchive, $objChild);
+        self::addArchiveData($xml, $archives, $objArchive, $arrChildren);
 
 
         return $xml->saveXML();
@@ -116,11 +116,11 @@ class StyleManagerXMLCreator
      * @param \DOMDocument $xml
      * @param \DOMNode $archives
      * @param StyleManagerArchiveModel $objArchive
-     * @param StyleManagerModel $objChild
+     * @param array $arrChildren
      * @return \DOMDocument
      * @throws \DOMException
      */
-    private static function addArchiveData(\DOMDocument $xml, \DOMNode $archives, StyleManagerArchiveModel $objArchive, StyleManagerModel $objChild): \DOMDocument
+    private static function addArchiveData(\DOMDocument $xml, \DOMNode $archives, StyleManagerArchiveModel $objArchive, array $arrChildren): \DOMDocument
     {
         // Add archive node
         $row = $xml->createElement('archive');
@@ -131,7 +131,7 @@ class StyleManagerXMLCreator
         self::addRowData($xml, $row, $objArchive->row());
 
         // Add children data
-        self::addChildData($xml, $row, $objChild);
+        self::addChildrenData($xml, $row, $arrChildren);
 
         return $xml;
     }
@@ -141,24 +141,27 @@ class StyleManagerXMLCreator
      *
      * @param \DOMDocument $xml
      * @param \DOMElement $archive
-     * @param $objChild
+     * @param array $arrChildren
      * @return void
      * @throws \DOMException
      */
-    private static function addChildData(\DOMDocument $xml, \DOMElement $archive, $objChild)
+    private static function addChildrenData(\DOMDocument $xml, \DOMElement $archive, array $arrChildren)
     {
         // ToDo: Change objChild to arraay to create multiple children
         // Add children node
         $children = $xml->createElement('children');
         $children = $archive->appendChild($children);
 
-        $row = $xml->createElement('child');
+        foreach ($arrChildren as $objChild)
+        {
+            $row = $xml->createElement('child');
 
-        $row->setAttribute('alias', $objChild->alias);
-        $row = $children->appendChild($row);
+            $row->setAttribute('alias', $objChild->alias);
+            $row = $children->appendChild($row);
 
-        // Add field data
-        self::addRowData($xml, $row, $objChild->row());
+            // Add field data
+            self::addRowData($xml, $row, $objChild->row());
+        }
     }
 
     /**

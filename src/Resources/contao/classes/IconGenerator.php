@@ -17,6 +17,53 @@ class IconGenerator
 {
     const MSG_ICON = 'tc_info icon';
 
+    private const icon = [
+        'elements' => [
+            'extendFormFields' => 1,
+            'formFields' => ['submit'],
+            'extendContentElement' => 1,
+            'contentElements' => [
+                'rsce_icon_text',
+                'rsce_image_text',
+                'rsce_text',
+                'rsce_hyperlink_list',
+                'rsce_icon_text_list',
+                'rsce_image_text_list',
+                'rsce_text_list',
+                'list',
+                'hyperlink',
+                'toplink',
+                'download',
+                'downloads'
+            ],
+            'extendModule' => 1,
+            'modules' => [
+                'login',
+                'personalData',
+                'registration',
+                'changePassword',
+                'lostPassword',
+                'closeAccount',
+                'search'
+            ]
+        ],
+        'options' => [
+            'description' => 'Icons for list elements and buttons',
+            //'cssClass' => 'seperator',
+            'chosen' => 1,
+            'blankOption' => 1,
+            'passToTemplate' => 1
+        ]
+    ];
+
+    private const iconDirection = [
+        'options' => [
+            'description' => 'Icon direction',
+            'blankOption' => 1,
+            'passToTemplate' => 1
+        ]
+    ];
+
     /**
      * @var FileCompiler
      */
@@ -31,7 +78,6 @@ class IconGenerator
      * @var string
      */
     private $fIconPrefix = 'f-icon-';
-
 
     /**
      * @var string
@@ -156,7 +202,6 @@ class IconGenerator
                 }
                 else if ($code !== '20')
                 {
-                    // Fixme: -
                     $intFailureCount++;
                     $this->compiler->msg('Skipped icon with unicode: \\' . $code . '. No glyph-name given.', FileCompiler::MSG_WARN);
                 }
@@ -172,52 +217,19 @@ class IconGenerator
     {
         $xmlPath = 'templates/style-manager-icon';
 
-        $arrElements = [
-            'extendFormFields' => 1,
-            'formFields' => [
-                'submit'
-            ],
-            'extendContentElement' => 1,
-            'contentElements' => [
-                'rsce_icon_text',
-                'rsce_image_text',
-                'rsce_text',
-                'rsce_hyperlink_list',
-                'rsce_icon_text_list',
-                'rsce_image_text_list',
-                'rsce_text_list',
-                'list',
-                'hyperlink',
-                'toplink',
-                'download',
-                'downloads'
-            ],
-            'extendModule' => 1,
-            'modules' => [
-                'login',
-                'personalData',
-                'registration',
-                'changePassword',
-                'lostPassword',
-                'closeAccount',
-                'search'
-            ]
-        ];
+        $arrIconElements = self::icon['elements'];
+        $arrIconOptions = self::icon['options'];
+        $arrIconDirOptions = self::iconDirection['options'];
 
-        $arrOptions = [
-            'description' => 'Icons for list elements and buttons',
-            'cssClass' => 'seperator',
-            'chosen' => 1,
-            'blankOption' => 1,
-            'passToTemplate' => 1
-        ];
+        $arrClasses = [['key'=>'i-is-r', 'value'=>'Right']];
 
         // Create XML objects
-        $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(1001, 'Icon', 'icon', 'Design', 640);
-        $objChild = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, $arrElements, $arrOptions);
+        $objArchive    = StyleManagerXMLCreator::createStyleManagerArchive(1001, 'Icon', 'icon', 'Design', 640);
+        $objIcons      = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, $arrIconElements, $arrIconOptions);
+        $objDirection  = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Direction', 'direction', $arrClasses, $arrIconElements, $arrIconDirOptions);
 
         // Create file
-        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, $objChild, $xmlPath);
+        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, [$objIcons, $objDirection], $xmlPath);
 
         if($blnSuccess)
         {
@@ -236,8 +248,6 @@ class IconGenerator
         // Create form icon classes
         $arrClasses = [];
 
-
-
         foreach($classes as $icon)
         {
             $arrClasses[] = [
@@ -248,10 +258,7 @@ class IconGenerator
 
         $arrElements = [
             'extendFormFields' => 1,
-            'formFields' => [
-                'text',
-                'password'
-            ]
+            'formFields' => ['text', 'password']
         ];
 
         $arrOptions = [
@@ -262,10 +269,10 @@ class IconGenerator
 
         // Create XML objects
         $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(11, 'Form-Input-Icon', 'formInputIcon', 'FormField', 1128);
-        $objChildIcons = StyleManagerXMLCreator::createStyleManagerChild(11, 'Icon', 'formInputIcons', $arrClasses, $arrElements, $arrOptions);
+        $objFormIcons = StyleManagerXMLCreator::createStyleManagerChild(11, 'Icon', 'formInputIcons', $arrClasses, $arrElements, $arrOptions);
 
         // Create file
-        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, $objChildIcons, $xmlPath);
+        $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, [$objFormIcons], $xmlPath);
 
         if($blnSuccess)
         {

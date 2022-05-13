@@ -99,3 +99,16 @@
     }
   }
 }
+
+
+[class^="i-"],
+[class*=" i-"] {
+
+  &.i-is-r {
+    flex-direction: row-reverse;
+
+    &:before {
+      padding: 0 0 0 0.3em;
+    }
+  }
+}
