@@ -147,6 +147,7 @@ class StyleManagerXMLCreator
      */
     private static function addChildData(\DOMDocument $xml, \DOMElement $archive, $objChild)
     {
+        // ToDo: Change objChild to arraay to create multiple children
         // Add children node
         $children = $xml->createElement('children');
         $children = $archive->appendChild($children);

@@ -173,11 +173,34 @@ class IconGenerator
         $xmlPath = 'templates/style-manager-icon';
 
         $arrElements = [
+            'extendFormFields' => 1,
+            'formFields' => [
+                'submit'
+            ],
             'extendContentElement' => 1,
             'contentElements' => [
+                'rsce_icon_text',
+                'rsce_image_text',
                 'rsce_text',
+                'rsce_hyperlink_list',
+                'rsce_icon_text_list',
+                'rsce_image_text_list',
+                'rsce_text_list',
                 'list',
-                'hyperlink'
+                'hyperlink',
+                'toplink',
+                'download',
+                'downloads'
+            ],
+            'extendModule' => 1,
+            'modules' => [
+                'login',
+                'personalData',
+                'registration',
+                'changePassword',
+                'lostPassword',
+                'closeAccount',
+                'search'
             ]
         ];
 
