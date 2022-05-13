@@ -1,7 +1,7 @@
 button, a, input[type="submit"] {
   // Allow is-block even if no button class is selected
   &.is-block {
-    display: block !important;
+    width: 100%;
   }
 }
 
@@ -19,7 +19,7 @@ button, a.button, input.button {
   border-width: $button-border-width-primary;
 
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
 
   font-size: $button-font-size-medium;
   padding: subList($button-padding-medium, $button-border-width-primary);
