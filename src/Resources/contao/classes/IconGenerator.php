@@ -79,7 +79,7 @@ class IconGenerator
             return null;
         }
 
-        if (!$absFontPath = realpath($relFontPath = System::getContainer()->getParameter('kernel.project_dir') . '\\' . Path::getDirectory($fontPath)))
+        if (!$absFontPath = realpath($relFontPath = Path::join(System::getContainer()->getParameter('kernel.project_dir'), Path::getDirectory($fontPath))))
         {
             $this->compiler->msg('The path: "' . $relFontPath . '" does not exist.', FileCompiler::MSG_ERROR);
             return null;
