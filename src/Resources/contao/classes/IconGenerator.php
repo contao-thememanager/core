@@ -106,11 +106,17 @@ class IconGenerator
             return null;
         }
 
-        return $absFontPath . '\\' . $arrFileInformation['svg']['filename'];
+        return Path::join($absFontPath, $arrFileInformation['svg']['filename']);
     }
 
     private function getIcons($iconPath): ?array
     {
+        if(!file_exists($filePath = $iconPath . '.svg'))
+        {
+            $this->compiler->msg('File: "' . $filePath . '" does not exist', FileCompiler::MSG_ERROR);
+            return [];
+        }
+
         $svg = new \SimpleXMLElement($iconPath . '.svg' , null, true);
 
         // If no glyphs are found
