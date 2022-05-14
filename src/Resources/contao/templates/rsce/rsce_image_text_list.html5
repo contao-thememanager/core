@@ -26,7 +26,7 @@
                  <?= $item->text ?>
                  <?php if($item->linkText && $item->url): ?>
                      <p>
-                         <a href="<?=$item->url?>"<?=$this->styleManager->prepare('button')->format(' class="%s"')?><?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+                         <a href="<?=$item->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
                      </p>
                  <?php endif; ?>
              </div>

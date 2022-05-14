@@ -4,7 +4,7 @@
 
 <ul class="c_list li-icon<?=$this->styleManager->prepare('list')->format(' %s')?>">
     <?php foreach ($this->list as $item): ?>
-        <li<?=$this->styleManager->prepare('icon')->format(' class="%s"')?>>
+        <li<?=$this->styleManager->prepare('icon', ['icon'])->format(' class="%s"')?>>
             <a<?= $this->styleManager->prepare('button')->format(' class="%s"')?> href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
         </li>
     <?php endforeach ?>

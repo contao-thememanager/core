@@ -12,13 +12,13 @@
             <?php endif; ?>
 
             <div class="c_icon">
-                <span class="icon<?= $this->styleManager->prepare('icon')->format(' %s')?>" data-icon="&#x<?= $item->icon ?>;"></span>
+                <span class="icon<?= $this->styleManager->prepare('icon', ['design', 'shape', 'color', 'size'])->format(' %s')?>" data-icon="&#x<?= $item->icon ?>;"></span>
             </div>
             <div class="c_text">
                 <?= $item->text ?>
                 <?php if($item->linkText && $item->url): ?>
                     <p>
-                        <a href="<?=$item->url?>"<?=$this->styleManager->prepare('button')->format(' class="%s"')?><?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+                        <a href="<?=$item->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
                     </p>
                 <?php endif; ?>
             </div>

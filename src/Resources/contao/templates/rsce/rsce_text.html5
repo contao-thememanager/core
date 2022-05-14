@@ -25,7 +25,7 @@
         <?= $this->text ?>
         <?php if($this->linkText && $this->url): ?>
             <p>
-                <a href="<?=$this->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?= $this->styleManager->prepare('icon')->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+                <a href="<?=$this->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
             </p>
         <?php endif; ?>
     </div>

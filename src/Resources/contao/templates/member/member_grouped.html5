@@ -37,7 +37,7 @@
       <?php endforeach; ?>
 
       <div class="widget widget-submit">
-        <button type="submit" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?>"><?= $this->slabel ?></button>
+        <button type="submit" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->slabel ?></button>
       </div>
     </div>
   </form>
