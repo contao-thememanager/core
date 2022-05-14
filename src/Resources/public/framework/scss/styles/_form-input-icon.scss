@@ -28,9 +28,11 @@
 
       width: 40px;
 
-      border-width: 0 $form-input-border-width 0 0;
+      border-width: $form-input-border-width;
       border-top-left-radius: inherit;
       border-bottom-left-radius: inherit;
+
+      margin: -#{$form-input-border-width} 0 -#{$form-input-border-width} -#{$form-input-border-width};
     }
 
     &:hover {
@@ -49,11 +51,12 @@
     > .input-container {
 
       &:before {
-        border-width: 0 0 0 $form-input-border-width;
         border-radius: 0;
         border-top-right-radius: inherit;
         border-bottom-right-radius: inherit;
         order: 2;
+
+        margin: -#{$form-input-border-width} -#{$form-input-border-width} -#{$form-input-border-width} 0;
       }
 
       input {
