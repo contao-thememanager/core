@@ -15,9 +15,14 @@ use Webmozart\PathUtil\Path;
 
 class IconGenerator
 {
-    const MSG_ICON = 'tc_info icon';
+    /** @var FileCompiler */
+    protected $compiler = null;
 
-    private const icon = [
+    const MSG_ICON = 'tc_info icon';
+    const PREFIX_ICON = 'i-';
+    const PREFIX_FICON = 'f-icon-';
+    const FONTFAMILY = 'ctm-icon';
+    const STRUCTURE_ICON = [
         'elements' => [
             'extendFormFields' => 1,
             'formFields' => ['submit'],
@@ -55,34 +60,13 @@ class IconGenerator
             'passToTemplate' => 1
         ]
     ];
-
-    private const iconDirection = [
+    const STRUCTURE_ICONDIRECTION = [
         'options' => [
             'description' => 'Icon direction',
             'blankOption' => 1,
             'passToTemplate' => 1
         ]
     ];
-
-    /**
-     * @var FileCompiler
-     */
-    protected $compiler = null;
-
-    /**
-     * @var string
-     */
-    private $clsPrefix = 'i-';
-
-    /**
-     * @var string
-     */
-    private $fIconPrefix = 'f-icon-';
-
-    /**
-     * @var string
-     */
-    private $iconFontFamily = 'ctm-icon';
 
     /**
      * Generate icon set when compiling the theme
@@ -108,12 +92,12 @@ class IconGenerator
             if($filePath = $this->generateIconStyleSheet($arrGlyphs, $iconPath))
             {
                 $objCompiler->add($filePath);
-                $this->compiler->msg('Created icon font: ' . $this->iconFontFamily , FileCompiler::MSG_SUCCESS);
+                $this->compiler->msg('Created icon font: ' . self::FONTFAMILY , FileCompiler::MSG_SUCCESS);
             }
         }
         else
         {
-            $this->compiler->msg('Could not create icon font: ' . $this->iconFontFamily, FileCompiler::MSG_ERROR);
+            $this->compiler->msg('Could not create icon font: ' . self::FONTFAMILY, FileCompiler::MSG_ERROR);
         }
     }
 
@@ -191,10 +175,10 @@ class IconGenerator
                     if (hexdec($code) > 32 && !empty($glyph['d']) && (string)$glyph['d'] !== 'M0 0v0v0v0v0z')
                     {
                         $glyphs[] = [
-                            'key' => $this->clsPrefix . $glyph['glyph-name'],
+                            'key' => self::PREFIX_ICON . $glyph['glyph-name'],
                             'value' => $char . ' ' . ucwords(str_replace("_", " ", $glyph['glyph-name'])),
                             'code' => $code,
-                            'fkey' => $this->fIconPrefix . $glyph['glyph-name']
+                            'fkey' => self::PREFIX_FICON . $glyph['glyph-name']
                         ];
 
                         $intSuccessCount++;
@@ -217,16 +201,10 @@ class IconGenerator
     {
         $xmlPath = 'templates/style-manager-icon';
 
-        $arrIconElements = self::icon['elements'];
-        $arrIconOptions = self::icon['options'];
-        $arrIconDirOptions = self::iconDirection['options'];
-
-        $arrClasses = [['key'=>'i-is-r', 'value'=>'Right']];
-
         // Create XML objects
         $objArchive    = StyleManagerXMLCreator::createStyleManagerArchive(1001, 'Icon', 'icon', 'Design', 640);
-        $objIcons      = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, $arrIconElements, $arrIconOptions);
-        $objDirection  = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Direction', 'direction', $arrClasses, $arrIconElements, $arrIconDirOptions);
+        $objIcons      = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, self::STRUCTURE_ICON['elements'], self::STRUCTURE_ICON['options']);
+        $objDirection  = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Direction', 'direction', [['key'=>'i-is-r', 'value'=>'Right']], self::STRUCTURE_ICON['elements'], self::STRUCTURE_ICONDIRECTION['options']);
 
         // Create file
         $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, [$objIcons, $objDirection], $xmlPath);
@@ -293,7 +271,7 @@ class IconGenerator
 
         // Add font-source
         $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
-            $this->iconFontFamily,
+            self::FONTFAMILY,
             $fontPath,
             'font-weight:normal;',
             'font-style:normal;',
@@ -305,7 +283,7 @@ class IconGenerator
         $formIconSelector = '.widget.fi>.input-container:before';
         $css .= vsprintf("$iconSelector{%s};$iconSelector:before,$formIconSelector{font-family:'%s';%s}", [
             'vertical-align: middle;',
-            $this->iconFontFamily,
+            self::FONTFAMILY,
             'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
         ]);
 
