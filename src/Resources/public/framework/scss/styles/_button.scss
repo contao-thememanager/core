@@ -2,6 +2,7 @@ button, a, input[type="submit"] {
   // Allow is-block even if no button class is selected
   &.is-block {
     width: 100%;
+    justify-content: center;
   }
 }
 
