@@ -1,5 +1,13 @@
 .c_list {
 
+  &.li-icon {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.c_list {
+
   li {
     width: 100%
   }

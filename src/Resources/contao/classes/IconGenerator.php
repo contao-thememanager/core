@@ -35,11 +35,11 @@ class IconGenerator
                 'rsce_icon_text_list',
                 'rsce_image_text_list',
                 'rsce_text_list',
-                'list',
                 'hyperlink',
                 'toplink',
                 'download',
-                'downloads'
+                'downloads',
+                'list'
             ],
             'extendModule' => 1,
             'modules' => [
@@ -204,7 +204,12 @@ class IconGenerator
         // Create XML objects
         $objArchive    = StyleManagerXMLCreator::createStyleManagerArchive(1001, 'Icon', 'icon', 'Design', 640);
         $objIcons      = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Icon', 'icon', $classes, self::STRUCTURE_ICON['elements'], self::STRUCTURE_ICON['options']);
-        $objDirection  = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Direction', 'direction', [['key'=>'i-is-r', 'value'=>'Right']], self::STRUCTURE_ICON['elements'], self::STRUCTURE_ICONDIRECTION['options']);
+
+        // Unset list (on 12th position) for directions
+        $arrDirElements = self::STRUCTURE_ICON['elements'];
+        unset($arrDirElements['contentElements'][11]);
+
+        $objDirection  = StyleManagerXMLCreator::createStyleManagerChild(1001, 'Direction', 'direction', [['key'=>'i-is-r', 'value'=>'Right']], $arrDirElements, self::STRUCTURE_ICONDIRECTION['options']);
 
         // Create file
         $blnSuccess = StyleManagerXMLCreator::createFile($objArchive, [$objIcons, $objDirection], $xmlPath);

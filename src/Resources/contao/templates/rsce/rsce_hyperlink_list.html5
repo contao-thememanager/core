@@ -2,10 +2,10 @@
 
 <?php $this->block('content'); ?>
 
-<ul class="c_list li-icon<?=$this->styleManager->prepare('list')->format(' %s')?>">
+<ul class="c_list<?=$this->styleManager->prepare('icon', ['icon'])->format(' li-icon')?><?=$this->styleManager->prepare('list')->format(' %s')?>">
     <?php foreach ($this->list as $item): ?>
-        <li<?=$this->styleManager->prepare('icon', ['icon'])->format(' class="%s"')?>>
-            <a<?= $this->styleManager->prepare('button')->format(' class="%s"')?> href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+        <li>
+            <a class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
         </li>
     <?php endforeach ?>
 </ul>
