@@ -7,11 +7,11 @@
 
 namespace ContaoThemeManager\Core;
 
+use Contao\File;
 use Contao\StringUtil;
 use Contao\System;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
-use Contao\File;
-use Webmozart\PathUtil\Path;
+use Symfony\Component\Filesystem\Path;
 
 class IconGenerator
 {
