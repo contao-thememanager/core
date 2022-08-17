@@ -21,7 +21,8 @@
     "oveleon/contao-theme-compiler-bundle":"^1.1",
     "oveleon/contao-config-driver-bundle":"^1.0",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
-    "madeyourday/contao-rocksolid-icon-picker": "^2.0"
+    "madeyourday/contao-rocksolid-icon-picker": "^2.0",
+    "symfony/filesystem": "^5.4"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0"
