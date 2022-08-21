@@ -1,7 +1,3 @@
-.c_headline {
-  margin-bottom: 1rem;
-}
-
 .hl-spacing-global-small{
   margin-bottom: $headline-spacing-small;
 }
@@ -72,7 +68,7 @@
 }
 
 div[class*="hl-spacing"] > *:last-child{
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @include media-breakpoint('xs') {

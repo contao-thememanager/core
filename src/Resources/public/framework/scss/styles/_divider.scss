@@ -1,25 +1,32 @@
 .divider {
 
-  &-top {
-    border-width: $divider-size 0 0 0;
+  &.top,
+  &.bottom {
     border-style: $divider-style;
     border-color: $divider-color;
   }
 
+  &-top {
+    border-width: $divider-size 0 0 0;
+  }
+
   &-bottom {
     border-width: 0 0 $divider-size 0;
-    border-style: $divider-style;
-    border-color: $divider-color;
   }
 }
 
 .divider-inner {
 
-  &-top, &-bottom {
+  &-top,
+  &-bottom {
 
     > .inside {
 
-      &:before, &:after {
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+
         position: absolute;
         height: $divider-size;
         left: divide($grid-gutter-width, 2);
@@ -34,8 +41,6 @@
     > .inside {
 
       &:before {
-        content: '';
-        display: block;
         top: 0;
       }
     }
@@ -46,8 +51,6 @@
     > .inside {
 
       &:after {
-        content: '';
-        display: block;
         bottom: 0;
       }
     }
