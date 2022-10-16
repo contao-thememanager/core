@@ -1,8 +1,3 @@
-:root {
-  --gtr-btm:     #{$grid-gutter-bottom};
-  --gtr-btm-sml: #{$grid-gutter-small-bottom};
-}
-
 $spacings-abbreviations: (
   spacing: spc,
   small:   sm,
@@ -41,6 +36,8 @@ $spacings-list: (
 @mixin init-spacings($list) {
   // Set custom properties
   :root {
+    --gtr-btm:     #{$grid-gutter-bottom};
+    --gtr-btm-sml: #{$grid-gutter-small-bottom};
     @each $size, $spacing in $list {
       --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
     }
