@@ -1,4 +1,6 @@
-button, a, input[type="submit"] {
+a,
+button,
+input[type="submit"] {
   // Allow is-block even if no button class is selected
   &.is-block {
     width: 100%;
@@ -6,25 +8,45 @@ button, a, input[type="submit"] {
   }
 }
 
-button, a.button, input.button {
-  font-family: $font-family-base;
-  font-weight: $button-font-weight-primary;
-  line-height: $button-line-height;
-  text-transform: $button-transform-primary;
+:root {
+  --btn-bg:          #{$button-bg-primary};
+  --btn-bg-hvr:      #{$button-hover-bg-primary};
+  --btn-clr:         #{$button-color-primary};
+  --btn-clr-hvr:     #{$button-hover-color-primary};
 
-  background-color: $button-bg-primary;
-  color: $button-color-primary;
+  --btn-fw:          #{$button-font-weight-primary};
+  --btn-tf:          #{$button-transform-primary};
 
-  border-radius: $button-border-radius-primary;
-  border: $button-border-style-primary $button-border-color-primary;
-  border-width: $button-border-width-primary;
+  --btn-bdr:         #{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
+  --btn-bdr-r:       #{$button-border-radius-primary};
+  --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
+
+  --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-primary)};
+  --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-primary)};
+  --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-primary)};
+  --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-primary)};
+}
+
+button,
+a.button,
+input.button {
+  background-color: var(--btn-bg);
+  color: var(--btn-clr);
+
+  font-weight: var(--btn-fw);
+  text-transform: var(--btn-tf);
+
+  border: var(--btn-bdr);
+  border-radius: var(--btn-bdr-r);
+
+  padding: var(--btn-pdg-m);
 
   cursor: pointer;
   display: inline-flex;
 
+  font-family: $font-family-base;
   font-size: $button-font-size-medium;
-  padding: subList($button-padding-medium, $button-border-width-primary);
-
+  line-height: $button-line-height;
   text-decoration: none;
 
   -webkit-appearance: none;
@@ -32,87 +54,61 @@ button, a.button, input.button {
   appearance: none;
 
   &:hover {
-    background-color: $button-hover-bg-primary;
-    color: $button-hover-color-primary;
-    border-color: $button-hover-border-color-primary;
+    background-color: var(--btn-bg-hvr);
+    color: var(--btn-clr-hvr);
+    border-color: var(--btn-bdr-clr-hvr);
   }
 
   &.size-small {
+    padding: var(--btn-pdg-s);
     font-size: $button-font-size-small;
-    padding: subList($button-padding-small, $button-border-width-primary);
   }
 
   &.size-large {
+    padding: var(--btn-pdg-l);
     font-size: $button-font-size-large;
-    padding: subList($button-padding-large, $button-border-width-primary);
   }
 
   &.size-super {
+    padding: var(--btn-pdg-xl);
     font-size: $button-font-size-super;
-    padding: subList($button-padding-super, $button-border-width-primary);
   }
 
   &.design-secondary {
-    font-weight: $button-font-weight-secondary;
-    text-transform: $button-transform-secondary;
+    --btn-bg:          #{$button-bg-secondary};
+    --btn-bg-hvr:      #{$button-hover-bg-secondary};
+    --btn-clr:         #{$button-color-secondary};
+    --btn-clr-hvr:     #{$button-hover-color-secondary};
 
-    background-color: $button-bg-secondary;
-    color: $button-color-secondary;
+    --btn-fw:          #{$button-font-weight-secondary};
+    --btn-tf:          #{$button-transform-secondary};
 
-    border-radius: $button-border-radius-secondary;
-    border: $button-border-style-secondary $button-border-color-secondary;
-    border-width: $button-border-width-secondary;
+    --btn-bdr:         #{$button-border-width-secondary} #{$button-border-style-secondary} #{$button-border-color-secondary};
+    --btn-bdr-r:       #{$button-border-radius-secondary};
+    --btn-bdr-clr-hvr: #{$button-hover-border-color-secondary};
 
-    padding: subList($button-padding-medium, $button-border-width-secondary);
-
-    &:hover {
-      background-color: $button-hover-bg-secondary;
-      color: $button-hover-color-secondary;
-      border-color: $button-hover-border-color-secondary;
-    }
-
-    &.size-small {
-      padding: subList($button-padding-small, $button-border-width-secondary);
-    }
-
-    &.size-large {
-      padding: subList($button-padding-large, $button-border-width-secondary);
-    }
-
-    &.size-super {
-      padding: subList($button-padding-super, $button-border-width-secondary);
-    }
+    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-secondary)};
+    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-secondary)};
+    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-secondary)};
+    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-secondary)};
   }
 
   &.design-alt {
-    font-weight: $button-font-weight-alt;
-    text-transform: $button-transform-alt;
+    --btn-bg:          #{$button-bg-alt};
+    --btn-bg-hvr:      #{$button-hover-bg-alt};
+    --btn-clr:         #{$button-color-alt};
+    --btn-clr-hvr:     #{$button-hover-color-alt};
 
-    background-color: $button-bg-alt;
-    color: $button-color-alt;
+    --btn-fw:          #{$button-font-weight-alt};
+    --btn-tf:          #{$button-transform-alt};
 
-    border-radius: $button-border-radius-alt;
-    border: $button-border-style-alt $button-border-color-alt;
-    border-width: $button-border-width-alt;
+    --btn-bdr:         #{$button-border-width-alt} #{$button-border-style-alt} #{$button-border-color-alt};
+    --btn-bdr-r:       #{$button-border-radius-alt};
+    --btn-bdr-clr-hvr: #{$button-hover-border-color-alt};
 
-    padding: subList($button-padding-medium, $button-border-width-alt);
-
-    &:hover {
-      background-color: $button-hover-bg-alt;
-      color: $button-hover-color-alt;
-      border-color: $button-hover-border-color-alt;
-    }
-
-    &.size-small {
-      padding: subList($button-padding-small, $button-border-width-alt);
-    }
-
-    &.size-large {
-      padding: subList($button-padding-large, $button-border-width-alt);
-    }
-
-    &.size-super {
-      padding: subList($button-padding-super, $button-border-width-alt);
-    }
+    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-alt)};
+    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-alt)};
+    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-alt)};
+    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-alt)};
   }
 }
