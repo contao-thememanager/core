@@ -10,11 +10,10 @@
 @import "basics/form";
 
 // Styles
-@import "styles/alignment";
-@import "styles/hl-alignment";
+@import "styles/alignmentSpacings";
 @import "styles/background";
 @import "styles/boxed";
-@import "styles/component-spacing";
+
 @import "styles/divider";
 @import "styles/element-spacing";
 @import "styles/grid-list";
@@ -27,10 +26,10 @@
 @import "styles/form-image";
 @import "styles/form-input-icon";
 
-// Example Styles
+// Example styles
 @import "styles/example";
 
-// Dependency Styles
+// Dependency styles
 @import "styles/button";
 @import "styles/icon";
 
