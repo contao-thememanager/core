@@ -10,45 +10,44 @@ $spacings-abbreviations: (
   large:   lg
 );
 
-$spacings-init: (
-  'small': $article-spacing-xs-small,
-  'medium': $article-spacing-xs-medium,
-  'large': $article-spacing-xs-large
+$spacings-list: (
+  init: (
+    small:  $article-spacing-xs-small,
+    medium: $article-spacing-xs-medium,
+    large:  $article-spacing-xs-large
+  ),
+  s: (
+    small:  $article-spacing-s-small,
+    medium: $article-spacing-s-medium,
+    large:  $article-spacing-s-large
+  ),
+  m: (
+    small:  $article-spacing-m-small,
+    medium: $article-spacing-m-medium,
+    large:  $article-spacing-m-large
+  ),
+  l: (
+    small:  $article-spacing-l-small,
+    medium: $article-spacing-l-medium,
+    large:  $article-spacing-l-large
+  ),
+  xl: (
+    small:  $article-spacing-xl-small,
+    medium: $article-spacing-xl-medium,
+    large:  $article-spacing-xl-large
+  )
 );
 
-$spacings-s: (
-  'small': $article-spacing-s-small,
-  'medium': $article-spacing-s-medium,
-  'large': $article-spacing-s-large
-);
-
-$spacings-m: (
-  'small': $article-spacing-m-small,
-  'medium': $article-spacing-m-medium,
-  'large': $article-spacing-m-large
-);
-
-$spacings-l: (
-  'small': $article-spacing-l-small,
-  'medium': $article-spacing-l-medium,
-  'large': $article-spacing-l-large
-);
-
-$spacings-xl: (
-  'small': $article-spacing-xl-small,
-  'medium': $article-spacing-xl-medium,
-  'large': $article-spacing-xl-large
-);
-
-
-@mixin spacings($list) {
-  @each $size, $spacing in $list {
-    .y-spacing-#{$size},
-    .top-spacing-#{$size},
-    .bottom-spacing-#{$size} {
+@mixin init-spacings($list) {
+  // Set custom properties
+  :root {
+    @each $size, $spacing in $list {
       --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
     }
-    .y-spacing-#{$size} {
+  }
+
+  @each $size, $spacing in $list { // Assign custom properties
+    .y-spacing-#{$size} { // Assign custom properties
       &, #container {
         > .inside {
           padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
@@ -70,9 +69,7 @@ $spacings-xl: (
         }
       }
     }
-  }
 
-  @each $size, $spacing in $list {
     .top-spacing-#{$size} {
       > .inside {
         padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
@@ -92,36 +89,34 @@ $spacings-xl: (
   }
 }
 
-@mixin spacings-breakpoint($list, $bp) {
-
+@mixin set-spacing-properties($list, $bp) {
+  $list: map-get($list, $bp);
   @include media-breakpoint($bp) {
-    @content;
-
-    @each $size, $spacing in $list {
-      .y-spacing-#{$size},
-      .top-spacing-#{$size},
-      .bottom-spacing-#{$size} {
+    // Set custom properties
+    :root {
+      @each $size, $spacing in $list { // Set custom properties
         --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
       }
     }
+    @content;
   }
 }
 
 .grid.no-gutter[class*='x-spacing'] { > .inside {
-  padding-left: divide($grid-gutter-width, 2);
+  padding-left:  divide($grid-gutter-width, 2);
   padding-right: divide($grid-gutter-width, 2);
-} }
+}}
 
 .grid.small-gutter[class*='x-spacing'] { > .inside {
-  padding-left: divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
+  padding-left:  divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
   padding-right: divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
-} }
+}}
 
-@include spacings($spacings-init);
+@include init-spacings(map-get($spacings-list, 'init'));
 
-@include spacings-breakpoint($spacings-s, 's');
+@include set-spacing-properties($spacings-list, 's');
 
-@include spacings-breakpoint($spacings-m, 'm') {
+@include set-spacing-properties($spacings-list, 'm') {
   .x-spacing-large > .inside {
     width: $x-spacing-large-m;
     margin-left: auto;
@@ -129,8 +124,8 @@ $spacings-xl: (
   }
 };
 
-@include spacings-breakpoint($spacings-l, 'l') {
-  .grid.small-gutter[class*='x-spacing']{
+@include set-spacing-properties($spacings-list, 'l') {
+  .grid.small-gutter[class*='x-spacing'] {
 
     > .inside {
       padding-left: 0;
@@ -165,10 +160,9 @@ $spacings-xl: (
   }
 };
 
-@include spacings-breakpoint($spacings-xl, 'xl');
+@include set-spacing-properties($spacings-list, 'xl');
 
 @media (min-width: sum($x-spacing-small, $grid-gutter-width, 'px')) {
-
   .x-spacing-small {
     &, #container {
       > .inside {
