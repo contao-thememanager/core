@@ -1,7 +1,16 @@
-@mixin headings {
+@mixin heading-basics {
+  $headingsList: ();
+
   @for $i from 1 through 6 {
-    h#{$i},.h#{$i} {
-      @content;
-    }
+    $heading: (
+      'h#{$i}',
+      '.h#{$i}'
+    );
+
+    $headingsList: join($headingsList, $heading);
+  }
+
+  #{list-to-string($headingsList, ',')} {
+    @content;
   }
 }
