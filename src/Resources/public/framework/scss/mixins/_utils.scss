@@ -452,29 +452,3 @@
 
   @return $result;
 }
-
-// Below is a list of deprecated functions that will be removed in the future
-//
-// [1]  button-padding(): This was replaced with the more generic subList()
-// [2]  shorten-decimal-value(): Was used in combination with percentage() and
-//      was replaced with shortPercentage
-//
-
-// [1]
-@function button-padding($padding, $border-width) {
-  @warn "The function 'button-padding() is deprecated and will be removed in ContaoThemeManager v.2, use subList() instead.";
-
-  @return subList($padding, $border-width);
-}
-
-// [2]
-@function shorten-decimal-value($number) {
-  @warn "The function 'shorten-decimal-value()' is deprecated and will be removed in ContaoThemeManager v.2, use shortPercentage() instead.";
-
-  @if unitless($number) {
-    @return (floor($number * 1000000) / 1000000);
-  }
-  @else {
-    @return $number;
-  }
-}
