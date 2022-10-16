@@ -13,7 +13,8 @@
       cursor: default;
     }
 
-    a, strong {
+    a,
+    strong {
       display: block;
       font-size: $navigation-item-font-size;
       font-weight: $navigation-item-font-weight;

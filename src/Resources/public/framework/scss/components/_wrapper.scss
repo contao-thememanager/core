@@ -1,14 +1,5 @@
-.ce_wrapper {
-
-  > .inside {
-    height: 100%;
-  }
-}
-
-.wrapper-grid {
+.wrapper-grid,
+.wrapper-grid > .inside,
+.ce_wrapper > .inside {
   height: 100%;
-
-  > .inside {
-    height: 100%;
-  }
 }

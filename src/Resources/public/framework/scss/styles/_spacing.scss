@@ -1,13 +1,13 @@
 :root {
-  --gtr-btm: #{$grid-gutter-bottom};
+  --gtr-btm:     #{$grid-gutter-bottom};
   --gtr-btm-sml: #{$grid-gutter-small-bottom};
 }
 
 $spacings-abbreviations: (
-  spacing : spc,
-  small : sm,
-  medium: md,
-  large : lg
+  spacing: spc,
+  small:   sm,
+  medium:  md,
+  large:   lg
 );
 
 $spacings-init: (
