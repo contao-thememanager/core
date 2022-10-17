@@ -1,4 +1,4 @@
-@mixin icon($content, $font-size: 1em, $line-height: 1){
+@mixin icon($content, $font-size: 1em, $line-height: 1) {
   content: $content;
   display: inline-block;
   font: #{$font-size}/#{$line-height} $icon-font-family;
@@ -7,7 +7,6 @@
   font-variant: normal;
 
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
 
   speak: none;
 }

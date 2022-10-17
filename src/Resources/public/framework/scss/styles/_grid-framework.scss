@@ -10,6 +10,9 @@
     > * {
       flex-grow: 0;
       flex-shrink: 0;
+      flex-basis: 100%;
+      max-width: 100%;
+
       padding-right: divide($grid-gutter-width, 2);
       padding-left: divide($grid-gutter-width, 2);
       padding-bottom: $grid-gutter-bottom;
@@ -122,15 +125,10 @@ $grid-breakpoints: map-merge((0:0),$breakpoints);
 
     .grid > .inside {
 
-      > * {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-
       @for $i from 1 through $grid-columns {
         > .col#{$infix}-#{$i} {
-          flex-basis: percentage($i / $grid-columns);
-          max-width: percentage($i / $grid-columns);
+          flex-basis: shortPercentage($i / $grid-columns);
+          max-width: shortPercentage($i / $grid-columns);
         }
       }
 
@@ -155,7 +153,7 @@ $grid-breakpoints: map-merge((0:0),$breakpoints);
       @for $i from 0 through ($grid-columns - 1) {
         @if not ($infix == "" and $i == 0) {
           > .offset#{$infix}-#{$i} {
-            margin-left: percentage($i / $grid-columns);
+            margin-left: shortPercentage($i / $grid-columns);
           }
         }
       }

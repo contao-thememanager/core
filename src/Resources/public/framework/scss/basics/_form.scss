@@ -1,9 +1,38 @@
-::-webkit-input-placeholder { color: $form-input-placeholder-color; }
-::-moz-placeholder { color: $form-input-placeholder-color; }
-:-ms-input-placeholder { color: $form-input-placeholder-color; }
-:-moz-placeholder { color: $form-input-placeholder-color; }
+%mandatory-styles {
+  display: block;
+  content: '*';
 
-label, legend{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  font-size: 15px;
+  color: $form-input-mandatory-symbol-color;
+  line-height: 1;
+}
+
+/* Error Styles */
+%form-error-styles {
+  color: $form-input-color-error;
+  background: $form-input-background-error;
+  border-color: $form-input-border-color-error;
+  --form-clr-ph: #{$form-input-placeholder-color-error};
+}
+
+:root {
+  --form-clr-txt:    #{$form-input-color};
+  --form-clr-bg:     #{$form-input-background};
+  --form-clr-border: #{$form-input-border-color};
+  --form-clr-ph:     #{$form-input-placeholder-color};
+  --cbx-clr-label:   #{$form-checkbox-radio-label-color};
+}
+
+::-webkit-input-placeholder { color: var(--form-clr-ph); }
+::-moz-placeholder { color: var(--form-clr-ph); }
+:-ms-input-placeholder { color: var(--form-clr-ph); }
+
+label,
+legend {
   display: inline-block;
   color: $form-label-color;
   font-size: $form-label-font-size;
@@ -30,17 +59,19 @@ select {
   }
 }
 
-select, input, textarea {
+select,
+input,
+textarea {
   font-family: $form-input-font-family;
   font-weight: $form-input-font-weight;
   font-size: $form-input-font-size;
 
-  color: $form-input-color;
-  background-color: $form-input-background;
+  color: var(--form-clr-txt);
+  background-color: var(--form-clr-bg);
 
+  border-color: var(--form-clr-border);
   border-width: $form-input-border-width;
   border-style: $form-input-border-style;
-  border-color: $form-input-border-color;
   border-radius: $form-input-border-radius;
 
   padding: $form-input-padding;
@@ -52,34 +83,27 @@ select, input, textarea {
     -webkit-appearance: none;
   }
 
-  &:-webkit-autofill{
+  &:-webkit-autofill {
     -webkit-text-fill-color: $form-input-color;
     -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 
   &:hover {
-    background-color: $form-input-background-hover;
-    border-color: $form-input-border-color-hover;
-
-    &::-webkit-input-placeholder { color: $form-input-placeholder-color-hover; }
-    &::-moz-placeholder { color: $form-input-placeholder-color-hover; }
-    &:-ms-input-placeholder { color: $form-input-placeholder-color-hover; }
-    &:-moz-placeholder { color: $form-input-placeholder-color-hover; }
+    --form-clr-bg: #{$form-input-background-hover};
+    --form-clr-border: #{$form-input-border-color-hover};
+    --form-clr-ph: #{$form-input-placeholder-color-hover};
   }
 
   &:focus {
-    background-color: $form-input-background-focus;
-    border-color: $form-input-border-color-focus;
-
-    &::-webkit-input-placeholder { color: $form-input-placeholder-color-focus; }
-    &::-moz-placeholder { color: $form-input-placeholder-color-focus; }
-    &:-ms-input-placeholder { color: $form-input-placeholder-color-focus; }
-    &:-moz-placeholder { color: $form-input-placeholder-color-focus; }
+    --form-clr-bg: #{$form-input-background-focus};
+    --form-clr-border: #{$form-input-border-color-focus};
+    --form-clr-ph: #{$form-input-placeholder-color-hover};
   }
 }
 
-select, input{
+select,
+input {
   height: $form-input-height;
 }
 
@@ -95,22 +119,25 @@ textarea {
     position: relative;
   }
 
-  &.error{
+  &.error {
 
-    select, input, textarea {
+    select,
+    input,
+    textarea {
 
       &:not(:valid) {
         @extend %form-error-styles;
       }
     }
 
-    p.error{
+    p.error {
       display: block;
       color: $form-input-color-error;
       font-size: $form-input-font-size-error;
     }
 
-    &.mandatory:after, &.mandatory .input-container:after {
+    &.mandatory:after,
+    &.mandatory .input-container:after {
       color: $form-input-mandatory-symbol-color-error;
     }
   }
@@ -120,39 +147,17 @@ textarea {
   &-range {
 
     &.mandatory:after {
-      display: block;
-      content: '*';
-
-      position: absolute;
-      top: 5px;
-      right: 5px;
-
-      font-size: 15px;
-      font-weight: $font-weight-medium;
-      color: $form-input-mandatory-symbol-color;
-
-      line-height: 1;
-      width: 7px;
+      @extend %mandatory-styles;
     }
   }
 
   &.mandatory .input-container:after {
-    display: block;
-    content: '*';
-
-    position: absolute;
-    top: 5px;
-    right: 5px;
-
-    font-size: 15px;
-    font-weight: $font-weight-medium;
-    color: $form-input-mandatory-symbol-color;
-
-    line-height: 1;
-    width: 7px;
+    @extend %mandatory-styles;
   }
 
-  &.widget-textarea, &.widget-range {
+  &.widget-textarea,
+  &.widget-range {
+
     .input-container {
       font-size: 0;
     }
@@ -186,25 +191,13 @@ textarea {
       transition: transform .2s;
     }
 
-    &:focus-within{
+    &:focus-within {
 
-      &:before{
+      &:before {
         transform: rotateZ(180deg);
       }
     }
   }
-}
-
-/* Error Styles */
-%form-error-styles {
-  color: $form-input-color-error;
-  background: $form-input-background-error;
-  border-color: $form-input-border-color-error;
-
-  &::-webkit-input-placeholder { color: $form-input-placeholder-color-error; }
-  &::-moz-placeholder { color: $form-input-placeholder-color-error; }
-  &:-ms-input-placeholder { color: $form-input-placeholder-color-error; }
-  &:-moz-placeholder { color: $form-input-placeholder-color-error; }
 }
 
 .widget-checkbox,
@@ -251,7 +244,7 @@ textarea {
     position: relative;
     z-index: 2;
 
-    color: $form-checkbox-radio-label-color;
+    color: var(--cbx-clr-label);
     font-size: $form-checkbox-radio-label-font-size;
     // Calculate offset for the label
     padding-left: sum($form-checkbox-radio-size, 10px, 'px');
@@ -286,9 +279,9 @@ textarea {
     }
   }
 
-  &.mandatory{
+  &.mandatory {
 
-    label{
+    label {
       padding-right: 15px;
     }
 
@@ -370,7 +363,8 @@ textarea {
   }
 }
 
-.widget-checkbox, .widget-radio {
+.widget-checkbox,
+.widget-radio {
 
   .grid-list.small-gutter {
 
@@ -388,7 +382,9 @@ textarea {
 // Form-validation
 
 @if ($form-validation == 'Focus') {
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     &:required:focus:invalid {
       @extend %form-error-styles;
     }
@@ -396,7 +392,9 @@ textarea {
 }
 
 @else if ($form-validation == 'Always') {
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     &:required:invalid {
       @extend %form-error-styles;
     }

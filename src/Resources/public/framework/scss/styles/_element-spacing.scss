@@ -1,131 +1,64 @@
-.el-spacing-top-small{
-  margin-top: $element-spacing-xs-small;
+[class*='el-spacing'] {
+  --el-spc-sm: #{$element-spacing-xs-small};
+  --el-spc-md: #{$element-spacing-xs-medium};
+  --el-spc-lg: #{$element-spacing-xs-large};
 }
 
-.el-spacing-bottom-small{
-  margin-bottom: $element-spacing-xs-small;
-}
+.el-spacing {
 
-.el-spacing-top-medium{
-  margin-top: $element-spacing-xs-medium;
-}
+  &-top-small {
+    margin-top: var(--el-spc-sm);
+  }
 
-.el-spacing-bottom-medium{
-  margin-bottom: $element-spacing-xs-medium;
-}
+  &-bottom-small {
+    margin-bottom: var(--el-spc-sm);
+  }
 
-.el-spacing-top-large{
-  margin-top: $element-spacing-xs-large;
-}
+  &-top-medium {
+    margin-top: var(--el-spc-md);
+  }
 
-.el-spacing-bottom-large{
-  margin-bottom: $element-spacing-xs-large;
+  &-bottom-medium {
+    margin-bottom: var(--el-spc-md);
+  }
+
+  &-top-large {
+    margin-top: var(--el-spc-lg);
+  }
+
+  &-bottom-large {
+    margin-bottom: var(--el-spc-lg);
+  }
 }
 
 @include media-breakpoint('s') {
-
-  .el-spacing-top-small{
-    margin-top: $element-spacing-s-small;
-  }
-
-  .el-spacing-bottom-small{
-    margin-bottom: $element-spacing-s-small;
-  }
-
-  .el-spacing-top-medium{
-    margin-top: $element-spacing-s-medium;
-  }
-
-  .el-spacing-bottom-medium{
-    margin-bottom: $element-spacing-s-medium;
-  }
-
-  .el-spacing-top-large{
-    margin-top: $element-spacing-s-large;
-  }
-
-  .el-spacing-bottom-large{
-    margin-bottom: $element-spacing-s-large;
+  [class*='el-spacing'] {
+    --el-spc-sm: #{$element-spacing-s-small};
+    --el-spc-md: #{$element-spacing-s-medium};
+    --el-spc-lg: #{$element-spacing-s-large};
   }
 }
 
 @include media-breakpoint('m') {
-
-  .el-spacing-top-small{
-    margin-top: $element-spacing-m-small;
-  }
-
-  .el-spacing-bottom-small{
-    margin-bottom: $element-spacing-m-small;
-  }
-
-  .el-spacing-top-medium{
-    margin-top: $element-spacing-m-medium;
-  }
-
-  .el-spacing-bottom-medium{
-    margin-bottom: $element-spacing-m-medium;
-  }
-
-  .el-spacing-top-large{
-    margin-top: $element-spacing-m-large;
-  }
-
-  .el-spacing-bottom-large{
-    margin-bottom: $element-spacing-m-large;
+  [class*='el-spacing'] {
+    --el-spc-sm: #{$element-spacing-m-small};
+    --el-spc-md: #{$element-spacing-m-medium};
+    --el-spc-lg: #{$element-spacing-m-large};
   }
 }
 
 @include media-breakpoint('l') {
-
-  .el-spacing-top-small{
-    margin-top: $element-spacing-l-small;
-  }
-
-  .el-spacing-bottom-small{
-    margin-bottom: $element-spacing-l-small;
-  }
-
-  .el-spacing-top-medium{
-    margin-top: $element-spacing-l-medium;
-  }
-
-  .el-spacing-bottom-medium{
-    margin-bottom: $element-spacing-l-medium;
-  }
-
-  .el-spacing-top-large{
-    margin-top: $element-spacing-l-large;
-  }
-
-  .el-spacing-bottom-large{
-    margin-bottom: $element-spacing-l-large;
+  [class*='el-spacing'] {
+    --el-spc-sm: #{$element-spacing-l-small};
+    --el-spc-md: #{$element-spacing-l-medium};
+    --el-spc-lg: #{$element-spacing-l-large};
   }
 }
 
 @include media-breakpoint('xl') {
-
-  .el-spacing-top-small{
-    margin-top: $element-spacing-xl-small;
-  }
-
-  .el-spacing-bottom-small{
-    margin-bottom: $element-spacing-xl-small;
-  }
-
-  .el-spacing-top-medium{
-    margin-top: $element-spacing-xl-medium;
-  }
-
-  .el-spacing-bottom-medium{
-    margin-bottom: $element-spacing-xl-medium;
-  }
-
-  .el-spacing-top-large{
-    margin-top: $element-spacing-xl-large;
-  }
-
-  .el-spacing-bottom-large{
-    margin-bottom: $element-spacing-xl-large;
+  [class*='el-spacing'] {
+    --el-spc-sm: #{$element-spacing-xl-small};
+    --el-spc-md: #{$element-spacing-xl-medium};
+    --el-spc-lg: #{$element-spacing-xl-large};
   }
 }

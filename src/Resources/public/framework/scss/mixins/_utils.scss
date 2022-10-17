@@ -384,6 +384,7 @@
   @return compareUnit($a, $b, 'min', $f);
 }
 
+
 // Compares two values and returns the maximum.
 // The output can be changed to rem or px.
 //
@@ -398,28 +399,56 @@
 }
 
 
-// Below is a list of deprecated functions that will be removed in the future
+// Splits a css string into a list of multiple strings
 //
-// [1]  button-padding(): This was replaced with the more generic subList()
-// [2]  shorten-decimal-value(): Was used in combination with percentage() and
-//      was replaced with shortPercentage
+// @example
+// selector-split(.hello,.world) => ['.hello' '.world']
 //
+// @param $string [Sass::Script::Value::String]
+// @param $separator [Sass::Script::Value::String]
+// @return [Sass::Script::Value::List]
+//
+@function selector-split($string, $separator) {
+  $split-arr: ();
+  $index : str-index($string, $separator);
 
-// [1]
-@function button-padding($padding, $border-width) {
-  @warn "The function 'button-padding() is deprecated and will be removed in ContaoThemeManager v.2, use subList() instead.";
+  @while $index != null {
+    $item:      str-slice($string, 1, $index - 1);
+    $split-arr: append($split-arr, $item);
+    $string:    str-slice($string, $index + 1);
+    $index :    str-index($string, $separator);
+  }
 
-  @return subList($padding, $border-width);
+  @return append($split-arr, $string);
 }
 
-// [2]
-@function shorten-decimal-value($number) {
-  @warn "The function 'shorten-decimal-value()' is deprecated and will be removed in ContaoThemeManager v.2, use shortPercentage() instead.";
 
-  @if unitless($number) {
-    @return (floor($number * 1000000) / 1000000);
+// Converts a Sass list into a string with a separator
+//
+// @example
+// list-to-string(['.foo' '.bar' '.hello' '.world'], ',') => ".foo, .bar, .hello, .world"
+//
+// @param $list [Sass::Script::Value::List]
+// @param $separator [Sass::Script::Value::String]
+// @param $nested [Sass::Script::Value::Bool]
+// @return [Sass::Script::Value::String]
+//
+@function list-to-string($list, $separator: '', $nested: false) {
+  $result: null;
+
+  @for $i from 1 through length($list) {
+    $e: nth($list, $i);
+
+    @if type-of($e) == list {
+      $result: $result#{list-to-string($e, $separator, true)};
+    } @else {
+      $result: if(
+          $i != length($list) or $nested,
+          $result#{$e}#{$separator},
+          $result#{$e}
+      );
+    }
   }
-  @else {
-    @return $number;
-  }
+
+  @return $result;
 }

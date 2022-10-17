@@ -10,13 +10,9 @@ table {
   min-width: 310px;
   width: 100%;
 
-  //position caption at bottom
   caption-side: bottom;
-
-  //border for table
   border: 1px solid rgba(0,0,0,.2);
 
-  //Colored head and foot
   th,
   tfoot tr {
     background: $light;
@@ -28,12 +24,6 @@ table {
   }
 
   caption {
-    //Styles to simulate headline
-    //text-align: left;
-    //margin-bottom: 1rem;
-    //font-size: rem(20);
-    //color: $h4-color;
-
     //Styles for description
     text-align: center;
     color: #adadad;
@@ -54,11 +44,7 @@ table {
   .row_first {
 
     td {
-      //border-top: 0 none;
-
       border-top: 1px solid #d9d9d9;
-      //double border for footer and header
-      //border-top: 3px double #d9d9d9;
     }
   }
 
@@ -66,13 +52,9 @@ table {
 
     td {
       border-top: 1px solid #d9d9d9;
-
-      //double border for footer and header
-      //border-top: 3px double #d9d9d9;
     }
   }
 
-  //Styles for boxed mode
   th, td {
     padding: 15px 20px;
   }
@@ -82,5 +64,3 @@ table {
     padding-right: initial;
   }
 }
-
-

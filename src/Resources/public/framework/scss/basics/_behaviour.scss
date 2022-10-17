@@ -1,7 +1,5 @@
 .ov {
-  overflow: visible;
-
-  > .inside {
+  &, & >.inside {
     overflow: visible;
   }
 }

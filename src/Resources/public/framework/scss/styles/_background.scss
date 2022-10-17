@@ -1,15 +1,18 @@
-.bg-primary {
-  background-color: $primary;
-}
+.bg {
 
-.bg-secondary {
-  background-color: $secondary;
-}
+  &-primary {
+    background-color: $primary;
+  }
 
-.bg-light {
-  background-color: $light;
-}
+  &-secondary {
+    background-color: $secondary;
+  }
 
-.bg-dark {
-  background-color: $dark;
+  &-light {
+    background-color: $light;
+  }
+
+  &-dark {
+    background-color: $dark;
+  }
 }

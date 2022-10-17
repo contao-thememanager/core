@@ -1,152 +1,68 @@
-.text-color-invert {
+.text-color {
 
-  h1, .h1 {
-    color: $h1-color-invert;
-  }
+  &-invert {
+    --h1-clr:        #{$h1-color-invert};
+    --h2-clr:        #{$h2-color-invert};
+    --h3-clr:        #{$h3-color-invert};
+    --h4-clr:        #{$h4-color-invert};
+    --h5-clr:        #{$h5-color-invert};
+    --h6-clr:        #{$h6-color-invert};
 
-  h2, .h2 {
-    color: $h2-color-invert;
-  }
+    --a-clr:         #{$link-color-invert};
+    --a-clr-hvr:     #{$link-hover-color-invert};
+    --a-td:          #{$link-decoration-invert};
+    --a-td-hvr:      #{$link-hover-decoration-invert};
 
-  h3, .h3 {
-    color: $h3-color-invert;
-  }
+    --cbx-clr-label: #{$form-checkbox-radio-label-color-invert};
 
-  h4, .h4 {
-    color: $h4-color-invert;
-  }
-
-  h5, .h5 {
-    color: $h5-color-invert;
-  }
-
-  h6, .h6 {
-    color: $h6-color-invert;
-  }
-
-  p, ol, ul, .captcha_text {
-    color: $text-color-invert;
-  }
-
-  a {
-    color: $link-color-invert;
-    text-decoration: $link-decoration-invert;
-
-    &:hover {
-      color: $link-hover-color-invert;
-      text-decoration: $link-hover-decoration-invert;
+    p, ol, ul, b, strong,
+    .captcha_text, .icon, .hl-design-lined:after {
+      color: $text-color-invert;
     }
   }
 
-  .icon {
-    color: $text-color-invert;
-  }
+  &-regular {
+    --h1-clr:        #{$h1-color};
+    --h2-clr:        #{$h2-color};
+    --h3-clr:        #{$h3-color};
+    --h4-clr:        #{$h4-color};
+    --h5-clr:        #{$h5-color};
+    --h6-clr:        #{$h6-color};
 
-  .hl-design-lined:after{
-    background-color: $text-color-invert;
-  }
+    --a-clr:         #{$link-color-regular};
+    --a-clr-hvr:     #{$link-hover-color-regular};
+    --a-td:          #{$link-decoration-regular};
+    --a-td-hvr:      #{$link-hover-decoration-regular};
 
-  .widget-checkbox,
-  .widget-radio {
+    --cbx-clr-label: #{$form-checkbox-radio-label-color};
 
-    label {
-      color: $form-checkbox-radio-label-color-invert;
+    p, ol, ul, b, strong,
+    .captcha_text, .icon, .hl-design-lined:after {
+      color: $text-color-regular;
     }
   }
 }
 
-.text-color-regular {
+.link-color {
 
-  h1, .h1 {
-    color: $h1-color;
+  &-invert {
+    --a-clr:     #{$link-color-invert};
+    --a-clr-hvr: #{$link-hover-color-invert};
+    --a-td:      #{$link-decoration-invert};
+    --a-td-hvr:  #{$link-hover-decoration-invert};
   }
 
-  h2, .h2 {
-    color: $h2-color;
+  &-extra {
+    --a-clr:     #{$link-color-extra};
+    --a-clr-hvr: #{$link-hover-color-extra};
+    --a-td:      #{$link-decoration-extra};
+    --a-td-hvr:  #{$link-hover-decoration-extra};
   }
 
-  h3, .h3 {
-    color: $h3-color;
-  }
-
-  h4, .h4 {
-    color: $h4-color;
-  }
-
-  h5, .h5 {
-    color: $h5-color;
-  }
-
-  h6, .h6 {
-    color: $h6-color;
-  }
-
-  p, ol, ul, .captcha_text {
-    color: $text-color-regular;
-  }
-
-  a {
-    color: $link-color-regular;
-    text-decoration: $link-decoration-regular;
-
-    &:hover {
-      color: $link-hover-color-regular;
-      text-decoration: $link-hover-decoration-regular;
-    }
-  }
-
-  .icon {
-    color: $text-color-regular;
-  }
-
-  .hl-design-lined:after{
-    background-color: $text-color-regular;
-  }
-
-  .widget-checkbox,
-  .widget-radio {
-
-    label {
-      color: $form-checkbox-radio-label-color;
-    }
-  }
-}
-
-.link-color-invert {
-
-  a {
-    color: $link-color-invert;
-    text-decoration: $link-decoration-invert;
-
-    &:hover {
-      color: $link-hover-color-invert;
-      text-decoration: $link-hover-decoration-invert;
-    }
-  }
-}
-
-.link-color-extra {
-
-  a {
-    color: $link-color-extra;
-    text-decoration: $link-decoration-extra;
-
-    &:hover {
-      color: $link-hover-color-extra;
-      text-decoration: $link-hover-decoration-extra;
-    }
-  }
-}
-
-.link-color-regular {
-
-  a {
-    color: $link-color-regular;
-    text-decoration: $link-decoration-regular;
-
-    &:hover {
-      color: $link-hover-color-regular;
-      text-decoration: $link-hover-decoration-regular;
-    }
+  &-regular {
+    --a-clr:     #{$link-color-regular};
+    --a-clr-hvr: #{$link-hover-color-regular};
+    --a-td:      #{$link-decoration-regular};
+    --a-td-hvr:  #{$link-hover-decoration-regular};
   }
 }

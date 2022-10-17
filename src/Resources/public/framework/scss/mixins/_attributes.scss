@@ -1,21 +1,20 @@
-@mixin box-sizing($value: border-box){
+@mixin box-sizing($value: border-box) {
   -webkit-box-sizing: $value;
   -moz-box-sizing: $value;
   box-sizing: $value;
 }
 
-@mixin box-shadow($value: $box-shadow, $inset: false){
-  @if($inset){
+@mixin box-shadow($value: $box-shadow, $inset: false) {
+  @if($inset) {
     -webkit-box-shadow: inset $value;
     box-shadow: inset $value;
-  }
-  @else{
+  } @else {
     -webkit-box-shadow: $value;
     box-shadow: $value;
   }
 }
 
-@mixin user-select($value: none){
+@mixin user-select($value: none) {
   -webkit-user-select: $value;
   user-select: $value;
 }

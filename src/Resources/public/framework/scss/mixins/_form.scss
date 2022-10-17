@@ -1,4 +1,4 @@
-@mixin form-field-icon ($class-suffix, $content, $blnIcon: false, $font-size: $form-input-font-size,){
+@mixin form-field-icon ($class-suffix, $content, $blnIcon: false, $font-size: $form-input-font-size) {
   .f-icon-#{$class-suffix} > .input-container:before {
     @if $blnIcon {
       @include icon($content, $font-size);
@@ -14,7 +14,7 @@
   }
 }
 
-@mixin form-field-image ($class-suffix, $content, $blnIcon: false,  $font-size : 1em){
+@mixin form-field-image ($class-suffix, $content, $blnIcon: false,  $font-size : 1em) {
   .form-image.form-img-#{$class-suffix} {
 
     &.widget,

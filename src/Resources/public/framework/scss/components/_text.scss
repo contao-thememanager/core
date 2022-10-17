@@ -1,40 +1,46 @@
-.ce_text{
+.ce_text {
 
-  .image_container{
+  .image_container {
     width: 100%;
 
-    &.float_right, &.float_left, &.float_above{
-      margin-bottom: divide($grid-gutter-width, 2);
-    }
+    &.float {
 
-    &.float_below{
-      margin-top: divide($grid-gutter-width, 2);
+      &_right,
+      &_left,
+      &_above {
+        margin-bottom: divide($grid-gutter-width, 2);
+      }
+
+      &_below {
+        margin-top: divide($grid-gutter-width, 2);
+      }
     }
   }
 }
 
 @include media-breakpoint('xs') {
-  .ce_text{
 
-    &.width-25 .image_container{
+  .ce_text {
+
+    &.width-25 .image_container {
       width: 25%;
     }
 
-    &.width-33 .image_container{
-      width: 33.333%;
+    &.width-33 .image_container {
+      width: 33.3333%;
     }
 
-    &.width-50 .image_container{
+    &.width-50 .image_container {
       width: 50%;
     }
 
-    .image_container{
+    .image_container {
 
-      &.float_right{
+      &.float_right {
         margin-left: divide($grid-gutter-width, 2);
       }
 
-      &.float_left{
+      &.float_left {
         margin-right: divide($grid-gutter-width, 2);
       }
     }
