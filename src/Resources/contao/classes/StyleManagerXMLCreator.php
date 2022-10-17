@@ -3,8 +3,8 @@
 namespace ContaoThemeManager\Core;
 
 use Contao\File;
-use Oveleon\ContaoComponentStyleManager\StyleManagerModel;
-use Oveleon\ContaoComponentStyleManager\StyleManagerArchiveModel;
+use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
+use Oveleon\ContaoComponentStyleManager\Model\StyleManagerArchiveModel;
 
 class StyleManagerXMLCreator
 {
