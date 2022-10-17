@@ -71,7 +71,7 @@
           $selectorList: ();
 
           @for $i from 1 through length($prefixList) {
-            $selectorList: join($selectorList, #{nth($prefixList, $i)}#{breakpoint-infix($bp, $bps)})
+            $selectorList: join($selectorList, #{#{nth($prefixList, $i)}#{breakpoint-infix($bp, $bps)}});
           }
 
           #{list-to-string($selectorList, ',')} {
