@@ -17,7 +17,7 @@
     "ext-simplexml": "*",
     "php": "^7.4 || ^8.0",
     "contao/core-bundle":"^4.13",
-    "oveleon/contao-component-style-manager":"3.0.x-dev as 3.0",
+    "oveleon/contao-component-style-manager":"^3.0",
     "oveleon/contao-theme-compiler-bundle":"^1.1",
     "oveleon/contao-config-driver-bundle":"^1.0",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
@@ -48,7 +48,7 @@
   },
   "extra":{
     "branch-alias": {
-      "dev-master": "1.4.x-dev"
+      "dev-master": "2.0.x-dev"
     },
     "contao-manager-plugin": "ContaoThemeManager\\Core\\ContaoManager\\Plugin"
   }
