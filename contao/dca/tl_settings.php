@@ -6,6 +6,7 @@
  * (c) https://www.oveleon.de/
  */
 
+use Contao\Config;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\FilesModel;
 use Contao\System;
@@ -24,15 +25,24 @@ System::loadLanguageFile('tl_thememanager_settings');
 $GLOBALS['TL_DCA']['tl_settings']['fields']['thememanagerIconFont'] = [
     'label'         => &$GLOBALS['TL_LANG']['tl_thememanager_settings']['thememanagerIconFont'],
     'inputType'     => 'fileTree',
+    'load_callback' => [ static function ($strValue) {
+        if (null === $strValue || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strValue))
+        {
+            Config::set('thememanagerIconFont', null);
+            return '';
+        }
+
+        return FilesModel::findByPath($strValue)->uuid;
+    }],
     'save_callback' => [ static function ($strValue) {
-            $strPath = FilesModel::findByUuid($strValue)->path;
+        if (null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath))
+        {
+            Config::set('thememanagerIconFont', null);
+            return '';
+        }
 
-            if (null === $strPath) {
-                return null;
-            }
+        return $strPath;
 
-            return $strPath;
-        },
-    ],
+    }],
     'eval'          => ['fieldType'=>'radio', 'filesOnly'=>true, 'isGallery'=>false, 'extensions'=>'svg']
 ];
