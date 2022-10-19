@@ -1,8 +1,17 @@
 <?php
 
+/*
+ * This file is part of Contao ThemeManager Core.
+ *
+ * @package     core
+ * @license     MIT
+ * @author      Sebastian Zoglowek <https://github.com/zoglo>
+ */
+
 namespace ContaoThemeManager\Core;
 
 use Contao\File;
+use DOMException;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerArchiveModel;
 
@@ -10,13 +19,6 @@ class StyleManagerXMLCreator
 {
     /**
      * Creates a StyleManager archive
-     *
-     * @param int $id
-     * @param string $title
-     * @param string $identifier
-     * @param string|null $groupAlias
-     * @param int|null $sorting
-     * @return StyleManagerArchiveModel
      */
     public static function createStyleManagerArchive(int $id, string $title, string $identifier, ?string $groupAlias, ?int $sorting): StyleManagerArchiveModel
     {
@@ -32,14 +34,6 @@ class StyleManagerXMLCreator
 
     /**
      * Creates a StyleManager child
-     *
-     * @param int $pid
-     * @param string $title
-     * @param string $alias
-     * @param array $cssClasses
-     * @param array $elements
-     * @param array|null $options
-     * @return StyleManagerModel
      */
     public static function createStyleManagerChild(int $pid, string $title, string $alias, array $cssClasses, array $elements, ?array $options): StyleManagerModel
     {
@@ -50,9 +44,9 @@ class StyleManagerXMLCreator
         $objChild->cssClasses = serialize($cssClasses);
 
         // Add elements
-        foreach($elements as $k => $v)
+        foreach ($elements as $k => $v)
         {
-            if(\is_array($v) && !empty($v))
+            if (\is_array($v) && !empty($v))
             {
                 $v = serialize($v);
             }
@@ -61,7 +55,7 @@ class StyleManagerXMLCreator
         }
 
         // Add options
-        foreach($options as $k => $v)
+        foreach ($options as $k => $v)
         {
             $objChild->$k = $v;
         }
@@ -76,7 +70,7 @@ class StyleManagerXMLCreator
      * @param array                     $arrChildren   // Style-Manager children
      * @param string                    $strPath    // Path without suffix
      * @return bool
-     * @throws \DOMException
+     * @throws DOMException
      */
     public static function createFile(StyleManagerArchiveModel $objArchive, array $arrChildren, string $strPath): bool
     {
@@ -91,11 +85,7 @@ class StyleManagerXMLCreator
 
     /**
      * Creates the xml structure and returns it as a string
-     *
-     * @param StyleManagerArchiveModel $objArchive
-     * @param array $arrChildren
-     * @return string
-     * @throws \DOMException
+     * @throws DOMException
      */
     public static function createStructure(StyleManagerArchiveModel $objArchive, array $arrChildren): string
     {
@@ -106,19 +96,12 @@ class StyleManagerXMLCreator
         $xml->appendChild($archives = $xml->createElement('archives'));
         self::addArchiveData($xml, $archives, $objArchive, $arrChildren);
 
-
         return $xml->saveXML();
     }
 
     /**
      * Adds an archive data row to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMNode $archives
-     * @param StyleManagerArchiveModel $objArchive
-     * @param array $arrChildren
-     * @return \DOMDocument
-     * @throws \DOMException
+     * @throws DOMException
      */
     private static function addArchiveData(\DOMDocument $xml, \DOMNode $archives, StyleManagerArchiveModel $objArchive, array $arrChildren): \DOMDocument
     {
@@ -138,14 +121,9 @@ class StyleManagerXMLCreator
 
     /**
      * Adds child data row to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMElement $archive
-     * @param array $arrChildren
-     * @return void
-     * @throws \DOMException
+     * @throws DOMException
      */
-    private static function addChildrenData(\DOMDocument $xml, \DOMElement $archive, array $arrChildren)
+    private static function addChildrenData(\DOMDocument $xml, \DOMElement $archive, array $arrChildren): void
     {
         // Add children node
         $children = $xml->createElement('children');
@@ -165,14 +143,9 @@ class StyleManagerXMLCreator
 
     /**
      * Adds an archive data row to the XML document
-     *
-     * @param \DOMDocument $xml
-     * @param \DOMNode $row
-     * @param array $arrData
-     * @return void
-     * @throws \DOMException
+     * @throws DOMException
      */
-    private static function addRowData(\DOMDocument $xml, \DOMNode $row, array $arrData)
+    private static function addRowData(\DOMDocument $xml, \DOMNode $row, array $arrData): void
     {
         foreach ($arrData as $k=>$v)
         {

@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -8,21 +9,21 @@
 namespace ContaoThemeManager\Core;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-use Contao\DataContainer;
+use Contao\StringUtil;
 
 class ThemeManager
 {
     /**
      * Extends the headline field for modules and content elements.
      */
-    public function extendHeadlineField($dc)
+    public function extendHeadlineField($dc): void
     {
         $objPalette = PaletteManipulator::create()
-            ->addField(array('headlineStyle', 'headline2', 'headline2Style'), 'headline');
+            ->addField(['headlineStyle', 'headline2', 'headline2Style'], 'headline');
 
         foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
         {
-            if($name === '__selector__')
+            if ($name === '__selector__')
             {
                 continue;
             }
@@ -36,25 +37,11 @@ class ThemeManager
 
     /**
      * Extends the headline field for modules and content elements.
-     *
-     * @param $context
      */
-    public function addHeadlineFieldsToTemplate(&$context)
+    public function addHeadlineFieldsToTemplate(&$context): void
     {
-        $arrHeadline2 = \StringUtil::deserialize($context->headline2);
+        $arrHeadline2 = StringUtil::deserialize($context->headline2);
         $context->headline2 = \is_array($arrHeadline2) ? $arrHeadline2['value'] : $arrHeadline2;
         $context->hl2 = \is_array($arrHeadline2) ? $arrHeadline2['unit'] : 'h1';
-    }
-
-    /**
-     * Extends the headline palette for modules and content elements.
-     *
-     * @param DataContainer $dc
-     *
-     * @deprecated Deprecated since ThemeManager 1.2.4, to be removed in ThemeManager 2.0.
-     */
-    public function extendHeadlinePalette($dc)
-    {
-        return;
     }
 }

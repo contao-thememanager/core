@@ -5,7 +5,11 @@
  * (c) https://www.oveleon.de/
 */
 
-$GLOBALS['TL_DCA']['tl_layout']['fields']['framework']['load_callback'][] = array('tl_layout_thememanager', 'checkSelectedFramework');
+use Contao\StringUtil;
+use Contao\DataContainer;
+use Contao\Message;
+
+$GLOBALS['TL_DCA']['tl_layout']['fields']['framework']['load_callback'][] = ['tl_layout_thememanager', 'checkSelectedFramework'];
 
 /**
  * Provide miscellaneous methods that are used by the data configuration array.
@@ -16,20 +20,15 @@ class tl_layout_thememanager extends Contao\Backend
 {
     /**
      * Display message if layout.css or responsive.css is selected
-     *
-     * @param $value
-     * @param \Contao\DataContainer $dc
-     *
-     * @return string
      */
-	public function checkSelectedFramework($value, Contao\DataContainer $dc)
-	{
+	public function checkSelectedFramework($value, DataContainer $dc): array|string
+    {
         if (empty($value))
 		{
 			return '';
 		}
 
-		$array = Contao\StringUtil::deserialize($value);
+		$array = StringUtil::deserialize($value);
 
 		if (empty($array) || !is_array($array))
 		{
@@ -38,8 +37,8 @@ class tl_layout_thememanager extends Contao\Backend
 
 		if (in_array('responsive.css', $array) || in_array('layout.css', $array))
 		{
-            Contao\Message::addInfo(
-                sprintf($GLOBALS['TL_LANG']['tl_layout']['frameworkMessage'], $GLOBALS['TL_LANG']['tl_layout']['responsive.css'][0] . ' (responsive.css), ' . $GLOBALS['TL_LANG']['tl_layout']['layout.css'][0] . ' (layout.css)')
+            Message::addInfo(
+                sprintf(($GLOBALS['TL_LANG']['tl_layout']['frameworkMessage'] ?? null), ($GLOBALS['TL_LANG']['tl_layout']['responsive.css'][0] ?? null) . ' (responsive.css), ' . ($GLOBALS['TL_LANG']['tl_layout']['layout.css'][0] ?? null) . ' (layout.css)')
             );
 		}
 
