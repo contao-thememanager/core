@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -11,6 +12,7 @@ use Contao\File;
 use Contao\StringUtil;
 use Contao\System;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
+use SimpleXMLElement;
 use Symfony\Component\Filesystem\Path;
 
 class IconGenerator
@@ -103,7 +105,7 @@ class IconGenerator
 
     private function importIconFiles(): ?string
     {
-        if(!($fontPath = ($GLOBALS['CTM_SETTINGS']['iconFont'] ?? null)))
+        if (!($fontPath = ($GLOBALS['CTM_SETTINGS']['iconFont'] ?? null)))
         {
             $this->compiler->msg('No icon font specified within $GLOBALS[\'CTM_SETTINGS\'][\'iconFont\']', FileCompiler::MSG_ERROR);
             return null;
@@ -116,7 +118,7 @@ class IconGenerator
         }
 
         // Scan files
-        $arrFiles = scan($absFontPath);
+        $arrFiles = array_values(array_diff(scandir($absFontPath), ['..', '.']));
         $arrFileInformation = [];
 
         foreach ($arrFiles as $file)
@@ -124,13 +126,13 @@ class IconGenerator
             $arrFileInformation[Path::getExtension($file, 1)] = pathinfo($file);
         }
 
-        if(!\array_key_exists('svg', $arrFileInformation))
+        if (!\array_key_exists('svg', $arrFileInformation))
         {
             $this->compiler->msg('Could not find a .svg file within "' . $absFontPath . '"', FileCompiler::MSG_ERROR);
             return null;
         }
 
-        if(!\array_key_exists('woff', $arrFileInformation) || ($arrFileInformation['woff']['filename'] !== $arrFileInformation['svg']['filename']))
+        if (!\array_key_exists('woff', $arrFileInformation) || ($arrFileInformation['woff']['filename'] !== $arrFileInformation['svg']['filename']))
         {
             $this->compiler->msg('Could not find a related .woff file within "' . $absFontPath . '"', FileCompiler::MSG_ERROR);
             return null;
@@ -141,16 +143,16 @@ class IconGenerator
 
     private function getIcons($iconPath): ?array
     {
-        if(!file_exists($filePath = $iconPath . '.svg'))
+        if (!file_exists($filePath = $iconPath . '.svg'))
         {
             $this->compiler->msg('File: "' . $filePath . '" does not exist', FileCompiler::MSG_ERROR);
             return [];
         }
 
-        $svg = new \SimpleXMLElement($iconPath . '.svg' , null, true);
+        $svg = new SimpleXMLElement($iconPath . '.svg' , null, true);
 
         // If no glyphs are found
-        if(!isset($svg->defs[0]->font[0]->glyph) || !$svg->defs[0]->font[0]->glyph->count())
+        if (!isset($svg->defs[0]->font[0]->glyph) || !$svg->defs[0]->font[0]->glyph->count())
         {
             $this->compiler->msg('Could not find icons in ' . $iconPath . '.svg', FileCompiler::MSG_WARN);
             return null;
