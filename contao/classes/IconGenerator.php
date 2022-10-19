@@ -8,6 +8,7 @@
 
 namespace ContaoThemeManager\Core;
 
+use Contao\Config;
 use Contao\File;
 use Contao\StringUtil;
 use Contao\System;
@@ -105,7 +106,7 @@ class IconGenerator
 
     private function importIconFiles(): ?string
     {
-        if (!($fontPath = ($GLOBALS['CTM_SETTINGS']['iconFont'] ?? null)))
+        if (!($fontPath = (Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont'])) ?? null)
         {
             $this->compiler->msg('No icon font specified within $GLOBALS[\'CTM_SETTINGS\'][\'iconFont\']', FileCompiler::MSG_ERROR);
             return null;

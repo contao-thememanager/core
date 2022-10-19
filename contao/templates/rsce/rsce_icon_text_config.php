@@ -1,5 +1,8 @@
 <?php
 // rsce_icon_text.php
+
+use Contao\Config;
+
 return array(
     'label' => array(
         'de' => array(
@@ -21,7 +24,7 @@ return array(
                 'en' => array('Icon', 'Please select an icon from the icon overview.'),
             ),
             'inputType' => 'rocksolid_icon_picker',
-            'eval' => array('iconFont' => $GLOBALS['CTM_SETTINGS']['iconFont']),
+            'eval' => array('iconFont' => Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont']),
         ),
         'text' => array(
             'label' => array(
