@@ -33,8 +33,8 @@
     "php": "^7.4 || ^8.0",
     "contao/core-bundle": "^4.13",
     "oveleon/contao-component-style-manager": "^3.0",
-    "oveleon/contao-theme-compiler-bundle": "^1.1",
-    "oveleon/contao-config-driver-bundle": "^1.0",
+    "oveleon/contao-theme-compiler-bundle": "^1.2",
+    "oveleon/contao-config-driver-bundle": "^1.1",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
     "madeyourday/contao-rocksolid-icon-picker": "^2.0",
     "symfony/filesystem": "^5.4"
@@ -51,13 +51,13 @@
       "ContaoThemeManager\\Core\\": "src/"
     },
     "classmap": [
-      "src/Resources/contao/"
+      "contao/"
     ],
     "exclude-from-classmap": [
-      "src/Resources/contao/config/",
-      "src/Resources/contao/dca/",
-      "src/Resources/contao/languages/",
-      "src/Resources/contao/templates/"
+      "contao/config/",
+      "contao/dca/",
+      "contao/languages/",
+      "contao/templates/"
     ]
   },
   "extra": {
