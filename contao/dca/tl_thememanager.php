@@ -6,6 +6,9 @@
 */
 
 use Contao\Backend;
+use Contao\BackendUser;
+use Contao\CoreBundle\Exception\AccessDeniedException;
+use Oveleon\ContaoThemeCompilerBundle\CompilerUtils;
 
 $GLOBALS['TL_DCA']['tl_thememanager'] = [
     // Config
@@ -20,12 +23,12 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = [
             ['tl_thememanager', 'checkPermission']
         ],
 		'onsubmit_callback' => [
-			[Oveleon\ContaoThemeCompilerBundle\CompilerUtils::class, 'redirectMaintenanceAndCompile']
+			[CompilerUtils::class, 'redirectMaintenanceAndCompile']
         ]
     ],
 	'edit' => [
 		'buttons_callback' => [
-			[Oveleon\ContaoThemeCompilerBundle\CompilerUtils::class, 'addSaveNCompileButton']
+            [CompilerUtils::class, 'addSaveNCompileButton']
         ]
     ]
 ];
@@ -44,13 +47,13 @@ class tl_thememanager extends Backend
     public function __construct()
     {
         parent::__construct();
-        $this->import('BackendUser', 'User');
+        $this->import(BackendUser::class, 'User');
     }
 
     /**
      * Check permissions to edit the table
      *
-     * @throws Contao\CoreBundle\Exception\AccessDeniedException
+     * @throws AccessDeniedException
      */
     public function checkPermission()
     {
