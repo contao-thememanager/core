@@ -39,3 +39,7 @@
 
 ### Further Links
 - [Documentation](https://github.com/contao-thememanager/docs)
+
+### License
+
+This project is licensed under the AGPL-3.0 License — check  <a href="/oveleon/contao-glossary-bundle/blob/master/LICENSE">LICENSE</a> for more details.
