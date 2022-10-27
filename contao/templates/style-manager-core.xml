@@ -727,7 +727,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:15:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_icon_text_list";i:9;s:20:"rsce_image_text_list";i:10;s:14:"rsce_text_list";i:11;s:9:"hyperlink";i:12;s:7:"toplink";i:13;s:8:"download";i:14;s:9:"downloads";}</field>
+        <field title="contentElements">a:16:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_icon_text_list";i:9;s:20:"rsce_image_text_list";i:10;s:14:"rsce_text_list";i:11;s:9:"hyperlink";i:12;s:7:"toplink";i:13;s:8:"download";i:14;s:9:"downloads";i:15;s:12:"wrapperStart";}</field>
         <field title="extendModule"></field>
         <field title="modules">NULL</field>
         <field title="extendNews"></field>
