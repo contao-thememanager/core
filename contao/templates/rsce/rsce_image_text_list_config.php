@@ -51,7 +51,7 @@ return array(
                         'en' => array('Image', 'Please select an image file from the files directory.'),
                     ),
                     'inputType' => 'fileTree',
-                    'eval' => array('filesOnly' => true, 'fieldType' => 'radio', 'extensions' => 'jpg,jpeg,png,gif,svg', 'mandatory'=>true, 'tl_class'=>'clr'),
+                    'eval' => array('filesOnly' => true, 'fieldType' => 'radio', 'extensions' => 'jpg,jpeg,png,gif,svg,webp', 'mandatory'=>true, 'tl_class'=>'clr'),
                 ),
                 'text' => array(
                     'label' => array(
