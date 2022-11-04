@@ -112,3 +112,10 @@
     }
   }
 }
+
+a {
+  &[class^="i-"],
+  &[class*=" i-"] {
+    display: inline-flex;
+  }
+}
