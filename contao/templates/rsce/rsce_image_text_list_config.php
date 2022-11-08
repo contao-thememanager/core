@@ -101,7 +101,33 @@ return array(
                     ),
                     'inputType' => 'text',
                     'eval'      => array('maxlength'=>64, 'tl_class'=>'w50'),
-                )
+                ),
+                'expert' => array(
+                    'label' => array(
+                        'de' => array('Experteneinstellungen', ''),
+                        'en' => array('Expert settings', ''),
+                    ),
+                    'inputType' => 'group',
+                    'eval'      => array('tl_class'=>'collapsed'),
+                ),
+                'cssClass' => array
+                (
+                    'label' => array(
+                        'de' => array('CSS-Klasse', 'Hier können Sie eine oder mehrere Klassen eingeben.'),
+                        'en' => array('CSS class', 'Here you can enter one or more classes.'),
+                    ),
+                    'inputType'               => 'text',
+                    'eval'                    => array('tl_class'=>'w50')
+                ),
+                'invisible' => array
+                (
+                    'label' => array(
+                        'de' => array('Unsichtbar', 'Das Element auf der Webseite nicht anzeigen.'),
+                        'en' => array('Invisible', 'Hide the element on the website.'),
+                    ),
+                    'inputType'               => 'checkbox',
+                    'eval'                    => array('tl_class'=>'w50 m12')
+                ),
             )
         )
     )
