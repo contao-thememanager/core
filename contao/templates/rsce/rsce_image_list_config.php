@@ -85,7 +85,7 @@ return array(
                     'inputType' => 'text',
                     'eval'      => array('maxlength'=>64, 'tl_class'=>'w50'),
                 ),
-                'expert' => array(
+                'expert_legend' => array(
                     'label' => array(
                         'de' => array('Experteneinstellungen', ''),
                         'en' => array('Expert settings', ''),
@@ -99,8 +99,8 @@ return array(
                         'de' => array('CSS-Klasse', 'Hier können Sie eine oder mehrere Klassen eingeben.'),
                         'en' => array('CSS class', 'Here you can enter one or more classes.'),
                     ),
-                    'inputType'               => 'text',
-                    'eval'                    => array('tl_class'=>'w50')
+                    'inputType' => 'text',
+                    'eval'      => array('tl_class'=>'w50')
                 ),
                 'invisible' => array
                 (
@@ -108,8 +108,8 @@ return array(
                         'de' => array('Unsichtbar', 'Das Element auf der Webseite nicht anzeigen.'),
                         'en' => array('Invisible', 'Hide the element on the website.'),
                     ),
-                    'inputType'               => 'checkbox',
-                    'eval'                    => array('tl_class'=>'w50 m12')
+                    'inputType' => 'checkbox',
+                    'eval'      => array('tl_class'=>'w50 m12')
                 ),
             )
         )
