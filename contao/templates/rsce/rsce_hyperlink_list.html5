@@ -3,8 +3,6 @@
     $this->extend('block_searchable');
 ?>
 
-<?php $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode() ?>
-
 <?php $this->block('content'); ?>
 
 <ul class="c_list<?=$this->styleManager->prepare('icon', ['icon'])->format(' li-icon')?><?=$this->styleManager->prepare('list')->format(' %s')?>">
