@@ -1,12 +1,19 @@
-<?php $this->extend('block_searchable'); ?>
+<?php
+    $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
+    $this->extend('block_searchable');
+?>
 
 <?php $this->block('content'); ?>
 
 <ul class="c_list<?=$this->styleManager->prepare('icon', ['icon'])->format(' li-icon')?><?=$this->styleManager->prepare('list')->format(' %s')?>">
     <?php foreach ($this->list as $item): ?>
-        <li>
-            <a class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
-        </li>
+        <?php if (!$item->invisible || $previewMode): ?>
+            <div class="ce_rsce_hyperlink<?= $item->cssClass ? ' '.$item->cssClass : '' ?><?= $this->styleManager->prepare('layout', ['boxedListElement'])->format(' %s')?> block">
+                <li>
+                    <a class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+                </li>
+            </div>
+        <?php endif; ?>
     <?php endforeach ?>
 </ul>
 
