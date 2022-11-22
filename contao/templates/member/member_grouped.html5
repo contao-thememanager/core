@@ -19,28 +19,28 @@
   <?php $this->endblock(); ?>
 
   <?php if ($this->message): ?>
-    <p class="confirm"><?= $this->message ?></p>
+    <p class="tl_confirm"><?= $this->message ?></p>
   <?php endif; ?>
 
-  <form id="<?= $this->formId ?>" method="post" enctype="<?= $this->enctype ?>">
-    <div class="formbody">
-      <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formId ?>">
-      <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">
+    <form id="<?= $this->formId ?>" method="post" enctype="<?= $this->enctype ?>">
+      <div class="formbody">
+        <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formId ?>">
+        <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">
 
-      <?php foreach ($this->categories as $legend => $category): ?>
-        <fieldset>
-          <?php if ($legend): ?>
-            <legend><?= $legend ?></legend>
-          <?php endif; ?>
-          <?= implode('', $category) ?>
-        </fieldset>
-      <?php endforeach; ?>
+        <?php foreach ($this->categories as $legend => $category): ?>
+          <fieldset>
+            <?php if ($legend): ?>
+              <legend><?= $legend ?></legend>
+            <?php endif; ?>
+            <?= implode('', $category) ?>
+          </fieldset>
+        <?php endforeach; ?>
 
-      <div class="widget widget-submit">
-        <button type="submit" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->slabel ?></button>
+        <div class="widget widget-submit">
+          <button type="submit" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->slabel ?></button>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
 
   </div>
 </div>
