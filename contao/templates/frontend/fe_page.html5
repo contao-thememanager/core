@@ -2,19 +2,19 @@
 <html lang="<?= $this->language ?>"<?php if ($this->isRTL): ?> dir="rtl"<?php endif; ?>>
 <head>
 
-    <?php $this->block('head'); ?>
+  <?php $this->block('head'); ?>
     <meta charset="<?= $this->charset ?>">
     <title><?= $this->title ?></title>
     <base href="<?= $this->base ?>">
 
     <?php $this->block('meta'); ?>
-    <meta name="robots" content="<?= $this->robots ?>">
-    <meta name="description" content="<?= Contao\StringUtil::substr($this->description, 320) ?>">
-    <meta name="generator" content="Contao Open Source CMS">
+      <meta name="robots" content="<?= $this->robots ?>">
+      <meta name="description" content="<?= Contao\StringUtil::substr($this->description, 320) ?>">
+      <meta name="generator" content="Contao Open Source CMS">
     <?php $this->endblock(); ?>
 
     <?php if ($this->canonical): ?>
-        <link rel="canonical" href="<?= $this->canonical ?>">
+      <link rel="canonical" href="<?= $this->canonical ?>">
     <?php endif; ?>
 
     <?= $this->viewport ?>
@@ -22,10 +22,10 @@
     <?= $this->stylesheets ?>
     <?= $this->mooScripts ?>
     <?= $this->head ?>
-    <?php $this->endblock(); ?>
+  <?php $this->endblock(); ?>
 
 </head>
-<body id="top" class="{{ua::class}}<?php if ($this->class) echo ' ' . $this->class; ?>"<?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?>>
+<body id="top"<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?><?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?>>
 
   <?php $this->block('body'); ?>
     <?php $this->sections('top'); ?>
@@ -48,34 +48,34 @@
         <div id="container">
           <div class="inside">
 
-            <?php $this->block('main'); ?>
-              <main id="main">
+          <?php $this->block('main'); ?>
+            <main id="main">
+              <div class="inside">
+                <?= $this->main ?>
+              </div>
+              <?php $this->sections('main'); ?>
+            </main>
+          <?php $this->endblock(); ?>
+
+          <?php $this->block('left'); ?>
+            <?php if ($this->left): ?>
+              <aside id="left" class="grid">
                 <div class="inside">
-                  <?= $this->main ?>
+                  <?= $this->left ?>
                 </div>
-                <?php $this->sections('main'); ?>
-              </main>
-            <?php $this->endblock(); ?>
+              </aside>
+            <?php endif; ?>
+          <?php $this->endblock(); ?>
 
-            <?php $this->block('left'); ?>
-              <?php if ($this->left): ?>
-                <aside id="left" class="grid">
-                  <div class="inside">
-                    <?= $this->left ?>
-                  </div>
-                </aside>
-              <?php endif; ?>
-            <?php $this->endblock(); ?>
-
-            <?php $this->block('right'); ?>
-              <?php if ($this->right): ?>
-                <aside id="right" class="grid">
-                  <div class="inside">
-                    <?= $this->right ?>
-                  </div>
-                </aside>
-              <?php endif; ?>
-            <?php $this->endblock(); ?>
+          <?php $this->block('right'); ?>
+            <?php if ($this->right): ?>
+              <aside id="right" class="grid">
+                <div class="inside">
+                  <?= $this->right ?>
+                </div>
+              </aside>
+            <?php endif; ?>
+          <?php $this->endblock(); ?>
 
           </div>
         </div>
