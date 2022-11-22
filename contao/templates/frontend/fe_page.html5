@@ -11,6 +11,7 @@
       <meta name="robots" content="<?= $this->robots ?>">
       <meta name="description" content="<?= Contao\StringUtil::substr($this->description, 320) ?>">
       <meta name="generator" content="Contao Open Source CMS">
+      <meta name="generator" content="Contao ThemeManager">
     <?php $this->endblock(); ?>
 
     <?php if ($this->canonical): ?>
