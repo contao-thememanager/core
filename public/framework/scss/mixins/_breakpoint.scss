@@ -1,0 +1,84 @@
+@function breakpoint($breakpoint, $context: $breakpoints) {
+  @return map_get($context, $breakpoint);
+}
+
+// Returns a blank string if smallest breakpoint, otherwise returns the name with a dash in front.
+@function breakpoint-infix($name, $breakpoints: $breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint($name, $breakpoints: $breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Returns a max-width breakpoint
+@mixin max-breakpoint($name, $breakpoints: $breakpoints) {
+  $max: breakpoint-min($name, $breakpoints);
+  @if $max {
+    @media (max-width: sub($max, 1px, 'px')) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Iterates through a a map of a css list
+@mixin loop-css-map($map) {
+  @if (type-of($map) == map) {
+    @each $k, $v in $map {
+      @if (type-of($v) == map) {
+        #{$k}{
+          @include loop-css-map($v)
+        }
+      } @else {
+        #{$k}: $v;
+      }
+    }
+  }
+}
+
+// Generates css with an infix for all breakpoints
+@mixin generate-infix-breakpoint-styles($list, $bp-list: $breakpoints) {
+  $bps: map-merge((0:0), $bp-list);
+  @each $bp in map-keys($bps) {
+    @include media-breakpoint($bp, $bps) {
+      @each $prefix, $content in $list {
+        @if not (str-index($prefix, ',')) {
+          #{$prefix}#{breakpoint-infix($bp, $bps)} {
+            @include loop-css-map($content);
+          }
+        }
+        // In case another selector should have the same styles
+        // See: hl-align which is deprecated
+        @else {
+          $prefixList: selector-split($prefix, ',');
+
+          $selector: $prefix;
+          $selectorList: ();
+
+          @for $i from 1 through length($prefixList) {
+            $selectorList: join($selectorList, #{#{nth($prefixList, $i)}#{breakpoint-infix($bp, $bps)}});
+          }
+
+          #{list-to-string($selectorList, ',')} {
+            @include loop-css-map($content);
+          }
+        }
+      }
+    }
+  }
+}

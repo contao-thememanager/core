@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_content.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_content.headlineStyle.0">
+        <source>Class (Headline)</source>
+        <target>Klasse (Überschrift)</target>
+      </trans-unit>
+      <trans-unit id="tl_content.headlineStyle.1">
+        <source>Here you can add a class for headline.</source>
+        <target>Hier können Sie der Überschrift eine klasse hinzufügen.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.headline2.0">
+        <source>Headline 2</source>
+        <target>Überschrift 2</target>
+      </trans-unit>
+      <trans-unit id="tl_content.headline2.1">
+        <source>Here you can add a second headline to the content element.</source>
+        <target>Hier können Sie dem Inhaltselement eine zweite Überschrift hinzufügen.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.headline2Style.0">
+        <source>Class (Headline 2)</source>
+        <target>Klasse (Überschrift 2)</target>
+      </trans-unit>
+      <trans-unit id="tl_content.headline2Style.1">
+        <source>Here you can add a class for headline 2.</source>
+        <target>Hier können Sie der Überschrift 2 eine klasse hinzufügen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

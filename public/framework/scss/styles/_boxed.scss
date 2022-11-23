@@ -1,0 +1,18 @@
+.boxed {
+
+  > .inside {
+    background-color: $boxed-background-color;
+    border-color: $boxed-border-color;
+    border-radius: $boxed-border-radius;
+    border-style: $boxed-border-style;
+    border-width: $boxed-border-width;
+    padding: $boxed-padding;
+  }
+
+  &.boxed-shadow {
+
+    > .inside {
+      box-shadow: $box-shadow;
+    }
+  }
+}

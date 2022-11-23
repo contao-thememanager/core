@@ -1,0 +1,157 @@
+.ce_rsce_image_text {
+
+  .c_image {
+    margin-bottom: $component-inner-spacing;
+  }
+
+  &.layout {
+
+    &-top {
+
+      .c_image {
+        left: -#{sum(nth(standardize($boxed-padding), 4), nth(standardize($boxed-border-width), 4))};
+        margin-bottom: 0;
+        position: relative;
+        top: -#{sum(nth(standardize($boxed-padding), 1), nth(standardize($boxed-border-width), 1))};
+        width: calc(100% + #{sum(nth(standardize($boxed-border-width),2),nth(standardize($boxed-padding),2),'rem')} + #{sum(nth(standardize($boxed-border-width),4),nth(standardize($boxed-padding),4),'rem')});
+      }
+
+      &.boxed {
+
+        figure,
+        img {
+          border-radius: nth(standardize($boxed-border-radius), 1) nth(standardize($boxed-border-radius), 2) 0 0;
+        }
+      }
+    }
+
+    &-left {
+
+      .inside {
+        display: flex;
+      }
+
+      .c_image {
+        margin-right: $component-inner-spacing;
+      }
+    }
+
+    &-right {
+
+      .inside {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .c_image {
+        margin-left: $component-inner-spacing;
+      }
+    }
+
+    &-float-left {
+
+      .c_image {
+        float: left;
+        margin-right: $component-inner-spacing;
+      }
+    }
+
+    &-float-right {
+
+      .c_image {
+        float: right;
+        margin-left: $component-inner-spacing;
+      }
+    }
+  }
+
+  &[class*="layout-abs"] {
+
+    > .inside {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .c_image {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .c_text {
+      position: absolute;
+      padding: divide($grid-gutter-width, 2);
+    }
+
+    &.boxed {
+
+      .c_text {
+        max-height: calc(100% - #{sum(nth(standardize($boxed-padding),1),nth(standardize($boxed-padding),3))});
+        max-width: calc(100% - #{sum(nth(standardize($boxed-padding),2),nth(standardize($boxed-padding),4))});
+
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// Image-text layouts
+.layout-abs {
+
+  &-top,
+  &-center,
+  &-bottom {
+
+    .c_text {
+      width: 100%;
+    }
+  }
+
+  &-top,
+  &-left-top,
+  &-middle-top,
+  &-right-top {
+
+    > .inside {
+      justify-content: flex-start;
+    }
+  }
+
+  &-center,
+  &-left-center,
+  &-middle-center,
+  &-right-center {
+
+    > .inside {
+      justify-content: center;
+    }
+  }
+
+  &-bottom,
+  &-left-bottom,
+  &-middle-bottom,
+  &-right-bottom {
+
+    > .inside {
+      justify-content: flex-end;
+    }
+  }
+
+  &-middle-top,
+  &-middle-center,
+  &-middle-bottom {
+
+    > .inside {
+      align-items: center;
+    }
+  }
+
+  &-right-top,
+  &-right-center,
+  &-right-bottom {
+
+    > .inside {
+      align-items: flex-end;
+    }
+  }
+}

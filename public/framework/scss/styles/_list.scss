@@ -1,0 +1,357 @@
+ul,
+ol {
+  margin: 0;
+}
+
+li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.c_list {
+
+  &.li-icon {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.c_list {
+
+  li {
+    width: 100%
+  }
+
+  &.list-1 {
+    column-count: 1
+  }
+
+  &.list-2 {
+    column-count: 2
+  }
+
+  &.list-3 {
+    column-count: 3
+  }
+
+  &.list-4 {
+    column-count: 4
+  }
+
+  &.list-5 {
+    column-count: 5
+  }
+
+  &.list-6 {
+    column-count: 6
+  }
+
+  &.list-vertical {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.list-1 li {
+      width: 100%
+    }
+
+    &.list-2 li {
+      width: 50%
+    }
+
+    &.list-3 li {
+      width: 33.3333%
+    }
+
+    &.list-4 li {
+      width: 25%
+    }
+
+    &.list-5 li {
+      width: 20%
+    }
+
+    &.list-6 li {
+      width: 16.6666%
+    }
+  }
+}
+
+@include media-breakpoint('xs') {
+  .c_list {
+
+    &.list-xs-1 {
+      column-count: 1
+    }
+
+    &.list-xs-2 {
+      column-count: 2
+    }
+
+    &.list-xs-3 {
+      column-count: 3
+    }
+
+    &.list-xs-4 {
+      column-count: 4
+    }
+
+    &.list-xs-5 {
+      column-count: 5
+    }
+
+    &.list-xs-6 {
+      column-count: 6
+    }
+
+    &.list-vertical {
+
+      &.list-xs-1 li {
+        width: 100%
+      }
+
+      &.list-xs-2 li {
+        width: 50%
+      }
+
+      &.list-xs-3 li {
+        width: 33.3333%
+      }
+
+      &.list-xs-4 li {
+        width: 25%
+      }
+
+      &.list-xs-5 li {
+        width: 20%
+      }
+
+      &.list-xs-6 li {
+        width: 16.6666%
+      }
+    }
+  }
+}
+
+@include media-breakpoint('s') {
+  .c_list {
+
+    &.list-s-1 {
+      column-count: 1
+    }
+
+    &.list-s-2 {
+      column-count: 2
+    }
+
+    &.list-s-3 {
+      column-count: 3
+    }
+
+    &.list-s-4 {
+      column-count: 4
+    }
+
+    &.list-s-5 {
+      column-count: 5
+    }
+
+    &.list-s-6 {
+      column-count: 6
+    }
+
+    &.list-vertical {
+
+      &.list-s-1 li {
+        width: 100%
+      }
+
+      &.list-s-2 li {
+        width: 50%
+      }
+
+      &.list-s-3 li {
+        width: 33.3333%
+      }
+
+      &.list-s-4 li {
+        width: 25%
+      }
+
+      &.list-s-5 li {
+        width: 20%
+      }
+
+      &.list-s-6 li {
+        width: 16.6666%
+      }
+    }
+  }
+}
+
+@include media-breakpoint('m') {
+  .c_list {
+
+    &.list-m-1 {
+      column-count: 1
+    }
+
+    &.list-m-2 {
+      column-count: 2
+    }
+
+    &.list-m-3 {
+      column-count: 3
+    }
+
+    &.list-m-4 {
+      column-count: 4
+    }
+
+    &.list-m-5 {
+      column-count: 5
+    }
+
+    &.list-m-6 {
+      column-count: 6
+    }
+
+    &.list-vertical {
+
+      &.list-m-1 li {
+        width: 100%
+      }
+
+      &.list-m-2 li {
+        width: 50%
+      }
+
+      &.list-m-3 li {
+        width: 33.3333%
+      }
+
+      &.list-m-4 li {
+        width: 25%
+      }
+
+      &.list-m-5 li {
+        width: 20%
+      }
+
+      &.list-m-6 li {
+        width: 16.6666%
+      }
+    }
+  }
+}
+
+@include media-breakpoint('l') {
+  .c_list {
+
+    &.list-l-1 {
+      column-count: 1
+    }
+
+    &.list-l-2 {
+      column-count: 2
+    }
+
+    &.list-l-3 {
+      column-count: 3
+    }
+
+    &.list-l-4 {
+      column-count: 4
+    }
+
+    &.list-l-5 {
+      column-count: 5
+    }
+
+    &.list-l-6 {
+      column-count: 6
+    }
+
+    &.list-vertical {
+
+      &.list-l-1 li {
+        width: 100%
+      }
+
+      &.list-l-2 li {
+        width: 50%
+      }
+
+      &.list-l-3 li {
+        width: 33.3333%
+      }
+
+      &.list-l-4 li {
+        width: 25%
+      }
+
+      &.list-l-5 li {
+        width: 20%
+      }
+
+      &.list-l-6 li {
+        width: 16.6666%
+      }
+    }
+  }
+}
+
+@include media-breakpoint('xl') {
+  .c_list {
+
+    &.list-xl-1 {
+      column-count: 1
+    }
+
+    &.list-xl-2 {
+      column-count: 2
+    }
+
+    &.list-xl-3 {
+      column-count: 3
+    }
+
+    &.list-xl-4 {
+      column-count: 4
+    }
+
+    &.list-xl-5 {
+      column-count: 5
+    }
+
+    &.list-xl-6 {
+      column-count: 6
+    }
+
+    &.list-vertical {
+
+      &.list-xl-1 li {
+        width: 100%
+      }
+
+      &.list-xl-2 li {
+        width: 50%
+      }
+
+      &.list-xl-3 li {
+        width: 33.3333%
+      }
+
+      &.list-xl-4 li {
+        width: 25%
+      }
+
+      &.list-xl-5 li {
+        width: 20%
+      }
+
+      &.list-xl-6 li {
+        width: 16.6666%
+      }
+    }
+  }
+}

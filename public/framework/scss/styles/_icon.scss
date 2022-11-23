@@ -1,0 +1,121 @@
+.icon {
+  display: inline-block;
+
+  &:before {
+    @include icon(attr(data-icon));
+    font-size: $icon-size-medium;
+    height: $icon-size-medium;
+    width: $icon-size-medium;
+  }
+
+  &.size-tiny:before {
+    font-size: $icon-size-tiny;
+    height: $icon-size-tiny;
+    width: $icon-size-tiny;
+  }
+
+  &.size-small:before {
+    font-size: $icon-size-small;
+    height: $icon-size-small;
+    width: $icon-size-small;
+  }
+
+  &.size-large:before {
+    font-size: $icon-size-large;
+    height: $icon-size-large;
+    width: $icon-size-large;
+  }
+
+  &.size-super:before {
+    font-size: $icon-size-super;
+    height: $icon-size-super;
+    width: $icon-size-super;
+  }
+
+  &.design-filled {
+    background: $text-color-regular;
+    color: $text-color-invert;
+    padding: $icon-shape-spacing;
+  }
+
+  &.design-outlined {
+    box-shadow: inset 0 0 0 2px $text-color-regular;
+    padding: $icon-shape-spacing;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.color-primary {
+    color: $primary;
+
+    &.design-filled {
+      background: $primary;
+      color: $text-color-invert;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 $icon-outlined-width $primary;
+    }
+  }
+
+  &.color-secondary {
+    color: $secondary;
+
+    &.design-filled {
+      background: $secondary;
+      color: $text-color-invert;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 $icon-outlined-width $secondary;
+    }
+  }
+
+  &.color-dark {
+    color: $text-color-regular;
+
+    &.design-filled {
+      background: $text-color-regular;
+      color: $text-color-invert;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-regular;
+    }
+  }
+
+  &.color-light {
+    color: $text-color-invert;
+
+    &.design-filled {
+      background: $text-color-invert;
+      color: $text-color-regular;
+    }
+
+    &.design-outlined {
+      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-invert;
+    }
+  }
+}
+
+
+[class^="i-"],
+[class*=" i-"] {
+
+  &.i-is-r {
+    flex-direction: row-reverse;
+
+    &:before {
+      padding: 0 0 0 0.3em;
+    }
+  }
+}
+
+a {
+  &[class^="i-"],
+  &[class*=" i-"] {
+    display: inline-flex;
+  }
+}
