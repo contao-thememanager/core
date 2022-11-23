@@ -1,0 +1,172 @@
+$spacings-abbreviations: (
+  spacing: spc,
+  small:   sm,
+  medium:  md,
+  large:   lg
+);
+
+$spacings-list: (
+  init: (
+    small:  $article-spacing-xs-small,
+    medium: $article-spacing-xs-medium,
+    large:  $article-spacing-xs-large
+  ),
+  s: (
+    small:  $article-spacing-s-small,
+    medium: $article-spacing-s-medium,
+    large:  $article-spacing-s-large
+  ),
+  m: (
+    small:  $article-spacing-m-small,
+    medium: $article-spacing-m-medium,
+    large:  $article-spacing-m-large
+  ),
+  l: (
+    small:  $article-spacing-l-small,
+    medium: $article-spacing-l-medium,
+    large:  $article-spacing-l-large
+  ),
+  xl: (
+    small:  $article-spacing-xl-small,
+    medium: $article-spacing-xl-medium,
+    large:  $article-spacing-xl-large
+  )
+);
+
+@mixin init-spacings($list) {
+  // Set custom properties
+  :root {
+    --gtr-btm:     #{$grid-gutter-bottom};
+    --gtr-btm-sml: #{$grid-gutter-small-bottom};
+    @each $size, $spacing in $list {
+      --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
+    }
+  }
+
+  @each $size, $spacing in $list { // Assign custom properties
+    .y-spacing-#{$size} { // Assign custom properties
+      &, #container {
+        > .inside {
+          padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
+          padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm));
+        }
+      }
+      &.small-gutter {
+        &, #container {
+          > .inside {
+            padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm-sml));
+          }
+        }
+      }
+      &.no-gutter {
+        &, #container {
+          > .inside {
+            padding-bottom: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
+          }
+        }
+      }
+    }
+
+    .top-spacing-#{$size} {
+      > .inside {
+        padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
+      }
+    }
+    .bottom-spacing-#{$size} {
+      > .inside {
+        padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm));
+      }
+      &.small-gutter > .inside {
+        padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm-sml));
+      }
+      &.no-gutter > .inside {
+        padding-bottom: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
+      }
+    }
+  }
+}
+
+@mixin set-spacing-properties($list, $bp) {
+  $list: map-get($list, $bp);
+  @include media-breakpoint($bp) {
+    // Set custom properties
+    :root {
+      @each $size, $spacing in $list { // Set custom properties
+        --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
+      }
+    }
+    @content;
+  }
+}
+
+.grid.no-gutter[class*='x-spacing'] { > .inside {
+  padding-left:  divide($grid-gutter-width, 2);
+  padding-right: divide($grid-gutter-width, 2);
+}}
+
+.grid.small-gutter[class*='x-spacing'] { > .inside {
+  padding-left:  divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
+  padding-right: divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
+}}
+
+@include init-spacings(map-get($spacings-list, 'init'));
+
+@include set-spacing-properties($spacings-list, 's');
+
+@include set-spacing-properties($spacings-list, 'm') {
+  .x-spacing-large > .inside {
+    width: $x-spacing-large-m;
+    margin-left: auto;
+    margin-right: auto;
+  }
+};
+
+@include set-spacing-properties($spacings-list, 'l') {
+  .grid.small-gutter[class*='x-spacing'] {
+
+    > .inside {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .x-spacing-medium {
+    &, #container {
+      > .inside {
+        width: sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px');
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &.small-gutter {
+      &, #container {
+        > .inside {
+          width: sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px');
+        }
+      }
+    }
+  }
+
+  .x-spacing-large {
+    &, #container {
+      > .inside {
+        width: $x-spacing-large-l;
+      }
+    }
+  }
+};
+
+@include set-spacing-properties($spacings-list, 'xl');
+
+@media (min-width: sum($x-spacing-small, $grid-gutter-width, 'px')) {
+  .x-spacing-small {
+    &, #container {
+      > .inside {
+        width: $x-spacing-small;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

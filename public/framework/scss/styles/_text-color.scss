@@ -1,0 +1,68 @@
+.text-color {
+
+  &-invert {
+    --h1-clr:        #{$h1-color-invert};
+    --h2-clr:        #{$h2-color-invert};
+    --h3-clr:        #{$h3-color-invert};
+    --h4-clr:        #{$h4-color-invert};
+    --h5-clr:        #{$h5-color-invert};
+    --h6-clr:        #{$h6-color-invert};
+
+    --a-clr:         #{$link-color-invert};
+    --a-clr-hvr:     #{$link-hover-color-invert};
+    --a-td:          #{$link-decoration-invert};
+    --a-td-hvr:      #{$link-hover-decoration-invert};
+
+    --cbx-clr-label: #{$form-checkbox-radio-label-color-invert};
+
+    p, ol, ul, b, strong,
+    .captcha_text, .icon, .hl-design-lined:after {
+      color: $text-color-invert;
+    }
+  }
+
+  &-regular {
+    --h1-clr:        #{$h1-color};
+    --h2-clr:        #{$h2-color};
+    --h3-clr:        #{$h3-color};
+    --h4-clr:        #{$h4-color};
+    --h5-clr:        #{$h5-color};
+    --h6-clr:        #{$h6-color};
+
+    --a-clr:         #{$link-color-regular};
+    --a-clr-hvr:     #{$link-hover-color-regular};
+    --a-td:          #{$link-decoration-regular};
+    --a-td-hvr:      #{$link-hover-decoration-regular};
+
+    --cbx-clr-label: #{$form-checkbox-radio-label-color};
+
+    p, ol, ul, b, strong,
+    .captcha_text, .icon, .hl-design-lined:after {
+      color: $text-color-regular;
+    }
+  }
+}
+
+.link-color {
+
+  &-invert {
+    --a-clr:     #{$link-color-invert};
+    --a-clr-hvr: #{$link-hover-color-invert};
+    --a-td:      #{$link-decoration-invert};
+    --a-td-hvr:  #{$link-hover-decoration-invert};
+  }
+
+  &-extra {
+    --a-clr:     #{$link-color-extra};
+    --a-clr-hvr: #{$link-hover-color-extra};
+    --a-td:      #{$link-decoration-extra};
+    --a-td-hvr:  #{$link-hover-decoration-extra};
+  }
+
+  &-regular {
+    --a-clr:     #{$link-color-regular};
+    --a-clr-hvr: #{$link-hover-color-regular};
+    --a-td:      #{$link-decoration-regular};
+    --a-td-hvr:  #{$link-hover-decoration-regular};
+  }
+}

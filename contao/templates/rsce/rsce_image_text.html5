@@ -1,0 +1,49 @@
+
+<div class="<?= $this->class ?><?= $this->styleManager->prepare('layout', ['imageText'])->format(' %s')?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <?php if(!$this->linkText && $this->url): ?>
+        <a href="<?=$this->url?>" class="inside"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
+    <?php else: ?>
+        <div class="inside">
+    <?php endif; ?>
+
+    <?php $this->block('headline'); ?>
+        <?php if ($this->headline || $this->headline2): ?>
+            <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+        <?php endif; ?>
+        <?php if ($this->headline): ?>
+            <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+        <?php endif; ?>
+        <?php if ($this->headline2): ?>
+            <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+        <?php endif; ?>
+        <?php if ($this->headline || $this->headline2): ?>
+            </div>
+        <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <div class="c_image">
+        <figure class="image_container">
+            <?php if ($image = $this->getImageObject($this->singleSRC, $this->size)): ?>
+                <?php $this->insert('picture_default', $image->picture) ?>
+
+                <?php if($image->caption): ?>
+                    <figcaption><?php echo $image->caption ?></figcaption>
+                <?php endif; ?>
+            <?php endif ?>
+        </figure>
+    </div>
+    <div class="c_text">
+        <?= $this->text ?>
+        <?php if($this->linkText && $this->url): ?>
+            <p>
+                <a href="<?=$this->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+            </p>
+        <?php endif; ?>
+    </div>
+
+    <?php if(!$this->linkText && $this->url): ?>
+        </a>
+    <?php else: ?>
+        </div>
+    <?php endif; ?>
+</div>

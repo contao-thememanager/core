@@ -1,0 +1,51 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/default.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="CTE.wrapper">
+        <source>Wrapper</source>
+        <target>Umschlag</target>
+      </trans-unit>
+      <trans-unit id="CTE.components">
+        <source>Components</source>
+        <target>Komponenten</target>
+      </trans-unit>
+      <trans-unit id="CTE.componentLists">
+        <source>Component lists</source>
+        <target>Komponenten-Liste</target>
+      </trans-unit>
+
+      <trans-unit id="CTE.wrapperStart.0">
+        <source>Wrapper start</source>
+        <target>Umschlag Anfang</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStart.1">
+        <source>Generates the opening part of the wrapper.</source>
+        <target>Erzeugt den öffnenden Teil des Umschlags.</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.0">
+        <source>Wrapper stop</source>
+        <target>Umschlag Ende</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.1">
+        <source>Generates the closing part of the wrapper.</source>
+        <target>Erzeugt den schließenden Teil des Umschlags.</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStartBoxed.0">
+        <source>Wrapper start (boxed)</source>
+        <target>Umschlag Anfang (Boxed)</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStartBoxed.1">
+        <source>Generates the opening part of the wrapper (boxed).</source>
+        <target>Erzeugt den öffnenden Teil des Umschlags (Boxed).</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStopBoxed.0">
+        <source>Wrapper stop (boxed)</source>
+        <target>Umschlag Ende (Boxed)</target>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStopBoxed.1">
+        <source>Generates the closing part of the wrapper (boxed).</source>
+        <target>Erzeugt den schließenden Teil des Umschlags (Boxed).</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

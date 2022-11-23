@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_thememanager_settings.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_thememanager_settings.thememanagerIconFont.0">
+        <source>ThemeManager Icon Font</source>
+        <target>ThemeManager Icon Font</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager_settings.thememanagerIconFont.1">
+        <source>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</source>
+        <target>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

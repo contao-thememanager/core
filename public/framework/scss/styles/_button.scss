@@ -1,0 +1,114 @@
+a,
+button,
+input[type="submit"] {
+  // Allow is-block even if no button class is selected
+  &.is-block {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+:root {
+  --btn-bg:          #{$button-bg-primary};
+  --btn-bg-hvr:      #{$button-hover-bg-primary};
+  --btn-clr:         #{$button-color-primary};
+  --btn-clr-hvr:     #{$button-hover-color-primary};
+
+  --btn-fw:          #{$button-font-weight-primary};
+  --btn-tf:          #{$button-transform-primary};
+
+  --btn-bdr:         #{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
+  --btn-bdr-r:       #{$button-border-radius-primary};
+  --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
+
+  --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-primary)};
+  --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-primary)};
+  --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-primary)};
+  --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-primary)};
+}
+
+button,
+a.button,
+input.button {
+  background-color: var(--btn-bg);
+  color: var(--btn-clr);
+
+  font-weight: var(--btn-fw);
+  text-transform: var(--btn-tf);
+
+  border: var(--btn-bdr);
+  border-radius: var(--btn-bdr-r);
+
+  padding: var(--btn-pdg-m);
+
+  cursor: pointer;
+  display: inline-flex;
+
+  font-family: $font-family-base;
+  font-size: $button-font-size-medium;
+  line-height: $button-line-height;
+  text-decoration: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:hover {
+    background-color: var(--btn-bg-hvr);
+    color: var(--btn-clr-hvr);
+    border-color: var(--btn-bdr-clr-hvr);
+  }
+
+  &.size-small {
+    padding: var(--btn-pdg-s);
+    font-size: $button-font-size-small;
+  }
+
+  &.size-large {
+    padding: var(--btn-pdg-l);
+    font-size: $button-font-size-large;
+  }
+
+  &.size-super {
+    padding: var(--btn-pdg-xl);
+    font-size: $button-font-size-super;
+  }
+
+  &.design-secondary {
+    --btn-bg:          #{$button-bg-secondary};
+    --btn-bg-hvr:      #{$button-hover-bg-secondary};
+    --btn-clr:         #{$button-color-secondary};
+    --btn-clr-hvr:     #{$button-hover-color-secondary};
+
+    --btn-fw:          #{$button-font-weight-secondary};
+    --btn-tf:          #{$button-transform-secondary};
+
+    --btn-bdr:         #{$button-border-width-secondary} #{$button-border-style-secondary} #{$button-border-color-secondary};
+    --btn-bdr-r:       #{$button-border-radius-secondary};
+    --btn-bdr-clr-hvr: #{$button-hover-border-color-secondary};
+
+    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-secondary)};
+    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-secondary)};
+    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-secondary)};
+    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-secondary)};
+  }
+
+  &.design-alt {
+    --btn-bg:          #{$button-bg-alt};
+    --btn-bg-hvr:      #{$button-hover-bg-alt};
+    --btn-clr:         #{$button-color-alt};
+    --btn-clr-hvr:     #{$button-hover-color-alt};
+
+    --btn-fw:          #{$button-font-weight-alt};
+    --btn-tf:          #{$button-transform-alt};
+
+    --btn-bdr:         #{$button-border-width-alt} #{$button-border-style-alt} #{$button-border-color-alt};
+    --btn-bdr-r:       #{$button-border-radius-alt};
+    --btn-bdr-clr-hvr: #{$button-hover-border-color-alt};
+
+    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-alt)};
+    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-alt)};
+    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-alt)};
+    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-alt)};
+  }
+}

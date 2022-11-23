@@ -1,0 +1,158 @@
+@media (min-width: $navigation-behaviour-min-width) {
+  .navigation {
+    overflow: visible;
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    strong {
+      cursor: default;
+    }
+
+    a,
+    strong {
+      display: block;
+      font-size: $navigation-item-font-size;
+      font-weight: $navigation-item-font-weight;
+      padding: $navigation-item-padding;
+      white-space: nowrap;
+    }
+
+    .level_1 {
+
+      ul {
+        display: none;
+      }
+    }
+
+    // Justify navigation elements level 1
+    &.justify-start {
+
+      .level_1 {
+        justify-content: flex-start;
+      }
+    }
+
+    &.justify-end {
+
+      .level_1 {
+        justify-content: flex-end;
+      }
+    }
+
+    &.justify-center {
+
+      .level_1 {
+        justify-content: center;
+      }
+    }
+
+    &.justify-between {
+
+      .level_1 {
+        justify-content: space-between;
+      }
+    }
+
+    &.justify-around {
+
+      .level_1 {
+        justify-content: space-around;
+      }
+    }
+
+    &.justify-evenly {
+
+      .level_1 {
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .navigation-vertical {
+
+    ul {
+      flex-direction: column;
+    }
+
+    .level_1 {
+
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  .navigation-hover {
+
+    .level_1 {
+
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+      }
+    }
+
+    .level_2 {
+
+      li {
+        min-width: 200px;
+      }
+    }
+
+    .submenu {
+      position: relative;
+
+      &:hover {
+        z-index: 1;
+
+        > ul {
+          display: flex;
+        }
+      }
+    }
+
+    &.navigation {
+
+      .level_1 {
+
+        ul ul {
+          left: 100%;
+          top: 0;
+        }
+
+        li.left-menu{
+
+          > ul {
+            left: initial;
+            right: 100%;
+          }
+        }
+      }
+    }
+
+    &.navigation-vertical {
+
+      .level_1 {
+
+        ul {
+          left: 100%;
+          top: 0;
+        }
+
+        li.left-menu{
+
+          > ul {
+            left: initial;
+            right: 100%;
+          }
+        }
+      }
+    }
+  }
+}

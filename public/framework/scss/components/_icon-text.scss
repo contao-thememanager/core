@@ -1,0 +1,55 @@
+.ce_rsce_icon_text {
+
+  .c_icon {
+    text-align: inherit;
+  }
+
+  &.layout {
+
+    &-top {
+
+      .c_icon {
+        margin-bottom: $component-inner-spacing;
+      }
+    }
+
+    &-left {
+
+      .inside {
+        display: flex;
+      }
+
+      .c_icon {
+        margin-right: $component-inner-spacing;
+      }
+    }
+
+    &-right {
+
+      .inside {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .c_icon {
+        margin-left: $component-inner-spacing;
+      }
+    }
+
+    &-float-left {
+
+      .c_icon {
+        float: left;
+        margin-right: $component-inner-spacing;
+      }
+    }
+
+    &-float-right {
+
+      .c_icon {
+        float: right;
+        margin-left: $component-inner-spacing;
+      }
+    }
+  }
+}

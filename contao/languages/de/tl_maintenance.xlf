@@ -1,0 +1,10 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_maintenance.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_maintenance.disableRsceConvert">
+        <source>This section has been disabled by the ThemeManager. If you are sure and want to convert custom elements to standard HTML modules, please edit the template "be_rsce_convert.html5" and follow the instructions it contains.</source>
+        <target>Dieser Bereich wurde durch den ThemeManager deaktiviert. Sollten Sie sich sicher sein und Custom Elemente in Standard-HTML-Module umwandeln wollen, bearbeiten Sie bitte das Template "be_rsce_convert.html5" und folgen Sie den darin enthaltenen Anweisungen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

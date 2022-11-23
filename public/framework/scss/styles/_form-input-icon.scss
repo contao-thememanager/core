@@ -1,0 +1,85 @@
+.widget[class*='f-icon-'] {
+
+  > .input-container {
+    display: flex;
+
+    border-width: $form-input-border-width;
+    border-style: $form-input-border-style;
+    border-color: $form-input-border-color;
+    border-radius: $form-input-border-radius;
+
+    input {
+      border: 0 none;
+      height: sub($form-input-height, multiply($form-input-border-width, 2), 'px');
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: $form-field-icon-background;
+      border-style: $form-input-border-style;
+      border-color: inherit;
+      color: $form-field-icon-color;
+      font-size: $form-field-icon-size;
+
+      width: 40px;
+
+      border-width: $form-input-border-width;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+
+      margin: -#{$form-input-border-width} 0 -#{$form-input-border-width} -#{$form-input-border-width};
+    }
+
+    &:hover {
+      border-color: $form-input-border-color-hover;
+      &:before { border-color: inherit; }
+    }
+
+    &:focus {
+      border-color: $form-input-border-color-focus;
+      &:before { border-color: inherit; }
+    }
+  }
+
+  &.f-icon-right {
+
+    > .input-container {
+
+      &:before {
+        border-radius: 0;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+        order: 2;
+
+        margin: -#{$form-input-border-width} -#{$form-input-border-width} -#{$form-input-border-width} 0;
+      }
+
+      input {
+        border-radius: 0;
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+      }
+    }
+
+    &.mandatory {
+
+      > .input-container:after {
+        right: 45px;
+      }
+    }
+  }
+
+  &.error > .input-container {
+    border-color: $form-input-border-color-error;
+  }
+}
+
+@include form-field-icon(m2, 'm²');
+@include form-field-icon(at, '@');
+@include form-field-icon(euro, '€');
+@include form-field-icon(dollar, '$');

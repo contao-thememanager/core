@@ -1,0 +1,38 @@
+@mixin form-field-icon ($class-suffix, $content, $blnIcon: false, $font-size: $form-input-font-size) {
+  .f-icon-#{$class-suffix} > .input-container:before {
+    @if $blnIcon {
+      @include icon($content, $font-size);
+      display: flex;
+    }
+    @else {
+      content: $content;
+      @if $font-size != $form-input-font-size {
+        font-size: $font-size;
+      }
+    }
+    @content;
+  }
+}
+
+@mixin form-field-image ($class-suffix, $content, $blnIcon: false,  $font-size : 1em) {
+  .form-image.form-img-#{$class-suffix} {
+
+    &.widget,
+    &.widget-checkbox label,
+    &.widget-radio label {
+
+      &:before {
+        @if $blnIcon {
+          @include icon($content, $font-size);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @else {
+          background-image: url($content);
+        }
+        @content
+      }
+    }
+  }
+}

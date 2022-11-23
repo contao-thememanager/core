@@ -1,0 +1,170 @@
+:root {
+  --a-clr:     #{$link-color-regular};
+  --a-clr-hvr: #{$link-hover-color-regular};
+  --a-td:      #{$link-decoration-regular};
+  --a-td-hvr:  #{$link-hover-decoration-regular};
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $paragraph-spacing;
+  word-break: break-word;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  font-weight: $link-font-weight;
+
+  color: var(--a-clr);
+  text-decoration: var(--a-td);
+
+  &:hover {
+    color: var(--a-clr-hvr);
+    text-decoration: var(--a-td-hvr);
+  }
+}
+
+b,
+strong {
+  font-weight: $strong-font-weight;
+}
+
+@include heading-basics{
+  margin-top: 0;
+  margin-bottom: $headline-spacing;
+  line-height: $line-height-headline;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+:root {
+  --h1-clr:   #{$h1-color};
+  --h2-clr:   #{$h2-color};
+  --h3-clr:   #{$h3-color};
+  --h4-clr:   #{$h4-color};
+  --h5-clr:   #{$h5-color};
+  --h6-clr:   #{$h6-color};
+
+  --h1-fs:    #{$h1-font-size-small};
+  --h2-fs:    #{$h2-font-size-small};
+  --h3-fs:    #{$h3-font-size-small};
+  --h4-fs:    #{$h4-font-size-small};
+  --h5-fs:    #{$h5-font-size-small};
+  --h6-fs:    #{$h6-font-size-small};
+
+  --h1-c-fs:  #{$h1-content-font-size-small};
+  --h2-c-fs:  #{$h2-content-font-size-small};
+  --h3-c-fs:  #{$h3-content-font-size-small};
+  --h4-c-fs:  #{$h4-content-font-size-small};
+  --h5-c-fs:  #{$h5-content-font-size-small};
+  --h6-c-fs:  #{$h6-content-font-size-small};
+}
+
+h1, .h1 {
+  color: var(--h1-clr);
+  font-size: var(--h1-fs);
+  font-weight: $h1-font-weight;
+  letter-spacing: $h1-letter-spacing;
+
+  #main & {
+    font-size: var(--h1-c-fs);
+  }
+}
+
+h2, .h2 {
+  color: var(--h2-clr);
+  font-size: var(--h2-fs);
+  font-weight: $h2-font-weight;
+  letter-spacing: $h2-letter-spacing;
+
+  #main & {
+    font-size: var(--h2-c-fs);
+  }
+}
+
+h3, .h3 {
+  color: var(--h3-clr);
+  font-size: var(--h3-fs);
+  font-weight: $h3-font-weight;
+  letter-spacing: $h3-letter-spacing;
+
+  #main & {
+    font-size: var(--h3-c-fs);
+  }
+}
+
+h4, .h4 {
+  color: var(--h4-clr);
+  font-size: var(--h4-fs);
+  font-weight: $h4-font-weight;
+  letter-spacing: $h4-letter-spacing;
+
+  #main & {
+    font-size: var(--h4-c-fs);
+  }
+}
+
+h5, .h5 {
+  color: var(--h5-clr);
+  font-size: var(--h5-fs);
+  font-weight: $h5-font-weight;
+  letter-spacing: $h5-letter-spacing;
+
+  #main & {
+    font-size: var(--h5-c-fs);
+  }
+}
+
+h6, .h6 {
+  color: var(--h6-clr);
+  font-size: var(--h6-fs);
+  font-weight: $h6-font-weight;
+  letter-spacing: $h6-letter-spacing;
+
+  #main & {
+    font-size: var(--h6-c-fs);
+  }
+}
+
+@include media-breakpoint('xs') {
+
+  :root {
+    --h1-fs:    #{$h1-font-size-medium};
+    --h2-fs:    #{$h2-font-size-medium};
+    --h3-fs:    #{$h3-font-size-medium};
+    --h4-fs:    #{$h4-font-size-medium};
+    --h5-fs:    #{$h5-font-size-medium};
+    --h6-fs:    #{$h6-font-size-medium};
+
+    --h1-c-fs:  #{$h1-content-font-size-medium};
+    --h2-c-fs:  #{$h2-content-font-size-medium};
+    --h3-c-fs:  #{$h3-content-font-size-medium};
+    --h4-c-fs:  #{$h4-content-font-size-medium};
+    --h5-c-fs:  #{$h5-content-font-size-medium};
+    --h6-c-fs:  #{$h6-content-font-size-medium};
+  }
+}
+
+@include media-breakpoint('m') {
+
+  :root {
+    --h1-fs:    #{$h1-font-size};
+    --h2-fs:    #{$h2-font-size};
+    --h3-fs:    #{$h3-font-size};
+    --h4-fs:    #{$h4-font-size};
+    --h5-fs:    #{$h5-font-size};
+    --h6-fs:    #{$h6-font-size};
+
+    --h1-c-fs:  #{$h1-content-font-size};
+    --h2-c-fs:  #{$h2-content-font-size};
+    --h3-c-fs:  #{$h3-content-font-size};
+    --h4-c-fs:  #{$h4-content-font-size};
+    --h5-c-fs:  #{$h5-content-font-size};
+    --h6-c-fs:  #{$h6-content-font-size};
+  }
+}

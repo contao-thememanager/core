@@ -1,0 +1,46 @@
+@include generate-infix-breakpoint-styles((
+  // Text alignments
+  '.align,.hl-align': (
+    '&-left': (
+      text-align: left
+    ),
+    '&-center': (
+      text-align: center
+    ),
+    '&-right': (
+      text-align: right
+    ),
+    '&-justify': (
+      text-align: justify
+    ),
+  ),
+  // Component spacings
+  '.left-spacing': (
+    '&-reset > .inside': (
+      margin-left: 0 !important
+    ),
+    '&-small > .inside': (
+      margin-left: $spacing-small !important
+    ),
+    '&-medium > .inside': (
+      margin-left: $spacing-medium !important
+    ),
+    '&-large > .inside': (
+      margin-left: $spacing-large !important
+    )
+  ),
+  '.right-spacing': (
+    '&-reset > .inside': (
+      margin-right: 0 !important
+    ),
+    '&-small > .inside': (
+      margin-right: $spacing-small !important
+    ),
+    '&-medium > .inside': (
+      margin-right: $spacing-medium !important
+    ),
+    '&-large > .inside': (
+      margin-right: $spacing-large !important
+    )
+  )
+));
