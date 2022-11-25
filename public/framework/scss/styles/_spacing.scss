@@ -66,7 +66,9 @@ $spacings-list: (
         }
       }
     }
+  }
 
+  @each $size, $spacing in $list {
     .top-spacing-#{$size} {
       > .inside {
         padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
