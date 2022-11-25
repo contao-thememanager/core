@@ -1,24 +1,38 @@
 
 <div class="<?= $this->class ?> block">
-    <div class="inside"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
-        <?php $this->block('headline'); ?>
-            <?php if ($this->headline || $this->headline2): ?>
-               <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
-            <?php endif; ?>
-            <?php if ($this->headline): ?>
-                <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
-            <?php endif; ?>
-            <?php if ($this->headline2): ?>
-                <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
-            <?php endif; ?>
-            <?php if ($this->headline || $this->headline2): ?>
-                </div>
-            <?php endif; ?>
-        <?php $this->endblock(); ?>
+    <?php $this->block('headline'); ?>
+      <?php if ($this->headline || $this->headline2): ?>
+        <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+      <?php endif; ?>
 
-        <?php $this->block('content'); ?>
-        <?php $this->endblock(); ?>
+      <?php if ($this->headline): ?>
+        <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+      <?php endif; ?>
 
-    </div>
+      <?php if ($this->headline2): ?>
+        <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+      <?php endif; ?>
+
+      <?php if ($this->headline || $this->headline2): ?>
+        </div>
+      <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <?php if (!empty($this->styleManager->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
+      <div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
+    <?php endif; ?>
+
+    <?php $this->block('content'); ?>
+    <?php $this->endblock(); ?>
+
+    <?php if (!empty($this->styleManager->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
+      </div>
+    <?php endif; ?>
+
+    <?php $this->block('pagination'); ?>
+    <?php $this->endblock(); ?>
+
+  </div>
 </div>

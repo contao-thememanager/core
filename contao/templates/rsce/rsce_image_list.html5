@@ -1,40 +1,37 @@
 <?php
-    $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
-    $this->extend('block_searchable');
+  $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
+  $this->extend('block_searchable');
 ?>
 
 <?php $this->block('content'); ?>
 
-<div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
-    <?php foreach ($this->list as $item): ?>
-        <?php if(!$item->invisible || $previewMode): ?>
-            <div class="ce_rsce_image block<?= $item->cssClass ? ' '.$item->cssClass : '' ?><?= $this->styleManager->prepare('layout', ['imageText', 'boxedListElement'])->format(' %s')?>">
-                <?php if($item->url): ?>
-                    <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
-                <?php else: ?>
-                    <div class="inside">
-                <?php endif; ?>
+<?php foreach ($this->list as $item): ?>
+  <?php if(!$item->invisible || $previewMode): ?>
+    <div class="ce_rsce_image block<?= $item->cssClass ? ' '.$item->cssClass : '' ?><?= $this->styleManager->prepare('layout', ['imageText', 'boxedListElement'])->format(' %s')?>">
+      <?php if($item->url): ?>
+        <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
+      <?php else: ?>
+        <div class="inside">
+      <?php endif; ?>
 
-                 <div class="c_image">
-                     <figure class="image_container">
-                         <?php if ($image = $this->getImageObject($item->singleSRC, $this->size)): ?>
-                             <?php $this->insert('picture_default', $image->picture) ?>
+      <div class="c_image">
+        <figure class="image_container">
+        <?php if ($image = $this->getImageObject($item->singleSRC, $this->size)): ?>
+          <?php $this->insert('picture_default', $image->picture) ?>
+          <?php if($image->caption): ?>
+            <figcaption><?php echo $image->caption ?></figcaption>
+          <?php endif; ?>
+        <?php endif ?>
+        </figure>
+      </div>
 
-                             <?php if($image->caption): ?>
-                                 <figcaption><?php echo $image->caption ?></figcaption>
-                             <?php endif; ?>
-                         <?php endif ?>
-                     </figure>
-                 </div>
-
-                <?php if($item->url): ?>
-                    </a>
-                <?php else: ?>
-                    </div>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
-    <?php endforeach ?>
-</div>
+      <?php if($item->url): ?>
+        </a>
+      <?php else: ?>
+        </div>
+      <?php endif; ?>
+    </div>
+  <?php endif; ?>
+<?php endforeach ?>
 
 <?php $this->endblock(); ?>
