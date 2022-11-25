@@ -1,0 +1,10 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+  <?= implode('', $this->comments) ?>
+<?php $this->endblock(); ?>
+
+<?php $this->block('pagination'); ?>
+  <?= $this->pagination ?>
+  <?php $this->insert('mod_comment_form', $this->arrData); ?>
+<?php $this->endblock(); ?>
