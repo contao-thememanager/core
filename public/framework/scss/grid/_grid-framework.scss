@@ -1,4 +1,5 @@
 .grid {
+  --gap: var(--gtr-btm);
 
   > .inside {
     display: flex;
@@ -6,6 +7,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+
+    row-gap: var(--gap);
+    //padding-bottom: $grid-gutter-bottom;
 
     > * {
       flex-grow: 0;
@@ -15,32 +19,30 @@
 
       padding-right: divide($grid-gutter-width, 2);
       padding-left: divide($grid-gutter-width, 2);
-      padding-bottom: $grid-gutter-bottom;
     }
   }
 
   &.small-gutter {
+    --gap: var(--gtr-btm-sml);
 
     > .inside {
+      //padding-bottom: $grid-gutter-small-bottom;
 
       > * {
         padding-right: divide($grid-gutter-small-width, 2);
         padding-left: divide($grid-gutter-small-width, 2);
-        padding-bottom: $grid-gutter-small-bottom;
       }
     }
   }
 
   &.no-gutter {
+    --gap: 0rem;
 
     > .inside {
-      padding-left: 0;
-      padding-right: 0;
+      //padding: 0;
 
       > * {
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 0;
+        padding: 0;
       }
     }
   }
@@ -50,7 +52,6 @@
     > .inside {
       margin-left: -#{divide($grid-gutter-width, 2)};
       margin-right: -#{divide($grid-gutter-width, 2)};
-      margin-bottom: -#{$grid-gutter-bottom};
     }
 
     &.small-gutter {
@@ -58,7 +59,6 @@
       > .inside {
         margin-left: -#{divide($grid-gutter-small-width, 2)};
         margin-right: -#{divide($grid-gutter-small-width, 2)};
-        margin-bottom: -#{$grid-gutter-small-bottom};
       }
     }
 
