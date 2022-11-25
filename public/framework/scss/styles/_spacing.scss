@@ -47,28 +47,13 @@ $spacings-list: (
     .y-spacing-#{$size} { // Assign custom properties
       &, #container {
         > .inside {
-          padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
-          padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm));
-        }
-      }
-      &.small-gutter {
-        &, #container {
-          > .inside {
-            padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm-sml));
-          }
-        }
-      }
-      &.no-gutter {
-        &, #container {
-          > .inside {
-            padding-bottom: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
-          }
+          padding: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) 0;
         }
       }
     }
   }
 
-  @each $size, $spacing in $list {
+  @each $size, $spacing in $list { // Assign custom properties
     .top-spacing-#{$size} {
       > .inside {
         padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
@@ -76,12 +61,6 @@ $spacings-list: (
     }
     .bottom-spacing-#{$size} {
       > .inside {
-        padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm));
-      }
-      &.small-gutter > .inside {
-        padding-bottom: calc(var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) - var(--gtr-btm-sml));
-      }
-      &.no-gutter > .inside {
         padding-bottom: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
       }
     }
