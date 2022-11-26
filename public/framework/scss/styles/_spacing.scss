@@ -36,15 +36,13 @@ $spacings-list: (
 @mixin init-spacings($list) {
   // Set custom properties
   :root {
-    --gtr-btm:     #{$grid-gutter-bottom};
-    --gtr-btm-sml: #{$grid-gutter-small-bottom};
     @each $size, $spacing in $list {
       --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
     }
   }
 
-  @each $size, $spacing in $list { // Assign custom properties
-    .y-spacing-#{$size} { // Assign custom properties
+  @each $size, $spacing in $list {
+    .y-spacing-#{$size} {
       &, #container {
         > .inside {
           padding: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}) 0;
@@ -53,7 +51,7 @@ $spacings-list: (
     }
   }
 
-  @each $size, $spacing in $list { // Assign custom properties
+  @each $size, $spacing in $list {
     .top-spacing-#{$size} {
       > .inside {
         padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
@@ -70,9 +68,8 @@ $spacings-list: (
 @mixin set-spacing-properties($list, $bp) {
   $list: map-get($list, $bp);
   @include media-breakpoint($bp) {
-    // Set custom properties
     :root {
-      @each $size, $spacing in $list { // Set custom properties
+      @each $size, $spacing in $list {
         --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
       }
     }
@@ -80,15 +77,18 @@ $spacings-list: (
   }
 }
 
-.grid.no-gutter[class*='x-spacing'] { > .inside {
-  padding-left:  divide($grid-gutter-width, 2);
-  padding-right: divide($grid-gutter-width, 2);
-}}
+[class*='x-spacing'] {
 
-.grid.small-gutter[class*='x-spacing'] { > .inside {
-  padding-left:  divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
-  padding-right: divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
-}}
+  &.no-gutter > .inside {
+    padding-left:  divide($grid-gutter-width, 2);
+    padding-right: divide($grid-gutter-width, 2);
+  }
+
+  &.small-gutter > .inside {
+    padding-left:  divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
+    padding-right: divide(sub($grid-gutter-width, $grid-gutter-small-width), 2);
+  }
+}
 
 @include init-spacings(map-get($spacings-list, 'init'));
 
@@ -103,9 +103,9 @@ $spacings-list: (
 };
 
 @include set-spacing-properties($spacings-list, 'l') {
-  .grid.small-gutter[class*='x-spacing'] {
+  [class*='x-spacing'] {
 
-    > .inside {
+    &.small-gutter > .inside {
       padding-left: 0;
       padding-right: 0;
     }

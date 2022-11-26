@@ -1,17 +1,24 @@
 .grid {
-  --gap: var(--gtr-btm);
+  --v-gap: var(--gtr-btm);
+  --flex-justify: normal;
+  --flex-align:   normal;
 
   > .inside {
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    --gtr-item: var(--gtr-half);
+
     position: relative;
 
-    row-gap: var(--gap);
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: var(--flex-justify);
+    align-items:     var(--flex-align);
+    row-gap:         var(--v-gap);
 
     // Add padding-bottom for last row
-    padding-bottom: var(--gap);
+    padding-bottom:  var(--v-gap);
 
     > * {
       flex-grow: 0;
@@ -19,102 +26,60 @@
       flex-basis: 100%;
       max-width: 100%;
 
-      padding-right: divide($grid-gutter-width, 2);
-      padding-left: divide($grid-gutter-width, 2);
+      padding-right: var(--gtr-item);
+      padding-left:  var(--gtr-item);
     }
   }
 
-  &.small-gutter {
-    --gap: var(--gtr-btm-sml);
-
-    > .inside {
-
-      > * {
-        padding-right: divide($grid-gutter-small-width, 2);
-        padding-left: divide($grid-gutter-small-width, 2);
-      }
-    }
+  &.small-gutter > .inside {
+    --gtr-item: var(--gtr-half-sml);
   }
 
-  &.no-gutter {
-    --gap: 0rem;
-
-    > .inside {
-
-      > * {
-        padding: 0;
-      }
-    }
+  &.no-gutter > .inside {
+    --gtr-item: 0rem;
   }
 
   .grid {
 
-    > .inside {
+    & > .inside {
       margin-left: -#{divide($grid-gutter-width, 2)};
       margin-right: -#{divide($grid-gutter-width, 2)};
       padding-bottom: 0;
     }
 
-    &.small-gutter {
-
-      > .inside {
-        margin-left: -#{divide($grid-gutter-small-width, 2)};
-        margin-right: -#{divide($grid-gutter-small-width, 2)};
-      }
+    &.small-gutter > .inside {
+      margin-left: -#{divide($grid-gutter-small-width, 2)};
+      margin-right: -#{divide($grid-gutter-small-width, 2)};
     }
 
-    &.no-gutter {
-
-      > .inside {
-        margin-left: 0;
-        margin-right: 0;
-      }
+    &.no-gutter > .inside {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
-  &.align-top > .inside {
-    align-items: flex-start;
-  }
+  &.align-top             > .inside { align-items: flex-start }
+  &.align-middle          > .inside { align-items: center }
+  &.align-bottom          > .inside { align-items: flex-end }
+  &.align-baseline        > .inside { align-items: baseline }
+}
 
-  &.align-middle > .inside {
-    align-items: center;
-  }
+.auto-height {
+  align-items: stretch;
 
-  &.align-bottom > .inside {
-    align-items: flex-end;
-  }
-
-  &.align-baseline > .inside {
-    align-items: baseline;
-  }
-
-  &.auto-height [class*="col-"] > .inside {
+  .inside {
     height: 100%;
   }
+}
 
-  &.justify-left > .inside {
-    justify-content: flex-start;
-  }
-
-  &.justify-center > .inside {
-    justify-content: center;
-  }
-
-  &.justify-right > .inside {
-    justify-content: flex-end;
-  }
-
-  &.justify-space-between > .inside {
-    justify-content: space-between;
-  }
-
-  &.justify-space-around > .inside {
-    justify-content: space-around;
-  }
-
-  &.justify-space-evenly > .inside {
-    justify-content: space-evenly;
-  }
+.justify {
+  &-left          { --flex-justify: flex-start }
+  &-center        { --flex-justify: center }
+  &-right         { --flex-justify: flex-end }
+  &-space-between { --flex-justify: space-between }
+  &-space-around  { --flex-justify: space-around }
+  &-space-evenly  { --flex-justify: space-evenly }
+  &-revert        { --flex-justify: revert }
 }
 
 $grid-breakpoints: map-merge((0:0),$breakpoints);

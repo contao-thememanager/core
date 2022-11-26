@@ -1,19 +1,19 @@
 .grid-list {
-  --gap: var(--gtr-btm);
+  --v-gap: var(--gtr-btm);
+  --h-gap: var(--gtr);
   --items: 1;
 
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: var(--flex-justify);
   align-items: flex-start;
 
-  gap: var(--gap);
+  gap: var(--v-gap) var(--h-gap);
 
   > div {
-    width: calc((100% / var(--items)) - (((var(--items) - 1) / var(--items)) * var(--gap)));
+    width: calc((100% / var(--items)) - (((var(--items) - 1) / var(--items)) * var(--h-gap)));
   }
-
-  &.small-gutter { --gap: var(--gtr-btm-sml) }
-  &.no-gutter    { --gap: 0rem }
 }
 
 @include generate-infix-breakpoint-styles((
@@ -26,21 +26,3 @@
     '&-6' : (--items: 6)
   )
 ));
-
-.justify {
-  &-left          { justify-content: flex-start }
-  &-center        { justify-content: center }
-  &-right         { justify-content: flex-end }
-  &-space-between { justify-content: space-between }
-  &-space-around  { justify-content: space-around }
-  &-space-evenly  { justify-content: space-evenly }
-  &-revert        { justify-content: revert }
-}
-
-.auto-height{
-  align-items: stretch;
-
-  .inside {
-    height: 100%;
-  }
-}
