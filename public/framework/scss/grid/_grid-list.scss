@@ -17,14 +17,14 @@
 }
 
 @include generate-infix-breakpoint-styles((
-        '.list': (
-                '&-1' : (--items: 1),
-                '&-2' : (--items: 2),
-                '&-3' : (--items: 3),
-                '&-4' : (--items: 4),
-                '&-5' : (--items: 5),
-                '&-6' : (--items: 6)
-        )
+  '.list': (
+    '&-1' : (--items: 1),
+    '&-2' : (--items: 2),
+    '&-3' : (--items: 3),
+    '&-4' : (--items: 4),
+    '&-5' : (--items: 5),
+    '&-6' : (--items: 6)
+  )
 ));
 
 .justify {

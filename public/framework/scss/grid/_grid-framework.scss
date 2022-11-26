@@ -9,7 +9,9 @@
     position: relative;
 
     row-gap: var(--gap);
-    //padding-bottom: $grid-gutter-bottom;
+
+    // Add padding-bottom for last row
+    padding-bottom: var(--gap);
 
     > * {
       flex-grow: 0;
@@ -26,7 +28,6 @@
     --gap: var(--gtr-btm-sml);
 
     > .inside {
-      //padding-bottom: $grid-gutter-small-bottom;
 
       > * {
         padding-right: divide($grid-gutter-small-width, 2);
@@ -39,7 +40,6 @@
     --gap: 0rem;
 
     > .inside {
-      //padding: 0;
 
       > * {
         padding: 0;
