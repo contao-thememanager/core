@@ -25,10 +25,11 @@
 }
 
 // Returns a max-width breakpoint
+// Reduced to .02 due to https://www.w3.org/TR/mediaqueries-4/#mq-min-max
 @mixin max-breakpoint($name, $breakpoints: $breakpoints) {
   $max: breakpoint-min($name, $breakpoints);
   @if $max {
-    @media (max-width: sub($max, 1px, 'px')) {
+    @media (max-width: sub($max, .02px, 'px')) {
       @content;
     }
   } @else {
