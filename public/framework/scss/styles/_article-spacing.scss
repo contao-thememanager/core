@@ -78,6 +78,17 @@ $spacings-list: (
 }
 
 [class*='x-spacing'] {
+  // Set initial width value
+  --art-wdth: auto;
+
+  &, #container {
+
+    > .inside {
+      width: var(--art-wdth);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   &.no-gutter > .inside {
     padding-left:  divide($grid-gutter-width, 2);
@@ -95,10 +106,8 @@ $spacings-list: (
 @include set-spacing-properties($spacings-list, 's');
 
 @include set-spacing-properties($spacings-list, 'm') {
-  .x-spacing-large > .inside {
-    width: $x-spacing-large-m;
-    margin-left: auto;
-    margin-right: auto;
+  .x-spacing-large {
+    --art-wdth: #{$x-spacing-large-m};
   }
 };
 
@@ -112,29 +121,15 @@ $spacings-list: (
   }
 
   .x-spacing-medium {
-    &, #container {
-      > .inside {
-        width: sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px');
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+    --art-wdth: #{sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px')};
 
     &.small-gutter {
-      &, #container {
-        > .inside {
-          width: sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px');
-        }
-      }
+      --art-wdth: #{sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px')};
     }
   }
 
   .x-spacing-large {
-    &, #container {
-      > .inside {
-        width: $x-spacing-large-l;
-      }
-    }
+    --art-wdth: #{$x-spacing-large-l};
   }
 };
 
@@ -142,12 +137,6 @@ $spacings-list: (
 
 @media (min-width: sum($x-spacing-small, $grid-gutter-width, 'px')) {
   .x-spacing-small {
-    &, #container {
-      > .inside {
-        width: $x-spacing-small;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+    --art-wdth: #{$x-spacing-small};
   }
 }
