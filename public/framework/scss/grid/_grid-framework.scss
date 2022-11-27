@@ -45,24 +45,6 @@
   &.align-baseline > .inside { align-items: baseline }
 }
 
-.auto-height {
-  align-items: stretch;
-
-  .inside {
-    height: 100%;
-  }
-}
-
-.justify {
-  &-left          { --flex-justify: flex-start }
-  &-center        { --flex-justify: center }
-  &-right         { --flex-justify: flex-end }
-  &-space-between { --flex-justify: space-between }
-  &-space-around  { --flex-justify: space-around }
-  &-space-evenly  { --flex-justify: space-evenly }
-  &-revert        { --flex-justify: revert }
-}
-
 $grid-breakpoints: map-merge((0:0),$breakpoints);
 
 @each $breakpoint in map-keys($grid-breakpoints) {
