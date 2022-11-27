@@ -10,7 +10,7 @@
   --gtr-btm-sml:  #{$grid-gutter-small-bottom};
 
   --gtr-half:     #{divide($grid-gutter-width, 2)};
-  --gtr-half-sml: #{divide($grid-gutter-small-width, 2)}
+  --gtr-half-sml: #{divide($grid-gutter-small-width, 2)};
 }
 
 // Components
@@ -18,11 +18,21 @@
 @import "grid/grid-list";
 
 .small-gutter {
-  --v-gap: var(--gtr-btm-sml);
-  --h-gap: var(--gtr-sml);
+  --v-gap:      var(--gtr-btm-sml);
+  --h-gap:      var(--gtr-sml);
+  --h-gap-off:  calc(-1 * var(--gtr-half-sml));
+
+  > .inside {
+    --gtr-item: var(--gtr-half-sml);
+  }
 }
 
 .no-gutter {
   --v-gap: 0rem;
   --h-gap: 0rem;
+  --h-gap-off: 0rem;
+
+  > .inside {
+    --gtr-item: 0rem;
+  }
 }

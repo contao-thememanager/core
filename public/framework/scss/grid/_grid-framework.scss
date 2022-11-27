@@ -1,5 +1,6 @@
 .grid {
-  --v-gap: var(--gtr-btm);
+  --v-gap:        var(--gtr-btm);
+  --h-gap-off:    calc(-1 * var(--gtr-half));
   --flex-justify: normal;
   --flex-align:   normal;
 
@@ -21,47 +22,27 @@
     padding-bottom:  var(--v-gap);
 
     > * {
-      flex-grow: 0;
+      flex-grow:   0;
       flex-shrink: 0;
-      flex-basis: 100%;
-      max-width: 100%;
+      flex-basis:  100%;
+      max-width:   100%;
 
       padding-right: var(--gtr-item);
       padding-left:  var(--gtr-item);
     }
   }
 
-  &.small-gutter > .inside {
-    --gtr-item: var(--gtr-half-sml);
+  // Negative margin to counter offset
+  .grid > .inside {
+    margin-left:  var(--h-gap-off);
+    margin-right: var(--h-gap-off);
+    padding-bottom: 0;
   }
 
-  &.no-gutter > .inside {
-    --gtr-item: 0rem;
-  }
-
-  .grid {
-
-    & > .inside {
-      margin-left: -#{divide($grid-gutter-width, 2)};
-      margin-right: -#{divide($grid-gutter-width, 2)};
-      padding-bottom: 0;
-    }
-
-    &.small-gutter > .inside {
-      margin-left: -#{divide($grid-gutter-small-width, 2)};
-      margin-right: -#{divide($grid-gutter-small-width, 2)};
-    }
-
-    &.no-gutter > .inside {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-
-  &.align-top             > .inside { align-items: flex-start }
-  &.align-middle          > .inside { align-items: center }
-  &.align-bottom          > .inside { align-items: flex-end }
-  &.align-baseline        > .inside { align-items: baseline }
+  &.align-top      > .inside { align-items: flex-start }
+  &.align-middle   > .inside { align-items: center }
+  &.align-bottom   > .inside { align-items: flex-end }
+  &.align-baseline > .inside { align-items: baseline }
 }
 
 .auto-height {
@@ -94,7 +75,7 @@ $grid-breakpoints: map-merge((0:0),$breakpoints);
       @for $i from 1 through $grid-columns {
         > .col#{$infix}-#{$i} {
           flex-basis: shortPercentage($i / $grid-columns);
-          max-width: shortPercentage($i / $grid-columns);
+          max-width:  shortPercentage($i / $grid-columns);
         }
       }
 
@@ -104,22 +85,22 @@ $grid-breakpoints: map-merge((0:0),$breakpoints);
         max-width: 100%;
       }
 
-      > .col#{$infix}-top     { align-self: flex-start; }
-      > .col#{$infix}-middle  { align-self: center; }
-      > .col#{$infix}-bottom  { align-self: flex-end;}
-      > .col#{$infix}-baseline{ align-self: baseline; }
-      > .col#{$infix}-stretch { align-self: stretch; }
-      > .order#{$infix}-first { order: -1; }
-      > .order#{$infix}-last  { order: $grid-columns + 1; }
+      > .col#{$infix}-top      { align-self: flex-start }
+      > .col#{$infix}-middle   { align-self: center }
+      > .col#{$infix}-bottom   { align-self: flex-end}
+      > .col#{$infix}-baseline { align-self: baseline }
+      > .col#{$infix}-stretch  { align-self: stretch }
+      > .order#{$infix}-first  { order: -1 }
+      > .order#{$infix}-last   { order: $grid-columns + 1; }
 
       @for $i from 0 through $grid-columns {
-        > .order#{$infix}-#{$i} { order: $i; }
+        > .order#{$infix}-#{$i} { order: $i }
       }
 
       @for $i from 0 through ($grid-columns - 1) {
         @if not ($infix == "" and $i == 0) {
           > .offset#{$infix}-#{$i} {
-            margin-left: shortPercentage($i / $grid-columns);
+            margin-left: shortPercentage($i / $grid-columns)
           }
         }
       }

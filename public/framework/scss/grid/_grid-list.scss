@@ -1,7 +1,8 @@
 .grid-list {
   --v-gap: var(--gtr-btm);
   --h-gap: var(--gtr);
-  --items: 1;
+  --i-gap: var(--h-gap); // Property specificity for multi-nested grid / grid-lists
+  --items: 1; // If items are not set, always set it to 1
 
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +13,7 @@
   gap: var(--v-gap) var(--h-gap);
 
   > div {
-    width: calc((100% / var(--items)) - (((var(--items) - 1) / var(--items)) * var(--h-gap)));
+    width: calc((100% / var(--items)) - (((var(--items) - 1) / var(--items)) * var(--i-gap)));
   }
 }
 
