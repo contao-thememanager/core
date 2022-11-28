@@ -2002,7 +2002,7 @@
         <field title="alias">gridVerticalAlignment</field>
         <field title="title">Vertical-Alignment</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"align-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"align-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"align-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"align-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2054,7 +2054,7 @@
         <field title="alias">wrapperGridVerticalAlignment</field>
         <field title="title">Vertical-Alignment</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"align-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"align-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"align-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"align-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
