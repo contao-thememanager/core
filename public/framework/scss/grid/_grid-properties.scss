@@ -1,12 +1,3 @@
-.auto-height {
-  // Also used as "items-stretch"
-  align-items: stretch;
-
-  .inside {
-    height: 100%;
-  }
-}
-
 .justify {
   &-start    { --flex-justify: flex-start }
   &-center   { --flex-justify: center }
@@ -22,4 +13,14 @@
   &-center   { --flex-items: center }
   &-end      { --flex-items: flex-end }
   &-baseline { --flex-items: baseline }
+}
+
+// Also used as "items-stretch"
+.auto-height {
+  --flex-items: stretch;
+  align-items: stretch;
+
+  .inside {
+    height: 100%;
+  }
 }
