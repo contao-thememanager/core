@@ -210,7 +210,7 @@
         <field title="alias">spacingGlobal</field>
         <field title="title">Global Spacing &amp;#40;activates the Responsive behaviour&amp;#41;</field>
         <field title="description">Defines dynamic spacing of the headings.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:23:"hl-spacing-global-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:24:"hl-spacing-global-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:23:"hl-spacing-global-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:12:"hl-mb-auto-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:12:"hl-mb-auto-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:12:"hl-mb-auto-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass">long</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -236,7 +236,7 @@
         <field title="alias">spacing</field>
         <field title="title">Spacing</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:16:"hl-spacing-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:17:"hl-spacing-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:16:"hl-spacing-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:7:"hl-mb-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:7:"hl-mb-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:7:"hl-mb-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass">clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -262,7 +262,7 @@
         <field title="alias">spacingXS</field>
         <field title="title">Spacing &amp;#40;XS&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:19:"hl-spacing-xs-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:20:"hl-spacing-xs-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:19:"hl-spacing-xs-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"hl-mb-xs-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"hl-mb-xs-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:10:"hl-mb-xs-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -288,7 +288,7 @@
         <field title="alias">spacingS</field>
         <field title="title">Spacing &amp;#40;S&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:18:"hl-spacing-s-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:19:"hl-spacing-s-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:18:"hl-spacing-s-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-s-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-s-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-s-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -314,7 +314,7 @@
         <field title="alias">spacingM</field>
         <field title="title">Spacing &amp;#40;M&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:18:"hl-spacing-m-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:19:"hl-spacing-m-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:18:"hl-spacing-m-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-m-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-m-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-m-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -340,7 +340,7 @@
         <field title="alias">spacingL</field>
         <field title="title">Spacing &amp;#40;L&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:18:"hl-spacing-l-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:19:"hl-spacing-l-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:18:"hl-spacing-l-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-l-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-l-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-l-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -366,7 +366,7 @@
         <field title="alias">spacingXL</field>
         <field title="title">Spacing &amp;#40;XL&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:19:"hl-spacing-xl-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:20:"hl-spacing-xl-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:19:"hl-spacing-xl-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"hl-mb-xl-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"hl-mb-xl-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:10:"hl-mb-xl-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
