@@ -1,6 +1,6 @@
 @include generate-infix-breakpoint-styles((
   // Text alignments
-  '.align,.hl-align': (
+  '.align': (
     '&-left': (
       text-align: left
     ),
