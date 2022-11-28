@@ -15,3 +15,10 @@
   &-space-evenly  { --flex-justify: space-evenly }
   &-revert        { --flex-justify: revert }
 }
+
+.align {
+  &-top           { --flex-items: flex-start }
+  &-middle        { --flex-items: center }
+  &-bottom        { --flex-items: flex-end }
+  &-baseline      { --flex-items: baseline }
+}

@@ -2,7 +2,7 @@
   --v-gap:        var(--gtr-btm);
   --h-gap-off:    calc(-1 * var(--gtr-half));
   --flex-justify: normal;
-  --flex-align:   normal;
+  --flex-items:   normal;
 
   > .inside {
     --gtr-item: var(--gtr-half);
@@ -15,7 +15,7 @@
     flex-direction: row;
 
     justify-content: var(--flex-justify);
-    align-items:     var(--flex-align);
+    align-items:     var(--flex-items);
     row-gap:         var(--v-gap);
 
     // Add padding-bottom for last row
@@ -38,11 +38,6 @@
     margin-right: var(--h-gap-off);
     padding-bottom: 0;
   }
-
-  &.align-top      > .inside { align-items: flex-start }
-  &.align-middle   > .inside { align-items: center }
-  &.align-bottom   > .inside { align-items: flex-end }
-  &.align-baseline > .inside { align-items: baseline }
 }
 
 $grid-breakpoints: map-merge((0:0),$breakpoints);
