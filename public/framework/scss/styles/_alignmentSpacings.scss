@@ -14,33 +14,61 @@
       text-align: justify
     ),
   ),
-  // Component spacings
-  '.left-spacing': (
-    '&-reset > .inside': (
-      margin-left: 0 !important
+  // Spacings
+  '.mt': (
+    '&-0': (
+      margin-top: 0 !important
     ),
-    '&-small > .inside': (
-      margin-left: $spacing-small !important
+    '&-1': (
+      margin-top: $top-bottom-spacing-small !important
     ),
-    '&-medium > .inside': (
-      margin-left: $spacing-medium !important
+    '&-2': (
+      margin-top: $top-bottom-spacing-medium !important
     ),
-    '&-large > .inside': (
-      margin-left: $spacing-large !important
+    '&-3': (
+      margin-top: $top-bottom-spacing-large !important
     )
   ),
-  '.right-spacing': (
-    '&-reset > .inside': (
+  '.mb': (
+    '&-0': (
+      margin-bottom: 0 !important
+    ),
+    '&-1': (
+      margin-bottom: $top-bottom-spacing-small !important
+    ),
+    '&-2': (
+      margin-bottom: $top-bottom-spacing-medium !important
+    ),
+    '&-3': (
+      margin-bottom: $top-bottom-spacing-large !important
+    )
+  ),
+  '.ml': (
+    '&-0': (
+      margin-left: 0 !important
+    ),
+    '&-1': (
+      margin-left: $left-right-spacing-small !important
+    ),
+    '&-2': (
+      margin-left: $left-right-spacing-medium !important
+    ),
+    '&-3': (
+      margin-left: $left-right-spacing-large !important
+    )
+  ),
+  '.mr': (
+    '&-0': (
       margin-right: 0 !important
     ),
-    '&-small > .inside': (
-      margin-right: $spacing-small !important
+    '&-1': (
+      margin-right: $left-right-spacing-small !important
     ),
-    '&-medium > .inside': (
-      margin-right: $spacing-medium !important
+    '&-2': (
+      margin-right: $left-right-spacing-medium !important
     ),
-    '&-large > .inside': (
-      margin-right: $spacing-large !important
+    '&-3': (
+      margin-right: $left-right-spacing-large !important
     )
-  )
+  ),
 ));

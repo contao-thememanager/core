@@ -320,24 +320,14 @@ $button-border-width-alt:                 2px !default;
 $button-border-color-alt:                 $button-bg-alt !default;
 $button-hover-border-color-alt:           $button-hover-bg-alt !default;
 
-// Element Spacing
-$element-spacing-xs-small:                1rem !default;
-$element-spacing-s-small:                 1rem !default;
-$element-spacing-m-small:                 1.1rem !default;
-$element-spacing-l-small:                 1.2rem !default;
-$element-spacing-xl-small:                1.3rem !default;
-
-$element-spacing-xs-medium:               1rem !default;
-$element-spacing-s-medium:                1rem !default;
-$element-spacing-m-medium:                1.2rem !default;
-$element-spacing-l-medium:                1.35rem !default;
-$element-spacing-xl-medium:               1.5rem !default;
-
-$element-spacing-xs-large:                1rem !default;
-$element-spacing-s-large:                 1rem !default;
-$element-spacing-m-large:                 1.5rem !default;
-$element-spacing-l-large:                 1.8rem !default;
-$element-spacing-xl-large:                2.2rem !default;
+// Spacing
+$component-inner-spacing:                 1rem !default;
+$top-bottom-spacing-small:                1rem !default;
+$top-bottom-spacing-medium:               2rem !default;
+$top-bottom-spacing-large:                3rem !default;
+$left-right-spacing-small:                1rem !default;
+$left-right-spacing-medium:               2rem !default;
+$left-right-spacing-large:                3rem !default;
 
 // Divider
 $divider-size:                            1px;
@@ -370,13 +360,6 @@ $boxed-border-color:                      #e3e3e3 !default;
 $boxed-border-style:                      solid !default;
 $boxed-border-width:                      1px !default;
 $boxed-border-radius:                     0 !default;
-
-// Components
-$component-inner-spacing:                 1rem !default;
-
-$spacing-small:                           1rem !default;
-$spacing-medium:                          2rem !default;
-$spacing-large:                           3rem !default;
 
 // Navigation
 $navigation-behaviour-min-width:          768px;

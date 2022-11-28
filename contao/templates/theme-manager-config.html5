@@ -22,10 +22,9 @@ return array(
             '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-bg-primary,button-hover-bg-primary,button-color-primary,button-hover-color-primary,button-border-radius-primary,button-border-style-primary,button-border-width-primary,button-border-color-primary,button-hover-border-color-primary;' .
             '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-color-secondary,button-hover-color-secondary,button-border-radius-secondary,button-border-style-secondary,button-border-width-secondary,button-border-color-secondary,button-hover-border-color-secondary;' .
             '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-color-alt,button-hover-color-alt,button-border-radius-alt,button-border-style-alt,button-border-width-alt,button-border-color-alt,button-hover-border-color-alt;' .
-            '{element_legend:hide},element-spacing-xs-small,element-spacing-s-small,element-spacing-m-small,element-spacing-l-small,element-spacing-xl-small,element-spacing-xs-medium,element-spacing-s-medium,element-spacing-m-medium,element-spacing-l-medium,element-spacing-xl-medium,element-spacing-xs-large,element-spacing-s-large,element-spacing-m-large,element-spacing-l-large,element-spacing-xl-large;' .
+            '{spacing_legend:hide},component-inner-spacing,top-bottom-spacing-small,top-bottom-spacing-medium,top-bottom-spacing-large,left-right-spacing-small,left-right-spacing-medium,left-right-spacing-large;' .
             '{divider_legend:hide},divider-size,divider-style,divider-color;' .
             '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
-            '{component_legend:hide},component-inner-spacing,spacing-small,spacing-medium,spacing-large;' .
             '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
             '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
     ),
@@ -1933,128 +1932,62 @@ return array(
             'eval'                    => array('placeholder'=>'$button-hover-bg-alt', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
 
-        // Element
-        'element-spacing-xs-small' => array
+        // Components
+        'component-inner-spacing' => array
         (
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xs-small'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
         ),
-        'element-spacing-s-small' => array
+        'top-bottom-spacing-small' => array
         (
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-s-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-m-small' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-m-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-l-small' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-l-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-xl-small' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.3";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xl-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-
-        'element-spacing-xs-medium' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xs-medium'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['top-bottom-spacing-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
-        'element-spacing-s-medium' => array
+        'top-bottom-spacing-medium' => array
+        (
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['top-bottom-spacing-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+        ),
+        'top-bottom-spacing-large' => array
+        (
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['top-bottom-spacing-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => array('placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+        ),
+        'left-right-spacing-small' => array
         (
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-s-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-m-medium' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-m-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-l-medium' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"1.35";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-l-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.35rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-xl-medium' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xl-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-
-        'element-spacing-xs-large' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xs-large'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['left-right-spacing-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
-        'element-spacing-s-large' => array
+        'left-right-spacing-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-s-large'],
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['left-right-spacing-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
         ),
-        'element-spacing-m-large' => array
+        'left-right-spacing-large' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-m-large'],
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['left-right-spacing-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-l-large' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.8";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-l-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1.8rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'element-spacing-xl-large' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['element-spacing-xl-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'2.2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
+            'eval'                    => array('placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
         ),
 
         // Divider
@@ -2126,40 +2059,6 @@ return array(
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'),
-        ),
-
-        // Components
-        'component-inner-spacing' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'spacing-small' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
-        ),
-        'spacing-medium' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
-        ),
-        'spacing-large' => array
-        (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['spacing-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50'),
         ),
 
         // Navigation

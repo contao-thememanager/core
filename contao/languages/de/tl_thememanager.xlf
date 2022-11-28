@@ -85,9 +85,9 @@
         <source>Button-Design-Alternative</source>
         <target>Button-Design-Alternative</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element_legend">
-        <source>Element-Spacing</source>
-        <target>Element Abstand</target>
+      <trans-unit id="tl_thememanager.spacing_legend">
+        <source>Spacings</source>
+        <target>Abstände</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.divider_legend">
         <source>Divider</source>
@@ -96,10 +96,6 @@
       <trans-unit id="tl_thememanager.boxed_legend">
         <source>Boxed</source>
         <target>Box</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.component_legend">
-        <source>Component</source>
-        <target>Komponenten</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.tns_legend">
         <source>Tiny-Slider</source>
@@ -2081,125 +2077,61 @@
         <source>Here you can set the border-color for alternative buttons when hovered.</source>
         <target>Hier können Sie die Rahmen-Farbe (border-color) für alternative Buttons beim hovern einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-small.0">
-        <source>$element-spacing-xs-small</source>
-        <target>$element-spacing-xs-small</target>
+      <trans-unit id="tl_thememanager.component-inner-spacing.0">
+        <source>$component-inner-spacing</source>
+        <target>$component-inner-spacing</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-small.1">
-        <source>Here you can set the small vertical margin for elements for extra small devices.</source>
-        <target>Hier können Sie den kleinen vertikalen Abstand von Elementen auf sehr kleinen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.component-inner-spacing.1">
+        <source>Here you can set the inner padding for components (e.g. icons and images).</source>
+        <target>Hier können Sie das Polster / den inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-small.0">
-        <source>$element-spacing-s-small</source>
-        <target>$element-spacing-s-small</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-small.0">
+        <source>$top-bottom-spacing-small</source>
+        <target>$top-bottom-spacing-small</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-small.1">
-        <source>Here you can set the small vertical margin for elements for small devices.</source>
-        <target>Hier können Sie den kleinen vertikalen Abstand von Elementen auf kleinen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-small.1">
+        <source>Here you can set the small vertical margin.</source>
+        <target>Hier können Sie den kleinen vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-small.0">
-        <source>$element-spacing-m-small</source>
-        <target>$element-spacing-m-small</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-medium.0">
+        <source>$top-bottom-spacing-medium</source>
+        <target>$top-bottom-spacing-medium</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-small.1">
-        <source>Here you can set the small vertical margin for elements for medium devices.</source>
-        <target>Hier können Sie den kleinen vertikalen Abstand von Elementen auf mittleren Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-medium.1">
+        <source>Here you can set the medium vertical margin.</source>
+        <target>Hier können Sie den mittleren vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-small.0">
-        <source>$element-spacing-l-small</source>
-        <target>$element-spacing-l-small</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-large.0">
+        <source>$top-bottom-spacing-large</source>
+        <target>$top-bottom-spacing-large</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-small.1">
-        <source>Here you can set the small vertical margin for elements for large devices.</source>
-        <target>Hier können Sie den kleinen vertikalen Abstand von Elementen auf großen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.top-bottom-spacing-large.1">
+        <source>Here you can set the large vertical margin.</source>
+        <target>Hier können Sie den großen vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-small.0">
-        <source>$element-spacing-xl-small</source>
-        <target>$element-spacing-xl-small</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-small.0">
+        <source>$left-right-spacing-small</source>
+        <target>$left-right-spacing-small</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-small.1">
-        <source>Here you can set the small vertical margin for elements for extra large devices.</source>
-        <target>Hier können Sie den kleinen vertikalen Abstand von Elementen auf sehr großen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-small.1">
+        <source>Here you can set the small horizontal margin.</source>
+        <target>Hier können Sie den kleinen horizontalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-medium.0">
-        <source>$element-spacing-xs-medium</source>
-        <target>$element-spacing-xs-medium</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-medium.0">
+        <source>$left-right-spacing-medium</source>
+        <target>$left-right-spacing-medium</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-medium.1">
-        <source>Here you can set the medium vertical margin for elements for extra small devices.</source>
-        <target>Hier können Sie den mittleren vertikalen Abstand von Elementen auf sehr kleinen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-medium.1">
+        <source>Here you can set the medium horizontal margin.</source>
+        <target>Hier können Sie den mittleren horizontalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-medium.0">
-        <source>$element-spacing-s-medium</source>
-        <target>$element-spacing-s-medium</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-large.0">
+        <source>$left-right-spacing-large</source>
+        <target>$left-right-spacing-large</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-medium.1">
-        <source>Here you can set the medium vertical margin for elements for small devices.</source>
-        <target>Hier können Sie den mittleren vertikalen Abstand von Elementen auf kleinen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-medium.0">
-        <source>$element-spacing-m-medium</source>
-        <target>$element-spacing-m-medium</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-medium.1">
-        <source>Here you can set the medium vertical margin for elements for medium devices.</source>
-        <target>Hier können Sie den mittleren vertikalen Abstand von Elementen auf mittleren Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-medium.0">
-        <source>$element-spacing-l-medium</source>
-        <target>$element-spacing-l-medium</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-medium.1">
-        <source>Here you can set the medium vertical margin for elements for large devices.</source>
-        <target>Hier können Sie den mittleren vertikalen Abstand von Elementen auf großen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-medium.0">
-        <source>$element-spacing-xl-medium</source>
-        <target>$element-spacing-xl-medium</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-medium.1">
-        <source>Here you can set the medium vertical margin for elements for extra large devices.</source>
-        <target>Hier können Sie den mittleren vertikalen Abstand von Elementen auf sehr großen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-large.0">
-        <source>$element-spacing-xs-large</source>
-        <target>$element-spacing-xs-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xs-large.1">
-        <source>Here you can set the large vertical margin for elements for extra small devices.</source>
-        <target>Hier können Sie den großen vertikalen Abstand von Elementen auf sehr kleinen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-large.0">
-        <source>$element-spacing-s-large</source>
-        <target>$element-spacing-s-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-s-large.1">
-        <source>Here you can set the large vertical margin for elements for small devices.</source>
-        <target>Hier können Sie den großen vertikalen Abstand von Elementen auf kleinen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-large.0">
-        <source>$element-spacing-m-large</source>
-        <target>$element-spacing-m-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-m-large.1">
-        <source>Here you can set the large vertical margin for elements for medium devices.</source>
-        <target>Hier können Sie den großen vertikalen Abstand von Elementen auf mittleren Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-large.0">
-        <source>$element-spacing-l-large</source>
-        <target>$element-spacing-l-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-l-large.1">
-        <source>Here you can set the large vertical margin for elements for large devices.</source>
-        <target>Hier können Sie den großen vertikalen Abstand von Elementen auf großen Geräten einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-large.0">
-        <source>$element-spacing-xl-large</source>
-        <target>$element-spacing-xl-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.element-spacing-xl-large.1">
-        <source>Here you can set the large vertical margin for elements for extra large devices.</source>
-        <target>Hier können Sie den großen vertikalen Abstand von Elementen auf sehr großen Geräten einstellen.</target>
+      <trans-unit id="tl_thememanager.left-right-spacing-large.1">
+        <source>Here you can set the large horizontal margin.</source>
+        <target>Hier können Sie den großen horizontalen Abstand einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.divider-size.0">
         <source>$divider-size</source>
@@ -2272,38 +2204,6 @@
       <trans-unit id="tl_thememanager.boxed-border-radius.1">
         <source>Here you can set the border-radius for boxed elements.</source>
         <target>Hier können Sie den Rahmen-Radius (border-radius) für Boxed-Elemente einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.component-inner-spacing.0">
-        <source>$component-inner-spacing</source>
-        <target>$component-inner-spacing</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.component-inner-spacing.1">
-        <source>Here you can set the inner padding for components (e.g. icons and images).</source>
-        <target>Hier können Sie das Polster / den inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-small.0">
-        <source>$spacing-small</source>
-        <target>$spacing-small</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-small.1">
-        <source>Here you can set the small horizontal margin for components (e.g. icons and images).</source>
-        <target>Hier können Sie den kleinen horizontalen Abstand für Komponenten (z.B. Icons und Bilder) einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-medium.0">
-        <source>$spacing-medium</source>
-        <target>$spacing-medium</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-medium.1">
-        <source>Here you can set the medium horizontal margin for components (e.g. icons and images).</source>
-        <target>Hier können Sie den mittleren horizontalen Abstand für Komponenten (z.B. Icons und Bilder) einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-large.0">
-        <source>$spacing-large</source>
-        <target>$spacing-large</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.spacing-large.1">
-        <source>Here you can set the large horizontal margin for components (e.g. icons and images).</source>
-        <target>Hier können Sie den großen horizontalen Abstand für Komponenten (z.B. Icons und Bilder) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.tns-dot-size.0">
         <source>$tns-dot-size</source>
