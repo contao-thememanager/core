@@ -392,7 +392,7 @@
         <field title="alias">alignment</field>
         <field title="title">Alignment</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:10:"align-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"align-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:12:"align-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:13:"align-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass">seperator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -418,7 +418,7 @@
         <field title="alias">alignment-xs</field>
         <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:13:"align-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"align-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:15:"align-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:16:"align-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -444,7 +444,7 @@
         <field title="alias">alignment-s</field>
         <field title="title">Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -470,7 +470,7 @@
         <field title="alias">alignment-m</field>
         <field title="title">Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -496,7 +496,7 @@
         <field title="alias">alignment-l</field>
         <field title="title">Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -522,7 +522,7 @@
         <field title="alias">alignment-xl</field>
         <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:13:"align-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"align-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:15:"align-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:16:"align-xl-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -559,7 +559,7 @@
         <field title="alias">alignment</field>
         <field title="title">Alignment</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:10:"align-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"align-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:12:"align-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:13:"align-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -585,7 +585,7 @@
         <field title="alias">alignment-xs</field>
         <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:13:"align-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"align-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:15:"align-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:16:"align-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -611,7 +611,7 @@
         <field title="alias">alignment-s</field>
         <field title="title">Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -637,7 +637,7 @@
         <field title="alias">alignment-m</field>
         <field title="title">Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -663,7 +663,7 @@
         <field title="alias">alignment-l</field>
         <field title="title">Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"align-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"align-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"align-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"align-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -689,7 +689,7 @@
         <field title="alias">alignment-xl</field>
         <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:13:"align-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"align-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:15:"align-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:16:"align-xl-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
