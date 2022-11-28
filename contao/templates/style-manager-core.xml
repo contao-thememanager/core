@@ -1976,7 +1976,7 @@
         <field title="alias">gridHorizontalAlignment</field>
         <field title="title">Horizontal-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:12:"justify-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:21:"justify-space-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:20:"justify-space-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:20:"justify-space-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2028,7 +2028,7 @@
         <field title="alias">wrapperGridHorizontalAlignment</field>
         <field title="title">Horizontal-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:12:"justify-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:21:"justify-space-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:20:"justify-space-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:20:"justify-space-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2466,7 +2466,7 @@
         <field title="alias">justify</field>
         <field title="title">Justify Content</field>
         <field title="description">Defines the alignment of all child elements within the list.</field>
-        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:12:"justify-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:21:"justify-space-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:20:"justify-space-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:20:"justify-space-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
