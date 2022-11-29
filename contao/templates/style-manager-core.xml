@@ -1323,7 +1323,7 @@
         <field title="alias">topBottomSpacing</field>
         <field title="title">Top-Bottom-Spacing</field>
         <field title="description">Defines the spacing from top and bottom for this article.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:15:"y-spacing-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:16:"y-spacing-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:15:"y-spacing-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:8:"art-py-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-py-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-py-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1349,7 +1349,7 @@
         <field title="alias">leftRightSpacing</field>
         <field title="title">Left-Right-Spacing</field>
         <field title="description">Defines the spacing from left and right for this article.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:15:"x-spacing-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:16:"x-spacing-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:15:"x-spacing-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:8:"art-px-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-px-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-px-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1375,7 +1375,7 @@
         <field title="alias">top-spacing</field>
         <field title="title">Top-Spacing</field>
         <field title="description">Defines the spacing from the top for this article.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:17:"top-spacing-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:18:"top-spacing-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:17:"top-spacing-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:8:"art-pt-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-pt-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-pt-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1401,7 +1401,7 @@
         <field title="alias">bottom-spacing</field>
         <field title="title">Bottom-Spacing</field>
         <field title="description">Defines the spacing from the bottom for this article.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:20:"bottom-spacing-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:21:"bottom-spacing-medium";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:20:"bottom-spacing-large";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:8:"art-pb-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-pb-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-pb-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

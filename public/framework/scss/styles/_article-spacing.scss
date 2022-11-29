@@ -1,147 +1,157 @@
 // Class names
-$horizontal-article-spacing:   'x-spacing';
-$vertical-article-spacing:     'y-spacing';
-$vertical-article-spacing-top: 'top-spacing';
-$vertical-article-spacing-btm: 'bottom-spacing';
+$class-horizontal-article-spacing:   'art-px';
+$class-vertical-article-spacing:     'art-py';
+$class-vertical-article-spacing-top: 'art-pt';
+$class-vertical-article-spacing-btm: 'art-pb';
 
-$spacings-abbreviations: (
-  spacing: spc,
-  small:   sm,
-  medium:  md,
-  large:   lg
+$art-space-abbr: (
+  width:   art-wdth,
+  spacing: art-px,
+  1: 1,
+  2: 2,
+  3: 3
 );
 
-$spacings-list: (
-  init: (
-    small:  $article-spacing-xs-small,
-    medium: $article-spacing-xs-medium,
-    large:  $article-spacing-xs-large
-  ),
+$spacings-list-init: (
+  1: $article-spacing-xs-small,
+  2: $article-spacing-xs-medium,
+  3: $article-spacing-xs-large
+);
+
+$spacings-list-bp: (
   s: (
-    small:  $article-spacing-s-small,
-    medium: $article-spacing-s-medium,
-    large:  $article-spacing-s-large
+    1: $article-spacing-s-small,
+    2: $article-spacing-s-medium,
+    3: $article-spacing-s-large
   ),
   m: (
-    small:  $article-spacing-m-small,
-    medium: $article-spacing-m-medium,
-    large:  $article-spacing-m-large
+    1: $article-spacing-m-small,
+    2: $article-spacing-m-medium,
+    3: $article-spacing-m-large
   ),
   l: (
-    small:  $article-spacing-l-small,
-    medium: $article-spacing-l-medium,
-    large:  $article-spacing-l-large
+    1: $article-spacing-l-small,
+    2: $article-spacing-l-medium,
+    3: $article-spacing-l-large
   ),
   xl: (
-    small:  $article-spacing-xl-small,
-    medium: $article-spacing-xl-medium,
-    large:  $article-spacing-xl-large
+    1: $article-spacing-xl-small,
+    2: $article-spacing-xl-medium,
+    3: $article-spacing-xl-large
   )
 );
 
-@mixin init-spacings($list) {
-  // Set custom properties
-  :root {
-    @each $size, $spacing in $list {
-      --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
-    }
-  }
+$abbr-wdth: map-get($art-space-abbr, width);
+$abbr-spc:  map-get($art-space-abbr, spacing);
 
-  @each $size, $spacing in $list {
-    .#{$vertical-article-spacing}-#{$size} {
-      $v-art-pd: #{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)};
-      &, #container {
-        > .inside {
-          padding-top:    var(--#{$v-art-pd});
-          padding-bottom: var(--#{$v-art-pd});
-        }
-      }
-    }
-  }
-
-  @each $size, $spacing in $list {
-    .#{$vertical-article-spacing-top}-#{$size} {
-      > .inside {
-        padding-top: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
-      }
-    }
-    .#{$vertical-article-spacing-btm}-#{$size} {
-      > .inside {
-        padding-bottom: var(--#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)});
-      }
-    }
-  }
-}
-
-@mixin set-spacing-properties($list, $bp) {
-  $list: map-get($list, $bp);
-  @include media-breakpoint($bp) {
-    :root {
-      @each $size, $spacing in $list {
-        --#{map-get($spacings-abbreviations, spacing)}-#{map-get($spacings-abbreviations, $size)}: #{$spacing};
-      }
-    }
-    @content;
-  }
-}
-
-[class*=#{$horizontal-article-spacing}] {
+[class*=#{$class-horizontal-article-spacing}] {
   // Set initial width and padding values
-  --art-wdth: auto;
-  --art-h-pd:   0;
+  --#{$abbr-wdth}:   auto;
+  --#{$abbr-spc}: 0;
 
   &, #container {
 
     > .inside {
-      width:         var(--art-wdth);
-      padding-left:  var(--art-h-pd);
-      padding-right: var(--art-h-pd);
+      width:         var(--#{$abbr-wdth});
+      padding-left:  var(--#{$abbr-spc});
+      padding-right: var(--#{$abbr-spc});
       margin-left:   auto;
       margin-right:  auto;
     }
   }
 
   &.small-gutter {
-    --art-h-pd: #{divide(sub($grid-gutter-width, $grid-gutter-small-width), 2)};
+    --#{$abbr-spc}: #{divide(sub($grid-gutter-width, $grid-gutter-small-width), 2)};
   }
 
   &.no-gutter {
-    --art-h-pd: #{divide($grid-gutter-width, 2)};
+    --#{$abbr-spc}: #{divide($grid-gutter-width, 2)};
   }
 }
 
-@include init-spacings(map-get($spacings-list, 'init'));
-
-@include set-spacing-properties($spacings-list, 's');
-
-@include set-spacing-properties($spacings-list, 'm') {
-  .#{$horizontal-article-spacing}-large {
-    --art-wdth: #{$x-spacing-large-m};
+// Set custom properties
+:root {
+  @each $size, $spacing in $spacings-list-init {
+    --#{$abbr-spc}-#{map-get($art-space-abbr, $size)}: #{$spacing};
   }
-};
+}
 
-@include set-spacing-properties($spacings-list, 'l') {
-  [class*=#{$horizontal-article-spacing}].small-gutter {
-    --art-h-pd: 0;
-  }
-
-  .#{$horizontal-article-spacing}-medium {
-    --art-wdth: #{sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px')};
-
-    &.small-gutter {
-      --art-wdth: #{sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px')};
+@each $size, $spacing in $spacings-list-init {
+  .#{$class-vertical-article-spacing}-#{$size} {
+    $v-art-pd: #{$abbr-spc}-#{map-get($art-space-abbr, $size)};
+    &, #container {
+      > .inside {
+        padding-top:    var(--#{$v-art-pd});
+        padding-bottom: var(--#{$v-art-pd});
+      }
     }
   }
+}
 
-  .#{$horizontal-article-spacing}-large {
-    --art-wdth: #{$x-spacing-large-l};
+@each $size, $spacing in $spacings-list-init {
+  .#{$class-vertical-article-spacing-top}-#{$size} {
+    > .inside {
+      padding-top: var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)});
+    }
   }
-};
+  .#{$class-vertical-article-spacing-btm}-#{$size} {
+    > .inside {
+      padding-bottom: var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)});
+    }
+  }
+}
 
-@include set-spacing-properties($spacings-list, 'xl');
+@each $bp in map-keys($breakpoints) {
+  $infix: breakpoint-infix($bp);
+  @include media-breakpoint($bp) {
+
+    $list: map-get($spacings-list-bp, $bp);
+
+    @if map-has-key($spacings-list-bp, $bp) {
+      :root {
+        @each $size, $spacing in $list {
+          --#{$abbr-spc}-#{map-get($art-space-abbr, $size)}: #{$spacing};
+        }
+      }
+    }
+
+    @if ($bp == 'm') {
+      .#{$class-horizontal-article-spacing} {
+
+        &-#{map-get($art-space-abbr, 3)} {
+          --#{$abbr-wdth}: #{$x-spacing-large-m};
+        }
+      }
+    }
+
+    @else if ($bp == 'l') {
+      [class*=#{$class-horizontal-article-spacing}].small-gutter {
+        --art-px: 0;
+      }
+
+      .#{$class-horizontal-article-spacing} {
+
+        &-#{map-get($art-space-abbr, 2)} {
+          --#{$abbr-wdth}: #{sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px')};
+
+          &.small-gutter {
+            --#{$abbr-wdth}: #{sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px')};
+          }
+        }
+
+        &-#{map-get($art-space-abbr, 3)} {
+          --#{$abbr-wdth}: #{$x-spacing-large-l};
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: sum($x-spacing-small, $grid-gutter-width, 'px')) {
-  .#{$horizontal-article-spacing}-small {
-    --art-wdth: #{$x-spacing-small};
+  .#{$class-horizontal-article-spacing} {
+
+    &-#{map-get($art-space-abbr, 1)} {
+      --#{$abbr-wdth}: #{$x-spacing-small};
+    }
   }
 }
