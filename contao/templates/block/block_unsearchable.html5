@@ -1,7 +1,7 @@
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block">
-  <div class="inside"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside<?=$this->styleManager->prepare('spacing')->format(' %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
