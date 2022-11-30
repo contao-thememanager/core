@@ -3929,7 +3929,7 @@
         <field title="alias">navigation</field>
         <field title="title">Navigation</field>
         <field title="description">Defines the basic alignment for the navigation.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:27:"navigation navigation-hover";s:5:"value";s:10:"Horizontal";}i:1;a:2:{s:3:"key";s:47:"navigation navigation-vertical navigation-hover";s:5:"value";s:8:"Vertical";}i:2;a:2:{s:3:"key";s:30:"navigation navigation-vertical";s:5:"value";s:17:"Vertical (static)";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"nav nav-x";s:5:"value";s:10:"Horizontal";}i:1;a:2:{s:3:"key";s:15:"nav nav-x nav-y";s:5:"value";s:8:"Vertical";}i:2;a:2:{s:3:"key";s:9:"nav nav-y";s:5:"value";s:17:"Vertical (static)";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3981,7 +3981,7 @@
         <field title="alias">direction</field>
         <field title="title">Direction</field>
         <field title="description">Defines the behavior / alignment of the navigation.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:9:"left-menu";s:5:"value";s:9:"Left Menu";}}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
