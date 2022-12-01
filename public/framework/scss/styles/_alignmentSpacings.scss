@@ -1,3 +1,14 @@
+:root {
+  --px-0: 0;
+  --px-1: #{$left-right-padding-small};
+  --px-2: #{$left-right-padding-medium};
+  --px-3: #{$left-right-padding-large};
+  --py-0: 0;
+  --py-1: #{$top-bottom-padding-small};
+  --py-2: #{$top-bottom-padding-medium};
+  --py-3: #{$top-bottom-padding-large};
+}
+
 @include generate-infix-breakpoint-styles((
   // Text alignments
   '.text': (
