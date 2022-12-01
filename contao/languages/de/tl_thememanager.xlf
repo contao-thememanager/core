@@ -85,9 +85,13 @@
         <source>Button-Design-Alternative</source>
         <target>Button-Design-Alternative</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.spacing_legend">
-        <source>Spacings</source>
-        <target>Abstände</target>
+      <trans-unit id="tl_thememanager.spacing_inner_legend">
+        <source>Spacings (Inner)</source>
+        <target>Abstände (Innen)</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.spacing_outer_legend">
+        <source>Spacings (Outer)</source>
+        <target>Abstände (Außen)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.divider_legend">
         <source>Divider</source>
@@ -2085,51 +2089,101 @@
         <source>Here you can set the inner padding for components (e.g. icons and images).</source>
         <target>Hier können Sie das Polster / den inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-small.0">
-        <source>$top-bottom-spacing-small</source>
-        <target>$top-bottom-spacing-small</target>
+
+      <trans-unit id="tl_thememanager.top-bottom-padding-small.0">
+        <source>$top-bottom-padding-small</source>
+        <target>$top-bottom-padding-small</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-small.1">
+      <trans-unit id="tl_thememanager.top-bottom-padding-small.1">
+        <source>Here you can set the small vertical padding.</source>
+        <target>Hier können Sie den kleinen vertikalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.top-bottom-padding-medium.0">
+        <source>$top-bottom-padding-medium</source>
+        <target>$top-bottom-padding-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.top-bottom-padding-medium.1">
+        <source>Here you can set the medium vertical padding.</source>
+        <target>Hier können Sie den mittleren vertikalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.top-bottom-padding-large.0">
+        <source>$top-bottom-padding-large</source>
+        <target>$top-bottom-padding-large</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.top-bottom-padding-large.1">
+        <source>Here you can set the large vertical padding.</source>
+        <target>Hier können Sie den großen vertikalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-small.0">
+        <source>$left-right-padding-small</source>
+        <target>$left-right-padding-small</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-small.1">
+        <source>Here you can set the small horizontal padding.</source>
+        <target>Hier können Sie den kleinen horizontalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-medium.0">
+        <source>$left-right-padding-medium</source>
+        <target>$left-right-padding-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-medium.1">
+        <source>Here you can set the medium horizontal padding.</source>
+        <target>Hier können Sie den mittleren horizontalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-large.0">
+        <source>$left-right-padding-large</source>
+        <target>$left-right-padding-large</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.left-right-padding-large.1">
+        <source>Here you can set the large horizontal padding.</source>
+        <target>Hier können Sie den großen horizontalen Innen-Abstand einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.top-bottom-margin-small.0">
+        <source>$top-bottom-margin-small</source>
+        <target>$top-bottom-margin-small</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.top-bottom-margin-small.1">
         <source>Here you can set the small vertical margin.</source>
         <target>Hier können Sie den kleinen vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-medium.0">
-        <source>$top-bottom-spacing-medium</source>
-        <target>$top-bottom-spacing-medium</target>
+      <trans-unit id="tl_thememanager.top-bottom-margin-medium.0">
+        <source>$top-bottom-margin-medium</source>
+        <target>$top-bottom-margin-medium</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-medium.1">
+      <trans-unit id="tl_thememanager.top-bottom-margin-medium.1">
         <source>Here you can set the medium vertical margin.</source>
         <target>Hier können Sie den mittleren vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-large.0">
-        <source>$top-bottom-spacing-large</source>
-        <target>$top-bottom-spacing-large</target>
+      <trans-unit id="tl_thememanager.top-bottom-margin-large.0">
+        <source>$top-bottom-margin-large</source>
+        <target>$top-bottom-margin-large</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.top-bottom-spacing-large.1">
+      <trans-unit id="tl_thememanager.top-bottom-margin-large.1">
         <source>Here you can set the large vertical margin.</source>
         <target>Hier können Sie den großen vertikalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-small.0">
-        <source>$left-right-spacing-small</source>
-        <target>$left-right-spacing-small</target>
+      <trans-unit id="tl_thememanager.left-right-margin-small.0">
+        <source>$left-right-margin-small</source>
+        <target>$left-right-margin-small</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-small.1">
+      <trans-unit id="tl_thememanager.left-right-margin-small.1">
         <source>Here you can set the small horizontal margin.</source>
         <target>Hier können Sie den kleinen horizontalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-medium.0">
-        <source>$left-right-spacing-medium</source>
-        <target>$left-right-spacing-medium</target>
+      <trans-unit id="tl_thememanager.left-right-margin-medium.0">
+        <source>$left-right-margin-medium</source>
+        <target>$left-right-margin-medium</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-medium.1">
+      <trans-unit id="tl_thememanager.left-right-margin-medium.1">
         <source>Here you can set the medium horizontal margin.</source>
         <target>Hier können Sie den mittleren horizontalen Abstand einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-large.0">
-        <source>$left-right-spacing-large</source>
-        <target>$left-right-spacing-large</target>
+      <trans-unit id="tl_thememanager.left-right-margin-large.0">
+        <source>$left-right-margin-large</source>
+        <target>$left-right-margin-large</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.left-right-spacing-large.1">
+      <trans-unit id="tl_thememanager.left-right-margin-large.1">
         <source>Here you can set the large horizontal margin.</source>
         <target>Hier können Sie den großen horizontalen Abstand einstellen.</target>
       </trans-unit>
