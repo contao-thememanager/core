@@ -1,74 +1,35 @@
 @include generate-infix-breakpoint-styles((
   // Text alignments
   '.text': (
-    '&-left': (
-      text-align: left
-    ),
-    '&-center': (
-      text-align: center
-    ),
-    '&-right': (
-      text-align: right
-    ),
-    '&-justify': (
-      text-align: justify
-    ),
+    '&-left':    ( text-align: left ),
+    '&-center':  ( text-align: center ),
+    '&-right':   ( text-align: right ),
+    '&-justify': ( text-align: justify ),
   ),
-  // Spacings
+  // Outer spacings
   '.mt': (
-    '&-0': (
-      margin-top: 0
-    ),
-    '&-1': (
-      margin-top: $top-bottom-spacing-small
-    ),
-    '&-2': (
-      margin-top: $top-bottom-spacing-medium
-    ),
-    '&-3': (
-      margin-top: $top-bottom-spacing-large
-    )
+    '&-0': ( margin-top:    0 ),
+    '&-1': ( margin-top:    $top-bottom-margin-small ),
+    '&-2': ( margin-top:    $top-bottom-margin-medium ),
+    '&-3': ( margin-top:    $top-bottom-margin-large )
   ),
   '.mb': (
-    '&-0': (
-      margin-bottom: 0
-    ),
-    '&-1': (
-      margin-bottom: $top-bottom-spacing-small
-    ),
-    '&-2': (
-      margin-bottom: $top-bottom-spacing-medium
-    ),
-    '&-3': (
-      margin-bottom: $top-bottom-spacing-large
-    )
+    '&-0': ( margin-bottom: 0 ),
+    '&-1': ( margin-bottom: $top-bottom-margin-small ),
+    '&-2': ( margin-bottom: $top-bottom-margin-medium ),
+    '&-3': ( margin-bottom: $top-bottom-margin-large )
   ),
   '.ml': (
-    '&-0': (
-      margin-left: 0
-    ),
-    '&-1': (
-      margin-left: $left-right-spacing-small
-    ),
-    '&-2': (
-      margin-left: $left-right-spacing-medium
-    ),
-    '&-3': (
-      margin-left: $left-right-spacing-large
-    )
+    '&-0': ( margin-left:   0 ),
+    '&-1': ( margin-left:   $left-right-margin-small ),
+    '&-2': ( margin-left:   $left-right-margin-medium ),
+    '&-3': ( margin-left:   $left-right-margin-large )
   ),
   '.mr': (
-    '&-0': (
-      margin-right: 0
-    ),
-    '&-1': (
-      margin-right: $left-right-spacing-small
-    ),
-    '&-2': (
-      margin-right: $left-right-spacing-medium
-    ),
-    '&-3': (
-      margin-right: $left-right-spacing-large
-    )
-  ),
+    '&-0': ( margin-right:  0 ),
+    '&-1': ( margin-right:  $left-right-margin-small ),
+    '&-2': ( margin-right:  $left-right-margin-medium ),
+    '&-3': ( margin-right:  $left-right-margin-large )
+  )
+  // Inner spacings
 ));
