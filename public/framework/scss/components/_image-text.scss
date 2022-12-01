@@ -4,16 +4,14 @@
   --itm-justify: normal;
   --itm-align: normal;
 
-  .c_image {
-    margin-bottom: $component-inner-spacing;
-  }
-
-  .item > .inside {
-    position: relative;
-    display:         var(--itm-dsp);
-    flex-direction:  var(--itm-flow);
-    justify-content: var(--itm-justify);
-    align-items:     var(--itm-align);
+  &.item, .item {
+    > .inside {
+      position: relative;
+      display:         var(--itm-dsp);
+      flex-direction:  var(--itm-flow);
+      justify-content: var(--itm-justify);
+      align-items:     var(--itm-align);
+    }
   }
 }
 

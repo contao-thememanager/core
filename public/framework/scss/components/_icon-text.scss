@@ -1,55 +1,57 @@
-.ce_rsce_icon_text {
+.icon-text {
+  --itm-dsp: block;
+  --itm-flow: row;
 
-  .c_icon {
-    text-align: inherit;
+  &.item, .item {
+    > .inside {
+      display: var(--itm-dsp);
+      flex-direction: var(--itm-flow);
+    }
+  }
+}
+
+.icon {
+
+  &--top {
+
+    .c_icon {
+      margin-bottom: $component-inner-spacing;
+    }
   }
 
-  &.layout {
+  &--left {
 
-    &-top {
-
-      .c_icon {
-        margin-bottom: $component-inner-spacing;
-      }
+    .inside {
+      display: flex;
     }
 
-    &-left {
-
-      .inside {
-        display: flex;
-      }
-
-      .c_icon {
-        margin-right: $component-inner-spacing;
-      }
+    .c_icon {
+      margin-right: $component-inner-spacing;
     }
+  }
 
-    &-right {
+  &--right {
+    --itm-dsp: flex;
+    --itm-flow: row-reverse;
 
-      .inside {
-        display: flex;
-        flex-direction: row-reverse;
-      }
-
-      .c_icon {
-        margin-left: $component-inner-spacing;
-      }
+    .c_icon {
+      margin-left: $component-inner-spacing;
     }
+  }
 
-    &-float-left {
+  &--float-left {
 
-      .c_icon {
-        float: left;
-        margin-right: $component-inner-spacing;
-      }
+    .c_icon {
+      float: left;
+      margin-right: $component-inner-spacing;
     }
+  }
 
-    &-float-right {
+  &--float-right {
 
-      .c_icon {
-        float: right;
-        margin-left: $component-inner-spacing;
-      }
+    .c_icon {
+      float: right;
+      margin-left: $component-inner-spacing;
     }
   }
 }

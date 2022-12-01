@@ -43,7 +43,7 @@
         <field title="alias">iconText</field>
         <field title="title">Icon-Text</field>
         <field title="description">Determines the appearance and alignment of icon and text.</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"layout-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:11:"layout-left";s:5:"value";s:4:"Left";}i:2;a:2:{s:3:"key";s:12:"layout-right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"layout-float-left";s:5:"value";s:10:"Float Left";}i:4;a:2:{s:3:"key";s:18:"layout-float-right";s:5:"value";s:11:"Float Right";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"icon--top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"icon--left";s:5:"value";s:4:"Left";}i:2;a:2:{s:3:"key";s:11:"icon--right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:16:"icon--float-left";s:5:"value";s:10:"Float Left";}i:4;a:2:{s:3:"key";s:17:"icon--float-right";s:5:"value";s:11:"Float Right";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
