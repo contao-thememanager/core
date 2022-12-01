@@ -320,14 +320,23 @@ $button-border-width-alt:                 2px !default;
 $button-border-color-alt:                 $button-bg-alt !default;
 $button-hover-border-color-alt:           $button-hover-bg-alt !default;
 
-// Spacing
+// Spacings (Inner)
 $component-inner-spacing:                 1rem !default;
-$top-bottom-spacing-small:                1rem !default;
-$top-bottom-spacing-medium:               2rem !default;
-$top-bottom-spacing-large:                3rem !default;
-$left-right-spacing-small:                1rem !default;
-$left-right-spacing-medium:               2rem !default;
-$left-right-spacing-large:                3rem !default;
+
+$top-bottom-padding-small:                1rem !default;
+$top-bottom-padding-medium:               2rem !default;
+$top-bottom-padding-large:                3rem !default;
+$left-right-padding-small:                1rem !default;
+$left-right-padding-medium:               2rem !default;
+$left-right-padding-large:                3rem !default;
+
+// Spacings (Outer)
+$top-bottom-margin-small:                 1rem !default;
+$top-bottom-margin-medium:                2rem !default;
+$top-bottom-margin-large:                 3rem !default;
+$left-right-margin-small:                 1rem !default;
+$left-right-margin-medium:                2rem !default;
+$left-right-margin-large:                 3rem !default;
 
 // Divider
 $divider-size:                            1px;
