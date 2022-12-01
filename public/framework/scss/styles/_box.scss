@@ -1,5 +1,5 @@
-.boxed,
-.boxed-list .item {
+.box,
+.box-list .item {
 
   > .inside {
     background-color: $boxed-background-color;
@@ -11,10 +11,10 @@
   }
 }
 
-.boxed-shadow {
+.box-shadow {
 
-  &.boxed,
-  &.boxed-list .item {
+  &.box,
+  &.box-list .item {
 
     > .inside {
       box-shadow: $box-shadow;

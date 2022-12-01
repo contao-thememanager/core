@@ -69,7 +69,7 @@
         <field title="alias">boxed</field>
         <field title="title">Boxed</field>
         <field title="description">Defines the appearance of a boxed element.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:21:"boxed color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:34:"boxed boxed-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:19:"box color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:30:"box box-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -95,7 +95,7 @@
         <field title="alias">boxedListElement</field>
         <field title="title">Boxed &amp;#40;List-Elements&amp;#41;</field>
         <field title="description">Defines the appearance of all framed child elements of a list.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:21:"boxed color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:34:"boxed boxed-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:19:"box color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:30:"box box-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
