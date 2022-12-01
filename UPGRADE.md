@@ -1,6 +1,20 @@
 # Upgrading contao-thememanager
 
++ [Version 1.5 to 2.0](#version-15-to-20)
 + [Version 1.4 to 1.5](#version-14-to-15)
+
+
+_____
+
+
+## Version 1.5 to 2.0
+
++ [Classname and structure changes](#v20-classname-and-structure-changes)
+
+### v2.0 Classname and structure changes
+- ...
+
+_____
 
 ## Version 1.4 to 1.5
 

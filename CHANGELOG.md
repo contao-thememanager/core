@@ -9,6 +9,26 @@
 
 ------
 
+## Version 2.0.*
+- There have been major changes to the framework. A migration from version 1.* to 2.* will not be possible
+
+### Changes
+- ...
+
+
+### Additions
+- ...
+
+
+### Changes to the css-framework
+- ...
+
+### Removal
+- ...
+
+
+------
+
 ## Version 1.5.*
 - Dropped Contao 4.9 Support (Use Contao 4.13 instead)
 
