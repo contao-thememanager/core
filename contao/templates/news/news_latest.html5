@@ -1,25 +1,28 @@
 
-<div class="layout_latest arc_<?= $this->archive->id ?> block<?= $this->class ?>">
+<div class="layout_latest arc_<?= $this->archive->id ?> block item<?= $this->class ?>">
 
   <div class="inside">
-    <?php if ($this->hasMetaFields): ?>
-      <p class="info"><time datetime="<?= $this->datetime ?>"><?= $this->date ?></time> <?= $this->author ?> <?= $this->commentCount ?></p>
-    <?php endif; ?>
 
-    <?php if ($this->addImage): ?>
-      <?php $this->insert('image', $this->arrData); ?>
-    <?php endif; ?>
-
-    <h2><?= $this->linkHeadline ?></h2>
-
-    <div class="ce_text block">
-      <?= $this->teaser ?>
+    <div class="c_image">
+      <?php if ($this->addImage): ?>
+        <?php $this->insert('image', $this->arrData); ?>
+      <?php endif; ?>
     </div>
 
-    <?php if ($this->hasText || $this->hasTeaser): ?>
-      <p class="more"><?= $this->more ?></p>
-    <?php endif; ?>
+    <div class="c_text">
+      <?php if ($this->hasMetaFields): ?>
+        <p class="info"><time datetime="<?= $this->datetime ?>"><?= $this->date ?></time> <?= $this->author ?> <?= $this->commentCount ?></p>
+      <?php endif; ?>
+      <h3><?= $this->linkHeadline ?></h3>
 
+      <div class="ce_text block">
+        <?= $this->teaser ?>
+      </div>
+
+      <?php if (!$this->addImage && ($this->hasText || $this->hasTeaser)): ?>
+        <p class="more"><?= $this->more ?></p>
+      <?php endif; ?>
+    </div>
   </div>
 </div>
 
