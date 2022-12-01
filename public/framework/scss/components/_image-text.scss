@@ -33,8 +33,8 @@
       margin-bottom: 0;
     }
 
-    &.boxed,
-    &.boxed-list {
+    &.box,
+    &.box-list {
 
       figure,
       img {
@@ -91,8 +91,8 @@
     padding: divide($grid-gutter-width, 2);
   }
 
-  &.boxed,
-  &.boxed-list {
+  &.box,
+  &.box-list {
 
     .c_text {
       max-height: calc(100% - #{sum(nth(standardize($boxed-padding),1),nth(standardize($boxed-padding),3))});

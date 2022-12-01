@@ -17,7 +17,7 @@
         <field title="alias">imageText</field>
         <field title="title">Image-Text</field>
         <field title="description">Defines the appearance and alignment of image to text.</field>
-        <field title="cssClasses">a:17:{i:0;a:2:{s:3:"key";s:10:"layout-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:11:"layout-left";s:5:"value";s:4:"Left";}i:2;a:2:{s:3:"key";s:12:"layout-right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"layout-float-left";s:5:"value";s:10:"Float Left";}i:4;a:2:{s:3:"key";s:18:"layout-float-right";s:5:"value";s:11:"Float Right";}i:5;a:2:{s:3:"key";s:14:"layout-abs-top";s:5:"value";s:12:"Absolute Top";}i:6;a:2:{s:3:"key";s:17:"layout-abs-center";s:5:"value";s:15:"Absolute Center";}i:7;a:2:{s:3:"key";s:17:"layout-abs-bottom";s:5:"value";s:15:"Absolute Bottom";}i:8;a:2:{s:3:"key";s:19:"layout-abs-left-top";s:5:"value";s:17:"Absolute Left Top";}i:9;a:2:{s:3:"key";s:22:"layout-abs-left-center";s:5:"value";s:20:"Absolute Left Center";}i:10;a:2:{s:3:"key";s:22:"layout-abs-left-bottom";s:5:"value";s:20:"Absolute Left Bottom";}i:11;a:2:{s:3:"key";s:21:"layout-abs-middle-top";s:5:"value";s:19:"Absolute Middle Top";}i:12;a:2:{s:3:"key";s:24:"layout-abs-middle-center";s:5:"value";s:22:"Absolute Middle Center";}i:13;a:2:{s:3:"key";s:24:"layout-abs-middle-bottom";s:5:"value";s:22:"Absolute Middle Bottom";}i:14;a:2:{s:3:"key";s:20:"layout-abs-right-top";s:5:"value";s:18:"Absolute Right Top";}i:15;a:2:{s:3:"key";s:23:"layout-abs-right-center";s:5:"value";s:21:"Absolute Right Center";}i:16;a:2:{s:3:"key";s:23:"layout-abs-right-bottom";s:5:"value";s:21:"Absolute Right Bottom";}}</field>
+        <field title="cssClasses">a:17:{i:0;a:2:{s:3:"key";s:8:"img--top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:9:"img--left";s:5:"value";s:4:"Left";}i:2;a:2:{s:3:"key";s:10:"img--right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"img--float-left";s:5:"value";s:10:"Float Left";}i:4;a:2:{s:3:"key";s:16:"img--float-right";s:5:"value";s:11:"Float Right";}i:5;a:2:{s:3:"key";s:12:"img--abs-top";s:5:"value";s:12:"Absolute Top";}i:6;a:2:{s:3:"key";s:15:"img--abs-center";s:5:"value";s:15:"Absolute Center";}i:7;a:2:{s:3:"key";s:15:"img--abs-bottom";s:5:"value";s:15:"Absolute Bottom";}i:8;a:2:{s:3:"key";s:17:"img--abs-left-top";s:5:"value";s:17:"Absolute Left Top";}i:9;a:2:{s:3:"key";s:20:"img--abs-left-center";s:5:"value";s:20:"Absolute Left Center";}i:10;a:2:{s:3:"key";s:20:"img--abs-left-bottom";s:5:"value";s:20:"Absolute Left Bottom";}i:11;a:2:{s:3:"key";s:19:"img--abs-middle-top";s:5:"value";s:19:"Absolute Middle Top";}i:12;a:2:{s:3:"key";s:22:"img--abs-middle-center";s:5:"value";s:22:"Absolute Middle Center";}i:13;a:2:{s:3:"key";s:22:"img--abs-middle-bottom";s:5:"value";s:22:"Absolute Middle Bottom";}i:14;a:2:{s:3:"key";s:18:"img--abs-right-top";s:5:"value";s:18:"Absolute Right Top";}i:15;a:2:{s:3:"key";s:21:"img--abs-right-center";s:5:"value";s:21:"Absolute Right Center";}i:16;a:2:{s:3:"key";s:21:"img--abs-right-bottom";s:5:"value";s:21:"Absolute Right Bottom";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -30,8 +30,8 @@
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:2:{i:0;s:15:"rsce_image_text";i:1;s:20:"rsce_image_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:2:{i:0;s:8:"newslist";i:1;s:9:"eventlist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -95,7 +95,7 @@
         <field title="alias">boxedListElement</field>
         <field title="title">Boxed &amp;#40;List-Elements&amp;#41;</field>
         <field title="description">Defines the appearance of all framed child elements of a list.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:19:"box color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:30:"box box-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:24:"box-list color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:35:"box-list box-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -108,8 +108,8 @@
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
-        <field title="extendModule"></field>
-        <field title="modules">NULL</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:2:{i:0;s:8:"newslist";i:1;s:9:"eventlist";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -1620,7 +1620,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:1:{i:0;s:11:"randomImage";}</field>
+        <field title="modules">a:3:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist"}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
