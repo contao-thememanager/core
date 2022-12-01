@@ -1,10 +1,11 @@
+<?php $sm = $this->styleManager ?>
 
 <div class="<?= $this->class ?> block">
-  <div class="inside<?=$this->styleManager->prepare('spacing')->format(' %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?= $sm->prepare('layout', ['imageText', 'boxedListElement'])->format(' %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
-        <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
       <?php endif; ?>
 
       <?php if ($this->headline): ?>
@@ -20,14 +21,14 @@
       <?php endif; ?>
     <?php $this->endblock(); ?>
 
-    <?php if (!empty($this->styleManager->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
-      <div class="c_list grid-list<?=$this->styleManager->prepare('gridList')->format(' %s')?>"<?= $this->styleManager->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $this->styleManager->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $this->styleManager->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $this->styleManager->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $this->styleManager->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $this->styleManager->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $this->styleManager->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
+    <?php if (!empty($sm->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
+      <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>"<?= $sm->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $sm->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $sm->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $sm->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $sm->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $sm->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $sm->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
     <?php endif; ?>
 
     <?php $this->block('content'); ?>
     <?php $this->endblock(); ?>
 
-    <?php if (!empty($this->styleManager->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
+    <?php if (!empty($sm->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
       </div>
     <?php endif; ?>
 
