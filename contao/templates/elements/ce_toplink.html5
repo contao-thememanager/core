@@ -1,6 +1,6 @@
-
+<?php $sm = $this->styleManager ?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-  <a href="<?= $this->request ?>#top" class="<?=$this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->title ?>"><?= $this->label ?></a>
+  <a href="<?= $this->request ?>#top" class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->title ?>"><?= $this->label ?></a>
 </div>
 <!-- indexer::continue -->

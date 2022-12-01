@@ -1,4 +1,5 @@
 <?php
+  $sm = $this->styleManager;
   $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
 ?>
@@ -7,7 +8,7 @@
 
 <?php foreach ($this->list as $item): ?>
   <?php if(!$item->invisible || $previewMode): ?>
-    <div class="ce_rsce_text<?= $item->cssClass ? ' '.$item->cssClass : '' ?><?= $this->styleManager->prepare('layout', ['boxedListElement'])->format(' %s')?> block">
+    <div class="item<?= $item->cssClass ? ' '.$item->cssClass : '' ?> block">
       <?php if(!$item->linkText && $item->url): ?>
         <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
       <?php else: ?>
@@ -18,7 +19,7 @@
         <?= $item->text ?>
         <?php if($item->linkText && $item->url): ?>
           <p>
-            <a href="<?=$item->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+            <a href="<?=$item->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
           </p>
         <?php endif; ?>
       </div>

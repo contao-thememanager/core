@@ -1,4 +1,7 @@
-<?php $this->extend('block_unsearchable'); ?>
+<?php
+  $sm = $this->styleManager;
+  $this->extend('block_unsearchable');
+?>
 
 <?php $this->block('content'); ?>
 
@@ -9,7 +12,7 @@
         <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
       </div>
       <div class="widget widget-submit">
-        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->search ?></button>
+        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $sm->prepare('button')->format(' %s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->search ?></button>
       </div>
       <?php if ($this->advanced): ?>
         <div class="widget widget-radio">

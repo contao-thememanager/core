@@ -1,3 +1,4 @@
+<?php $sm = $this->styleManager ?>
 
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <?php if(!$this->linkText && $this->url): ?>
@@ -8,7 +9,7 @@
 
     <?php $this->block('headline'); ?>
         <?php if ($this->headline || $this->headline2): ?>
-            <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+            <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
         <?php endif; ?>
         <?php if ($this->headline): ?>
             <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
@@ -25,7 +26,7 @@
         <?= $this->text ?>
         <?php if($this->linkText && $this->url): ?>
             <p>
-                <a href="<?=$this->url?>" class="<?= $this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+                <a href="<?=$this->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
             </p>
         <?php endif; ?>
     </div>

@@ -1,4 +1,7 @@
-<?php $this->extend('block_searchable'); ?>
+<?php
+  $sm = $this->styleManager;
+  $this->extend('block_searchable');
+?>
 
 <?php $this->block('content'); ?>
 
@@ -9,7 +12,7 @@
   <?php endif ?>
 
   <p class="download-element ext-<?= $this->extension ?>">
-    <a class="<?=$this->styleManager->prepare('button')->format('%s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>"><?= $this->link ?> <span class="size">(<?= $this->filesize ?>)</span></a>
+    <a class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>"><?= $this->link ?> <span class="size">(<?= $this->filesize ?>)</span></a>
   </p>
 
 <?php $this->endblock(); ?>

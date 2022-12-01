@@ -1,4 +1,7 @@
-<?php $this->extend('block_searchable'); ?>
+<?php
+  $sm = $this->styleManager;
+  $this->extend('block_searchable');
+?>
 
 <?php $this->block('content'); ?>
 
@@ -13,7 +16,7 @@
     </figure>
   <?php else: ?>
     <?= $this->embed_pre ?>
-    <a href="<?= $this->href ?>" class="hyperlink_txt<?=$this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->linkTitle ?>"<?= $this->attribute ?><?= $this->target ?><?= $this->rel ?>><?= $this->link ?></a>
+    <a href="<?= $this->href ?>" class="hyperlink_txt<?=$sm->prepare('button')->format(' %s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->linkTitle ?>"<?= $this->attribute ?><?= $this->target ?><?= $this->rel ?>><?= $this->link ?></a>
     <?= $this->embed_post ?>
   <?php endif; ?>
 

@@ -1,11 +1,11 @@
-
+<?php $sm = $this->styleManager ?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> <?= $this->logout ? 'logout' : 'login' ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside">
 
     <?php $this->block('headline'); ?>
         <?php if ($this->headline || $this->headline2): ?>
-            <div class="c_headline<?=$this->styleManager->prepare('headline')->format(' %s')?>">
+            <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
         <?php endif; ?>
         <?php if ($this->headline): ?>
             <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
@@ -57,7 +57,7 @@
                 <?php endif; ?>
             <?php endif; ?>
             <div class="widget widget-submit">
-                <button type="submit" class="submit<?= $this->styleManager->prepare('button')->format(' %s')?><?=$this->styleManager->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->slabel ?></button>
+                <button type="submit" class="submit<?= $sm->prepare('button')->format(' %s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->slabel ?></button>
                 <?php if ($this->twoFactorEnabled): ?>
                     <a href="<?= $this->route('contao_frontend_logout') ?>"><?= $this->cancel ?> ›</a>
                 <?php endif; ?>
