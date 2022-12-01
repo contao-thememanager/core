@@ -1,7 +1,8 @@
 .ce_text {
+  --img-wdth: 100%;
 
   .image_container {
-    width: 100%;
+    width: var(--img-wdth);
 
     &.float {
 
@@ -22,26 +23,16 @@
 
   .ce_text {
 
-    &.width-25 .image_container {
-      width: 25%;
-    }
-
-    &.width-33 .image_container {
-      width: 33.3333%;
-    }
-
-    &.width-50 .image_container {
-      width: 50%;
-    }
+    &.width-25 { --img-wdth: 25% }
+    &.width-33 { --img-wdth: 33.3333% }
+    &.width-50 { --img-wdth: 50% }
 
     .image_container {
 
-      &.float_right {
-        margin-left: divide($grid-gutter-width, 2);
-      }
+      &.float {
 
-      &.float_left {
-        margin-right: divide($grid-gutter-width, 2);
+        &_right { margin-left:  divide($grid-gutter-width, 2) }
+        &_left  { margin-right: divide($grid-gutter-width, 2) }
       }
     }
   }
