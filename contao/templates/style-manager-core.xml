@@ -69,7 +69,7 @@
         <field title="alias">boxed</field>
         <field title="title">Boxed</field>
         <field title="description">Defines the appearance of a boxed element.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:24:"boxed text-color-regular";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:37:"boxed boxed-shadow text-color-regular";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:21:"boxed color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:34:"boxed boxed-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -95,7 +95,7 @@
         <field title="alias">boxedListElement</field>
         <field title="title">Boxed &amp;#40;List-Elements&amp;#41;</field>
         <field title="description">Defines the appearance of all framed child elements of a list.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:24:"boxed text-color-regular";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:37:"boxed boxed-shadow text-color-regular";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:21:"boxed color-text-base";s:5:"value";s:5:"Boxed";}i:1;a:2:{s:3:"key";s:34:"boxed boxed-shadow color-text-base";s:5:"value";s:12:"Boxed Shadow";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -715,7 +715,7 @@
         <field title="alias">text-color</field>
         <field title="title">Text-Color</field>
         <field title="description">Defines the color of the texts.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:18:"text-color-regular";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:17:"text-color-invert";s:5:"value";s:6:"Invert";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:15:"color-text-base";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:14:"color-text-inv";s:5:"value";s:6:"Invert";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -741,7 +741,7 @@
         <field title="alias">link-color</field>
         <field title="title">Link-Color</field>
         <field title="description">Defines the color of the links.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:18:"link-color-regular";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:17:"link-color-invert";s:5:"value";s:6:"Invert";}i:2;a:2:{s:3:"key";s:16:"link-color-extra";s:5:"value";s:5:"Extra";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:15:"color-link-base";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:14:"color-link-inv";s:5:"value";s:6:"Invert";}i:2;a:2:{s:3:"key";s:13:"color-link-ex";s:5:"value";s:5:"Extra";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

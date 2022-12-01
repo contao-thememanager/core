@@ -1,6 +1,6 @@
-.text-color {
+.color-text {
 
-  &-invert {
+  &-inv {
     --h1-clr:        #{$h1-color-invert};
     --h2-clr:        #{$h2-color-invert};
     --h3-clr:        #{$h3-color-invert};
@@ -21,7 +21,7 @@
     }
   }
 
-  &-regular {
+  &-base {
     --h1-clr:        #{$h1-color};
     --h2-clr:        #{$h2-color};
     --h3-clr:        #{$h3-color};
@@ -43,23 +43,23 @@
   }
 }
 
-.link-color {
+.color-link {
 
-  &-invert {
+  &-inv {
     --a-clr:     #{$link-color-invert};
     --a-clr-hvr: #{$link-hover-color-invert};
     --a-td:      #{$link-decoration-invert};
     --a-td-hvr:  #{$link-hover-decoration-invert};
   }
 
-  &-extra {
+  &-ex {
     --a-clr:     #{$link-color-extra};
     --a-clr-hvr: #{$link-hover-color-extra};
     --a-td:      #{$link-decoration-extra};
     --a-td-hvr:  #{$link-hover-decoration-extra};
   }
 
-  &-regular {
+  &-base {
     --a-clr:     #{$link-color-regular};
     --a-clr-hvr: #{$link-hover-color-regular};
     --a-td:      #{$link-decoration-regular};
