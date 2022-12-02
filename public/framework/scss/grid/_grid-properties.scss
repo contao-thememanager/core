@@ -1,18 +1,18 @@
 .justify {
-  &-start    { --flex-justify: flex-start }
-  &-center   { --flex-justify: center }
-  &-end      { --flex-justify: flex-end }
-  &-between  { --flex-justify: space-between }
-  &-around   { --flex-justify: space-around }
-  &-evenly   { --flex-justify: space-evenly }
-  &-revert   { --flex-justify: revert }
+  &-start    { --flex-justify: flex-start; }
+  &-center   { --flex-justify: center; }
+  &-end      { --flex-justify: flex-end; }
+  &-between  { --flex-justify: space-between; }
+  &-around   { --flex-justify: space-around; }
+  &-evenly   { --flex-justify: space-evenly; }
+  &-revert   { --flex-justify: revert; }
 }
 
 .items {
-  &-start    { --flex-items: flex-start }
-  &-center   { --flex-items: center }
-  &-end      { --flex-items: flex-end }
-  &-baseline { --flex-items: baseline }
+  &-start    { --flex-items: flex-start; }
+  &-center   { --flex-items: center; }
+  &-end      { --flex-items: flex-end; }
+  &-baseline { --flex-items: baseline; }
 }
 
 // Also used as "items-stretch"

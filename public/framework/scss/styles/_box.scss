@@ -1,7 +1,11 @@
 .box,
-.box-list .item {
+.box-list > .item {
   --px: var(--px-1); // Standard padding for boxed-lists without any grid-list settings (no grid-list wrapper)
   --py: var(--py-1);
+}
+
+.box,
+.box-list .item {
 
   > .inside {
     background-color: $boxed-background-color;
