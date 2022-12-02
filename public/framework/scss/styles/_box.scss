@@ -1,6 +1,7 @@
 .box,
-.box-list > .item {
-  --px: var(--px-1); // Standard padding for boxed-lists without any grid-list settings (no grid-list wrapper)
+.box-list > .item, // Standard padding for boxed-lists without any grid-list settings (no grid-list wrapper)
+.box-list .item > .inside {
+  --px: var(--px-1);
   --py: var(--py-1);
 }
 
