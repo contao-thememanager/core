@@ -3090,7 +3090,7 @@
         <field title="alias">padding</field>
         <field title="title">Padding</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:3:"p-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:3:"p-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:3:"p-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:3:"p-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"i-p-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:5:"i-p-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"i-p-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"i-p-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3116,7 +3116,7 @@
         <field title="alias">padding-xs</field>
         <field title="title">Padding &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"p-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"p-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"p-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"p-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:8:"i-p-xs-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:8:"i-p-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:8:"i-p-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:8:"i-p-xs-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3142,7 +3142,7 @@
         <field title="alias">padding-s</field>
         <field title="title">Padding &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-s-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-s-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3168,7 +3168,7 @@
         <field title="alias">padding-m</field>
         <field title="title">Padding &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-m-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-m-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3194,7 +3194,7 @@
         <field title="alias">padding-l</field>
         <field title="title">Padding &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-l-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-l-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3220,7 +3220,7 @@
         <field title="alias">padding-xl</field>
         <field title="title">Padding &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the padding for all items.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"p-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"p-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"p-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"p-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:8:"i-p-xl-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:8:"i-p-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:8:"i-p-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:8:"i-p-xl-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

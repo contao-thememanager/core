@@ -21,8 +21,8 @@
 
     .c_image {
       position: relative;
-      inset: calc(-1 * var(--py)) 0 0 calc(-1 * var(--px));
-      width: calc(100% + var(--px) + var(--px));
+      inset: calc(-1 * var(--i-py)) 0 0 calc(-1 * var(--i-px));
+      width: calc(100% + var(--i-px) + var(--i-px));
 
       margin-bottom: 0;
     }
@@ -92,8 +92,8 @@
   &.box-list {
 
     .c_text {
-      max-height: calc(100% + var(--py) + var(--py));
-      max-width: calc(100% + var(--px) + var(--px));
+      max-height: calc(100% + var(--i-py) + var(--i-py));
+      max-width: calc(100% + var(--i-px) + var(--i-px));
 
       overflow: hidden;
     }

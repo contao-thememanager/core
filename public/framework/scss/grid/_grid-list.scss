@@ -14,11 +14,14 @@
 
   > div {
     width: calc((100% / var(--i)) - (((var(--i) - 1) / var(--i)) * var(--i-gap)));
+  }
+}
 
-    // Do not inherit parent margin (from '.inside')
-    > .inside {
-      margin: 0;
-    }
+.item {
+
+  > .inside {
+    padding: var(--i-py) var(--i-px);
+    margin: 0; // Do not inherit parent margin (from '.inside')
   }
 }
 

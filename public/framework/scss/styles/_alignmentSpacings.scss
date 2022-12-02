@@ -37,5 +37,12 @@
     '&-1': ( --px: var(--px-1), --py: var(--py-1) ),
     '&-2': ( --px: var(--px-2), --py: var(--py-2) ),
     '&-3': ( --px: var(--px-3), --py: var(--py-3) ),
+  ),
+  // Item padding
+  '.i-p': (
+    '&-0': ( --i-px: 0, --i-py: 0),
+    '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
+    '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
+    '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
   )
 ));
