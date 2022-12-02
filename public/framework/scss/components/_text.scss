@@ -23,9 +23,9 @@
 
   .ce_text {
 
-    &.width-25 { --img-wdth: 25% }
-    &.width-33 { --img-wdth: 33.3333% }
-    &.width-50 { --img-wdth: 50% }
+    &.width-25 { --img-wdth: 25%; }
+    &.width-33 { --img-wdth: 33.3333%; }
+    &.width-50 { --img-wdth: 50%; }
 
     .image_container {
 
