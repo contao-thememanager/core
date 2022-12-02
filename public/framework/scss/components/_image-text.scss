@@ -20,13 +20,9 @@
   &--top {
 
     .c_image {
-      $boxed-offset-top:   sum(nth(standardize($boxed-padding), 1), nth(standardize($boxed-border-width), 1), 'rem');
-      $boxed-offset-right: sum(nth(standardize($boxed-padding), 2), nth(standardize($boxed-border-width), 2), 'rem');
-      $boxed-offset-left:  sum(nth(standardize($boxed-padding), 4), nth(standardize($boxed-border-width), 4), 'rem');
-
       position: relative;
-      inset: -#{$boxed-offset-top} 0 0 -#{$boxed-offset-left};
-      width: calc(100% + #{sum($boxed-offset-right, $boxed-offset-left)});
+      inset: calc(-1 * var(--py)) 0 0 calc(-1 * var(--px));
+      width: calc(100% + var(--px) + var(--px));
 
       margin-bottom: 0;
     }
@@ -40,6 +36,9 @@
       }
     }
   }
+
+  // ToDo: Add new modes:
+  // - left & right (borderless) like top-behaviour
 
   &--left {
     --itm-dsp: flex;
@@ -93,8 +92,8 @@
   &.box-list {
 
     .c_text {
-      max-height: calc(100% - #{sum(nth(standardize($boxed-padding),1),nth(standardize($boxed-padding),3))});
-      max-width: calc(100% - #{sum(nth(standardize($boxed-padding),2),nth(standardize($boxed-padding),4))});
+      max-height: calc(100% + var(--py) + var(--py));
+      max-width: calc(100% + var(--px) + var(--px));
 
       overflow: hidden;
     }
