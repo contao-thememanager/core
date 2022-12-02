@@ -1,6 +1,4 @@
 .grid-list {
-  --px:    var(--px-1);
-  --py:    var(--py-1);
   --v-gap: var(--gtr-btm);
   --h-gap: var(--gtr);
   --i-gap: var(--h-gap); // Property specificity for multi-nested grid / grid-lists
