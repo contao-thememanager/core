@@ -1,5 +1,26 @@
+:root {
+  --mt:0;--mb:0;--mr:0;--ml:0;
+  --px:0;--py:0;
+
+  --mx-1: #{$left-right-margin-small};
+  --mx-2: #{$left-right-margin-medium};
+  --mx-3: #{$left-right-margin-large};
+  --my-1: #{$top-bottom-margin-small};
+  --my-2: #{$top-bottom-margin-medium};
+  --my-3: #{$top-bottom-margin-large};
+
+  --px-1: #{$left-right-padding-small};
+  --px-2: #{$left-right-padding-medium};
+  --px-3: #{$left-right-padding-large};
+  --py-1: #{$top-bottom-padding-small};
+  --py-2: #{$top-bottom-padding-medium};
+  --py-3: #{$top-bottom-padding-large};
+}
+
 .inside {
   display: block;
+  padding: var(--py) var(--px);
+  margin:  var(--mt) var(--mr) var(--mb) var(--ml);
 }
 
 #container {
