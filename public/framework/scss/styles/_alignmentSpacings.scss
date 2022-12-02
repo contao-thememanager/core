@@ -32,4 +32,10 @@
     '&-3': ( --mr: var(--mx-3))
   ),
   // Inner spacings
+  '.p': (
+    '&-0': ( --px: 0, --py: 0),
+    '&-1': ( --px: var(--px-1), --py: var(--py-1) ),
+    '&-2': ( --px: var(--px-2), --py: var(--py-2) ),
+    '&-3': ( --px: var(--px-3), --py: var(--py-3) ),
+  )
 ));
