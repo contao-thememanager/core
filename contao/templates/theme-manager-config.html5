@@ -25,7 +25,7 @@ return array(
             '{spacing_inner_legend:hide},component-inner-spacing,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
             '{divider_legend:hide},divider-size,divider-style,divider-color;' .
-            '{boxed_legend:hide},boxed-background-color,boxed-padding,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
+            '{boxed_legend:hide},boxed-background-color,boxed-border-color,boxed-border-style,boxed-border-width,boxed-border-radius;' .
             '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
             '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
     ),
@@ -2072,14 +2072,6 @@ return array(
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-background-color'],
             'inputType'               => 'text',
             'eval'                    => array('placeholder'=>'$body-bg', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
-        ),
-        'boxed-padding' => array
-        (
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => array('includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'),
         ),
         'boxed-border-color' => array
         (
