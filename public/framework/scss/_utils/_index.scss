@@ -1,7 +1,2 @@
-// Mixins
-@import "attributes";
-@import "breakpoint";
-@import "icon";
-@import "form";
-@import "typography";
-@import "utils";
+@import "_functions";
+@import "_mixins";
