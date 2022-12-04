@@ -1,7 +1,7 @@
 .divider {
 
-  &.top,
-  &.bottom {
+  &-top,
+  &-bottom {
     border-style: $divider-style;
     border-color: $divider-color;
   }
