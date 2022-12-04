@@ -52,7 +52,7 @@ $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartBoxed';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopBoxed';
 
 // Add UTF-8 to first position for correct display of css
-ArrayUtil::arrayInsert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/framework/scss/basics/charset.css|static');
+ArrayUtil::arrayInsert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/css/charset.css|static');
 
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = ['ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate'];
