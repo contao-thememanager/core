@@ -1,7 +1,3 @@
-// Mixins
-@import "mixins/utils";
-@import "mixins/breakpoint";
-
 :root {
   --gtr:          #{$grid-gutter-width};
   --gtr-btm:      #{$grid-gutter-bottom};
@@ -13,8 +9,7 @@
   --gtr-half-sml: #{divide($grid-gutter-small-width, 2)};
 }
 
-// Components
-@import "grid/grid-framework";
-@import "grid/grid-list";
-@import "grid/grid-gutter";
-@import "grid/grid-properties";
+@import "grid-framework";
+@import "grid-list";
+@import "grid-gutter";
+@import "grid-properties";

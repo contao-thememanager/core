@@ -1,43 +1,17 @@
 // Mixins
-@import "mixins/mixins";
+@import "_utils";
 
-// Basics
-@import "basics/defaults";
-@import "basics/contao";
-@import "basics/responsive";
-@import "basics/layout";
-@import "basics/typography";
-@import "basics/form";
+// Base
+@import "_base";
+
+// Layout
+@import "_layout";
 
 // Styles
-@import "styles/box";
-@import "styles/alignmentSpacings";
-@import "styles/background";
-
-@import "styles/divider";
-@import "styles/list";
-@import "styles/headline-spacing";
-@import "styles/image";
-@import "styles/navigation";
-@import "styles/article-spacing";
-@import "styles/text-color";
-@import "styles/form-image";
-@import "styles/form-input-icon";
-
-// Example styles
-@import "styles/example";
-
-// Dependency styles
-@import "styles/button";
-@import "styles/icon";
+@import "_styles";
 
 // Components
-@import "components/headline";
-@import "components/icon-text";
-@import "components/image-text";
-@import "components/table";
-@import "components/text";
-@import "components/wrapper";
+@import "_components";
 
 // Behaviour
-@import "basics/behaviour";
+@import "_base/behaviour";
