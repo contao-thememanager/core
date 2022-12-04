@@ -1,3 +1,11 @@
+$list-responsive-ratios: (
+  (16:9),
+  (16:10),
+  (21:9),
+  (4:3),
+  (3:2)
+);
+
 .audio_container audio {
   max-width: 100%;
 }
@@ -19,23 +27,9 @@
     height: 100%;
   }
 
-  &.ratio-169 {
-    padding-bottom: 56.25%;
-  }
-
-  &.ratio-1610 {
-    padding-bottom: 62.5%;
-  }
-
-  &.ratio-219 {
-    padding-bottom: 42.8571%;
-  }
-
-  &.ratio-43 {
-    padding-bottom: 75%;
-  }
-
-  &.ratio-32 {
-    padding-bottom: 66.6666%;
+  @each $ratio in $list-responsive-ratios {
+    @each $x, $y in $ratio {
+      &.ratio-#{$x}#{$y} {padding-bottom: shortPercentage(divide($y,$x))}
+    }
   }
 }
