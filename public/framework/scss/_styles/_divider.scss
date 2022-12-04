@@ -1,59 +1,45 @@
-.divider {
+.line {
 
-  &.top,
-  &.bottom {
+  &-top,
+  &-btm {
     border-style: $divider-style;
     border-color: $divider-color;
   }
 
-  &-top {
-    border-width: $divider-size 0 0 0;
-  }
+  &-top { border-width: $divider-size 0 0 0 }
+  &-btm { border-width: 0 0 $divider-size 0 }
 
-  &-bottom {
-    border-width: 0 0 $divider-size 0;
-  }
-}
+  &-inner {
 
-.divider-inner {
+    &-top,
+    &-btm {
 
-  &-top,
-  &-bottom {
+      > .inside {
 
-    > .inside {
+        &:before,
+        &:after {
+          position: absolute;
+          height: $divider-size;
 
-      &:before,
-      &:after {
-        position: absolute;
-        height: $divider-size;
-        left: divide($grid-gutter-width, 2);
-        right: divide($grid-gutter-width, 2);
-        background-color: $divider-color;
+          // inner dividers do not react to small- or no-gutter
+          left:  divide($grid-gutter-width, 2);
+          right: divide($grid-gutter-width, 2);
+
+          background-color: $divider-color;
+        }
       }
     }
-  }
 
-  &-top {
-
-    > .inside {
-
-      &:before {
-        content: '';
-        display: block;
-        top: 0;
-      }
+    &-top > .inside:before {
+      content: '';
+      display: block;
+      top: 0;
     }
-  }
 
-  &-bottom {
-
-    > .inside {
-
-      &:after {
-        content: '';
-        display: block;
-        bottom: 0;
-      }
+    &-btm > .inside:after {
+      content: '';
+      display: block;
+      bottom: 0;
     }
   }
 }

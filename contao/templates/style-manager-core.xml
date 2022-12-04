@@ -1669,7 +1669,7 @@
         <field title="alias">topDivider</field>
         <field title="title">Top-Divider</field>
         <field title="description">Defines whether a line should be output above this component.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"divider-top";s:5:"value";s:4:"Full";}i:1;a:2:{s:3:"key";s:17:"divider-inner-top";s:5:"value";s:5:"Inner";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"line-top";s:5:"value";s:4:"Full";}i:1;a:2:{s:3:"key";s:14:"line-inner-top";s:5:"value";s:5:"Inner";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1695,7 +1695,7 @@
         <field title="alias">bottomDivider</field>
         <field title="title">Bottom-Divider</field>
         <field title="description">Defines whether a line should be output below this component.</field>
-        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:14:"divider-bottom";s:5:"value";s:4:"Full";}i:1;a:2:{s:3:"key";s:20:"divider-inner-bottom";s:5:"value";s:5:"Inner";}}</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"line-btm";s:5:"value";s:4:"Full";}i:1;a:2:{s:3:"key";s:14:"line-inner-btm";s:5:"value";s:5:"Inner";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
