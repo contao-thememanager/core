@@ -1,17 +1,3 @@
-:root {
-  --hl-mb-1:   #{$headline-spacing-small};
-  --hl-mb-s-1: #{$headline-spacing-s-small};
-  --hl-mb-l-1: #{$headline-spacing-l-small};
-
-  --hl-mb-2:   #{$headline-spacing-medium};
-  --hl-mb-s-2: #{$headline-spacing-s-medium};
-  --hl-mb-l-2: #{$headline-spacing-l-medium};
-
-  --hl-mb-3:   #{$headline-spacing-large};
-  --hl-mb-s-3: #{$headline-spacing-s-large};
-  --hl-mb-l-3: #{$headline-spacing-l-large};
-}
-
 .c_headline {
   margin-bottom: 1rem;
 }

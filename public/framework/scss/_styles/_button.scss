@@ -8,25 +8,6 @@ input[type="submit"] {
   }
 }
 
-:root {
-  --btn-bg:          #{$button-bg-primary};
-  --btn-bg-hvr:      #{$button-hover-bg-primary};
-  --btn-clr:         #{$button-color-primary};
-  --btn-clr-hvr:     #{$button-hover-color-primary};
-
-  --btn-fw:          #{$button-font-weight-primary};
-  --btn-tf:          #{$button-transform-primary};
-
-  --btn-bdr:         #{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
-  --btn-bdr-r:       #{$button-border-radius-primary};
-  --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
-
-  --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-primary)};
-  --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-primary)};
-  --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-primary)};
-  --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-primary)};
-}
-
 button,
 a.button,
 input.button {

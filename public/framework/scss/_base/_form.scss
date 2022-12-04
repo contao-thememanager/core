@@ -19,14 +19,6 @@
   --form-clr-ph: #{$form-input-placeholder-color-error};
 }
 
-:root {
-  --form-clr-txt:    #{$form-input-color};
-  --form-clr-bg:     #{$form-input-background};
-  --form-clr-border: #{$form-input-border-color};
-  --form-clr-ph:     #{$form-input-placeholder-color};
-  --cbx-clr-label:   #{$form-checkbox-radio-label-color};
-}
-
 ::-webkit-input-placeholder { color: var(--form-clr-ph); }
 ::-moz-placeholder { color: var(--form-clr-ph); }
 :-ms-input-placeholder { color: var(--form-clr-ph); }

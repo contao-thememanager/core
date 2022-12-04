@@ -1,14 +1,3 @@
-:root {
-  --gtr:          #{$grid-gutter-width};
-  --gtr-btm:      #{$grid-gutter-bottom};
-
-  --gtr-sml:      #{$grid-gutter-small-width};
-  --gtr-btm-sml:  #{$grid-gutter-small-bottom};
-
-  --gtr-half:     #{divide($grid-gutter-width, 2)};
-  --gtr-half-sml: #{divide($grid-gutter-small-width, 2)};
-}
-
 @import "grid-framework";
 @import "grid-list";
 @import "grid-gutter";
