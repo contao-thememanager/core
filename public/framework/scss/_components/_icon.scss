@@ -29,10 +29,10 @@
   }
 
   &.color {
-    &-primary   { --ico-clr: #{$primary}; }
-    &-secondary { --ico-clr: #{$secondary}; }
-    &-dark      { --ico-clr: #{$text-color-regular}; }
-    &-light     { --ico-clr: #{$text-color-invert}; }
+    &-primary   { --ico-clr: var(--clr-primary); }
+    &-secondary { --ico-clr: var(--clr-secondary); }
+    &-dark      { --ico-clr: var(--text-clr-base); }
+    &-light     { --ico-clr: var(--text-clr-invert); }
   }
 
   // Designs
@@ -48,31 +48,31 @@
 
   // Filled design
   &.filled {
-    --ico-bg:  #{$text-color-regular};
-    --ico-clr: #{$text-color-invert};
+    --ico-bg:  var(--text-clr-base);
+    --ico-clr: var(--text-clr-invert);
 
     padding: $icon-shape-spacing;
 
     &.color {
 
       &-primary {
-        --ico-bg:  #{$primary};
-        --ico-clr: #{$text-color-invert};
+        --ico-bg:  var(--clr-primary);
+        --ico-clr: var(--text-clr-invert);
       }
 
       &-secondary {
-        --ico-bg:  #{$secondary};
-        --ico-clr: #{$text-color-invert};
+        --ico-bg:  var(--clr-secondary);
+        --ico-clr: var(--text-clr-invert);
       }
 
       &-dark {
-        --ico-bg:  #{$text-color-regular};
-        --ico-clr: #{$text-color-invert};
+        --ico-bg:  var(--text-clr-base);
+        --ico-clr: var(--text-clr-invert);
       }
 
       &-light {
-        --ico-bg:  #{$text-color-invert};
-        --ico-clr: #{$text-color-regular};
+        --ico-bg:  var(--text-clr-invert);
+        --ico-clr: var(--text-clr-base);
       }
     }
   }
