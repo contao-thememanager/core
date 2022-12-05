@@ -7,7 +7,7 @@
 }
 
 div[class*="hl-mb-"] {
-  --hl-mb: 1rem;
+  margin-bottom: var(--hl-mb);
 }
 
 $hl-bps: map-merge((0:0),$breakpoints);
