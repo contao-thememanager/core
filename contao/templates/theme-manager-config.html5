@@ -513,7 +513,7 @@ return array(
         ),
         'h1-content-font-size-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"1.86";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h1-content-font-size-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -537,7 +537,7 @@ return array(
         ),
         'h2-content-font-size-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.7";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"1.57";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h2-content-font-size-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -561,7 +561,7 @@ return array(
         ),
         'h3-content-font-size-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.5";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"1.287";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h3-content-font-size-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -569,7 +569,7 @@ return array(
         ),
         'h3-content-font-size' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.7";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"1.437";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h3-content-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -585,7 +585,7 @@ return array(
         ),
         'h4-content-font-size-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.3";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"1.172";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h4-content-font-size-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -593,7 +593,7 @@ return array(
         ),
         'h4-content-font-size' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.4";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"1.25";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h4-content-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -609,7 +609,7 @@ return array(
         ),
         'h5-content-font-size-medium' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.2";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"1.069";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h5-content-font-size-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
@@ -617,7 +617,7 @@ return array(
         ),
         'h5-content-font-size' => array
         (
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.2";}',
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"1.125";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['h5-content-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
