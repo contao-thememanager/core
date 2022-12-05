@@ -4,7 +4,15 @@
 
 .icon {
   --ico-size: #{$icon-size-medium};
+  --ico-bg:   transparent;
+  --ico-clr:  inherit;
+
   display: inline-block;
+  background-color: var(--ico-bg);
+  color: var(--ico-clr);
+
+  // Set same width and height according to icon-size
+  line-height: 1;
 
   &:before {
     @include icon(attr(data-icon));
@@ -14,80 +22,61 @@
   }
 
   &.size {
-    &--tiny  { --ico-size: #{$icon-size-tiny}};
-    &--small { --ico-size: #{$icon-size-small}};
-    &--large { --ico-size: #{$icon-size-large}};
-    &--super { --ico-size: #{$icon-size-super}};
+    &--tiny  { --ico-size: #{$icon-size-tiny};}
+    &--small { --ico-size: #{$icon-size-small};}
+    &--large { --ico-size: #{$icon-size-large};}
+    &--super { --ico-size: #{$icon-size-super};}
   }
 
-  &.filled {
-    background: $text-color-regular;
-    color: $text-color-invert;
-    padding: $icon-shape-spacing;
+  &.color {
+    &-primary   { --ico-clr: #{$primary}; }
+    &-secondary { --ico-clr: #{$secondary}; }
+    &-dark      { --ico-clr: #{$text-color-regular}; }
+    &-light     { --ico-clr: #{$text-color-invert}; }
   }
 
+  // Designs
   &.outline {
-    box-shadow: inset 0 0 0 2px $text-color-regular;
     padding: $icon-shape-spacing;
+    // Do not use any color for box-shadow as it defaults to text-color anyways
+    box-shadow: inset 0 0 0 $icon-outlined-width;
   }
 
   &.rounded {
     border-radius: 50%;
   }
 
-  &.color-primary {
-    color: $primary;
+  // Filled design
+  &.filled {
+    --ico-bg:  #{$text-color-regular};
+    --ico-clr: #{$text-color-invert};
 
-    &.filled {
-      background: $primary;
-      color: $text-color-invert;
-    }
+    padding: $icon-shape-spacing;
 
-    &.outline {
-      box-shadow: inset 0 0 0 $icon-outlined-width $primary;
-    }
-  }
+    &.color {
 
-  &.color-secondary {
-    color: $secondary;
+      &-primary {
+        --ico-bg:  #{$primary};
+        --ico-clr: #{$text-color-invert};
+      }
 
-    &.filled {
-      background: $secondary;
-      color: $text-color-invert;
-    }
+      &-secondary {
+        --ico-bg:  #{$secondary};
+        --ico-clr: #{$text-color-invert};
+      }
 
-    &.outline {
-      box-shadow: inset 0 0 0 $icon-outlined-width $secondary;
-    }
-  }
+      &-dark {
+        --ico-bg:  #{$text-color-regular};
+        --ico-clr: #{$text-color-invert};
+      }
 
-  &.color-dark {
-    color: $text-color-regular;
-
-    &.filled {
-      background: $text-color-regular;
-      color: $text-color-invert;
-    }
-
-    &.outline {
-      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-regular;
-    }
-  }
-
-  &.color-light {
-    color: $text-color-invert;
-
-    &.filled {
-      background: $text-color-invert;
-      color: $text-color-regular;
-    }
-
-    &.outline {
-      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-invert;
+      &-light {
+        --ico-bg:  #{$text-color-invert};
+        --ico-clr: #{$text-color-regular};
+      }
     }
   }
 }
-
 
 [class^="i-"],
 [class*=" i-"] {
