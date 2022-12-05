@@ -14,8 +14,8 @@
 }
 
 body {
-  background-color: $body-bg;
-  color: $text-color-regular;
+  background-color: var(--body-bg);
+  color: var(--text-clr-base);
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
