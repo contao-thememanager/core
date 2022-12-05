@@ -2,9 +2,9 @@
 
 <div class="<?= $this->class ?><?= $sm->prepare('layout', ['imageText'])->format(' image_text item %s')?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <?php if(!$this->linkText && $this->url): ?>
-        <a href="<?=$this->url?>" class="inside"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
+        <a href="<?=$this->url?>" class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
     <?php else: ?>
-        <div class="inside">
+        <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>">
     <?php endif; ?>
 
     <?php $this->block('headline'); ?>
