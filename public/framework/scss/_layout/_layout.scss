@@ -4,6 +4,16 @@
   margin:  var(--mt) var(--mr) var(--mb) var(--ml);
 }
 
+.box {
+  --px: var(--px-1);
+  --py: var(--py-1);
+}
+
+.box-list {
+  --i-px: var(--px-1);
+  --i-py: var(--py-1);
+}
+
 #container {
   display: none;
 
