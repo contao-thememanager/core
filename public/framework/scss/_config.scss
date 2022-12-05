@@ -249,7 +249,7 @@ $form-input-mandatory-symbol-color-error: #b46869 !default;
 $form-input-symbol-font-size:             16px !default;
 $form-input-symbol-color:                 $primary !default;
 $form-select-option-color:                $text-color-regular !default;
-$form-select-option-background:           $body-bg !default;
+$form-select-option-background:           var(--body-bg) !default;
 $form-validation:                         '' !default;
 
 // Form Field
@@ -363,7 +363,7 @@ $article-spacing-l-large:                 9.375rem !default;
 $article-spacing-xl-large:                $article-spacing-l-large !default;
 
 // Boxed
-$boxed-background-color:                  $body-bg !default;
+$boxed-background-color:                  var(--body-bg) !default;
 $boxed-border-color:                      #e3e3e3 !default;
 $boxed-border-style:                      solid !default;
 $boxed-border-width:                      1px !default;

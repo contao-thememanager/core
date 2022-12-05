@@ -1560,10 +1560,10 @@ return array(
         ),
         'form-select-option-background' => array
         (
-            'default'                 => '$body-bg',
+            'default'                 => 'var(--body-bg)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-select-option-background'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$body-bg', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'var(--body-bg)', 'maxlength'=>64, 'size'=>1, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
         'form-validation' => array
         (
@@ -2066,10 +2066,10 @@ return array(
         // Boxed
         'boxed-background-color' => array
         (
-            'default'                 => 'a:2:{i:0;s:8:"$body-bg";i:1;s:0:"";}',
+            'default'                 => 'a:2:{i:0;s:14:"var(--body-bg)";i:1;s:0:"";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-background-color'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$body-bg', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+            'eval'                    => array('placeholder'=>'var(--body-bg)', 'maxlength'=>64, 'multiple'=>true, 'size'=>2, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
         ),
         'boxed-border-color' => array
         (
