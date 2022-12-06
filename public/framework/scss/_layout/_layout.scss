@@ -1,7 +1,19 @@
+// Always reset inherited margins and paddings within wrappers
+.ce_wrapper {
+  --w-mt:0;--w-mb:0;--w-mr:0;--w-ml:0;--w-px:0;--w-py:0;
+}
+
+// Add specificity ('.inside' is always part of anything above mod_article)
+// to reset .grid .grid .inside calculations
+.inside .ce_wrapper > .inside {
+  padding: var(--w-px) var(--w-py);
+  margin:  var(--w-mt) var(--w-mr) var(--w-mb) var(--w-ml);
+}
+
 .inside {
   display: block;
-  padding: var(--py) var(--px);
-  margin:  var(--mt) var(--mr) var(--mb) var(--ml);
+  padding: var(--py, 0) var(--px, 0);
+  margin:  var(--mt, 0) var(--mr, 0) var(--mb, 0) var(--ml, 0);
 }
 
 .box {
