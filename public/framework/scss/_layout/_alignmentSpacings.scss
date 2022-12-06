@@ -44,5 +44,37 @@
     '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
     '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
     '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
+  ),
+  // Wrapper outer spacings
+  '.w-mt': (
+    '&-0': ( --w-mt: 0),
+    '&-1': ( --w-mt: var(--my-1)),
+    '&-2': ( --w-mt: var(--my-2)),
+    '&-3': ( --w-mt: var(--my-3))
+  ),
+  '.w-mb': (
+    '&-0': ( --w-mb: 0),
+    '&-1': ( --w-mb: var(--my-1)),
+    '&-2': ( --w-mb: var(--my-2)),
+    '&-3': ( --w-mb: var(--my-3))
+  ),
+  '.w-ml': (
+    '&-0': ( --w-ml: 0),
+    '&-1': ( --w-ml: var(--mx-1)),
+    '&-2': ( --w-ml: var(--mx-2)),
+    '&-3': ( --w-ml: var(--mx-3))
+  ),
+  '.w-mr': (
+    '&-0': ( --w-mr: 0),
+    '&-1': ( --w-mr: var(--mx-1)),
+    '&-2': ( --w-mr: var(--mx-2)),
+    '&-3': ( --w-mr: var(--mx-3))
+  ),
+  // Wrapper inner spacings
+  '.w-p': (
+    '&-0': ( --w-px: 0, --w-py: 0),
+    '&-1': ( --w-px: var(--px-1), --w-py: var(--py-1) ),
+    '&-2': ( --w-px: var(--px-2), --w-py: var(--py-2) ),
+    '&-3': ( --w-px: var(--px-3), --w-py: var(--py-3) ),
   )
 ));
