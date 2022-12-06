@@ -3,107 +3,78 @@
 }
 
 .icon {
+  --ico-size: #{$icon-size-medium};
+
   display: inline-block;
+  background-color: var(--ico-bg, transparent);
+  color: var(--ico-clr, inherit);
+
+  // Set same width and height according to icon-size
+  line-height: 1;
 
   &:before {
     @include icon(attr(data-icon));
-    font-size: $icon-size-medium;
-    height: $icon-size-medium;
-    width: $icon-size-medium;
+    font-size: var(--ico-size);
+    height:    var(--ico-size);
+    width:     var(--ico-size);
   }
 
-  &.size-tiny:before {
-    font-size: $icon-size-tiny;
-    height: $icon-size-tiny;
-    width: $icon-size-tiny;
+  &.size {
+    &--tiny  { --ico-size: #{$icon-size-tiny};}
+    &--small { --ico-size: #{$icon-size-small};}
+    &--large { --ico-size: #{$icon-size-large};}
+    &--super { --ico-size: #{$icon-size-super};}
   }
 
-  &.size-small:before {
-    font-size: $icon-size-small;
-    height: $icon-size-small;
-    width: $icon-size-small;
+  &.color {
+    &-primary   { --ico-clr: var(--clr-primary); }
+    &-secondary { --ico-clr: var(--clr-secondary); }
+    &-dark      { --ico-clr: var(--text-clr-base); }
+    &-light     { --ico-clr: var(--text-clr-invert); }
   }
 
-  &.size-large:before {
-    font-size: $icon-size-large;
-    height: $icon-size-large;
-    width: $icon-size-large;
-  }
-
-  &.size-super:before {
-    font-size: $icon-size-super;
-    height: $icon-size-super;
-    width: $icon-size-super;
-  }
-
-  &.design-filled {
-    background: $text-color-regular;
-    color: $text-color-invert;
+  // Designs
+  &.outline {
     padding: $icon-shape-spacing;
+    // Do not use any color for box-shadow as it defaults to text-color anyways
+    box-shadow: inset 0 0 0 $icon-outlined-width;
   }
 
-  &.design-outlined {
-    box-shadow: inset 0 0 0 2px $text-color-regular;
-    padding: $icon-shape-spacing;
-  }
-
-  &.circle {
+  &.rounded {
     border-radius: 50%;
   }
 
-  &.color-primary {
-    color: $primary;
+  // Filled design
+  &.filled {
+    --ico-bg:  var(--text-clr-base);
+    --ico-clr: var(--text-clr-invert);
 
-    &.design-filled {
-      background: $primary;
-      color: $text-color-invert;
-    }
+    padding: $icon-shape-spacing;
 
-    &.design-outlined {
-      box-shadow: inset 0 0 0 $icon-outlined-width $primary;
-    }
-  }
+    &.color {
 
-  &.color-secondary {
-    color: $secondary;
+      &-primary {
+        --ico-bg:  var(--clr-primary);
+        --ico-clr: var(--text-clr-invert);
+      }
 
-    &.design-filled {
-      background: $secondary;
-      color: $text-color-invert;
-    }
+      &-secondary {
+        --ico-bg:  var(--clr-secondary);
+        --ico-clr: var(--text-clr-invert);
+      }
 
-    &.design-outlined {
-      box-shadow: inset 0 0 0 $icon-outlined-width $secondary;
-    }
-  }
+      &-dark {
+        --ico-bg:  var(--text-clr-base);
+        --ico-clr: var(--text-clr-invert);
+      }
 
-  &.color-dark {
-    color: $text-color-regular;
-
-    &.design-filled {
-      background: $text-color-regular;
-      color: $text-color-invert;
-    }
-
-    &.design-outlined {
-      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-regular;
-    }
-  }
-
-  &.color-light {
-    color: $text-color-invert;
-
-    &.design-filled {
-      background: $text-color-invert;
-      color: $text-color-regular;
-    }
-
-    &.design-outlined {
-      box-shadow: inset 0 0 0 $icon-outlined-width $text-color-invert;
+      &-light {
+        --ico-bg:  var(--text-clr-invert);
+        --ico-clr: var(--text-clr-base);
+      }
     }
   }
 }
-
 
 [class^="i-"],
 [class*=" i-"] {

@@ -1,8 +1,7 @@
 .ce_text {
-  --img-wdth: 100%;
 
   .image_container {
-    width: var(--img-wdth);
+    width: var(--img-wdth, 100%);
 
     &.float {
 

@@ -45,16 +45,13 @@ $abbr-wdth: map-get($art-space-abbr, width);
 $abbr-spc:  map-get($art-space-abbr, spacing);
 
 [class*=#{$class-horizontal-article-spacing}] {
-  // Set initial width and padding values
-  --#{$abbr-wdth}:   auto;
-  --#{$abbr-spc}: 0;
 
   &, #container {
 
     > .inside {
-      width:         var(--#{$abbr-wdth});
-      padding-left:  var(--#{$abbr-spc});
-      padding-right: var(--#{$abbr-spc});
+      width:         var(--#{$abbr-wdth}, auto);
+      padding-left:  var(--#{$abbr-spc}, 0);
+      padding-right: var(--#{$abbr-spc}, 0);
       margin-left:   auto;
       margin-right:  auto;
     }

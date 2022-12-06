@@ -1,2 +1,3 @@
+<?php $sm = $this->styleManager ?>
 <div class="ce_wrapper block <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-    <div class="inside">
+    <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>">

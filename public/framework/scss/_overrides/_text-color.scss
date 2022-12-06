@@ -1,6 +1,8 @@
 .color-text {
 
   &-inv {
+    color: var(--text-clr-invert);
+
     --h1-clr:        #{$h1-color-invert};
     --h2-clr:        #{$h2-color-invert};
     --h3-clr:        #{$h3-color-invert};
@@ -15,13 +17,14 @@
 
     --cbx-clr-label: #{$form-checkbox-radio-label-color-invert};
 
-    p, ol, ul, b, strong,
-    .captcha_text, .icon, .hl-design-lined:after {
-      color: $text-color-invert;
+    .captcha_text {
+      color: var(--text-clr-invert);
     }
   }
 
   &-base {
+    color: var(--text-clr-base);
+
     --h1-clr:        #{$h1-color};
     --h2-clr:        #{$h2-color};
     --h3-clr:        #{$h3-color};
@@ -36,9 +39,8 @@
 
     --cbx-clr-label: #{$form-checkbox-radio-label-color};
 
-    p, ol, ul, b, strong,
-    .captcha_text, .icon, .hl-design-lined:after {
-      color: $text-color-regular;
+    .captcha_text {
+      color: var(--text-clr-base);
     }
   }
 }

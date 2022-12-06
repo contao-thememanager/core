@@ -2,7 +2,7 @@
 .box-list .item {
 
   > .inside {
-    background-color: $boxed-background-color;
+    background-color: $boxed-background-color; // default = var(--body-bg)
     border-color:     $boxed-border-color;
     border-radius:    $boxed-border-radius;
     border-style:     $boxed-border-style;
@@ -16,7 +16,7 @@
   &.box-list .item {
 
     > .inside {
-      box-shadow: $box-shadow;
+      box-shadow: var(--box-shadow);
     }
   }
 }

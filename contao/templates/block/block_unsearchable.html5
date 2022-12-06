@@ -2,7 +2,7 @@
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block">
-  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('layout',['boxedListElement'])->format(' %s')?><?=$sm->prepare('layout',['imageText'])->format(' image-text %s')?><?=$sm->prepare('layout',['iconText'])->format(' icon-text %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('layout',['boxedListElement'])->format(' %s')?><?=$sm->prepare('layout',['imageText'])->format(' image_text %s')?><?=$sm->prepare('layout',['iconText'])->format(' icon_text %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
