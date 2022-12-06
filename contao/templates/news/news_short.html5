@@ -1,5 +1,5 @@
 
-<div class="layout_latest arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
+<div class="layout_short arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
 
     <div class="inside">
 
@@ -23,10 +23,6 @@
             <?php endif; ?>
 
             <h3><?= $this->linkHeadline ?></h3>
-
-            <div class="ce_text block">
-                <?= $this->teaser ?>
-            </div>
         </div>
 
     </div>

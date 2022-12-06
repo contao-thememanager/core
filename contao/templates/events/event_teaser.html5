@@ -1,0 +1,33 @@
+
+<div class="layout_teaser item block<?= $this->classList ?>">
+
+    <div class="inside">
+
+        <div class="c_image">
+            <?php if ($this->addImage): ?>
+                <?php $this->insert('image', $this->arrData); ?>
+            <?php endif; ?>
+        </div>
+
+        <div class="c_text">
+            <p class="info">
+                <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
+                <?php if ($this->location): ?>
+                    <span class="location"><?= $this->location ?><?php if ($this->address): ?> (<?= $this->address ?>)<?php endif; ?></span>
+                <?php endif; ?>
+            </p>
+
+            <h3><a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a></h3>
+        </div>
+
+    </div>
+
+</div>
+
+<?php
+
+// This template is used as an event list template by default, so we only add
+// JSON-LD data in case this is an event without a reader
+if (!$this->hasReader) {
+    $this->addSchemaOrg($this->getSchemaOrgData());
+}

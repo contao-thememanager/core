@@ -1,0 +1,60 @@
+
+<div class="layout_full block<?= $this->class ?>">
+
+    <div class="inside">
+
+        <?php if ($this->hasSubHeadline): ?>
+            <h2><?= $this->subHeadline ?></h2>
+        <?php endif; ?>
+
+        <div class="c_image">
+            <?php if ($this->addImage): ?>
+                <?php $this->insert('image', $this->arrData); ?>
+            <?php endif; ?>
+        </div>
+
+        <div class="c_text">
+            <?php if ($this->hasMetaFields): ?>
+                <p class="info">
+                    <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+                    <?php if ($this->author): ?>
+                        <span class="author"><?= $this->authorName ?></span>
+                    <?php endif; ?>
+                    <?php if ($this->commentCount): ?>
+                        <span class="comments"><?= $this->commentCount ?></span>
+                    <?php endif; ?>
+                </p>
+            <?php endif; ?>
+
+            <?php if ($this->hasText): ?>
+                <?= $this->text ?>
+            <?php else: ?>
+                <div class="ce_text block">
+                    <?= $this->teaser ?>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($this->enclosure): ?>
+                <ul class="enclosure">
+                    <?php foreach ($this->enclosure as $enclosure): ?>
+                        <li class="download-element ext-<?= $enclosure['extension'] ?>">
+                            <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+
+    </div>
+
+</div>
+
+<?php
+
+$schemaOrg = $this->getSchemaOrgData();
+
+if ($this->hasText) {
+    $schemaOrg['text'] = $this->rawHtmlToPlainText($this->text);
+}
+
+$this->addSchemaOrg($schemaOrg);

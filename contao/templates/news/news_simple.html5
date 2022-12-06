@@ -1,13 +1,7 @@
 
-<div class="layout_latest arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
+<div class="layout_simple arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
 
     <div class="inside">
-
-        <div class="c_image">
-            <?php if ($this->addImage): ?>
-                <?php $this->insert('image', $this->arrData); ?>
-            <?php endif; ?>
-        </div>
 
         <div class="c_text">
             <?php if ($this->hasMetaFields): ?>
@@ -22,11 +16,7 @@
                 </p>
             <?php endif; ?>
 
-            <h3><?= $this->linkHeadline ?></h3>
-
-            <div class="ce_text block">
-                <?= $this->teaser ?>
-            </div>
+            <?= $this->linkHeadline ?>
         </div>
 
     </div>
