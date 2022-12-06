@@ -1,11 +1,9 @@
 .icon_text {
-  --itm-dsp: block;
-  --itm-flow: row;
 
   &.item, .item {
     > .inside {
-      display: var(--itm-dsp);
-      flex-direction: var(--itm-flow);
+      display: var(--itm-dsp, block);
+      flex-direction: var(--itm-flow, row);
     }
   }
 }

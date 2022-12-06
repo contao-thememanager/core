@@ -1,16 +1,12 @@
 .image_text {
-  --itm-dsp: block;
-  --itm-flow: row;
-  --itm-justify: normal;
-  --itm-align: normal;
 
   &.item, .item {
     > .inside {
       position: relative;
-      display:         var(--itm-dsp);
-      flex-direction:  var(--itm-flow);
-      justify-content: var(--itm-justify);
-      align-items:     var(--itm-align);
+      display:         var(--itm-dsp, block);
+      flex-direction:  var(--itm-flow, row);
+      justify-content: var(--itm-justify, normal);
+      align-items:     var(--itm-align, normal);
     }
   }
 }

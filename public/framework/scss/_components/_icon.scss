@@ -4,12 +4,10 @@
 
 .icon {
   --ico-size: #{$icon-size-medium};
-  --ico-bg:   transparent;
-  --ico-clr:  inherit;
 
   display: inline-block;
-  background-color: var(--ico-bg);
-  color: var(--ico-clr);
+  background-color: var(--ico-bg, transparent);
+  color: var(--ico-clr, inherit);
 
   // Set same width and height according to icon-size
   line-height: 1;
