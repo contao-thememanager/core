@@ -35,6 +35,13 @@
       <trans-unit id="CTE.wrapperStopBoxed.1">
         <source>Generates the closing part of the wrapper (boxed).</source>
       </trans-unit>
+
+      <trans-unit id="MSC.commentCountOne">
+        <source>1 comment</source>
+      </trans-unit>
+      <trans-unit id="MSC.commentCountMultiple">
+        <source>%s comments</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
