@@ -27,13 +27,16 @@ class ParseArticlesListener
         $template->authorName = str_replace($GLOBALS['TL_LANG']['MSC']['by'] . ' ', '', $template->author);
 
         // Modify comment variables
-        if ($template->numberOfComments === 1)
+        if ($template->numberOfComments > 0)
         {
-            $template->commentCount = $GLOBALS['TL_LANG']['MSC']['commentCountOne'];
-        }
-        else
-        {
-            $template->commentCount = sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
+            if ($template->numberOfComments === 1)
+            {
+                $template->commentCount = $GLOBALS['TL_LANG']['MSC']['commentCountOne'];
+            }
+            else
+            {
+                $template->commentCount = sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
+            }
         }
 
         $template->hasComments = !!$template->numberOfComments;
