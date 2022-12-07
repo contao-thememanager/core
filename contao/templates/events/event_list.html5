@@ -1,5 +1,5 @@
 
-<div class="layout_list item block<?= $this->classList ?>">
+<div class="event layout_list item block<?= $this->classList ?>">
 
     <div class="inside">
 
