@@ -5,7 +5,7 @@
 
         <div class="c_text">
             <?php if ($this->hasMetaFields): ?>
-                <p class="info">
+                <div class="info">
                     <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
                     <?php if ($this->author): ?>
                         <span class="author"><?= $this->authorName ?></span>
@@ -13,7 +13,7 @@
                     <?php if ($this->commentCount): ?>
                         <span class="comments"><?= $this->commentCount ?></span>
                     <?php endif; ?>
-                </p>
+                </div>
             <?php endif; ?>
 
             <?= $this->linkHeadline ?>
