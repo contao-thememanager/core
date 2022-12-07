@@ -1,5 +1,5 @@
 
-<div class="layout_simple arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
+<div class="news layout_simple arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
 
     <div class="inside">
 
