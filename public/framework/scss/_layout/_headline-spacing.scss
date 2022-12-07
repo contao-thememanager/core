@@ -4,6 +4,13 @@
 
 .ce_headline {
   padding-bottom: 0 !important;
+
+  &:last-child {
+
+    .c_headline {
+      margin-bottom: 0;
+    }
+  }
 }
 
 div[class*="hl-mb-"] {
