@@ -19,7 +19,7 @@
     row-gap:         var(--v-gap);
 
     // Add padding-bottom for last row
-    padding-bottom:  var(--v-gap);
+    // padding-bottom:  var(--v-gap); // ToDo: In testing: should be removed if not needed.
 
     > * {
       flex-grow:   0;
