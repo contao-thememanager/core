@@ -41,6 +41,11 @@ $spacings-list-bp: (
   )
 );
 
+// Add default bottom-padding to #main articles
+main .article_inside {
+  padding-bottom: var(--v-gap);
+}
+
 $abbr-wdth: map-get($art-space-abbr, width);
 $abbr-spc:  map-get($art-space-abbr, spacing);
 

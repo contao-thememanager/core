@@ -22,7 +22,7 @@
 <?php else: ?>
 
   <div class="<?= $this->class ?> grid block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-    <div class="inside">
+    <div class="inside article_inside">
       <?php if ($this->printable): ?>
         <?php $this->block('syndication'); ?>
           <!-- indexer::stop -->
