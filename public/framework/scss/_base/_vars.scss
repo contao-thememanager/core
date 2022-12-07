@@ -14,10 +14,11 @@
   --text-clr-base:      #{$text-color-regular};
   --text-clr-invert:    #{$text-color-invert};
 
-  --font-family-base:   #{$font-family-base};
-  --font-size-base:     #{$font-size-base};
-  --line-height-base:   #{$line-height-base};
-  --line-height-hl:     #{$line-height-headline};
+  --font-family:        #{$font-family-base};
+  --fs-base:            #{$font-size-base};
+
+  --leading-base:       #{$line-height-base};
+  --leading-hl:         #{$line-height-headline};
 
   --fw-base:            #{$font-weight-base};
   --fw-light:           #{$font-weight-light};
@@ -108,10 +109,10 @@
   --btn-bdr-r:       #{$button-border-radius-primary};
   --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
 
-  --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-primary)};
-  --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-primary)};
-  --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-primary)};
-  --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-primary)};
+  --btn-p-1:         #{subList($button-padding-small, $button-border-width-primary)};
+  --btn-p-2:         #{subList($button-padding-medium, $button-border-width-primary)};
+  --btn-p-3:         #{subList($button-padding-large, $button-border-width-primary)};
+  --btn-p-4:         #{subList($button-padding-super, $button-border-width-primary)};
 
   // Form
   --form-clr-txt:    #{$form-input-color};

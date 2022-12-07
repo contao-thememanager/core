@@ -177,7 +177,7 @@ $grid-gutter-small-width:                 1rem !default;
 $grid-gutter-small-bottom:                $grid-gutter-small-width !default;
 
 // Form
-$form-textarea-line-height:               $line-height-base !default;
+$form-textarea-line-height:               var(--leading-base) !default;
 
 // Form-Label
 $form-label-color:                        $text-color-regular !default;
@@ -186,7 +186,7 @@ $form-label-font-weight:                  $font-weight-regular !default;
 $form-label-spacing:                      4px !default;
 
 // Form-Input
-$form-input-font-family:                  $font-family-base !default;
+$form-input-font-family:                  var(--font-family) !default;
 $form-input-font-size:                    $font-size-base !default;
 $form-input-font-weight:                  $font-weight-regular !default;
 

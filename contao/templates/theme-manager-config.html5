@@ -1164,10 +1164,10 @@ return array(
         // Form
         'form-textarea-line-height' => array
         (
-            'default'                 => '$line-height-base',
+            'default'                 => 'var(--leading-base)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-textarea-line-height'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$line-height-base', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
+            'eval'                    => array('placeholder'=>'var(--leading-base)', 'rgxp'=>'digit_inherit', 'maxlength' => 32, 'tl_class'=>'w50 clr'),
         ),
         'form-label-color' => array
         (
@@ -1202,10 +1202,10 @@ return array(
 
         'form-input-font-family' => array
         (
-            'default'                 => '$font-family-base',
+            'default'                 => 'var(--font-family)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-input-font-family'],
             'inputType'               => 'text',
-            'eval'                    => array('placeholder'=>'$font-family-base', 'maxlength' => 255, 'preserveTags'=>true, 'tl_class'=>'w50 clr'),
+            'eval'                    => array('placeholder'=>'var(--font-family)', 'maxlength' => 255, 'preserveTags'=>true, 'tl_class'=>'w50 clr'),
         ),
         'form-input-font-size' => array
         (

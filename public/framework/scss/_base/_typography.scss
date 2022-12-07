@@ -28,7 +28,7 @@ strong {
 @include heading-basics{
   margin-top: 0;
   margin-bottom: $headline-spacing;
-  line-height: $line-height-headline;
+  line-height: var(--leading-hl);
 
   &:last-child {
     margin-bottom: 0;
