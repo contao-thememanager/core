@@ -18,9 +18,6 @@
     align-items:     var(--flex-items);
     row-gap:         var(--v-gap);
 
-    // Add padding-bottom for last row
-    // padding-bottom:  var(--v-gap); // ToDo: In testing: should be removed if not needed.
-
     > * {
       flex-grow:   0;
       flex-shrink: 0;
@@ -36,7 +33,6 @@
   .grid > .inside {
     margin-left:  var(--h-gap-off);
     margin-right: var(--h-gap-off);
-    padding-bottom: 0;
   }
 }
 
