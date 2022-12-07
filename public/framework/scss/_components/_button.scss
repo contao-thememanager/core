@@ -20,12 +20,12 @@ input.button {
   border: var(--btn-bdr);
   border-radius: var(--btn-bdr-r);
 
-  padding: var(--btn-pdg-m);
+  padding: var(--btn-p-2);
 
   cursor: pointer;
   display: inline-flex;
 
-  font-family: $font-family-base;
+  font-family: var(--font-family);
   font-size: $button-font-size-medium;
   line-height: $button-line-height;
   text-decoration: none;
@@ -40,22 +40,29 @@ input.button {
     border-color: var(--btn-bdr-clr-hvr);
   }
 
-  &.size-small {
-    padding: var(--btn-pdg-s);
-    font-size: $button-font-size-small;
-  }
+  &.size {
 
-  &.size-large {
-    padding: var(--btn-pdg-l);
-    font-size: $button-font-size-large;
-  }
+    &--small {
+      padding: var(--btn-p-1);
+      font-size: $button-font-size-small;
+    }
 
-  &.size-super {
-    padding: var(--btn-pdg-xl);
-    font-size: $button-font-size-super;
-  }
+    &--large {
+      padding: var(--btn-p-3);
+      font-size: $button-font-size-large;
+    }
 
-  &.design-secondary {
+    &--super {
+      padding: var(--btn-p-4);
+      font-size: $button-font-size-super;
+    }
+  }
+}
+
+// Designs
+.btn {
+
+  &--secondary {
     --btn-bg:          #{$button-bg-secondary};
     --btn-bg-hvr:      #{$button-hover-bg-secondary};
     --btn-clr:         #{$button-color-secondary};
@@ -68,13 +75,13 @@ input.button {
     --btn-bdr-r:       #{$button-border-radius-secondary};
     --btn-bdr-clr-hvr: #{$button-hover-border-color-secondary};
 
-    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-secondary)};
-    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-secondary)};
-    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-secondary)};
-    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-secondary)};
+    --btn-p-1:         #{subList($button-padding-small, $button-border-width-secondary)};
+    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-secondary)};
+    --btn-p-3:         #{subList($button-padding-large, $button-border-width-secondary)};
+    --btn-p-4:         #{subList($button-padding-super, $button-border-width-secondary)};
   }
 
-  &.design-alt {
+  &--alt {
     --btn-bg:          #{$button-bg-alt};
     --btn-bg-hvr:      #{$button-hover-bg-alt};
     --btn-clr:         #{$button-color-alt};
@@ -87,9 +94,9 @@ input.button {
     --btn-bdr-r:       #{$button-border-radius-alt};
     --btn-bdr-clr-hvr: #{$button-hover-border-color-alt};
 
-    --btn-pdg-s:       #{subList($button-padding-small, $button-border-width-alt)};
-    --btn-pdg-m:       #{subList($button-padding-medium, $button-border-width-alt)};
-    --btn-pdg-l:       #{subList($button-padding-large, $button-border-width-alt)};
-    --btn-pdg-xl:      #{subList($button-padding-super, $button-border-width-alt)};
+    --btn-p-1:         #{subList($button-padding-small, $button-border-width-alt)};
+    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-alt)};
+    --btn-p-3:         #{subList($button-padding-large, $button-border-width-alt)};
+    --btn-p-4:         #{subList($button-padding-super, $button-border-width-alt)};
   }
 }

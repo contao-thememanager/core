@@ -778,7 +778,7 @@
         <field title="alias">design</field>
         <field title="title">Design</field>
         <field title="description">Defines the appearance of the buttons.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:6:"button";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:23:"button design-secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:17:"button design-alt";s:5:"value";s:11:"Alternative";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:6:"button";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:21:"button btn--secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:15:"button btn--alt";s:5:"value";s:11:"Alternative";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -804,7 +804,7 @@
         <field title="alias">size</field>
         <field title="title">Size</field>
         <field title="description">Defines the size of the buttons.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"size-small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"size-large";s:5:"value";s:5:"Large";}i:2;a:2:{s:3:"key";s:10:"size-super";s:5:"value";s:5:"Super";}}</field>
+        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:11:"size--small";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:11:"size--large";s:5:"value";s:5:"Large";}i:2;a:2:{s:3:"key";s:11:"size--super";s:5:"value";s:5:"Super";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
