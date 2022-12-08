@@ -1,5 +1,5 @@
 
-<div class="news layout_full block<?= $this->class ?>">
+<div class="news layout_full item block<?= $this->class ?>">
 
     <div class="inside">
 

@@ -2,7 +2,7 @@
 
 <?php $this->block('content'); ?>
 
-  <div class="faq layout_full block">
+  <div class="faq layout_full item block">
 
     <div class="inside">
 
