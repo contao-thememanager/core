@@ -1,0 +1,60 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <div class="faq layout_full block">
+
+    <div class="inside">
+
+      <?php if ($this->error): ?>
+        <?= $this->error ?>
+      <?php else: ?>
+        <?php if ($this->addImage): ?>
+          <div class="c_image">
+            <?php $this->insert('image', $this->arrData); ?>
+          </div>
+        <?php endif; ?>
+
+        <div class="c_text">
+          <h1><?= $this->question ?></h1>
+
+          <?= $this->answer ?>
+
+          <?php if ($this->enclosure): ?>
+            <ul class="enclosure">
+              <?php foreach ($this->enclosure as $enclosure): ?>
+                <li class="download-element ext-<?= $enclosure['extension'] ?>">
+                  <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
+
+          <p class="info"><?= $this->info ?></p>
+        </div>
+      <?php endif; ?>
+    </div>
+
+  </div>
+
+  <?php if ($this->referer): ?>
+    <!-- indexer::stop -->
+    <p class="back"><a href="<?= $this->referer ?>" title="<?= $this->back ?>"><?= $this->back ?></a></p>
+    <!-- indexer::continue -->
+  <?php endif; ?>
+
+  <?php if ($this->allowComments): ?>
+    <div class="ce_comments block">
+    <<?= $this->hlc ?>><?= $this->hlcText ?></<?= $this->hlc ?>>
+    <?= implode('', $this->comments) ?>
+    <?= $this->pagination ?>
+    <<?= $this->hlc ?>><?= $this->addComment ?></<?= $this->hlc ?>>
+    <?php $this->insert('mod_comment_form', $this->arrData); ?>
+    </div>
+  <?php endif; ?>
+
+<?php $this->endblock(); ?>
+
+<?php
+
+$this->addSchemaOrg($this->getSchemaOrgData());

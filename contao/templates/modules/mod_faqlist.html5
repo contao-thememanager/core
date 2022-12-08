@@ -1,0 +1,52 @@
+<?php $sm = $this->styleManager ?>
+
+<!-- indexer::stop -->
+<div class="<?= $this->class ?> block">
+  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('layout',['boxedListElement'])->format(' %s')?><?=$sm->prepare('layout',['imageText'])->format(' image_text %s')?><?=$sm->prepare('layout',['iconText'])->format(' icon_text %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+    <?php $this->block('headline'); ?>
+      <?php if ($this->headline || $this->headline2): ?>
+        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+      <?php endif; ?>
+
+      <?php if ($this->headline): ?>
+        <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+      <?php endif; ?>
+
+      <?php if ($this->headline2): ?>
+        <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+      <?php endif; ?>
+
+      <?php if ($this->headline || $this->headline2): ?>
+        </div>
+      <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <?php foreach ($this->faq as $category): ?>
+      <div class="<?= $category['class'] ?>">
+        <h2><?= $category['headline'] ?></h2>
+
+        <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>">
+          <?php foreach ($category['items'] as $faq): ?>
+            <div class="faq layout_list item <?= $faq['class'] ?>">
+
+              <div class="inside">
+
+                <div class="c_text">
+                  <a href="<?= $faq['href'] ?>" title="<?= $faq['title'] ?>"><?= $faq['question'] ?></a>
+                </div>
+
+              </div>
+
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    <?php endforeach; ?>
+
+    <?php $this->block('pagination'); ?>
+    <?php $this->endblock(); ?>
+
+  </div>
+</div>
+<!-- indexer::continue -->
