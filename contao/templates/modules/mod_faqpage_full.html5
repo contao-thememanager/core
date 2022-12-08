@@ -23,8 +23,10 @@
     <?php $this->endblock(); ?>
 
     <?php foreach ($this->faq as $category): ?>
-      <article class="<?= $category['class'] ?>">
-        <h2><?= $category['headline'] ?></h2>
+      <article class="faq-category <?= $category['class'] ?>">
+        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+          <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $category['headline'] ?></<?= $this->hl ?>>
+        </div>
 
         <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>">
           <?php foreach ($category['items'] as $faq): ?>
@@ -39,7 +41,7 @@
                 <?php endif; ?>
 
                 <div class="c_text">
-                  <h3 id="<?= $faq->alias ?>"><?= $faq->question ?></h3>
+                  <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?> id="<?= $faq->alias ?>"><?= $faq->question ?></<?= $this->hl2 ?>>
 
                   <?= $faq->answer ?>
 

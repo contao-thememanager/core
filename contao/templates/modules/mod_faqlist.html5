@@ -23,7 +23,7 @@
     <?php $this->endblock(); ?>
 
     <?php foreach ($this->faq as $category): ?>
-      <div class="<?= $category['class'] ?>">
+      <div class="faq-category <?= $category['class'] ?>">
         <h2><?= $category['headline'] ?></h2>
 
         <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>">
