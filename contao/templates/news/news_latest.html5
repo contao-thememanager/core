@@ -3,11 +3,11 @@
 
     <div class="inside">
 
-        <div class="c_image">
-            <?php if ($this->addImage): ?>
+        <?php if ($this->addImage): ?>
+            <div class="c_image">
                 <?php $this->insert('image', $this->arrData); ?>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
         <div class="c_text">
             <?php if ($this->hasMetaFields): ?>
@@ -24,9 +24,7 @@
 
             <h3><?= $this->linkHeadline ?></h3>
 
-            <div class="ce_text block">
-                <?= $this->teaser ?>
-            </div>
+            <?= $this->teaser ?>
         </div>
 
     </div>

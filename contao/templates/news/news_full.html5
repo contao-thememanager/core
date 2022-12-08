@@ -7,11 +7,11 @@
             <h2><?= $this->subHeadline ?></h2>
         <?php endif; ?>
 
-        <div class="c_image">
-            <?php if ($this->addImage): ?>
+        <?php if ($this->addImage): ?>
+            <div class="c_image">
                 <?php $this->insert('image', $this->arrData); ?>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
         <div class="c_text">
             <?php if ($this->hasMetaFields): ?>
@@ -29,9 +29,7 @@
             <?php if ($this->hasText): ?>
                 <?= $this->text ?>
             <?php else: ?>
-                <div class="ce_text block">
-                    <?= $this->teaser ?>
-                </div>
+                <?= $this->teaser ?>
             <?php endif; ?>
 
             <?php if ($this->enclosure): ?>
