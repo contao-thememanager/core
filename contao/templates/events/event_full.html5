@@ -21,6 +21,8 @@
                 <?php endif; ?>
             </p>
 
+            <h1><?= $this->title ?></h1>
+
             <?php if ($this->details): ?>
                 <?= $this->details ?>
             <?php else: ?>

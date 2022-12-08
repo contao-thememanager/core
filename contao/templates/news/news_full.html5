@@ -3,10 +3,6 @@
 
     <div class="inside">
 
-        <?php if ($this->hasSubHeadline): ?>
-            <h2><?= $this->subHeadline ?></h2>
-        <?php endif; ?>
-
         <?php if ($this->addImage): ?>
             <div class="c_image">
                 <?php $this->insert('image', $this->arrData); ?>
@@ -24,6 +20,12 @@
                         <span class="comments"><?= $this->commentCount ?></span>
                     <?php endif; ?>
                 </p>
+            <?php endif; ?>
+
+            <h1><?= $this->newsHeadline ?></h1>
+
+            <?php if ($this->hasSubHeadline): ?>
+                <h2><?= $this->subHeadline ?></h2>
             <?php endif; ?>
 
             <?php if ($this->hasText): ?>
