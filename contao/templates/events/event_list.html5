@@ -3,11 +3,11 @@
 
     <div class="inside">
 
-        <div class="c_image">
-            <?php if ($this->addImage): ?>
+        <?php if ($this->addImage): ?>
+            <div class="c_image">
                 <?php $this->insert('image', $this->arrData); ?>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
         <div class="c_text">
             <p class="info">
