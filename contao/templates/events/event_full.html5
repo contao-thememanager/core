@@ -24,9 +24,7 @@
             <?php if ($this->details): ?>
                 <?= $this->details ?>
             <?php else: ?>
-                <div class="ce_text block">
-                    <?= $this->teaser ?>
-                </div>
+                <?= $this->teaser ?>
             <?php endif; ?>
 
             <?php if ($this->enclosure): ?>
