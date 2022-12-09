@@ -16,7 +16,7 @@ return array(
     ),
     'types' => array('content'),
     'contentCategory' => 'components',
-    'standardFields' => array('headline', 'cssID'),
+    'standardFields' => array('cssID'),
     'fields' => array(
         'icon' => array(
             'label' => array(
