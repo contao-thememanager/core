@@ -40,7 +40,7 @@
     --itm-dsp: flex;
 
     .c_image {
-      margin-right: $component-inner-spacing;
+      margin-right: var(--c-m);
     }
   }
 
@@ -49,7 +49,7 @@
     --itm-flow: row-reverse;
 
     .c_image {
-      margin-left: $component-inner-spacing;
+      margin-left: var(--c-m);
     }
   }
 
@@ -57,7 +57,7 @@
 
     .c_image {
       float: left;
-      margin-right: $component-inner-spacing;
+      margin-right: var(--c-m);
     }
   }
 
@@ -65,7 +65,7 @@
 
     .c_image {
       float: right;
-      margin-left: $component-inner-spacing;
+      margin-left: var(--c-m);
     }
   }
 }

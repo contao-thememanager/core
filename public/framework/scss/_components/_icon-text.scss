@@ -13,7 +13,7 @@
   &_top {
 
     .c_icon {
-      margin-bottom: $component-inner-spacing;
+      margin-bottom: var(--c-m);
     }
   }
 
@@ -21,7 +21,7 @@
     --itm-dsp: flex;
 
     .c_icon {
-      margin-right: $component-inner-spacing;
+      margin-right: var(--c-m);
     }
   }
 
@@ -30,7 +30,7 @@
     --itm-flow: row-reverse;
 
     .c_icon {
-      margin-left: $component-inner-spacing;
+      margin-left: var(--c-m);
     }
   }
 
@@ -38,7 +38,7 @@
 
     .c_icon {
       float: left;
-      margin-right: $component-inner-spacing;
+      margin-right: var(--c-m);
     }
   }
 
@@ -46,7 +46,7 @@
 
     .c_icon {
       float: right;
-      margin-left: $component-inner-spacing;
+      margin-left: var(--c-m);
     }
   }
 }

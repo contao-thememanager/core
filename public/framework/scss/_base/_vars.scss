@@ -54,6 +54,9 @@
   --py-2: #{$top-bottom-padding-medium};
   --py-3: #{$top-bottom-padding-large};
 
+  // Component spacing
+  --c-m:  #{$component-inner-spacing};
+
   // Typography
   --a-clr:     #{$link-color-regular};
   --a-clr-hvr: #{$link-hover-color-regular};
