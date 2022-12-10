@@ -15,6 +15,14 @@
   &-baseline { --flex-items: baseline; }
 }
 
+// Specific for some item-text components
+.self {
+  &-start    { --self-align: start; }
+  &-center   { --self-align: center; }
+  &-end      { --self-align: end; }
+  &-baseline { --self-align: baseline; }
+}
+
 // Also used as "items-stretch"
 .auto-height {
   --flex-items: stretch;
