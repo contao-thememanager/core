@@ -1,143 +1,155 @@
 .image_text {
-
   &.item, .item {
     > .inside {
       position: relative;
+      overflow: hidden;
       display:         var(--itm-dsp, block);
-      flex-direction:  var(--itm-flow, row);
+      flex-direction:  var(--itm-flow, column);
       justify-content: var(--itm-justify, normal);
       align-items:     var(--itm-align, normal);
     }
   }
+
+  .c_image {
+    --it-wdth:calc(100% * var(--ratio-x, 1));
+    position: relative;
+    float:    var(--img-float,none);
+    margin:   var(--img-mt,0) var(--img-mr,0) var(--img-mb,var(--c-m)) var(--img-ml,0);
+    inset:    var(--inset-y,auto) var(--inset-x,auto);
+    width:    var(--it-wdth);
+    height:   var(--img-hght,auto);
+  }
+
+  .c_text {
+    flex: 1;
+    align-self: var(--self-align, auto);
+  }
 }
 
-.img {
+.txt--absolute {
+  --img-mb:0;
 
-  &--top {
+  --itm-dsp: flex;
+  --itm-flow: column;
+  --itm-justify: center;
+  --itm-align: center;
 
-    .c_image {
-      position: relative;
-      inset: calc(-1 * var(--i-py)) 0 0 calc(-1 * var(--i-px));
-      width: calc(100% + var(--i-px) + var(--i-px));
+  &.pos-t { --itm-justify:flex-start; }
+  &.pos-b { --itm-justify:flex-end; }
+  &.pos-l { --itm-align:flex-start; }
+  &.pos-r { --itm-align:flex-end; }
 
-      margin-bottom: 0;
+  .c_image { width: 100%; }
+
+  .c_text {
+    --it-wdth: calc(100% * var(--ratio-x, 1));
+
+    position: absolute;
+    padding: var(--c-m);
+
+    max-height: calc(100% - var(--i-py) - var(--i-py));
+    max-width: calc(var(--it-wdth, 100%) - var(--i-px) - var(--i-px));
+
+    overflow: hidden;
+  }
+}
+
+.img--flex {
+  --itm-dsp: flex;
+  &.pos-b {
+    --img-mt:var(--c-m); --img-mb:0; --itm-flow:column-reverse;
+  }
+
+  &.img--inset {
+    &.pos-t { --inset-y:calc(-1 * var(--i-py)); }
+    &.pos-b { --inset-y:var(--i-py); }
+    &.pos-y { --inset-x:calc(-1 * var(--i-px)); --img-mt:0; --img-mb:0; }
+  }
+}
+
+.img--inset {
+  --img-mt:0; --img-mr:0; --img-mb:0; --img-ml:0;
+
+  --inset-y:calc(-1 * var(--i-py));
+  --inset-x:calc(-1 * var(--i-px));
+
+  .c_image { width: calc(var(--it-wdth, 100%) + calc(2 * var(--i-px) * var(--ratio-x, 1))) !important; }
+}
+
+
+@media (min-width: 600px) {
+
+  .it-width {
+    &-25 { --ratio-x:0.25; }
+    &-33 { --ratio-x:0.3333; }
+    &-38 { --ratio-x:0.38195; }
+    &-40 { --ratio-x:0.4; }
+    &-50 { --ratio-x:0.5; }
+    &-60 { --ratio-x:0.6; }
+    &-70 { --ratio-x:0.7; }
+    &-80 { --ratio-x:0.8; }
+  }
+
+  .img--float {
+    &.pos-l { --img-mr:var(--c-m); --img-float:left; }
+    &.pos-r { --img-ml:var(--c-m); --img-float:right; }
+
+    &.img--inset {
+      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px)); }
+      &.pos-r { --img-ml:0; --inset-x:var(--i-px); }
+      &.pos-x { --img-mb:0; --inset-y:calc(-1 * var(--i-py)); }
     }
 
-    &.box,
-    &.box-list {
+    &:after { display: block; content: ''; clear: both; }
+  }
 
-      figure,
-      img {
-        border-radius: nth(standardize($boxed-border-radius), 1) nth(standardize($boxed-border-radius), 2) 0 0;
+  .img--flex {
+    --itm-dsp: flex;
+
+    &.pos-b { --img-mt:var(--c-m); --img-mb:0; --itm-flow:column-reverse; }
+    &.pos-y { --img-mr:auto; --img-ml:auto;}
+
+    &.pos-l { --img-mr:var(--c-m); --itm-flow:row; }
+    &.pos-r { --img-ml:var(--c-m); --itm-flow:row-reverse; }
+    &.pos-x { --img-mt:auto; --img-mb:auto;
+      &.pos-t { --img-mt:0; }
+      &.pos-b { --img-mb:0; }
+      .c_image { width: calc(var(--it-wdth) - calc(var(--c-m) / 2)); }
+    }
+
+    &.img--inset {
+      &.pos-t { --inset-y:calc(-1 * var(--i-py)); --img-mb:auto;}
+      &.pos-b { --inset-y:var(--i-py); --img-mt:auto; }
+      &.pos-y { --inset-x:calc(-1 * var(--i-px));
+        &[class*=it-width-] { --inset-x: 0%; }
+        &:not(.pos-x) { --img-mt:0; --img-mb:0; }
+      }
+
+      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px)) !important; }
+      &.pos-r { --img-ml:0; --inset-x:var(--i-px) !important; }
+      &.pos-x {
+        &.img--cover { --img-mt:0; --img-mb:calc(-2 * var(--i-py)); }
       }
     }
   }
 
-  // ToDo: Add new modes:
-  // - left & right (borderless) like top-behaviour
+  .img--inset {
+    --inset-y: auto;
+    --img-mt:auto; --img-mb:auto;
+  }
 
-  &--left {
-    --itm-dsp: flex;
-
-    .c_image {
-      margin-right: var(--c-m);
+  .img--cover {
+    &.pos-x {
+      &.img--inset { --inset-y:calc(-1 * var(--i-py)); }
+      &.img--flex  { --img-mt:0; --img-mb:0; }
     }
-  }
 
-  &--right {
-    --itm-dsp: flex;
-    --itm-flow: row-reverse;
-
-    .c_image {
-      margin-left: var(--c-m);
+    img,
+    figure,
+    picture {
+      height: 100%;
     }
-  }
 
-  &--float-left {
-
-    .c_image {
-      float: left;
-      margin-right: var(--c-m);
-    }
-  }
-
-  &--float-right {
-
-    .c_image {
-      float: right;
-      margin-left: var(--c-m);
-    }
-  }
-}
-
-[class*="img--abs"] {
-  --itm-dsp: flex;
-  --itm-flow: column;
-
-  .c_image {
-    margin-bottom: 0;
-    width: 100%;
-  }
-
-  .c_text {
-    position: absolute;
-    padding: divide($grid-gutter-width, 2);
-  }
-
-  &.box,
-  &.box-list {
-
-    .c_text {
-      max-height: calc(100% + var(--i-py) + var(--i-py));
-      max-width: calc(100% + var(--i-px) + var(--i-px));
-
-      overflow: hidden;
-    }
-  }
-}
-
-// Image-text layouts
-.img--abs {
-
-  &-top,
-  &-center,
-  &-bottom {
-
-    .c_text {
-      width: 100%;
-    }
-  }
-
-  &-top,
-  &-left-top,
-  &-middle-top,
-  &-right-top {
-    --itm-justify: flex-start;
-  }
-
-  &-center,
-  &-left-center,
-  &-middle-center,
-  &-right-center {
-    --itm-justify: center;
-  }
-
-  &-bottom,
-  &-left-bottom,
-  &-middle-bottom,
-  &-right-bottom {
-    --itm-justify: flex-end;
-  }
-
-  &-middle-top,
-  &-middle-center,
-  &-middle-bottom {
-    --itm-align: center;
-  }
-
-  &-right-top,
-  &-right-center,
-  &-right-bottom {
-    --itm-align: flex-end;
+    img { object-fit: cover; }
   }
 }
