@@ -1,27 +1,5 @@
 .color-text {
 
-  &-inv {
-    color: var(--text-clr-invert);
-
-    --h1-clr:        #{$h1-color-invert};
-    --h2-clr:        #{$h2-color-invert};
-    --h3-clr:        #{$h3-color-invert};
-    --h4-clr:        #{$h4-color-invert};
-    --h5-clr:        #{$h5-color-invert};
-    --h6-clr:        #{$h6-color-invert};
-
-    --a-clr:         #{$link-color-invert};
-    --a-clr-hvr:     #{$link-hover-color-invert};
-    --a-td:          #{$link-decoration-invert};
-    --a-td-hvr:      #{$link-hover-decoration-invert};
-
-    --cbx-clr-label: #{$form-checkbox-radio-label-color-invert};
-
-    .captcha_text {
-      color: var(--text-clr-invert);
-    }
-  }
-
   &-base {
     color: var(--text-clr-base);
 
@@ -43,9 +21,38 @@
       color: var(--text-clr-base);
     }
   }
+
+  &-inv {
+    color: var(--text-clr-invert);
+
+    --h1-clr:        #{$h1-color-invert};
+    --h2-clr:        #{$h2-color-invert};
+    --h3-clr:        #{$h3-color-invert};
+    --h4-clr:        #{$h4-color-invert};
+    --h5-clr:        #{$h5-color-invert};
+    --h6-clr:        #{$h6-color-invert};
+
+    --a-clr:         #{$link-color-invert};
+    --a-clr-hvr:     #{$link-hover-color-invert};
+    --a-td:          #{$link-decoration-invert};
+    --a-td-hvr:      #{$link-hover-decoration-invert};
+
+    --cbx-clr-label: #{$form-checkbox-radio-label-color-invert};
+
+    .captcha_text {
+      color: var(--text-clr-invert);
+    }
+  }
 }
 
 .color-link {
+
+  &-base {
+    --a-clr:     #{$link-color-regular};
+    --a-clr-hvr: #{$link-hover-color-regular};
+    --a-td:      #{$link-decoration-regular};
+    --a-td-hvr:  #{$link-hover-decoration-regular};
+  }
 
   &-inv {
     --a-clr:     #{$link-color-invert};
@@ -59,12 +66,5 @@
     --a-clr-hvr: #{$link-hover-color-extra};
     --a-td:      #{$link-decoration-extra};
     --a-td-hvr:  #{$link-hover-decoration-extra};
-  }
-
-  &-base {
-    --a-clr:     #{$link-color-regular};
-    --a-clr-hvr: #{$link-hover-color-regular};
-    --a-td:      #{$link-decoration-regular};
-    --a-td-hvr:  #{$link-hover-decoration-regular};
   }
 }
