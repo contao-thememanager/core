@@ -5,10 +5,10 @@
         <source>Base-Settings</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.color_legend">
-        <source>Base-Colors</source>
+        <source>Colors</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.font_legend">
-        <source>Fonts</source>
+        <source>Typography</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.headings_legend">
         <source>Headings</source>
@@ -17,7 +17,7 @@
         <source>Headings (Content)</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.heading_spacing_legend">
-        <source>Heading-Spacing</source>
+        <source>Heading (Spacings)</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.link_legend">
         <source>Links</source>
@@ -53,16 +53,16 @@
         <source>Icon</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_properties_legend">
-        <source>Button-Properties</source>
+        <source>Buttons</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_primary_legend">
-        <source>Button-Design-Primary</source>
+        <source>Button-Design (Primary)</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_secondary_legend">
-        <source>Button-Design-Secondary</source>
+        <source>Button-Design (Secondary)</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_alt_legend">
-        <source>Button-Design-Alternative</source>
+        <source>Button-Design (Alternative)</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing_inner_legend">
         <source>Spacings (Inner)</source>
@@ -85,7 +85,6 @@
       <trans-unit id="tl_thememanager.misc_legend">
         <source>Misc</source>
       </trans-unit>
-
       <trans-unit id="tl_thememanager.browser-context.0">
         <source>$browser-context</source>
       </trans-unit>

@@ -3,15 +3,15 @@
     <body>
       <trans-unit id="tl_thememanager.default_legend">
         <source>Base-Settings</source>
-        <target>Grundeinstellungen</target>
+        <target>Basis-Einstellungen</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.color_legend">
-        <source>Base-Colors</source>
-        <target>Grundfarben</target>
+        <source>Colors</source>
+        <target>Farben</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.font_legend">
-        <source>Fonts</source>
-        <target>Schrift</target>
+        <source>Typography</source>
+        <target>Typographie</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.headings_legend">
         <source>Headings</source>
@@ -22,8 +22,8 @@
         <target>Überschriften (Inhaltsbereich)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.heading_spacing_legend">
-        <source>Heading-Spacing</source>
-        <target>Überschriften Abstand</target>
+        <source>Heading (Spacings)</source>
+        <target>Überschriften (Abstände)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.link_legend">
         <source>Links</source>
@@ -70,20 +70,20 @@
         <target>Icon</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_properties_legend">
-        <source>Button-Properties</source>
-        <target>Button-Eigenschaften</target>
+        <source>Buttons</source>
+        <target>Buttons</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_primary_legend">
-        <source>Button-Design-Primary</source>
-        <target>Button-Design-Primary</target>
+        <source>Button-Design (Primary)</source>
+        <target>Button-Design (Primary)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_secondary_legend">
-        <source>Button-Design-Secondary</source>
-        <target>Button-Design-Secondary</target>
+        <source>Button-Design (Secondary)</source>
+        <target>Button-Design (Secondary)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_alt_legend">
-        <source>Button-Design-Alternative</source>
-        <target>Button-Design-Alternative</target>
+        <source>Button-Design (Alternative)</source>
+        <target>Button-Design (Alternative)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing_inner_legend">
         <source>Spacings (Inner)</source>
@@ -119,7 +119,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.browser-context.1">
         <source>Here you can set the browser context in px, which is used for calculating rem.</source>
-        <target>Hier können Sie den Browser-Kontext in Pixeln für die Berechnung in rem einstellen.</target>
+        <target>Hier können Sie den Browser-Kontext in Pixeln für die Berechnung in Rem einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.body-bg.0">
         <source>$body-bg</source>

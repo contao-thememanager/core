@@ -1,0 +1,187 @@
+// Import Dart Sass math lib for divisions
+@use "sass:math";
+
+// Icon font-family for icon picker
+#ctrl_styleManager {
+  &_icon_icon_chzn,
+  &_formInputIcon_formInputIcons_chzn {
+    font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+}
+
+// Vars for changing appearance of ThemeManager configuration
+$field-br: 5px; // Border radius
+$field-gap: 16px; // Field gap between widgets (Contao standard is 30px)
+$breakpoint-key-wdth: 60px; // Breakpoint wizard first key
+$select-type-wdth: 60px; // Select option width - Also for wizards
+
+form#tl_thememanager {
+
+  // Inputs
+  input {
+    text-overflow: ellipsis;
+  }
+
+  .tl_text, .tl_text_unit, .tl_text_trbl, .tl_select {
+    border-radius: $field-br;
+  }
+
+  // Widget wizards
+  .breakpointWizard {
+
+    input {
+      margin: 0;
+      border-radius: 0;
+      border-bottom-width: 0;
+    }
+
+    tbody {
+      tr:first-of-type {
+        input { border-radius: 0 $field-br 0 0; }
+        td:first-of-type input { border-radius: $field-br 0 0 0; }
+      }
+
+      tr:last-of-type {
+        input { border-radius: 0 0 $field-br 0; border-bottom-width: 1px; }
+        td:first-of-type input { border-radius: 0 0 0 $field-br; }
+      }
+    }
+
+    td {
+      padding: 0;
+
+      &:first-of-type {
+        width: $breakpoint-key-wdth;
+        input { border-radius: 0; border-right-width: 0;}
+      }
+
+      // Offset for action buttons
+      &:last-of-type { padding-left: 5px; }
+    }
+
+    // Hide drag handle for breakpoints
+    .drag-handle { display: none; }
+  }
+
+  // Colorpicker
+  .wizard {
+
+    .tl_text_2, .tl_text_3, .tl_text_4 {
+      margin-right: 0;
+      border-radius: 0;
+      border-right-width: 0;
+
+      &:first-of-type { border-radius: $field-br 0 0 $field-br; }
+      &:last-of-type {
+        padding-right: 65px;
+        border-radius:  0 $field-br $field-br 0;
+        border-right-width: 1px;
+      }
+    }
+
+    .tl_text_2 {
+      width: calc(50% - #{math.div($select-type-wdth, 2)});
+      &:last-of-type { width: calc(50% + #{math.div($select-type-wdth, 2)}); }
+    }
+
+    .tl_text_3 {
+      width: calc(33.3333% - #{math.div($select-type-wdth, 3)});
+      &:last-of-type { width: calc(33.3333% + #{math.div($select-type-wdth, 3)}); }
+    }
+
+    .tl_text_4 {
+      width: calc(25% - #{math.div($select-type-wdth, 4)});
+      &:last-of-type { width: calc(25% + #{math.div($select-type-wdth, 4)}); }
+    }
+
+    // Wizard image
+    img {
+      position: absolute;
+      right: 0;
+      top: 32px;
+      height: 20px;
+      width: #{$select-type-wdth - (7px + 3px + 1px)};
+      border-left: 1px solid #aaa;
+      padding: 5px 7px 5px 3px;
+    }
+
+    .tl_text, .tl_select {
+      width: 100%;
+      padding-right: #{$select-type-wdth + 8px};
+    }
+  }
+
+  // Select units
+  .tl_select_unit {
+    width: $select-type-wdth;
+    border-radius: 0 $field-br $field-br 0;
+  }
+
+  .tl_text_unit {
+    margin-right: 0;
+    border-radius: $field-br 0 0 $field-br;
+    border-right: 0;
+    width: calc(100% - $select-type-wdth);
+    text-overflow: ellipsis;
+  }
+
+  .tl_text_trbl {
+    margin-right: 0;
+    border-radius: 0;
+    border-right: 0;
+    width: calc(25% - #{math.div($select-type-wdth, 4)});
+    &:first-of-type { border-radius: $field-br 0 0 $field-br; }
+  }
+
+  // Calculate offset
+  $field-gap-offset: 30px - $field-gap;
+
+  // Outer boxes
+  .tl_tbox, .tl_box {
+    padding-left: #{math.div($field-gap-offset, 2)};
+    padding-right: #{math.div($field-gap-offset, 2)};
+
+    > legend {
+      width: 100%;
+      padding-right: #{12px - math.div($field-gap-offset, 2)};
+      padding-left:  #{28px - math.div($field-gap-offset, 2)};
+      background-position-x: #{13px - math.div($field-gap-offset, 2)};
+    }
+
+    &:not(.collapsed) > legend {
+      text-decoration: underline;
+    }
+  }
+
+  // Widgets
+  .clr { width: calc(100% - #{$field-gap}); }
+  .widget { margin: 0 #{math.div($field-gap, 2)}; }
+
+  .w50, .w33, .w25, .w20 { float: left; min-height: 80px; }
+
+  .w50 { width: calc(50% - #{$field-gap});}
+  .w33 { width: calc(33.3333% - #{$field-gap});}
+  .w25 { width: calc(25% - #{$field-gap});}
+  .w20 { width: calc(20% - #{$field-gap});}
+}
+
+
+// Tablet
+@media (max-width:1263px) {
+
+  form#tl_thememanager {
+    .w50, .w33, .w25, .w20 {
+      width: calc(50% - #{$field-gap});
+    }
+  }
+}
+
+// Handheld
+@media (max-width:767px) {
+  form#tl_thememanager {
+    .w50, .w33, .w25, .w20 {
+      float: none;
+      width: calc(100% - #{$field-gap});
+    }
+  }
+}
