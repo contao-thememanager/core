@@ -5,7 +5,7 @@
 
 <?php $this->block('content'); ?>
 
-  <ul class="c_list<?=$sm->prepare('list')->format(' %s')?>">
+  <ul class="c_list<?=$sm->prepare('icon', ['icon'])->format(' li-icon')?><?=$sm->prepare('list')->format(' %s')?>">
     <?php foreach ($this->files as $file): ?>
       <li class="download-element ext-<?= $file['extension'] ?>">
         <?php if ($file['previews']): ?>
@@ -13,7 +13,7 @@
                 <?php $this->insert('image', $preview->getLegacyTemplateData()) ?>
             <?php endforeach ?>
         <?php endif ?>
-        <a class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
+        <a class="<?=ltrim($sm->prepare('button')->format('%s') . $sm->prepare('icon', ['icon', 'direction'])->format(' %s'))?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
       </li>
     <?php endforeach; ?>
   </ul>

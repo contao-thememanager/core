@@ -7,7 +7,7 @@
 
   <<?= $this->tag ?> class="c_list<?=$sm->prepare('icon', ['icon'])->format(' li-icon')?><?=$sm->prepare('list')->format(' %s')?>">
     <?php foreach ($this->items as $item): ?>
-      <li<?php if ($item['class'] || !empty($sm->prepare('icon', ['icon'])->format('%s'))): ?> class="<?= ltrim($item['class'] . $sm->prepare('icon', ['icon'])->format(' li %s')) ?>"<?php endif; ?>><?= $item['content'] ?></li>
+      <li<?php if ($item['class'] || !empty($sm->prepare('icon', ['icon'])->format('%s'))): ?> class="<?= ltrim($item['class'] . $sm->prepare('icon', ['icon'])->format(' %s')) ?>"<?php endif; ?>><?= $item['content'] ?></li>
     <?php endforeach; ?>
   </<?= $this->tag ?>>
 
