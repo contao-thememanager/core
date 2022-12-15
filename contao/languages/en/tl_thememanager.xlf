@@ -76,14 +76,17 @@
       <trans-unit id="tl_thememanager.boxed_legend">
         <source>Boxed</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.tns_legend">
-        <source>Tiny-Slider</source>
+      <trans-unit id="tl_thememanager.image_text_legend">
+        <source>Image-Text</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.nav_legend">
         <source>Navigation</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.misc_legend">
         <source>Misc</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns_legend">
+        <source>Tiny-Slider</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.browser-context.0">
         <source>$browser-context</source>
@@ -1748,6 +1751,12 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.tns-color-extra-active.1">
         <source>Here you can set the extra color for active tiny-slider buttons and controls.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-behaviour-min-width.0">
+        <source>$image-text-behaviour-min-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-behaviour-min-width.1">
+        <source>Here you can set the minimum width for the image-text behaviour.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
         <source>$navigation-behaviour-min-width</source>

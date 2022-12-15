@@ -101,9 +101,9 @@
         <source>Boxed</source>
         <target>Box</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.tns_legend">
-        <source>Tiny-Slider</source>
-        <target>Tiny-Slider</target>
+      <trans-unit id="tl_thememanager.image_text_legend">
+        <source>Image-Text</source>
+        <target>Bild-Text</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.nav_legend">
         <source>Navigation</source>
@@ -112,6 +112,10 @@
       <trans-unit id="tl_thememanager.misc_legend">
         <source>Misc</source>
         <target>Sonstiges</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.tns_legend">
+        <source>Tiny-Slider</source>
+        <target>Tiny-Slider</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.browser-context.0">
         <source>$browser-context</source>
@@ -2330,6 +2334,14 @@
       <trans-unit id="tl_thememanager.tns-color-extra-active.1">
         <source>Here you can set the extra color for active tiny-slider buttons and controls.</source>
         <target>Hier können Sie die extra Farbe für aktive tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-behaviour-min-width.0">
+        <source>$image-text-behaviour-min-width</source>
+        <target>$image-text-behaviour-min-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-behaviour-min-width.1">
+        <source>Here you can set the minimum width for the image-text behaviour.</source>
+        <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von Bild-Text-Layouts einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
         <source>$navigation-behaviour-min-width</source>

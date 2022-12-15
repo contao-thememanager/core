@@ -1,22 +1,21 @@
+// Defaults
+$browser-context:                         16 !default;
 $body-bg:                                 #fff !default;
 
+// Colors
 $primary:                                 #36c !default;
 $secondary:                               #9cf !default;
 $light:                                   #f3f3f3 !default;
 $dark:                                    #2b2b2b !default;
-
-$text-color-regular:                      #000 !default;
-$text-color-invert:                       #fff !default;
-
-// Defaults
-$browser-context:                         16 !default;
 
 // Typography
 $font-family-base:                        Arial, sans-serif !default;
 $font-size-base:                          $browser-context * 1px !default;
 
 $line-height-base:                        1.687 !default;
-$line-height-headline:                    1.2 !default;
+
+$text-color-regular:                      #000 !default;
+$text-color-invert:                       #fff !default;
 
 $font-weight-base:                        400 !default;
 $font-weight-light:                       300 !default;
@@ -24,76 +23,127 @@ $font-weight-regular:                     400 !default;
 $font-weight-medium:                      500 !default;
 $font-weight-semibold:                    600 !default;
 $font-weight-bold:                        700 !default;
+$strong-font-weight:                      $font-weight-bold !default;
 
+// Headings
 $h1-font-size-small:                      1.5rem !default;
-$h2-font-size-small:                      1.35rem !default;
-$h3-font-size-small:                      1.187rem !default;
-$h4-font-size-small:                      1.12rem !default;
-$h5-font-size-small:                      1.031rem !default;
-$h6-font-size-small:                      1rem !default;
-
-$h1-font-size-medium:                     2rem !default;
-$h2-font-size-medium:                     1.8rem !default;
-$h3-font-size-medium:                     1.6rem !default;
-$h4-font-size-medium:                     1.4rem !default;
-$h5-font-size-medium:                     1.2rem !default;
-$h6-font-size-medium:                     1rem !default;
-
+$h1-font-size-medium:                     2.02rem !default;
 $h1-font-size:                            2.8rem !default;
+
+$h2-font-size-small:                      1.35rem !default;
+$h2-font-size-medium:                     1.685rem !default;
 $h2-font-size:                            2.187rem !default;
+
+$h3-font-size-small:                      1.187rem !default;
+$h3-font-size-medium:                     1.287rem !default;
 $h3-font-size:                            1.437rem !default;
+
+$h4-font-size-small:                      1.12rem !default;
+$h4-font-size-medium:                     1.172rem !default;
 $h4-font-size:                            1.25rem !default;
+
+$h5-font-size-small:                      1.031rem !default;
+$h5-font-size-medium:                     1.069rem !default;
 $h5-font-size:                            1.125rem !default;
+
+$h6-font-size-small:                      1rem !default;
+$h6-font-size-medium:                     1rem !default;
 $h6-font-size:                            1rem !default;
 
-$h1-content-font-size-small:              1.5rem !default;
-$h2-content-font-size-small:              1.35rem !default;
-$h3-content-font-size-small:              1.187rem !default;
-$h4-content-font-size-small:              1.12rem !default;
-$h5-content-font-size-small:              1.031rem !default;
-$h6-content-font-size-small:              1rem !default;
-
-$h1-content-font-size-medium:             2rem !default;
-$h2-content-font-size-medium:             1.7rem !default;
-$h3-content-font-size-medium:             1.5rem !default;
-$h4-content-font-size-medium:             1.3rem !default;
-$h5-content-font-size-medium:             1.2rem !default;
-$h6-content-font-size-medium:             1rem !default;
-
-$h1-content-font-size:                    2.4rem !default;
-$h2-content-font-size:                    1.9rem !default;
-$h3-content-font-size:                    1.7rem !default;
-$h4-content-font-size:                    1.4rem !default;
-$h5-content-font-size:                    1.2rem !default;
-$h6-content-font-size:                    1rem !default;
-
-$h1-font-weight:                          $font-weight-bold !default;
-$h2-font-weight:                          $font-weight-bold !default;
-$h3-font-weight:                          $font-weight-bold !default;
-$h4-font-weight:                          $font-weight-bold !default;
-$h5-font-weight:                          $font-weight-bold !default;
-$h6-font-weight:                          $font-weight-bold !default;
+$line-height-headline:                    1.2 !default;
 
 $h1-color:                                $text-color-regular !default;
-$h2-color:                                $text-color-regular !default;
-$h3-color:                                $text-color-regular !default;
-$h4-color:                                $text-color-regular !default;
-$h5-color:                                $text-color-regular !default;
-$h6-color:                                $text-color-regular !default;
-
 $h1-color-invert:                         $text-color-invert !default;
-$h2-color-invert:                         $text-color-invert !default;
-$h3-color-invert:                         $text-color-invert !default;
-$h4-color-invert:                         $text-color-invert !default;
-$h5-color-invert:                         $text-color-invert !default;
-$h6-color-invert:                         $text-color-invert !default;
-
+$h1-font-weight:                          $font-weight-bold !default;
 $h1-letter-spacing:                       0rem !default;
+
+$h2-color:                                $text-color-regular !default;
+$h2-color-invert:                         $text-color-invert !default;
+$h2-font-weight:                          $font-weight-bold !default;
 $h2-letter-spacing:                       0rem !default;
+
+$h3-color:                                $text-color-regular !default;
+$h3-color-invert:                         $text-color-invert !default;
+$h3-font-weight:                          $font-weight-bold !default;
 $h3-letter-spacing:                       0rem !default;
+
+$h4-color:                                $text-color-regular !default;
+$h4-color-invert:                         $text-color-invert !default;
+$h4-font-weight:                          $font-weight-bold !default;
 $h4-letter-spacing:                       0rem !default;
+
+$h5-color:                                $text-color-regular !default;
+$h5-color-invert:                         $text-color-invert !default;
+$h5-font-weight:                          $font-weight-bold !default;
 $h5-letter-spacing:                       0rem !default;
+
+$h6-color:                                $text-color-regular !default;
+$h6-color-invert:                         $text-color-invert !default;
+$h6-font-weight:                          $font-weight-bold !default;
 $h6-letter-spacing:                       0rem !default;
+
+// Content headings
+$h1-content-font-size-small:              1.5rem !default;
+$h1-content-font-size-medium:             1.86rem !default;
+$h1-content-font-size:                    2.4rem !default;
+
+$h2-content-font-size-small:              1.35rem !default;
+$h2-content-font-size-medium:             1.57rem !default;
+$h2-content-font-size:                    1.9rem !default;
+
+$h3-content-font-size-small:              1.187rem !default;
+$h3-content-font-size-medium:             1.287rem !default;
+$h3-content-font-size:                    1.437rem !default;
+
+$h4-content-font-size-small:              1.12rem !default;
+$h4-content-font-size-medium:             1.172rem !default;
+$h4-content-font-size:                    1.25rem !default;
+
+$h5-content-font-size-small:              1.031rem !default;
+$h5-content-font-size-medium:             1.069rem !default;
+$h5-content-font-size:                    1.125rem !default;
+
+$h6-content-font-size-small:              1rem !default;
+$h6-content-font-size-medium:             1rem !default;
+$h6-content-font-size:                    1rem !default;
+
+// Heading spacing
+$headline-spacing:                        1rem !default;
+
+$headline-spacing-small:                  1rem !default;
+$headline-spacing-s-small:                1.25rem !default;
+$headline-spacing-l-small:                1.75rem !default;
+
+$headline-spacing-medium:                 1rem !default;
+$headline-spacing-s-medium:               1.562rem !default;
+$headline-spacing-l-medium:               2.187rem !default;
+
+$headline-spacing-large:                  1rem !default;
+$headline-spacing-s-large:                1.875rem !default;
+$headline-spacing-l-large:                3rem !default;
+
+// Article spacing
+$x-spacing-large-m:                       900px !default;
+$x-spacing-large-l:                       1100px !default;
+$x-spacing-small:                         1400px !default;
+
+$article-spacing-xs-small:                2.5rem !default;
+$article-spacing-s-small:                 3.125rem !default;
+$article-spacing-m-small:                 3.75rem !default;
+$article-spacing-l-small:                 4.375rem !default;
+$article-spacing-xl-small:                $article-spacing-l-small !default;
+
+$article-spacing-xs-medium:               2.5rem !default;
+$article-spacing-s-medium:                3.75rem !default;
+$article-spacing-m-medium:                5rem !default;
+$article-spacing-l-medium:                7.5rem !default;
+$article-spacing-xl-medium:               $article-spacing-l-medium !default;
+
+$article-spacing-xs-large:                2.5rem !default;
+$article-spacing-s-large:                 4.375rem !default;
+$article-spacing-m-large:                 5.9375rem !default;
+$article-spacing-l-large:                 9.375rem !default;
+$article-spacing-xl-large:                $article-spacing-l-large !default;
 
 // Links
 $link-font-weight:                        $font-weight-base !default;
@@ -113,41 +163,7 @@ $link-hover-color-extra:                  darken($link-color-extra, 15%) !defaul
 $link-decoration-extra:                   none !default;
 $link-hover-decoration-extra:             none !default;
 
-$strong-font-weight:                      $font-weight-bold !default;
-
-$paragraph-spacing:                       1rem !default;
-$headline-spacing:                        1rem !default;
-
-// Responsive Headline-Spacings
-$headline-spacing-small:                  1rem !default;
-$headline-spacing-s-small:                1.25rem !default;
-$headline-spacing-l-small:                1.75rem !default;
-
-$headline-spacing-medium:                 1rem !default;
-$headline-spacing-s-medium:               1.562rem !default;
-$headline-spacing-l-medium:               2.187rem !default;
-
-$headline-spacing-large:                  1rem !default;
-$headline-spacing-s-large:                1.875rem !default;
-$headline-spacing-l-large:                3rem !default;
-
-$x-spacing-large-m:                       900px !default;
-$x-spacing-large-l:                       1100px !default;
-$x-spacing-small:                         1400px !default;
-
-// Icons
-$icon-font-family:                        'fontello' !default;
-
-$icon-size-tiny:                          2rem !default;
-$icon-size-small:                         3rem !default;
-$icon-size-medium:                        4rem !default;
-$icon-size-large:                         5rem !default;
-$icon-size-super:                         6rem !default;
-
-$icon-shape-spacing:                      1.5rem !default;
-$icon-outlined-width:                     2px !default;
-
-// Breakpoints
+// Layout
 $breakpoints: (
   xs: 600px,  // 37.5rem
   s:  768px,  // 48rem
@@ -156,7 +172,6 @@ $breakpoints: (
   xl: 1921px  // 120rem
 ) !default;
 
-// Layout
 $layout-column-small-break:               's' !default;
 $layout-column-medium-break:              'm' !default;
 $layout-column-large-break:               'l' !default;
@@ -175,6 +190,18 @@ $grid-gutter-width:                       2rem !default;
 $grid-gutter-bottom:                      $grid-gutter-width !default;
 $grid-gutter-small-width:                 1rem !default;
 $grid-gutter-small-bottom:                $grid-gutter-small-width !default;
+
+// Icons
+$icon-font-family:                        "ctm-icon" !default;
+
+$icon-size-tiny:                          2rem !default;
+$icon-size-small:                         3rem !default;
+$icon-size-medium:                        4rem !default;
+$icon-size-large:                         5rem !default;
+$icon-size-super:                         6rem !default;
+
+$icon-shape-spacing:                      1.5rem !default;
+$icon-outlined-width:                     2px !default;
 
 // Form
 $form-textarea-line-height:               var(--leading-base) !default;
@@ -321,6 +348,7 @@ $button-border-color-alt:                 $button-bg-alt !default;
 $button-hover-border-color-alt:           $button-hover-bg-alt !default;
 
 // Spacings (Inner)
+$paragraph-spacing:                       1rem !default;
 $component-inner-spacing:                 1rem !default;
 
 $top-bottom-padding-small:                1rem !default;
@@ -343,25 +371,6 @@ $divider-size:                            1px;
 $divider-style:                           solid;
 $divider-color:                           #ccc;
 
-// Article
-$article-spacing-xs-small:                2.5rem !default;
-$article-spacing-s-small:                 3.125rem !default;
-$article-spacing-m-small:                 3.75rem !default;
-$article-spacing-l-small:                 4.375rem !default;
-$article-spacing-xl-small:                $article-spacing-l-small !default;
-
-$article-spacing-xs-medium:               2.5rem !default;
-$article-spacing-s-medium:                3.75rem !default;
-$article-spacing-m-medium:                5rem !default;
-$article-spacing-l-medium:                7.5rem !default;
-$article-spacing-xl-medium:               $article-spacing-l-medium !default;
-
-$article-spacing-xs-large:                2.5rem !default;
-$article-spacing-s-large:                 4.375rem !default;
-$article-spacing-m-large:                 5.9375rem !default;
-$article-spacing-l-large:                 9.375rem !default;
-$article-spacing-xl-large:                $article-spacing-l-large !default;
-
 // Boxed
 $boxed-background-color:                  var(--body-bg) !default;
 $boxed-border-color:                      #e3e3e3 !default;
@@ -369,11 +378,14 @@ $boxed-border-style:                      solid !default;
 $boxed-border-width:                      1px !default;
 $boxed-border-radius:                     0 !default;
 
+// Image Text
+$image-text-behaviour-min-width:          600px;
+
 // Navigation
 $navigation-behaviour-min-width:          768px;
-$navigation-item-padding:                 .5rem 1rem;
 $navigation-item-font-size:               $font-size-base;
 $navigation-item-font-weight:             $font-weight-regular;
+$navigation-item-padding:                 .5rem 1rem;
 
 // Misc
 $box-shadow:                              0 .5rem 1rem rgba(#000, .15) !default;

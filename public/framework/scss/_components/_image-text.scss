@@ -76,8 +76,7 @@
   .c_image { width: calc(var(--it-wdth, 100%) + calc(2 * var(--i-px) * var(--ratio-x, 1))) !important; }
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: $image-text-behaviour-min-width) {
 
   .it-width {
     &-25 { --ratio-x:0.25; }
