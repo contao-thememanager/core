@@ -43,7 +43,7 @@
         <field title="alias">leftColumnOrder</field>
         <field title="title">Left-Column Order</field>
         <field title="description">Defines the order of the left column for mobile devices.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:23:"left-column-order-first";s:5:"value";s:18:"Above content area";}}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:10:"left-first";s:5:"value";s:18:"Above content area";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -69,7 +69,7 @@
         <field title="alias">rightColumnOrder</field>
         <field title="title">Right-Column Order</field>
         <field title="description">Defines the order of the right column for mobile devices.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:24:"right-column-order-first";s:5:"value";s:18:"Above content area";}}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:11:"right-first";s:5:"value";s:18:"Above content area";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
