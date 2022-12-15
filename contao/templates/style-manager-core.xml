@@ -1257,7 +1257,7 @@
         <field title="alias">color</field>
         <field title="title">Color</field>
         <field title="description">Defines the color of the icons.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:13:"color-primary";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:15:"color-secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:11:"color-light";s:5:"value";s:5:"Light";}i:3;a:2:{s:3:"key";s:10:"color-dark";s:5:"value";s:4:"Dark";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"color-primary";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:15:"color-secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:11:"color-light";s:5:"value";s:5:"Light";}i:3;a:2:{s:3:"key";s:10:"color-dark";s:5:"value";s:4:"Dark";}i:4;a:2:{s:3:"key";s:10:"color-base";s:5:"value";s:7:"Regular";}i:5;a:2:{s:3:"key";s:9:"color-inv";s:5:"value";s:6:"Invert";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
