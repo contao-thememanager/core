@@ -10,5 +10,19 @@ li {
   @at-root .#{&} {
     &-icon { list-style: none; padding-inline-start: rem(20); }
     &-none { list-style: none; padding-inline-start: 0; }
+    &-clr {
+      li::marker, [class^="i-"]:before, [class*=" i-"]:before {
+        color: var(--li-clr, inherit);
+      }
+    }
   }
+}
+
+.color-li {
+  &-base      { --li-clr:var(--text-clr-base); }
+  &-inv       { --li-clr:var(--text-clr-invert); }
+  &-primary   { --li-clr:var(--clr-primary); }
+  &-secondary { --li-clr:var(--clr-secondary); }
+  &-dark      { --li-clr:var(--clr-dark); }
+  &-light     { --li-clr:var(--clr-light); }
 }

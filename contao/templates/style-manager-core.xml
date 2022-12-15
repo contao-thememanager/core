@@ -3130,6 +3130,32 @@
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
+      <child alias="marker-color">
+        <field title="id">501</field>
+        <field title="pid">25</field>
+        <field title="sorting">896</field>
+        <field title="tstamp">1648718907</field>
+        <field title="alias">marker-color</field>
+        <field title="title">Marker-color</field>
+        <field title="description">Here you can select the color of the list marker</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:20:"li-clr color-li-base";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:19:"li-clr color-li-inv";s:5:"value";s:6:"Invert";}i:2;a:2:{s:3:"key";s:23:"li-clr color-li-primary";s:5:"value";s:7:"Primary";}i:3;a:2:{s:3:"key";s:25:"li-clr color-li-secondary";s:5:"value";s:9:"Secondary";}i:4;a:2:{s:3:"key";s:20:"li-clr color-li-dark";s:5:"value";s:4:"Dark";}i:5;a:2:{s:3:"key";s:21:"li-clr color-li-light";s:5:"value";s:5:"Light";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen"></field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
       <child alias="direction">
         <field title="id">119</field>
         <field title="pid">25</field>
@@ -3139,7 +3165,7 @@
         <field title="title">Direction</field>
         <field title="description">Defines the alignment of the columns.</field>
         <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:26:"flow-y grid-list no-gutter";s:5:"value";s:8:"Vertical";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
