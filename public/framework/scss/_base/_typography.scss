@@ -35,68 +35,12 @@ strong {
   }
 }
 
-h1, .h1 {
-  color: var(--h1-clr);
-  font-size: var(--h1-fs);
-  font-weight: $h1-font-weight;
-  letter-spacing: $h1-letter-spacing;
-
-  #main & {
-    font-size: var(--h1-c-fs);
-  }
-}
-
-h2, .h2 {
-  color: var(--h2-clr);
-  font-size: var(--h2-fs);
-  font-weight: $h2-font-weight;
-  letter-spacing: $h2-letter-spacing;
-
-  #main & {
-    font-size: var(--h2-c-fs);
-  }
-}
-
-h3, .h3 {
-  color: var(--h3-clr);
-  font-size: var(--h3-fs);
-  font-weight: $h3-font-weight;
-  letter-spacing: $h3-letter-spacing;
-
-  #main & {
-    font-size: var(--h3-c-fs);
-  }
-}
-
-h4, .h4 {
-  color: var(--h4-clr);
-  font-size: var(--h4-fs);
-  font-weight: $h4-font-weight;
-  letter-spacing: $h4-letter-spacing;
-
-  #main & {
-    font-size: var(--h4-c-fs);
-  }
-}
-
-h5, .h5 {
-  color: var(--h5-clr);
-  font-size: var(--h5-fs);
-  font-weight: $h5-font-weight;
-  letter-spacing: $h5-letter-spacing;
-
-  #main & {
-    font-size: var(--h5-c-fs);
-  }
-}
-
-h6, .h6 {
-  color: var(--h6-clr);
-  font-size: var(--h6-fs);
-  font-weight: $h6-font-weight;
-  letter-spacing: $h6-letter-spacing;
-
-  #main & {
-    font-size: var(--h6-c-fs);
-  }
-}
+// Color and size taken from _vars.scss
+@include heading-typography((
+  1: (font-weight: $h1-font-weight, letter-spacing: $h1-letter-spacing),
+  2: (font-weight: $h2-font-weight, letter-spacing: $h2-letter-spacing),
+  3: (font-weight: $h3-font-weight, letter-spacing: $h3-letter-spacing),
+  4: (font-weight: $h4-font-weight, letter-spacing: $h4-letter-spacing),
+  5: (font-weight: $h5-font-weight, letter-spacing: $h5-letter-spacing),
+  6: (font-weight: $h6-font-weight, letter-spacing: $h6-letter-spacing)
+));
