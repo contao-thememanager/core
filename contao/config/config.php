@@ -7,7 +7,6 @@
  */
 
 use Contao\ArrayUtil;
-use Contao\System;
 
 // Contao ThemeManager
 $GLOBALS['CTM_SETTINGS']['iconFont'] = 'files/assets/fontello/font/fontello.svg';
@@ -51,22 +50,5 @@ $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartBoxed';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopBoxed';
 
-// Add UTF-8 to first position for correct display of css
-ArrayUtil::arrayInsert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/css/charset.css|static');
-
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = ['ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate'];
-
-// Add backend icon css
-$request = System::getContainer()->get('request_stack')->getCurrentRequest();
-
-if ($request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
-{
-    $projectDir = System::getContainer()->getParameter('kernel.project_dir');
-    $GLOBALS['TL_CSS'][] = 'bundles/contaothememanagercore/css/ctmcore.css|static';
-
-    if (file_exists($iconCSSPath = $projectDir . '/' . 'assets/ctmcore/css/_icon.css'))
-    {
-        $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
-    }
-}
