@@ -292,10 +292,7 @@ class IconGenerator
         $strBefore = ':before';
         $formIconSelector = '.widget.fi>.input-container'.$strBefore;
         $css .= vsprintf(
-            "$iconSelector1,$iconSelector2{%s};
-            $iconSelector1$strBefore,
-            $iconSelector2$strBefore,
-            $formIconSelector{font-family:'%s';%s}", [
+            "$iconSelector1,$iconSelector2{%s}$iconSelector1$strBefore,$iconSelector2$strBefore,$formIconSelector{font-family:'%s';%s}",[
                 'vertical-align: middle;',
                 self::FONTFAMILY,
                 'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'

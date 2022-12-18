@@ -10,7 +10,6 @@ namespace ContaoThemeManager\Core\EventSubscriber;
 
 use Contao\ArrayUtil;
 use Contao\CoreBundle\Routing\ScopeMatcher;
-use Contao\System;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -33,7 +32,6 @@ class KernelRequestSubscriber implements EventSubscriberInterface
     {
         $request = $e->getRequest();
 
-
         if ($this->scopeMatcher->isContaoRequest($request))
         {
             ArrayUtil::arrayInsert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/css/charset.css|static');
@@ -41,10 +39,9 @@ class KernelRequestSubscriber implements EventSubscriberInterface
 
         if ($this->scopeMatcher->isBackendRequest($request))
         {
-            $projectDir = System::getContainer()->getParameter('kernel.project_dir');
             $GLOBALS['TL_CSS'][] = 'bundles/contaothememanagercore/css/ctmcore.css|static';
 
-            if (file_exists($projectDir . '/' . 'assets/ctmcore/css/_icon.css'))
+            if (file_exists('assets/ctmcore/css/_icon.css'))
             {
                 $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
             }
