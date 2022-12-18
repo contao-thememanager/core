@@ -64,7 +64,6 @@
           }
         }
         // In case another selector should have the same styles
-        // See: hl-align which is deprecated
         @else {
           $prefixList: selector-split($prefix, ',');
 

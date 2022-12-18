@@ -18,7 +18,7 @@ div[class*="hl-mb-"] {
 }
 
 $hl-bps: map-merge((0:0),$breakpoints);
-@each $bp in map-keys(map-merge((0:0),$breakpoints)) {
+@each $bp in map-keys($hl-bps) {
   $infix: breakpoint-infix($bp);
   @include media-breakpoint($bp, $hl-bps) {
     .hl-mb {
