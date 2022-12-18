@@ -36,46 +36,49 @@
   }
 }
 
-$grid-breakpoints: map-merge((0:0),$breakpoints);
+[class*=col-] {
+  // Resets
+  --col-amt:#{$grid-columns};
+  --col-algn:auto;
+  --col-off:0;
+  --col-order:0;
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  --col-wdth:calc(var(--col-amt) / var(--columns) * 100%);
+  --col-ml:calc(var(--col-off) / var(--columns) * 100%);
 
-  @include media-breakpoint($breakpoint, $grid-breakpoints) {
+  margin-left:var(--col-ml)!important;
+  max-width:var(--col-wdth)!important;
+  flex-basis:var(--col-wdth)!important;
+  align-self:var(--col-algn)!important;
+}
 
-    .grid > .inside {
-
-      @for $i from 1 through $grid-columns {
-        > .col#{$infix}-#{$i} {
-          flex-basis: shortPercentage($i / $grid-columns);
-          max-width:  shortPercentage($i / $grid-columns);
-        }
+$grid-bps: map-merge((0:0),$breakpoints);
+@each $bp in map-keys($grid-bps) {
+  $infix: breakpoint-infix($bp);
+  @include media-breakpoint($bp, $grid-bps) {
+    .col#{$infix} {
+      &-top      {--col-algn:flex-start;}
+      &-middle   {--col-algn:center;}
+      &-bottom   {--col-algn:flex-end;}
+      &-baseline {--col-algn:baseline;}
+      &-stretch  {--col-algn:stretch;}
+      &-first    {order:-1;}
+      &-last     {order:#{$grid-columns + 1};}
+      &-auto     {
+        --col-amt:#{$grid-columns};
+        flex-grow:1!important;
+        flex-basis:0!important;
       }
+    }
 
-      > .col#{$infix}-auto {
-        flex-grow: 1;
-        flex-basis: 0;
-        max-width: 100%;
-      }
+    @for $i from 1 through $grid-columns {
+      .col#{$infix}-#{$i} {--col-amt:#{$i};}
+      .order#{$infix}-#{$i} {order:#{$i};}
+    }
 
-      > .col#{$infix}-top      { align-self: flex-start }
-      > .col#{$infix}-middle   { align-self: center }
-      > .col#{$infix}-bottom   { align-self: flex-end}
-      > .col#{$infix}-baseline { align-self: baseline }
-      > .col#{$infix}-stretch  { align-self: stretch }
-      > .order#{$infix}-first  { order: -1 }
-      > .order#{$infix}-last   { order: $grid-columns + 1; }
-
-      @for $i from 0 through $grid-columns {
-        > .order#{$infix}-#{$i} { order: $i }
-      }
-
-      @for $i from 0 through ($grid-columns - 1) {
-        @if not ($infix == "" and $i == 0) {
-          > .offset#{$infix}-#{$i} {
-            margin-left: shortPercentage($i / $grid-columns)
-          }
-        }
+    @for $i from 0 through ($grid-columns - 1) {
+      @if not ($infix == "" and $i == 0) {
+        .offset#{$infix}-#{$i} {--col-off:#{$i};}
       }
     }
   }
