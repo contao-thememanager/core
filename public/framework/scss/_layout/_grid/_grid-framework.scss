@@ -62,13 +62,16 @@ $grid-bps: map-merge((0:0),$breakpoints);
       &-bottom   {--col-algn:flex-end;}
       &-baseline {--col-algn:baseline;}
       &-stretch  {--col-algn:stretch;}
-      &-first    {order:-1;}
-      &-last     {order:#{$grid-columns + 1};}
       &-auto     {
         --col-amt:#{$grid-columns};
         flex-grow:1!important;
         flex-basis:0!important;
       }
+    }
+
+    .order#{$infix} {
+      &-first {order:-1;}
+      &-last  {order:#{$grid-columns + 1};}
     }
 
     @for $i from 1 through $grid-columns {
