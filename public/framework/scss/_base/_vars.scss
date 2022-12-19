@@ -113,10 +113,10 @@
   --btn-bdr-r:       #{$button-border-radius-primary};
   --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
 
-  --btn-p-1:         #{subList($button-padding-small, $button-border-width-primary)};
-  --btn-p-2:         #{subList($button-padding-medium, $button-border-width-primary)};
-  --btn-p-3:         #{subList($button-padding-large, $button-border-width-primary)};
-  --btn-p-4:         #{subList($button-padding-super, $button-border-width-primary)};
+  --btn-p-1:         #{subList($button-padding-small,  $button-border-width-primary, 'rem', true)};
+  --btn-p-2:         #{subList($button-padding-medium, $button-border-width-primary, 'rem', true)};
+  --btn-p-3:         #{subList($button-padding-large,  $button-border-width-primary, 'rem', true)};
+  --btn-p-4:         #{subList($button-padding-super,  $button-border-width-primary, 'rem', true)};
 
   // Form
   --form-clr-txt:    #{$form-input-color};

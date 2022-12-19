@@ -75,10 +75,10 @@ input.button {
     --btn-bdr-r:       #{$button-border-radius-secondary};
     --btn-bdr-clr-hvr: #{$button-hover-border-color-secondary};
 
-    --btn-p-1:         #{subList($button-padding-small, $button-border-width-secondary)};
-    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-secondary)};
-    --btn-p-3:         #{subList($button-padding-large, $button-border-width-secondary)};
-    --btn-p-4:         #{subList($button-padding-super, $button-border-width-secondary)};
+    --btn-p-1:         #{subList($button-padding-small,  $button-border-width-secondary, 'rem', true)};
+    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-secondary, 'rem', true)};
+    --btn-p-3:         #{subList($button-padding-large,  $button-border-width-secondary, 'rem', true)};
+    --btn-p-4:         #{subList($button-padding-super,  $button-border-width-secondary, 'rem', true)};
   }
 
   &--alt {
@@ -94,9 +94,9 @@ input.button {
     --btn-bdr-r:       #{$button-border-radius-alt};
     --btn-bdr-clr-hvr: #{$button-hover-border-color-alt};
 
-    --btn-p-1:         #{subList($button-padding-small, $button-border-width-alt)};
-    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-alt)};
-    --btn-p-3:         #{subList($button-padding-large, $button-border-width-alt)};
-    --btn-p-4:         #{subList($button-padding-super, $button-border-width-alt)};
+    --btn-p-1:         #{subList($button-padding-small,  $button-border-width-alt, 'rem', true)};
+    --btn-p-2:         #{subList($button-padding-medium, $button-border-width-alt, 'rem', true)};
+    --btn-p-3:         #{subList($button-padding-large,  $button-border-width-alt, 'rem', true)};
+    --btn-p-4:         #{subList($button-padding-super,  $button-border-width-alt, 'rem', true)};
   }
 }
