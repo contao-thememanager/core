@@ -78,11 +78,6 @@ textarea {
   outline: none;
   width: 100%;
 
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-
   &:-webkit-autofill {
     -webkit-text-fill-color: $form-input-color;
     -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset;
