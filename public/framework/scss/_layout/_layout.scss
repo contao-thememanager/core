@@ -2,6 +2,10 @@
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .box > .inside {
   padding: var(--py-1) var(--px-1);
 }

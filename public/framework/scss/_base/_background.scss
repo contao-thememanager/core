@@ -1,18 +1,18 @@
 .bg {
 
   &-primary {
-    background-color: $primary;
+    background-color: var(--clr-primary);
   }
 
   &-secondary {
-    background-color: $secondary;
+    background-color: var(--clr-secondary);
   }
 
   &-light {
-    background-color: $light;
+    background-color: var(--clr-light);
   }
 
   &-dark {
-    background-color: $dark;
+    background-color: var(--clr-dark);
   }
 }
