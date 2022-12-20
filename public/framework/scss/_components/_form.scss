@@ -103,7 +103,7 @@ input {
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
   line-height: $form-textarea-line-height;
 }
 
