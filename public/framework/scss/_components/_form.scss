@@ -23,6 +23,14 @@
 ::-moz-placeholder { color: var(--form-clr-ph); }
 :-ms-input-placeholder { color: var(--form-clr-ph); }
 
+// Reset column grid inside widgets
+.widget * {
+  --col-amt:#{$grid-columns};
+  --col-algn:auto;
+  --col-off:0;
+  --col-order:0;
+}
+
 label,
 legend {
   display: inline-block;
