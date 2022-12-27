@@ -1,11 +1,11 @@
 .grid {
-  --v-gap:        var(--gtr-btm);
-  --h-gap-off:    calc(-1 * var(--gtr-half));
-  --flex-justify: normal;
-  --flex-items:   normal;
+  --v-gap:var(--gtr-btm);
+  --h-gap-off:calc(-1 * var(--gtr-half));
+  --flex-justify:normal;
+  --flex-items:normal;
 
   > .inside {
-    --gtr-item: var(--gtr-half);
+    --gtr-item:var(--gtr-half);
 
     position: relative;
 

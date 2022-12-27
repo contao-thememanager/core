@@ -3,21 +3,21 @@
   &-base {
     color: var(--text-clr-base);
 
-    --h1-clr:        #{$h1-color};
-    --h2-clr:        #{$h2-color};
-    --h3-clr:        #{$h3-color};
-    --h4-clr:        #{$h4-color};
-    --h5-clr:        #{$h5-color};
-    --h6-clr:        #{$h6-color};
+    --h1-clr:#{$h1-color};
+    --h2-clr:#{$h2-color};
+    --h3-clr:#{$h3-color};
+    --h4-clr:#{$h4-color};
+    --h5-clr:#{$h5-color};
+    --h6-clr:#{$h6-color};
 
-    --a-clr:         #{$link-color-regular};
-    --a-clr-hvr:     #{$link-hover-color-regular};
-    --a-td:          #{$link-decoration-regular};
-    --a-td-hvr:      #{$link-hover-decoration-regular};
+    --a-clr:#{$link-color-regular};
+    --a-clr-hvr:#{$link-hover-color-regular};
+    --a-td:#{$link-decoration-regular};
+    --a-td-hvr:#{$link-hover-decoration-regular};
 
-    --form-clr-label: #{$form-label-color};
-    --form-clr-exp:   #{$form-input-explanation-color};
-    --cbx-clr-label:  #{$form-checkbox-radio-label-color};
+    --form-clr-label:#{$form-label-color};
+    --form-clr-exp:#{$form-input-explanation-color};
+    --cbx-clr-label:#{$form-checkbox-radio-label-color};
 
     .captcha_text {
       color: var(--text-clr-base);
@@ -27,21 +27,21 @@
   &-inv {
     color: var(--text-clr-invert);
 
-    --h1-clr:        #{$h1-color-invert};
-    --h2-clr:        #{$h2-color-invert};
-    --h3-clr:        #{$h3-color-invert};
-    --h4-clr:        #{$h4-color-invert};
-    --h5-clr:        #{$h5-color-invert};
-    --h6-clr:        #{$h6-color-invert};
+    --h1-clr:#{$h1-color-invert};
+    --h2-clr:#{$h2-color-invert};
+    --h3-clr:#{$h3-color-invert};
+    --h4-clr:#{$h4-color-invert};
+    --h5-clr:#{$h5-color-invert};
+    --h6-clr:#{$h6-color-invert};
 
-    --a-clr:         #{$link-color-invert};
-    --a-clr-hvr:     #{$link-hover-color-invert};
-    --a-td:          #{$link-decoration-invert};
-    --a-td-hvr:      #{$link-hover-decoration-invert};
+    --a-clr:#{$link-color-invert};
+    --a-clr-hvr:#{$link-hover-color-invert};
+    --a-td:#{$link-decoration-invert};
+    --a-td-hvr:#{$link-hover-decoration-invert};
 
-    --form-clr-label: #{$form-label-color-invert};
-    --form-clr-exp:   #{$form-input-explanation-color-invert};
-    --cbx-clr-label:  #{$form-checkbox-radio-label-color-invert};
+    --form-clr-label:#{$form-label-color-invert};
+    --form-clr-exp:#{$form-input-explanation-color-invert};
+    --cbx-clr-label:#{$form-checkbox-radio-label-color-invert};
 
     .captcha_text {
       color: var(--text-clr-invert);
@@ -52,23 +52,23 @@
 .color-link {
 
   &-base {
-    --a-clr:     #{$link-color-regular};
-    --a-clr-hvr: #{$link-hover-color-regular};
-    --a-td:      #{$link-decoration-regular};
-    --a-td-hvr:  #{$link-hover-decoration-regular};
+    --a-clr:#{$link-color-regular};
+    --a-clr-hvr:#{$link-hover-color-regular};
+    --a-td:#{$link-decoration-regular};
+    --a-td-hvr:#{$link-hover-decoration-regular};
   }
 
   &-inv {
-    --a-clr:     #{$link-color-invert};
-    --a-clr-hvr: #{$link-hover-color-invert};
-    --a-td:      #{$link-decoration-invert};
-    --a-td-hvr:  #{$link-hover-decoration-invert};
+    --a-clr:#{$link-color-invert};
+    --a-clr-hvr:#{$link-hover-color-invert};
+    --a-td:#{$link-decoration-invert};
+    --a-td-hvr:#{$link-hover-decoration-invert};
   }
 
   &-ex {
-    --a-clr:     #{$link-color-extra};
-    --a-clr-hvr: #{$link-hover-color-extra};
-    --a-td:      #{$link-decoration-extra};
-    --a-td-hvr:  #{$link-hover-decoration-extra};
+    --a-clr:#{$link-color-extra};
+    --a-clr-hvr:#{$link-hover-color-extra};
+    --a-td:#{$link-decoration-extra};
+    --a-td-hvr:#{$link-hover-decoration-extra};
   }
 }

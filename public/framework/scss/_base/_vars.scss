@@ -1,176 +1,176 @@
 :root {
-  --body-bg:            #{$body-bg};
-  --body-bg-rgb:        #{red($body-bg), green($body-bg), blue($body-bg)};
+  --body-bg:#{$body-bg};
+  --body-bg-rgb:#{red($body-bg), green($body-bg), blue($body-bg)};
 
-  --clr-primary:        #{$primary};
-  --clr-primary-rgb:    #{red($primary), green($primary), blue($primary)};
-  --clr-secondary:      #{$secondary};
-  --clr-secondary-rgb:  #{red($secondary), green($secondary), blue($secondary)};
-  --clr-light:          #{$light};
-  --clr-light-rgb:      #{red($light), green($light), blue($light)};
-  --clr-dark:           #{$dark};
-  --clr-dark-rgb:       #{red($dark), green($dark), blue($dark)};
+  --clr-primary:#{$primary};
+  --clr-primary-rgb:#{red($primary), green($primary), blue($primary)};
+  --clr-secondary:#{$secondary};
+  --clr-secondary-rgb:#{red($secondary), green($secondary), blue($secondary)};
+  --clr-light:#{$light};
+  --clr-light-rgb:#{red($light), green($light), blue($light)};
+  --clr-dark:#{$dark};
+  --clr-dark-rgb:#{red($dark), green($dark), blue($dark)};
 
-  --text-clr-base:      #{$text-color-regular};
-  --text-clr-invert:    #{$text-color-invert};
+  --text-clr-base:#{$text-color-regular};
+  --text-clr-invert:#{$text-color-invert};
 
-  --font-family:        #{$font-family-base};
-  --fs-base:            #{$font-size-base};
+  --font-family:#{$font-family-base};
+  --fs-base:#{$font-size-base};
 
-  --leading-base:       #{$line-height-base};
-  --leading-hl:         #{$line-height-headline};
+  --leading-base:#{$line-height-base};
+  --leading-hl:#{$line-height-headline};
 
-  --fw-base:            #{$font-weight-base};
-  --fw-light:           #{$font-weight-light};
-  --fw-regular:         #{$font-weight-regular};
-  --fw-medium:          #{$font-weight-medium};
-  --fw-semibold:        #{$font-weight-semibold};
-  --fw-bold:            #{$font-weight-bold};
+  --fw-base:#{$font-weight-base};
+  --fw-light:#{$font-weight-light};
+  --fw-regular:#{$font-weight-regular};
+  --fw-medium:#{$font-weight-medium};
+  --fw-semibold:#{$font-weight-semibold};
+  --fw-bold:#{$font-weight-bold};
 
-  --box-shadow:         #{$box-shadow};
+  --box-shadow:#{$box-shadow};
 
   // Grid
-  --columns:      #{$grid-columns};
-  --gtr:          #{$grid-gutter-width};
-  --gtr-btm:      #{$grid-gutter-bottom};
+  --columns:#{$grid-columns};
+  --gtr:#{$grid-gutter-width};
+  --gtr-btm:#{$grid-gutter-bottom};
 
-  --gtr-sml:      #{$grid-gutter-small-width};
-  --gtr-btm-sml:  #{$grid-gutter-small-bottom};
+  --gtr-sml:#{$grid-gutter-small-width};
+  --gtr-btm-sml:#{$grid-gutter-small-bottom};
 
-  --gtr-half:     #{divide($grid-gutter-width, 2)};
-  --gtr-half-sml: #{divide($grid-gutter-small-width, 2)};
+  --gtr-half:#{divide($grid-gutter-width, 2)};
+  --gtr-half-sml:#{divide($grid-gutter-small-width, 2)};
 
   // Layout
-  --mx-1: #{$left-right-margin-small};
-  --mx-2: #{$left-right-margin-medium};
-  --mx-3: #{$left-right-margin-large};
-  --my-1: #{$top-bottom-margin-small};
-  --my-2: #{$top-bottom-margin-medium};
-  --my-3: #{$top-bottom-margin-large};
+  --mx-1:#{$left-right-margin-small};
+  --mx-2:#{$left-right-margin-medium};
+  --mx-3:#{$left-right-margin-large};
+  --my-1:#{$top-bottom-margin-small};
+  --my-2:#{$top-bottom-margin-medium};
+  --my-3:#{$top-bottom-margin-large};
 
-  --px-1: #{$left-right-padding-small};
-  --px-2: #{$left-right-padding-medium};
-  --px-3: #{$left-right-padding-large};
-  --py-1: #{$top-bottom-padding-small};
-  --py-2: #{$top-bottom-padding-medium};
-  --py-3: #{$top-bottom-padding-large};
+  --px-1:#{$left-right-padding-small};
+  --px-2:#{$left-right-padding-medium};
+  --px-3:#{$left-right-padding-large};
+  --py-1:#{$top-bottom-padding-small};
+  --py-2:#{$top-bottom-padding-medium};
+  --py-3:#{$top-bottom-padding-large};
 
   // Component spacing
-  --c-m:  #{$component-inner-spacing};
+  --c-m:#{$component-inner-spacing};
 
   // Typography
-  --a-clr:     #{$link-color-regular};
-  --a-clr-hvr: #{$link-hover-color-regular};
-  --a-td:      #{$link-decoration-regular};
-  --a-td-hvr:  #{$link-hover-decoration-regular};
+  --a-clr:#{$link-color-regular};
+  --a-clr-hvr:#{$link-hover-color-regular};
+  --a-td:#{$link-decoration-regular};
+  --a-td-hvr:#{$link-hover-decoration-regular};
 
   // Headings
-  --h1-clr:   #{$h1-color};
-  --h2-clr:   #{$h2-color};
-  --h3-clr:   #{$h3-color};
-  --h4-clr:   #{$h4-color};
-  --h5-clr:   #{$h5-color};
-  --h6-clr:   #{$h6-color};
+  --h1-clr:#{$h1-color};
+  --h2-clr:#{$h2-color};
+  --h3-clr:#{$h3-color};
+  --h4-clr:#{$h4-color};
+  --h5-clr:#{$h5-color};
+  --h6-clr:#{$h6-color};
 
-  --h1-fs:    #{$h1-font-size-small};
-  --h2-fs:    #{$h2-font-size-small};
-  --h3-fs:    #{$h3-font-size-small};
-  --h4-fs:    #{$h4-font-size-small};
-  --h5-fs:    #{$h5-font-size-small};
-  --h6-fs:    #{$h6-font-size-small};
+  --h1-fs:#{$h1-font-size-small};
+  --h2-fs:#{$h2-font-size-small};
+  --h3-fs:#{$h3-font-size-small};
+  --h4-fs:#{$h4-font-size-small};
+  --h5-fs:#{$h5-font-size-small};
+  --h6-fs:#{$h6-font-size-small};
 
-  --h1-c-fs:  #{$h1-content-font-size-small};
-  --h2-c-fs:  #{$h2-content-font-size-small};
-  --h3-c-fs:  #{$h3-content-font-size-small};
-  --h4-c-fs:  #{$h4-content-font-size-small};
-  --h5-c-fs:  #{$h5-content-font-size-small};
-  --h6-c-fs:  #{$h6-content-font-size-small};
+  --h1-c-fs:#{$h1-content-font-size-small};
+  --h2-c-fs:#{$h2-content-font-size-small};
+  --h3-c-fs:#{$h3-content-font-size-small};
+  --h4-c-fs:#{$h4-content-font-size-small};
+  --h5-c-fs:#{$h5-content-font-size-small};
+  --h6-c-fs:#{$h6-content-font-size-small};
 
   // Headline spacings
-  --hl-mb:     0;
-  --hl-mb-1:   #{$headline-spacing-small};
-  --hl-mb-s-1: #{$headline-spacing-s-small};
-  --hl-mb-l-1: #{$headline-spacing-l-small};
+  --hl-mb:0;
+  --hl-mb-1:#{$headline-spacing-small};
+  --hl-mb-s-1:#{$headline-spacing-s-small};
+  --hl-mb-l-1:#{$headline-spacing-l-small};
 
-  --hl-mb-2:   #{$headline-spacing-medium};
-  --hl-mb-s-2: #{$headline-spacing-s-medium};
-  --hl-mb-l-2: #{$headline-spacing-l-medium};
+  --hl-mb-2:#{$headline-spacing-medium};
+  --hl-mb-s-2:#{$headline-spacing-s-medium};
+  --hl-mb-l-2:#{$headline-spacing-l-medium};
 
-  --hl-mb-3:   #{$headline-spacing-large};
-  --hl-mb-s-3: #{$headline-spacing-s-large};
-  --hl-mb-l-3: #{$headline-spacing-l-large};
+  --hl-mb-3:#{$headline-spacing-large};
+  --hl-mb-s-3:#{$headline-spacing-s-large};
+  --hl-mb-l-3:#{$headline-spacing-l-large};
 
   // Buttons
-  --btn-bg:          #{$button-bg-primary};
-  --btn-bg-hvr:      #{$button-hover-bg-primary};
-  --btn-clr:         #{$button-color-primary};
-  --btn-clr-hvr:     #{$button-hover-color-primary};
+  --btn-bg:#{$button-bg-primary};
+  --btn-bg-hvr:#{$button-hover-bg-primary};
+  --btn-clr:#{$button-color-primary};
+  --btn-clr-hvr:#{$button-hover-color-primary};
 
-  --btn-fw:          #{$button-font-weight-primary};
-  --btn-tf:          #{$button-transform-primary};
+  --btn-fw:#{$button-font-weight-primary};
+  --btn-tf:#{$button-transform-primary};
 
-  --btn-bdr:         #{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
-  --btn-bdr-r:       #{$button-border-radius-primary};
-  --btn-bdr-clr-hvr: #{$button-hover-border-color-primary};
+  --btn-bdr:#{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
+  --btn-bdr-r:#{$button-border-radius-primary};
+  --btn-bdr-clr-hvr:#{$button-hover-border-color-primary};
 
-  --btn-p-1:         #{subList($button-padding-small,  $button-border-width-primary, 'rem', true)};
-  --btn-p-2:         #{subList($button-padding-medium, $button-border-width-primary, 'rem', true)};
-  --btn-p-3:         #{subList($button-padding-large,  $button-border-width-primary, 'rem', true)};
-  --btn-p-4:         #{subList($button-padding-super,  $button-border-width-primary, 'rem', true)};
+  --btn-p-1:#{subList($button-padding-small,  $button-border-width-primary, 'rem', true)};
+  --btn-p-2:#{subList($button-padding-medium, $button-border-width-primary, 'rem', true)};
+  --btn-p-3:#{subList($button-padding-large,  $button-border-width-primary, 'rem', true)};
+  --btn-p-4:#{subList($button-padding-super,  $button-border-width-primary, 'rem', true)};
 
   // Form
-  --form-clr-txt:    #{$form-input-color};
-  --form-clr-bg:     #{$form-input-background};
-  --form-clr-border: #{$form-input-border-color};
-  --form-clr-ph:     #{$form-input-placeholder-color};
-  --form-clr-label:  #{$form-label-color};
-  --form-clr-exp:    #{$form-input-explanation-color};
+  --form-clr-txt:#{$form-input-color};
+  --form-clr-bg:#{$form-input-background};
+  --form-clr-border:#{$form-input-border-color};
+  --form-clr-ph:#{$form-input-placeholder-color};
+  --form-clr-label:#{$form-label-color};
+  --form-clr-exp:#{$form-input-explanation-color};
 
-  --cbx-clr-label:   #{$form-checkbox-radio-label-color};
-  --cbx-symbol-clr:  #{$form-checkbox-radio-symbol-color};
-  --cbx-bg-clr:      #{$form-checkbox-radio-background};
-  --cbx-bg-clr-hvr:  #{$form-checkbox-radio-background-hover};
+  --cbx-clr-label:#{$form-checkbox-radio-label-color};
+  --cbx-symbol-clr:#{$form-checkbox-radio-symbol-color};
+  --cbx-bg-clr:#{$form-checkbox-radio-background};
+  --cbx-bg-clr-hvr:#{$form-checkbox-radio-background-hover};
 
-  --cbx-bdr-clr:     #{$form-checkbox-radio-border-color};
-  --cbx-bdr-clr-hvr: #{$form-checkbox-radio-border-color-hover};
+  --cbx-bdr-clr:#{$form-checkbox-radio-border-color};
+  --cbx-bdr-clr-hvr:#{$form-checkbox-radio-border-color-hover};
 }
 
 // Typography
 @include media-breakpoint('xs') {
 
   :root {
-    --h1-fs:    #{$h1-font-size-medium};
-    --h2-fs:    #{$h2-font-size-medium};
-    --h3-fs:    #{$h3-font-size-medium};
-    --h4-fs:    #{$h4-font-size-medium};
-    --h5-fs:    #{$h5-font-size-medium};
-    --h6-fs:    #{$h6-font-size-medium};
+    --h1-fs:#{$h1-font-size-medium};
+    --h2-fs:#{$h2-font-size-medium};
+    --h3-fs:#{$h3-font-size-medium};
+    --h4-fs:#{$h4-font-size-medium};
+    --h5-fs:#{$h5-font-size-medium};
+    --h6-fs:#{$h6-font-size-medium};
 
-    --h1-c-fs:  #{$h1-content-font-size-medium};
-    --h2-c-fs:  #{$h2-content-font-size-medium};
-    --h3-c-fs:  #{$h3-content-font-size-medium};
-    --h4-c-fs:  #{$h4-content-font-size-medium};
-    --h5-c-fs:  #{$h5-content-font-size-medium};
-    --h6-c-fs:  #{$h6-content-font-size-medium};
+    --h1-c-fs:#{$h1-content-font-size-medium};
+    --h2-c-fs:#{$h2-content-font-size-medium};
+    --h3-c-fs:#{$h3-content-font-size-medium};
+    --h4-c-fs:#{$h4-content-font-size-medium};
+    --h5-c-fs:#{$h5-content-font-size-medium};
+    --h6-c-fs:#{$h6-content-font-size-medium};
   }
 }
 
 @include media-breakpoint('m') {
 
   :root {
-    --h1-fs:    #{$h1-font-size};
-    --h2-fs:    #{$h2-font-size};
-    --h3-fs:    #{$h3-font-size};
-    --h4-fs:    #{$h4-font-size};
-    --h5-fs:    #{$h5-font-size};
-    --h6-fs:    #{$h6-font-size};
+    --h1-fs:#{$h1-font-size};
+    --h2-fs:#{$h2-font-size};
+    --h3-fs:#{$h3-font-size};
+    --h4-fs:#{$h4-font-size};
+    --h5-fs:#{$h5-font-size};
+    --h6-fs:#{$h6-font-size};
 
-    --h1-c-fs:  #{$h1-content-font-size};
-    --h2-c-fs:  #{$h2-content-font-size};
-    --h3-c-fs:  #{$h3-content-font-size};
-    --h4-c-fs:  #{$h4-content-font-size};
-    --h5-c-fs:  #{$h5-content-font-size};
-    --h6-c-fs:  #{$h6-content-font-size};
+    --h1-c-fs:#{$h1-content-font-size};
+    --h2-c-fs:#{$h2-content-font-size};
+    --h3-c-fs:#{$h3-content-font-size};
+    --h4-c-fs:#{$h4-content-font-size};
+    --h5-c-fs:#{$h5-content-font-size};
+    --h6-c-fs:#{$h6-content-font-size};
   }
 }
 
@@ -178,23 +178,23 @@
 @include media-breakpoint($layout-column-small-break) {
 
   :root {
-    --lyt-col-wdth: #{$layout-column-width-small};
-    --lyt-col-gtr: #{$layout-column-gutter-small};
+    --lyt-col-wdth:#{$layout-column-width-small};
+    --lyt-col-gtr:#{$layout-column-gutter-small};
   }
 }
 
 @include media-breakpoint($layout-column-medium-break) {
 
   :root {
-    --lyt-col-wdth: #{$layout-column-width-medium};
-    --lyt-col-gtr:  #{$layout-column-gutter-medium};
+    --lyt-col-wdth:#{$layout-column-width-medium};
+    --lyt-col-gtr:#{$layout-column-gutter-medium};
   }
 }
 
 @include media-breakpoint($layout-column-large-break) {
 
   :root {
-    --lyt-col-wdth: #{$layout-column-width-large};
-    --lyt-col-gtr:  #{$layout-column-gutter-large};
+    --lyt-col-wdth:#{$layout-column-width-large};
+    --lyt-col-gtr:#{$layout-column-gutter-large};
   }
 }

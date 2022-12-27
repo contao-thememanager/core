@@ -1,20 +1,20 @@
 .small-gutter {
-  --v-gap:      var(--gtr-btm-sml);
-  --h-gap:      var(--gtr-sml);
-  --h-gap-off:  calc(-1 * var(--gtr-half-sml));
+  --v-gap:var(--gtr-btm-sml);
+  --h-gap:var(--gtr-sml);
+  --h-gap-off:calc(-1 * var(--gtr-half-sml));
 
   > .inside {
-    --gtr-item: var(--gtr-half-sml);
+    --gtr-item:var(--gtr-half-sml);
   }
 }
 
 .no-gutter {
-  --v-gap: 0rem;
-  --h-gap: 0rem;
-  --h-gap-off: 0rem;
+  --v-gap:0rem;
+  --h-gap:0rem;
+  --h-gap-off:0rem;
 
   > .inside {
-    --gtr-item: 0rem;
+    --gtr-item:0rem;
   }
 }
 
