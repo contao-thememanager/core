@@ -32,7 +32,7 @@
 label,
 legend {
   display: inline-block;
-  color: $form-label-color;
+  color: var(--form-clr-label);
   font-size: $form-label-font-size;
   font-weight: $form-label-font-weight;
   margin-bottom: $form-label-spacing;
@@ -52,6 +52,11 @@ select {
     background-color: $form-select-option-background;
 
     &[disabled] { color: $form-input-color-disabled; }
+  }
+
+  &.multiselect {
+    resize: vertical;
+    height: $form-multiselect-height;
   }
 }
 
@@ -152,22 +157,22 @@ textarea {
 
     &:before {
       display: inline-block;
-      content: '\25BC';
+      content: $form-select-symbol;
 
       position: absolute;
-      bottom: #{divide(sub($form-input-height, $form-input-symbol-font-size, 'px'), 2)};
+      bottom: #{divide(sub($form-input-height, $form-select-symbol-font-size, 'px'), 2)};
       right: 12px;
 
       line-height: 1;
       height: 1em;
       width: 1em;
-      font-size: $form-input-symbol-font-size;
+      font-size: $form-select-symbol-font-size;
 
       text-align: center;
       text-decoration: inherit;
       text-transform: none;
 
-      color: $form-input-symbol-color;
+      color: $form-select-symbol-color;
 
       pointer-events: none;
       speak: none;
@@ -203,7 +208,7 @@ textarea {
 
         &:after {
           display: inline-block;
-          content: '✔';
+          content: $form-checkbox-radio-symbol;
 
           position: absolute;
           left: 1px;
@@ -211,7 +216,7 @@ textarea {
 
           width: sub($form-checkbox-radio-size, 1px, 'px');
           line-height: $form-checkbox-radio-size;
-          color: $form-checkbox-radio-symbol-color;
+          color: var(--cbx-symbol-clr);
 
           // Calculation: Do not allow font-sizes bigger than the width of the the checkbox
           $checkboxInnerWidth: sub($form-checkbox-radio-size, multiply($form-checkbox-radio-border-width, 2), 'px');
@@ -250,17 +255,17 @@ textarea {
 
         border-width: $form-checkbox-radio-border-width;
         border-style: $form-checkbox-radio-border-style;
-        border-color: $form-checkbox-radio-border-color;
+        border-color: var(--cbx-bdr-clr);
         border-radius: $form-checkbox-border-radius;
 
-        background-color: $form-checkbox-radio-background;
+        background-color: var(--cbx-bg-clr);
 
         vertical-align: middle;
       }
 
       &:hover:before {
-        border-color: $form-checkbox-radio-border-color-hover;
-        background-color: $form-checkbox-radio-background-hover;
+        border-color: var(--cbx-bdr-clr-hvr);
+        background-color: var(--cbx-bg-clr-hvr);
       }
     }
 
@@ -291,7 +296,7 @@ textarea {
   &-range {
 
     .input-container:after {
-      content: none;
+      content: none !important;
     }
 
     input {
@@ -311,7 +316,7 @@ textarea {
   &-explanation {
 
     p {
-      color:     $form-input-explanation-color;
+      color: var(--form-clr-exp);
       font-size: $form-input-explanation-font-size;
     }
   }

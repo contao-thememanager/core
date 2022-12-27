@@ -2,7 +2,7 @@
 $browser-context:                         16 !default;
 $body-bg:                                 #fff !default;
 
-// Colors
+// Base colors
 $primary:                                 #36c !default;
 $secondary:                               #9cf !default;
 $light:                                   #f3f3f3 !default;
@@ -11,7 +11,6 @@ $dark:                                    #2b2b2b !default;
 // Typography
 $font-family-base:                        Arial, sans-serif !default;
 $font-size-base:                          $browser-context * 1px !default;
-
 $line-height-base:                        1.687 !default;
 
 $text-color-regular:                      #000 !default;
@@ -191,6 +190,101 @@ $grid-gutter-bottom:                      $grid-gutter-width !default;
 $grid-gutter-small-width:                 1rem !default;
 $grid-gutter-small-bottom:                $grid-gutter-small-width !default;
 
+// Form general
+$form-input-font-family:                  var(--font-family) !default;
+$form-textarea-line-height:               var(--leading-base) !default;
+
+$form-input-padding:                      10px 15px;
+$form-input-height:                       44px !default;
+$form-multiselect-height:                 80px !default;
+
+$form-input-font-weight:                  $font-weight-regular !default;
+$form-input-font-size:                    $font-size-base !default;
+$form-input-font-size-error:              $font-size-base !default;
+
+$form-input-border-radius:                0;
+$form-input-border-width:                 1px !default;
+$form-input-border-style:                 solid !default;
+
+$form-input-color-disabled:               #5c5c5c !default;
+
+$form-input-border-color:                 #ccc !default;
+$form-input-border-color-hover:           #b4b4b4 !default;
+$form-input-border-color-focus:           #979797 !default;
+$form-input-border-color-error:           #b46869 !default;
+
+$form-input-background:                   var(--body-bg) !default;
+$form-input-background-hover:             var(--body-bg) !default;
+$form-input-background-focus:             var(--body-bg) !default;
+$form-input-background-error:             var(--body-bg) !default;
+
+$form-input-color:                        var(--text-clr-base) !default;
+$form-input-color-hover:                  var(--text-clr-base) !default;
+$form-input-color-focus:                  var(--text-clr-base) !default;
+$form-input-color-error:                  #b46869 !default;
+
+$form-input-placeholder-color:            #ccc !default;
+$form-input-placeholder-color-hover:      #b4b4b4 !default;
+$form-input-placeholder-color-focus:      #b4b4b4 !default;
+$form-input-placeholder-color-error:      #b46869 !default;
+
+// Form label
+$form-label-color:                        var(--text-clr-base) !default;
+$form-label-color-invert:                 var(--text-clr-invert) !default;
+
+$form-label-font-size:                    $font-size-base !default;
+$form-label-font-weight:                  $font-weight-regular !default;
+$form-label-spacing:                      4px !default;
+
+// Form select
+$form-select-symbol:                      '\25BC' !default;
+$form-select-symbol-font-size:            16px !default;
+$form-select-symbol-color:                var(--clr-primary) !default;
+
+$form-select-option-color:                var(--text-clr-base) !default;
+$form-select-option-background:           var(--form-clr-bg) !default;
+
+// Form checkbox
+$form-checkbox-radio-symbol:              '✔' !default;
+$form-checkbox-radio-symbol-font-size:    $font-size-base !default;
+$form-checkbox-radio-symbol-color:        $form-input-color !default;
+
+$form-checkbox-radio-size:                20px !default;
+$form-checkbox-radio-label-font-size:     $font-size-base !default;
+
+$form-checkbox-border-radius:             0;
+$form-checkbox-radio-border-width:        1px !default;
+$form-checkbox-radio-border-style:        solid !default;
+
+$form-checkbox-radio-border-color:        $form-input-border-color !default;
+$form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
+$form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !default;
+
+$form-checkbox-radio-background:          var(--body-bg) !default;
+$form-checkbox-radio-background-hover:    var(--body-bg) !default;
+$form-checkbox-radio-background-focus:    var(--body-bg) !default;
+
+$form-checkbox-radio-label-color:         var(--text-clr-base) !default;
+$form-checkbox-radio-label-color-invert:  var(--text-clr-invert) !default;
+
+// Form miscellaneous
+$form-validation:                         '' !default;
+
+$form-input-explanation-font-size:        $font-size-base !default;
+$form-input-explanation-color:            var(--text-clr-base) !default;
+$form-input-explanation-color-invert:     var(--text-clr-invert) !default;
+
+$form-input-mandatory-symbol-color:       #ccc !default;
+$form-input-mandatory-symbol-color-error: #b46869 !default;
+
+// Form field
+$form-field-image-width:                  100px !default;
+$form-field-image-height:                 $form-field-image-width !default;
+
+$form-field-icon-size:                    $form-input-font-size !default;
+$form-field-icon-color:                   $form-input-color !default;
+$form-field-icon-background:              $form-input-background !default;
+
 // Icons
 $icon-font-family:                        "ctm-icon" !default;
 
@@ -202,90 +296,6 @@ $icon-size-super:                         6rem !default;
 
 $icon-shape-spacing:                      1.5rem !default;
 $icon-outlined-width:                     2px !default;
-
-// Form
-$form-textarea-line-height:               var(--leading-base) !default;
-
-// Form-Label
-$form-label-color:                        $text-color-regular !default;
-$form-label-font-size:                    $font-size-base !default;
-$form-label-font-weight:                  $font-weight-regular !default;
-$form-label-spacing:                      4px !default;
-
-// Form-Input
-$form-input-font-family:                  var(--font-family) !default;
-$form-input-font-size:                    $font-size-base !default;
-$form-input-font-weight:                  $font-weight-regular !default;
-
-$form-input-height:                       44px !default;
-$form-input-padding:                      10px 15px;
-$form-input-border-radius:                0;
-$form-input-border-width:                 1px !default;
-$form-input-border-style:                 solid !default;
-
-$form-input-color:                        $text-color-regular !default;
-$form-input-color-disabled:               #5c5c5c !default;
-$form-input-background:                   #fff !default;
-$form-input-border-color:                 #ccc !default;
-$form-input-placeholder-color:            #ccc !default;
-
-$form-input-color-hover:                  $text-color-regular !default;
-$form-input-background-hover:             #fff !default;
-$form-input-border-color-hover:           #b4b4b4 !default;
-$form-input-placeholder-color-hover:      #b4b4b4 !default;
-
-$form-input-color-focus:                  $text-color-regular !default;
-$form-input-background-focus:             #fff !default;
-$form-input-border-color-focus:           #979797 !default;
-$form-input-placeholder-color-focus:      #b4b4b4 !default;
-
-$form-input-color-error:                  #b46869 !default;
-$form-input-background-error:             #ffe5df !default;
-$form-input-border-color-error:           #b46869 !default;
-$form-input-placeholder-color-error:      #b46869 !default;
-$form-input-font-size-error:              $font-size-base !default;
-
-// Form-Checkbox
-$form-checkbox-radio-label-font-size:     $font-size-base !default;
-$form-checkbox-radio-label-color:         $text-color-regular !default;
-$form-checkbox-radio-label-color-invert:  $text-color-invert !default;
-
-$form-checkbox-radio-size:                20px !default;
-$form-checkbox-border-radius:             0;
-$form-checkbox-radio-border-width:        1px !default;
-$form-checkbox-radio-border-style:        solid !default;
-
-$form-checkbox-radio-background:          $form-input-background !default;
-$form-checkbox-radio-border-color:        $form-input-border-color !default;
-
-$form-checkbox-radio-background-hover:    $form-input-background-hover !default;
-$form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
-
-$form-checkbox-radio-background-focus:    $form-input-background-focus !default;
-$form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !default;
-
-$form-checkbox-radio-symbol-font-size:    $font-size-base !default;
-$form-checkbox-radio-symbol-color:        $form-input-color !default;
-
-// Form-Explanation
-$form-input-explanation-color:            $text-color-regular !default;
-$form-input-explanation-font-size:        $font-size-base !default;
-
-$form-input-mandatory-symbol-color:       #ccc !default;
-$form-input-mandatory-symbol-color-error: #b46869 !default;
-$form-input-symbol-font-size:             16px !default;
-$form-input-symbol-color:                 $primary !default;
-$form-select-option-color:                $text-color-regular !default;
-$form-select-option-background:           var(--body-bg) !default;
-$form-validation:                         '' !default;
-
-// Form Field
-$form-field-image-width:                  100px !default;
-$form-field-image-height:                 $form-field-image-width !default;
-
-$form-field-icon-color:                   $form-input-color !default;
-$form-field-icon-background:              #e3e3e3 !default;
-$form-field-icon-size:                    $form-input-font-size !default;
 
 // Button
 $button-line-height:                      1 !default;
@@ -354,6 +364,7 @@ $component-inner-spacing:                 1rem !default;
 $top-bottom-padding-small:                1rem !default;
 $top-bottom-padding-medium:               2rem !default;
 $top-bottom-padding-large:                3rem !default;
+
 $left-right-padding-small:                1rem !default;
 $left-right-padding-medium:               2rem !default;
 $left-right-padding-large:                3rem !default;
@@ -362,6 +373,7 @@ $left-right-padding-large:                3rem !default;
 $top-bottom-margin-small:                 1rem !default;
 $top-bottom-margin-medium:                2rem !default;
 $top-bottom-margin-large:                 3rem !default;
+
 $left-right-margin-small:                 1rem !default;
 $left-right-margin-medium:                2rem !default;
 $left-right-margin-large:                 3rem !default;
@@ -378,11 +390,12 @@ $boxed-border-style:                      solid !default;
 $boxed-border-width:                      1px !default;
 $boxed-border-radius:                     0 !default;
 
-// Image Text
+// Image text
 $image-text-behaviour-min-width:          600px;
 
 // Navigation
 $navigation-behaviour-min-width:          768px;
+
 $navigation-item-font-size:               $font-size-base;
 $navigation-item-font-weight:             $font-weight-regular;
 $navigation-item-padding:                 .5rem 1rem;

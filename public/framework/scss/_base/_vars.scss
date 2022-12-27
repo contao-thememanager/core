@@ -123,7 +123,16 @@
   --form-clr-bg:     #{$form-input-background};
   --form-clr-border: #{$form-input-border-color};
   --form-clr-ph:     #{$form-input-placeholder-color};
+  --form-clr-label:  #{$form-label-color};
+  --form-clr-exp:    #{$form-input-explanation-color};
+
   --cbx-clr-label:   #{$form-checkbox-radio-label-color};
+  --cbx-symbol-clr:  #{$form-checkbox-radio-symbol-color};
+  --cbx-bg-clr:      #{$form-checkbox-radio-background};
+  --cbx-bg-clr-hvr:  #{$form-checkbox-radio-background-hover};
+
+  --cbx-bdr-clr:     #{$form-checkbox-radio-border-color};
+  --cbx-bdr-clr-hvr: #{$form-checkbox-radio-border-color-hover};
 }
 
 // Typography
