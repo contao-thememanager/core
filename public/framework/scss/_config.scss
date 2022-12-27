@@ -403,5 +403,5 @@ $navigation-item-padding:                 .5rem 1rem;
 // Misc
 $box-shadow:                              0 .5rem 1rem rgba(#000, .15) !default;
 
-$selection-color:                         $text-color-invert !default;
-$selection-background-color:              $primary !default;
+$selection-color:                         var(--text-clr-invert) !default;
+$selection-background-color:              var(--clr-primary) !default;
