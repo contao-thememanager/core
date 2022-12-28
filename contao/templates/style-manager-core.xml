@@ -1546,7 +1546,7 @@
         <field title="alias">formitem-img</field>
         <field title="title">Image</field>
         <field title="description">Here you can choose an image for your form field.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:27:"form-image form-img-example";s:5:"value";s:13:"Exmaple Image";}}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:25:"form-img form-img-example";s:5:"value";s:13:"Example Image";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

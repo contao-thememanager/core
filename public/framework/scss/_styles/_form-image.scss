@@ -1,89 +1,53 @@
-.form-image.widget {
+.form-img {
+  --fimg-mr:auto;
+  --fimg-ml:auto;
+  --fimg-algn:inherit;
+  --fimg:none;
 
-  &:before {
-    content: '';
-    display: block;
-    position: static;
+  &.is--right {--fimg-mr:initial;--fimg-algn:right;}
+  &.is--left  {--fimg-ml:initial;--fimg-algn:left;}
 
-    width: $form-field-image-width;
-    height: $form-field-image-height;
-
-    margin: 0 auto $grid-gutter-small-bottom;
-
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  &.widget-checkbox,
-  &.widget-radio {
-
-    label {
-      padding: 0;
-      margin: 0;
+  &.widget {
+    &,
+    &-checkbox label,
+    &-radio label {
 
       &:before {
-        content: '';
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
 
+        content: '';
         position: static;
 
         width: $form-field-image-width;
         height: $form-field-image-height;
 
-        margin: 0 auto $grid-gutter-small-bottom;
+        margin: 0 0 var(--c-m);
+        margin-right: var(--fimg-mr);
+        margin-left: var(--fimg-ml);
 
-        background-position: center center;
-        background-repeat: no-repeat;
+        background: var(--fimg) no-repeat 50%;
         background-size: 100%;
       }
+    }
 
-      &:after {
-        content: none;
+    &-checkbox,
+    &-radio {
+      // Reset so image is within label
+      &:before { content: none; }
+
+      label {
+        text-align: var(--fimg-algn);
+        padding: 0;
+        margin: 0;
+        // Hide form-checkbox-radio-symbol
+        &:after { content: none !important; }
+
+        &:before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
-
-    &:before {
-      content: none;
-    }
-  }
-}
-
-
-.form-image.is--left {
-
-  &.widget,
-  &.widget-checkbox label,
-  &.widget-radio label {
-
-    &:before {
-      margin-left: initial;
-      margin-right: auto;
-    }
-  }
-
-  &.widget-checkbox label,
-  &.widget-radio label {
-    text-align: left;
-  }
-}
-
-.form-image.is--right {
-
-  &.widget,
-  &.widget-checkbox label,
-  &.widget-radio label {
-
-    &:before {
-      margin-left: auto;
-      margin-right: initial;
-    }
-  }
-
-  &.widget-checkbox label,
-  &.widget-radio label {
-    text-align: right;
   }
 }

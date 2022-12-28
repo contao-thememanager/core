@@ -7,24 +7,23 @@
   }
 }
 
-@mixin form-field-image ($class-suffix, $content, $blnIcon: false,  $font-size : 1em) {
-  .form-image.form-img-#{$class-suffix} {
+@mixin form-field-image ($class-suffix, $content, $blnIcon: false, $font-size : 1em, $include: false) {
+  .form-img-#{$class-suffix} {
+    @if not $blnIcon {--fimg:url(#{$content});}
+    @if $blnIcon or $include {
+      &.widget,
+      &.widget-checkbox label,
+      &.widget-radio label {
+        &:before {
+          @if $blnIcon {
+            @include icon($content, $font-size);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
-    &.widget,
-    &.widget-checkbox label,
-    &.widget-radio label {
-
-      &:before {
-        @if $blnIcon {
-          @include icon($content, $font-size);
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @if $include { @content }
         }
-        @else {
-          background-image: url($content);
-        }
-        @content
       }
     }
   }
