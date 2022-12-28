@@ -1,15 +1,8 @@
 @mixin form-field-icon ($class-suffix, $content, $blnIcon: false, $font-size: $form-input-font-size) {
-  .f-icon-#{$class-suffix} > .input-container:before {
-    @if $blnIcon {
-      @include icon($content, $font-size);
-      display: flex;
-    }
-    @else {
-      content: $content;
-      @if $font-size != $form-input-font-size {
-        font-size: $font-size;
-      }
-    }
+  .fi-#{$class-suffix} {
+    --ico:'#{$content}';
+    @if $blnIcon {>.input-container:before {font-family: $icon-font-family;}}
+    @if $font-size != $form-input-font-size {--fi-fs:#{$font-size};}
     @content;
   }
 }

@@ -1483,7 +1483,7 @@
         <field title="alias">formInputIconAlignment</field>
         <field title="title">Alignment</field>
         <field title="description">Here you can choose the alignment for a form input icon.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:12:"f-icon-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"fi-right";s:5:"value";s:5:"Right";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1509,7 +1509,7 @@
         <field title="alias">formInputIcons</field>
         <field title="title">Icon</field>
         <field title="description">Here you can choose the icon which should be displayed within the form field.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"f-icon-m2";s:5:"value";s:3:"m²";}i:1;a:2:{s:3:"key";s:9:"f-icon-at";s:5:"value";s:1:"@";}i:2;a:2:{s:3:"key";s:11:"f-icon-euro";s:5:"value";s:3:"€";}i:3;a:2:{s:3:"key";s:13:"f-icon-dollar";s:5:"value";s:1:"$";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"fi-m2";s:5:"value";s:3:"m²";}i:1;a:2:{s:3:"key";s:5:"fi-at";s:5:"value";s:1:"@";}i:2;a:2:{s:3:"key";s:7:"fi-euro";s:5:"value";s:3:"€";}i:3;a:2:{s:3:"key";s:9:"fi-dollar";s:5:"value";s:1:"$";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

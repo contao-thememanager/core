@@ -23,7 +23,7 @@ class IconGenerator
 
     const MSG_ICON = 'tc_info icon';
     const PREFIX_ICON = 'i-';
-    const PREFIX_FICON = 'f-icon-';
+    const PREFIX_FICON = 'fi-';
     const FONTFAMILY = 'ctm-icon';
     const STRUCTURE_ICON = [
         'elements' => [
@@ -178,10 +178,10 @@ class IconGenerator
                     if (hexdec($code) > 32 && !empty($glyph['d']) && (string)$glyph['d'] !== 'M0 0v0v0v0v0z')
                     {
                         $glyphs[] = [
-                            'key' => self::PREFIX_ICON . $glyph['glyph-name'],
+                            'key'   => self::PREFIX_ICON . $glyph['glyph-name'],
                             'value' => $char . ' ' . ucwords(str_replace("_", " ", $glyph['glyph-name'])),
-                            'code' => $code,
-                            'fkey' => self::PREFIX_FICON . $glyph['glyph-name']
+                            'code'  => $code,
+                            'fkey'  => self::PREFIX_FICON . $glyph['glyph-name']
                         ];
 
                         $intSuccessCount++;
@@ -300,12 +300,12 @@ class IconGenerator
         );
 
         // Prepend additional css
-        $css .= $iconSelector1.$strBefore.','.$iconSelector2.$strBefore.'{padding-right:0.3em;}';
+        $css .= $iconSelector1.$strBefore.','.$iconSelector2.$strBefore.'{padding-right:0.3em;content:var(--ico);}';
 
         // Add icons
         foreach ($glyphs as $icon)
         {
-            $css .= vsprintf(".%s:before,.%s>.input-container:before{content:'\\%s'}", [
+            $css .= vsprintf(".%s,.%s{--ico:'\\%s'}", [
                 $icon['key'],
                 $icon['fkey'],
                 $icon['code']

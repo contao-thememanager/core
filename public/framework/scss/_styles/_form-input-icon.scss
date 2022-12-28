@@ -1,4 +1,4 @@
-.widget[class*='f-icon-'] {
+.widget[class*='fi-'] {
 
   > .input-container {
     display: flex;
@@ -7,13 +7,6 @@
     border-style: $form-input-border-style;
     border-color: $form-input-border-color;
     border-radius: $form-input-border-radius;
-
-    input {
-      border: 0 none;
-      height: sub($form-input-height, multiply($form-input-border-width, 2), 'px');
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
 
     &:before {
       display: flex;
@@ -24,7 +17,14 @@
       border-style: $form-input-border-style;
       border-color: inherit;
       color: $form-field-icon-color;
-      font-size: $form-field-icon-size;
+      font-size: var(--fi-fs,#{$form-field-icon-size});
+
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+
+      -webkit-font-smoothing: antialiased;
+      speak: none;
 
       width: 40px;
 
@@ -33,53 +33,46 @@
       border-bottom-left-radius: inherit;
 
       margin: -#{$form-input-border-width} 0 -#{$form-input-border-width} -#{$form-input-border-width};
-    }
 
-    &:hover {
-      border-color: $form-input-border-color-hover;
-      &:before { border-color: inherit; }
-    }
+      content: var(--ico,'');
 
-    &:focus {
-      border-color: $form-input-border-color-focus;
-      &:before { border-color: inherit; }
-    }
-  }
+      @at-root .fi-right#{&} {
+        order: 2;
 
-  &.f-icon-right {
-
-    > .input-container {
-
-      &:before {
         border-radius: 0;
         border-top-right-radius: inherit;
         border-bottom-right-radius: inherit;
-        order: 2;
 
         margin: -#{$form-input-border-width} -#{$form-input-border-width} -#{$form-input-border-width} 0;
       }
-
-      input {
-        border-radius: 0;
-        border-top-left-radius: inherit;
-        border-bottom-left-radius: inherit;
-      }
     }
 
-    &.mandatory {
+    &:hover { border-color: $form-input-border-color-hover; }
+    &:focus { border-color: $form-input-border-color-focus; }
 
-      > .input-container:after {
-        right: 45px;
-      }
-    }
+    @at-root .error#{&} { border-color: greenyellow; }
+    @at-root .fi-right.mandatory#{&}:after { right: 45px;}
   }
 
-  &.error > .input-container {
-    border-color: $form-input-border-color-error;
+  input {
+    border: 0 none;
+    height: sub($form-input-height, multiply($form-input-border-width, 2), 'px');
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    @at-root .fi-right#{&} {
+      border-radius: 0;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+    }
   }
 }
 
-@include form-field-icon(m2, 'm²');
-@include form-field-icon(at, '@');
-@include form-field-icon(euro, '€');
-@include form-field-icon(dollar, '$');
+$f-icon-list: (
+  m2:     'm²',
+  at:     '@',
+  euro:   '€',
+  dollar: '$'
+);
+
+@each $pre, $ico in $f-icon-list{@include form-field-icon($pre,$ico)}
