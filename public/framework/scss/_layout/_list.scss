@@ -2,9 +2,12 @@
 
   ul {
     list-style: none;
-    display: flex;
-    column-gap: rem(10);
-    flex-wrap: wrap;
     padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    column-gap: rem(10);
   }
 }

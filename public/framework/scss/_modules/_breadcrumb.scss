@@ -1,3 +1,17 @@
 .mod_breadcrumb {
   @extend %list-flex-horizontal;
+
+  li {
+
+    &:after {
+      content: "|";
+      display: inline-block;
+      position: relative;
+      left: rem(5);
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
 }
