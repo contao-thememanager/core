@@ -4,7 +4,7 @@
   li {
 
     &:after {
-      content: "|";
+      content: var(--bc-separator);
       display: inline-block;
       position: relative;
       left: rem(5);
