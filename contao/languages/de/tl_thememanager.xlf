@@ -101,6 +101,10 @@
         <source>Boxed</source>
         <target>Box</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.table_legend">
+        <source>Table</source>
+        <target>Tabelle</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.image_text_legend">
         <source>Image-Text</source>
         <target>Bild-Text</target>
@@ -2381,6 +2385,239 @@
       <trans-unit id="tl_thememanager.boxed-border-radius.1">
         <source>Here you can set the border-radius for boxed elements.</source>
         <target>Hier können Sie den Rahmen-Radius (border-radius) für Boxed-Elemente einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.table-cell-spacing.0">
+        <source>$table-cell-spacing</source>
+        <target>$table-cell-spacing</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-spacing.1">
+        <source>Here you can set the border-spacing for table cells.</source>
+        <target>Hier können Sie den äußeren Abstand (border-spacing) für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-padding.0">
+        <source>$table-cell-padding</source>
+        <target>$table-cell-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-padding.1">
+        <source>Here you can set the padding for table cells.</source>
+        <target>Hier können Sie den Polster / inneren Abstand (padding) für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-radius.0">
+        <source>$table-cell-border-radius</source>
+        <target>$table-cell-border-radius</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-radius.1">
+        <source>Here you can set the border-radius for table cells.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-color.0">
+        <source>$table-border-color</source>
+        <target>$table-border-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-color.1">
+        <source>Here you set the border-color for tables.</source>
+        <target>Hier können Sie die Rahmen-Farbe (border-color) für Tabellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-style.0">
+        <source>$table-border-style</source>
+        <target>$table-border-style</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-style.1">
+        <source>Here you can choose the border-style for tables.</source>
+        <target>Hier können Sie den Rahmen-Stil (border-style) für Tabellen auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-color.0">
+        <source>$table-head-border-color</source>
+        <target>$table-head-border-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-color.1">
+        <source>Here you set the border-color for table headers.</source>
+        <target>Hier können Sie die Rahmen-Farbe (border-color) für Kopfzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-style.0">
+        <source>$table-head-border-style</source>
+        <target>$table-head-border-style</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-style.1">
+        <source>Here you can choose the border-style for table headers.</source>
+        <target>Hier können Sie den Rahmen-Stil (border-style) für Kopfzeilen auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-width.0">
+        <source>$table-head-border-width</source>
+        <target>$table-head-border-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-width.1">
+        <source>Here you can set the border-width for table headers.</source>
+        <target>Hier können Sie die Rahmen-Breite (border-width) für Kopfzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-color.0">
+        <source>$table-cell-border-color</source>
+        <target>$table-cell-border-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-color.1">
+        <source>Here you set the border-color for table cells.</source>
+        <target>Hier können Sie die Rahmen-Farbe (border-color) für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-style.0">
+        <source>$table-cell-border-style</source>
+        <target>$table-cell-border-style</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-style.1">
+        <source>Here you can choose the border-style for table cells.</source>
+        <target>Hier können Sie den Rahmen-Stil (border-style) für Tabellenzellen auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-width.0">
+        <source>$table-cell-border-width</source>
+        <target>$table-cell-border-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-width.1">
+        <source>Here you can set the border-width for table cells.</source>
+        <target>Hier können Sie die Rahmen-Breite (border-width) für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-side.0">
+        <source>$table-caption-side</source>
+        <target>$table-caption-side</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-side.1">
+        <source>Here you can choose whether the table caption should be above or below.</source>
+        <target>Hier können Sie wählen, ob die Beschriftung der Tabelle oben oder unten stehen soll.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-alignment.0">
+        <source>$table-caption-alignment</source>
+        <target>$table-caption-alignment</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-alignment.1">
+        <source>Here you can choose the text-alignment for table captions.</source>
+        <target>Hier können Sie die Textausrichtung für Tabellen-Beschriftungen festlegen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-padding.0">
+        <source>$table-caption-padding</source>
+        <target>$table-caption-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-padding.1">
+        <source>Here you can set the padding for table captions.</source>
+        <target>Hier können Sie den Polster / inneren Abstand (padding) für Tabellen-Beschriftungen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-color.0">
+        <source>$table-caption-color</source>
+        <target>$table-caption-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-color.1">
+        <source>Here you can set the color for table captions.</source>
+        <target>Hier können Sie die Schriftfarbe für Tabellen-Beschriftungen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-background.0">
+        <source>$table-caption-background</source>
+        <target>$table-caption-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-background.1">
+        <source>Here you can set the background-color for table captions.</source>
+        <target>Hier können Sie die Hintergrundfarbe für Tabellen-Beschriftungen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-font-size.0">
+        <source>$table-caption-font-size</source>
+        <target>$table-caption-font-size</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-font-size.1">
+        <source>Here you can set the font-size for table captions.</source>
+        <target>Hier können Sie die Schriftgröße für Tabellen-Beschriftungen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-text-align.0">
+        <source>$table-text-align</source>
+        <target>$table-text-align</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-text-align.1">
+        <source>Here you can choose the text-alignment for tables.</source>
+        <target>Hier können Sie die Textausrichtung für Tabellen festlegen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-font-weight.0">
+        <source>$table-head-font-weight</source>
+        <target>$table-head-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-font-weight.1">
+        <source>Here you can set the font-weight for table headers.</source>
+        <target>Hier können Sie die Schriftdicke für Kopfzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-font-weight.0">
+        <source>$table-body-font-weight</source>
+        <target>$table-body-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-font-weight.1">
+        <source>Here you can set the font-weight for table cells.</source>
+        <target>Hier können Sie die Schriftdicke für Tabellenzellen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-font-weight.0">
+        <source>$table-foot-font-weight</source>
+        <target>$table-foot-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-font-weight.1">
+        <source>Here you can set the font-weight for table footers.</source>
+        <target>Hier können Sie die Schriftdicke für Fußzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-color.0">
+        <source>$table-head-color</source>
+        <target>$table-head-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-color.1">
+        <source>Here you can set the color for table headers.</source>
+        <target>Hier können Sie die Schriftfarbe für Kopfzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-background.0">
+        <source>$table-head-background</source>
+        <target>$table-head-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-background.1">
+        <source>Here you can set the background-color for table headers.</source>
+        <target>Hier können Sie die Hintergrundfarbe für Kopfzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-color.0">
+        <source>$table-foot-color</source>
+        <target>$table-foot-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-color.1">
+        <source>Here you can set the color for table footers.</source>
+        <target>Hier können Sie die Schriftfarbe für Fußzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-background.0">
+        <source>$table-foot-background</source>
+        <target>$table-foot-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-background.1">
+        <source>Here you can set the background-color for table footers.</source>
+        <target>Hier können Sie die Hintergrundfarbe für Fußzeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-color.0">
+        <source>$table-body-even-color</source>
+        <target>$table-body-even-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-color.1">
+        <source>Here you can set the color for even rows.</source>
+        <target>Hier können Sie die Schriftfarbe für gerade Zeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-background.0">
+        <source>$table-body-even-background</source>
+        <target>$table-body-even-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-background.1">
+        <source>Here you can set the background-color for even rows.</source>
+        <target>Hier können Sie die Hintergrundfarbe für gerade Zeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-color.0">
+        <source>$table-body-odd-color</source>
+        <target>$table-body-odd-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-color.1">
+        <source>Here you can set the color for odd rows.</source>
+        <target>Hier können Sie die Schriftfarbe für ungerade Zeilen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-background.0">
+        <source>$table-body-odd-background</source>
+        <target>$table-body-odd-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-background.1">
+        <source>Here you can set the background-color for odd rows.</source>
+        <target>Hier können Sie die Hintergrundfarbe für ungerade Zeilen einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.image-text-behaviour-min-width.0">

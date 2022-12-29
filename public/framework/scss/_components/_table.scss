@@ -1,66 +1,82 @@
+// Conditional css if border-collapse should be cancelled out
+$tb-spc: shorthandList(standardize($table-cell-spacing));
+$tbc-br: shorthandList(standardize($table-cell-border-radius));
+
+$tcollapse: collapse;
+
+@if $tb-spc != 0 or $tbc-br != 0 {
+  $tcollapse: separate !important;
+}
+
 .c_table {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: auto hidden;
 }
 
 table {
-  border-spacing: 0;
-  text-align: left;
+  caption-side:    $table-caption-side;
 
-  min-width: 310px;
-  width: 100%;
+  width:           100%;
+  min-width:       310px;
 
-  caption-side: bottom;
-  border: 1px solid rgba(0,0,0,.2);
+  border:          $table-border-style $table-border-color;
+  border-width:    $table-border-width;
 
-  th,
-  tfoot tr {
-    background: $light;
-    font-weight: $font-weight-semibold;
-  }
+  text-align:      $table-text-align;
 
-  tbody {
-    background: var(--body-bg);
-  }
+  border-collapse: $tcollapse;
+  border-spacing:  $table-cell-spacing;
+}
 
-  caption {
-    //Styles for description
-    text-align: center;
-    color: #adadad;
-    font-size: .9em;
-    margin-top: 10px;
-  }
+caption {
+  padding:         $table-caption-padding;
 
-  td {
-    border-top: 1px solid #d9d9d9;
-    padding: 4px 20px 4px 0;
-  }
+  background:      $table-caption-background;
+  color:           $table-caption-color;
 
-  .col_last {
-    text-align: right;
-    padding-right: 0;
-  }
+  text-align:      $table-caption-alignment;
+  font-size:       $table-caption-font-size;
+}
 
-  .row_first {
+th,
+td {
+  padding:         $table-cell-padding;
 
-    td {
-      border-top: 1px solid #d9d9d9;
+  border:          $table-cell-border-style $table-cell-border-color;
+  border-width:    $table-cell-border-width;
+
+  border-radius:   $table-cell-border-radius;
+}
+
+th {
+  background:      $table-head-background;
+  color:           $table-head-color;
+
+  border:          $table-head-border-style $table-head-border-color;
+  border-width:    $table-head-border-width;
+
+  font-weight:     $table-head-font-weight;
+}
+
+tfoot {
+  background:      $table-foot-background;
+  color:           $table-foot-color;
+
+  font-weight:     $table-foot-font-weight;
+}
+
+tbody {
+  font-weight:     $table-body-font-weight;
+
+  > tr {
+
+    &:nth-child(2n) {
+      background:  $table-body-even-background;
+      color:       $table-body-even-color;
     }
-  }
 
-  tfoot {
-
-    td {
-      border-top: 1px solid #d9d9d9;
+    &:nth-child(2n+1) {
+      background:  $table-body-odd-background;
+      color:       $table-body-odd-color;
     }
-  }
-
-  th, td {
-    padding: 15px 20px;
-  }
-
-  .col_last {
-    text-align: left;
-    padding-right: initial;
   }
 }

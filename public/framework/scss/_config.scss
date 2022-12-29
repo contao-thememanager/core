@@ -390,6 +390,48 @@ $boxed-border-style:                      solid !default;
 $boxed-border-width:                      1px !default;
 $boxed-border-radius:                     0 !default;
 
+// Table
+$table-cell-spacing:                      0 !default;
+$table-cell-padding:                      1rem !default;
+$table-cell-border-radius:                0 !default;
+
+$table-border-color:                      #ccc !default;
+$table-border-style:                      solid !default;
+$table-border-width:                      0 !default;
+
+$table-head-border-color:                 #ccc !default;
+$table-head-border-style:                 solid !default;
+$table-head-border-width:                 0 0 1px !default;
+
+$table-cell-border-color:                 #ccc !default;
+$table-cell-border-style:                 solid !default;
+$table-cell-border-width:                 0 0 1px !default;
+
+$table-caption-side:                      bottom !default;
+$table-caption-alignment:                 center !default;
+$table-caption-padding:                   1rem !default;
+
+$table-caption-color:                     #ccc !default;
+$table-caption-background:                transparent !default;
+$table-caption-font-size:                 14px !default;
+
+$table-text-align:                        inherit !default;
+$table-head-font-weight:                  600 !default;
+$table-body-font-weight:                  400 !default;
+$table-foot-font-weight:                  600 !default;
+
+$table-head-color:                        var(--text-clr-invert) !default;
+$table-head-background:                   var(--clr-primary) !default;
+
+$table-foot-color:                        var(--text-clr-invert) !default;
+$table-foot-background:                   var(--clr-primary) !default;
+
+$table-body-even-color:                   var(--text-clr-base) !default;
+$table-body-even-background:              var(--clr-light) !default;
+
+$table-body-odd-color:                    var(--text-clr-base) !default;
+$table-body-odd-background:               var(--body-bg) !default;
+
 // Image text
 $image-text-behaviour-min-width:          600px !default;
 

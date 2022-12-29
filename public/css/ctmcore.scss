@@ -153,6 +153,28 @@ form#tl_thememanager {
     }
   }
 
+  // Custom trbl with only 2 fields
+  .trbl-2 {
+
+    .tl_text_trbl {
+      width: calc(50% - #{math.div($select-type-wdth, 2)});
+    }
+
+    .trbl {
+
+      &_bottom,
+      &_left {
+        pointer-events: none;
+        visibility: hidden;
+        width:   0 !important;
+        height:  0 !important;
+        padding: 0 !important;
+        margin:  0 !important;
+        border: none !important;
+      }
+    }
+  }
+
   // Widgets
   .clr { width: calc(100% - #{$field-gap}); }
   .widget { margin: 0 #{math.div($field-gap, 2)}; }
