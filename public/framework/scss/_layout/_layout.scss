@@ -85,14 +85,15 @@
   #left,
   #right {
     width: var(--lyt-col-wdth);
-    margin-right: var(--lyt-col-gtr);
   }
 
   #left {
+    margin-right: var(--lyt-col-gtr);
     &, .left-first & { order: 5; }
   }
 
   #right {
+    margin-left: var(--lyt-col-gtr);
     &, .right-first & { order: 15; }
   }
 }
