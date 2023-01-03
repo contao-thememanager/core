@@ -31,7 +31,7 @@
       @each $class, $style in  map-get($list, $k) {
         #{$class}: $style;
       }
-      #main & {font-size: var(--h6-c-fs);}
+      #main & {font-size: var(--h#{$k}-c-fs);}
     }
   }
 }
