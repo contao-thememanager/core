@@ -19,6 +19,12 @@
       <trans-unit id="tl_module.headline2Style.1">
         <source>Here you can add a class for headline 2.</source>
       </trans-unit>
+      <trans-unit id="tl_module.showFaqInfo.0">
+        <source>Show FAQ info</source>
+      </trans-unit>
+      <trans-unit id="tl_module.showFaqInfo.1">
+        <source>Show last change of FAQ question plus author information.</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,6 +4,9 @@
  *
  * (c) https://www.oveleon.de/
 */
+
+use Contao\CoreBundle\DataContainer\PaletteManipulator;
+
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
@@ -34,4 +37,16 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
     'sql'       => "varchar(2) NOT NULL default ''"
 ];
 
+$GLOBALS['TL_DCA']['tl_module']['fields']['showFaqInfo'] = [
+    'exclude'   => true,
+    'inputType' => 'checkbox',
+    'eval'      => ['tl_class'=>'w50'],
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
 $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+
+PaletteManipulator::create()
+    ->addField('showFaqInfo', 'faq_categories')
+    ->applyToPalette('faqpage', 'tl_module')
+;

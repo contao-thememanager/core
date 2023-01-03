@@ -25,6 +25,14 @@
         <source>Here you can add a class for headline 2.</source>
         <target>Hier können Sie der Überschrift 2 eine klasse hinzufügen.</target>
       </trans-unit>
+      <trans-unit id="tl_module.showFaqInfo.0">
+        <source>Show FAQ info</source>
+        <target>FAQ-Info anzeigen</target>
+      </trans-unit>
+      <trans-unit id="tl_module.showFaqInfo.1">
+        <source>Show last change of FAQ question plus author information.</source>
+        <target>Letzte Änderung der FAQ-Frage inklusive Autor-Informationen anzeigen.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

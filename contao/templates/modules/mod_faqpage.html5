@@ -54,6 +54,10 @@
                       <?php endforeach; ?>
                     </ul>
                   <?php endif; ?>
+
+                  <?php if ($this->showFaqInfo): ?>
+                    <p class="info"><?= $faq->info ?></p>
+                  <?php endif; ?>
                 </div>
 
               </div>
