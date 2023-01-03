@@ -857,7 +857,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:14:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:9:"rsce_text";i:7;s:19:"rsce_icon_text_list";i:8;s:14:"rsce_text_list";i:9;s:9:"hyperlink";i:10;s:7:"toplink";i:11;s:8:"download";i:12;s:9:"downloads";i:13;s:12:"wrapperStart";}</field>
+        <field title="contentElements">a:10:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:8:"markdown";i:5;s:9:"hyperlink";i:6;s:7:"toplink";i:7;s:8:"download";i:8;s:9:"downloads";i:9;s:12:"wrapperStart";}</field>
         <field title="extendModule"></field>
         <field title="modules">NULL</field>
         <field title="extendNews"></field>
@@ -883,7 +883,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:15:"rsce_image_text";i:1;s:20:"rsce_image_text_list";i:2;s:14:"rsce_icon_text";i:3;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:6:{i:0;s:9:"rsce_text";i:1;s:14:"rsce_text_list";i:2;s:15:"rsce_image_text";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_icon_text";i:5;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
         <field title="extendNews"></field>
