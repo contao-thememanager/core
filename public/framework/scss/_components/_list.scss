@@ -1,4 +1,6 @@
 ul, ol {
+  // Always reset count due to grid-lists
+  --i:1;
   margin: 0;
   column-count:var(--i, auto);
 }
