@@ -5,12 +5,13 @@
 }
 
 ::selection {
-  color: $selection-color;
-  background: $selection-background-color;
+  color: var(--selection-clr);
+  background: var(--selection-bg);
 }
+
 ::-moz-selection {
-  color: $selection-color;
-  background: $selection-background-color;
+  color: var(--selection-clr);
+  background: var(--selection-bg);
 }
 
 body {
