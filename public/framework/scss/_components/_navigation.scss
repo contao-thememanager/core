@@ -84,9 +84,13 @@
 
         li.nav-left {
 
-          > ul {
+          ul ul {
             right: 100%;
             left: initial;
+          }
+
+          .level_2 {
+            right: 0;
           }
         }
 
