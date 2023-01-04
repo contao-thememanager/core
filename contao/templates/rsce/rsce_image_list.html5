@@ -7,7 +7,7 @@
 
 <?php foreach ($this->list as $item): ?>
   <?php if(!$item->invisible || $previewMode): ?>
-    <div class="item <?= $item->cssClass ? ' '.$item->cssClass : '' ?>block">
+    <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
       <?php if($item->url): ?>
         <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
       <?php else: ?>
