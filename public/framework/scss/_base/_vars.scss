@@ -27,8 +27,17 @@
   --fw-semibold:#{$font-weight-semibold};
   --fw-bold:#{$font-weight-bold};
 
+  // Box
+  --box-bg:#{$boxed-background-color};
   --box-shadow:#{$box-shadow};
 
+  // Border
+  --bdr-wdth:#{$boxed-border-width};
+  --bdr-style:#{$boxed-border-style};
+  --bdr-clr:#{$boxed-border-color};
+  --bdr-r:#{$boxed-border-radius};
+
+  // Selection
   --selection-clr:#{$selection-color};
   --selection-bg:#{$selection-background-color};
 

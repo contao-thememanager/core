@@ -2,11 +2,9 @@
 .box-list .item {
 
   > .inside {
-    background-color: $boxed-background-color; // default = var(--body-bg)
-    border-color:     $boxed-border-color;
-    border-radius:    $boxed-border-radius;
-    border-style:     $boxed-border-style;
-    border-width:     $boxed-border-width;
+    background-color: var(--box-bg);
+    border:           var(--bdr-wdth) var(--bdr-style) var(--bdr-clr);
+    border-radius:    var(--bdr-r);
   }
 }
 
