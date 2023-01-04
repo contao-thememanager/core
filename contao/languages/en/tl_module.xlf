@@ -1,6 +1,9 @@
 <?xml version="1.0" ?><xliff version="1.1">
   <file datatype="php" original="contao/languages/en/tl_module.php" source-language="en">
     <body>
+      <trans-unit id="tl_module.includeCtmTemplate">
+        <source>The &lt;em&gt;%s&lt;/em&gt; template needs to be included in the page layout.</source>
+      </trans-unit>
       <trans-unit id="tl_module.headlineStyle.0">
         <source>Class (Headline)</source>
       </trans-unit>
@@ -24,6 +27,24 @@
       </trans-unit>
       <trans-unit id="tl_module.showFaqInfo.1">
         <source>Show last change of FAQ question plus author information.</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.0">
+        <source>Accordion settings</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.1">
+        <source>Here you can select the accordion behavior.</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.single_open">
+        <source>First open (single mode)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.single_closed">
+        <source>All closed (single mode)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.multi_open">
+        <source>All open (multi mode)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.faqAccordion.multi_closed">
+        <source>All closed (multi mode)</source>
       </trans-unit>
     </body>
   </file>

@@ -10,7 +10,6 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_module']['headlineStyle'],
     'exclude'   => true,
     'inputType' => 'select',
     'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
@@ -19,7 +18,6 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_module']['headline2'],
     'exclude'   => true,
     'search'    => true,
     'inputType' => 'inputUnit',
@@ -29,7 +27,6 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_module']['headline2Style'],
     'exclude'   => true,
     'inputType' => 'select',
     'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
@@ -40,13 +37,23 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
 $GLOBALS['TL_DCA']['tl_module']['fields']['showFaqInfo'] = [
     'exclude'   => true,
     'inputType' => 'checkbox',
-    'eval'      => ['tl_class'=>'w50'],
+    'eval'      => ['tl_class'=>'w50 m12'],
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+$GLOBALS['TL_DCA']['tl_module']['fields']['faqAccordion'] = [
+    'exclude'   => true,
+    'inputType' => 'select',
+    'options'   => ['single_open', 'single_closed', 'multi_open', 'multi_closed'],
+    'reference' => &$GLOBALS['TL_LANG']['tl_module']['faqAccordion'],
+    'eval'      => ['tl_class'=>'w50'],
+    'sql'       => "varchar(16) COLLATE ascii_bin NOT NULL default 'single_open'"
+];
 
 PaletteManipulator::create()
     ->addField('showFaqInfo', 'faq_categories')
     ->applyToPalette('faqpage', 'tl_module')
 ;
+
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][]   = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][]   = ['ContaoThemeManager\Core\ThemeManager', 'extendFaqAccordionSettings'];

@@ -9,6 +9,10 @@
         <source>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</source>
         <target>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager_settings.includeCtmTemplate">
+        <source>The &lt;em&gt;%s&lt;/em&gt; template needs to be included in the page layout.</source>
+        <target>Das &lt;em&gt;%s&lt;/em&gt;-Template muss im Seitenlayout eingebunden sein.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
