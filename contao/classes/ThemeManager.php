@@ -9,8 +9,11 @@
 namespace ContaoThemeManager\Core;
 
 use Contao\Backend;
+use Contao\ContentModel;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
+use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\DataContainer;
+use Contao\Input;
 use Contao\Message;
 use Contao\StringUtil;
 use Contao\System;
@@ -82,6 +85,54 @@ class ThemeManager extends Backend
                     Message::addInfo(sprintf(($GLOBALS['TL_LANG']['tl_thememanager_settings']['includeCtmTemplate'] ?? null), 'js_ctm_accordion'));
                 }
             }
+        }
+    }
+
+    /**
+     * Replaces the native js library hint
+     */
+    public function showJsLibraryHint(DataContainer $dc): void
+    {
+        if ($_POST || Input::get('act') != 'edit')
+        {
+            return;
+        }
+
+        $security = System::getContainer()->get('security.helper');
+
+        // Return if the user cannot access the layout module (see #6190)
+        if (!$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'themes') || !$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_LAYOUTS))
+        {
+            return;
+        }
+
+        $objCte = ContentModel::findByPk($dc->id);
+
+        if ($objCte === null)
+        {
+            return;
+        }
+
+        switch ($objCte->type)
+        {
+            case 'accordionSingle':
+            case 'accordionStart':
+            case 'accordionStop':
+                // Check whether info exists and replace it
+                if (Message::hasInfo())
+                {
+                    $session = System::getContainer()->get('session');
+
+                    if (!$session->isStarted())
+                    {
+                        return;
+                    }
+
+                    ($session->getFlashBag())->get('contao.BE.info');
+                }
+
+                Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['tl_thememanager_settings'], 'js_ctm_accordion'));
+                break;
         }
     }
 }

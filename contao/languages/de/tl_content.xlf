@@ -7,7 +7,7 @@
       </trans-unit>
       <trans-unit id="tl_content.headlineStyle.1">
         <source>Here you can add a class for headline.</source>
-        <target>Hier können Sie der Überschrift eine klasse hinzufügen.</target>
+        <target>Hier können Sie der Überschrift eine Klasse hinzufügen.</target>
       </trans-unit>
       <trans-unit id="tl_content.headline2.0">
         <source>Headline 2</source>
@@ -23,7 +23,23 @@
       </trans-unit>
       <trans-unit id="tl_content.headline2Style.1">
         <source>Here you can add a class for headline 2.</source>
-        <target>Hier können Sie der Überschrift 2 eine klasse hinzufügen.</target>
+        <target>Hier können Sie der Überschrift 2 eine Klasse hinzufügen.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.accordionGroup.0">
+        <source>Group</source>
+        <target>Gruppe</target>
+      </trans-unit>
+      <trans-unit id="tl_content.accordionGroup.1">
+        <source>To assign the accordion to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here.</source>
+        <target>Hier können Sie ein &lt;em&gt;data-group&lt;/em&gt;-Attribut eingeben, um dem Akkordeon eine Gruppe zuweisen zu können.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.accordionOpen.0">
+        <source>Open</source>
+        <target>Offen</target>
+      </trans-unit>
+      <trans-unit id="tl_content.accordionOpen.1">
+        <source>Keep the accordion element open by default.</source>
+        <target>Das Akkordeon-Element standardmäßig offen halten.</target>
       </trans-unit>
     </body>
   </file>
