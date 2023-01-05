@@ -444,6 +444,10 @@ $navigation-item-font-size:               $font-size-base !default;
 $navigation-item-font-weight:             $font-weight-regular !default;
 $navigation-item-padding:                 .5rem 1rem !default;
 
+$breadcrumb-separator:                    "›" !default;
+$breadcrumb-separator-color:              inherit !default;
+$breadcrumb-separator-font-family:        "ctm-icon", var(--font-family) !default;
+
 // Misc
 $box-shadow:                              0 .5rem 1rem rgba(#000, .15) !default;
 

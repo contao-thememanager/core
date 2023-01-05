@@ -1156,7 +1156,7 @@
         <source>$form-select-symbol</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol.1">
-        <source>Here you add the symbol for select fields.</source>
+        <source>Here you can add the symbol for select fields.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-font-size.0">
         <source>$form-select-symbol-font-size</source>
@@ -1194,7 +1194,7 @@
         <source>$form-checkbox-radio-symbol</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol.1">
-        <source>Here you add the symbol for checkbox and radio elements.</source>
+        <source>Here you can add the symbol for checkbox and radio elements.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-size.0">
         <source>$form-checkbox-radio-symbol-font-size</source>
@@ -2037,6 +2037,25 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.navigation-item-padding.1">
         <source>Here you can set the padding for navigation-items.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
+        <source>$breadcrumb-separator</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
+        <source>Here you can add the separator symbol for breadcrumbs.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
+        <source>$breadcrumb-separator-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
+        <source>Here you can set the color for the › breadcrumb separator.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
+        <source>$breadcrumb-separator-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
+        <source>Here you can set the font-family for the › breadcrumb separator.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.box-shadow.0">

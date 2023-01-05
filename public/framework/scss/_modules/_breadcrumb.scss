@@ -4,10 +4,15 @@
   li {
 
     &:after {
-      content: var(--bc-separator);
+      content: $breadcrumb-separator;
+      font-family: $breadcrumb-separator-font-family;
+      color: $breadcrumb-separator-color;
+
       display: inline-block;
       position: relative;
       left: rem(5);
+
+      line-height: 1;
     }
 
     &:last-child:after {

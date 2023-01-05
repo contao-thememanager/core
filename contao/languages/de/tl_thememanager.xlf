@@ -1523,8 +1523,8 @@
         <target>$form-select-symbol</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol.1">
-        <source>Here you add the symbol for select fields.</source>
-        <target>Hier können Sie das Symbol für Auswahlfelder einstellen.</target>
+        <source>Here you can add the symbol for select fields.</source>
+        <target>Hier können Sie das Zeichen für Auswahlfelder einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-font-size.0">
         <source>$form-select-symbol-font-size</source>
@@ -1532,7 +1532,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-font-size.1">
         <source>Here you can set the font-size for the ⮟ select symbol.</source>
-        <target>Hier können Sie die Schriftgröße für das ⮟ Auswählen-Symbol einstellen.</target>
+        <target>Hier können Sie die Schriftgröße für das ⮟ Auswählen-Zeichen einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-color.0">
         <source>$form-select-symbol-color</source>
@@ -1540,7 +1540,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-color.1">
         <source>Here you can set the color for the ⮟ select symbol.</source>
-        <target>Hier können Sie die Farbe für das ⮟ Auswählen-Symbol einstellen.</target>
+        <target>Hier können Sie die Farbe für das ⮟ Auswählen-Zeichen einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-font-family.0">
         <source>$form-select-symbol-font-family</source>
@@ -1548,7 +1548,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-select-symbol-font-family.1">
         <source>Here you can set the font-family for the ⮟ select symbol.</source>
-        <target>Hier können Sie die Schriftart für das ⮟ Auswählen-Symbol einstellen.</target>
+        <target>Hier können Sie die Schriftart für das ⮟ Auswählen-Zeichen einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-select-option-color.0">
@@ -1573,8 +1573,8 @@
         <target>$form-checkbox-radio-symbol</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol.1">
-        <source>Here you add the symbol for checkbox and radio elements.</source>
-        <target>Hier können Sie das Symbol für Checkbox- und Radioelemente einstellen.</target>
+        <source>Here you can add the symbol for checkbox and radio elements.</source>
+        <target>Hier können Sie das Zeichen für Checkbox- und Radioelemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-size.0">
         <source>$form-checkbox-radio-symbol-font-size</source>
@@ -1582,7 +1582,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-size.1">
         <source>Here you can set the font-size for the ✔ checked symbol. If the font-size is higher than $form-checkbox-radio-size, it won't be used.</source>
-        <target>Hier können Sie die Schriftgröße für das ✔ Ausgewählt-Symbol einstellen. Wenn die Schriftgröße größer als $form-checkbox-radio-size ist, wird sie nicht genutzt.</target>
+        <target>Hier können Sie die Schriftgröße für das ✔ Ausgewählt-Zeichen einstellen. Wenn die Schriftgröße größer als $form-checkbox-radio-size ist, wird sie nicht genutzt.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-color.0">
         <source>$form-checkbox-radio-symbol-color</source>
@@ -1590,7 +1590,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-color.1">
         <source>Here you can set the color for the ✔ checked symbol.</source>
-        <target>Hier können Sie die Farbe für das ✔ Ausgewählt-Symbol einstellen.</target>
+        <target>Hier können Sie die Farbe für das ✔ Ausgewählt-Zeichen einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-family.0">
         <source>$form-checkbox-radio-symbol-font-family</source>
@@ -1598,7 +1598,7 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-family.1">
         <source>Here you can set the font-family for the ✔ checked symbol.</source>
-        <target>Hier können Sie die Schriftart für das ✔ Ausgewählt-Symbol einstellen.</target>
+        <target>Hier können Sie die Schriftart für das ✔ Ausgewählt-Zeichen einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">
@@ -2677,6 +2677,31 @@
       <trans-unit id="tl_thememanager.navigation-item-padding.1">
         <source>Here you can set the padding for navigation-items.</source>
         <target>Hier können Sie das Polster / den inneren Abstand (padding) von Navigationselementen einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
+        <source>$breadcrumb-separator</source>
+        <target>$breadcrumb-separator</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
+        <source>Here you can add the separator symbol for breadcrumbs.</source>
+        <target>Hier können Sie das Separator-Zeichen für Navigationspfade einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
+        <source>$breadcrumb-separator-color</source>
+        <target>$breadcrumb-separator-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
+        <source>Here you can set the color for the › breadcrumb separator.</source>
+        <target>Hier können Sie die Farbe für den › Navigationspfad-Separator einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
+        <source>$breadcrumb-separator-font-family</source>
+        <target>$breadcrumb-separator-font-family</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
+        <source>Here you can set the font-family for the › breadcrumb separator.</source>
+        <target>Hier können Sie die Schriftart für den › Navigationspfad-Separator einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.box-shadow.0">
