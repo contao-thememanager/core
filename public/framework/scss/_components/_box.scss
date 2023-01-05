@@ -2,9 +2,9 @@
 .box-list .item {
 
   > .inside {
-    background-color: var(--box-bg);
-    border:           var(--bdr-wdth) var(--bdr-style) var(--bdr-clr);
-    border-radius:    var(--bdr-r);
+    background:    var(--box-bg);
+    border:        var(--bdr-wdth) var(--bdr-style) var(--bdr-clr);
+    border-radius: var(--bdr-r);
   }
 }
 
