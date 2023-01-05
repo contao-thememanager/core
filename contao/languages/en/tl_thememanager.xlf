@@ -1170,6 +1170,12 @@
       <trans-unit id="tl_thememanager.form-select-symbol-color.1">
         <source>Here you can set the color for the ⮟ select symbol.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-symbol-font-family.0">
+        <source>$form-select-symbol-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-select-symbol-font-family.1">
+        <source>Here you can set the font-family for the ⮟ select symbol.</source>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.form-select-option-color.0">
         <source>$form-select-option-color</source>
@@ -1201,6 +1207,12 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-color.1">
         <source>Here you can set the color for the ✔ checked symbol.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-family.0">
+        <source>$form-checkbox-radio-symbol-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-symbol-font-family.1">
+        <source>Here you can set the font-family for the ✔ checked symbol.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-checkbox-radio-size.0">

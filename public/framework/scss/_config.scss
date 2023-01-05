@@ -237,17 +237,19 @@ $form-label-font-weight:                  $font-weight-regular !default;
 $form-label-spacing:                      4px !default;
 
 // Form select
-$form-select-symbol:                      '\25BC' !default;
+$form-select-symbol:                      "\25BC" !default;
 $form-select-symbol-font-size:            16px !default;
 $form-select-symbol-color:                var(--clr-primary) !default;
+$form-select-symbol-font-family:          "ctm-icon", var(--font-family) !default;
 
 $form-select-option-color:                var(--text-clr-base) !default;
 $form-select-option-background:           var(--form-clr-bg) !default;
 
 // Form checkbox
-$form-checkbox-radio-symbol:              '✔' !default;
+$form-checkbox-radio-symbol:              "✔" !default;
 $form-checkbox-radio-symbol-font-size:    $font-size-base !default;
 $form-checkbox-radio-symbol-color:        $form-input-color !default;
+$form-checkbox-radio-symbol-font-family:  "ctm-icon", var(--font-family) !default;
 
 $form-checkbox-radio-size:                20px !default;
 $form-checkbox-radio-label-font-size:     $font-size-base !default;

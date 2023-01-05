@@ -158,6 +158,7 @@ textarea {
     &:before {
       display: inline-block;
       content: $form-select-symbol;
+      font-family: $form-select-symbol-font-family;
 
       position: absolute;
       bottom: #{divide(sub($form-input-height, $form-select-symbol-font-size, 'px'), 2)};
@@ -209,6 +210,7 @@ textarea {
         &:after {
           display: inline-block;
           content: $form-checkbox-radio-symbol;
+          font-family: $form-checkbox-radio-symbol-font-family;
 
           position: absolute;
           left: 1px;
