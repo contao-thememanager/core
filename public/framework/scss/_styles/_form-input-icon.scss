@@ -35,8 +35,31 @@
       margin: -#{$form-input-border-width} 0 -#{$form-input-border-width} -#{$form-input-border-width};
 
       content: var(--ico,'');
+    }
 
-      @at-root .fi-right#{&} {
+    &:hover { border-color: $form-input-border-color-hover; }
+    &:focus { border-color: $form-input-border-color-focus; }
+  }
+
+  input {
+    border: 0 none;
+    height: sub($form-input-height, multiply($form-input-border-width, 2), 'px');
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &.error {
+
+    > .input-container {
+      border-color: $form-input-border-color-error;
+    }
+  }
+
+  &.fi-right {
+
+    > .input-container {
+
+      &:before {
         order: 2;
 
         border-radius: 0;
@@ -47,23 +70,14 @@
       }
     }
 
-    &:hover { border-color: $form-input-border-color-hover; }
-    &:focus { border-color: $form-input-border-color-focus; }
-
-    @at-root .error#{&} { border-color: greenyellow; }
-    @at-root .fi-right.mandatory#{&}:after { right: 45px;}
-  }
-
-  input {
-    border: 0 none;
-    height: sub($form-input-height, multiply($form-input-border-width, 2), 'px');
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-
-    @at-root .fi-right#{&} {
+    input {
       border-radius: 0;
       border-top-left-radius: inherit;
       border-bottom-left-radius: inherit;
+    }
+
+    &.mandatory {
+      > .input-container:after { right: 45px; }
     }
   }
 }

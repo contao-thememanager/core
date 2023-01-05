@@ -9,21 +9,22 @@ li {
   padding: rem(3) 0;
 
   .c_list.flow-y & { width: calc(100% / var(--i)); }
-  @at-root .#{&} {
-    &-icon { list-style: none; padding-inline-start: rem(20); }
-    &-none { list-style: none; padding-inline-start: 0; }
-    &-clr {
-      li::marker, [class^="i-"]:before, [class*=" i-"]:before {
-        color: var(--li-clr, inherit);
-      }
-    }
-  }
 
   // Avoid column breaks for MacOS and Safari
   .c_list & {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
+  }
+}
+
+.li {
+  &-icon { list-style: none; padding-inline-start: rem(20); }
+  &-none { list-style: none; padding-inline-start: 0; }
+  &-clr {
+    li::marker, [class^="i-"]:before, [class*=" i-"]:before {
+      color: var(--li-clr, inherit);
+    }
   }
 }
 
