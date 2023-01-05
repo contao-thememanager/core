@@ -134,10 +134,10 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
       .#{$class-horizontal-article-spacing} {
 
         &-#{map-get($art-space-abbr, 2)} {
-          --#{$abbr-wdth}: #{sub(map-get($breakpoints, 'l'), $grid-gutter-width, 'px')};
+          --#{$abbr-wdth}: #{sub(map-get($breakpoints, $bp), $grid-gutter-width,'px')};
 
           &.small-gutter {
-            --#{$abbr-wdth}: #{sub(map-get($breakpoints, 'l'), $grid-gutter-small-width, 'px')};
+            --#{$abbr-wdth}: #{sub(map-get($breakpoints, $bp), $grid-gutter-small-width, 'px')};
           }
         }
 
@@ -145,6 +145,16 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
           --#{$abbr-wdth}: #{$x-spacing-large-l};
         }
       }
+
+      // Special element offset for medium left/right spacing
+      .mx-art {
+        --art-mx:calc((100vw - var(--mx-off,#{sub(map-get($breakpoints,$bp),divide($grid-gutter-width,2))})) / 2);
+        .mod_article.small-gutter & {--mx-off:#{rem(map-get($breakpoints,$bp))};}
+        .mod_article.no-gutter & {--mx-off:#{sub(map-get($breakpoints,$bp),sum($grid-gutter-width,divide($grid-gutter-width,2)))};}
+      }
+
+      .ml-art { margin-left: var(--art-mx)!important; }
+      .mr-art { margin-right: var(--art-mx)!important; }
     }
   }
 }

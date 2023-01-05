@@ -3669,7 +3669,7 @@
         <field title="alias">left-spacing-l</field>
         <field title="title">Left-spacing &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional space from the left for this component.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"ml-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"ml-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"ml-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"ml-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:6:"ml-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"ml-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"ml-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"ml-l-3";s:5:"value";s:5:"Large";}i:4;a:2:{s:3:"key";s:13:"mx-art ml-art";s:5:"value";s:22:"Article spacing medium";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -3825,7 +3825,7 @@
         <field title="alias">right-spacing-l</field>
         <field title="title">Right-spacing &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional space from the right for this component.</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mr-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mr-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mr-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mr-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:6:"mr-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mr-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mr-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mr-l-3";s:5:"value";s:5:"Large";}i:4;a:2:{s:3:"key";s:13:"mx-art mr-art";s:5:"value";s:22:"Article spacing medium";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
