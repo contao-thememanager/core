@@ -131,7 +131,7 @@ class ThemeManager extends Backend
                     ($session->getFlashBag())->get('contao.BE.info');
                 }
 
-                Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['tl_thememanager_settings'], 'js_ctm_accordion'));
+                Message::addInfo(sprintf(($GLOBALS['TL_LANG']['tl_content']['tl_thememanager_settings'] ?? null), 'js_ctm_accordion'));
                 break;
         }
     }
