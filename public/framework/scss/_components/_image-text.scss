@@ -47,8 +47,8 @@
     position: absolute;
     padding: var(--c-m);
 
-    max-height: calc(100% - var(--i-py) - var(--i-py));
-    max-width: calc(var(--it-wdth, 100%) - var(--i-px) - var(--i-px));
+    max-height: calc(100% - var(--i-py,0%) - var(--i-py,0%));
+    max-width: calc(var(--it-wdth,100%) - var(--i-px,0%) - var(--i-px,0%));
 
     overflow: hidden;
   }
@@ -73,7 +73,7 @@
   --inset-y:calc(-1 * var(--i-py));
   --inset-x:calc(-1 * var(--i-px));
 
-  .c_image { width: calc(var(--it-wdth, 100%) + calc(2 * var(--i-px) * var(--ratio-x, 1))) !important; }
+  .c_image { width: calc(var(--it-wdth,100%) + calc(2 * var(--i-px,0%) * var(--ratio-x,1))) !important; }
 }
 
 @media (min-width: $image-text-behaviour-min-width) {
