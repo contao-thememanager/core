@@ -45,9 +45,6 @@ $accordion-handle-icon-font-size: rem(20);
       font-size: $accordion-handle-icon-font-size;
       width:     $accordion-handle-icon-width;
       height:    $accordion-handle-icon-height;
-
-
-      min-height: multiply($font-size-base, $li);
     }
 
     &.open {
