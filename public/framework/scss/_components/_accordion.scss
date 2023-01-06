@@ -1,0 +1,60 @@
+$accordion-handle-icon-font-family: var(--font-family);
+$accordion-handle-icon: "+";
+$accordion-handle-icon-active: "−";
+
+$accordion-handle-icon-offset: rem(8);
+$accordion-handle-icon-width: rem(20);
+$accordion-handle-icon-height: $accordion-handle-icon-width;
+$accordion-handle-icon-font-size: rem(20);
+
+.ctm-accordion {
+
+  &-content {
+    overflow: hidden;
+    //padding-left: sum($accordion-handle-icon-width, $accordion-handle-icon-offset);
+  }
+
+  &-handle {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0;
+    min-height: $accordion-handle-icon-height;
+
+    padding-left: sum($accordion-handle-icon-width, $accordion-handle-icon-offset);
+    cursor: pointer;
+
+    &:before {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-family: $accordion-handle-icon-font-family;
+      content: $accordion-handle-icon;
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      line-height: 1;
+
+      font-weight: var(--fw-base);
+      font-size: $accordion-handle-icon-font-size;
+      width:     $accordion-handle-icon-width;
+      height:    $accordion-handle-icon-height;
+
+
+      min-height: multiply($font-size-base, $li);
+    }
+
+    &.open {
+
+      &:before {
+        content: $accordion-handle-icon-active;
+      }
+    }
+  }
+}

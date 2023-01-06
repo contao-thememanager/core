@@ -8,7 +8,7 @@ Encore
     .setOutputPath('./public/assets/dist/')
     .setPublicPath('/public/assets/dist/')
     //.setManifestKeyPrefix('files/theme/build/')
-    .addEntry('accordion', './public/assets/accordion/accordion.js')
+    .addEntry('accordion', './public/assets/accordion/index.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     //.splitEntryChunks()

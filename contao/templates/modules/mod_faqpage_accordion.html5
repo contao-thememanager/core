@@ -33,11 +33,7 @@
             <div class="faq layout_page item <?= $faq->class ?>">
 
               <div class="inside">
-
-                <div class="toggler">
-                  <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?> id="<?= $faq->alias ?>"><?= $faq->question ?></<?= $this->hl2 ?>>
-                <span class="handle-icon"></span>
-                </div>
+                <<?= $this->hl2 ?> class="toggler<?= $this->headline2Style?' '.$this->headline2Style:''?>" id="<?= $faq->alias ?>"><?= $faq->question ?></<?= $this->hl2 ?>>
 
                 <div class="content">
                   <?php if ($faq->addImage): ?>
