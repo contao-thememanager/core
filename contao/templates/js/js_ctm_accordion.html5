@@ -1,0 +1,9 @@
+<?php
+    $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/contaothememanagercore/assets/dist/accordion.js';
+?>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new Accordion()
+    })
+</script>

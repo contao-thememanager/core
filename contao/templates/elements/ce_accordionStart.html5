@@ -1,0 +1,9 @@
+
+<section class="<?= $this->class ?> ce_accordion block" data-accordion-group="<?= $this->accordionGroup ?>"  data-accordion-open="<?= $this->accordionOpen ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+  <div class="<?= $this->toggler ?>"<?php if ($this->headlineStyle): ?> style="<?= $this->headlineStyle ?>"<?php endif; ?>>
+    <?= $this->headline ?>
+  </div>
+
+  <div class="<?= $this->accordion ?>">
+    <div>

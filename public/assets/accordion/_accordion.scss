@@ -1,0 +1,28 @@
+/**
+ * ToDo: Move into the framework
+ */
+.ctm-accordion-content{
+  overflow: hidden;
+}
+
+.ctm-accordion-handle{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:before{
+    display: inline-block;
+    content: "✕";
+
+    transform-origin: center center;
+    transform: rotateZ(-45deg);
+    transition: transform .2s;
+
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  &.open:before{
+    transform: rotateZ(0deg);
+  }
+}
