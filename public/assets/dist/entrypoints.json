@@ -1,0 +1,9 @@
+{
+  "entrypoints": {
+    "accordion": {
+      "js": [
+        "/public/assets/dist/accordion.js"
+      ]
+    }
+  }
+}
