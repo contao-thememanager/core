@@ -1,60 +1,61 @@
-$accordion-handle-icon-font-family: var(--font-family);
-$accordion-handle-icon: "+";
-$accordion-handle-icon-active: "−";
+$accordion-handle-icon-font-family:   var(--font-family) !default;
+$accordion-handle-icon:               "+" !default;
+$accordion-handle-icon-active:        "−" !default;
 
-$accordion-handle-icon-offset: rem(8);
-$accordion-handle-icon-width: rem(20);
-$accordion-handle-icon-height: $accordion-handle-icon-width;
-$accordion-handle-icon-font-size: rem(20);
+$accordion-handle-icon-font-size:     rem(30) !default;
+$accordion-handle-icon-offset:        rem(8) !default;
 
-.acc-content > .inside {
+$accordion-handle-icon-width:         auto !default;
+$accordion-handle-icon-height:        auto !default;
+$accordion-handle-icon-line-height:   1 !default;
+$accordion-handle-icon-font-weight:   var(--fw-base) !default;
 
+$accordion-handle-icon-direction:     left;
+
+@mixin accordion-handle-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $accordion-handle-icon-font-family;
+  content:     var(--a-ico,'');
+
+  line-height: $accordion-handle-icon-line-height;
+
+  font-size:   $accordion-handle-icon-font-size;
+  font-weight: $accordion-handle-icon-font-weight;
+  min-width:   $accordion-handle-icon-width;
+  height:      $accordion-handle-icon-height;
 }
 
+// Inner container for spacing and margin
+//.acc-content > .inside {
+//
+//}
+
 .ctm-accordion {
-
-  &-content {
-    overflow: hidden;
-    //padding-left: sum($accordion-handle-icon-width, $accordion-handle-icon-offset);
-  }
-
+  &-content { overflow: hidden; }
   &-handle {
-    position: relative;
+    --a-ico:'#{$accordion-handle-icon}';
+    &.open {--a-ico:'#{$accordion-handle-icon-active}';}
 
     display: flex;
     align-items: center;
+    column-gap: $accordion-handle-icon-offset;
 
     margin-bottom: 0;
-    min-height: $accordion-handle-icon-height;
-
-    padding-left: sum($accordion-handle-icon-width, $accordion-handle-icon-offset);
     cursor: pointer;
 
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      font-family: $accordion-handle-icon-font-family;
-      content: $accordion-handle-icon;
-
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-
-      line-height: 1;
-
-      font-weight: var(--fw-base);
-      font-size: $accordion-handle-icon-font-size;
-      width:     $accordion-handle-icon-width;
-      height:    $accordion-handle-icon-height;
+    @if $accordion-handle-icon-direction == left {
+      &:before { @include accordion-handle-icon;}
     }
-
-    &.open {
-
-      &:before {
-        content: $accordion-handle-icon-active;
+    @else if $accordion-handle-icon-direction == right {
+      &:after { @include accordion-handle-icon;
+        margin-left: auto;
       }
     }
+
+    // Reset margin from any element within handle
+    * { margin-bottom: 0; }
   }
 }
