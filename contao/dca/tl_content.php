@@ -28,7 +28,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['headline2'] = [
     'inputType' => 'inputUnit',
     'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'],
     'eval'      => ['tl_class'=>'w50 clr'],
-    'sql'       => "mediumtext NULL"
+    'sql'       => "mediumtext NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
 ];
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['headline2Style'] = [
