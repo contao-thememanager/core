@@ -41,7 +41,7 @@ export default class Accordion
     options = {
         selectors: [
             '.ce_accordion',
-            '.mod_faqpage'
+            '.ctm_accordion'
         ],
         duration: 300,
         easing: Easing.easeOutQuad,
