@@ -39,10 +39,7 @@ export default class Accordion
     accordions = []
     schemes = []
     options = {
-        selectors: [
-            '.ce_accordion',
-            '.ctm_accordion'
-        ],
+        selectors: ['.ctm_accordion'],
         duration: 300,
         easing: Easing.easeOutQuad,
         cssClasses: {
