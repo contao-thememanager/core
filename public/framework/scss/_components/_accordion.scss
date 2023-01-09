@@ -7,6 +7,10 @@ $accordion-handle-icon-width: rem(20);
 $accordion-handle-icon-height: $accordion-handle-icon-width;
 $accordion-handle-icon-font-size: rem(20);
 
+.acc-content > .inside {
+
+}
+
 .ctm-accordion {
 
   &-content {
@@ -27,7 +31,6 @@ $accordion-handle-icon-font-size: rem(20);
     cursor: pointer;
 
     &:before {
-
       position: absolute;
       top: 0;
       left: 0;

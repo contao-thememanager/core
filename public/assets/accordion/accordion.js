@@ -120,7 +120,7 @@ export default class Accordion
 
             const scheme = (acc, collapsed) => {
                 // Get collapsable content
-                const content = acc.querySelector('.accordion > div')
+                const content = acc.querySelector('.accordion')
 
                 // Check previous state; Should one be given, take this one, because then it is an update
                 const isCollapsed = typeof content?.accordion?.prevCollapsed !== 'undefined' ? content.accordion.prevCollapsed : collapsed
@@ -408,7 +408,12 @@ export default class Accordion
      */
     getActualHeight(element)
     {
-        return element.clientHeight + 'px'
+        // set temporary border to get real height
+        element.style.border = '.02px solid transparent'
+        const elHeight = element.clientHeight + 'px'
+        element.style.border = null
+
+        return elHeight
     }
 
     /**
