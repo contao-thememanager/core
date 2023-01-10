@@ -79,6 +79,9 @@
       <trans-unit id="tl_thememanager.table_legend">
         <source>Table</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.accordion_legend">
+        <source>Accordion</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.image_text_legend">
         <source>Image-Text</source>
       </trans-unit>
@@ -2004,6 +2007,115 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.table-body-odd-background.1">
         <source>Here you can set the background-color for odd rows.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.accordion-icon.0">
+        <source>$accordion-icon</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon.1">
+        <source>Here you can add the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-active.0">
+        <source>$accordion-icon-active</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-active.1">
+        <source>Here you can add the accordion toggle icon (active).</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-size.0">
+        <source>$accordion-icon-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-size.1">
+        <source>Here you can set the font-size for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-family.0">
+        <source>$accordion-icon-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-family.1">
+        <source>Here you can set the font-family for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-line-height.0">
+        <source>$accordion-icon-line-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-line-height.1">
+        <source>Here you can set the line-height for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-weight.0">
+        <source>$accordion-icon-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-font-weight.1">
+        <source>Here you can set the font-weight for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-width.0">
+        <source>$accordion-icon-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-width.1">
+        <source>Here you can set the width for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-height.0">
+        <source>$accordion-icon-height</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-height.1">
+        <source>Here you can set the height for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-offset.0">
+        <source>$accordion-icon-offset</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-offset.1">
+        <source>Here you can set the margin between labels and the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-side.0">
+        <source>$accordion-icon-side</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-side.1">
+        <source>Here you can choose whether the accordion toggle icon should be left or right.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-radius.0">
+        <source>$accordion-icon-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-radius.1">
+        <source>Here you can set the border-radius for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-width.0">
+        <source>$accordion-icon-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-width.1">
+        <source>Here you can set the border-width for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-style.0">
+        <source>$accordion-icon-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-style.1">
+        <source>Here you can choose the border-style for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-color.0">
+        <source>$accordion-icon-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-border-color.1">
+        <source>Here you set the border-color for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-background.0">
+        <source>$accordion-icon-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-background.1">
+        <source>Here you can set the background-color for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-color.0">
+        <source>$accordion-icon-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-icon-color.1">
+        <source>Here you can set the text color for the accordion toggle icon.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-content-margin.0">
+        <source>$accordion-content-margin</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-content-margin.1">
+        <source>Here you can set the margin for the accordion content.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-content-padding.0">
+        <source>$accordion-content-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.accordion-content-padding.1">
+        <source>Here you can set the padding for the accordion content.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.image-text-behaviour-min-width.0">
