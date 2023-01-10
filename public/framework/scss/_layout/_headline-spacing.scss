@@ -3,7 +3,8 @@
 }
 
 .ce_headline {
-  padding-bottom: 0 !important;
+  // Remove row gap from headlines for proper layout above elements
+  margin-bottom: calc(var(--v-gap) * -1);
 
   &:last-child {
 

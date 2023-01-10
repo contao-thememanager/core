@@ -6,7 +6,8 @@
 
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
-        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+        <div class="ce_headline">
+          <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
       <?php endif; ?>
 
       <?php if ($this->headline): ?>
@@ -18,6 +19,7 @@
       <?php endif; ?>
 
       <?php if ($this->headline || $this->headline2): ?>
+          </div>
         </div>
       <?php endif; ?>
     <?php $this->endblock(); ?>
