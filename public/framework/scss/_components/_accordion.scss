@@ -1,55 +1,47 @@
-$accordion-handle-icon-font-family:   var(--font-family) !default;
-$accordion-handle-icon:               "+" !default;
-$accordion-handle-icon-active:        "−" !default;
-
-$accordion-handle-icon-font-size:     rem(30) !default;
-$accordion-handle-icon-offset:        rem(8) !default;
-
-$accordion-handle-icon-width:         auto !default;
-$accordion-handle-icon-height:        auto !default;
-$accordion-handle-icon-line-height:   1 !default;
-$accordion-handle-icon-font-weight:   var(--fw-base) !default;
-
-$accordion-handle-icon-direction:     left;
-
 @mixin accordion-handle-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  font-family: $accordion-handle-icon-font-family;
-  content:     var(--a-ico,'');
+  font-family:    $accordion-icon-font-family;
+  content:        var(--a-ico,'');
+  line-height:    $accordion-icon-line-height;
 
-  line-height: $accordion-handle-icon-line-height;
+  font-size:      $accordion-icon-font-size;
+  font-weight:    $accordion-icon-font-weight;
+  min-width:      $accordion-icon-width;
+  height:         $accordion-icon-height;
 
-  font-size:   $accordion-handle-icon-font-size;
-  font-weight: $accordion-handle-icon-font-weight;
-  min-width:   $accordion-handle-icon-width;
-  height:      $accordion-handle-icon-height;
+  color:          var(--a-ico-clr);
+  background:     var(--a-ico-bg);
+
+  border:         $accordion-icon-border-width $accordion-icon-border-style var(--a-ico-clr-border);
+  border-radius:  $accordion-icon-border-radius;
 }
 
 // Inner container for spacing and margin
-//.acc-content > .inside {
-//
-//}
+.acc-content > .inside {
+  margin: $accordion-content-margin;
+  padding: $accordion-content-padding;
+}
 
 .ctm-accordion {
   &-content { overflow: hidden; }
   &-handle {
-    --a-ico:'#{$accordion-handle-icon}';
-    &.open {--a-ico:'#{$accordion-handle-icon-active}';}
+    --a-ico:'#{$accordion-icon}';
+    &.open {--a-ico:'#{$accordion-icon-active}';}
 
     display: flex;
     align-items: center;
-    column-gap: $accordion-handle-icon-offset;
+    column-gap: $accordion-icon-offset;
 
     margin-bottom: 0;
     cursor: pointer;
 
-    @if $accordion-handle-icon-direction == left {
+    @if $accordion-icon-side == left {
       &:before { @include accordion-handle-icon;}
     }
-    @else if $accordion-handle-icon-direction == right {
+    @else if $accordion-icon-side == right {
       &:after { @include accordion-handle-icon;
         margin-left: auto;
       }

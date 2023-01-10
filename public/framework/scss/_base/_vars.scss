@@ -145,6 +145,11 @@
 
   --cbx-bdr-clr:#{$form-checkbox-radio-border-color};
   --cbx-bdr-clr-hvr:#{$form-checkbox-radio-border-color-hover};
+
+  // Accordion
+  --a-ico-clr:#{$accordion-icon-color};
+  --a-ico-bg:#{$accordion-icon-background};
+  --a-ico-clr-border:#{$accordion-icon-border-color};
 }
 
 // Typography
