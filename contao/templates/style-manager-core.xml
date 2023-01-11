@@ -87,6 +87,32 @@
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
+      <child alias="headerBehaviour">
+        <field title="id">600</field>
+        <field title="pid">2</field>
+        <field title="sorting">2</field>
+        <field title="tstamp">1580721886</field>
+        <field title="alias">headerPosition</field>
+        <field title="title">Header behaviour</field>
+        <field title="description">Define here how the page header should behave.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:5:"fixed";s:5:"value";s:5:"Fixed";}i:1;a:2:{s:3:"key";s:12:"fixed undock";s:5:"value";s:8:"Undocked";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen"></field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
       <child alias="boxed">
         <field title="id">5</field>
         <field title="pid">2</field>

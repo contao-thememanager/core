@@ -2798,6 +2798,15 @@
         <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von Bild-Text-Layouts einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.header-bg.0">
+        <source>$header-bg</source>
+        <target>$header-bg</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-bg.1">
+        <source>Here you can set the background-color for the header.</source>
+        <target>Hier können Sie die Hintergrundfarbe des Headers einstellen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.header-height.0">
         <source>$header-height</source>
         <target>$header-height</target>

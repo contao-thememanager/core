@@ -2128,6 +2128,13 @@
         <source>Here you can set the minimum width for the image-text behaviour.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.header-bg.0">
+        <source>$header-bg</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-bg.1">
+        <source>Here you can set the background-color for the header.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.header-height.0">
         <source>$header-height</source>
       </trans-unit>
