@@ -442,7 +442,7 @@ $accordion-icon-font-size:                1.875rem !default;
 $accordion-icon-font-family:              var(--font-family) !default;
 
 $accordion-icon-line-height:              1 !default;
-$accordion-icon-font-weight:              var(--fw-base) !default;
+$accordion-icon-font-weight:              $font-weight-regular !default;
 
 $accordion-icon-width:                    auto !default;
 $accordion-icon-height:                   auto !default;

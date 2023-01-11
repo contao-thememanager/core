@@ -2198,10 +2198,10 @@
             'eval'                    => ['placeholder'=>'1', 'rgxp'=>'digit', 'maxlength'=>32, 'tl_class'=>'w50 clr'],
         ],
         'accordion-icon-font-weight' => [
-            'default'                 => 'var(--fw-base)',
+            'default'                 => '$font-weight-regular',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['accordion-icon-font-weight'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--fw-base)', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$font-weight-regular', 'maxlength'=>32, 'tl_class'=>'w50'],
         ],
 
         'accordion-icon-width' => [
