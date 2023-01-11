@@ -41,6 +41,14 @@
   --selection-clr:#{$selection-color};
   --selection-bg:#{$selection-background-color};
 
+  // Breakpoints
+  @each $bp in map-keys($breakpoints) {
+    --bp-#{$bp}: #{map-get($breakpoints,$bp)};
+  }
+
+  // Header
+  --nav-bhr:#{$navigation-behaviour-min-width};
+
   // Grid
   --columns:#{$grid-columns};
   --gtr:#{$grid-gutter-width};
