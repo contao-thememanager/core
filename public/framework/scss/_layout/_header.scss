@@ -30,12 +30,12 @@ body {
 
   &.fixed {
     header { position: fixed; top: 0; }
-    &.undock {padding-top: var(--hdr-hght,#{$header-height});}
+    &.undock {padding-top: var(--hdr-hght);}
   }
 }
 
 header {
-  height: var(--hdr-hght,#{$header-height});
+  height: var(--hdr-hght);
   background: var(--header-bg);
 
   width: 100%;
