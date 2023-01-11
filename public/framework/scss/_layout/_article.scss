@@ -1,0 +1,30 @@
+// Prototype
+
+.mod_article {
+  --art-hght:auto;
+
+  > .inside {
+    height: var(--art-hght)
+  }
+}
+
+[class*=a-vh-] {
+  --dock:0px;
+  --art-hght:calc(var(--a-vh) - var(--dock));
+}
+
+.h-hght {
+  --dock: var(--hdr-hght);
+}
+
+.a-vh-100 {
+  --a-vh: 100vh;
+}
+
+.a-vh-50 {
+  --a-vh: 50vh;
+}
+
+.a-vh-30 {
+  --a-vh: 30vh;
+}
