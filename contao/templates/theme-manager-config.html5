@@ -892,23 +892,23 @@
         'layout-column-small-break' => [
             'default'                 => 's',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-small-break'],
-            'inputType'               => 'text',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'s', 'maxlength'=>2, 'tl_class'=>'w33 clr'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33 clr'],
         ],
         'layout-column-medium-break' => [
             'default'                 => 'm',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-medium-break'],
-            'inputType'               => 'text',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'m', 'maxlength'=>2, 'tl_class'=>'w33'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
         ],
         'layout-column-large-break' => [
             'default'                 => 'l',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-large-break'],
-            'inputType'               => 'text',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'l', 'maxlength'=>2, 'tl_class'=>'w33'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
         ],
 
         'layout-column-width-small' => [

@@ -45,6 +45,15 @@ form#tl_thememanager {
         input { border-radius: 0 0 $field-br 0; border-bottom-width: 1px; }
         td:first-of-type input { border-radius: 0 0 0 $field-br; }
       }
+
+      tr:only-child {
+        input { border-radius: 0 $field-br $field-br 0;}
+        td:first-of-type input { border-radius: $field-br 0 0 $field-br; }
+      }
+
+      tr td:first-child {
+        pointer-events: none;
+      }
     }
 
     td {
@@ -55,12 +64,9 @@ form#tl_thememanager {
         input { border-radius: 0; border-right-width: 0;}
       }
 
-      // Offset for action buttons
-      &:last-of-type { padding-left: 5px; }
+      // Hide all options
+      &:last-of-type { display: none; }
     }
-
-    // Hide drag handle for breakpoints
-    .drag-handle { display: none; }
   }
 
   // Colorpicker
