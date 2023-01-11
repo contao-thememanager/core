@@ -113,6 +113,10 @@
         <source>Image-Text</source>
         <target>Bild-Text</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.header_legend">
+        <source>Header</source>
+        <target>Header</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.nav_legend">
         <source>Navigation</source>
         <target>Navigation</target>
@@ -2792,6 +2796,81 @@
       <trans-unit id="tl_thememanager.image-text-behaviour-min-width.1">
         <source>Here you can set the minimum width for the image-text behaviour.</source>
         <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von Bild-Text-Layouts einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-height.0">
+        <source>$header-height</source>
+        <target>$header-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height.1">
+        <source>Here you can set the header height.</source>
+        <target>Hier können Sie die Höhe des Headers einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xs.0">
+        <source>$header-height-xs</source>
+        <target>$header-height-xs</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xs.1">
+        <source>Here you can set the header height for the 'xs'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xs' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-s.0">
+        <source>$header-height-s</source>
+        <target>$header-height-s</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-s.1">
+        <source>Here you can set the header height for the 's'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 's' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-m.0">
+        <source>$header-height-m</source>
+        <target>$header-height-m</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-m.1">
+        <source>Here you can set the header height for the 'm'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'm' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-l.0">
+        <source>$header-height-l</source>
+        <target>$header-height-l</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-l.1">
+        <source>Here you can set the header height for the 'l'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'l' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xl.0">
+        <source>$header-height-xl</source>
+        <target>$header-height-xl</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xl.1">
+        <source>Here you can set the header height for the 'xl'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xl' einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-padding.0">
+        <source>$header-padding</source>
+        <target>$header-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-padding.1">
+        <source>Here you can set the padding for the header.</source>
+        <target>Hier können Sie das Polster / den inneren Abstand (padding) für den Header einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-alignment-vertical.0">
+        <source>$header-alignment-vertical</source>
+        <target>$header-alignment-vertical</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-vertical.1">
+        <source>Here you can select the vertical alignment of the header elements.</source>
+        <target>Hier können Sie die vertikale Anordnung der Header-Elemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.0">
+        <source>$header-alignment-horizontal</source>
+        <target>$header-alignment-horizontal</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.1">
+        <source>Here you can select the horizontal alignment of the header elements.</source>
+        <target>Hier können Sie die horizontale Anordnung der Header-Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
