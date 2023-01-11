@@ -1,0 +1,47 @@
+$header-bps: (
+  0:  $header-height,
+  xs: $header-height-xs,
+  s:  $header-height-s,
+  m:  $header-height-m,
+  l:  $header-height-l,
+  xl: $header-height-xl,
+);
+
+:root {
+  @each $bp, $height in $header-bps {
+    $i: map-get((1:1,2:2,3:3,4:4,5:5,6:6),index($header-bps, $bp $height));
+
+    @if $bp == 0 {
+      --hdr-#{$bp}:#{$height};
+    } @else {
+      --hdr-#{$bp}:#{$height};
+
+      // Only create media-query when height has changed between breakpoints
+      @if #{nth(nth($header-bps,$i - 1),2)} != #{$height} {
+        @include media-breakpoint($bp) {
+          --hdr-hght:var(--hdr-#{$bp});
+        }
+      }
+    }
+  }
+}
+
+body {
+  padding-top: var(--hdr-hght,#{$header-height});
+}
+
+header {
+  height: var(--hdr-hght,#{$header-height});
+
+  width: 100%;
+  z-index: 99;
+
+  > .inside {
+    display: flex;
+    align-items: $header-alignment-vertical;
+    justify-content: $header-alignment-horizontal;
+
+    height: 100%;
+    padding: $header-padding;
+  }
+}
