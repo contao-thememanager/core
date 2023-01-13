@@ -31,6 +31,7 @@ $GLOBALS['TC_SOURCES'] = [
 ];
 
 $GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\IconGenerator', 'generateIconSet'];
+$GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\BackgroundImageGenerator', 'generateBackgroundSet'];
 
 // Add content elements and components group
 ArrayUtil::arrayInsert($GLOBALS['TL_CTE'], 2, [
