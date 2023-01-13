@@ -223,7 +223,7 @@ class IconGenerator
             return $xmlPath.'.xml';
         }
 
-        $this->compiler->msg('Could not ' . $xmlPath . '.xml', FileCompiler::MSG_ERROR);
+        $this->compiler->msg('Could not create ' . $xmlPath . '.xml', FileCompiler::MSG_ERROR);
         return false;
     }
 
