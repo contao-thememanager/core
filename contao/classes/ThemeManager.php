@@ -135,4 +135,27 @@ class ThemeManager extends Backend
                 break;
         }
     }
+
+    /**
+     * Adjust the file palettes
+     */
+    public function adjustCustomFilePalettes(DataContainer $dc)
+    {
+        if (!$dc->id)
+        {
+            return;
+        }
+
+        $projectDir = System::getContainer()->getParameter('kernel.project_dir');
+        $blnIsFolder = is_dir($projectDir . '/' . $dc->id);
+
+        // Only show the background option for images
+        if ($blnIsFolder || !in_array(strtolower(substr($dc->id, strrpos($dc->id, '.') + 1)), System::getContainer()->getParameter('contao.image.valid_extensions')))
+        {
+            PaletteManipulator::create()
+                ->removeField(['ctmBackgroundImage'])
+                ->applyToPalette('default', $dc->table)
+            ;
+        }
+    }
 }
