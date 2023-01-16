@@ -1,0 +1,34 @@
+[class*="bgi-"] {
+  --bgi:none;
+  --bgia:scroll;
+  --bgix:50%;
+  --bgiy:50%;
+  --bgir:no-repeat;
+  --bgis:cover;
+  background-image:      var(--bgi);
+  background-attachment: var(--bgia);
+  background-position:   var(--bgix) var(--bgiy);
+  background-repeat:     var(--bgir);
+  background-size:       var(--bgis);
+}
+
+.bg {
+  // Attachments | default: 'scroll'
+  &--fixed   {--bgia:fixed;}
+  &--local   {--bgia:local;}
+
+  // Position horizontal | default: '50%'
+  &--left    {--bgix:left;}
+  &--right   {--bgix:right;}
+
+  // Position vertical | default: '50%'
+  &--top     {--bgiy:top;}
+  &--btm     {--bgiy:bottom;}
+
+  // Background repeat | default: 'no-repeat'
+  &--repeat  {--bgir:repeat;}
+
+  // Background size | default: 'cover'
+  &--auto    {--bgis:auto;}
+  &--contain {--bgis:contain;}
+}
