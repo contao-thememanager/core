@@ -30,6 +30,8 @@ $GLOBALS['TC_SOURCES'] = [
     ]
 ];
 
+$GLOBALS['TC_HOOKS']['compilerParseConfig'][] = ['ContaoThemeManager\Core\ThemeManager', 'onParseThemeManagerConfiguration'];
+
 $GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\IconGenerator', 'generateIconSet'];
 $GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\BackgroundImageGenerator', 'generateBackgroundSet'];
 

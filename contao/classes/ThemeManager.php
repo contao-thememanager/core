@@ -20,6 +20,9 @@ use Contao\System;
 
 class ThemeManager extends Backend
 {
+    const PATH_SM_CONFIG = 'templates/style-manager-config';
+    const PREFIX_VH = 'a-vh-';
+
     public function __construct()
     {
         parent::__construct();
@@ -157,5 +160,57 @@ class ThemeManager extends Backend
                 ->applyToPalette('default', $dc->table)
             ;
         }
+    }
+
+    /**
+     * Method that can be used to read and add logic whilst the ThemeManager configuration is parsed when compiling
+     */
+    public function onParseThemeManagerConfiguration($context, $configVars): void
+    {
+        if (is_array($configVars))
+        {
+            // Generate article vheight xml
+            if (null !== ($articleHeight = $this->generateArticleHeight($configVars)))
+            {
+                [$objArchive, $objChild] = $articleHeight;
+
+                // Create xml file
+                StyleManagerXMLCreator::createFile($objArchive, [$objChild], self::PATH_SM_CONFIG);
+            }
+        }
+    }
+
+    /**
+     * Gets the different options from the ThemeManager configuration
+     * and generates a style manager xml for article heights
+     */
+    private function generateArticleHeight($configVars): ?array
+    {
+        if (
+            !array_key_exists('article-options-vheight', $configVars) ||
+            !is_string($vHeightOptions = $configVars['article-options-vheight']) ||
+            !strlen($vHeightOptions)
+        )
+        {
+            return null;
+        }
+
+        $vHeightOptions = explode(',', $vHeightOptions);
+        $options = [];
+
+        foreach ($vHeightOptions as $option)
+        {
+            $options[] = [
+                'key' => self::PREFIX_VH.$option,
+                'value' => $option . 'vh'
+            ];
+        }
+
+        $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(30, 'Article-Height', 'articleHeight', 'Layout', 770);
+        $objHeights = StyleManagerXMLCreator::createStyleManagerChild(
+            30,'Height','height',$options,['extendArticle' => 1],
+            ['sorting' =>32,'description'=>'Here you can choose the article height.','chosen'=>1,'blankOption'=>1]);
+
+        return [$objArchive, $objHeights];
     }
 }

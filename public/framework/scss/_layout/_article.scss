@@ -4,7 +4,17 @@
   --art-hght:auto;
 
   > .inside {
-    height: var(--art-hght)
+    min-height: var(--art-hght)
+  }
+}
+
+@media (min-height: $article-min-vheight) {
+
+  .mod_article {
+
+    > .inside {
+      height: var(--art-hght)
+    }
   }
 }
 
@@ -17,14 +27,9 @@
   --dock: var(--hdr-hght);
 }
 
-.a-vh-100 {
-  --a-vh: 100vh;
-}
+@if type-of($article-options-vheight) == list {
 
-.a-vh-50 {
-  --a-vh: 50vh;
-}
-
-.a-vh-30 {
-  --a-vh: 30vh;
+  @each $height in $article-options-vheight {
+    .a-vh-#{$height} {--a-vh:#{$height}vh;}
+  }
 }

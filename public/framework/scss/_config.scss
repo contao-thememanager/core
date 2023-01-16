@@ -144,6 +144,9 @@ $article-spacing-m-large:                 5.9375rem !default;
 $article-spacing-l-large:                 9.375rem !default;
 $article-spacing-xl-large:                $article-spacing-l-large !default;
 
+$article-min-vheight:                     680px !default;
+$article-options-vheight:                 50,75,100 !default;
+
 // Links
 $link-font-weight:                        $font-weight-base !default;
 
