@@ -1018,6 +1018,23 @@
         <target>Hier können Sie den großen vertikalen Polster (padding) für Artikel auf sehr großen Geräten einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-min-vheight.0">
+        <source>$article-min-vheight</source>
+        <target>$article-min-vheight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-min-vheight.1">
+        <source>Here you can enter the minimum device height in px at which the height of articles should be set. Below this height, a minimum height is always set.</source>
+        <target>Hier können Sie die minimale Gerätehöhe in px eintragen, bei welcher die Höhe von Artikeln festgesetzt werden soll. Unterhalb dieser Höhe wird immer eine Mindesthöhe gesetzt.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-vheight.0">
+        <source>$article-options-vheight</source>
+        <target>$article-options-vheight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-vheight.1">
+        <source>Here you can enter comma-separated vh-options that will be available within article-height.</source>
+        <target>Hier können Sie durch Komma getrennte vh-Optionen eingeben, die innerhalb der Artikelhöhe verfügbar sein sollen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.link-font-weight.0">
         <source>$link-font-weight</source>
         <target>$link-font-weight</target>

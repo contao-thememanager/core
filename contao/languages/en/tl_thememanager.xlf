@@ -772,6 +772,19 @@
         <source>Here you can set the large vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-min-vheight.0">
+        <source>$article-min-vheight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-min-vheight.1">
+        <source>Here you can enter the minimum device height in px at which the height of articles should be set. Below this height, a minimum height is always set.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-vheight.0">
+        <source>$article-options-vheight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-vheight.1">
+        <source>Here you can enter comma-separated vh-options that will be available within article-height.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.link-font-weight.0">
         <source>$link-font-weight</source>
       </trans-unit>
