@@ -19,19 +19,13 @@ class BackgroundImageGenerator
     protected $compiler = null;
 
     const FIELD_BG = 'ctmBackgroundImage';
+    const PATH_BG = 'assets/ctmcore/css/_background.css';
     const PREFIX_BGK = 'bgi-';
     const PREFIX_BGV = 'BG-';
 
     const STRUCTURE_BG = [
-        'elements' => [
-            'extendArticle' => 1
-        ],
-        'options' => [
-            'sorting' => 140,
-            'description' => 'Defines the background image for this article.',
-            'chosen' => 1,
-            'blankOption' => 1
-        ]
+        'elements' => [],
+        'options' => []
     ];
 
     /**
@@ -43,20 +37,20 @@ class BackgroundImageGenerator
         $this->compiler->msg('Backgrounds', FileCompiler::MSG_HEAD);
 
         // Get backgrounds
-        if (!empty($backgrounds = $this->getBackgroundImages()))
-        {
-            $this->createBackgroundXML($backgrounds);
+        $backgrounds = $this->getBackgroundImages();
 
-            // Generate css for frontend (theme compiler)
-            if ($filePath = $this->generateBackgroundCSS($backgrounds))
-            {
-                $objCompiler->add($filePath);
-                $this->compiler->msg('Created background images: '. $filePath , FileCompiler::MSG_SUCCESS);
-            }
+        // Generate css for frontend (theme compiler)
+        $this->createBackgroundXML($backgrounds);
+        $objCompiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ?: '');
+
+        if (empty($backgrounds))
+        {
+            $this->compiler->msg('Could not find any background images');
         }
         else
         {
-            $this->compiler->msg('Could not find any background images');
+            $this->compiler->msg('File created: _background.css', FileCompiler::MSG_SUCCESS);
+            $this->compiler->msg('Make sure to embed the generated _background.css within your Layout', FileCompiler::MSG_SUCCESS);
         }
     }
 
@@ -99,7 +93,7 @@ class BackgroundImageGenerator
 
         if (!!$bgCount = count($backgrounds))
         {
-            $this->compiler->msg($bgCount . ' background images imported', FileCompiler::MSG_SUCCESS);
+            $this->compiler->msg($bgCount . ' background image(s) imported', FileCompiler::MSG_SUCCESS);
         }
 
         return $backgrounds;
@@ -116,7 +110,11 @@ class BackgroundImageGenerator
         // Create file
         if (StyleManagerXMLCreator::createFile($objArchive, [$objBackgrounds], $xmlPath))
         {
-            $this->compiler->msg('File created: ' . $xmlPath . '.xml' , FileCompiler::MSG_SUCCESS);
+            if (!empty($backgrounds))
+            {
+                $this->compiler->msg('File created: ' . $xmlPath . '.xml');
+            }
+
             return $xmlPath.'.xml';
         }
 
@@ -128,9 +126,6 @@ class BackgroundImageGenerator
     {
         $css = '';
 
-        // Add default bg wildcard selector
-        $css .= '[class*="bgi-"]{background-image:var(--bgi,none)}';
-
         // Add backgrounds
         foreach ($backgrounds as $background)
         {
@@ -140,8 +135,13 @@ class BackgroundImageGenerator
             ]);
         }
 
+        return self::createCSSFile($css);
+    }
+
+    private function createCSSFile(string $css = ''): ?string
+    {
         // Prepare CSS
-        $objFile = new File($bgPath = 'assets/ctmcore/css/_background.css');
+        $objFile = new File($bgPath = self::PATH_BG);
         $blnSuccess = $objFile->write($css);
         $objFile->close();
 
