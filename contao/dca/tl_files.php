@@ -10,7 +10,7 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 $GLOBALS['TL_DCA']['tl_files']['fields']['ctmBackgroundImage'] = [
     'exclude'   => true,
     'inputType' => 'checkbox',
-    'eval'      => ['tl_class'=>'w50 m12'],
+    'eval'      => ['tl_class'=>'w100 m12 clr'],
     'sql'       => "char(1) NOT NULL default ''"
 ];
 

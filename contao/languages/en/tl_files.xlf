@@ -5,10 +5,10 @@
         <source>ThemeManager settings</source>
       </trans-unit>
       <trans-unit id="tl_files.ctmBackgroundImage.0">
-        <source>Background image</source>
+        <source>ThemeManager: Background image</source>
       </trans-unit>
       <trans-unit id="tl_files.ctmBackgroundImage.1">
-        <source>Use this image as a CSS background image.</source>
+        <source>Use this image as a CSS background image. After compiling the theme and including the &lt;em&gt;_background.css&lt;/em&gt;, you can select this image as a background in articles.</source>
       </trans-unit>
     </body>
   </file>

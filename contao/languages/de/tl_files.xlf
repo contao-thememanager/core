@@ -6,12 +6,12 @@
         <target>ThemeManager-Einstellungen</target>
       </trans-unit>
       <trans-unit id="tl_files.ctmBackgroundImage.0">
-        <source>Background image</source>
-        <target>Hintergrundbild</target>
+        <source>ThemeManager: Background image</source>
+        <target>ThemeManager: Hintergrundbild</target>
       </trans-unit>
       <trans-unit id="tl_files.ctmBackgroundImage.1">
-        <source>Use this image as a CSS background image.</source>
-        <target>Dieses Bild als CSS-Hintergrundbild verwenden.</target>
+        <source>Use this image as a CSS background image. After compiling the theme and including the &lt;em&gt;_background.css&lt;/em&gt; within your Layout, you can select this image as a background in articles.</source>
+        <target>Dieses Bild als CSS-Hintergrundbild verwenden. Nach Kompilieren des Themes und Einbinden der &lt;em&gt;_background.css&lt;/em&gt; im Layout, können Sie dieses Bild als Hintergrund in Artikeln auswählen.</target>
       </trans-unit>
     </body>
   </file>
