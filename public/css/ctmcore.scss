@@ -127,7 +127,7 @@ form#tl_thememanager {
     margin-right: 0;
     border-radius: $field-br 0 0 $field-br;
     border-right: 0;
-    width: calc(100% - $select-type-wdth);
+    width: calc(100% - #{$select-type-wdth});
     text-overflow: ellipsis;
   }
 
