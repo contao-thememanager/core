@@ -1915,6 +1915,43 @@
       </child>
     </children>
   </archive>
+  <archive identifier="articleHeight">
+    <field title="id">30</field>
+    <field title="tstamp">1579772003</field>
+    <field title="title">Article-Height</field>
+    <field title="desc">NULL</field>
+    <field title="identifier">articleHeight</field>
+    <field title="groupAlias">Layout</field>
+    <field title="sorting">770</field>
+    <children>
+      <child alias="hHeight">
+        <field title="id">702</field>
+        <field title="pid">30</field>
+        <field title="sorting">64</field>
+        <field title="tstamp">1648717942</field>
+        <field title="alias">hHeight</field>
+        <field title="title">Consider header</field>
+        <field title="description">Considers header height and subtracts it from the vertical height</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:6:"h-hght";s:5:"value";s:6:"Active";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen"></field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+    </children>
+  </archive>
   <archive identifier="gridForm">
     <field title="id">14</field>
     <field title="tstamp">1580482556</field>
