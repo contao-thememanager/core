@@ -104,11 +104,13 @@ class BackgroundImageGenerator
         $xmlPath = 'templates/style-manager-backgrounds';
 
         // Create XML objects
-        $objArchive     = StyleManagerXMLCreator::createStyleManagerArchive(9, 'Background', 'background', 'Design', 640);
-        $objBackgrounds = StyleManagerXMLCreator::createStyleManagerChild(9, 'Image', 'image', $backgrounds, self::STRUCTURE_BG['elements'], self::STRUCTURE_BG['options']);
+        $objArchive     = StyleManagerXMLCreator::createArchive(9, 'Background', 'background', 'Design', 640);
+        $objBackgrounds = StyleManagerXMLCreator::createChild(9, 'Image', 'image', $backgrounds, self::STRUCTURE_BG['elements'], self::STRUCTURE_BG['options']);
 
         // Create file
-        if (StyleManagerXMLCreator::createFile($objArchive, [$objBackgrounds], $xmlPath))
+        $smStructure = StyleManagerXMLCreator::createStructure([[$objArchive, [$objBackgrounds]]]);
+
+        if (StyleManagerXMLCreator::generateFile($smStructure, $xmlPath))
         {
             if (!empty($backgrounds))
             {

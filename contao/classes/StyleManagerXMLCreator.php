@@ -20,7 +20,7 @@ class StyleManagerXMLCreator
     /**
      * Creates a StyleManager archive
      */
-    public static function createStyleManagerArchive(int $id, string $title, string $identifier, ?string $groupAlias, ?int $sorting): StyleManagerArchiveModel
+    public static function createArchive(int $id, string $title, string $identifier, ?string $groupAlias, ?int $sorting): StyleManagerArchiveModel
     {
         $objArchive = new StyleManagerArchiveModel();
         $objArchive->id = $id;
@@ -35,7 +35,7 @@ class StyleManagerXMLCreator
     /**
      * Creates a StyleManager child
      */
-    public static function createStyleManagerChild(int $pid, string $title, string $alias, array $cssClasses, array $elements, ?array $options): StyleManagerModel
+    public static function createChild(int $pid, string $title, string $alias, array $cssClasses, array $elements, ?array $options): StyleManagerModel
     {
         $objChild = new StyleManagerModel();
         $objChild->pid = $pid;
@@ -64,39 +64,54 @@ class StyleManagerXMLCreator
     }
 
     /**
-     * Creates a style-manager xml file and saves it
-     *
-     * @param StyleManagerArchiveModel  $objArchive // Style-Manager archive
-     * @param array                     $arrChildren   // Style-Manager children
-     * @param string                    $strPath    // Path without suffix
-     * @return bool
+     * Creates the xml structure and returns it as a string
      * @throws DOMException
      */
-    public static function createFile(StyleManagerArchiveModel $objArchive, array $arrChildren, string $strPath): bool
+    public static function createStructure(array $archives): string
     {
-        $strData = self::createStructure($objArchive, $arrChildren);
+        if (!count($archives))
+        {
+            return '';
+        }
+
+        // Create xml
+        $xml = new \DOMDocument('1.0', 'UTF-8');
+        $xml->formatOutput = true;
+        $xml->appendChild($xmlArchives = $xml->createElement('archives'));
+
+        foreach ($archives as $archive)
+        {
+            if (2 === count($archive))
+            {
+                [$objArchive, $arrChildren] = $archive;
+                self::addArchiveData($xml, $xmlArchives, $objArchive, $arrChildren);
+            }
+        }
+
+        return $xml->saveXML();
+    }
+
+    /**
+     * Creates a style-manager xml file and saves it
+     *
+     * @param string $strData // File content
+     * @param string $strPath // Path without suffix
+     * @return bool
+     * @throws \Exception
+     */
+    public static function generateFile(string $strData, string $strPath): bool
+    {
+        // File content was empty
+        if (!strlen($strData))
+        {
+            return false;
+        }
 
         $objFile = new File($strPath.'.xml');
         $blnSuccess = $objFile->write($strData);
         $objFile->close();
 
         return $blnSuccess;
-    }
-
-    /**
-     * Creates the xml structure and returns it as a string
-     * @throws DOMException
-     */
-    public static function createStructure(StyleManagerArchiveModel $objArchive, array $arrChildren): string
-    {
-        // Create xml
-        $xml = new \DOMDocument('1.0', 'UTF-8');
-        $xml->formatOutput = true;
-
-        $xml->appendChild($archives = $xml->createElement('archives'));
-        self::addArchiveData($xml, $archives, $objArchive, $arrChildren);
-
-        return $xml->saveXML();
     }
 
     /**
