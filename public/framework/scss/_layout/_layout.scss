@@ -6,6 +6,18 @@
   display: inline;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex {
+  display: flex;
+}
+
 .box > .inside {
   padding: var(--py-1) var(--px-1);
 }
