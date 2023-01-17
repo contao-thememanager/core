@@ -27,7 +27,7 @@ form#tl_thememanager {
   }
 
   // Widget wizards
-  .breakpointWizard {
+  .multiKeyValWizard {
 
     input {
       margin: 0;
@@ -50,22 +50,32 @@ form#tl_thememanager {
         input { border-radius: 0 $field-br $field-br 0;}
         td:first-of-type input { border-radius: $field-br 0 0 $field-br; }
       }
-
-      tr td:first-child {
-        pointer-events: none;
-      }
     }
 
     td {
       padding: 0;
 
       &:first-of-type {
-        width: $breakpoint-key-wdth;
         input { border-radius: 0; border-right-width: 0;}
       }
+    }
 
-      // Hide all options
-      &:last-of-type { display: none; }
+    &.breakpoint {
+
+      tbody {
+
+        tr td:first-child {
+          pointer-events: none;
+        }
+      }
+
+      td {
+        &:first-of-type {
+          width: $breakpoint-key-wdth;
+        }
+
+        &:last-of-type { display: none; }
+      }
     }
   }
 
