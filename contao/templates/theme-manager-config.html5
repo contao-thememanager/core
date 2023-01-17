@@ -30,7 +30,7 @@
             '{image_text_legend:hide},image-text-behaviour-min-width;' .
             '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
             '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding,breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
-            '{misc_legend:hide},box-shadow,selection-color,selection-background-color;'
+            '{misc_legend:hide},box-shadow,selection-color,selection-background-color,aspect-ratios;'
     ],
     'fields'   => [
 
@@ -901,7 +901,7 @@
             'default'                 => 'a:5:{i:0;a:2:{s:3:"key";s:2:"xs";s:5:"value";s:5:"600px";}i:1;a:2:{s:3:"key";s:1:"s";s:5:"value";s:5:"768px";}i:2;a:2:{s:3:"key";s:1:"m";s:5:"value";s:6:"1024px";}i:3;a:2:{s:3:"key";s:1:"l";s:5:"value";s:6:"1264px";}i:4;a:2:{s:3:"key";s:2:"xl";s:5:"value";s:6:"1921px";}}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
             'inputType'               => 'keyValueWizard',
-            'eval'                    => ['maxlength'=>255, 'tl_class'=>'breakpointWizard clr'],
+            'eval'                    => ['maxlength'=>255, 'tl_class'=>'multiKeyValWizard breakpoint clr'],
         ],
 
         'layout-column-small-break' => [
@@ -2455,6 +2455,12 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-background-color'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
-        ]
+        ],
+        'aspect-ratios' => [
+            'default'                 => '(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['aspect-ratios'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>128, 'decodeEntities'=>true, 'tl_class'=>'clr'],
+        ],
     ]
 ];

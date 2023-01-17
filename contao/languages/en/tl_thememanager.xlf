@@ -2270,6 +2270,13 @@
         <source>Here you can set the background-color for selected text.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.aspect-ratios.0">
+        <source>$aspect-ratios</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.aspect-ratios.1">
+        <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.tns-dot-size.0">
         <source>$tns-dot-size</source>
       </trans-unit>

@@ -21,7 +21,6 @@ use Contao\System;
 class ThemeManager extends Backend
 {
     const PATH_SM_CONFIG = 'templates/style-manager-config';
-    const PREFIX_VH = 'a-vh-';
 
     public function __construct()
     {
@@ -169,28 +168,48 @@ class ThemeManager extends Backend
     {
         if (is_array($configVars))
         {
-            // Generate article vheight xml
+            $archives = [];
+
+            // Generate article vertical heights
             if (null !== ($articleHeight = $this->generateArticleHeight($configVars)))
             {
-                [$objArchive, $objChild] = $articleHeight;
+                $archives[] = $articleHeight;
+            }
 
-                // Create xml file
-                StyleManagerXMLCreator::createFile($objArchive, [$objChild], self::PATH_SM_CONFIG);
+            // Generate aspect ratios
+            if (null !== ($aspectRatios = $this->generateAspectRatios($configVars)))
+            {
+                $archives[] = $aspectRatios;
+            }
+
+            // Generate if archives could be created
+            if (!empty($archives))
+            {
+                $strFile = StyleManagerXMLCreator::createStructure($archives);
+                StyleManagerXMLCreator::generateFile($strFile, self::PATH_SM_CONFIG);
             }
         }
     }
 
     /**
-     * Gets the different options from the ThemeManager configuration
-     * and generates a style manager xml for article heights
+     * Gets a specific value from the ThemeManager configuration
+     */
+    private function getThemeManagerConfigVar(array $configVars, string $key): ?string
+    {
+        if (!array_key_exists($key, $configVars) || !is_string($value = $configVars[$key]) || !strlen($value))
+        {
+            return null;
+        }
+
+        return $value;
+    }
+
+    /**
+     * Gets all vertical article heights from the ThemeManager configuration and generates a style manager xml
      */
     private function generateArticleHeight($configVars): ?array
     {
-        if (
-            !array_key_exists('article-options-vheight', $configVars) ||
-            !is_string($vHeightOptions = $configVars['article-options-vheight']) ||
-            !strlen($vHeightOptions)
-        )
+        if (null === ($vHeightOptions = self::getThemeManagerConfigVar($configVars, 'article-options-vheight')))
         {
             return null;
         }
@@ -200,17 +219,51 @@ class ThemeManager extends Backend
 
         foreach ($vHeightOptions as $option)
         {
-            $options[] = [
-                'key' => self::PREFIX_VH.$option,
-                'value' => $option . 'vh'
-            ];
+            $options[] = ['key' =>'a-vh-'.$option,'value' =>$option.'vh'];
         }
 
-        $objArchive = StyleManagerXMLCreator::createStyleManagerArchive(30, 'Article-Height', 'articleHeight', 'Layout', 770);
-        $objHeights = StyleManagerXMLCreator::createStyleManagerChild(
-            30,'Height','height',$options,['extendArticle' => 1],
+        $objArchive = StyleManagerXMLCreator::createArchive(30, 'Article-Height', 'articleHeight', 'Layout', 770);
+        $objHeights = StyleManagerXMLCreator::createChild(
+            30,'Height','height',$options,
+            ['extendArticle' => 1],
             ['sorting' =>32,'description'=>'Here you can choose the article height.','chosen'=>1,'blankOption'=>1]);
 
-        return [$objArchive, $objHeights];
+        return [$objArchive, [$objHeights]];
+    }
+
+    /**
+     * Gets all aspect ratios from the ThemeManager configuration and generates a style manager xml
+     */
+    private function generateAspectRatios($configVars): ?array
+    {
+        if (null === ($aspectRatios = self::getThemeManagerConfigVar($configVars, 'aspect-ratios')))
+        {
+            return null;
+        }
+
+        $aspectRatios = explode(',', $aspectRatios);
+        $options = [];
+
+        foreach ($aspectRatios as $value)
+        {
+            if (!!$value = substr($value, 1, -1))
+            {
+                if (2 === count($ratios = explode(':', $value)))
+                {
+                    $options[] = ['key' =>'ar-'.$ratios[0].'-'.$ratios[1],'value' => $value];
+                }
+            }
+        }
+
+        $objArchive = StyleManagerXMLCreator::createArchive(7, 'Images', 'image', 'Design', 645);
+        $objRatios = StyleManagerXMLCreator::createChild(
+            7,'Aspect-Ratio','aspectRatio',$options,
+            [
+                'extendContentElement'=>1,'contentElements'=>['rsce_image_text','rsce_image_list','rsce_image_text_list','image','gallery'],
+                'extendModule'=> 1,'modules'=>['randomImage','newslist','eventlist','faqlist','faqpage']
+            ],
+            ['sorting' =>130,'description'=>'Here you can choose an aspect-ratio.','chosen'=>1,'blankOption'=>1]);
+
+        return [$objArchive, [$objRatios]];
     }
 }

@@ -2984,6 +2984,15 @@
         <target>Hier können Sie die Hintergrundfarbe von markiertem Text einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.aspect-ratios.0">
+        <source>$aspect-ratios</source>
+        <target>$aspect-ratios</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.aspect-ratios.1">
+        <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
+        <target>Hier können Sie durch Komma getrennte Seitenverhältnisse im Format &lt;strong&gt;(x:y)&lt;/strong&gt; eingeben, die innerhalb von Bildelementen verfügbar sein sollen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.tns-dot-size.0">
         <source>$tns-dot-size</source>
         <target>$tns-dot-size</target>
