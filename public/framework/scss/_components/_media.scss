@@ -1,0 +1,44 @@
+.c_image {
+  margin-bottom: var(--c-m);
+}
+
+.no-scale {
+
+  img {
+    width: initial;
+  }
+}
+
+img,
+video {
+  object-fit: var(--objf, fill);
+  object-position: var(--objx,50%) var(--objy,50%);
+  aspect-ratio: var(--ar,auto);
+}
+
+.obj {
+  // Object-fit | default: 'fill'
+  &--contain   {--objf:contain;}
+  &--cover     {--objf:cover;}
+  &--none      {--objf:none;}
+  &--scaledown {--objf:scale-down;}
+
+  // Object-position horizontal | default: '50%'
+  &--left    {--objx:left;}
+  &--right   {--objx:right;}
+
+  // Object-position vertical | default: '50%'
+  &--top     {--objy:top;}
+  &--btm     {--objy:bottom;}
+}
+
+// Aspect ratios for images and videos
+@if type-of($aspect-ratios) == list {
+  @each $ratio in $aspect-ratios {
+    @each $x, $y in $ratio {
+      .ar-#{$x}-#{$y} {
+        --ar:#{$x}/#{$y};
+      }
+    }
+  }
+}
