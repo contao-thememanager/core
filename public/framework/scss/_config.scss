@@ -25,86 +25,140 @@ $font-weight-bold:                        700 !default;
 $strong-font-weight:                      $font-weight-bold !default;
 
 // Headings
+$line-height-headline:                    1.2 !default;
+
 $h1-font-size-small:                      1.5rem !default;
 $h1-font-size-medium:                     2.02rem !default;
 $h1-font-size:                            2.8rem !default;
+$h1-line-height:                          $line-height-headline !default;
 
 $h2-font-size-small:                      1.35rem !default;
 $h2-font-size-medium:                     1.685rem !default;
 $h2-font-size:                            2.187rem !default;
+$h2-line-height:                          $line-height-headline !default;
 
 $h3-font-size-small:                      1.187rem !default;
 $h3-font-size-medium:                     1.287rem !default;
 $h3-font-size:                            1.437rem !default;
+$h3-line-height:                          $line-height-headline !default;
 
 $h4-font-size-small:                      1.12rem !default;
 $h4-font-size-medium:                     1.172rem !default;
 $h4-font-size:                            1.25rem !default;
+$h4-line-height:                          $line-height-headline !default;
 
 $h5-font-size-small:                      1.031rem !default;
 $h5-font-size-medium:                     1.069rem !default;
 $h5-font-size:                            1.125rem !default;
+$h5-line-height:                          $line-height-headline !default;
 
 $h6-font-size-small:                      1rem !default;
 $h6-font-size-medium:                     1rem !default;
 $h6-font-size:                            1rem !default;
-
-$line-height-headline:                    1.2 !default;
+$h6-line-height:                          $line-height-headline !default;
 
 $h1-color:                                $text-color-regular !default;
 $h1-color-invert:                         $text-color-invert !default;
 $h1-font-weight:                          $font-weight-bold !default;
 $h1-letter-spacing:                       0rem !default;
+$h1-transform:                            none !default;
 
 $h2-color:                                $text-color-regular !default;
 $h2-color-invert:                         $text-color-invert !default;
 $h2-font-weight:                          $font-weight-bold !default;
 $h2-letter-spacing:                       0rem !default;
+$h2-transform:                            none !default;
 
 $h3-color:                                $text-color-regular !default;
 $h3-color-invert:                         $text-color-invert !default;
 $h3-font-weight:                          $font-weight-bold !default;
 $h3-letter-spacing:                       0rem !default;
+$h3-transform:                            none !default;
 
 $h4-color:                                $text-color-regular !default;
 $h4-color-invert:                         $text-color-invert !default;
 $h4-font-weight:                          $font-weight-bold !default;
 $h4-letter-spacing:                       0rem !default;
+$h4-transform:                            none !default;
 
 $h5-color:                                $text-color-regular !default;
 $h5-color-invert:                         $text-color-invert !default;
 $h5-font-weight:                          $font-weight-bold !default;
 $h5-letter-spacing:                       0rem !default;
+$h5-transform:                            none !default;
 
 $h6-color:                                $text-color-regular !default;
 $h6-color-invert:                         $text-color-invert !default;
 $h6-font-weight:                          $font-weight-bold !default;
 $h6-letter-spacing:                       0rem !default;
+$h6-transform:                            none !default;
 
 // Content headings
 $h1-content-font-size-small:              1.5rem !default;
 $h1-content-font-size-medium:             1.86rem !default;
 $h1-content-font-size:                    2.4rem !default;
+$h1-content-line-height:                  $h1-line-height !default;
 
 $h2-content-font-size-small:              1.35rem !default;
 $h2-content-font-size-medium:             1.57rem !default;
 $h2-content-font-size:                    1.9rem !default;
+$h2-content-line-height:                  $h2-line-height !default;
 
 $h3-content-font-size-small:              1.187rem !default;
 $h3-content-font-size-medium:             1.287rem !default;
 $h3-content-font-size:                    1.437rem !default;
+$h3-content-line-height:                  $h3-line-height !default;
 
 $h4-content-font-size-small:              1.12rem !default;
 $h4-content-font-size-medium:             1.172rem !default;
 $h4-content-font-size:                    1.25rem !default;
+$h4-content-line-height:                  $h4-line-height !default;
 
 $h5-content-font-size-small:              1.031rem !default;
 $h5-content-font-size-medium:             1.069rem !default;
 $h5-content-font-size:                    1.125rem !default;
+$h5-content-line-height:                  $h5-line-height !default;
 
 $h6-content-font-size-small:              1rem !default;
 $h6-content-font-size-medium:             1rem !default;
 $h6-content-font-size:                    1rem !default;
+$h6-content-line-height:                  $h6-line-height !default;
+
+$h1-content-color:                        $h1-color !default;
+$h1-content-color-invert:                 $h1-color-invert !default;
+$h1-content-font-weight:                  $h1-font-weight !default;
+$h1-content-letter-spacing:               0rem !default;
+$h1-content-transform:                    none !default;
+
+$h2-content-color:                        $h2-color !default;
+$h2-content-color-invert:                 $h2-color-invert !default;
+$h2-content-font-weight:                  $h2-font-weight !default;
+$h2-content-letter-spacing:               0rem !default;
+$h2-content-transform:                    none !default;
+
+$h3-content-color:                        $h3-color !default;
+$h3-content-color-invert:                 $h3-color-invert !default;
+$h3-content-font-weight:                  $h3-font-weight !default;
+$h3-content-letter-spacing:               0rem !default;
+$h3-content-transform:                    none !default;
+
+$h4-content-color:                        $h4-color !default;
+$h4-content-color-invert:                 $h4-color-invert !default;
+$h4-content-font-weight:                  $h4-font-weight !default;
+$h4-content-letter-spacing:               0rem !default;
+$h4-content-transform:                    none !default;
+
+$h5-content-color:                        $h5-color !default;
+$h5-content-color-invert:                 $h5-color-invert !default;
+$h5-content-font-weight:                  $h5-font-weight !default;
+$h5-content-letter-spacing:               0rem !default;
+$h5-content-transform:                    none !default;
+
+$h6-content-color:                        $h6-color !default;
+$h6-content-color-invert:                 $h6-color-invert !default;
+$h6-content-font-weight:                  $h6-font-weight !default;
+$h6-content-letter-spacing:               0rem !default;
+$h6-content-transform:                    none !default;
 
 // Heading spacing
 $headline-spacing:                        1rem !default;

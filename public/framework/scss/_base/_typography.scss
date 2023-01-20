@@ -28,7 +28,6 @@ strong {
 @include heading-basics{
   margin-top: 0;
   margin-bottom: $headline-spacing;
-  line-height: var(--leading-hl);
 
   &:last-child {
     margin-bottom: 0;
@@ -37,10 +36,20 @@ strong {
 
 // Color and size taken from _vars.scss
 @include heading-typography((
-  1: (font-weight: $h1-font-weight, letter-spacing: $h1-letter-spacing),
-  2: (font-weight: $h2-font-weight, letter-spacing: $h2-letter-spacing),
-  3: (font-weight: $h3-font-weight, letter-spacing: $h3-letter-spacing),
-  4: (font-weight: $h4-font-weight, letter-spacing: $h4-letter-spacing),
-  5: (font-weight: $h5-font-weight, letter-spacing: $h5-letter-spacing),
-  6: (font-weight: $h6-font-weight, letter-spacing: $h6-letter-spacing)
+  normal:(
+    1:(line-height:$h1-line-height,font-weight:$h1-font-weight,letter-spacing:$h1-letter-spacing,text-transform:$h1-transform),
+    2:(line-height:$h2-line-height,font-weight:$h2-font-weight,letter-spacing:$h2-letter-spacing,text-transform:$h2-transform),
+    3:(line-height:$h3-line-height,font-weight:$h3-font-weight,letter-spacing:$h3-letter-spacing,text-transform:$h3-transform),
+    4:(line-height:$h4-line-height,font-weight:$h4-font-weight,letter-spacing:$h4-letter-spacing,text-transform:$h4-transform),
+    5:(line-height:$h5-line-height,font-weight:$h5-font-weight,letter-spacing:$h5-letter-spacing,text-transform:$h5-transform),
+    6:(line-height:$h6-line-height,font-weight:$h6-font-weight,letter-spacing:$h6-letter-spacing,text-transform:$h6-transform),
+  ),
+  content:(
+    1:(line-height:$h1-content-line-height,font-weight:$h1-content-font-weight,letter-spacing:$h1-content-letter-spacing,text-transform:$h1-content-transform),
+    2:(line-height:$h2-content-line-height,font-weight:$h2-content-font-weight,letter-spacing:$h2-content-letter-spacing,text-transform:$h2-content-transform),
+    3:(line-height:$h3-content-line-height,font-weight:$h3-content-font-weight,letter-spacing:$h3-content-letter-spacing,text-transform:$h3-content-transform),
+    4:(line-height:$h4-content-line-height,font-weight:$h4-content-font-weight,letter-spacing:$h4-content-letter-spacing,text-transform:$h4-content-transform),
+    5:(line-height:$h5-content-line-height,font-weight:$h5-content-font-weight,letter-spacing:$h5-content-letter-spacing,text-transform:$h5-content-transform),
+    6:(line-height:$h6-content-line-height,font-weight:$h6-content-font-weight,letter-spacing:$h6-content-letter-spacing,text-transform:$h6-content-transform)
+  )
 ));

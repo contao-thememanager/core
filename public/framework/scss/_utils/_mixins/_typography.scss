@@ -28,10 +28,16 @@
     #{$v} {
       color: var(--h#{$k}-clr);
       font-size: var(--h#{$k}-fs);
-      @each $class, $style in  map-get($list, $k) {
+      @each $class, $style in map-get(map-get($list, normal), $k) {
         #{$class}: $style;
       }
-      #main & {font-size: var(--h#{$k}-c-fs);}
+      #main & {
+        color: var(--h#{$k}-c-clr);
+        font-size: var(--h#{$k}-c-fs);
+        @each $class, $style in map-get(map-get($list, content), $k) {
+          #{$class}: $style;
+        }
+      }
     }
   }
 }

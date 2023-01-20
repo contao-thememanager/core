@@ -18,7 +18,6 @@
   --fs-base:#{$font-size-base};
 
   --leading-base:#{$line-height-base};
-  --leading-hl:#{$line-height-headline};
 
   --fw-base:#{$font-weight-base};
   --fw-light:#{$font-weight-light};
@@ -93,6 +92,13 @@
   --h4-clr:#{$h4-color};
   --h5-clr:#{$h5-color};
   --h6-clr:#{$h6-color};
+
+  --h1-c-clr:#{$h1-content-color};
+  --h2-c-clr:#{$h2-content-color};
+  --h3-c-clr:#{$h3-content-color};
+  --h4-c-clr:#{$h4-content-color};
+  --h5-c-clr:#{$h5-content-color};
+  --h6-c-clr:#{$h6-content-color};
 
   --h1-fs:#{$h1-font-size-small};
   --h2-fs:#{$h2-font-size-small};
