@@ -13,6 +13,10 @@ use Contao\FilesModel;
 use Contao\StringUtil;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
+// ToDo: Add to layout and page
+// ToDo: Generate .box > .inside (As template var)
+// Also check for wrapper-inside
+
 class BackgroundImageGenerator
 {
     /** @var FileCompiler */

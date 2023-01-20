@@ -10,6 +10,7 @@
           <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
       <?php endif; ?>
 
+      <!-- // ToDo: Add headline stylemanager options for faqpage (and other modules that may be affected) (not working in child templates) -->
       <?php if ($this->headline): ?>
         <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
       <?php endif; ?>

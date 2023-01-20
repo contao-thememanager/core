@@ -1,6 +1,7 @@
 .box,
 .box-list .item {
 
+  // ToDo: Add possibility to set generated backgrounds and their options (within inside containers)
   > .inside {
     background:    var(--box-bg);
     border:        var(--bdr-wdth) var(--bdr-style) var(--bdr-clr);
