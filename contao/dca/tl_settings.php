@@ -35,7 +35,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['thememanagerIconFont'] = [
         return FilesModel::findByPath($strValue)->uuid;
     }],
     'save_callback' => [ static function ($strValue) {
-        if (null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath))
+        if (!strlen($strValue) || null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath))
         {
             Config::set('thememanagerIconFont', null);
             return '';
