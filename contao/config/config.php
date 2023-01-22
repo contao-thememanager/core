@@ -32,8 +32,10 @@ $GLOBALS['TC_SOURCES'] = [
 
 $GLOBALS['TC_HOOKS']['compilerParseConfig'][] = ['ContaoThemeManager\Core\ThemeManager', 'onParseThemeManagerConfiguration'];
 
-$GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\IconGenerator', 'generateIconSet'];
-$GLOBALS['TC_HOOKS']['beforeCompile'][] = ['ContaoThemeManager\Core\BackgroundImageGenerator', 'generateBackgroundSet'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\IconGenerator', 'generate'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\BackgroundImageGenerator', 'generate'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateArticleHeight'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateAspectRatios'];
 
 // Add content elements and components group
 ArrayUtil::arrayInsert($GLOBALS['TL_CTE'], 2, [
