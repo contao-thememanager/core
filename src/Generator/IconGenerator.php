@@ -195,8 +195,7 @@ class IconGenerator
         unset($arrDirElements['contentElements'][11]);
 
         $arrClasses = [
-            'key'=>'i-is-r',
-            'value'=>'Right'
+            ['key'=>'i-is-r', 'value'=>'Right']
         ];
 
         $xml->addChild('Direction', 'direction', $arrClasses, $arrDirElements, Constants::ICON_DIRECTION['options']);
