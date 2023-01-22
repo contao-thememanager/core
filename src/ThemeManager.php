@@ -13,19 +13,25 @@ use Contao\ContentModel;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\DataContainer;
+use Contao\File;
 use Contao\Input;
 use Contao\Message;
 use Contao\StringUtil;
 use Contao\System;
+use ContaoThemeManager\Core\StyleManager\StyleManagerXML;
+use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
 class ThemeManager extends Backend
 {
-    const PATH_SM_CONFIG = 'templates/style-manager-config';
+    const NAME_SM_CONFIG = 'config';
+
+    private string $rootDir;
 
     public function __construct()
     {
         parent::__construct();
         System::loadLanguageFile('tl_thememanager_settings');
+        $this->rootDir = System::getContainer()->getParameter('kernel.project_dir');
     }
 
     /**
@@ -162,108 +168,62 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Method that can be used to read and add logic whilst the ThemeManager configuration is parsed when compiling
+     * Method is called whilst ThemeManager configuration is parsed when compiling the theme
+     * @throws \Exception
      */
-    public function onParseThemeManagerConfiguration($context, $configVars): void
+    public function onParseThemeManagerConfiguration($compiler, $configVars): void
     {
         if (is_array($configVars))
         {
-            $archives = [];
+            $xmlPath = 'templates/style-manager-' . self::NAME_SM_CONFIG . '.xml';
+            $xml = StyleManagerXML::create();
+            $counter = 0;
 
-            // Generate article vertical heights
-            if (null !== ($articleHeight = $this->generateArticleHeight($configVars)))
+            // HOOK: add custom logic
+            if (isset($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig']) && \is_array($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig']))
             {
-                $archives[] = $articleHeight;
-            }
-
-            // Generate aspect ratios
-            if (null !== ($aspectRatios = $this->generateAspectRatios($configVars)))
-            {
-                $archives[] = $aspectRatios;
-            }
-
-            // Generate if archives could be created
-            if (!empty($archives))
-            {
-                $strFile = StyleManagerXMLCreator::createStructure($archives);
-                StyleManagerXMLCreator::generateFile($strFile, self::PATH_SM_CONFIG);
-            }
-        }
-    }
-
-    /**
-     * Gets a specific value from the ThemeManager configuration
-     */
-    private function getThemeManagerConfigVar(array $configVars, string $key): ?string
-    {
-        if (!array_key_exists($key, $configVars) || !is_string($value = $configVars[$key]) || !strlen($value))
-        {
-            return null;
-        }
-
-        return $value;
-    }
-
-    /**
-     * Gets all vertical article heights from the ThemeManager configuration and generates a style manager xml
-     */
-    private function generateArticleHeight($configVars): ?array
-    {
-        if (null === ($vHeightOptions = self::getThemeManagerConfigVar($configVars, 'article-options-vheight')))
-        {
-            return null;
-        }
-
-        $vHeightOptions = explode(',', $vHeightOptions);
-        $options = [];
-
-        foreach ($vHeightOptions as $option)
-        {
-            $options[] = ['key' =>'a-vh-'.$option,'value' =>$option.'vh'];
-        }
-
-        $objArchive = StyleManagerXMLCreator::createArchive(30, 'Article-Height', 'articleHeight', 'Layout', 770);
-        $objHeights = StyleManagerXMLCreator::createChild(
-            30,'Height','height',$options,
-            ['extendArticle' => 1],
-            ['sorting' =>32,'description'=>'Here you can choose the article height.','chosen'=>1,'blankOption'=>1]);
-
-        return [$objArchive, [$objHeights]];
-    }
-
-    /**
-     * Gets all aspect ratios from the ThemeManager configuration and generates a style manager xml
-     */
-    private function generateAspectRatios($configVars): ?array
-    {
-        if (null === ($aspectRatios = self::getThemeManagerConfigVar($configVars, 'aspect-ratios')))
-        {
-            return null;
-        }
-
-        $aspectRatios = explode(',', $aspectRatios);
-        $options = [];
-
-        foreach ($aspectRatios as $value)
-        {
-            if (!!$value = substr($value, 1, -1))
-            {
-                if (2 === count($ratios = explode(':', $value)))
+                foreach ($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'] as $callback)
                 {
-                    $options[] = ['key' =>'ar-'.$ratios[0].'-'.$ratios[1],'value' => $value];
+                    $this->import($callback[0]);
+                    $this->{$callback[0]}->{$callback[1]}($configVars, $xml, $compiler, $this);
+
+                    $counter++;
                 }
             }
+
+            // Delete existing file if no custom config could be parsed
+            if (0 === $counter && file_exists($path = $this->rootDir . '/' . $xmlPath))
+            {
+                unlink($path);
+            }
+            else
+            {
+                $success = $xml->save(self::NAME_SM_CONFIG);
+                $compiler->msg('Bundle Configuration', FileCompiler::MSG_HEAD);
+                $compiler->msg(($success ? 'File saved: ': 'Could not create ') . $xmlPath, ($success ? FileCompiler::MSG_SUCCESS : FileCompiler::MSG_ERROR));
+            }
+        }
+    }
+
+    /**
+     * Creates a css file within assets
+     *
+     * @throws \Exception
+     */
+    public static function createCSSFile(string $name, string $css = '', ?FileCompiler $compiler = null): ?string
+    {
+        // Prepare CSS
+        $objFile = new File($path = 'assets/ctmcore/css/_'. $name . FileCompiler::FILE_EXT);
+        $blnSuccess = $objFile->write($css);
+        $objFile->close();
+
+        if ($blnSuccess)
+        {
+            return $path;
         }
 
-        $objArchive = StyleManagerXMLCreator::createArchive(7, 'Images', 'image', 'Design', 645);
-        $objRatios = StyleManagerXMLCreator::createChild(
-            7,'Aspect-Ratio','aspectRatio',$options,
-            [
-                'extendContentElement'=>1,'contentElements'=>['rsce_image_text','rsce_image_list','rsce_image_text_list','image','gallery'],
-                'extendModule'=> 1,'modules'=>['randomImage','newslist','eventlist','faqlist','faqpage']
-            ],
-            ['sorting' =>130,'description'=>'Here you can choose an aspect-ratio.','chosen'=>1,'blankOption'=>1]);
+        $compiler?->msg('Could not create _' . $name . FileCompiler::FILE_EXT, FileCompiler::MSG_ERROR);
 
-        return [$objArchive, [$objRatios]];
+        return null;
     }
 }
