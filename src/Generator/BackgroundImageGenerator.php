@@ -13,7 +13,6 @@ use Contao\StringUtil;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
-// ToDo: Add to layout and page
 // ToDo: Generate .box > .inside (As template var)
 // Also check for wrapper-inside
 

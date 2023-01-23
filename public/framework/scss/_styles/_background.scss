@@ -5,11 +5,18 @@
   --bgiy:50%;
   --bgir:no-repeat;
   --bgis:cover;
-  background-image:      var(--bgi);
-  background-attachment: var(--bgia);
-  background-position:   var(--bgix) var(--bgiy);
-  background-repeat:     var(--bgir);
-  background-size:       var(--bgis);
+}
+
+// Only enable backgrounds within div and body
+div,
+body {
+  &[class*="bgi-"] {
+    background-image: var(--bgi);
+    background-attachment: var(--bgia);
+    background-position: var(--bgix) var(--bgiy);
+    background-repeat: var(--bgir);
+    background-size: var(--bgis);
+  }
 }
 
 .bg {

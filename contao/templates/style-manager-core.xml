@@ -1607,8 +1607,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
@@ -1633,8 +1633,8 @@
         <field title="chosen"></field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
@@ -1659,8 +1659,8 @@
         <field title="chosen"></field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
@@ -1685,8 +1685,8 @@
         <field title="chosen"></field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
@@ -1711,8 +1711,8 @@
         <field title="chosen"></field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
@@ -1737,8 +1737,8 @@
         <field title="chosen"></field>
         <field title="blankOption">1</field>
         <field title="passToTemplate"></field>
-        <field title="extendLayout"></field>
-        <field title="extendPage"></field>
+        <field title="extendLayout">1</field>
+        <field title="extendPage">1</field>
         <field title="extendArticle">1</field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
