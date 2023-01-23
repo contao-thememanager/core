@@ -107,7 +107,8 @@ class BackgroundImageGenerator
     private function createBackgroundXML(array $backgrounds, $xml): void
     {
         $xml->addGroup(9, 'Background', 'background', 'Design', 640)
-            ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
+            ->addChild('Image', 'image',   $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options'])
+            ->addChild('Image', 'elImage', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
     }
 
     /**
