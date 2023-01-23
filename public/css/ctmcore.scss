@@ -9,6 +9,23 @@
   }
 }
 
+.tc_box {
+  // Background image list in theme compiler
+  .bg-list {
+    border: 1px solid #e8e8e8;
+    height: 50px;
+    max-height: 300px;
+    overflow-y: auto;
+    resize: vertical;
+    margin-left: 28px;
+    padding: 5px 10px;
+
+    &:before { content: none; }
+  }
+
+  .bg-file { padding: 2px 0; }
+}
+
 // Vars for changing appearance of ThemeManager configuration
 $field-br: 5px; // Border radius
 $field-gap: 16px; // Field gap between widgets (Contao standard is 30px)

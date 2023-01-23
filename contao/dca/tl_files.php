@@ -7,7 +7,6 @@
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 
-// ToDo: Check whether an item callback can be used to display if an image has been selected as a background
 $GLOBALS['TL_DCA']['tl_files']['fields']['ctmBackgroundImage'] = [
     'exclude'   => true,
     'inputType' => 'checkbox',

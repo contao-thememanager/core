@@ -38,6 +38,17 @@ class BackgroundImageGenerator
         {
             $this->createBackgroundXML($backgrounds, $xml);
             $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ?: '');
+
+            // Display all background images in a list after compiling the theme
+            $bgList = '';
+
+            foreach ($backgrounds as $background)
+            {
+                $bgList .= '<div class="bg-file">' . $background['value'] . ' <span class="tl_gray">(' . $background['path'] . ')</span></div>';
+            }
+
+            $this->compiler->msg($bgList, 'bg-list');
+
             $this->compiler->msg('File saved: _background'.FileCompiler::FILE_EXT, FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('Make sure to embed the generated _background'.FileCompiler::FILE_EXT.' within your Layout');
         }
