@@ -92,7 +92,7 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Adds the background options to the style-manager-config.xml
+     * Adds the background options to the style-manager-tm-config.xml
      */
     private function createBackgroundXML(array $backgrounds, $xml): void
     {

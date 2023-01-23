@@ -152,7 +152,7 @@ class IconGenerator
     }
 
     /**
-     * Adds the icon options to the style-manager-config.xml
+     * Adds the icon options to the style-manager-tm-config.xml
      */
     private function createIconXML(array $classes, $xml): void
     {
@@ -162,7 +162,7 @@ class IconGenerator
     }
 
     /**
-     * Adds the form icons to the style-manager-config.xml
+     * Adds the form icons to the style-manager-tm-config.xml
      */
     private function generateFormIcons(array $classes, $xml): void
     {
@@ -183,7 +183,7 @@ class IconGenerator
     }
 
     /**
-     * Adds the normal icons to the style-manager-config.xml
+     * Adds the normal icons to the style-manager-tm-config.xml
      */
     private function generateIcons(array $classes, $xml): void
     {

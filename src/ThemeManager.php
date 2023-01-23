@@ -23,7 +23,7 @@ use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
 class ThemeManager extends Backend
 {
-    const NAME_SM_CONFIG = 'config';
+    const NAME_SM_CONFIG = 'tm-config';
 
     private string $rootDir;
 

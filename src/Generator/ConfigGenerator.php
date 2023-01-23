@@ -11,7 +11,7 @@ namespace ContaoThemeManager\Core\Generator;
 class ConfigGenerator
 {
     /**
-     * Gets all vertical article heights from the ThemeManager configuration and adds it to the style-manager-config.xml
+     * Gets all vertical article heights from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
      */
     public function generateArticleHeight($configVars, $xml): void
     {
@@ -37,7 +37,7 @@ class ConfigGenerator
     }
 
     /**
-     * Gets all aspect ratios from the ThemeManager configuration and adds it to the style-manager-config.xml
+     * Gets all aspect ratios from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
      */
     public function generateAspectRatios($configVars, $xml): void
     {
