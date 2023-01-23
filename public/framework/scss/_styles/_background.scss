@@ -39,3 +39,11 @@ body {
   &--auto    {--bgis:auto;}
   &--contain {--bgis:contain;}
 }
+
+/*
+[class*="ibg-"] {
+  .item > .inside {
+
+  }
+}
+*/

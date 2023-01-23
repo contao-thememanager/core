@@ -20,6 +20,7 @@
 .item {
 
   > .inside {
+    background-color: var(--item-bg,transparent); // Specific background that can be overwritten
     padding: var(--i-py, 0) var(--i-px, 0);
     margin: 0; // Do not inherit parent margin (from '.inside')
   }

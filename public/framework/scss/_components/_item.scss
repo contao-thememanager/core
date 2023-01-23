@@ -1,0 +1,7 @@
+// Item backgrounds | e.g. grid-list items and box-list items (.item)
+.ibg {
+  &-primary   {--item-bg:var(--clr-primary);}
+  &-secondary {--item-bg:var(--clr-secondary);}
+  &-light     {--item-bg:var(--clr-light);}
+  &-dark      {--item-bg:var(--clr-dark);}
+}
