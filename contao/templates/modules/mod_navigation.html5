@@ -1,7 +1,7 @@
 <?php $sm = $this->styleManager ?>
 <!-- indexer::stop -->
 <nav class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-  <div class="inside">
+  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>">
 
     <?php if ($this->headline || $this->headline2): ?>
       <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
