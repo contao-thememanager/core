@@ -40,10 +40,42 @@ body {
   &--contain {--bgis:contain;}
 }
 
-/*
-[class*="ibg-"] {
-  .item > .inside {
+[class*="i-bgi-"] {
+  --i-bgi:none;
+  --i-bgia:scroll;
+  --i-bgix:50%;
+  --i-bgiy:50%;
+  --i-bgir:no-repeat;
+  --i-bgis:cover;
+}
 
+[class*="i-bgi-"] {
+  .item >.inside {
+    background-image: var(--i-bgi);
+    background-attachment: var(--i-bgia);
+    background-position: var(--i-bgix) var(--i-bgiy);
+    background-repeat: var(--i-bgir);
+    background-size: var(--i-bgis);
   }
 }
-*/
+
+.i-bg {
+  // Attachments | default: 'scroll'
+  &--fixed   {--i-bgia:fixed;}
+  &--local   {--i-bgia:local;}
+
+  // Position horizontal | default: '50%'
+  &--left    {--i-bgix:left;}
+  &--right   {--i-bgix:right;}
+
+  // Position vertical | default: '50%'
+  &--top     {--i-bgiy:top;}
+  &--btm     {--i-bgiy:bottom;}
+
+  // Background repeat | default: 'no-repeat'
+  &--repeat  {--i-bgir:repeat;}
+
+  // Background size | default: 'cover'
+  &--auto    {--i-bgis:auto;}
+  &--contain {--i-bgis:contain;}
+}
