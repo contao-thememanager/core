@@ -1770,7 +1770,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1796,7 +1796,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1822,7 +1822,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1848,7 +1848,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1874,7 +1874,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1900,7 +1900,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
@@ -1926,7 +1926,7 @@
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:24:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:15:"accordionSingle";i:23;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:25:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:5:"table";i:3;s:4:"code";i:4;s:8:"markdown";i:5;s:14:"rsce_icon_text";i:6;s:15:"rsce_image_text";i:7;s:9:"rsce_text";i:8;s:19:"rsce_hyperlink_list";i:9;s:19:"rsce_icon_text_list";i:10;s:15:"rsce_image_list";i:11;s:20:"rsce_image_text_list";i:12;s:14:"rsce_text_list";i:13;s:9:"hyperlink";i:14;s:7:"toplink";i:15;s:5:"image";i:16;s:7:"gallery";i:17;s:6:"player";i:18;s:7:"youtube";i:19;s:5:"vimeo";i:20;s:8:"download";i:21;s:9:"downloads";i:22;s:17:"wrapperStartBoxed";i:23;s:15:"accordionSingle";i:24;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";}</field>
         <field title="extendNews"></field>
