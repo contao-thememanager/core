@@ -2,9 +2,9 @@
 
 <div class="<?= $this->class ?> icon_text item block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <?php if(!$this->linkText && $this->url): ?>
-    <a href="<?=$this->url?>" class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
+    <a href="<?=$this->url?>" class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
   <?php else: ?>
-    <div class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>">
+    <div class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
   <?php endif; ?>
 
   <div class="c_icon">
