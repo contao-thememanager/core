@@ -129,8 +129,9 @@ class BackgroundImageGenerator
 
         foreach ($backgrounds as $background)
         {
-            $css .= vsprintf(".%s{--bgi:url(/%s)}", [
+            $css .= vsprintf(".%s,.%s{--bgi:url(/%s)}", [
                 $background['key'],
+                'i-' . $background['key'],
                 $background['path']
             ]);
         }
