@@ -104,6 +104,7 @@ a {
   &[class^="i-"],
   &[class*=" i-"] {
     display: inline-flex;
-    flex-wrap: wrap;
+    word-break: break-word;
+    //flex-wrap: wrap;
   }
 }
