@@ -71,6 +71,7 @@
 
 .img--inset {
   --img-mt:0; --img-mr:0; --img-mb:0; --img-ml:0;
+  --ratio-x: 1; // Always set 100% as default value
 
   --inset-y:calc(-1 * var(--i-py));
   --inset-x:calc(-1 * var(--i-px));
