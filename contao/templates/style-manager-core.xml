@@ -727,7 +727,7 @@
   <archive identifier="text">
     <field title="id">4</field>
     <field title="tstamp">1579863088</field>
-    <field title="title">Texts</field>
+    <field title="title">Text</field>
     <field title="desc">NULL</field>
     <field title="identifier">text</field>
     <field title="groupAlias">Design</field>
