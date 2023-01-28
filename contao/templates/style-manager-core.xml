@@ -1358,7 +1358,7 @@
   <archive identifier="image">
     <field title="id">7</field>
     <field title="tstamp">1580915121</field>
-    <field title="title">Images</field>
+    <field title="title">Image</field>
     <field title="desc">NULL</field>
     <field title="identifier">image</field>
     <field title="groupAlias">Design</field>

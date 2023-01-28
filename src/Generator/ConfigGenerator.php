@@ -64,7 +64,7 @@ class ConfigGenerator
             }
         }
 
-        $xml->addGroup(7, 'Images', 'image', 'Design', 645);
+        $xml->addGroup(7, 'Image', 'image', 'Design', 645);
         $xml->addChild('Aspect-Ratio', 'aspectRatio', $options, Constants::ASPECT_RATIO['elements'], Constants::ASPECT_RATIO['options']);
     }
 
