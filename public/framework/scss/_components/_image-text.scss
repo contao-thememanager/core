@@ -1,4 +1,6 @@
 .image_text {
+  --ratio-x:auto; // Reset due to possible inheritance from parents
+
   &.item, .item {
     > .inside {
       position: relative;
@@ -11,7 +13,7 @@
   }
 
   .c_image {
-    --it-wdth:calc(100% * var(--ratio-x, 1));
+    --it-wdth:calc(100% * var(--ratio-x)); // No default value to force auto -> calc will intentionally fail
     position: relative;
     float:    var(--img-float,none);
     margin:   var(--img-mt,0) var(--img-mr,0) var(--img-mb,var(--c-m)) var(--img-ml,0);
@@ -73,6 +75,7 @@
   --inset-y:calc(-1 * var(--i-py));
   --inset-x:calc(-1 * var(--i-px));
 
+  // Set width-ratio always to 100% / 1 when none is given (limitation due to inset)
   .c_image { width: calc(var(--it-wdth,100%) + calc(2 * var(--i-px,0%) * var(--ratio-x,1))) !important; }
 }
 
@@ -89,6 +92,7 @@
     &-80 { --ratio-x:0.8; }
   }
 
+  // Float only works with left and right
   .img--float {
     &.pos-l { --img-mr:var(--c-m); --img-float:left; }
     &.pos-r { --img-ml:var(--c-m); --img-float:right; }
@@ -106,7 +110,7 @@
     --itm-dsp: flex;
 
     &.pos-b { --img-mt:var(--c-m); --img-mb:0; --itm-flow:column-reverse; }
-    &.pos-y { --img-mr:auto; --img-ml:auto;}
+    &.pos-y { --img-mr:auto; --img-ml:auto;} // Always 'default' to centered image when any top or btm position is set
 
     &.pos-l { --img-mr:var(--c-m); --itm-flow:row; }
     &.pos-r { --img-ml:var(--c-m); --itm-flow:row-reverse; }
