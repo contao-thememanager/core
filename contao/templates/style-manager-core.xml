@@ -276,7 +276,7 @@
         <field title="tstamp">1648713128</field>
         <field title="alias">imageTextWidth</field>
         <field title="title">Width</field>
-        <field title="description">Defines the width of image or text (depending on mode).</field>
+        <field title="description">Defines the width of image or text (Default: auto / depending on mode).</field>
         <field title="cssClasses"></field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
