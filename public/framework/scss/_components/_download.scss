@@ -1,0 +1,10 @@
+.download-element {
+
+  .name {
+    display: inline-flex; // Centers icon-element
+  }
+
+  .button {
+    display: inline-block; // Override button inline-flex to properly display filesize
+  }
+}

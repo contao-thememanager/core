@@ -12,7 +12,7 @@
   <?php endif ?>
 
   <p class="download-element ext-<?= $this->extension ?>">
-    <a class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>"><?= $this->link ?> <span class="size">(<?= $this->filesize ?>)</span></a>
+    <a<?=$sm->prepare('button')->format(' class="%s"')?> href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>"><span class="name<?= $sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->link ?></span> <span class="size">(<?= $this->filesize ?>)</span></a>
   </p>
 
 <?php $this->endblock(); ?>

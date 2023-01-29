@@ -13,7 +13,7 @@
                 <?php $this->insert('image', $preview->getLegacyTemplateData()) ?>
             <?php endforeach ?>
         <?php endif ?>
-        <a class="<?=ltrim($sm->prepare('button')->format('%s') . $sm->prepare('icon', ['icon', 'direction'])->format(' %s'))?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><?= $file['link'] ?> <span class="size">(<?= $file['filesize'] ?>)</span></a>
+        <a<?=$sm->prepare('button')->format(' class="%s"')?> href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><span class="name<?= $sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $file['link'] ?></span> <span class="size">(<?= $file['filesize'] ?>)</span></a>
       </li>
     <?php endforeach; ?>
   </ul>
