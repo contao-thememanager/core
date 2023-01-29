@@ -11,26 +11,22 @@ namespace ContaoThemeManager\Core\Generator;
 class ConfigGenerator
 {
     /**
+     * Gets all image text widths for the image-text components adds it to the style-manager-tm-config.xml
+     */
+    public function generateImageTextWidths($configVars, $xml): void
+    {
+        $options = self::getListOptions($configVars, 'image-text-ratio-options', 'it-width-', '%', [25,33,38,40,50,80,100]);
+
+        $xml->addGroup(2, 'Layout', 'layout', 'Design', 128);
+        $xml->addChild('Width','imageTextWidth', $options, [], []);
+    }
+
+    /**
      * Gets all vertical article heights from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
      */
     public function generateArticleHeight($configVars, $xml): void
     {
-        $options = [];
-
-        // Fallback to default values
-        if (null === ($vHeightOptions = self::getThemeManagerConfigVar($configVars, 'article-options-vheight')))
-        {
-            $vHeightOptions = [50, 75, 100];
-        }
-        else
-        {
-            $vHeightOptions = explode(',', $vHeightOptions);
-        }
-
-        foreach ($vHeightOptions as $option)
-        {
-            $options[] = ['key' =>'a-vh-'.$option,'value' =>$option.'vh'];
-        }
+        $options = self::getListOptions($configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
 
         $xml->addGroup(30, 'Article-Height', 'articleHeight', 'Layout', 770);
         $xml->addChild('Height','height', $options, Constants::ARTICLE_HEIGHT['elements'], Constants::ARTICLE_HEIGHT['options']);
@@ -79,5 +75,30 @@ class ConfigGenerator
         }
 
         return $value;
+    }
+
+    /**
+     * Gets a list configuration and generates the style-manager xml options
+     */
+    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = [])
+    {
+        $options = [];
+
+        // Fallback to default values
+        if (null === ($configOptions = self::getThemeManagerConfigVar($configVars, $configKey)))
+        {
+            $configOptions = $defaults;
+        }
+        else
+        {
+            $configOptions = explode(',', $configOptions);
+        }
+
+        foreach ($configOptions as $option)
+        {
+            $options[] = ['key' =>$classPrefix.$option,'value' =>$option.$labelSuffix];
+        }
+
+        return $options;
     }
 }

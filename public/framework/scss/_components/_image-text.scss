@@ -82,15 +82,19 @@
 
 @media (min-width: $image-text-behaviour-min-width) {
 
-  .it-width {
-    &-25 { --ratio-x:0.25; }
-    &-33 { --ratio-x:0.3333; }
-    &-38 { --ratio-x:0.38195; }
-    &-40 { --ratio-x:0.4; }
-    &-50 { --ratio-x:0.5; }
-    &-60 { --ratio-x:0.6; }
-    &-70 { --ratio-x:0.7; }
-    &-80 { --ratio-x:0.8; }
+  @if type-of($image-text-ratio-options) == list {
+
+    @each $ratio in $image-text-ratio-options {
+      $value: '';
+
+      @if ($ratio == 38) {
+        $value: 0.38195; // golden cut
+      } @else {
+        $value: divide($ratio,100);
+      }
+
+      .it-width-#{$ratio} {--ratio-x:#{$value};}
+    }
   }
 
   // Float only works with left and right

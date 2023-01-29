@@ -277,7 +277,7 @@
         <field title="alias">imageTextWidth</field>
         <field title="title">Width</field>
         <field title="description">Defines the width of image or text (depending on mode).</field>
-        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:11:"it-width-25";s:5:"value";s:3:"25%";}i:1;a:2:{s:3:"key";s:11:"it-width-33";s:5:"value";s:3:"33%";}i:2;a:2:{s:3:"key";s:11:"it-width-38";s:5:"value";s:3:"38%";}i:3;a:2:{s:3:"key";s:11:"it-width-40";s:5:"value";s:3:"40%";}i:4;a:2:{s:3:"key";s:11:"it-width-50";s:5:"value";s:3:"50%";}i:5;a:2:{s:3:"key";s:11:"it-width-60";s:5:"value";s:3:"60%";}i:6;a:2:{s:3:"key";s:11:"it-width-70";s:5:"value";s:3:"70%";}i:7;a:2:{s:3:"key";s:11:"it-width-80";s:5:"value";s:3:"80%";}}</field>
+        <field title="cssClasses"></field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

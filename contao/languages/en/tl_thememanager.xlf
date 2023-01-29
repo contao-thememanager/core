@@ -2428,6 +2428,12 @@
       <trans-unit id="tl_thememanager.image-text-behaviour-min-width.1">
         <source>Here you can set the minimum width for the image-text behaviour.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-ratio-options.0">
+        <source>$image-text-ratio-options</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-ratio-options.1">
+        <source>Here you can enter comma-separated ratios that will available within the image-text component. Only full numbers are allowed.</source>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.header-bg.0">
         <source>$header-bg</source>

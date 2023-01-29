@@ -3204,6 +3204,14 @@
         <source>Here you can set the minimum width for the image-text behaviour.</source>
         <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von Bild-Text-Layouts einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-ratio-options.0">
+        <source>$image-text-ratio-options</source>
+        <target>$image-text-ratio-options</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.image-text-ratio-options.1">
+        <source>Here you can enter comma-separated ratios that will be available within the image-text component. Only full numbers are allowed.</source>
+        <target>Hier können Sie durch Komma getrennte Seitenverhältnisse eingeben, die für Image-Text Komponenten zur Verfügung stehen sollen. Nur Ganzzahlen sind erlaubt.</target>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.header-bg.0">
         <source>$header-bg</source>
