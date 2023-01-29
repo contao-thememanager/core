@@ -9,6 +9,18 @@
   }
 }
 
+.img {
+
+  &-align {
+    --img-mx:0;
+    img { display: block; margin:var(--img-mx);}
+  }
+
+  &--left   {--img-mx:0 auto 0 0;}
+  &--center {--img-mx:0 auto;}
+  &--right  {--img-mx:0 0 0 auto;}
+}
+
 img,
 video {
   object-fit: var(--objf, fill);
