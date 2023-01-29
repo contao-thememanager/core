@@ -1,12 +1,16 @@
 ul, ol {
   // Always reset count due to grid-lists
   --i:1;
+  --i-v-gap:#{rem(3)};
   margin: 0;
   column-count:var(--i, auto);
 }
 
 li {
-  padding: rem(3) 0;
+  .c_list &, & { // Raise specificity to override layout from download element icons
+    padding-top: var(--i-v-gap);
+    padding-bottom: var(--i-v-gap);
+  }
 
   .c_list.flow-y & { width: calc(100% / var(--i)); }
 
@@ -16,6 +20,12 @@ li {
     page-break-inside: avoid;
     break-inside: avoid;
   }
+}
+
+.c_list {
+  &.small-gutter  {--i-v-gap:calc(var(--gtr-btm-sml)/2);}
+  &.medium-gutter {--i-v-gap:calc(var(--gtr-btm)/2);}
+  &.flow-y        {--i-v-gap:#{rem(3)};--h-gap:0;}
 }
 
 .li {
