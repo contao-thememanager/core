@@ -10,7 +10,7 @@
   <?php foreach ($this->list as $item): ?>
     <?php if (!$item->invisible || $previewMode): ?>
       <li>
-        <a class="<?=ltrim($sm->prepare('button')->format('%s') . $sm->prepare('icon', ['icon', 'direction'])->format(' %s'))?>" href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+        <a class="<?=$item->cssClass?' '.$item->cssClass:''?><?=ltrim($sm->prepare('button')->format('%s') . $sm->prepare('icon', ['icon', 'direction'])->format(' %s'))?>" href="<?=$item->url?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
       </li>
     <?php endif; ?>
   <?php endforeach ?>
