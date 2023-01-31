@@ -44,13 +44,15 @@
   .c_image { width: 100%; }
 
   .c_text {
-    --it-wdth: calc(100% * var(--ratio-x, 1));
+    //--it-wdth: calc(100% * var(--ratio-x, 1));
+    --it-wdth: calc(100% * var(--ratio-x));
 
     position: absolute;
     padding: var(--c-m);
 
     max-height: calc(100% - var(--i-py,0%) - var(--i-py,0%));
-    max-width: calc(var(--it-wdth,100%) - var(--i-px,0%) - var(--i-px,0%));
+    //width: calc(var(--it-wdth,100%) - var(--i-px,0%) - var(--i-px,0%));
+    width: calc(var(--it-wdth) - var(--i-px,0%) - var(--i-px,0%));
 
     overflow: hidden;
   }
