@@ -1,4 +1,3 @@
-// ToDo: Add possibility to set generated backgrounds and their options (within inside containers)
 .box,
 .box-list {
   --box-bg:#{$boxed-background-color};
@@ -15,7 +14,6 @@
 }
 
 .box > .inside {
-  // FixMe: Check template background colors within inside container
   background-color: var(--box-bg);
 }
 
