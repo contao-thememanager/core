@@ -1814,6 +1814,19 @@
       <trans-unit id="tl_thememanager.button-hover-bg-primary.1">
         <source>Here you can set the background for primary buttons when hovered.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-primary-invert.0">
+        <source>$button-bg-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-primary-invert.1">
+        <source>Here you can set the background for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.0">
+        <source>$button-hover-bg-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.1">
+        <source>Here you can set the background for inverted primary buttons when hovered.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.button-color-primary.0">
         <source>$button-color-primary</source>
       </trans-unit>
@@ -1825,6 +1838,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-color-primary.1">
         <source>Here you can set the text color for primary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-primary-invert.0">
+        <source>$button-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-primary-invert.1">
+        <source>Here you can set the text color for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.0">
+        <source>$button-hover-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.1">
+        <source>Here you can set the text color for inverted primary buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-color-primary.0">
@@ -1838,6 +1863,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-border-color-primary.1">
         <source>Here you can set the border-color for primary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary-invert.0">
+        <source>$button-border-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary-invert.1">
+        <source>Here you can set the border-color for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.0">
+        <source>$button-hover-border-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.1">
+        <source>Here you can set the border-color for inverted primary buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-radius-primary.0">
@@ -1884,6 +1921,19 @@
       <trans-unit id="tl_thememanager.button-hover-bg-secondary.1">
         <source>Here you can set the background for secondary buttons when hovered.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary-invert.0">
+        <source>$button-bg-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary-invert.1">
+        <source>Here you can set the background for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.0">
+        <source>$button-hover-bg-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.1">
+        <source>Here you can set the background for inverted secondary buttons when hovered.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.button-color-secondary.0">
         <source>$button-color-secondary</source>
       </trans-unit>
@@ -1895,6 +1945,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-color-secondary.1">
         <source>Here you can set the text color for secondary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary-invert.0">
+        <source>$button-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary-invert.1">
+        <source>Here you can set the text color for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.0">
+        <source>$button-hover-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.1">
+        <source>Here you can set the text color for inverted secondary buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-color-secondary.0">
@@ -1908,6 +1970,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-border-color-secondary.1">
         <source>Here you can set the border-color for secondary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.0">
+        <source>$button-border-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.1">
+        <source>Here you can set the border-color for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.0">
+        <source>$button-hover-border-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.1">
+        <source>Here you can set the border-color for inverted secondary buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
@@ -1954,6 +2028,19 @@
       <trans-unit id="tl_thememanager.button-hover-bg-alt.1">
         <source>Here you can set the background for alternative buttons when hovered.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt-invert.0">
+        <source>$button-bg-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt-invert.1">
+        <source>Here you can set the background for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.0">
+        <source>$button-hover-bg-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.1">
+        <source>Here you can set the background for inverted alternative buttons when hovered.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.button-color-alt.0">
         <source>$button-color-alt</source>
       </trans-unit>
@@ -1965,6 +2052,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-color-alt.1">
         <source>Here you can set the text color for alternative buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt-invert.0">
+        <source>$button-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt-invert.1">
+        <source>Here you can set the text color for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.0">
+        <source>$button-hover-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.1">
+        <source>Here you can set the text color for inverted alternative buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-color-alt.0">
@@ -1978,6 +2077,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-hover-border-color-alt.1">
         <source>Here you can set the border-color for alternative buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt-invert.0">
+        <source>$button-border-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt-invert.1">
+        <source>Here you can set the border-color for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.0">
+        <source>$button-hover-border-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.1">
+        <source>Here you can set the border-color for inverted alternative buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-border-radius-alt.0">
@@ -2432,7 +2543,7 @@
         <source>$image-text-ratio-options</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.image-text-ratio-options.1">
-        <source>Here you can enter comma-separated ratios that will available within the image-text component. Only full numbers are allowed.</source>
+        <source>Here you can enter comma-separated ratios that will be available within the image-text component. Only full numbers are allowed.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.header-bg.0">
