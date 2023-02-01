@@ -2119,11 +2119,11 @@
       <trans-unit id="tl_thememanager.boxed-border-color.1">
         <source>Here you can set the border-color for boxed elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.0">
-        <source>$boxed-border-style</source>
+      <trans-unit id="tl_thememanager.boxed-border-radius.0">
+        <source>$boxed-border-radius</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.1">
-        <source>Here you can choose the border-style for boxed elements.</source>
+      <trans-unit id="tl_thememanager.boxed-border-radius.1">
+        <source>Here you can set the border-radius for boxed elements.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.boxed-border-width.0">
         <source>$boxed-border-width</source>
@@ -2131,11 +2131,11 @@
       <trans-unit id="tl_thememanager.boxed-border-width.1">
         <source>Here you can set the border-width for boxed elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.0">
-        <source>$boxed-border-radius</source>
+      <trans-unit id="tl_thememanager.boxed-border-style.0">
+        <source>$boxed-border-style</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.1">
-        <source>Here you can set the border-radius for boxed elements.</source>
+      <trans-unit id="tl_thememanager.boxed-border-style.1">
+        <source>Here you can choose the border-style for boxed elements.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.table-cell-spacing.0">

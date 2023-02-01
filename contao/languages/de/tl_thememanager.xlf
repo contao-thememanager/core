@@ -2793,13 +2793,13 @@
         <source>Here you can set the border-color for boxed elements.</source>
         <target>Hier können Sie die Rahmen-Farbe (border-color) für Boxed-Elemente einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.0">
-        <source>$boxed-border-style</source>
-        <target>$boxed-border-style</target>
+      <trans-unit id="tl_thememanager.boxed-border-radius.0">
+        <source>$boxed-border-radius</source>
+        <target>$boxed-border-radius</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.1">
-        <source>Here you can choose the border-style for boxed elements.</source>
-        <target>Hier können Sie den Rahmenstil (border-style) für Boxed-Elemente auswählen.</target>
+      <trans-unit id="tl_thememanager.boxed-border-radius.1">
+        <source>Here you can set the border-radius for boxed elements.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für Boxed-Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.boxed-border-width.0">
         <source>$boxed-border-width</source>
@@ -2809,13 +2809,13 @@
         <source>Here you can set the border-width for boxed elements.</source>
         <target>Hier können Sie die Rahmenbreite (border-width) für Boxed-Elemente einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.0">
-        <source>$boxed-border-radius</source>
-        <target>$boxed-border-radius</target>
+      <trans-unit id="tl_thememanager.boxed-border-style.0">
+        <source>$boxed-border-style</source>
+        <target>$boxed-border-style</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.1">
-        <source>Here you can set the border-radius for boxed elements.</source>
-        <target>Hier können Sie den Rahmen-Radius (border-radius) für Boxed-Elemente einstellen.</target>
+      <trans-unit id="tl_thememanager.boxed-border-style.1">
+        <source>Here you can choose the border-style for boxed elements.</source>
+        <target>Hier können Sie den Rahmenstil (border-style) für Boxed-Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.table-cell-spacing.0">
