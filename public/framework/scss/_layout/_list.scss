@@ -6,7 +6,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; //var(--flex-justify); // ToDo Add to navigations
 
     column-gap: rem(10);
   }

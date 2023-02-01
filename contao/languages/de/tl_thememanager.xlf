@@ -2409,31 +2409,6 @@
         <target>Hier können Sie die Schriftfarbe für primäre Buttons beim hovern einstellen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-primary.0">
-        <source>$button-border-radius-primary</source>
-        <target>$button-border-radius-primary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-primary.1">
-        <source>Here you can set the border-radius for primary buttons.</source>
-        <target>Hier können Sie den Rahmen-Radius (border-radius) für primäre Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-primary.0">
-        <source>$button-border-style-primary</source>
-        <target>$button-border-style-primary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-primary.1">
-        <source>Here you can choose the border-style for primary buttons.</source>
-        <target>Hier können Sie den Rahmenstil (border-style) für primäre Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-primary.0">
-        <source>$button-border-width-primary</source>
-        <target>$button-border-width-primary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-primary.1">
-        <source>Here you can set the border-width for primary buttons.</source>
-        <target>Hier können Sie die Rahmenbreite (border-width) für primäre Buttons einstellen.</target>
-      </trans-unit>
-
       <trans-unit id="tl_thememanager.button-border-color-primary.0">
         <source>$button-border-color-primary</source>
         <target>$button-border-color-primary</target>
@@ -2449,6 +2424,31 @@
       <trans-unit id="tl_thememanager.button-hover-border-color-primary.1">
         <source>Here you can set the border-color for primary buttons when hovered.</source>
         <target>Hier können Sie die Rahmen-Farbe (border-color) für primäre Buttons beim hovern einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-primary.0">
+        <source>$button-border-radius-primary</source>
+        <target>$button-border-radius-primary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-primary.1">
+        <source>Here you can set the border-radius for primary buttons.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für primäre Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.0">
+        <source>$button-border-width-primary</source>
+        <target>$button-border-width-primary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.1">
+        <source>Here you can set the border-width for primary buttons.</source>
+        <target>Hier können Sie die Rahmenbreite (border-width) für primäre Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.0">
+        <source>$button-border-style-primary</source>
+        <target>$button-border-style-primary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.1">
+        <source>Here you can choose the border-style for primary buttons.</source>
+        <target>Hier können Sie den Rahmenstil (border-style) für primäre Buttons einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-font-weight-secondary.0">
@@ -2501,31 +2501,6 @@
         <target>Hier können Sie die Schriftfarbe für sekundäre Buttons beim hovern einstellen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
-        <source>$button-border-radius-secondary</source>
-        <target>$button-border-radius-secondary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-secondary.1">
-        <source>Here you can set the border-radius for secondary buttons.</source>
-        <target>Hier können Sie den Rahmen-Radius (border-radius) für sekundäre Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-secondary.0">
-        <source>$button-border-style-secondary</source>
-        <target>$button-border-style-secondary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-secondary.1">
-        <source>Here you can choose the border-style for secondary buttons.</source>
-        <target>Hier können Sie den Rahmenstil (border-style) für sekundäre Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-secondary.0">
-        <source>$button-border-width-secondary</source>
-        <target>$button-border-width-secondary</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-secondary.1">
-        <source>Here you can set the border-width for secondary buttons.</source>
-        <target>Hier können Sie die Rahmenbreite (border-width) für sekundäre Buttons einstellen.</target>
-      </trans-unit>
-
       <trans-unit id="tl_thememanager.button-border-color-secondary.0">
         <source>$button-border-color-secondary</source>
         <target>$button-border-color-secondary</target>
@@ -2541,6 +2516,31 @@
       <trans-unit id="tl_thememanager.button-hover-border-color-secondary.1">
         <source>Here you can set the border-color for secondary buttons when hovered.</source>
         <target>Hier können Sie die Rahmen-Farbe (border-color) für sekundäre Buttons beim hovern einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
+        <source>$button-border-radius-secondary</source>
+        <target>$button-border-radius-secondary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.1">
+        <source>Here you can set the border-radius for secondary buttons.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für sekundäre Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.0">
+        <source>$button-border-width-secondary</source>
+        <target>$button-border-width-secondary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.1">
+        <source>Here you can set the border-width for secondary buttons.</source>
+        <target>Hier können Sie die Rahmenbreite (border-width) für sekundäre Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.0">
+        <source>$button-border-style-secondary</source>
+        <target>$button-border-style-secondary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.1">
+        <source>Here you can choose the border-style for secondary buttons.</source>
+        <target>Hier können Sie den Rahmenstil (border-style) für sekundäre Buttons einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-font-weight-alt.0">
@@ -2593,31 +2593,6 @@
         <target>Hier können Sie die Schriftfarbe für alternative Buttons beim hovern einstellen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-alt.0">
-        <source>$button-border-radius-alt</source>
-        <target>$button-border-radius-alt</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-alt.1">
-        <source>Here you can set the border-radius for alternative buttons.</source>
-        <target>Hier können Sie den Rahmen-Radius (border-radius) für alternative Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-alt.0">
-        <source>$button-border-style-alt</source>
-        <target>$button-border-style-alt</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-alt.1">
-        <source>Here you can choose the border-style for alternative buttons.</source>
-        <target>Hier können Sie den Rahmenstil (border-style) für alternative Buttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-alt.0">
-        <source>$button-border-width-alt</source>
-        <target>$button-border-width-alt</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-alt.1">
-        <source>Here you can set the border-width for alternative buttons.</source>
-        <target>Hier können Sie die Rahmenbreite (border-width) für alternative Buttons einstellen.</target>
-      </trans-unit>
-
       <trans-unit id="tl_thememanager.button-border-color-alt.0">
         <source>$button-border-color-alt</source>
         <target>$button-border-color-alt</target>
@@ -2633,6 +2608,31 @@
       <trans-unit id="tl_thememanager.button-hover-border-color-alt.1">
         <source>Here you can set the border-color for alternative buttons when hovered.</source>
         <target>Hier können Sie die Rahmen-Farbe (border-color) für alternative Buttons beim hovern einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-alt.0">
+        <source>$button-border-radius-alt</source>
+        <target>$button-border-radius-alt</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-alt.1">
+        <source>Here you can set the border-radius for alternative buttons.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für alternative Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-alt.0">
+        <source>$button-border-width-alt</source>
+        <target>$button-border-width-alt</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-alt.1">
+        <source>Here you can set the border-width for alternative buttons.</source>
+        <target>Hier können Sie die Rahmenbreite (border-width) für alternative Buttons einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.0">
+        <source>$button-border-style-alt</source>
+        <target>$button-border-style-alt</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.1">
+        <source>Here you can choose the border-style for alternative buttons.</source>
+        <target>Hier können Sie den Rahmenstil (border-style) für alternative Buttons einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.paragraph-spacing.0">

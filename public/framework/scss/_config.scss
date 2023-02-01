@@ -377,12 +377,12 @@ $button-hover-bg-primary:                 darken($button-bg-primary, 10) !defaul
 $button-color-primary:                    $text-color-invert !default;
 $button-hover-color-primary:              $text-color-invert !default;
 
-$button-border-radius-primary:            0 !default;
-$button-border-style-primary:             solid !default;
-$button-border-width-primary:             2px !default;
-
 $button-border-color-primary:             $button-bg-primary !default;
 $button-hover-border-color-primary:       $button-hover-bg-primary !default;
+
+$button-border-radius-primary:            0 !default;
+$button-border-width-primary:             2px !default;
+$button-border-style-primary:             solid !default;
 
 // Button design secondary
 $button-font-weight-secondary:            $font-weight-base !default;
@@ -393,12 +393,12 @@ $button-hover-bg-secondary:               $primary !default;
 $button-color-secondary:                  $primary !default;
 $button-hover-color-secondary:            $text-color-invert !default;
 
-$button-border-radius-secondary:          0 !default;
-$button-border-style-secondary:           solid !default;
-$button-border-width-secondary:           2px !default;
-
 $button-border-color-secondary:           $button-color-secondary !default;
 $button-hover-border-color-secondary:     $button-hover-bg-secondary !default;
+
+$button-border-radius-secondary:          0 !default;
+$button-border-width-secondary:           2px !default;
+$button-border-style-secondary:           solid !default;
 
 // Button design alternative
 $button-font-weight-alt:                  $font-weight-base !default;
@@ -409,12 +409,12 @@ $button-hover-bg-alt:                     darken($button-bg-alt, 10) !default;
 $button-color-alt:                        $text-color-invert !default;
 $button-hover-color-alt:                  $text-color-invert !default;
 
-$button-border-radius-alt:                0 !default;
-$button-border-style-alt:                 solid !default;
-$button-border-width-alt:                 2px !default;
-
 $button-border-color-alt:                 $button-bg-alt !default;
 $button-hover-border-color-alt:           $button-hover-bg-alt !default;
+
+$button-border-radius-alt:                0 !default;
+$button-border-width-alt:                 2px !default;
+$button-border-style-alt:                 solid !default;
 
 // Spacings (Inner)
 $paragraph-spacing:                       1rem !default;
