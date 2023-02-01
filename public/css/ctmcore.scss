@@ -34,12 +34,22 @@ $select-type-wdth: 60px; // Select option width - Also for wizards
 
 form#tl_thememanager {
 
+  .widget label {
+    //font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 16px;
+  }
+
   // Inputs
   input {
     text-overflow: ellipsis;
   }
 
-  .tl_text, .tl_text_unit, .tl_text_trbl, .tl_select {
+  .tl_text, .tl_text_unit, .tl_text_trbl, .tl_select, .chzn-container-single .chzn-single {
     border-radius: $field-br;
   }
 
