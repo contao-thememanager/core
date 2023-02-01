@@ -18,9 +18,11 @@
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-size,form-field-icon-color,form-field-icon-background;' .
             '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
             '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
-            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-bg-primary,button-hover-bg-primary,button-color-primary,button-hover-color-primary,button-border-color-primary,button-hover-border-color-primary,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
-            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-color-secondary,button-hover-color-secondary,button-border-color-secondary,button-hover-border-color-secondary,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
-            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-color-alt,button-hover-color-alt,button-border-color-alt,button-hover-border-color-alt,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
+
+            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
+            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
+            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
+
             '{spacing_inner_legend:hide},paragraph-spacing,component-inner-spacing,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
             '{divider_legend:hide},divider-size,divider-style,divider-color;' .
@@ -1922,6 +1924,19 @@
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
+        'button-bg-primary-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-primary-invert' => [
+            'default'                 => 'darken($button-bg-primary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
         'button-color-primary' => [
             'default'                 => '$text-color-invert',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary'],
@@ -1931,6 +1946,18 @@
         'button-hover-color-primary' => [
             'default'                 => '$text-color-invert',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-color-primary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-primary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary-invert'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
@@ -1944,6 +1971,18 @@
         'button-hover-border-color-primary' => [
             'default'                 => '$button-hover-bg-primary',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-primary-invert' => [
+            'default'                 => '$button-color-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-primary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-primary-invert' => [
+            'default'                 => '$button-hover-bg-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary-invert'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
@@ -1986,22 +2025,35 @@
         ],
 
         'button-bg-secondary' => [
-            'default'                 => 'transparent',
+            'default'                 => '$secondary',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'$secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'button-hover-bg-secondary' => [
-            'default'                 => '$primary',
+            'default'                 => 'darken($button-bg-secondary, 10)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
+        'button-bg-secondary-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-secondary-invert' => [
+            'default'                 => 'darken($button-bg-secondary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
         'button-color-secondary' => [
-            'default'                 => '$primary',
+            'default'                 => '$text-color-invert',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'button-hover-color-secondary' => [
             'default'                 => '$text-color-invert',
@@ -2009,16 +2061,40 @@
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
+        'button-color-secondary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-secondary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
 
         'button-border-color-secondary' => [
-            'default'                 => '$button-color-secondary',
+            'default'                 => '$button-bg-secondary',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-color-secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'$button-bg-secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'button-hover-border-color-secondary' => [
             'default'                 => '$button-hover-bg-secondary',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-secondary-invert' => [
+            'default'                 => '$button-color-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-secondary-invert' => [
+            'default'                 => '$button-hover-bg-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary-invert'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
@@ -2061,10 +2137,10 @@
         ],
 
         'button-bg-alt' => [
-            'default'                 => '$secondary',
+            'default'                 => '$dark',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$secondary', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'$dark', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'button-hover-bg-alt' => [
             'default'                 => 'darken($button-bg-alt, 10)',
@@ -2072,6 +2148,19 @@
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
+        'button-bg-alt-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-alt-invert' => [
+            'default'                 => 'darken($button-bg-alt, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
         'button-color-alt' => [
             'default'                 => '$text-color-invert',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt'],
@@ -2081,6 +2170,18 @@
         'button-hover-color-alt' => [
             'default'                 => '$text-color-invert',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-color-alt-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-alt-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt-invert'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
@@ -2094,6 +2195,18 @@
         'button-hover-border-color-alt' => [
             'default'                 => '$button-hover-bg-alt',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-alt-invert' => [
+            'default'                 => '$button-color-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-alt', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-alt-invert' => [
+            'default'                 => '$button-hover-bg-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt-invert'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
