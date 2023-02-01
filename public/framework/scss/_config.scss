@@ -1,223 +1,223 @@
 // Defaults
-$browser-context:                         16 !default;
-$body-bg:                                 #fff !default;
+$browser-context:                             16 !default;
+$body-bg:                                     #fff !default;
 
 // Base colors
-$primary:                                 #36c !default;
-$secondary:                               #9cf !default;
-$light:                                   #f3f3f3 !default;
-$dark:                                    #2b2b2b !default;
+$primary:                                     #36c !default;
+$secondary:                                   #9cf !default;
+$light:                                       #f3f3f3 !default;
+$dark:                                        #2b2b2b !default;
 
 // Typography
-$font-family-base:                        Arial, sans-serif !default;
-$font-size-base:                          $browser-context * 1px !default;
-$line-height-base:                        1.687 !default;
+$font-family-base:                            Arial, sans-serif !default;
+$font-size-base:                              $browser-context * 1px !default;
+$line-height-base:                            1.687 !default;
 
-$text-color-regular:                      #000 !default;
-$text-color-invert:                       #fff !default;
+$text-color-regular:                          #000 !default;
+$text-color-invert:                           #fff !default;
 
-$font-weight-base:                        400 !default;
-$font-weight-light:                       300 !default;
-$font-weight-regular:                     400 !default;
-$font-weight-medium:                      500 !default;
-$font-weight-semibold:                    600 !default;
-$font-weight-bold:                        700 !default;
-$strong-font-weight:                      $font-weight-bold !default;
+$font-weight-base:                            400 !default;
+$font-weight-light:                           300 !default;
+$font-weight-regular:                         400 !default;
+$font-weight-medium:                          500 !default;
+$font-weight-semibold:                        600 !default;
+$font-weight-bold:                            700 !default;
+$strong-font-weight:                          $font-weight-bold !default;
 
 // Headings
-$line-height-headline:                    1.2 !default;
+$line-height-headline:                        1.2 !default;
 
-$h1-font-size-small:                      1.5rem !default;
-$h1-font-size-medium:                     2.02rem !default;
-$h1-font-size:                            2.8rem !default;
-$h1-line-height:                          $line-height-headline !default;
+$h1-font-size-small:                          1.5rem !default;
+$h1-font-size-medium:                         2.02rem !default;
+$h1-font-size:                                2.8rem !default;
+$h1-line-height:                              $line-height-headline !default;
 
-$h2-font-size-small:                      1.35rem !default;
-$h2-font-size-medium:                     1.685rem !default;
-$h2-font-size:                            2.187rem !default;
-$h2-line-height:                          $line-height-headline !default;
+$h2-font-size-small:                          1.35rem !default;
+$h2-font-size-medium:                         1.685rem !default;
+$h2-font-size:                                2.187rem !default;
+$h2-line-height:                              $line-height-headline !default;
 
-$h3-font-size-small:                      1.187rem !default;
-$h3-font-size-medium:                     1.287rem !default;
-$h3-font-size:                            1.437rem !default;
-$h3-line-height:                          $line-height-headline !default;
+$h3-font-size-small:                          1.187rem !default;
+$h3-font-size-medium:                         1.287rem !default;
+$h3-font-size:                                1.437rem !default;
+$h3-line-height:                              $line-height-headline !default;
 
-$h4-font-size-small:                      1.12rem !default;
-$h4-font-size-medium:                     1.172rem !default;
-$h4-font-size:                            1.25rem !default;
-$h4-line-height:                          $line-height-headline !default;
+$h4-font-size-small:                          1.12rem !default;
+$h4-font-size-medium:                         1.172rem !default;
+$h4-font-size:                                1.25rem !default;
+$h4-line-height:                              $line-height-headline !default;
 
-$h5-font-size-small:                      1.031rem !default;
-$h5-font-size-medium:                     1.069rem !default;
-$h5-font-size:                            1.125rem !default;
-$h5-line-height:                          $line-height-headline !default;
+$h5-font-size-small:                          1.031rem !default;
+$h5-font-size-medium:                         1.069rem !default;
+$h5-font-size:                                1.125rem !default;
+$h5-line-height:                              $line-height-headline !default;
 
-$h6-font-size-small:                      1rem !default;
-$h6-font-size-medium:                     1rem !default;
-$h6-font-size:                            1rem !default;
-$h6-line-height:                          $line-height-headline !default;
+$h6-font-size-small:                          1rem !default;
+$h6-font-size-medium:                         1rem !default;
+$h6-font-size:                                1rem !default;
+$h6-line-height:                              $line-height-headline !default;
 
-$h1-color:                                $text-color-regular !default;
-$h1-color-invert:                         $text-color-invert !default;
-$h1-font-weight:                          $font-weight-bold !default;
-$h1-letter-spacing:                       0rem !default;
-$h1-transform:                            none !default;
+$h1-color:                                    $text-color-regular !default;
+$h1-color-invert:                             $text-color-invert !default;
+$h1-font-weight:                              $font-weight-bold !default;
+$h1-letter-spacing:                           0rem !default;
+$h1-transform:                                none !default;
 
-$h2-color:                                $text-color-regular !default;
-$h2-color-invert:                         $text-color-invert !default;
-$h2-font-weight:                          $font-weight-bold !default;
-$h2-letter-spacing:                       0rem !default;
-$h2-transform:                            none !default;
+$h2-color:                                    $text-color-regular !default;
+$h2-color-invert:                             $text-color-invert !default;
+$h2-font-weight:                              $font-weight-bold !default;
+$h2-letter-spacing:                           0rem !default;
+$h2-transform:                                none !default;
 
-$h3-color:                                $text-color-regular !default;
-$h3-color-invert:                         $text-color-invert !default;
-$h3-font-weight:                          $font-weight-bold !default;
-$h3-letter-spacing:                       0rem !default;
-$h3-transform:                            none !default;
+$h3-color:                                    $text-color-regular !default;
+$h3-color-invert:                             $text-color-invert !default;
+$h3-font-weight:                              $font-weight-bold !default;
+$h3-letter-spacing:                           0rem !default;
+$h3-transform:                                none !default;
 
-$h4-color:                                $text-color-regular !default;
-$h4-color-invert:                         $text-color-invert !default;
-$h4-font-weight:                          $font-weight-bold !default;
-$h4-letter-spacing:                       0rem !default;
-$h4-transform:                            none !default;
+$h4-color:                                    $text-color-regular !default;
+$h4-color-invert:                             $text-color-invert !default;
+$h4-font-weight:                              $font-weight-bold !default;
+$h4-letter-spacing:                           0rem !default;
+$h4-transform:                                none !default;
 
-$h5-color:                                $text-color-regular !default;
-$h5-color-invert:                         $text-color-invert !default;
-$h5-font-weight:                          $font-weight-bold !default;
-$h5-letter-spacing:                       0rem !default;
-$h5-transform:                            none !default;
+$h5-color:                                    $text-color-regular !default;
+$h5-color-invert:                             $text-color-invert !default;
+$h5-font-weight:                              $font-weight-bold !default;
+$h5-letter-spacing:                           0rem !default;
+$h5-transform:                                none !default;
 
-$h6-color:                                $text-color-regular !default;
-$h6-color-invert:                         $text-color-invert !default;
-$h6-font-weight:                          $font-weight-bold !default;
-$h6-letter-spacing:                       0rem !default;
-$h6-transform:                            none !default;
+$h6-color:                                    $text-color-regular !default;
+$h6-color-invert:                             $text-color-invert !default;
+$h6-font-weight:                              $font-weight-bold !default;
+$h6-letter-spacing:                           0rem !default;
+$h6-transform:                                none !default;
 
 // Content headings
-$h1-content-font-size-small:              1.5rem !default;
-$h1-content-font-size-medium:             1.86rem !default;
-$h1-content-font-size:                    2.4rem !default;
-$h1-content-line-height:                  $h1-line-height !default;
+$h1-content-font-size-small:                  1.5rem !default;
+$h1-content-font-size-medium:                 1.86rem !default;
+$h1-content-font-size:                        2.4rem !default;
+$h1-content-line-height:                      $h1-line-height !default;
 
-$h2-content-font-size-small:              1.35rem !default;
-$h2-content-font-size-medium:             1.57rem !default;
-$h2-content-font-size:                    1.9rem !default;
-$h2-content-line-height:                  $h2-line-height !default;
+$h2-content-font-size-small:                  1.35rem !default;
+$h2-content-font-size-medium:                 1.57rem !default;
+$h2-content-font-size:                        1.9rem !default;
+$h2-content-line-height:                      $h2-line-height !default;
 
-$h3-content-font-size-small:              1.187rem !default;
-$h3-content-font-size-medium:             1.287rem !default;
-$h3-content-font-size:                    1.437rem !default;
-$h3-content-line-height:                  $h3-line-height !default;
+$h3-content-font-size-small:                  1.187rem !default;
+$h3-content-font-size-medium:                 1.287rem !default;
+$h3-content-font-size:                        1.437rem !default;
+$h3-content-line-height:                      $h3-line-height !default;
 
-$h4-content-font-size-small:              1.12rem !default;
-$h4-content-font-size-medium:             1.172rem !default;
-$h4-content-font-size:                    1.25rem !default;
-$h4-content-line-height:                  $h4-line-height !default;
+$h4-content-font-size-small:                  1.12rem !default;
+$h4-content-font-size-medium:                 1.172rem !default;
+$h4-content-font-size:                        1.25rem !default;
+$h4-content-line-height:                      $h4-line-height !default;
 
-$h5-content-font-size-small:              1.031rem !default;
-$h5-content-font-size-medium:             1.069rem !default;
-$h5-content-font-size:                    1.125rem !default;
-$h5-content-line-height:                  $h5-line-height !default;
+$h5-content-font-size-small:                  1.031rem !default;
+$h5-content-font-size-medium:                 1.069rem !default;
+$h5-content-font-size:                        1.125rem !default;
+$h5-content-line-height:                      $h5-line-height !default;
 
-$h6-content-font-size-small:              1rem !default;
-$h6-content-font-size-medium:             1rem !default;
-$h6-content-font-size:                    1rem !default;
-$h6-content-line-height:                  $h6-line-height !default;
+$h6-content-font-size-small:                  1rem !default;
+$h6-content-font-size-medium:                 1rem !default;
+$h6-content-font-size:                        1rem !default;
+$h6-content-line-height:                      $h6-line-height !default;
 
-$h1-content-color:                        $h1-color !default;
-$h1-content-color-invert:                 $h1-color-invert !default;
-$h1-content-font-weight:                  $h1-font-weight !default;
-$h1-content-letter-spacing:               0rem !default;
-$h1-content-transform:                    none !default;
+$h1-content-color:                            $h1-color !default;
+$h1-content-color-invert:                     $h1-color-invert !default;
+$h1-content-font-weight:                      $h1-font-weight !default;
+$h1-content-letter-spacing:                   0rem !default;
+$h1-content-transform:                        none !default;
 
-$h2-content-color:                        $h2-color !default;
-$h2-content-color-invert:                 $h2-color-invert !default;
-$h2-content-font-weight:                  $h2-font-weight !default;
-$h2-content-letter-spacing:               0rem !default;
-$h2-content-transform:                    none !default;
+$h2-content-color:                            $h2-color !default;
+$h2-content-color-invert:                     $h2-color-invert !default;
+$h2-content-font-weight:                      $h2-font-weight !default;
+$h2-content-letter-spacing:                   0rem !default;
+$h2-content-transform:                        none !default;
 
-$h3-content-color:                        $h3-color !default;
-$h3-content-color-invert:                 $h3-color-invert !default;
-$h3-content-font-weight:                  $h3-font-weight !default;
-$h3-content-letter-spacing:               0rem !default;
-$h3-content-transform:                    none !default;
+$h3-content-color:                            $h3-color !default;
+$h3-content-color-invert:                     $h3-color-invert !default;
+$h3-content-font-weight:                      $h3-font-weight !default;
+$h3-content-letter-spacing:                   0rem !default;
+$h3-content-transform:                        none !default;
 
-$h4-content-color:                        $h4-color !default;
-$h4-content-color-invert:                 $h4-color-invert !default;
-$h4-content-font-weight:                  $h4-font-weight !default;
-$h4-content-letter-spacing:               0rem !default;
-$h4-content-transform:                    none !default;
+$h4-content-color:                            $h4-color !default;
+$h4-content-color-invert:                     $h4-color-invert !default;
+$h4-content-font-weight:                      $h4-font-weight !default;
+$h4-content-letter-spacing:                   0rem !default;
+$h4-content-transform:                        none !default;
 
-$h5-content-color:                        $h5-color !default;
-$h5-content-color-invert:                 $h5-color-invert !default;
-$h5-content-font-weight:                  $h5-font-weight !default;
-$h5-content-letter-spacing:               0rem !default;
-$h5-content-transform:                    none !default;
+$h5-content-color:                            $h5-color !default;
+$h5-content-color-invert:                     $h5-color-invert !default;
+$h5-content-font-weight:                      $h5-font-weight !default;
+$h5-content-letter-spacing:                   0rem !default;
+$h5-content-transform:                        none !default;
 
-$h6-content-color:                        $h6-color !default;
-$h6-content-color-invert:                 $h6-color-invert !default;
-$h6-content-font-weight:                  $h6-font-weight !default;
-$h6-content-letter-spacing:               0rem !default;
-$h6-content-transform:                    none !default;
+$h6-content-color:                            $h6-color !default;
+$h6-content-color-invert:                     $h6-color-invert !default;
+$h6-content-font-weight:                      $h6-font-weight !default;
+$h6-content-letter-spacing:                   0rem !default;
+$h6-content-transform:                        none !default;
 
 // Heading spacing
-$headline-spacing:                        1rem !default;
+$headline-spacing:                            1rem !default;
 
-$headline-spacing-small:                  1rem !default;
-$headline-spacing-s-small:                1.25rem !default;
-$headline-spacing-l-small:                1.75rem !default;
+$headline-spacing-small:                      1rem !default;
+$headline-spacing-s-small:                    1.25rem !default;
+$headline-spacing-l-small:                    1.75rem !default;
 
-$headline-spacing-medium:                 1rem !default;
-$headline-spacing-s-medium:               1.562rem !default;
-$headline-spacing-l-medium:               2.187rem !default;
+$headline-spacing-medium:                     1rem !default;
+$headline-spacing-s-medium:                   1.562rem !default;
+$headline-spacing-l-medium:                   2.187rem !default;
 
-$headline-spacing-large:                  1rem !default;
-$headline-spacing-s-large:                1.875rem !default;
-$headline-spacing-l-large:                3rem !default;
+$headline-spacing-large:                      1rem !default;
+$headline-spacing-s-large:                    1.875rem !default;
+$headline-spacing-l-large:                    3rem !default;
 
 // Article spacing
-$x-spacing-large-m:                       900px !default;
-$x-spacing-large-l:                       1100px !default;
-$x-spacing-small:                         1400px !default;
+$x-spacing-large-m:                           900px !default;
+$x-spacing-large-l:                           1100px !default;
+$x-spacing-small:                             1400px !default;
 
-$article-spacing-xs-small:                2.5rem !default;
-$article-spacing-s-small:                 3.125rem !default;
-$article-spacing-m-small:                 3.75rem !default;
-$article-spacing-l-small:                 4.375rem !default;
-$article-spacing-xl-small:                $article-spacing-l-small !default;
+$article-spacing-xs-small:                    2.5rem !default;
+$article-spacing-s-small:                     3.125rem !default;
+$article-spacing-m-small:                     3.75rem !default;
+$article-spacing-l-small:                     4.375rem !default;
+$article-spacing-xl-small:                    $article-spacing-l-small !default;
 
-$article-spacing-xs-medium:               2.5rem !default;
-$article-spacing-s-medium:                3.75rem !default;
-$article-spacing-m-medium:                5rem !default;
-$article-spacing-l-medium:                7.5rem !default;
-$article-spacing-xl-medium:               $article-spacing-l-medium !default;
+$article-spacing-xs-medium:                   2.5rem !default;
+$article-spacing-s-medium:                    3.75rem !default;
+$article-spacing-m-medium:                    5rem !default;
+$article-spacing-l-medium:                    7.5rem !default;
+$article-spacing-xl-medium:                   $article-spacing-l-medium !default;
 
-$article-spacing-xs-large:                2.5rem !default;
-$article-spacing-s-large:                 4.375rem !default;
-$article-spacing-m-large:                 5.9375rem !default;
-$article-spacing-l-large:                 9.375rem !default;
-$article-spacing-xl-large:                $article-spacing-l-large !default;
+$article-spacing-xs-large:                    2.5rem !default;
+$article-spacing-s-large:                     4.375rem !default;
+$article-spacing-m-large:                     5.9375rem !default;
+$article-spacing-l-large:                     9.375rem !default;
+$article-spacing-xl-large:                    $article-spacing-l-large !default;
 
-$article-min-vheight:                     680px !default;
-$article-options-vheight:                 50,75,100 !default;
+$article-min-vheight:                         680px !default;
+$article-options-vheight:                     50,75,100 !default;
 
 // Links
-$link-font-weight:                        $font-weight-base !default;
+$link-font-weight:                            $font-weight-base !default;
 
-$link-color-regular:                      $primary !default;
-$link-hover-color-regular:                darken($link-color-regular, 15%) !default;
-$link-decoration-regular:                 none !default;
-$link-hover-decoration-regular:           none !default;
+$link-color-regular:                          $primary !default;
+$link-hover-color-regular:                    darken($link-color-regular, 15%) !default;
+$link-decoration-regular:                     none !default;
+$link-hover-decoration-regular:               none !default;
 
-$link-color-invert:                       $text-color-invert !default;
-$link-hover-color-invert:                 $text-color-invert !default;
-$link-decoration-invert:                  underline !default;
-$link-hover-decoration-invert:            none !default;
+$link-color-invert:                           $text-color-invert !default;
+$link-hover-color-invert:                     $text-color-invert !default;
+$link-decoration-invert:                      underline !default;
+$link-hover-decoration-invert:                none !default;
 
-$link-color-extra:                        #3bc !default;
-$link-hover-color-extra:                  darken($link-color-extra, 15%) !default;
-$link-decoration-extra:                   none !default;
-$link-hover-decoration-extra:             none !default;
+$link-color-extra:                            #3bc !default;
+$link-hover-color-extra:                      darken($link-color-extra, 15%) !default;
+$link-decoration-extra:                       none !default;
+$link-hover-decoration-extra:                 none !default;
 
 // Layout
 $breakpoints: (
@@ -228,326 +228,347 @@ $breakpoints: (
   xl: 1921px  // 120rem
 ) !default;
 
-$layout-column-small-break:               's' !default;
-$layout-column-medium-break:              'm' !default;
-$layout-column-large-break:               'l' !default;
+$layout-column-small-break:                   's' !default;
+$layout-column-medium-break:                  'm' !default;
+$layout-column-large-break:                   'l' !default;
 
-$layout-column-width-small:               200px !default;
-$layout-column-width-medium:              300px !default;
-$layout-column-width-large:               330px !default;
+$layout-column-width-small:                   200px !default;
+$layout-column-width-medium:                  300px !default;
+$layout-column-width-large:                   330px !default;
 
-$layout-column-gutter-small:              1rem !default;
-$layout-column-gutter-medium:             2rem !default;
-$layout-column-gutter-large:              3rem !default;
+$layout-column-gutter-small:                  1rem !default;
+$layout-column-gutter-medium:                 2rem !default;
+$layout-column-gutter-large:                  3rem !default;
 
 // Grid
-$grid-columns:                            12 !default;
-$grid-gutter-width:                       2rem !default;
-$grid-gutter-bottom:                      $grid-gutter-width !default;
-$grid-gutter-small-width:                 1rem !default;
-$grid-gutter-small-bottom:                $grid-gutter-small-width !default;
+$grid-columns:                                12 !default;
+$grid-gutter-width:                           2rem !default;
+$grid-gutter-bottom:                          $grid-gutter-width !default;
+$grid-gutter-small-width:                     1rem !default;
+$grid-gutter-small-bottom:                    $grid-gutter-small-width !default;
 
 // Form general
-$form-input-font-family:                  var(--font-family) !default;
-$form-textarea-line-height:               var(--leading-base) !default;
+$form-input-font-family:                      var(--font-family) !default;
+$form-textarea-line-height:                   var(--leading-base) !default;
 
-$form-input-padding:                      10px 15px;
-$form-input-height:                       44px !default;
-$form-multiselect-height:                 80px !default;
+$form-input-padding:                          10px 15px;
+$form-input-height:                           44px !default;
+$form-multiselect-height:                     80px !default;
 
-$form-input-font-weight:                  $font-weight-regular !default;
-$form-input-font-size:                    $font-size-base !default;
-$form-input-font-size-error:              $font-size-base !default;
+$form-input-font-weight:                      $font-weight-regular !default;
+$form-input-font-size:                        $font-size-base !default;
+$form-input-font-size-error:                  $font-size-base !default;
 
-$form-input-border-radius:                0 !default;
-$form-input-border-width:                 1px !default;
-$form-input-border-style:                 solid !default;
+$form-input-border-radius:                    0 !default;
+$form-input-border-width:                     1px !default;
+$form-input-border-style:                     solid !default;
 
-$form-input-color-disabled:               #5c5c5c !default;
+$form-input-color-disabled:                   #5c5c5c !default;
 
-$form-input-border-color:                 #ccc !default;
-$form-input-border-color-hover:           #b4b4b4 !default;
-$form-input-border-color-focus:           #979797 !default;
-$form-input-border-color-error:           #b46869 !default;
+$form-input-border-color:                     #ccc !default;
+$form-input-border-color-hover:               #b4b4b4 !default;
+$form-input-border-color-focus:               #979797 !default;
+$form-input-border-color-error:               #b46869 !default;
 
-$form-input-background:                   var(--body-bg) !default;
-$form-input-background-hover:             var(--body-bg) !default;
-$form-input-background-focus:             var(--body-bg) !default;
-$form-input-background-error:             var(--body-bg) !default;
+$form-input-background:                       var(--body-bg) !default;
+$form-input-background-hover:                 var(--body-bg) !default;
+$form-input-background-focus:                 var(--body-bg) !default;
+$form-input-background-error:                 var(--body-bg) !default;
 
-$form-input-color:                        var(--text-clr-base) !default;
-$form-input-color-hover:                  var(--text-clr-base) !default;
-$form-input-color-focus:                  var(--text-clr-base) !default;
-$form-input-color-error:                  #b46869 !default;
+$form-input-color:                            var(--text-clr-base) !default;
+$form-input-color-hover:                      var(--text-clr-base) !default;
+$form-input-color-focus:                      var(--text-clr-base) !default;
+$form-input-color-error:                      #b46869 !default;
 
-$form-input-placeholder-color:            #ccc !default;
-$form-input-placeholder-color-hover:      #b4b4b4 !default;
-$form-input-placeholder-color-focus:      #b4b4b4 !default;
-$form-input-placeholder-color-error:      #b46869 !default;
+$form-input-placeholder-color:                #ccc !default;
+$form-input-placeholder-color-hover:          #b4b4b4 !default;
+$form-input-placeholder-color-focus:          #b4b4b4 !default;
+$form-input-placeholder-color-error:          #b46869 !default;
 
 // Form label
-$form-label-color:                        var(--text-clr-base) !default;
-$form-label-color-invert:                 var(--text-clr-invert) !default;
+$form-label-color:                            var(--text-clr-base) !default;
+$form-label-color-invert:                     var(--text-clr-invert) !default;
 
-$form-label-font-size:                    $font-size-base !default;
-$form-label-font-weight:                  $font-weight-regular !default;
-$form-label-spacing:                      4px !default;
+$form-label-font-size:                        $font-size-base !default;
+$form-label-font-weight:                      $font-weight-regular !default;
+$form-label-spacing:                          4px !default;
 
 // Form select
-$form-select-symbol:                      "\25BC" !default;
-$form-select-symbol-font-size:            16px !default;
-$form-select-symbol-color:                var(--clr-primary) !default;
-$form-select-symbol-font-family:          "ctm-icon", var(--font-family) !default;
+$form-select-symbol:                          "\25BC" !default;
+$form-select-symbol-font-size:                16px !default;
+$form-select-symbol-color:                    var(--clr-primary) !default;
+$form-select-symbol-font-family:              "ctm-icon", var(--font-family) !default;
 
-$form-select-option-color:                var(--text-clr-base) !default;
-$form-select-option-background:           var(--form-clr-bg) !default;
+$form-select-option-color:                    var(--text-clr-base) !default;
+$form-select-option-background:               var(--form-clr-bg) !default;
 
 // Form checkbox
-$form-checkbox-radio-symbol:              "✔" !default;
-$form-checkbox-radio-symbol-font-size:    $font-size-base !default;
-$form-checkbox-radio-symbol-color:        $form-input-color !default;
-$form-checkbox-radio-symbol-font-family:  "ctm-icon", var(--font-family) !default;
+$form-checkbox-radio-symbol:                  "✔" !default;
+$form-checkbox-radio-symbol-font-size:        $font-size-base !default;
+$form-checkbox-radio-symbol-color:            $form-input-color !default;
+$form-checkbox-radio-symbol-font-family:      "ctm-icon", var(--font-family) !default;
 
-$form-checkbox-radio-size:                20px !default;
-$form-checkbox-radio-label-font-size:     $font-size-base !default;
+$form-checkbox-radio-size:                    20px !default;
+$form-checkbox-radio-label-font-size:         $font-size-base !default;
 
-$form-checkbox-border-radius:             0 !default;
-$form-checkbox-radio-border-width:        1px !default;
-$form-checkbox-radio-border-style:        solid !default;
+$form-checkbox-border-radius:                 0 !default;
+$form-checkbox-radio-border-width:            1px !default;
+$form-checkbox-radio-border-style:            solid !default;
 
-$form-checkbox-radio-border-color:        $form-input-border-color !default;
-$form-checkbox-radio-border-color-hover:  $form-input-border-color-hover !default;
-$form-checkbox-radio-border-color-focus:  $form-input-border-color-focus !default;
+$form-checkbox-radio-border-color:            $form-input-border-color !default;
+$form-checkbox-radio-border-color-hover:      $form-input-border-color-hover !default;
+$form-checkbox-radio-border-color-focus:      $form-input-border-color-focus !default;
 
-$form-checkbox-radio-background:          var(--body-bg) !default;
-$form-checkbox-radio-background-hover:    var(--body-bg) !default;
-$form-checkbox-radio-background-focus:    var(--body-bg) !default;
+$form-checkbox-radio-background:              var(--body-bg) !default;
+$form-checkbox-radio-background-hover:        var(--body-bg) !default;
+$form-checkbox-radio-background-focus:        var(--body-bg) !default;
 
-$form-checkbox-radio-label-color:         var(--text-clr-base) !default;
-$form-checkbox-radio-label-color-invert:  var(--text-clr-invert) !default;
+$form-checkbox-radio-label-color:             var(--text-clr-base) !default;
+$form-checkbox-radio-label-color-invert:      var(--text-clr-invert) !default;
 
 // Form miscellaneous
-$form-validation:                         '' !default;
+$form-validation:                             '' !default;
 
-$form-input-explanation-font-size:        $font-size-base !default;
-$form-input-explanation-color:            var(--text-clr-base) !default;
-$form-input-explanation-color-invert:     var(--text-clr-invert) !default;
+$form-input-explanation-font-size:            $font-size-base !default;
+$form-input-explanation-color:                var(--text-clr-base) !default;
+$form-input-explanation-color-invert:         var(--text-clr-invert) !default;
 
-$form-input-mandatory-symbol-color:       #ccc !default;
-$form-input-mandatory-symbol-color-error: #b46869 !default;
+$form-input-mandatory-symbol-color:           #ccc !default;
+$form-input-mandatory-symbol-color-error:     #b46869 !default;
 
 // Form field
-$form-field-image-width:                  100px !default;
-$form-field-image-height:                 $form-field-image-width !default;
+$form-field-image-width:                      100px !default;
+$form-field-image-height:                     $form-field-image-width !default;
 
-$form-field-icon-size:                    $form-input-font-size !default;
-$form-field-icon-color:                   $form-input-color !default;
-$form-field-icon-background:              $form-input-background !default;
+$form-field-icon-size:                        $form-input-font-size !default;
+$form-field-icon-color:                       $form-input-color !default;
+$form-field-icon-background:                  $form-input-background !default;
 
 // Icons
-$icon-font-family:                        "ctm-icon" !default;
+$icon-font-family:                            "ctm-icon" !default;
 
-$icon-size-tiny:                          2rem !default;
-$icon-size-small:                         3rem !default;
-$icon-size-medium:                        4rem !default;
-$icon-size-large:                         5rem !default;
-$icon-size-super:                         6rem !default;
+$icon-size-tiny:                              2rem !default;
+$icon-size-small:                             3rem !default;
+$icon-size-medium:                            4rem !default;
+$icon-size-large:                             5rem !default;
+$icon-size-super:                             6rem !default;
 
-$icon-shape-spacing:                      1.5rem !default;
-$icon-outlined-width:                     2px !default;
+$icon-shape-spacing:                          1.5rem !default;
+$icon-outlined-width:                         2px !default;
 
 // Button
-$button-line-height:                      1 !default;
-$button-font-size-small:                  1rem !default;
-$button-font-size-medium:                 1rem !default;
-$button-font-size-large:                  1rem !default;
-$button-font-size-super:                  1rem !default;
+$button-line-height:                          1 !default;
+$button-font-size-small:                      1rem !default;
+$button-font-size-medium:                     1rem !default;
+$button-font-size-large:                      1rem !default;
+$button-font-size-super:                      1rem !default;
 
-$button-padding-small:                    .5rem 1rem !default;
-$button-padding-medium:                   .75rem 1.5rem !default;
-$button-padding-large:                    1rem 2rem !default;
-$button-padding-super:                    1.5rem 3rem !default;
+$button-padding-small:                        .5rem 1rem !default;
+$button-padding-medium:                       .75rem 1.5rem !default;
+$button-padding-large:                        1rem 2rem !default;
+$button-padding-super:                        1.5rem 3rem !default;
 
 // Button design primary
-$button-font-weight-primary:              $font-weight-base !default;
-$button-transform-primary:                none !default;
+$button-font-weight-primary:                  $font-weight-base !default;
+$button-transform-primary:                    none !default;
 
-$button-bg-primary:                       $primary !default;
-$button-hover-bg-primary:                 darken($button-bg-primary, 10) !default;
-$button-color-primary:                    $text-color-invert !default;
-$button-hover-color-primary:              $text-color-invert !default;
+$button-bg-primary:                           $primary !default;
+$button-hover-bg-primary:                     darken($button-bg-primary, 10) !default;
+$button-bg-primary-invert:                    transparent !default;
+$button-hover-bg-primary-invert:              darken($button-bg-primary, 10) !default;
 
-$button-border-color-primary:             $button-bg-primary !default;
-$button-hover-border-color-primary:       $button-hover-bg-primary !default;
+$button-color-primary:                        $text-color-invert !default;
+$button-hover-color-primary:                  $text-color-invert !default;
+$button-color-primary-invert:                 $text-color-invert !default;
+$button-hover-color-primary-invert:           $text-color-invert !default;
 
-$button-border-radius-primary:            0 !default;
-$button-border-width-primary:             2px !default;
-$button-border-style-primary:             solid !default;
+$button-border-color-primary:                 $button-bg-primary !default;
+$button-hover-border-color-primary:           $button-hover-bg-primary !default;
+$button-border-color-primary-invert:          $button-color-primary !default;
+$button-hover-border-color-primary-invert:    $button-hover-bg-primary !default;
+
+$button-border-radius-primary:                0 !default;
+$button-border-width-primary:                 2px !default;
+$button-border-style-primary:                 solid !default;
 
 // Button design secondary
-$button-font-weight-secondary:            $font-weight-base !default;
-$button-transform-secondary:              none !default;
+$button-font-weight-secondary:                $font-weight-base !default;
+$button-transform-secondary:                  none !default;
 
-$button-bg-secondary:                     transparent !default;
-$button-hover-bg-secondary:               $primary !default;
-$button-color-secondary:                  $primary !default;
-$button-hover-color-secondary:            $text-color-invert !default;
+$button-bg-secondary:                         $secondary !default;
+$button-hover-bg-secondary:                   darken($button-bg-secondary, 10) !default;
+$button-bg-secondary-invert:                  transparent !default;
+$button-hover-bg-secondary-invert:            darken($button-bg-secondary, 10) !default;
 
-$button-border-color-secondary:           $button-color-secondary !default;
-$button-hover-border-color-secondary:     $button-hover-bg-secondary !default;
+$button-color-secondary:                      $text-color-invert !default;
+$button-hover-color-secondary:                $text-color-invert !default;
+$button-color-secondary-invert:               $text-color-invert !default;
+$button-hover-color-secondary-invert:         $text-color-invert !default;
 
-$button-border-radius-secondary:          0 !default;
-$button-border-width-secondary:           2px !default;
-$button-border-style-secondary:           solid !default;
+$button-border-color-secondary:               $button-bg-secondary !default;
+$button-hover-border-color-secondary:         $button-hover-bg-secondary !default;
+$button-border-color-secondary-invert:        $button-color-secondary !default;
+$button-hover-border-color-secondary-invert:  $button-hover-bg-secondary !default;
+
+$button-border-radius-secondary:              0 !default;
+$button-border-width-secondary:               2px !default;
+$button-border-style-secondary:               solid !default;
 
 // Button design alternative
-$button-font-weight-alt:                  $font-weight-base !default;
-$button-transform-alt:                    none !default;
+$button-font-weight-alt:                      $font-weight-base !default;
+$button-transform-alt:                        none !default;
 
-$button-bg-alt:                           $secondary !default;
-$button-hover-bg-alt:                     darken($button-bg-alt, 10) !default;
-$button-color-alt:                        $text-color-invert !default;
-$button-hover-color-alt:                  $text-color-invert !default;
+$button-bg-alt:                               $dark !default;
+$button-hover-bg-alt:                         darken($button-bg-alt, 10) !default;
+$button-bg-alt-invert:                        transparent !default;
+$button-hover-bg-alt-invert:                  darken($button-bg-alt, 10) !default;
 
-$button-border-color-alt:                 $button-bg-alt !default;
-$button-hover-border-color-alt:           $button-hover-bg-alt !default;
+$button-color-alt:                            $text-color-invert !default;
+$button-hover-color-alt:                      $text-color-invert !default;
+$button-color-alt-invert:                     $text-color-invert !default;
+$button-hover-color-alt-invert:               $text-color-invert !default;
 
-$button-border-radius-alt:                0 !default;
-$button-border-width-alt:                 2px !default;
-$button-border-style-alt:                 solid !default;
+$button-border-color-alt:                     $button-bg-alt !default;
+$button-hover-border-color-alt:               $button-hover-bg-alt !default;
+$button-border-color-alt-invert:              $button-color-alt !default;
+$button-hover-border-color-alt-invert:        $button-hover-bg-alt !default;
+
+$button-border-radius-alt:                    0 !default;
+$button-border-width-alt:                     2px !default;
+$button-border-style-alt:                     solid !default;
 
 // Spacings (Inner)
-$paragraph-spacing:                       1rem !default;
-$component-inner-spacing:                 1rem !default;
+$paragraph-spacing:                           1rem !default;
+$component-inner-spacing:                     1rem !default;
 
-$top-bottom-padding-small:                1rem !default;
-$top-bottom-padding-medium:               2rem !default;
-$top-bottom-padding-large:                3rem !default;
+$top-bottom-padding-small:                    1rem !default;
+$top-bottom-padding-medium:                   2rem !default;
+$top-bottom-padding-large:                    3rem !default;
 
-$left-right-padding-small:                1rem !default;
-$left-right-padding-medium:               2rem !default;
-$left-right-padding-large:                3rem !default;
+$left-right-padding-small:                    1rem !default;
+$left-right-padding-medium:                   2rem !default;
+$left-right-padding-large:                    3rem !default;
 
 // Spacings (Outer)
-$top-bottom-margin-small:                 1rem !default;
-$top-bottom-margin-medium:                2rem !default;
-$top-bottom-margin-large:                 3rem !default;
+$top-bottom-margin-small:                     1rem !default;
+$top-bottom-margin-medium:                    2rem !default;
+$top-bottom-margin-large:                     3rem !default;
 
-$left-right-margin-small:                 1rem !default;
-$left-right-margin-medium:                2rem !default;
-$left-right-margin-large:                 3rem !default;
+$left-right-margin-small:                     1rem !default;
+$left-right-margin-medium:                    2rem !default;
+$left-right-margin-large:                     3rem !default;
 
 // Divider
-$divider-size:                            1px !default;
-$divider-style:                           solid !default;
-$divider-color:                           #ccc !default;
+$divider-size:                                1px !default;
+$divider-style:                               solid !default;
+$divider-color:                               #ccc !default;
 
 // Boxed
-$boxed-background-color:                  var(--body-bg) !default;
-$boxed-border-color:                      #e3e3e3 !default;
-$boxed-border-radius:                     0 !default;
-$boxed-border-width:                      1px !default;
-$boxed-border-style:                      solid !default;
+$boxed-background-color:                      var(--body-bg) !default;
+$boxed-border-color:                          #e3e3e3 !default;
+$boxed-border-radius:                         0 !default;
+$boxed-border-width:                          1px !default;
+$boxed-border-style:                          solid !default;
 
 // Table
-$table-cell-spacing:                      0 !default;
-$table-cell-padding:                      1rem !default;
-$table-cell-border-radius:                0 !default;
+$table-cell-spacing:                          0 !default;
+$table-cell-padding:                          1rem !default;
+$table-cell-border-radius:                    0 !default;
 
-$table-border-color:                      #ccc !default;
-$table-border-style:                      solid !default;
-$table-border-width:                      0 !default;
+$table-border-color:                          #ccc !default;
+$table-border-style:                          solid !default;
+$table-border-width:                          0 !default;
 
-$table-head-border-color:                 #ccc !default;
-$table-head-border-style:                 solid !default;
-$table-head-border-width:                 0 0 1px !default;
+$table-head-border-color:                     #ccc !default;
+$table-head-border-style:                     solid !default;
+$table-head-border-width:                     0 0 1px !default;
 
-$table-cell-border-color:                 #ccc !default;
-$table-cell-border-style:                 solid !default;
-$table-cell-border-width:                 0 0 1px !default;
+$table-cell-border-color:                     #ccc !default;
+$table-cell-border-style:                     solid !default;
+$table-cell-border-width:                     0 0 1px !default;
 
-$table-caption-side:                      bottom !default;
-$table-caption-alignment:                 center !default;
-$table-caption-padding:                   1rem !default;
+$table-caption-side:                          bottom !default;
+$table-caption-alignment:                     center !default;
+$table-caption-padding:                       1rem !default;
 
-$table-caption-color:                     #ccc !default;
-$table-caption-background:                transparent !default;
-$table-caption-font-size:                 14px !default;
+$table-caption-color:                         #ccc !default;
+$table-caption-background:                    transparent !default;
+$table-caption-font-size:                     14px !default;
 
-$table-text-align:                        inherit !default;
-$table-head-font-weight:                  600 !default;
-$table-body-font-weight:                  400 !default;
-$table-foot-font-weight:                  600 !default;
+$table-text-align:                            inherit !default;
+$table-head-font-weight:                      600 !default;
+$table-body-font-weight:                      400 !default;
+$table-foot-font-weight:                      600 !default;
 
-$table-head-color:                        var(--text-clr-invert) !default;
-$table-head-background:                   var(--clr-primary) !default;
+$table-head-color:                            var(--text-clr-invert) !default;
+$table-head-background:                       var(--clr-primary) !default;
 
-$table-foot-color:                        var(--text-clr-invert) !default;
-$table-foot-background:                   var(--clr-primary) !default;
+$table-foot-color:                            var(--text-clr-invert) !default;
+$table-foot-background:                       var(--clr-primary) !default;
 
-$table-body-even-color:                   var(--text-clr-base) !default;
-$table-body-even-background:              var(--clr-light) !default;
+$table-body-even-color:                       var(--text-clr-base) !default;
+$table-body-even-background:                  var(--clr-light) !default;
 
-$table-body-odd-color:                    var(--text-clr-base) !default;
-$table-body-odd-background:               var(--body-bg) !default;
+$table-body-odd-color:                        var(--text-clr-base) !default;
+$table-body-odd-background:                   var(--body-bg) !default;
 
 // Accordion
-$accordion-icon:                          "+" !default;
-$accordion-icon-active:                   "−" !default;
+$accordion-icon:                              "+" !default;
+$accordion-icon-active:                       "−" !default;
 
-$accordion-icon-font-size:                1.875rem !default;
-$accordion-icon-font-family:              var(--font-family) !default;
+$accordion-icon-font-size:                    1.875rem !default;
+$accordion-icon-font-family:                  var(--font-family) !default;
 
-$accordion-icon-line-height:              1 !default;
-$accordion-icon-font-weight:              $font-weight-regular !default;
+$accordion-icon-line-height:                  1 !default;
+$accordion-icon-font-weight:                  $font-weight-regular !default;
 
-$accordion-icon-width:                    auto !default;
-$accordion-icon-height:                   auto !default;
-$accordion-icon-offset:                   .5rem !default;
-$accordion-icon-side:                     left !default;
+$accordion-icon-width:                        auto !default;
+$accordion-icon-height:                       auto !default;
+$accordion-icon-offset:                       .5rem !default;
+$accordion-icon-side:                         left !default;
 
-$accordion-icon-border-radius:            0 !default;
-$accordion-icon-border-width:             0 !default;
-$accordion-icon-border-style:             none !default;
+$accordion-icon-border-radius:                0 !default;
+$accordion-icon-border-width:                 0 !default;
+$accordion-icon-border-style:                 none !default;
 
-$accordion-icon-border-color:             var(--clr-primary) !default;
-$accordion-icon-background:               transparent !default;
-$accordion-icon-color:                    var(--clr-primary) !default;
+$accordion-icon-border-color:                 var(--clr-primary) !default;
+$accordion-icon-background:                   transparent !default;
+$accordion-icon-color:                        var(--clr-primary) !default;
 
-$accordion-content-margin:                1rem 0 0 !default;
-$accordion-content-padding:               0 !default;
+$accordion-content-margin:                    1rem 0 0 !default;
+$accordion-content-padding:                   0 !default;
 
 // Image text
-$image-text-behaviour-min-width:          600px !default;
-$image-text-ratio-options:                25,33,38,40,50,80,100 !default;
+$image-text-behaviour-min-width:              600px !default;
+$image-text-ratio-options:                    25,33,38,40,50,80,100 !default;
 
 // Header
-$header-height:                           60px !default;
-$header-height-xs:                        60px !default;
-$header-height-s:                         60px !default;
-$header-height-m:                         100px !default;
-$header-height-l:                         100px !default;
-$header-height-xl:                        100px !default;
+$header-height:                               60px !default;
+$header-height-xs:                            60px !default;
+$header-height-s:                             60px !default;
+$header-height-m:                             100px !default;
+$header-height-l:                             100px !default;
+$header-height-xl:                            100px !default;
 
-$header-padding:                          0 1rem !default;
-$header-alignment-vertical:               center !default;
-$header-alignment-horizontal:             space-between !default;
+$header-padding:                              0 1rem !default;
+$header-alignment-vertical:                   center !default;
+$header-alignment-horizontal:                 space-between !default;
 
-$header-bg:                               transparent !default;
+$header-bg:                                   transparent !default;
 
 // Navigation
-$navigation-behaviour-min-width:          768px !default;
-$navigation-item-font-size:               $font-size-base !default;
-$navigation-item-font-weight:             $font-weight-regular !default;
-$navigation-item-padding:                 .5rem 1rem !default;
-$breadcrumb-separator:                    "›" !default;
-$breadcrumb-separator-color:              inherit !default;
-$breadcrumb-separator-font-family:        "ctm-icon", var(--font-family) !default;
+$navigation-behaviour-min-width:              768px !default;
+$navigation-item-font-size:                   $font-size-base !default;
+$navigation-item-font-weight:                 $font-weight-regular !default;
+$navigation-item-padding:                     .5rem 1rem !default;
+$breadcrumb-separator:                        "›" !default;
+$breadcrumb-separator-color:                  inherit !default;
+$breadcrumb-separator-font-family:            "ctm-icon", var(--font-family) !default;
 
 // Misc
-$box-shadow:                              0 .5rem 1rem rgba(#000, .15) !default;
+$box-shadow:                                  0 .5rem 1rem rgba(#000, .15) !default;
 
-$selection-color:                         var(--text-clr-invert) !default;
-$selection-background-color:              var(--clr-primary) !default;
+$selection-color:                             var(--text-clr-invert) !default;
+$selection-background-color:                  var(--clr-primary) !default;
 
-$aspect-ratios:                           ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;
+$aspect-ratios:                               ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;

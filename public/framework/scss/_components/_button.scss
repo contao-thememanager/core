@@ -9,15 +9,15 @@ input[type="submit"] {
 }
 
 button,
-a.button,
-input.button {
-  background-color: var(--btn-bg);
-  color: var(--btn-clr);
+.button {
+  background-color: var(--btn-1-bg);
+  color: var(--btn-1-clr);
 
   font-weight: var(--btn-fw);
   text-transform: var(--btn-tf);
 
   border: var(--btn-bdr);
+  border-color: var(--btn-1-bdr-clr);
   border-radius: var(--btn-bdr-r);
 
   padding: var(--btn-p-2);
@@ -35,9 +35,9 @@ input.button {
   appearance: none;
 
   &:hover {
-    background-color: var(--btn-bg-hvr);
-    color: var(--btn-clr-hvr);
-    border-color: var(--btn-bdr-clr-hvr);
+    background-color: var(--btn-1-bg-hvr);
+    color: var(--btn-1-clr-hvr);
+    border-color: var(--btn-1-bdr-clr-hvr);
   }
 
   &.size {
@@ -63,40 +63,48 @@ input.button {
 .btn {
 
   &--secondary {
-    --btn-bg:#{$button-bg-secondary};
-    --btn-bg-hvr:#{$button-hover-bg-secondary};
-    --btn-clr:#{$button-color-secondary};
-    --btn-clr-hvr:#{$button-hover-color-secondary};
+    background-color: var(--btn-2-bg);
+    color: var(--btn-2-clr);
+    border-color: var(--btn-2-bdr-clr);
 
     --btn-fw:#{$button-font-weight-secondary};
     --btn-tf:#{$button-transform-secondary};
 
-    --btn-bdr:#{$button-border-width-secondary} #{$button-border-style-secondary} #{$button-border-color-secondary};
+    --btn-bdr:#{$button-border-width-secondary} #{$button-border-style-secondary};
     --btn-bdr-r:#{$button-border-radius-secondary};
-    --btn-bdr-clr-hvr:#{$button-hover-border-color-secondary};
 
     --btn-p-1:#{subList($button-padding-small,  $button-border-width-secondary, 'rem', true)};
     --btn-p-2:#{subList($button-padding-medium, $button-border-width-secondary, 'rem', true)};
     --btn-p-3:#{subList($button-padding-large,  $button-border-width-secondary, 'rem', true)};
     --btn-p-4:#{subList($button-padding-super,  $button-border-width-secondary, 'rem', true)};
+
+    &:hover {
+      background-color: var(--btn-2-bg-hvr);
+      color: var(--btn-2-clr-hvr);
+      border-color: var(--btn-2-bdr-clr-hvr);
+    }
   }
 
   &--alt {
-    --btn-bg:#{$button-bg-alt};
-    --btn-bg-hvr:#{$button-hover-bg-alt};
-    --btn-clr:#{$button-color-alt};
-    --btn-clr-hvr:#{$button-hover-color-alt};
+    background-color: var(--btn-3-bg);
+    color: var(--btn-3-clr);
+    border-color: var(--btn-3-bdr-clr);
 
     --btn-fw:#{$button-font-weight-alt};
     --btn-tf:#{$button-transform-alt};
 
     --btn-bdr:#{$button-border-width-alt} #{$button-border-style-alt} #{$button-border-color-alt};
     --btn-bdr-r:#{$button-border-radius-alt};
-    --btn-bdr-clr-hvr:#{$button-hover-border-color-alt};
 
     --btn-p-1:#{subList($button-padding-small,  $button-border-width-alt, 'rem', true)};
     --btn-p-2:#{subList($button-padding-medium, $button-border-width-alt, 'rem', true)};
     --btn-p-3:#{subList($button-padding-large,  $button-border-width-alt, 'rem', true)};
     --btn-p-4:#{subList($button-padding-super,  $button-border-width-alt, 'rem', true)};
+
+    &:hover {
+      background-color: var(--btn-3-bg-hvr);
+      color: var(--btn-3-clr-hvr);
+      border-color: var(--btn-3-bdr-clr-hvr);
+    }
   }
 }

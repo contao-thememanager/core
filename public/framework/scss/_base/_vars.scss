@@ -128,17 +128,30 @@
   --hl-mb-l-3:#{$headline-spacing-l-large};
 
   // Buttons
-  --btn-bg:#{$button-bg-primary};
-  --btn-bg-hvr:#{$button-hover-bg-primary};
-  --btn-clr:#{$button-color-primary};
-  --btn-clr-hvr:#{$button-hover-color-primary};
+  --btn-1-bg:#{$button-bg-primary};
+  --btn-1-clr:#{$button-color-primary};
+  --btn-1-bdr-clr:#{$button-border-color-primary};
+  --btn-1-bg-hvr:#{$button-hover-bg-primary};
+  --btn-1-clr-hvr:#{$button-hover-color-primary};
+  --btn-1-bdr-clr-hvr:#{$button-hover-border-color-primary};
+  --btn-2-bg:#{$button-bg-secondary};
+  --btn-2-clr:#{$button-color-secondary};
+  --btn-2-bdr-clr:#{$button-border-color-secondary};
+  --btn-2-bg-hvr:#{$button-hover-bg-secondary};
+  --btn-2-clr-hvr:#{$button-hover-color-secondary};
+  --btn-2-bdr-clr-hvr:#{$button-hover-border-color-secondary};
+  --btn-3-bg:#{$button-bg-alt};
+  --btn-3-clr:#{$button-color-alt};
+  --btn-3-bdr-clr:#{$button-border-color-alt};
+  --btn-3-bg-hvr:#{$button-hover-bg-alt};
+  --btn-3-clr-hvr:#{$button-hover-color-alt};
+  --btn-3-bdr-clr-hvr:#{$button-hover-border-color-alt};
 
   --btn-fw:#{$button-font-weight-primary};
   --btn-tf:#{$button-transform-primary};
 
-  --btn-bdr:#{$button-border-width-primary} #{$button-border-style-primary} #{$button-border-color-primary};
+  --btn-bdr:#{$button-border-width-primary} #{$button-border-style-primary};
   --btn-bdr-r:#{$button-border-radius-primary};
-  --btn-bdr-clr-hvr:#{$button-hover-border-color-primary};
 
   --btn-p-1:#{subList($button-padding-small,  $button-border-width-primary, 'rem', true)};
   --btn-p-2:#{subList($button-padding-medium, $button-border-width-primary, 'rem', true)};
