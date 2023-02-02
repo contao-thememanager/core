@@ -10,7 +10,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: var(--flex-justify); // ToDo Add to navigations
+    justify-content: var(--flex-justify);
 
     column-gap: rem(10);
   }
