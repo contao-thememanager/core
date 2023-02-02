@@ -139,6 +139,32 @@
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
+      <child alias="template-boxed">
+        <field title="id">801</field>
+        <field title="pid">2</field>
+        <field title="sorting">12</field>
+        <field title="tstamp">1648713266</field>
+        <field title="alias">template-boxed</field>
+        <field title="title">Boxed</field>
+        <field title="description">Defines the appearance of a boxed element.</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:10:"box-shadow";s:5:"value";s:12:"Boxed Shadow";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen"></field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:17:"wrapperStartBoxed";}</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
       <child alias="boxedListElement">
         <field title="id">6</field>
         <field title="pid">2</field>
