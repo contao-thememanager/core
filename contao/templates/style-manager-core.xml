@@ -3250,7 +3250,7 @@
         <field title="cssClass"></field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
-        <field title="passToTemplate"></field>
+        <field title="passToTemplate">1</field>
         <field title="extendLayout"></field>
         <field title="extendPage"></field>
         <field title="extendArticle">1</field>
