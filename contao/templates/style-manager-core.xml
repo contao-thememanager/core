@@ -3307,7 +3307,7 @@
         <field title="passToTemplate">1</field>
         <field title="extendLayout"></field>
         <field title="extendPage"></field>
-        <field title="extendArticle">1</field>
+        <field title="extendArticle"></field>
         <field title="extendForm"></field>
         <field title="extendFormFields"></field>
         <field title="formFields">NULL</field>
