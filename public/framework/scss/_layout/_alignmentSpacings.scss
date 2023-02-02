@@ -44,5 +44,12 @@
     '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
     '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
     '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
+  ),
+  // Component spacings (Images and text offset to each other
+  '.cm': (
+    '&-0': ( --c-m: 0),
+    '&-1': ( --c-m: #{$component-spacing-small}),
+    '&-2': ( --c-m: #{$component-spacing-medium}),
+    '&-3': ( --c-m: #{$component-spacing-large}),
   )
 ));

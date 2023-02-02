@@ -23,7 +23,7 @@
             '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
             '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
 
-            '{spacing_inner_legend:hide},paragraph-spacing,component-inner-spacing,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
+            '{spacing_inner_legend:hide},paragraph-spacing,component-spacing-small,component-spacing-medium,component-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
             '{divider_legend:hide},divider-size,divider-style,divider-color;' .
             '{boxed_legend:hide},boxed-background-color,boxed-border-color,boxed-border-radius,boxed-border-width,boxed-border-style;' .
@@ -2239,14 +2239,28 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['paragraph-spacing'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50 clr'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w100 clr'],
         ],
-        'component-inner-spacing' => [
+        'component-spacing-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-inner-spacing'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-spacing-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33 clr'],
+        ],
+        'component-spacing-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-spacing-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33'],
+        ],
+        'component-spacing-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['component-spacing-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33'],
         ],
 
         'top-bottom-padding-small' => [

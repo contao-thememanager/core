@@ -2790,13 +2790,30 @@
         <source>Here you can set the bottom margin for &quot;p&quot; - elements.</source>
         <target>Hier können Sie den unteren Abstand für &quot;p&quot; - Elemente einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-inner-spacing.0">
-        <source>$component-inner-spacing</source>
-        <target>$component-inner-spacing</target>
+
+      <trans-unit id="tl_thememanager.component-spacing-small.0">
+        <source>$component-spacing-small</source>
+        <target>$component-spacing-small</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-inner-spacing.1">
-        <source>Here you can set the inner padding for components (e.g. icons and images).</source>
-        <target>Hier können Sie das Polster / den inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
+      <trans-unit id="tl_thememanager.component-spacing-small.1">
+        <source>Here you can set the small inner padding for components (e.g. icons and images).</source>
+        <target>Hier können Sie den kleinen inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-spacing-medium.0">
+        <source>$component-spacing-medium</source>
+        <target>$component-spacing-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-spacing-medium.1">
+        <source>Here you can set the medium inner padding for components (e.g. icons and images).</source>
+        <target>Hier können Sie den mittleren inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-spacing-large.0">
+        <source>$component-spacing-large</source>
+        <target>$component-spacing-large</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.component-spacing-large.1">
+        <source>Here you can set the large inner padding for components (e.g. icons and images).</source>
+        <target>Hier können Sie den großen inneren Abstand (padding) für Komponenten (z.B. Icons und Bilder) einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.top-bottom-padding-small.0">
