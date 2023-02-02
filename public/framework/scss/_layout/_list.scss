@@ -1,3 +1,7 @@
+%list-flex-direction {
+  --flex-justify:center;
+}
+
 %list-flex-horizontal {
 
   ul {
@@ -6,7 +10,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; //var(--flex-justify); // ToDo Add to navigations
+    justify-content: var(--flex-justify); // ToDo Add to navigations
 
     column-gap: rem(10);
   }

@@ -71,8 +71,12 @@
       </article>
     <?php endforeach; ?>
 
-    <?php $this->block('pagination'); ?>
-    <?php $this->endblock(); ?>
+    <?php if ($this->pagination): ?>
+      <div class="pagination-container<?=$sm->prepare('pagination')->format(' %s')?>">
+        <?php $this->block('pagination'); ?>
+        <?php $this->endblock(); ?>
+      </div>
+    <?php endif; ?>
 
   </div>
 </div>

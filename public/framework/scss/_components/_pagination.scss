@@ -1,6 +1,8 @@
 .pagination {
   @extend %list-flex-horizontal;
-
-  text-align: center;
   margin-top: var(--v-gap);
+}
+
+.pagination-container {
+  @extend %list-flex-direction;
 }

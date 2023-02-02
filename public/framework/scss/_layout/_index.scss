@@ -4,6 +4,9 @@
 // Article, page & component layouts
 @import "layout";
 
+// List layout
+@import "list";
+
 // Grid-framework
 @import "_grid";
 
@@ -21,6 +24,3 @@
 
 // Responsive ratios for audio- & video- elements
 @import "responsive";
-
-// List layout
-@import "list";

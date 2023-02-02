@@ -5134,7 +5134,7 @@
         <field title="tstamp">1648719107</field>
         <field title="alias">navigation</field>
         <field title="title">Navigation</field>
-        <field title="description">Defines the basic alignment for the navigation.</field>
+        <field title="description">Defines the alignment for the navigation that reacts at navigation-behaviour-min-width.</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"nav nav-x";s:5:"value";s:10:"Horizontal";}i:1;a:2:{s:3:"key";s:15:"nav nav-x nav-y";s:5:"value";s:8:"Vertical";}i:2;a:2:{s:3:"key";s:9:"nav nav-y";s:5:"value";s:17:"Vertical (static)";}}</field>
         <field title="cssClass"></field>
         <field title="chosen">1</field>
@@ -5175,7 +5175,7 @@
         <field title="extendContentElement"></field>
         <field title="contentElements">NULL</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:2:{i:0;s:10:"navigation";i:1;s:9:"customnav";}</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
@@ -5202,6 +5202,69 @@
         <field title="contentElements">NULL</field>
         <field title="extendModule"></field>
         <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+    </children>
+  </archive>
+  <archive identifier="pagination">
+    <field title="id">32</field>
+    <field title="tstamp">1580297274</field>
+    <field title="title">Pagination</field>
+    <field title="desc">NULL</field>
+    <field title="identifier">pagination</field>
+    <field title="groupAlias">Layout</field>
+    <field title="sorting">2200</field>
+    <children>
+      <child alias="justifyPagination">
+        <field title="id">830</field>
+        <field title="pid">32</field>
+        <field title="sorting">128</field>
+        <field title="tstamp">1648719140</field>
+        <field title="alias">justifyPagination</field>
+        <field title="title">Justify</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:5:"Start";}i:1;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:3:"End";}i:2;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:7:"Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:6:"Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:6:"Evenly";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:8:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";}</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+      </child>
+      <child alias="alignPagination">
+        <field title="id">17</field>
+        <field title="pid">3</field>
+        <field title="sorting">832</field>
+        <field title="tstamp">1648717194</field>
+        <field title="alias">alignPagination</field>
+        <field title="title">Text-Alignment</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:8:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";}</field>
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
