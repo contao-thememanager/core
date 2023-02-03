@@ -54,37 +54,16 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['faqAccordion'] = [
 $GLOBALS['TL_DCA']['tl_module']['fields']['news_removeBy'] = [
     'exclude'     => true,
     'inputType'   => 'checkbox',
-    'eval'        => ['tl_class'=>'w100 cbx'],
+    'eval'        => ['tl_class'=>'w100'],
     'sql'         => "char(1) NOT NULL default ''"
-];
-
-$GLOBALS['TL_DCA']['tl_module']['fields']['news_dateFormat'] = [
-    'exclude'     => true,
-    'inputType'   => 'text',
-    'eval'        => ['helpwizard'=>true, 'decodeEntities'=>true, 'placeholder'=>Config::get('dateFormat'), 'tl_class'=>'w50'],
-    'explanation' => 'dateFormat',
-    'sql'         => "varchar(32) NOT NULL default ''"
-];
-
-$GLOBALS['TL_DCA']['tl_module']['fields']['news_timeFormat'] = [
-    'exclude'     => true,
-    'inputType'   => 'text',
-    'eval'        => ['decodeEntities'=>true, 'placeholder'=>Config::get('timeFormat'), 'tl_class'=>'w50'],
-    'sql'         => "varchar(32) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['news_datimFormat'] = [
     'exclude'     => true,
     'inputType'   => 'text',
-    'eval'        => ['decodeEntities'=>true, 'placeholder'=>Config::get('datimFormat'), 'tl_class'=>'w50'],
+    'eval'        => ['helpwizard'=>true, 'decodeEntities'=>true, 'placeholder'=>Config::get('datimFormat'), 'tl_class'=>'w50'],
+    'explanation' => 'dateFormat',
     'sql'         => "varchar(32) NOT NULL default ''"
-];
-
-$GLOBALS['TL_DCA']['tl_module']['fields']['news_fullTime'] = [
-    'exclude'     => true,
-    'inputType'   => 'checkbox',
-    'eval'        => ['tl_class'=>'w50 m12'],
-    'sql'         => "char(1) NOT NULL default '1'"
 ];
 
 PaletteManipulator::create()
@@ -100,7 +79,7 @@ PaletteManipulator::create()
 
 PaletteManipulator::create()
     ->addLegend('date_legend', 'template_legend', PaletteManipulator::POSITION_AFTER, true)
-    ->addField(['news_dateFormat', 'news_timeFormat', 'news_datimFormat', 'news_fullTime'], 'date_legend', PaletteManipulator::POSITION_APPEND)
+    ->addField('news_datimFormat', 'date_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('newslist', 'tl_module')
     ->applyToPalette('newsreader', 'tl_module')
 ;

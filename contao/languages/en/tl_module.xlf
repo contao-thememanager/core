@@ -49,29 +49,11 @@
       <trans-unit id="tl_module.faqAccordion.multi_closed">
         <source>All closed (multi mode)</source>
       </trans-unit>
-      <trans-unit id="tl_module.news_dateFormat.0">
-        <source>Date format</source>
-      </trans-unit>
-      <trans-unit id="tl_module.news_dateFormat.1">
-        <source>The date format string will be parsed with the PHP date() function.</source>
-      </trans-unit>
-      <trans-unit id="tl_module.news_timeFormat.0">
-        <source>Time format</source>
-      </trans-unit>
-      <trans-unit id="tl_module.news_timeFormat.1">
-        <source>The time format string will be parsed with the PHP date() function.</source>
-      </trans-unit>
       <trans-unit id="tl_module.news_datimFormat.0">
-        <source>Date and time format</source>
+        <source>Date format</source>
       </trans-unit>
       <trans-unit id="tl_module.news_datimFormat.1">
         <source>The date and time format string will be parsed with the PHP date() function.</source>
-      </trans-unit>
-      <trans-unit id="tl_module.news_fullTime.0">
-        <source>Show time</source>
-      </trans-unit>
-      <trans-unit id="tl_module.news_fullTime.1">
-        <source>Display the time in the news item. The date and time format is used here.</source>
       </trans-unit>
     </body>
   </file>

@@ -69,37 +69,13 @@
         <source>Remove the &lt;em&gt;by&lt;/em&gt;-prefix from the author name.</source>
         <target>Das &lt;em&gt;von&lt;/em&gt;-Prefix aus dem Namen des Autors entfernen.</target>
       </trans-unit>
-      <trans-unit id="tl_module.news_dateFormat.0">
+      <trans-unit id="tl_module.news_datimFormat.0">
         <source>Date format</source>
         <target>Datumsformat</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_dateFormat.1">
-        <source>The date format string will be parsed with the PHP date() function.</source>
-        <target>Der Datumsformat-String wird mit der PHP-Funktion date() geparst.</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_timeFormat.0">
-        <source>Time format</source>
-        <target>Zeitformat</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_timeFormat.1">
-        <source>The time format string will be parsed with the PHP date() function.</source>
-        <target>Der Zeitformat-String wird mit der PHP-Funktion date() geparst.</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_datimFormat.0">
-        <source>Date and time format</source>
-        <target>Datums- und Zeitformat</target>
       </trans-unit>
       <trans-unit id="tl_module.news_datimFormat.1">
         <source>The date and time format string will be parsed with the PHP date() function.</source>
         <target>Der Datums- und Zeitformat-String wird mit der PHP-Funktion date() geparst.</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_fullTime.0">
-        <source>Show time</source>
-        <target>Uhrzeit anzeigen</target>
-      </trans-unit>
-      <trans-unit id="tl_module.news_fullTime.1">
-        <source>Display the time in the news item. The date and time format is used here.</source>
-        <target>Die Uhrzeit in der Nachricht ausgeben. Hierbei wird das Datums- und Zeitformat verwendet.</target>
       </trans-unit>
     </body>
   </file>

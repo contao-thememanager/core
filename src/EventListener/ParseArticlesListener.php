@@ -16,13 +16,9 @@ class ParseArticlesListener
         /** @var PageModel $objPage */
         global $objPage;
 
-        $dateType   = $module->news_fullTime ? 'datim' : 'date';
-        $dateFormat = $module->news_fullTime ? $module->news_datimFormat : $module->news_dateFormat;
+        $template->date = self::getParsedTimeFormat('datim', $newsEntry['tstamp'], $objPage, $module->news_datimFormat);
 
-        $template->date = self::getParsedTimeFormat($dateType, $newsEntry['tstamp'], $objPage, $dateFormat);
-
-        // Add various date and time variables
-        $template->time      = self::getParsedTimeFormat('time', $newsEntry['tstamp'], $objPage, $module->news_timeFormat);
+        // Add various date variables
         $template->year      = Date::parse('Y', $newsEntry['tstamp']);
         $template->yearShort = Date::parse('y', $newsEntry['tstamp']);
 
