@@ -1,46 +1,46 @@
 
 <div class="event layout_full item block<?= $this->class ?>">
 
-    <div class="inside">
+  <div class="inside">
 
-        <?php if ($this->addImage): ?>
-            <div class="c_image">
-                <?php $this->insert('image', $this->arrData); ?>
-            </div>
+    <?php if ($this->addImage): ?>
+      <div class="c_image">
+        <?php $this->insert('image', $this->arrData); ?>
+      </div>
+    <?php endif; ?>
+
+    <div class="c_text">
+      <p class="info">
+        <?php if ($this->recurring): ?>
+          <span class="recurring"><?= $this->recurring ?></span>
+        <?php else: ?>
+          <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
         <?php endif; ?>
+        <?php if ($this->location): ?>
+          <span class="location"><?= $this->location ?><?php if ($this->address): ?> (<?= $this->address ?>)<?php endif; ?></span>
+        <?php endif; ?>
+      </p>
 
-        <div class="c_text">
-            <p class="info">
-                <?php if ($this->recurring): ?>
-                    <span class="recurring"><?= $this->recurring ?></span>
-                <?php else: ?>
-                    <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
-                <?php endif; ?>
-                <?php if ($this->location): ?>
-                    <span class="location"><?= $this->location ?><?php if ($this->address): ?> (<?= $this->address ?>)<?php endif; ?></span>
-                <?php endif; ?>
-            </p>
+      <h1><?= $this->title ?></h1>
 
-            <h1><?= $this->title ?></h1>
+      <?php if ($this->details): ?>
+        <?= $this->details ?>
+      <?php else: ?>
+        <?= $this->teaser ?>
+      <?php endif; ?>
 
-            <?php if ($this->details): ?>
-                <?= $this->details ?>
-            <?php else: ?>
-                <?= $this->teaser ?>
-            <?php endif; ?>
-
-            <?php if ($this->enclosure): ?>
-                <ul class="enclosure">
-                    <?php foreach ($this->enclosure as $enclosure): ?>
-                        <li class="download-element ext-<?= $enclosure['extension'] ?>">
-                            <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
-        </div>
-
+      <?php if ($this->enclosure): ?>
+        <ul class="enclosure">
+          <?php foreach ($this->enclosure as $enclosure): ?>
+            <li class="download-element ext-<?= $enclosure['extension'] ?>">
+              <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
     </div>
+
+  </div>
 
 </div>
 

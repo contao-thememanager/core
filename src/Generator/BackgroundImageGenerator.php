@@ -13,6 +13,11 @@ use Contao\StringUtil;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
+/**
+ * Generates a background css and xml from selected files
+ *
+ * @author Sebastian Zoglowek <https://github.com/zoglo>
+ */
 class BackgroundImageGenerator
 {
     protected ?FileCompiler $compiler = null;

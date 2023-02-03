@@ -3,24 +3,24 @@
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?>">
 
-  <?php $this->block('headline'); ?>
-    <?php if ($this->headline || $this->headline2): ?>
-      <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
-    <?php endif; ?>
-    <?php if ($this->headline): ?>
-      <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
-    <?php endif; ?>
-    <?php if ($this->headline2): ?>
-      <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
-    <?php endif; ?>
-    <?php if ($this->headline || $this->headline2): ?>
-      </div>
-    <?php endif; ?>
-  <?php $this->endblock(); ?>
+    <?php $this->block('headline'); ?>
+      <?php if ($this->headline || $this->headline2): ?>
+        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+      <?php endif; ?>
+      <?php if ($this->headline): ?>
+        <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+      <?php endif; ?>
+      <?php if ($this->headline2): ?>
+        <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+      <?php endif; ?>
+      <?php if ($this->headline || $this->headline2): ?>
+        </div>
+      <?php endif; ?>
+    <?php $this->endblock(); ?>
 
-  <?php if ($this->message): ?>
-    <p class="tl_confirm"><?= $this->message ?></p>
-  <?php endif; ?>
+    <?php if ($this->message): ?>
+      <p class="tl_confirm"><?= $this->message ?></p>
+    <?php endif; ?>
 
     <form id="<?= $this->formId ?>" method="post" enctype="<?= $this->enctype ?>">
       <div class="formbody">

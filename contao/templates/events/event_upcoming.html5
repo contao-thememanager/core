@@ -1,17 +1,17 @@
 
 <div class="event layout_upcoming item block<?= $this->classUpcoming ?>">
 
-    <div class="inside">
+  <div class="inside">
 
-        <div class="c_text">
-            <div class="info">
-                <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
-            </div>
+    <div class="c_text">
+      <div class="info">
+        <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
+      </div>
 
-            <a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?> <?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a>
-        </div>
-
+      <a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?> <?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a>
     </div>
+
+  </div>
 
 </div>
 

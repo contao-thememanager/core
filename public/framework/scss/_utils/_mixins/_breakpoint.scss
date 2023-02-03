@@ -1,3 +1,9 @@
+//
+// Provides various breakpoint functions and mixins that are used by the framework
+//
+// @author Sebastian Zoglowek <https://github.com/zoglo>
+//
+
 @function breakpoint($breakpoint, $context: $breakpoints) {
   @return map_get($context, $breakpoint);
 }

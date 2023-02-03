@@ -1,3 +1,9 @@
+//
+// Provides form mixins that are used by the framework
+//
+// @author Sebastian Zoglowek <https://github.com/zoglo>
+//
+
 @mixin form-field-icon ($class-suffix, $content, $blnIcon: false, $font-size: $form-input-font-size) {
   .fi-#{$class-suffix} {
     --ico:'#{$content}';

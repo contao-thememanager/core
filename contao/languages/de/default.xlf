@@ -13,7 +13,6 @@
         <source>Component lists</source>
         <target>Komponenten-Liste</target>
       </trans-unit>
-
       <trans-unit id="CTE.wrapperStart.0">
         <source>Wrapper start</source>
         <target>Umschlag Anfang</target>
@@ -46,7 +45,6 @@
         <source>Generates the closing part of the wrapper (boxed).</source>
         <target>Erzeugt den schließenden Teil des Umschlags (Boxed).</target>
       </trans-unit>
-
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>
         <target>1 Kommentar</target>

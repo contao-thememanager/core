@@ -8,15 +8,15 @@
   <?php endif; ?>
 
   <div class="c_icon">
-      <span class="icon<?= $sm->prepare('icon', ['design', 'shape', 'color', 'size'])->format(' %s')?>" data-icon="&#x<?= $this->icon ?>;"></span>
+    <span class="icon<?= $sm->prepare('icon', ['design', 'shape', 'color', 'size'])->format(' %s')?>" data-icon="&#x<?= $this->icon ?>;"></span>
   </div>
   <div class="c_text">
-      <?= $this->text ?>
-      <?php if($this->linkText && $this->url): ?>
-          <p>
-              <a href="<?=$this->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
-          </p>
-      <?php endif; ?>
+    <?= $this->text ?>
+    <?php if($this->linkText && $this->url): ?>
+      <p>
+        <a href="<?=$this->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+      </p>
+    <?php endif; ?>
   </div>
 
   <?php if(!$this->linkText && $this->url): ?>

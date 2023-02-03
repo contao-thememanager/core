@@ -1,28 +1,28 @@
 
 <div class="event layout_list item block<?= $this->classList ?>">
 
-    <div class="inside">
+  <div class="inside">
 
-        <?php if ($this->addImage): ?>
-            <div class="c_image">
-                <?php $this->insert('image', $this->arrData); ?>
-            </div>
+    <?php if ($this->addImage): ?>
+      <div class="c_image">
+        <?php $this->insert('image', $this->arrData); ?>
+      </div>
+    <?php endif; ?>
+
+    <div class="c_text">
+      <p class="info">
+        <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
+        <?php if ($this->location): ?>
+          <span class="location"><?= $this->location ?><?php if ($this->address): ?> (<?= $this->address ?>)<?php endif; ?></span>
         <?php endif; ?>
+      </p>
 
-        <div class="c_text">
-            <p class="info">
-                <time datetime="<?= $this->datetime ?>"><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time>
-                <?php if ($this->location): ?>
-                    <span class="location"><?= $this->location ?><?php if ($this->address): ?> (<?= $this->address ?>)<?php endif; ?></span>
-                <?php endif; ?>
-            </p>
+      <h3><a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a></h3>
 
-            <h3><a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a></h3>
-
-            <?= $this->teaser ?>
-        </div>
-
+      <?= $this->teaser ?>
     </div>
+
+  </div>
 
 </div>
 

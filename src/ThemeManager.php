@@ -67,7 +67,7 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Extends faqpage with accordion settings based on the customTpl selection
+     * Extends faq page with accordion settings based on the customTpl selection
      */
     public function extendFaqAccordionSettings(DataContainer $dc): void
     {

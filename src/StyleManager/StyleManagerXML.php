@@ -14,6 +14,11 @@ use LogicException;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerArchiveModel;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
 
+/**
+ * Creates a xml file that is parsed by the style manager bundle config
+ *
+ * @author Sebastian Zoglowek <https://github.com/zoglo>
+ */
 class StyleManagerXML
 {
     private \DOMDocument $xml;

@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -84,5 +85,5 @@ PaletteManipulator::create()
     ->applyToPalette('newsreader', 'tl_module')
 ;
 
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][]   = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][]   = ['ContaoThemeManager\Core\ThemeManager', 'extendFaqAccordionSettings'];
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendFaqAccordionSettings'];

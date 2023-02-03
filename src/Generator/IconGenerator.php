@@ -16,6 +16,11 @@ use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 use SimpleXMLElement;
 use Symfony\Component\Filesystem\Path;
 
+/**
+ * Generates a complete icon set with css and xml to be used by the theme manager
+ *
+ * @author Sebastian Zoglowek <https://github.com/zoglo>
+ */
 class IconGenerator
 {
     protected ?FileCompiler $compiler = null;

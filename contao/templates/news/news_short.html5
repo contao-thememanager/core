@@ -1,31 +1,31 @@
 
 <div class="news layout_short arc_<?= $this->archive->id ?> item block<?= $this->class ?>">
 
-    <div class="inside">
+  <div class="inside">
 
-        <?php if ($this->addImage): ?>
-            <div class="c_image">
-                <?php $this->insert('image', $this->arrData); ?>
-            </div>
-        <?php endif; ?>
+    <?php if ($this->addImage): ?>
+      <div class="c_image">
+        <?php $this->insert('image', $this->arrData); ?>
+      </div>
+    <?php endif; ?>
 
-        <div class="c_text">
-            <?php if ($this->hasMetaFields): ?>
-                <p class="info">
-                    <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
-                    <?php if ($this->author): ?>
-                        <span class="author"><?= $this->author ?></span>
-                    <?php endif; ?>
-                    <?php if ($this->commentCount): ?>
-                        <span class="comments"><?= $this->commentCount ?></span>
-                    <?php endif; ?>
-                </p>
-            <?php endif; ?>
+    <div class="c_text">
+      <?php if ($this->hasMetaFields): ?>
+        <p class="info">
+          <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+          <?php if ($this->author): ?>
+            <span class="author"><?= $this->author ?></span>
+          <?php endif; ?>
+          <?php if ($this->commentCount): ?>
+            <span class="comments"><?= $this->commentCount ?></span>
+          <?php endif; ?>
+        </p>
+      <?php endif; ?>
 
-            <h3><?= $this->linkHeadline ?></h3>
-        </div>
-
+      <h3><?= $this->linkHeadline ?></h3>
     </div>
+
+  </div>
 
 </div>
 

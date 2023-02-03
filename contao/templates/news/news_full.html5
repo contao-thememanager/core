@@ -1,51 +1,51 @@
 
 <div class="news layout_full item block<?= $this->class ?>">
 
-    <div class="inside">
+  <div class="inside">
 
-        <?php if ($this->addImage): ?>
-            <div class="c_image">
-                <?php $this->insert('image', $this->arrData); ?>
-            </div>
-        <?php endif; ?>
+    <?php if ($this->addImage): ?>
+      <div class="c_image">
+        <?php $this->insert('image', $this->arrData); ?>
+      </div>
+    <?php endif; ?>
 
-        <div class="c_text">
-            <?php if ($this->hasMetaFields): ?>
-                <p class="info">
-                    <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
-                    <?php if ($this->author): ?>
-                        <span class="author"><?= $this->author ?></span>
-                    <?php endif; ?>
-                    <?php if ($this->commentCount): ?>
-                        <span class="comments"><?= $this->commentCount ?></span>
-                    <?php endif; ?>
-                </p>
-            <?php endif; ?>
+    <div class="c_text">
+      <?php if ($this->hasMetaFields): ?>
+        <p class="info">
+          <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+          <?php if ($this->author): ?>
+            <span class="author"><?= $this->author ?></span>
+          <?php endif; ?>
+          <?php if ($this->commentCount): ?>
+            <span class="comments"><?= $this->commentCount ?></span>
+          <?php endif; ?>
+        </p>
+      <?php endif; ?>
 
-            <h1><?= $this->newsHeadline ?></h1>
+      <h1><?= $this->newsHeadline ?></h1>
 
-            <?php if ($this->hasSubHeadline): ?>
-                <h2><?= $this->subHeadline ?></h2>
-            <?php endif; ?>
+      <?php if ($this->hasSubHeadline): ?>
+        <h2><?= $this->subHeadline ?></h2>
+      <?php endif; ?>
 
-            <?php if ($this->hasText): ?>
-                <?= $this->text ?>
-            <?php else: ?>
-                <?= $this->teaser ?>
-            <?php endif; ?>
+      <?php if ($this->hasText): ?>
+        <?= $this->text ?>
+      <?php else: ?>
+        <?= $this->teaser ?>
+      <?php endif; ?>
 
-            <?php if ($this->enclosure): ?>
-                <ul class="enclosure">
-                    <?php foreach ($this->enclosure as $enclosure): ?>
-                        <li class="download-element ext-<?= $enclosure['extension'] ?>">
-                            <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
-        </div>
-
+      <?php if ($this->enclosure): ?>
+        <ul class="enclosure">
+          <?php foreach ($this->enclosure as $enclosure): ?>
+            <li class="download-element ext-<?= $enclosure['extension'] ?>">
+              <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
     </div>
+
+  </div>
 
 </div>
 

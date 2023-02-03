@@ -1,6 +1,6 @@
 <div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
-    <div role="group" aria-label="legend" id="ctrl_<?= $this->id ?>" class="checkbox_container grid-list small-gutter<?php if ($this->class): ?> <?= $this->class ?><?php endif; ?><?= $this->styleManager ? $this->styleManager->prepare('gridList')->format(' %s') : '' ?>">
+  <div role="group" aria-label="legend" id="ctrl_<?= $this->id ?>" class="checkbox_container grid-list small-gutter<?php if ($this->class): ?> <?= $this->class ?><?php endif; ?><?= $this->styleManager ? $this->styleManager->prepare('gridList')->format(' %s') : '' ?>">
 
     <?php if ($this->label): ?>
       <legend>
@@ -22,8 +22,8 @@
 
       <?php if ('option' == $option['type']): ?>
         <div>
-            <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="checkbox" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
-            <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
+          <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="checkbox" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
+          <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
         </div>
       <?php endif; ?>
 
