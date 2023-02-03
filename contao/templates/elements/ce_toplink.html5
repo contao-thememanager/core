@@ -1,6 +1,8 @@
 <?php $sm = $this->styleManager ?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-  <a href="<?= $this->request ?>#top" class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->title ?>"><?= $this->label ?></a>
+  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
+    <a href="<?= $this->request ?>#top" class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->title ?>"><?= $this->label ?></a>
+  </div>
 </div>
 <!-- indexer::continue -->

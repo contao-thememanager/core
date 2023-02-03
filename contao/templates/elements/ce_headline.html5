@@ -1,7 +1,7 @@
 <?php $sm = $this->styleManager ?>
 
 <div class="<?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-    <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+    <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
       <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>>
         <?= $this->headline ?>
       </<?= $this->hl ?>>
