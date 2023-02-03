@@ -8,7 +8,7 @@
                 <div class="info">
                     <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
                     <?php if ($this->author): ?>
-                        <span class="author"><?= $this->authorName ?></span>
+                        <span class="author"><?= $this->author ?></span>
                     <?php endif; ?>
                     <?php if ($this->commentCount): ?>
                         <span class="comments"><?= $this->commentCount ?></span>

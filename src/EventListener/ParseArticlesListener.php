@@ -16,29 +16,41 @@ class ParseArticlesListener
         /** @var PageModel $objPage */
         global $objPage;
 
-        // Add various date and time variables
-        $template->date = Date::parse($objPage->dateFormat, $newsEntry['tstamp']);
-        $template->time = Date::parse($objPage->timeFormat, $newsEntry['tstamp']);
-        $template->dayMonth = Date::parse('d. F', $newsEntry['tstamp']);
-        $template->dayMonthShort = Date::parse('d. M.', $newsEntry['tstamp']);
-        $template->year = Date::parse('Y', $newsEntry['tstamp']);
+        $dateType   = $module->news_fullTime ? 'datim' : 'date';
+        $dateFormat = $module->news_fullTime ? $module->news_datimFormat : $module->news_dateFormat;
 
-        // Add author name without additions
-        $template->authorName = str_replace($GLOBALS['TL_LANG']['MSC']['by'] . ' ', '', $template->author);
+        $template->date = self::getParsedTimeFormat($dateType, $newsEntry['tstamp'], $objPage, $dateFormat);
+
+        // Add various date and time variables
+        $template->time      = self::getParsedTimeFormat('time', $newsEntry['tstamp'], $objPage, $module->news_timeFormat);
+        $template->year      = Date::parse('Y', $newsEntry['tstamp']);
+        $template->yearShort = Date::parse('y', $newsEntry['tstamp']);
+
+        if ($module->news_removeBy)
+        {
+            $template->author = ltrim($template->author, ($GLOBALS['TL_LANG']['MSC']['by'] . ' '));
+        }
 
         // Modify comment variables
-        if ($template->numberOfComments > 0)
+        if (1 === $template->numberOfComments)
         {
-            if ($template->numberOfComments === 1)
-            {
-                $template->commentCount = $GLOBALS['TL_LANG']['MSC']['commentCountOne'];
-            }
-            else
-            {
-                $template->commentCount = sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
-            }
+            $template->commentCount = $GLOBALS['TL_LANG']['MSC']['commentCountOne'];
+        }
+        else if (!!$template->numberOfComments)
+        {
+            $template->commentCount = sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
         }
 
         $template->hasComments = !!$template->numberOfComments;
+    }
+
+    private function getParsedTimeFormat(string $type, int $tstamp, $objPage, ?string $format): string
+    {
+        if ($format && Date::isNumericFormat($format))
+        {
+            return Date::parse($format, $tstamp);
+        }
+
+        return Date::parse($objPage->{$type.'Format'}, $tstamp);
     }
 }
