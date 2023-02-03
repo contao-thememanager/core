@@ -6,14 +6,14 @@
     <?php if ($this->headline || $this->headline2): ?>
       <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
     <?php endif; ?>
-        <?php if ($this->headline): ?>
-            <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
-        <?php endif; ?>
-        <?php if ($this->headline2): ?>
-            <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
-        <?php endif; ?>
+    <?php if ($this->headline): ?>
+      <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
+    <?php endif; ?>
+    <?php if ($this->headline2): ?>
+      <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?>><?= $this->headline2 ?></<?= $this->hl2 ?>>
+    <?php endif; ?>
     <?php if ($this->headline || $this->headline2): ?>
-        </div>
+      </div>
     <?php endif; ?>
 
     <a href="<?= $this->request ?>#<?= $this->skipId ?>" class="invisible"><?= $this->skipNavigation ?></a>
