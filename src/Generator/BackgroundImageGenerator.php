@@ -13,9 +13,6 @@ use Contao\StringUtil;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
 
-// ToDo: Generate .box > .inside (As template var)
-// Also check for wrapper-inside
-
 class BackgroundImageGenerator
 {
     protected ?FileCompiler $compiler = null;

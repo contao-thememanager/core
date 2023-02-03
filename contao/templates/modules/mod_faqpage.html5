@@ -1,4 +1,9 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+
+  $hlArchive = $sm->prepare('headline',['hl1Type'])->format('%s') ?: 'h2';
+  $hlItem    = $sm->prepare('headline',['hl2Type'])->format('%s') ?: 'h3';
+?>
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> grid block">
@@ -10,7 +15,6 @@
           <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
       <?php endif; ?>
 
-      <!-- // ToDo: Add headline stylemanager options for faqpage (and other modules that may be affected) (not working in child templates) -->
       <?php if ($this->headline): ?>
         <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $this->headline ?></<?= $this->hl ?>>
       <?php endif; ?>
@@ -28,7 +32,7 @@
     <?php foreach ($this->faq as $category): ?>
       <article class="faq-category <?= $category['class'] ?>">
         <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
-          <<?= $this->hl ?><?= $this->headlineStyle ? ' class="'.$this->headlineStyle.'"' : '' ?>><?= $category['headline'] ?></<?= $this->hl ?>>
+          <<?=$hlArchive.$sm->prepare('headline',['hl1Style'])->format(' class="%s"')?>><?= $category['headline'] ?></<?=$hlArchive?>>
         </div>
 
         <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>">
@@ -44,7 +48,7 @@
                 <?php endif; ?>
 
                 <div class="c_text">
-                  <<?= $this->hl2 ?><?= $this->headline2Style ? ' class="'.$this->headline2Style.'"' : '' ?> id="<?= $faq->alias ?>"><?= $faq->question ?></<?= $this->hl2 ?>>
+                  <<?=$hlItem.$sm->prepare('headline',['hl2Style'])->format(' class="%s"')?> id="<?= $faq->alias ?>"><?= $faq->question ?></<?=$hlItem?>>
 
                   <?= $faq->answer ?>
 
