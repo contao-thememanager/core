@@ -38,7 +38,6 @@ class BackgroundImageGenerator
         else
         {
             $this->createBackgroundXML($backgrounds, $xml);
-            $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ?: '');
 
             // Display all background images in a list after compiling the theme
             $bgList = '';
@@ -53,6 +52,8 @@ class BackgroundImageGenerator
             $this->compiler->msg('File saved: _background'.FileCompiler::FILE_EXT, FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('Make sure to embed the generated _background'.FileCompiler::FILE_EXT.' within your Layout');
         }
+
+        $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ?: '');
     }
 
     /**

@@ -45,11 +45,12 @@ class IconGenerator
         else
         {
             $this->createIconXML($arrGlyphs, $xml);
-            $this->compiler->add($filePath = $this->generateIconCSS($arrGlyphs, $iconPath));
             $this->compiler->msg('Created icon font: '.Constants::FONTFAMILY_ICON, FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('File saved: _icon'.FileCompiler::FILE_EXT,FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('Make sure to embed the generated _icon'.FileCompiler::FILE_EXT.' within your Layout');
         }
+
+        $this->compiler->add($filePath = $this->generateIconCSS($arrGlyphs, $iconPath));
     }
 
     /**
