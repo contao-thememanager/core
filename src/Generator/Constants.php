@@ -24,6 +24,8 @@ class Constants
                 'rsce_text_list',
                 'rsce_image_text',
                 'rsce_image_text_list',
+                //'rsce_icon_text',      // ToDo: Icons are for Set-up Buttons
+                //'rsce_icon_text_list',
                 'rsce_hyperlink_list',
                 'hyperlink',
                 'toplink',
