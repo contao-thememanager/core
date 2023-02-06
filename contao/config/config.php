@@ -9,7 +9,7 @@
 use Contao\ArrayUtil;
 
 // Contao ThemeManager
-$GLOBALS['CTM_SETTINGS']['iconFont'] = 'files/assets/fontello/font/fontello.svg';
+$GLOBALS['CTM_SETTINGS']['iconFont'] = '';
 
 // Register the supported CSS units for ThemeManager
 $GLOBALS['CTM_CSS_UNITS'] = ['px', 'rem'];
