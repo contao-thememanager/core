@@ -24,9 +24,7 @@ $GLOBALS['TC_SOURCES'] = [
     ],
     'configField' => 'themeConfig',
     'files'       => [
-        'bundles/contaothememanagercore/framework/scss/_grid.scss',
-        'bundles/contaothememanagercore/framework/scss/_theme.scss',
-		'bundles/contaothememanagercore/framework/scss/_root.scss'
+        'bundles/contaothememanagercore/framework/scss/_theme.scss'
     ]
 ];
 
