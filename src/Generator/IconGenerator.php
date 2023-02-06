@@ -34,6 +34,8 @@ class IconGenerator
         $this->compiler = $compiler;
         $this->compiler->msg('Icons', FileCompiler::MSG_HEAD);
 
+        $arrGlyphs = [];
+
         if (!($iconPath = $this->parseIconFiles()))
         {
             $this->compiler->msg('Could not create icon font: '.Constants::FONTFAMILY_ICON,FileCompiler::MSG_ERROR);
@@ -216,42 +218,45 @@ class IconGenerator
     {
         $css = '';
 
-        // Convert font path
-        $fontPath = '/' . Path::normalize(StringUtil::stripRootDir($fontPath)) . '.woff';
-
-        // Add font-source
-        $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
-            Constants::FONTFAMILY_ICON,
-            $fontPath,
-            'font-weight:normal;',
-            'font-style:normal;',
-            'font-display:block;'
-        ]);
-
-        // Add icon styles
-        $iconSelector1 = '[class^="i-"]';
-        $iconSelector2 = '[class*=" i-"]';
-        $strBefore = ':before';
-        $formIconSelector = '.widget.fi>.input-container'.$strBefore;
-        $css .= vsprintf(
-            "$iconSelector1,$iconSelector2{%s}$iconSelector1$strBefore,$iconSelector2$strBefore,$formIconSelector{font-family:'%s';%s}",[
-                'vertical-align: middle;',
-                Constants::FONTFAMILY_ICON,
-                'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
-            ]
-        );
-
-        // Prepend additional css
-        $css .= $iconSelector1.$strBefore.','.$iconSelector2.$strBefore.'{padding-right:0.3em;content:var(--ico);}';
-
-        // Add icons
-        foreach ($glyphs as $icon)
+        if (null !== $fontPath)
         {
-            $css .= vsprintf(".%s,.%s{--ico:'\\%s'}", [
-                $icon['key'],
-                $icon['fkey'],
-                $icon['code']
+            // Convert font path
+            $fontPath = '/' . Path::normalize(StringUtil::stripRootDir($fontPath)) . '.woff';
+
+            // Add font-source
+            $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
+                Constants::FONTFAMILY_ICON,
+                $fontPath,
+                'font-weight:normal;',
+                'font-style:normal;',
+                'font-display:block;'
             ]);
+
+            // Add icon styles
+            $iconSelector1 = '[class^="i-"]';
+            $iconSelector2 = '[class*=" i-"]';
+            $strBefore = ':before';
+            $formIconSelector = '.widget.fi>.input-container'.$strBefore;
+            $css .= vsprintf(
+                "$iconSelector1,$iconSelector2{%s}$iconSelector1$strBefore,$iconSelector2$strBefore,$formIconSelector{font-family:'%s';%s}",[
+                    'vertical-align: middle;',
+                    Constants::FONTFAMILY_ICON,
+                    'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
+                ]
+            );
+
+            // Prepend additional css
+            $css .= $iconSelector1.$strBefore.','.$iconSelector2.$strBefore.'{padding-right:0.3em;content:var(--ico);}';
+
+            // Add icons
+            foreach ($glyphs as $icon)
+            {
+                $css .= vsprintf(".%s,.%s{--ico:'\\%s'}", [
+                    $icon['key'],
+                    $icon['fkey'],
+                    $icon['code']
+                ]);
+            }
         }
 
         return ThemeManager::createCSSFile('icon', $css, $this->compiler);
