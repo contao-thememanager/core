@@ -38,7 +38,7 @@ class IconGenerator
 
         if (!($iconPath = $this->parseIconFiles()))
         {
-            $this->compiler->msg('Could not create icon font: '.Constants::FONTFAMILY_ICON,FileCompiler::MSG_ERROR);
+            $this->compiler->msg('Could not create icon font: '.Constants::FONTFAMILY_ICON,FileCompiler::MSG_NOTE);
         }
         else if (empty($arrGlyphs = $this->parseIcons($iconPath)))
         {
@@ -62,7 +62,7 @@ class IconGenerator
     {
         if (!($fontPath = (Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont'])) ?? null)
         {
-            $this->compiler->msg('No icon font specified within $GLOBALS[\'CTM_SETTINGS\'][\'iconFont\']', FileCompiler::MSG_ERROR);
+            $this->compiler->msg('No ThemeManager icon font specified within your settings. ',FileCompiler::MSG_NOTE);
             return null;
         }
 
