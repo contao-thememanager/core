@@ -2,6 +2,11 @@
   --flex-justify:center;
 }
 
+%list-auto {
+  --flex-justify:center;
+  --i:-!important;
+}
+
 %list-flex-horizontal {
 
   ul {
