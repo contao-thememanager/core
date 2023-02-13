@@ -769,35 +769,15 @@
       </child>
     </children>
   </archive>
-  <archive identifier="cGridForm">
-    <field title="id">1030</field>
-    <field title="title">Grid-Form</field>
-    <field title="identifier">cGridForm</field>
-    <field title="groupAlias">Component</field>
-    <field title="sorting">400</field>
-    <children>
-      <child alias="formGrid">
-        <field title="pid">1030</field>
-        <field title="sorting">100</field>
-        <field title="alias">formGrid</field>
-        <field title="title">Form Grid</field>
-        <field title="description">Activates the grid within the form.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:17:"grid gtr-1";s:5:"value";s:6:"Active";}}</field>
-        <field title="chosen">1</field>
-        <field title="blankOption">1</field>
-        <field title="extendForm">1</field>
-      </child>
-    </children>
-  </archive>
   <archive identifier="cNavigation">
-    <field title="id">1040</field>
+    <field title="id">1030</field>
     <field title="title">Navigation</field>
     <field title="identifier">cNavigation</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">500</field>
+    <field title="sorting">400</field>
     <children>
       <child alias="navigation">
-        <field title="pid">1040</field>
+        <field title="pid">1030</field>
         <field title="sorting">100</field>
         <field title="alias">navigation</field>
         <field title="title">Navigation</field>
@@ -809,7 +789,7 @@
         <field title="modules">a:2:{i:0;s:10:"navigation";i:1;s:9:"customnav";}</field>
       </child>
       <child alias="justifyNavigation">
-        <field title="pid">1040</field>
+        <field title="pid">1030</field>
         <field title="sorting">200</field>
         <field title="alias">justifyNavigation</field>
         <field title="title">Justify-Content</field>
@@ -821,7 +801,7 @@
         <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
       </child>
       <child alias="direction">
-        <field title="pid">1040</field>
+        <field title="pid">1030</field>
         <field title="sorting">300</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
@@ -834,14 +814,14 @@
     </children>
   </archive>
   <archive identifier="cGridColumn">
-    <field title="id">1050</field>
+    <field title="id">1040</field>
     <field title="title">Grid-Columns</field>
     <field title="identifier">cGridColumn</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">600</field>
+    <field title="sorting">500</field>
     <children>
       <child alias="col">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">100</field>
         <field title="alias">col</field>
         <field title="title">Columns</field>
@@ -855,7 +835,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="colXS">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">200</field>
         <field title="alias">colXS</field>
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
@@ -869,7 +849,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="colS">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">300</field>
         <field title="alias">colS</field>
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
@@ -883,7 +863,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="colM">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">400</field>
         <field title="alias">colM</field>
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
@@ -897,7 +877,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="colL">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">500</field>
         <field title="alias">colL</field>
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
@@ -911,7 +891,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="colXL">
-        <field title="pid">1050</field>
+        <field title="pid">1040</field>
         <field title="sorting">600</field>
         <field title="alias">colXL</field>
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
@@ -927,14 +907,14 @@
     </children>
   </archive>
   <archive identifier="cGridOffset">
-    <field title="id">1060</field>
+    <field title="id">1050</field>
     <field title="title">Grid-Offset</field>
     <field title="identifier">cGridOffset</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">700</field>
+    <field title="sorting">600</field>
     <children>
       <child alias="offset">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">100</field>
         <field title="alias">offset</field>
         <field title="title">Offset</field>
@@ -948,7 +928,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="offsetXS">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">200</field>
         <field title="alias">offsetXS</field>
         <field title="title">Offset &amp;#40;XS&amp;#41;</field>
@@ -962,7 +942,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="offsetS">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">300</field>
         <field title="alias">offsetS</field>
         <field title="title">Offset &amp;#40;S&amp;#41;</field>
@@ -976,7 +956,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="offsetM">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">400</field>
         <field title="alias">offsetM</field>
         <field title="title">Offset &amp;#40;M&amp;#41;</field>
@@ -990,7 +970,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="offsetL">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">500</field>
         <field title="alias">offsetL</field>
         <field title="title">Offset &amp;#40;L&amp;#41;</field>
@@ -1004,7 +984,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="offsetXL">
-        <field title="pid">1060</field>
+        <field title="pid">1050</field>
         <field title="sorting">600</field>
         <field title="alias">offsetXL</field>
         <field title="title">Offset &amp;#40;XL&amp;#41;</field>
@@ -1020,14 +1000,14 @@
     </children>
   </archive>
   <archive identifier="cGridOrder">
-    <field title="id">1070</field>
+    <field title="id">1060</field>
     <field title="title">Grid-Order</field>
     <field title="identifier">cGridOrder</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">800</field>
+    <field title="sorting">700</field>
     <children>
       <child alias="order">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">100</field>
         <field title="alias">order</field>
         <field title="title">Order</field>
@@ -1041,7 +1021,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="orderXS">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">200</field>
         <field title="alias">orderXS</field>
         <field title="title">Order &amp;#40;XS&amp;#41;</field>
@@ -1055,7 +1035,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="orderS">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">300</field>
         <field title="alias">orderS</field>
         <field title="title">Order &amp;#40;S&amp;#41;</field>
@@ -1069,7 +1049,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="orderM">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">400</field>
         <field title="alias">orderM</field>
         <field title="title">Order &amp;#40;M&amp;#41;</field>
@@ -1083,7 +1063,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="orderL">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">500</field>
         <field title="alias">orderL</field>
         <field title="title">Order &amp;#40;L&amp;#41;</field>
@@ -1097,7 +1077,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="orderXL">
-        <field title="pid">1070</field>
+        <field title="pid">1060</field>
         <field title="sorting">600</field>
         <field title="alias">orderXL</field>
         <field title="title">Order &amp;#40;XL&amp;#41;</field>
@@ -1113,14 +1093,14 @@
     </children>
   </archive>
   <archive identifier="cGridAlignment">
-    <field title="id">1080</field>
+    <field title="id">1070</field>
     <field title="title">Grid-Alignment</field>
     <field title="identifier">cGridAlignment</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">900</field>
+    <field title="sorting">800</field>
     <children>
       <child alias="gridHorizontalAlignment">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">100</field>
         <field title="alias">gridHorizontalAlignment</field>
         <field title="title">Horizontal-Alignment</field>
@@ -1134,7 +1114,7 @@
         <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="gridVerticalAlignment">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">200</field>
         <field title="alias">gridVerticalAlignment</field>
         <field title="title">Vertical-Alignment</field>
@@ -1148,7 +1128,7 @@
         <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="wrapperGridHorizontalAlignment">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">300</field>
         <field title="alias">wrapperGridHorizontalAlignment</field>
         <field title="title">Horizontal-Alignment</field>
@@ -1161,7 +1141,7 @@
         <field title="contentElements">a:1:{i:0;s:17:"wrapperStartBoxed";}</field>
       </child>
       <child alias="wrapperGridVerticalAlignment">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">400</field>
         <field title="alias">wrapperGridVerticalAlignment</field>
         <field title="title">Vertical-Alignment</field>
@@ -1174,7 +1154,7 @@
         <field title="contentElements">a:1:{i:0;s:17:"wrapperStartBoxed";}</field>
       </child>
       <child alias="gridSelfAlignment">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1000</field>
         <field title="alias">gridSelfAlignment</field>
         <field title="title">Alignment</field>
@@ -1189,7 +1169,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="gridSelfAlignmentXS">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1100</field>
         <field title="alias">gridSelfAlignmentXS</field>
         <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
@@ -1203,7 +1183,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="gridSelfAlignmentS">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1200</field>
         <field title="alias">gridSelfAlignmentS</field>
         <field title="title">Alignment &amp;#40;S&amp;#41;</field>
@@ -1217,7 +1197,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="gridSelfAlignmentM">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1300</field>
         <field title="alias">gridSelfAlignmentM</field>
         <field title="title">Alignment &amp;#40;M&amp;#41;</field>
@@ -1231,7 +1211,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="gridSelfAlignmentL">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1400</field>
         <field title="alias">gridSelfAlignmentL</field>
         <field title="title">Alignment &amp;#40;L&amp;#41;</field>
@@ -1245,7 +1225,7 @@
         <field title="contentElements">a:32:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:8:"markdown";i:6;s:14:"rsce_icon_text";i:7;s:15:"rsce_image_text";i:8;s:9:"rsce_text";i:9;s:19:"rsce_hyperlink_list";i:10;s:19:"rsce_icon_text_list";i:11;s:15:"rsce_image_list";i:12;s:20:"rsce_image_text_list";i:13;s:14:"rsce_text_list";i:14;s:12:"wrapperStart";i:15;s:17:"wrapperStartBoxed";i:16;s:15:"accordionSingle";i:17;s:14:"accordionStart";i:18;s:11:"sliderStart";i:19;s:9:"hyperlink";i:20;s:5:"image";i:21;s:7:"gallery";i:22;s:6:"player";i:23;s:7:"youtube";i:24;s:5:"vimeo";i:25;s:8:"download";i:26;s:9:"downloads";i:27;s:5:"alias";i:28;s:4:"form";i:29;s:6:"module";i:30;s:6:"teaser";i:31;s:8:"comments";}</field>
       </child>
       <child alias="gridSelfAlignmentXL">
-        <field title="pid">1080</field>
+        <field title="pid">1070</field>
         <field title="sorting">1500</field>
         <field title="alias">gridSelfAlignmentXL</field>
         <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
@@ -1261,14 +1241,14 @@
     </children>
   </archive>
   <archive identifier="cGridGutter">
-    <field title="id">1090</field>
+    <field title="id">1080</field>
     <field title="title">Grid-Gutter</field>
     <field title="identifier">cGridGutter</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1000</field>
+    <field title="sorting">900</field>
     <children>
       <child alias="gutter">
-        <field title="pid">1090</field>
+        <field title="pid">1080</field>
         <field title="sorting">100</field>
         <field title="alias">gutter</field>
         <field title="title">Gutter</field>
@@ -1281,7 +1261,7 @@
         <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="templateGutter">
-        <field title="pid">1090</field>
+        <field title="pid">1080</field>
         <field title="sorting">200</field>
         <field title="alias">templateGutter</field>
         <field title="title">Gutter</field>
@@ -1293,17 +1273,28 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:1:{i:0;s:17:"wrapperStartBoxed";}</field>
       </child>
+      <child alias="formGutter">
+        <field title="pid">1080</field>
+        <field title="sorting">300</field>
+        <field title="alias">formGutter</field>
+        <field title="title">Gutter</field>
+        <field title="description">Defines the spacing between columns within the grid.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:5:"gtr-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:5:"gtr-2";s:5:"value";s:6:"Medium";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendForm">1</field>
+      </child>
     </children>
   </archive>
   <archive identifier="cText">
-    <field title="id">1100</field>
+    <field title="id">1090</field>
     <field title="title">Text</field>
     <field title="identifier">cText</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1100</field>
+    <field title="sorting">1000</field>
     <children>
       <child alias="templateTextColor">
-        <field title="pid">1100</field>
+        <field title="pid">1090</field>
         <field title="sorting">100</field>
         <field title="alias">templateTextColor</field>
         <field title="title">Text-Color</field>
@@ -1321,14 +1312,14 @@
     </children>
   </archive>
   <archive identifier="cSpacing">
-    <field title="id">1110</field>
+    <field title="id">1100</field>
     <field title="title">Spacing</field>
     <field title="identifier">cSpacing</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1200</field>
+    <field title="sorting">1100</field>
     <children>
       <child alias="topSpacing">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">100</field>
         <field title="alias">topSpacing</field>
         <field title="title">Top-spacing</field>
@@ -1344,7 +1335,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="topSpacingXS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">200</field>
         <field title="alias">topSpacingXS</field>
         <field title="title">Top-spacing &amp;#40;XS&amp;#41;</field>
@@ -1359,7 +1350,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="topSpacingS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">300</field>
         <field title="alias">topSpacingS</field>
         <field title="title">Top-spacing &amp;#40;S&amp;#41;</field>
@@ -1374,7 +1365,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="topSpacingM">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">400</field>
         <field title="alias">topSpacingM</field>
         <field title="title">Top-spacing &amp;#40;M&amp;#41;</field>
@@ -1389,7 +1380,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="topSpacingL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">500</field>
         <field title="alias">topSpacingL</field>
         <field title="title">Top-spacing &amp;#40;L&amp;#41;</field>
@@ -1404,7 +1395,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="topSpacingXL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">600</field>
         <field title="alias">topSpacingXL</field>
         <field title="title">Top-spacing &amp;#40;XL&amp;#41;</field>
@@ -1419,7 +1410,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacing">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1100</field>
         <field title="alias">bottomSpacing</field>
         <field title="title">Bottom-spacing</field>
@@ -1435,7 +1426,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacingXS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1200</field>
         <field title="alias">bottomSpacingXS</field>
         <field title="title">Bottom-spacing &amp;#40;XS&amp;#41;</field>
@@ -1450,7 +1441,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacingS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1300</field>
         <field title="alias">bottomSpacingS</field>
         <field title="title">Bottom-spacing &amp;#40;S&amp;#41;</field>
@@ -1465,7 +1456,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacingM">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1400</field>
         <field title="alias">bottomSpacingM</field>
         <field title="title">Bottom-spacing &amp;#40;M&amp;#41;</field>
@@ -1480,7 +1471,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacingL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1500</field>
         <field title="alias">bottomSpacingL</field>
         <field title="title">Bottom-spacing &amp;#40;L&amp;#41;</field>
@@ -1495,7 +1486,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="bottomSpacingXL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">1600</field>
         <field title="alias">bottomSpacingXL</field>
         <field title="title">Bottom-spacing &amp;#40;XL&amp;#41;</field>
@@ -1510,7 +1501,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacing">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2100</field>
         <field title="alias">leftSpacing</field>
         <field title="title">Left-spacing</field>
@@ -1526,7 +1517,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacingXS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2200</field>
         <field title="alias">leftSpacingXS</field>
         <field title="title">Left-spacing &amp;#40;XS&amp;#41;</field>
@@ -1541,7 +1532,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacingS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2300</field>
         <field title="alias">leftSpacingS</field>
         <field title="title">Left-spacing &amp;#40;S&amp;#41;</field>
@@ -1556,7 +1547,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacingM">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2400</field>
         <field title="alias">leftSpacingM</field>
         <field title="title">Left-spacing &amp;#40;M&amp;#41;</field>
@@ -1571,7 +1562,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacingL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2500</field>
         <field title="alias">leftSpacingL</field>
         <field title="title">Left-spacing &amp;#40;L&amp;#41;</field>
@@ -1586,7 +1577,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="leftSpacingXL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">2600</field>
         <field title="alias">leftSpacingXL</field>
         <field title="title">Left-spacing &amp;#40;XL&amp;#41;</field>
@@ -1601,7 +1592,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacing">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3100</field>
         <field title="alias">rightSpacing</field>
         <field title="title">Right-spacing</field>
@@ -1617,7 +1608,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacingXS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3200</field>
         <field title="alias">rightSpacingXS</field>
         <field title="title">Right-spacing &amp;#40;XS&amp;#41;</field>
@@ -1632,7 +1623,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacingS">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3300</field>
         <field title="alias">rightSpacingS</field>
         <field title="title">Right-spacing &amp;#40;S&amp;#41;</field>
@@ -1647,7 +1638,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacingM">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3400</field>
         <field title="alias">rightSpacingM</field>
         <field title="title">Right-spacing &amp;#40;M&amp;#41;</field>
@@ -1662,7 +1653,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacingL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3500</field>
         <field title="alias">rightSpacingL</field>
         <field title="title">Right-spacing &amp;#40;L&amp;#41;</field>
@@ -1677,7 +1668,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="rightSpacingXL">
-        <field title="pid">1110</field>
+        <field title="pid">1100</field>
         <field title="sorting">3600</field>
         <field title="alias">rightSpacingXL</field>
         <field title="title">Right-spacing &amp;#40;XL&amp;#41;</field>
@@ -1694,14 +1685,14 @@
     </children>
   </archive>
   <archive identifier="cPadding">
-    <field title="id">1120</field>
+    <field title="id">1110</field>
     <field title="title">Padding</field>
     <field title="identifier">cPadding</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1300</field>
+    <field title="sorting">1200</field>
     <children>
       <child alias="padding">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">100</field>
         <field title="alias">padding</field>
         <field title="title">Padding</field>
@@ -1717,7 +1708,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="paddingXS">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">200</field>
         <field title="alias">paddingXS</field>
         <field title="title">Padding &amp;#40;XS&amp;#41;</field>
@@ -1732,7 +1723,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="paddingS">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">300</field>
         <field title="alias">paddingS</field>
         <field title="title">Padding &amp;#40;S&amp;#41;</field>
@@ -1747,7 +1738,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="paddingM">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">400</field>
         <field title="alias">paddingM</field>
         <field title="title">Padding &amp;#40;M&amp;#41;</field>
@@ -1762,7 +1753,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="paddingL">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">500</field>
         <field title="alias">paddingL</field>
         <field title="title">Padding &amp;#40;L&amp;#41;</field>
@@ -1777,7 +1768,7 @@
         <field title="modules">a:38:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";i:3;s:8:"quicknav";i:4;s:9:"quicklink";i:5;s:7:"booknav";i:6;s:10:"articlenav";i:7;s:7:"sitemap";i:8;s:5:"login";i:9;s:6:"logout";i:10;s:12:"personalData";i:11;s:12:"registration";i:12;s:14:"changePassword";i:13;s:12:"lostPassword";i:14;s:12:"closeAccount";i:15;s:10:"two_factor";i:16;s:6:"search";i:17;s:8:"comments";i:18;s:7:"listing";i:19;s:11:"articlelist";i:20;s:11:"randomImage";i:21;s:9:"rssReader";i:22;s:8:"template";i:23;s:7:"faqlist";i:24;s:9:"faqreader";i:25;s:7:"faqpage";i:26;s:8:"newslist";i:27;s:10:"newsreader";i:28;s:11:"newsarchive";i:29;s:8:"newsmenu";i:30;s:8:"calendar";i:31;s:11:"eventreader";i:32;s:9:"eventlist";i:33;s:9:"eventmenu";i:34;s:9:"subscribe";i:35;s:11:"unsubscribe";i:36;s:14:"newsletterlist";i:37;s:16:"newsletterreader";}</field>
       </child>
       <child alias="paddingXL">
-        <field title="pid">1120</field>
+        <field title="pid">1110</field>
         <field title="sorting">600</field>
         <field title="alias">paddingXL</field>
         <field title="title">Padding &amp;#40;XL&amp;#41;</field>
@@ -1794,14 +1785,14 @@
     </children>
   </archive>
   <archive identifier="cDivider">
-    <field title="id">1130</field>
+    <field title="id">1120</field>
     <field title="title">Divider</field>
     <field title="identifier">cDivider</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1400</field>
+    <field title="sorting">1300</field>
     <children>
       <child alias="topDivider">
-        <field title="pid">1130</field>
+        <field title="pid">1120</field>
         <field title="sorting">100</field>
         <field title="alias">topDivider</field>
         <field title="title">Top-Divider</field>
@@ -1812,7 +1803,7 @@
         <field title="extendArticle">1</field>
       </child>
       <child alias="bottomDivider">
-        <field title="pid">1130</field>
+        <field title="pid">1120</field>
         <field title="sorting">200</field>
         <field title="alias">bottomDivider</field>
         <field title="title">Bottom-Divider</field>
@@ -1825,14 +1816,14 @@
     </children>
   </archive>
   <archive identifier="cBackground">
-    <field title="id">1140</field>
+    <field title="id">1130</field>
     <field title="title">Background</field>
     <field title="identifier">cBackground</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1500</field>
+    <field title="sorting">1400</field>
     <children>
       <child alias="color">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">100</field>
         <field title="alias">color</field>
         <field title="title">Color</field>
@@ -1847,7 +1838,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="image">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">200</field>
         <field title="alias">image</field>
         <field title="title">Image</field>
@@ -1863,7 +1854,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="attachment">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">300</field>
         <field title="alias">attachment</field>
         <field title="title">Attachment</field>
@@ -1877,7 +1868,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="repeat">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">400</field>
         <field title="alias">repeat</field>
         <field title="title">Repeat</field>
@@ -1891,7 +1882,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="size">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">500</field>
         <field title="alias">size</field>
         <field title="title">Size</field>
@@ -1905,7 +1896,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="posx">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">600</field>
         <field title="alias">posx</field>
         <field title="title">Horizontal position</field>
@@ -1919,7 +1910,7 @@
         <field title="modules">a:9:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:10:"two_factor";i:7;s:8:"comments";i:8;s:6:"search";}</field>
       </child>
       <child alias="posy">
-        <field title="pid">1140</field>
+        <field title="pid">1130</field>
         <field title="sorting">700</field>
         <field title="alias">posy</field>
         <field title="title">Vertical position</field>
