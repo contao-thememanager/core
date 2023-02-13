@@ -1,3 +1,6 @@
+<?php
+  $this->attributes = str_contains($this->attributes, 'class="') ? str_replace('class="', 'class="grid gtr-f ', $this->attributes) : $this->attributes . 'class="grid gtr-f"';
+?>
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
