@@ -1,5 +1,5 @@
 
-<div class="<?= ($this->class)? $this->class.' ' : ''  ?>grid gtr-1" role="group">
+<div class="grid gtr-f<?=$this->class?' '.$this->class:''?>" role="group">
   <div class="inside">
     <?php if ($this->label): ?>
       <label><?= $this->label ?></label>
