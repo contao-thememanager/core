@@ -5,7 +5,7 @@
   --flex-items:normal;
 
   > .inside {
-    --gtr-item:var(--gtr-half);
+    --i-gtr:var(--gtr-half);
 
     position: relative;
 
@@ -24,8 +24,8 @@
       flex-basis:  100%;
       max-width:   100%;
 
-      padding-right: var(--gtr-item);
-      padding-left:  var(--gtr-item);
+      padding-right: var(--i-gtr);
+      padding-left:  var(--i-gtr);
     }
   }
 
