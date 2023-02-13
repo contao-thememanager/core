@@ -10,6 +10,7 @@ namespace ContaoThemeManager\Core\Generator;
 
 class Constants
 {
+    // ToDo: change icon generation groups
     const FONTFAMILY_ICON = 'ctm-icon';
 
     const ICON = [
