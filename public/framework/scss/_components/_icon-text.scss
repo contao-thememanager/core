@@ -13,7 +13,7 @@
   &_top {
 
     .c_icon {
-      margin-bottom: var(--c-m);
+      margin-bottom: var(--e-m);
     }
   }
 
@@ -21,7 +21,7 @@
     --itm-dsp: flex;
 
     .c_icon {
-      margin-right: var(--c-m);
+      margin-right: var(--e-m);
     }
   }
 
@@ -30,7 +30,7 @@
     --itm-flow: row-reverse;
 
     .c_icon {
-      margin-left: var(--c-m);
+      margin-left: var(--e-m);
     }
   }
 
@@ -38,7 +38,7 @@
 
     .c_icon {
       float: left;
-      margin-right: var(--c-m);
+      margin-right: var(--e-m);
     }
   }
 
@@ -46,7 +46,7 @@
 
     .c_icon {
       float: right;
-      margin-left: var(--c-m);
+      margin-left: var(--e-m);
     }
   }
 }

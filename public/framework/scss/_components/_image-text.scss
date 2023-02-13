@@ -16,7 +16,7 @@
     --it-wdth:calc(100% * var(--ratio-x)); // No default value to force auto -> calc will intentionally fail
     position: relative;
     float:    var(--img-float,none);
-    margin:   var(--img-mt,0) var(--img-mr,0) var(--img-mb,var(--c-m)) var(--img-ml,0);
+    margin:   var(--img-mt,0) var(--img-mr,0) var(--img-mb,var(--e-m)) var(--img-ml,0);
     inset:    var(--inset-y,auto) var(--inset-x,auto);
     width:    var(--it-wdth);
     height:   var(--img-hght,auto);
@@ -48,7 +48,7 @@
     --it-wdth: calc(100% * var(--ratio-x));
 
     position: absolute;
-    padding: var(--c-m);
+    padding: var(--e-m);
 
     max-height: calc(100% - var(--i-py,0%) - var(--i-py,0%));
     //width: calc(var(--it-wdth,100%) - var(--i-px,0%) - var(--i-px,0%));
@@ -61,7 +61,7 @@
 .img--flex {
   --itm-dsp: flex;
   &.pos-b {
-    --img-mt:var(--c-m); --img-mb:0; --itm-flow:column-reverse;
+    --img-mt:var(--e-m); --img-mb:0; --itm-flow:column-reverse;
   }
 
   &.img--inset {
@@ -101,8 +101,8 @@
 
   // Float only works with left and right
   .img--float {
-    &.pos-l { --img-mr:var(--c-m); --img-float:left; }
-    &.pos-r { --img-ml:var(--c-m); --img-float:right; }
+    &.pos-l { --img-mr:var(--e-m); --img-float:left; }
+    &.pos-r { --img-ml:var(--e-m); --img-float:right; }
 
     &.img--inset {
       &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px)); }
@@ -116,15 +116,15 @@
   .img--flex {
     --itm-dsp: flex;
 
-    &.pos-b { --img-mt:var(--c-m); --img-mb:0; --itm-flow:column-reverse; }
+    &.pos-b { --img-mt:var(--e-m); --img-mb:0; --itm-flow:column-reverse; }
     &.pos-y { --img-mr:auto; --img-ml:auto;} // Always 'default' to centered image when any top or btm position is set
 
-    &.pos-l { --img-mr:var(--c-m); --itm-flow:row; }
-    &.pos-r { --img-ml:var(--c-m); --itm-flow:row-reverse; }
+    &.pos-l { --img-mr:var(--e-m); --itm-flow:row; }
+    &.pos-r { --img-ml:var(--e-m); --itm-flow:row-reverse; }
     &.pos-x { --img-mt:auto; --img-mb:auto;
       &.pos-t { --img-mt:0; }
       &.pos-b { --img-mb:0; }
-      .c_image { width: calc(var(--it-wdth) - calc(var(--c-m) / 2)); }
+      .c_image { width: calc(var(--it-wdth) - calc(var(--e-m) / 2)); }
     }
 
     &.img--inset {
