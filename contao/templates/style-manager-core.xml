@@ -2176,10 +2176,10 @@
       </child>
     </children>
   </archive>
-  <archive identifier="eFormInputIcon">
+  <archive identifier="eFormIcon">
     <field title="id">2020</field>
     <field title="title">Icon</field>
-    <field title="identifier">eFormInputIcon</field>
+    <field title="identifier">eFormIcon</field>
     <field title="groupAlias">Element</field>
     <field title="sorting">300</field>
     <children>
@@ -2527,7 +2527,6 @@
         <field title="title">Full Width</field>
         <field title="description">Enables 100% width.</field>
         <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"is-block";s:5:"value";s:6:"Active";}}</field>
-        <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>

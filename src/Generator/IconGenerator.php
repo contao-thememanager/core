@@ -166,7 +166,8 @@ class IconGenerator
     {
         // Create form icons
         self::generateFormIcons($classes, $xml);
-        self::generateIcons($classes, $xml);
+        self::generateLinkIcons($classes, $xml);
+        self::generateListIcons($classes, $xml);
     }
 
     /**
@@ -186,27 +187,32 @@ class IconGenerator
         }
 
         // Create XML objects
-        $xml->addGroup(11, 'Form-Input-Icon', 'formInputIcon', 'FormField', 1128)
-            ->addChild('Icon', 'formInputIcons', $arrClasses, Constants::ICON_FORM['elements'], Constants::ICON_FORM['options']);
+        $xml->addGroup(2020, 'Icon', 'eFormIcon', 'Element', 300)
+            ->addChild('Icon', 'icon', $arrClasses, Constants::ICON_FORM['elements'], Constants::ICON_FORM['options']);
     }
 
     /**
-     * Adds the normal icons to the style-manager-tm-config.xml
+     * Adds the link icons to the style-manager-tm-config.xml
      */
-    private function generateIcons(array $classes, $xml): void
+    private function generateLinkIcons(array $classes, $xml): void
     {
-        $xml->addGroup(1001, 'Icon', 'icon', 'Design', 640)
-            ->addChild('Icon', 'icon', $classes, Constants::ICON['elements'], Constants::ICON['options']);
-
-        // Unset list (on 12th position) because content-element list does not have directions
-        $arrDirElements = Constants::ICON['elements'];
-        unset($arrDirElements['contentElements'][11]);
+        $xml->addGroup(2080, 'Link', 'eLink', 'Element', 900)
+            ->addChild('Icon', 'icon', $classes, Constants::ICON_LINK['elements'], Constants::ICON_LINK['options']);
 
         $arrClasses = [
             ['key'=>'i-is-r', 'value'=>'Right']
         ];
 
-        $xml->addChild('Direction', 'direction', $arrClasses, $arrDirElements, Constants::ICON_DIRECTION['options']);
+        $xml->addChild('Direction', 'direction', $arrClasses, Constants::ICON_LINK['elements'], Constants::ICON_LINK_DIRECTION['options']);
+    }
+
+    /**
+     * Adds the list icons to the style-manager-tm-config.xml
+     */
+    private function generateListIcons(array $classes, $xml): void
+    {
+        $xml->addGroup(2010, 'List', 'eList', 'Element', 200)
+            ->addChild('List-Icon', 'icon', $classes, Constants::ICON_LIST['elements'], Constants::ICON_LIST['options']);
     }
 
     /**
