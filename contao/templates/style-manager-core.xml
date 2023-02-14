@@ -515,7 +515,7 @@
     <field title="title">Layout</field>
     <field title="identifier">cLayout</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">100</field>
+    <field title="sorting">2000</field>
     <children>
       <child alias="layoutColumns">
         <field title="pid">1000</field>
@@ -700,7 +700,7 @@
     <field title="title">Article-Spacing</field>
     <field title="identifier">cArticleSpacing</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">200</field>
+    <field title="sorting">2100</field>
     <children>
       <child alias="ySpacing">
         <field title="pid">1010</field>
@@ -755,7 +755,7 @@
     <field title="title">Article-Height</field>
     <field title="identifier">cArticleHeight</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">300</field>
+    <field title="sorting">2200</field>
     <children>
       <child alias="hHeight">
         <field title="pid">1020</field>
@@ -774,7 +774,7 @@
     <field title="title">Navigation</field>
     <field title="identifier">cNavigation</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">400</field>
+    <field title="sorting">2300</field>
     <children>
       <child alias="navigation">
         <field title="pid">1030</field>
@@ -818,7 +818,7 @@
     <field title="title">Grid-Columns</field>
     <field title="identifier">cGridColumn</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">500</field>
+    <field title="sorting">2400</field>
     <children>
       <child alias="col">
         <field title="pid">1040</field>
@@ -911,7 +911,7 @@
     <field title="title">Grid-Offset</field>
     <field title="identifier">cGridOffset</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">600</field>
+    <field title="sorting">2500</field>
     <children>
       <child alias="offset">
         <field title="pid">1050</field>
@@ -1004,7 +1004,7 @@
     <field title="title">Grid-Order</field>
     <field title="identifier">cGridOrder</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">700</field>
+    <field title="sorting">2600</field>
     <children>
       <child alias="order">
         <field title="pid">1060</field>
@@ -1097,7 +1097,7 @@
     <field title="title">Grid-Alignment</field>
     <field title="identifier">cGridAlignment</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">800</field>
+    <field title="sorting">2700</field>
     <children>
       <child alias="gridHorizontalAlignment">
         <field title="pid">1070</field>
@@ -1245,7 +1245,7 @@
     <field title="title">Grid-Gutter</field>
     <field title="identifier">cGridGutter</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">900</field>
+    <field title="sorting">2800</field>
     <children>
       <child alias="gutter">
         <field title="pid">1080</field>
@@ -1293,7 +1293,7 @@
     <field title="title">Text</field>
     <field title="identifier">cText</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1000</field>
+    <field title="sorting">2900</field>
     <children>
       <child alias="templateTextColor">
         <field title="pid">1090</field>
@@ -1318,7 +1318,7 @@
     <field title="title">Spacing</field>
     <field title="identifier">cSpacing</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1100</field>
+    <field title="sorting">3000</field>
     <children>
       <child alias="topSpacing">
         <field title="pid">1100</field>
@@ -1691,7 +1691,7 @@
     <field title="title">Padding</field>
     <field title="identifier">cPadding</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1200</field>
+    <field title="sorting">3100</field>
     <children>
       <child alias="padding">
         <field title="pid">1110</field>
@@ -1791,7 +1791,7 @@
     <field title="title">Divider</field>
     <field title="identifier">cDivider</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1300</field>
+    <field title="sorting">3200</field>
     <children>
       <child alias="topDivider">
         <field title="pid">1120</field>
@@ -1822,7 +1822,7 @@
     <field title="title">Background</field>
     <field title="identifier">cBackground</field>
     <field title="groupAlias">Component</field>
-    <field title="sorting">1400</field>
+    <field title="sorting">3300</field>
     <children>
       <child alias="color">
         <field title="pid">1130</field>
@@ -1933,7 +1933,7 @@
     <field title="title">Layout</field>
     <field title="identifier">eLayout</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">100</field>
+    <field title="sorting">4000</field>
     <children>
       <child alias="box">
         <field title="pid">2000</field>
@@ -1952,12 +1952,12 @@
       </child>
     </children>
   </archive>
-  <archive identifier="eList">
+  <archive identifier="eGridList">
     <field title="id">2010</field>
     <field title="title">List</field>
-    <field title="identifier">eList</field>
+    <field title="identifier">eGridList</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">200</field>
+    <field title="sorting">4100</field>
     <children>
       <child alias="list">
         <field title="pid">2010</field>
@@ -1972,7 +1972,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -1989,7 +1989,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -2006,7 +2006,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -2023,7 +2023,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -2040,7 +2040,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -2057,7 +2057,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:7:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";i:4;s:4:"list";i:5;s:19:"rsce_hyperlink_list";i:6;s:9:"downloads";}</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
@@ -2110,10 +2110,96 @@
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
-
+    </children>
+  </archive>
+  <archive identifier="eList">
+    <field title="id">2020</field>
+    <field title="title">List</field>
+    <field title="identifier">eList</field>
+    <field title="groupAlias">Element</field>
+    <field title="sorting">4200</field>
+    <children>
+      <child alias="list">
+        <field title="pid">2020</field>
+        <field title="sorting">100</field>
+        <field title="alias">list</field>
+        <field title="title">Columns</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:6:"list-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:6:"list-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:6:"list-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:6:"list-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:6:"list-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:6:"list-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
+      <child alias="listXS">
+        <field title="pid">2020</field>
+        <field title="sorting">200</field>
+        <field title="alias">listXS</field>
+        <field title="title">Columns &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xs-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xs-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xs-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xs-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xs-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xs-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
+      <child alias="listS">
+        <field title="pid">2020</field>
+        <field title="sorting">300</field>
+        <field title="alias">listS</field>
+        <field title="title">Columns &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-s-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-s-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-s-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-s-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-s-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-s-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
+      <child alias="listM">
+        <field title="pid">2020</field>
+        <field title="sorting">400</field>
+        <field title="alias">listM</field>
+        <field title="title">Columns &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-m-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-m-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-m-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-m-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-m-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-m-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
+      <child alias="listL">
+        <field title="pid">2020</field>
+        <field title="sorting">500</field>
+        <field title="alias">listL</field>
+        <field title="title">Columns &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-l-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-l-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-l-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-l-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-l-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-l-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
+      <child alias="listXL">
+        <field title="pid">2020</field>
+        <field title="sorting">600</field>
+        <field title="alias">listXL</field>
+        <field title="title">Columns &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xl-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xl-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xl-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xl-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xl-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xl-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
+      </child>
       <child alias="direction">
-        <field title="pid">2010</field>
-        <field title="sorting">2000</field>
+        <field title="pid">2020</field>
+        <field title="sorting">1000</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
         <field title="description">Defines the alignment of the columns.</field>
@@ -2126,8 +2212,8 @@
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
       </child>
       <child alias="listGutter">
-        <field title="pid">2010</field>
-        <field title="sorting">2100</field>
+        <field title="pid">2020</field>
+        <field title="sorting">1100</field>
         <field title="alias">listGutter</field>
         <field title="title">Gutter</field>
         <field title="description">Defines the vertical gap between list items.</field>
@@ -2137,8 +2223,8 @@
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
       </child>
       <child alias="listStyle">
-        <field title="pid">2010</field>
-        <field title="sorting">2200</field>
+        <field title="pid">2020</field>
+        <field title="sorting">1200</field>
         <field title="alias">listStyle</field>
         <field title="title">List-style</field>
         <field title="description">Resets the list-style to not include markers and padding</field>
@@ -2149,8 +2235,8 @@
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
       </child>
       <child alias="markerColor">
-        <field title="pid">2010</field>
-        <field title="sorting">2300</field>
+        <field title="pid">2020</field>
+        <field title="sorting">1300</field>
         <field title="alias">markerColor</field>
         <field title="title">Marker-color</field>
         <field title="description">Here you can select the color of the list marker</field>
@@ -2162,8 +2248,8 @@
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
       </child>
       <child alias="justifyList">
-        <field title="pid">2010</field>
-        <field title="sorting">2400</field>
+        <field title="pid">2020</field>
+        <field title="sorting">1400</field>
         <field title="alias">justifyList</field>
         <field title="title">Justify List (Auto)</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
@@ -2177,14 +2263,14 @@
     </children>
   </archive>
   <archive identifier="eFormIcon">
-    <field title="id">2020</field>
+    <field title="id">2030</field>
     <field title="title">Icon</field>
     <field title="identifier">eFormIcon</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">300</field>
+    <field title="sorting">4300</field>
     <children>
       <child alias="icon">
-        <field title="pid">2020</field>
+        <field title="pid">2030</field>
         <field title="sorting">100</field>
         <field title="alias">icon</field>
         <field title="title">Icon</field>
@@ -2196,7 +2282,7 @@
         <field title="formFields">a:2:{i:0;s:4:"text";i:1;s:8:"password";}</field>
       </child>
       <child alias="alignment">
-        <field title="pid">2020</field>
+        <field title="pid">2030</field>
         <field title="sorting">200</field>
         <field title="alias">alignment</field>
         <field title="title">Alignment</field>
@@ -2210,14 +2296,14 @@
     </children>
   </archive>
   <archive identifier="eFormImage">
-    <field title="id">2030</field>
+    <field title="id">2040</field>
     <field title="title">Image</field>
     <field title="identifier">eFormImage</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">400</field>
+    <field title="sorting">4400</field>
     <children>
       <child alias="img">
-        <field title="pid">2030</field>
+        <field title="pid">2040</field>
         <field title="sorting">100</field>
         <field title="alias">img</field>
         <field title="title">Image</field>
@@ -2229,7 +2315,7 @@
         <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
       </child>
       <child alias="alignment">
-        <field title="pid">2030</field>
+        <field title="pid">2040</field>
         <field title="sorting">200</field>
         <field title="alias">alignment</field>
         <field title="title">Alignment</field>
@@ -2243,14 +2329,14 @@
     </children>
   </archive>
   <archive identifier="eHeadline">
-    <field title="id">2040</field>
+    <field title="id">2050</field>
     <field title="title">Headlines</field>
     <field title="identifier">eHeadline</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">500</field>
+    <field title="sorting">4500</field>
     <children>
       <child alias="hl1Type">
-        <field title="pid">2040</field>
+        <field title="pid">2050</field>
         <field title="sorting">100</field>
         <field title="alias">hl1Type</field>
         <field title="title">Headline (Archive)</field>
@@ -2264,7 +2350,7 @@
         <field title="modules">a:1:{i:0;s:7:"faqpage";}</field>
       </child>
       <child alias="hl1Style">
-        <field title="pid">2040</field>
+        <field title="pid">2050</field>
         <field title="sorting">200</field>
         <field title="alias">hl1Style</field>
         <field title="title">Class (Archive)</field>
@@ -2277,7 +2363,7 @@
         <field title="modules">a:1:{i:0;s:7:"faqpage";}</field>
       </child>
       <child alias="hl2Type">
-        <field title="pid">2040</field>
+        <field title="pid">2050</field>
         <field title="sorting">1100</field>
         <field title="alias">hl2Type</field>
         <field title="title">Headline (Item)</field>
@@ -2291,7 +2377,7 @@
         <field title="modules">a:1:{i:0;s:7:"faqpage";}</field>
       </child>
       <child alias="hl2Style">
-        <field title="pid">2040</field>
+        <field title="pid">2050</field>
         <field title="sorting">1200</field>
         <field title="alias">hl2Style</field>
         <field title="title">Class (Item)</field>
@@ -2306,14 +2392,14 @@
     </children>
   </archive>
   <archive identifier="eText">
-    <field title="id">2050</field>
+    <field title="id">2060</field>
     <field title="title">Text</field>
     <field title="identifier">eText</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">600</field>
+    <field title="sorting">4600</field>
     <children>
       <child alias="verticalAlignment">
-        <field title="pid">2050</field>
+        <field title="pid">2060</field>
         <field title="sorting">100</field>
         <field title="alias">verticalAlignment</field>
         <field title="title">Vertical-Alignment</field>
@@ -2331,14 +2417,14 @@
     </children>
   </archive>
   <archive identifier="eImage">
-    <field title="id">2060</field>
+    <field title="id">2070</field>
     <field title="title">Image</field>
     <field title="identifier">eImage</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">700</field>
+    <field title="sorting">4700</field>
     <children>
       <child alias="scale">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">100</field>
         <field title="alias">scale</field>
         <field title="title">Scale</field>
@@ -2352,7 +2438,7 @@
         <field title="modules">a:5:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";}</field>
       </child>
       <child alias="width">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">200</field>
         <field title="alias">width</field>
         <field title="title">Width</field>
@@ -2364,7 +2450,7 @@
         <field title="contentElements">a:1:{i:0;s:4:"text";}</field>
       </child>
       <child alias="imgAlign">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">300</field>
         <field title="alias">imgAlign</field>
         <field title="title">Alignment</field>
@@ -2377,7 +2463,7 @@
         <field title="modules">a:5:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";}</field>
       </child>
       <child alias="objectFit">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">400</field>
         <field title="alias">objectFit</field>
         <field title="title">Object-fit</field>
@@ -2391,7 +2477,7 @@
         <field title="modules">a:5:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";}</field>
       </child>
       <child alias="objectPosX">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">500</field>
         <field title="alias">objectPosX</field>
         <field title="title">Horizontal position</field>
@@ -2404,7 +2490,7 @@
         <field title="modules">a:5:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";}</field>
       </child>
       <child alias="objectPosY">
-        <field title="pid">2060</field>
+        <field title="pid">2070</field>
         <field title="sorting">600</field>
         <field title="alias">objectPosY</field>
         <field title="title">Vertical position</field>
@@ -2419,14 +2505,14 @@
     </children>
   </archive>
   <archive identifier="eIcon">
-    <field title="id">2070</field>
+    <field title="id">2080</field>
     <field title="title">Icon</field>
     <field title="identifier">eIcon</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">800</field>
+    <field title="sorting">4800</field>
     <children>
       <child alias="design">
-        <field title="pid">2070</field>
+        <field title="pid">2080</field>
         <field title="sorting">100</field>
         <field title="alias">design</field>
         <field title="title">Design</field>
@@ -2439,7 +2525,7 @@
         <field title="contentElements">a:2:{i:0;s:14:"rsce_icon_text";i:1;s:19:"rsce_icon_text_list";}</field>
       </child>
       <child alias="shape">
-        <field title="pid">2070</field>
+        <field title="pid">2080</field>
         <field title="sorting">200</field>
         <field title="alias">shape</field>
         <field title="title">Shape</field>
@@ -2452,7 +2538,7 @@
         <field title="contentElements">a:2:{i:0;s:14:"rsce_icon_text";i:1;s:19:"rsce_icon_text_list";}</field>
       </child>
       <child alias="color">
-        <field title="pid">2070</field>
+        <field title="pid">2080</field>
         <field title="sorting">300</field>
         <field title="alias">color</field>
         <field title="title">Color</field>
@@ -2465,7 +2551,7 @@
         <field title="contentElements">a:2:{i:0;s:14:"rsce_icon_text";i:1;s:19:"rsce_icon_text_list";}</field>
       </child>
       <child alias="size">
-        <field title="pid">2070</field>
+        <field title="pid">2080</field>
         <field title="sorting">400</field>
         <field title="alias">size</field>
         <field title="title">Size</field>
@@ -2480,14 +2566,14 @@
     </children>
   </archive>
   <archive identifier="eLink">
-    <field title="id">2080</field>
+    <field title="id">2090</field>
     <field title="title">Link</field>
     <field title="identifier">eLink</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">900</field>
+    <field title="sorting">4900</field>
     <children>
       <child alias="design">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">100</field>
         <field title="alias">design</field>
         <field title="title">Design</field>
@@ -2504,7 +2590,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="size">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">200</field>
         <field title="alias">size</field>
         <field title="title">Size</field>
@@ -2521,7 +2607,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="fullWidth">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">300</field>
         <field title="alias">fullWidth</field>
         <field title="title">Full Width</field>
@@ -2538,7 +2624,7 @@
         <field title="modules">a:6:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";}</field>
       </child>
       <child alias="topSpacing">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1100</field>
         <field title="alias">topSpacing</field>
         <field title="title">Top-spacing</field>
@@ -2556,7 +2642,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="topSpacingXS">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1200</field>
         <field title="alias">topSpacingXS</field>
         <field title="title">Top-spacing &amp;#40;XS&amp;#41;</field>
@@ -2573,7 +2659,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="topSpacingS">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1300</field>
         <field title="alias">topSpacingS</field>
         <field title="title">Top-spacing &amp;#40;S&amp;#41;</field>
@@ -2590,7 +2676,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="topSpacingM">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1400</field>
         <field title="alias">topSpacingM</field>
         <field title="title">Top-spacing &amp;#40;M&amp;#41;</field>
@@ -2607,7 +2693,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="topSpacingL">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1500</field>
         <field title="alias">topSpacingL</field>
         <field title="title">Top-spacing &amp;#40;L&amp;#41;</field>
@@ -2624,7 +2710,7 @@
         <field title="modules">a:7:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";}</field>
       </child>
       <child alias="topSpacingXL">
-        <field title="pid">2080</field>
+        <field title="pid">2090</field>
         <field title="sorting">1600</field>
         <field title="alias">topSpacingXL</field>
         <field title="title">Top-spacing &amp;#40;XL&amp;#41;</field>
@@ -2643,14 +2729,14 @@
     </children>
   </archive>
   <archive identifier="eSpacing">
-    <field title="id">2090</field>
+    <field title="id">2100</field>
     <field title="title">Spacing</field>
     <field title="identifier">eSpacing</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">1000</field>
+    <field title="sorting">5000</field>
     <children>
       <child alias="spacing">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">100</field>
         <field title="alias">spacing</field>
         <field title="title">Spacing</field>
@@ -2664,7 +2750,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="spacingXS">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">200</field>
         <field title="alias">spacingXS</field>
         <field title="title">Spacing &amp;#40;XS&amp;#41;</field>
@@ -2677,7 +2763,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="spacingS">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">300</field>
         <field title="alias">spacingS</field>
         <field title="title">Spacing &amp;#40;S&amp;#41;</field>
@@ -2690,7 +2776,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="spacingM">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">400</field>
         <field title="alias">spacingM</field>
         <field title="title">Spacing &amp;#40;M&amp;#41;</field>
@@ -2703,7 +2789,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="spacingL">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">500</field>
         <field title="alias">spacingL</field>
         <field title="title">Spacing &amp;#40;L&amp;#41;</field>
@@ -2716,7 +2802,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="spacingXL">
-        <field title="pid">2090</field>
+        <field title="pid">2100</field>
         <field title="sorting">600</field>
         <field title="alias">spacingXL</field>
         <field title="title">Spacing &amp;#40;XL&amp;#41;</field>
@@ -2731,15 +2817,14 @@
     </children>
   </archive>
   <archive identifier="ePadding">
-    <field title="id">2100</field>
+    <field title="id">2110</field>
     <field title="title">Padding</field>
     <field title="identifier">ePpadding</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">1100</field>
+    <field title="sorting">5100</field>
     <children>
-
       <child alias="ip">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">100</field>
         <field title="alias">ip</field>
         <field title="title">Padding</field>
@@ -2755,7 +2840,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="ipXS">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">200</field>
         <field title="alias">ipXS</field>
         <field title="title">Padding &amp;#40;XS&amp;#41;</field>
@@ -2770,7 +2855,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="ipS">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">300</field>
         <field title="alias">ipS</field>
         <field title="title">Padding &amp;#40;S&amp;#41;</field>
@@ -2785,7 +2870,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="ipM">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">400</field>
         <field title="alias">ipM</field>
         <field title="title">Padding &amp;#40;M&amp;#41;</field>
@@ -2800,7 +2885,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="ipL">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">500</field>
         <field title="alias">ipL</field>
         <field title="title">Padding &amp;#40;L&amp;#41;</field>
@@ -2816,7 +2901,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="ipXL">
-        <field title="pid">2100</field>
+        <field title="pid">2110</field>
         <field title="sorting">600</field>
         <field title="alias">ipXL</field>
         <field title="title">Padding &amp;#40;XL&amp;#41;</field>
@@ -2833,14 +2918,14 @@
     </children>
   </archive>
   <archive identifier="eBackground">
-    <field title="id">2110</field>
+    <field title="id">2120</field>
     <field title="title">Background</field>
     <field title="identifier">eBackground</field>
     <field title="groupAlias">Element</field>
-    <field title="sorting">1200</field>
+    <field title="sorting">5200</field>
     <children>
       <child alias="color">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">100</field>
         <field title="alias">color</field>
         <field title="title">Color</field>
@@ -2856,7 +2941,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="image">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">200</field>
         <field title="alias">image</field>
         <field title="title">Image</field>
@@ -2872,7 +2957,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="attachment">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">300</field>
         <field title="alias">attachment</field>
         <field title="title">Attachment</field>
@@ -2887,7 +2972,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="repeat">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">400</field>
         <field title="alias">repeat</field>
         <field title="title">Repeat</field>
@@ -2901,7 +2986,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="size">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">500</field>
         <field title="alias">size</field>
         <field title="title">Size</field>
@@ -2915,7 +3000,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="posx">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">600</field>
         <field title="alias">posx</field>
         <field title="title">Horizontal position</field>
@@ -2929,7 +3014,7 @@
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
       <child alias="posy">
-        <field title="pid">2110</field>
+        <field title="pid">2120</field>
         <field title="sorting">700</field>
         <field title="alias">posy</field>
         <field title="title">Vertical position</field>

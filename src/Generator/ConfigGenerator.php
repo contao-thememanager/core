@@ -22,7 +22,7 @@ class ConfigGenerator
     {
         $options = self::getListOptions($configVars, 'image-text-ratio-options', 'it-width-', '%', [25,33,38,40,50,80,100]);
 
-        $xml->addGroup(1000, 'Layout', 'cLayout', 'Component', 100)
+        $xml->addGroup(1000, 'Layout', 'cLayout', 'Component', 2000)
             ->addChild('Width','imageTextWidth', $options, [], []);
     }
 
@@ -33,7 +33,7 @@ class ConfigGenerator
     {
         $options = self::getListOptions($configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
 
-        $xml->addGroup(1020, 'Article-Height', 'cArticleHeight', 'Component', 300)
+        $xml->addGroup(1020, 'Article-Height', 'cArticleHeight', 'Component', 2200)
             ->addChild('Height','height', $options, Constants::ARTICLE_HEIGHT['elements'], Constants::ARTICLE_HEIGHT['options']);
     }
 
@@ -65,7 +65,7 @@ class ConfigGenerator
             }
         }
 
-        $xml->addGroup(2060, 'Image', 'eImage', 'Element', 700)
+        $xml->addGroup(2070, 'Image', 'eImage', 'Element', 4700)
             ->addChild('Aspect-Ratio', 'aspectRatio', $options, Constants::ASPECT_RATIO['elements'], Constants::ASPECT_RATIO['options']);
     }
 

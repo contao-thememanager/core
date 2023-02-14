@@ -62,8 +62,6 @@ class Constants
     const ICON_LIST = [
         'elements' => [
             'contentElements' => [
-                'rsce_hyperlink_list',
-                'downloads',
                 'list'
             ]
         ],
@@ -72,7 +70,7 @@ class Constants
             'chosen'         => 1,
             'blankOption'    => 1,
             'passToTemplate' => 1,
-            'sorting'        => 2350
+            'sorting'        => 1350
         ]
     ];
 
@@ -128,7 +126,7 @@ class Constants
             'description' => 'Here you can choose an aspect-ratio.',
             'chosen'      => 1,
             'blankOption' => 1,
-            'sorting'     => 150,
+            'sorting'     => 150
         ]
     ];
 }

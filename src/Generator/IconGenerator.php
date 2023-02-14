@@ -187,7 +187,7 @@ class IconGenerator
         }
 
         // Create XML objects
-        $xml->addGroup(2020, 'Icon', 'eFormIcon', 'Element', 300)
+        $xml->addGroup(2030, 'Icon', 'eFormIcon', 'Element', 4300)
             ->addChild('Icon', 'icon', $arrClasses, Constants::ICON_FORM['elements'], Constants::ICON_FORM['options']);
     }
 
@@ -196,7 +196,7 @@ class IconGenerator
      */
     private function generateLinkIcons(array $classes, $xml): void
     {
-        $xml->addGroup(2080, 'Link', 'eLink', 'Element', 900)
+        $xml->addGroup(2090, 'Link', 'eLink', 'Element', 4900)
             ->addChild('Icon', 'icon', $classes, Constants::ICON_LINK['elements'], Constants::ICON_LINK['options']);
 
         $arrClasses = [
@@ -211,7 +211,7 @@ class IconGenerator
      */
     private function generateListIcons(array $classes, $xml): void
     {
-        $xml->addGroup(2010, 'List', 'eList', 'Element', 200)
+        $xml->addGroup(2020, 'List', 'eList', 'Element', 4200)
             ->addChild('List-Icon', 'icon', $classes, Constants::ICON_LIST['elements'], Constants::ICON_LIST['options']);
     }
 
