@@ -103,7 +103,7 @@ class Constants
             'description' => 'Here you can choose the article height.',
             'chosen'      => 1,
             'blankOption' => 1,
-            'sorting'     => 200
+            'sorting'     => 50
         ]
     ];
 
