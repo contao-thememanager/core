@@ -1,13 +1,17 @@
 <?php
   $sm = $this->styleManager;
+  $ulClasses = $sm->prepare('eList',['icon'])->format(' li-icon') .
+               $sm->prepare('eList',['list','listXS','listS','listM','listL','listXL','direction','listGutter','listStyle','markerColor','justifyList'])->format(' %s');
+  $liClasses = $sm->prepare('eList',['icon'])->format(' %s');
+
   $this->extend('block_searchable');
 ?>
 
 <?php $this->block('content'); ?>
 
-  <<?= $this->tag ?> class="c_list<?=$sm->prepare('icon', ['icon'])->format(' li-icon')?><?=$sm->prepare('list')->format(' %s')?>">
+  <<?= $this->tag ?> class="c_list<?=$ulClasses?>">
     <?php foreach ($this->items as $item): ?>
-      <li<?php if ($item['class'] || !empty($sm->prepare('icon', ['icon'])->format('%s'))): ?> class="<?= ltrim($item['class'] . $sm->prepare('icon', ['icon'])->format(' %s')) ?>"<?php endif; ?>><?= $item['content'] ?></li>
+      <li<?php if ($item['class'] || !empty($liClasses)): ?> class="<?= ltrim($item['class'] . $liClasses) ?>"<?php endif; ?>><?= $item['content'] ?></li>
     <?php endforeach; ?>
   </<?= $this->tag ?>>
 

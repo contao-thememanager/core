@@ -1,8 +1,14 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s');
+  $aClasses      = $sm->prepare('eLink')->format(' %s');
+?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
-    <a href="<?= $this->request ?>#top" class="<?=$sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>" title="<?= $this->title ?>"><?= $this->label ?></a>
+  <div class="inside<?= $insideClasses ?>">
+    <a href="<?= $this->request ?>#top" class="<?= $aClasses ?>" title="<?= $this->title ?>"><?= $this->label ?></a>
   </div>
 </div>
 <!-- indexer::continue -->
