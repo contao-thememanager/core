@@ -1,7 +1,7 @@
 <?php
   $sm = $this->styleManager;
-  $aClasses    = $sm->prepare('eLink',['design','size','fullWidth','topSpacing','topSpacingXS','topSpacingS','topSpacingM','topSpacingL','topSpacingXL'])->format(' class="%s"');
   $spanClasses = $sm->prepare('eLink',['icon','direction'])->format(' %s');
+  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' class="%s"');
 
   $this->extend('block_searchable');
 ?>

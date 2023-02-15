@@ -1,8 +1,8 @@
 <?php
   $sm = $this->styleManager;
-  $ulClasses = $sm->prepare('eList',['icon'])->format(' li-icon') .
-               $sm->prepare('eList',['list','listXS','listS','listM','listL','listXL','direction','listGutter','listStyle','markerColor','justifyList'])->format(' %s');
   $liClasses = $sm->prepare('eList',['icon'])->format(' %s');
+  $ulClasses = $sm->prepare('eList',['icon'])->format(' li-icon') .
+               $sm->prepare('eList')->exclude(['icon'])->format(' %s');
 
   $this->extend('block_searchable');
 ?>
