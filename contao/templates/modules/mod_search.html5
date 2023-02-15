@@ -1,5 +1,7 @@
 <?php
   $sm = $this->styleManager;
+  $aClasses = $sm->prepare('eLink')->format(' %s');
+
   $this->extend('block_unsearchable');
 ?>
 
@@ -12,7 +14,7 @@
         <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
       </div>
       <div class="widget widget-submit">
-        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $sm->prepare('button')->format(' %s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $this->search ?></button>
+        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $aClasses ?>"><?= $this->search ?></button>
       </div>
       <?php if ($this->advanced): ?>
         <div class="widget widget-radio">

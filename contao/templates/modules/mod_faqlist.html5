@@ -1,13 +1,24 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $insideClasses = $sm->prepare('cLayout',['imageText'])->format(' image_text') .
+                   $sm->prepare('cLayout')->format(' %s') .
+                   $sm->prepare('cText')->format(' %s') .
+                   $sm->prepare('eText')->format(' %s') .
+                   $sm->prepare('ePadding')->format(' %s') .
+                   $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s');
+  $hlClasses     = $sm->prepare('gHeadline')->format(' %s');
+?>
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> grid block">
-  <div class="inside<?=$sm->prepare('layout',['imageTextMode'])->format(' image_text')?><?=$sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('gridListItem')->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside<?= $insideClasses ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
         <div class="ce_headline">
-          <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+          <div class="c_headline<?= $hlClasses ?>">
       <?php endif; ?>
 
       <?php if ($this->headline): ?>
@@ -28,7 +39,7 @@
       <div class="faq-category <?= $category['class'] ?>">
         <h2><?= $category['headline'] ?></h2>
 
-        <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>">
+        <div class="c_list grid-list<?=$sm->prepare('eGridList')->format(' %s')?>">
           <?php foreach ($category['items'] as $faq): ?>
             <div class="faq layout_list item <?= $faq['class'] ?>">
 
@@ -47,7 +58,7 @@
     <?php endforeach; ?>
 
     <?php if ($this->pagination): ?>
-      <div class="pagination-container<?=$sm->prepare('pagination')->format(' %s')?>">
+      <div class="pagination-container<?=$sm->prepare('gPagination')->format(' %s')?>">
         <?php $this->block('pagination'); ?>
         <?php $this->endblock(); ?>
       </div>
