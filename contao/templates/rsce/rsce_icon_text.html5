@@ -1,20 +1,30 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $insideClasses = $sm->prepare('cLayout')->format(' %s') .
+                   $sm->prepare('cText')->format(' %s') .
+                   $sm->prepare('eText')->format(' %s') .
+                   $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s');
+  $iconClasses   = $sm->prepare('eIcon')->format(' %s');
+  $aClasses      = $sm->prepare('eLink')->format(' %s');
+?>
 
 <div class="<?= $this->class ?> icon_text item block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <?php if(!$this->linkText && $this->url): ?>
-    <a href="<?=$this->url?>" class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
+    <a href="<?=$this->url?>" class="inside<?= $insideClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
   <?php else: ?>
-    <div class="inside<?= $sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
+    <div class="inside<?= $insideClasses ?>">
   <?php endif; ?>
 
   <div class="c_icon">
-    <span class="icon<?= $sm->prepare('icon', ['design', 'shape', 'color', 'size'])->format(' %s')?>" data-icon="&#x<?= $this->icon ?>;"></span>
+    <span class="icon<?= $iconClasses ?>" data-icon="&#x<?= $this->icon ?>;"></span>
   </div>
   <div class="c_text">
     <?= $this->text ?>
     <?php if($this->linkText && $this->url): ?>
       <p>
-        <a href="<?=$this->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+        <a href="<?=$this->url?>" class="<?= $aClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
       </p>
     <?php endif; ?>
   </div>

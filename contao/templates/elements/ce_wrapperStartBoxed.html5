@@ -9,7 +9,7 @@
   $sliderConfig   = $sm->prepare('sliderConfig',['preset'])->format(" data-slider-config='%s'",'json') .
                     $sm->prepare('slider')->format(" data-slider='%s'",'json') .
                     $sm->prepare('sliderXS')->format(" data-slider-xs='%s'",'json') .
-                    $sm->prepare('sliderS')->format(" data-slider-s='%s'",'json').
+                    $sm->prepare('sliderS')->format(" data-slider-s='%s'",'json') .
                     $sm->prepare('sliderM')->format(" data-slider-m='%s'",'json') .
                     $sm->prepare('sliderL')->format(" data-slider-l='%s'",'json') .
                     $sm->prepare('sliderXL')->format(" data-slider-xl='%s'",'json');
