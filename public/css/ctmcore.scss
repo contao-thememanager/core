@@ -3,9 +3,12 @@
 
 // Icon font-family for icon picker
 #ctrl_styleManager {
-  &_icon_icon_chzn,
-  &_formInputIcon_formInputIcons_chzn {
-    font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  &_eList,
+  &_eLink,
+  &_eFormIcon, {
+    &_icon_chzn {
+      font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
   }
 }
 
