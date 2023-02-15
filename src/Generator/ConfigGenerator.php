@@ -8,6 +8,8 @@
 
 namespace ContaoThemeManager\Core\Generator;
 
+use ContaoThemeManager\Core\ThemeManager;
+
 /**
  * Generates css and xml for various theme manager components
  *
@@ -85,7 +87,7 @@ class ConfigGenerator
     /**
      * Gets a list configuration and generates the style-manager xml options
      */
-    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = [])
+    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = []): array
     {
         $options = [];
 
@@ -105,5 +107,51 @@ class ConfigGenerator
         }
 
         return $options;
+    }
+
+    /**
+     * Generates the theme manager backend css
+     *
+     * @throws \Exception
+     */
+    public function generateBackendCss($configVars): void
+    {
+        $css        = '';
+        $bgColors   = ['primary','secondary','light','dark'];
+        $textColors = ['text-color-regular' => 'color-text-base', 'text-color-invert' => 'color-text-inv'];
+
+        foreach ($bgColors as $color)
+        {
+            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $color)))
+            {
+                if (6 === strlen($value) || 3 === strlen($value))
+                {
+                    $value = '#' . $value;
+                }
+
+                $css .= vsprintf("%s:before{background:%s!important;}", [
+                    '#pal_style_manager_legend .chzn-results [class*=bg-'.$color.']',
+                    $value
+                ]);
+            }
+        }
+
+        foreach ($textColors as $identifier => $class)
+        {
+            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $identifier)))
+            {
+                if (6 === strlen($value) || 3 === strlen($value))
+                {
+                    $value = '#' . $value;
+                }
+
+                $css .= vsprintf("%s:before{background:%s!important;}", [
+                    '#pal_style_manager_legend .chzn-results .' . $class,
+                    $value
+                ]);
+            }
+        }
+
+        ThemeManager::createCSSFile('backendColors', $css);
     }
 }
