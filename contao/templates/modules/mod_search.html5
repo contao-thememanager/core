@@ -7,9 +7,9 @@
 
 <?php $this->block('content'); ?>
 
-  <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
-    <div class="formbody">
-      <div class="widget widget-text">
+  <form class="grid gtr-f"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
+    <div class="formbody inside">
+      <div class="widget widget-text pfield">
         <label for="ctrl_keywords_<?= $this->uniqueId ?>" class="invisible"><?= $this->keywordLabel ?></label>
         <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
       </div>
