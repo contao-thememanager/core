@@ -2,6 +2,7 @@
   $sm = $this->styleManager;
   $insideClasses = $sm->prepare('cLayout',['imageText'])->format(' image_text') .
                    $sm->prepare('cLayout')->format(' %s') .
+                   $sm->prepare('eLayout')->format(' %s') .
                    $sm->prepare('cText')->format(' %s') .
                    $sm->prepare('eText')->format(' %s') .
                    $sm->prepare('ePadding')->format(' %s') .

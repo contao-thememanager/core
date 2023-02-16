@@ -53,7 +53,7 @@ class KernelRequestSubscriber implements EventSubscriberInterface
             /** @var User $user */
             $user = $this->security->getUser();
 
-            if (null !==$user && $user->show_ctm_colors && file_exists('assets/ctmcore/css/_backendColors.css'))
+            if (null !== $user && $user->show_ctm_colors && file_exists('assets/ctmcore/css/_backendColors.css'))
             {
                 $GLOBALS['TL_CSS'][]        = 'assets/ctmcore/css/_backendColors.css|static';
                 $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/ctmcore.js|static';

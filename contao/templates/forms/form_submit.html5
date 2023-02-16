@@ -1,6 +1,6 @@
 <?php
   $sm = $this->styleManager;
-  $aClasses = $sm->prepare('eLink')->format(' %s');
+  $aClasses = $sm ? $sm->prepare('eLink')->format(' %s') : '';
 
   $this->extend('form_row');
 ?>
