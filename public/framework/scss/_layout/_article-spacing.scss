@@ -54,7 +54,7 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
   &, #container {
 
     > .inside {
-      width:         var(--#{$abbr-wdth}, auto);
+      max-width:     var(--#{$abbr-wdth}, auto);
       padding-left:  var(--#{$abbr-spc}, 0);
       padding-right: var(--#{$abbr-spc}, 0);
       margin-left:   auto;
