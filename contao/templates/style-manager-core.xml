@@ -1159,7 +1159,7 @@
         <field title="alias">gridSelfAlignment</field>
         <field title="title">Alignment</field>
         <field title="description">Defines the alignment of this component within the grid.</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:14:"col-top sticky";s:5:"value";s:6:"Sticky";}}</field>
         <field title="cssClass">clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1285,6 +1285,19 @@
         <field title="extendForm">1</field>
         <field title="extendFormFields">1</field>
         <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
+      </child>
+      <child alias="formTemplateGutter">
+        <field title="pid">1080</field>
+        <field title="sorting">400</field>
+        <field title="alias">formTemplateGutter</field>
+        <field title="title">Gutter (ToDo)</field>
+        <field title="description">Defines the spacing between columns within the grid.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:5:"gtr-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:5:"gtr-2";s:5:"value";s:6:"Medium";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:8:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:10:"two_factor";i:6;s:6:"search";i:7;s:8:"comments";}</field>
       </child>
     </children>
   </archive>
