@@ -367,7 +367,7 @@
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:15:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:8:"markdown";i:4;s:14:"rsce_icon_text";i:5;s:15:"rsce_image_text";i:6;s:9:"rsce_text";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:20:"rsce_image_text_list";i:10;s:14:"rsce_text_list";i:11;s:9:"hyperlink";i:12;s:7:"toplink";i:13;s:15:"accordionSingle";i:14;s:14:"accordionStart";}</field>
+        <field title="contentElements">a:14:{i:0;s:4:"text";i:1;s:4:"list";i:2;s:8:"markdown";i:3;s:14:"rsce_icon_text";i:4;s:15:"rsce_image_text";i:5;s:9:"rsce_text";i:6;s:19:"rsce_hyperlink_list";i:7;s:19:"rsce_icon_text_list";i:8;s:20:"rsce_image_text_list";i:9;s:14:"rsce_text_list";i:10;s:9:"hyperlink";i:11;s:7:"toplink";i:12;s:15:"accordionSingle";i:13;s:14:"accordionStart";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:4:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";}</field>
       </child>
