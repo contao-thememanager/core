@@ -5,6 +5,7 @@
                    $sm->prepare('cPadding')->format(' %s') .
                    $sm->prepare('cBackground')->format(' %s');
   $aClasses      = $sm->prepare('eLink')->format(' %s');
+  $formClasses   = $sm->prepare('cGridGutter')->format(' %s');
 ?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> <?= $this->logout ? 'logout' : 'login' ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
@@ -25,7 +26,7 @@
       <?php endif; ?>
     <?php $this->endblock(); ?>
 
-    <form class="grid gtr-f"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> id="<?= $this->formId ?>" method="post">
+    <form class="grid gtr-f<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> id="<?= $this->formId ?>" method="post">
       <div class="formbody inside">
         <?php if ($this->message): ?>
           <p class="error"><?= $this->message ?></p>
@@ -40,7 +41,9 @@
           <h3><?= $this->twoFactorAuthentication ?></h3>
           <div class="widget widget-text pfield">
             <label for="verify"><?= $this->authCode ?></label>
-            <input type="text" name="verify" id="verify" class="text" value="" autocapitalize="off" autocomplete="one-time-code" required>
+            <div class="input-container">
+              <input type="text" name="verify" id="verify" class="text" value="" autocapitalize="off" autocomplete="one-time-code" required>
+            </div>
           </div>
           <div class="widget widget-checkbox">
             <input type="checkbox" name="trusted" id="trusted" class="tl_checkbox" value="1">
@@ -49,11 +52,15 @@
         <?php else: ?>
           <div class="widget widget-text pfield">
             <label for="username"><?= $this->username ?></label>
-            <input type="text" name="username" id="username" class="text" value="<?= $this->value ?>" autocapitalize="off" autocomplete="username" required>
+            <div class="input-container">
+              <input type="text" name="username" id="username" class="text" value="<?= $this->value ?>" autocapitalize="off" autocomplete="username" required>
+            </div>
           </div>
           <div class="widget widget-password pfield">
             <label for="password"><?= $this->password ?></label>
-            <input type="password" name="password" id="password" class="text password" value="" autocomplete="current-password" required>
+            <div class="input-container">
+              <input type="password" name="password" id="password" class="text password" value="" autocomplete="current-password" required>
+            </div>
           </div>
           <?php if ($this->autologin): ?>
             <div class="widget widget-checkbox">
