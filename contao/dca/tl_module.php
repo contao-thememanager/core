@@ -8,6 +8,7 @@
 
 use Contao\Config;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
+use Contao\System;
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
 
@@ -67,23 +68,32 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['news_datimFormat'] = [
     'sql'         => "varchar(32) NOT NULL default ''"
 ];
 
-PaletteManipulator::create()
-    ->addField('showFaqInfo', 'faq_categories')
-    ->applyToPalette('faqpage', 'tl_module')
-;
+$bundles = System::getContainer()->getParameter('kernel.bundles');
 
-PaletteManipulator::create()
-    ->addField('news_removeBy', 'news_metaFields')
-    ->applyToPalette('newslist', 'tl_module')
-    ->applyToPalette('newsreader', 'tl_module')
-;
+if (isset($bundles['ContaoNewsBundle']))
+{
+    PaletteManipulator::create()
+        ->addField('news_removeBy', 'news_metaFields')
+        ->applyToPalette('newslist', 'tl_module')
+        ->applyToPalette('newsreader', 'tl_module')
+    ;
 
-PaletteManipulator::create()
-    ->addLegend('date_legend', 'template_legend', PaletteManipulator::POSITION_AFTER, true)
-    ->addField('news_datimFormat', 'date_legend', PaletteManipulator::POSITION_APPEND)
-    ->applyToPalette('newslist', 'tl_module')
-    ->applyToPalette('newsreader', 'tl_module')
-;
+    PaletteManipulator::create()
+        ->addLegend('date_legend', 'template_legend', PaletteManipulator::POSITION_AFTER, true)
+        ->addField('news_datimFormat', 'date_legend', PaletteManipulator::POSITION_APPEND)
+        ->applyToPalette('newslist', 'tl_module')
+        ->applyToPalette('newsreader', 'tl_module')
+    ;
+}
+
+if (isset($bundles['ContaoFaqBundle']))
+{
+    PaletteManipulator::create()
+        ->addField('showFaqInfo', 'faq_categories')
+        ->applyToPalette('faqpage', 'tl_module')
+    ;
+
+    $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendFaqAccordionSettings'];
+}
 
 $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendFaqAccordionSettings'];
