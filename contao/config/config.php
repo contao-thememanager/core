@@ -32,6 +32,7 @@ $GLOBALS['TC_HOOKS']['compilerParseConfig'][] = ['ContaoThemeManager\Core\ThemeM
 
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\IconGenerator', 'generate'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\BackgroundImageGenerator', 'generate'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateBackendCss'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateImageTextWidths'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateArticleHeight'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateAspectRatios'];

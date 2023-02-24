@@ -1,10 +1,31 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $hlClasses     = $sm->prepare('gHeadline')->format(' %s');
+  $insideClasses = $sm->prepare('cLayout',['imageText'])->format(' image_text') .
+                   $sm->prepare('cLayout',['iconText'])->format(' icon_text') .
+                   $sm->prepare('cLayout')->format(' %s') .
+                   $sm->prepare('eLayout')->format(' %s') .
+                   $sm->prepare('cText')->format(' %s') .
+                   $sm->prepare('eText')->format(' %s') .
+                   $sm->prepare('ePadding')->format(' %s') .
+                   $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s') .
+                   $sm->prepare('eBackground')->format(' %s');
+  $sliderConfig  = $sm->prepare('sliderConfig',['preset'])->format(" data-slider-config='%s'",'json') .
+                   $sm->prepare('slider')->format(" data-slider='%s'",'json') .
+                   $sm->prepare('sliderXS')->format(" data-slider-xs='%s'",'json') .
+                   $sm->prepare('sliderS')->format(" data-slider-s='%s'",'json') .
+                   $sm->prepare('sliderM')->format(" data-slider-m='%s'",'json') .
+                   $sm->prepare('sliderL')->format(" data-slider-l='%s'",'json') .
+                   $sm->prepare('sliderXL')->format(" data-slider-xl='%s'",'json');
+?>
 
 <div class="<?= $this->class ?> block">
-  <div class="inside<?=$sm->prepare('layout',['imageTextMode'])->format(' image_text')?><?=$sm->prepare('layout',['iconText'])->format(' icon_text')?><?=$sm->prepare('layout')->format(' %s')?><?=$sm->prepare('text',['template-text-color'])->format(' %s')?><?=$sm->prepare('text',['text-self-align'])->format(' %s')?><?=$sm->prepare('gridListItem')->format(' %s')?><?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <div class="inside<?= $insideClasses ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <?php $this->block('headline'); ?>
       <?php if ($this->headline || $this->headline2): ?>
-        <div class="c_headline<?=$sm->prepare('headline')->format(' %s')?>">
+        <div class="c_headline<?= $hlClasses ?>">
       <?php endif; ?>
 
       <?php if ($this->headline): ?>
@@ -20,19 +41,19 @@
       <?php endif; ?>
     <?php $this->endblock(); ?>
 
-    <?php if (!empty($sm->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
-      <div class="c_list grid-list<?=$sm->prepare('gridList')->format(' %s')?>"<?= $sm->prepare('sliderConfig', ['preset'])->format(" data-slider-config='%s'", 'json')?><?= $sm->prepare('slider')->format(" data-slider='%s'", 'json')?><?= $sm->prepare('sliderXS')->format(" data-slider-xs='%s'", 'json')?><?= $sm->prepare('sliderS')->format(" data-slider-s='%s'", 'json')?><?= $sm->prepare('sliderM')->format(" data-slider-m='%s'", 'json')?><?= $sm->prepare('sliderL')->format(" data-slider-l='%s'", 'json')?><?= $sm->prepare('sliderXL')->format(" data-slider-xl='%s'", 'json')?>>
+    <?php if (!empty($sm->get('eGridList')) || str_contains($this->class, 'init-slider')): ?>
+      <div class="c_list grid-list<?=$sm->prepare('eGridList')->format(' %s')?>"<?= $sliderConfig ?>>
     <?php endif; ?>
 
     <?php $this->block('content'); ?>
     <?php $this->endblock(); ?>
 
-    <?php if (!empty($sm->prepare('gridList')->format('%s')) || str_contains($this->class, 'init-slider')): ?>
+    <?php if (!empty($sm->get('eGridList')) || str_contains($this->class, 'init-slider')): ?>
       </div>
     <?php endif; ?>
 
     <?php if ($this->pagination): ?>
-      <div class="pagination-container<?=$sm->prepare('pagination')->format(' %s')?>">
+      <div class="pagination-container<?=$sm->prepare('gPagination')->format(' %s')?>">
         <?php $this->block('pagination'); ?>
         <?php $this->endblock(); ?>
       </div>

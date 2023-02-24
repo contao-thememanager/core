@@ -4,7 +4,7 @@
 
 .ce_headline {
 
-  &:not(:only-child) {
+  &:not(:last-child) {
     // Remove row gap from headlines for proper layout above elements
     margin-bottom: calc(var(--v-gap) * -1);
   }

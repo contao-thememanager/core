@@ -1,5 +1,8 @@
 <?php
   $sm = $this->styleManager;
+  $iconClasses = $sm->prepare('eIcon')->format(' %s');
+  $aClasses    = $sm->prepare('eLink')->format(' %s');
+
   $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
 ?>
@@ -16,14 +19,14 @@
         <?php endif; ?>
 
         <div class="c_icon">
-          <span class="icon<?= $sm->prepare('icon', ['design', 'shape', 'color', 'size'])->format(' %s')?>" data-icon="&#x<?= $item->icon ?>;"></span>
+          <span class="icon<?= $iconClasses ?>" data-icon="&#x<?= $item->icon ?>;"></span>
         </div>
 
         <div class="c_text">
           <?= $item->text ?>
           <?php if($item->linkText && $item->url): ?>
             <p>
-              <a href="<?=$item->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+              <a href="<?=$item->url?>" class="<?= $aClasses ?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
             </p>
           <?php endif; ?>
         </div>

@@ -12,28 +12,24 @@ class Constants
 {
     const FONTFAMILY_ICON = 'ctm-icon';
 
-    const ICON = [
+    const ICON_LINK = [
         'elements' => [
-            'extendFormFields' => 1,
             'formFields' => [
                 'submit'
             ],
-            'extendContentElement' => 1,
             'contentElements' => [
                 'rsce_text',
                 'rsce_text_list',
                 'rsce_image_text',
                 'rsce_image_text_list',
-                //'rsce_icon_text',      // ToDo: Icons are for Set-up Buttons
-                //'rsce_icon_text_list',
+                'rsce_icon_text',
+                'rsce_icon_text_list',
                 'rsce_hyperlink_list',
                 'hyperlink',
                 'toplink',
                 'download',
-                'downloads',
-                'list'
+                'downloads'
             ],
-            'extendModule' => 1,
             'modules' => [
                 'login',
                 'personalData',
@@ -45,24 +41,41 @@ class Constants
             ]
         ],
         'options' => [
-            'description' => 'Icons for list elements and buttons',
-            'chosen' => 1,
-            'blankOption' => 1,
-            'passToTemplate' => 1
+            'description'    => 'Here you can choose an icon that will be shown within the link',
+            'chosen'         => 1,
+            'blankOption'    => 1,
+            'passToTemplate' => 1,
+            'sorting'        => 400,
+            'cssClass'       => 'separator'
         ]
     ];
 
-    const ICON_DIRECTION = [
+    const ICON_LINK_DIRECTION = [
         'options' => [
-            'description' => 'Icon direction',
-            'blankOption' => 1,
-            'passToTemplate' => 1
+            'description'    => 'Here you can choose the direction for the icon',
+            'blankOption'    => 1,
+            'passToTemplate' => 1,
+            'sorting'        => 500
+        ]
+    ];
+
+    const ICON_LIST = [
+        'elements' => [
+            'contentElements' => [
+                'list'
+            ]
+        ],
+        'options' => [
+            'description'    => 'Here you can choose a custom list icon',
+            'chosen'         => 1,
+            'blankOption'    => 1,
+            'passToTemplate' => 1,
+            'sorting'        => 1350
         ]
     ];
 
     const ICON_FORM = [
         'elements' => [
-            'extendFormFields' => 1,
             'formFields' => [
                 'text',
                 'password'
@@ -70,14 +83,14 @@ class Constants
         ],
         'options' => [
             'description' => 'Here you can choose the icon which should be displayed within the form field.',
-            'chosen' => 1,
+            'chosen'      => 1,
             'blankOption' => 1
         ]
     ];
 
     const BACKGROUND_IMAGE = [
         'elements' => [],
-        'options' => []
+        'options'  => []
     ];
 
     const ARTICLE_HEIGHT = [
@@ -85,16 +98,15 @@ class Constants
             'extendArticle' => 1
         ],
         'options' => [
-            'sorting' => 32,
             'description' => 'Here you can choose the article height.',
-            'chosen' => 1,
-            'blankOption' => 1
+            'chosen'      => 1,
+            'blankOption' => 1,
+            'sorting'     => 50
         ]
     ];
 
     const ASPECT_RATIO = [
         'elements' => [
-            'extendContentElement' => 1,
             'contentElements' => [
                 'rsce_image_text',
                 'rsce_image_list',
@@ -102,7 +114,6 @@ class Constants
                 'image',
                 'gallery'
             ],
-            'extendModule'=> 1,
             'modules'=> [
                 'randomImage',
                 'newslist',
@@ -112,10 +123,10 @@ class Constants
             ]
         ],
         'options' => [
-            'sorting' => 130,
             'description' => 'Here you can choose an aspect-ratio.',
-            'chosen'=> 1,
-            'blankOption'=> 1
+            'chosen'      => 1,
+            'blankOption' => 1,
+            'sorting'     => 150
         ]
     ];
 }

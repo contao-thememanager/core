@@ -2117,23 +2117,23 @@
         <source>Here you can set the bottom margin for &quot;p&quot; - elements.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.component-spacing-small.0">
-        <source>$component-spacing-small</source>
+      <trans-unit id="tl_thememanager.element-spacing-small.0">
+        <source>$element-spacing-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-spacing-small.1">
-        <source>Here you can set the small inner padding for components (e.g. icons and images).</source>
+      <trans-unit id="tl_thememanager.element-spacing-small.1">
+        <source>Here you can set the small inner padding for elements (e.g. icons and images).</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-spacing-medium.0">
-        <source>$component-spacing-medium</source>
+      <trans-unit id="tl_thememanager.element-spacing-medium.0">
+        <source>$element-spacing-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-spacing-medium.1">
-        <source>Here you can set the medium inner padding for components (e.g. icons and images).</source>
+      <trans-unit id="tl_thememanager.element-spacing-medium.1">
+        <source>Here you can set the medium inner padding for elements (e.g. icons and images).</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-spacing-large.0">
-        <source>$component-spacing-large</source>
+      <trans-unit id="tl_thememanager.element-spacing-large.0">
+        <source>$element-spacing-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.component-spacing-large.1">
-        <source>Here you can set the large inner padding for components (e.g. icons and images).</source>
+      <trans-unit id="tl_thememanager.element-spacing-large.1">
+        <source>Here you can set the large inner padding for elements (e.g. icons and images).</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.top-bottom-padding-small.0">

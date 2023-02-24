@@ -3,9 +3,12 @@
 
 // Icon font-family for icon picker
 #ctrl_styleManager {
-  &_icon_icon_chzn,
-  &_formInputIcon_formInputIcons_chzn {
-    font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  &_eList,
+  &_eLink,
+  &_eFormIcon, {
+    &_icon_chzn {
+      font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
   }
 }
 
@@ -230,6 +233,22 @@ form#tl_thememanager {
   .w20 { width: calc(20% - #{$field-gap});}
 }
 
+#pal_style_manager_legend {
+
+  .chzn-results {
+
+    .preview:before {
+      background: repeating-linear-gradient(135deg, #f44336 4px, white 6px, white 9px);
+      display: inline-block;
+      content: '';
+      vertical-align: bottom;
+      height: 14px;
+      width: 17px;
+      border: 1px solid #aaa;
+      margin-right: 5px;
+    }
+  }
+}
 
 // Tablet
 @media (max-width:1263px) {

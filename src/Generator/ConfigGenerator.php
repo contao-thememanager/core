@@ -8,6 +8,8 @@
 
 namespace ContaoThemeManager\Core\Generator;
 
+use ContaoThemeManager\Core\ThemeManager;
+
 /**
  * Generates css and xml for various theme manager components
  *
@@ -22,8 +24,8 @@ class ConfigGenerator
     {
         $options = self::getListOptions($configVars, 'image-text-ratio-options', 'it-width-', '%', [25,33,38,40,50,80,100]);
 
-        $xml->addGroup(2, 'Layout', 'layout', 'Design', 128);
-        $xml->addChild('Width','imageTextWidth', $options, [], []);
+        $xml->addGroup(1000, 'Layout', 'cLayout', 'Component', 2000)
+            ->addChild('Width','imageTextWidth', $options, [], []);
     }
 
     /**
@@ -33,8 +35,8 @@ class ConfigGenerator
     {
         $options = self::getListOptions($configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
 
-        $xml->addGroup(30, 'Article-Height', 'articleHeight', 'Layout', 770);
-        $xml->addChild('Height','height', $options, Constants::ARTICLE_HEIGHT['elements'], Constants::ARTICLE_HEIGHT['options']);
+        $xml->addGroup(1020, 'Article-Height', 'cArticleHeight', 'Component', 2200)
+            ->addChild('Height','height', $options, Constants::ARTICLE_HEIGHT['elements'], Constants::ARTICLE_HEIGHT['options']);
     }
 
     /**
@@ -65,8 +67,8 @@ class ConfigGenerator
             }
         }
 
-        $xml->addGroup(7, 'Image', 'image', 'Design', 645);
-        $xml->addChild('Aspect-Ratio', 'aspectRatio', $options, Constants::ASPECT_RATIO['elements'], Constants::ASPECT_RATIO['options']);
+        $xml->addGroup(2070, 'Image', 'eImage', 'Element', 4700)
+            ->addChild('Aspect-Ratio', 'aspectRatio', $options, Constants::ASPECT_RATIO['elements'], Constants::ASPECT_RATIO['options']);
     }
 
     /**
@@ -85,7 +87,7 @@ class ConfigGenerator
     /**
      * Gets a list configuration and generates the style-manager xml options
      */
-    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = [])
+    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = []): array
     {
         $options = [];
 
@@ -105,5 +107,51 @@ class ConfigGenerator
         }
 
         return $options;
+    }
+
+    /**
+     * Generates the theme manager backend css
+     *
+     * @throws \Exception
+     */
+    public function generateBackendCss($configVars): void
+    {
+        $css        = '';
+        $bgColors   = ['primary','secondary','light','dark'];
+        $textColors = ['text-color-regular' => 'color-text-base', 'text-color-invert' => 'color-text-inv'];
+
+        foreach ($bgColors as $color)
+        {
+            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $color)))
+            {
+                if (6 === strlen($value) || 3 === strlen($value))
+                {
+                    $value = '#' . $value;
+                }
+
+                $css .= vsprintf("%s:before{background:%s!important;}", [
+                    '#pal_style_manager_legend .chzn-results [class*=bg-'.$color.']',
+                    $value
+                ]);
+            }
+        }
+
+        foreach ($textColors as $identifier => $class)
+        {
+            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $identifier)))
+            {
+                if (6 === strlen($value) || 3 === strlen($value))
+                {
+                    $value = '#' . $value;
+                }
+
+                $css .= vsprintf("%s:before{background:%s!important;}", [
+                    '#pal_style_manager_legend .chzn-results .' . $class,
+                    $value
+                ]);
+            }
+        }
+
+        ThemeManager::createCSSFile('backendColors', $css);
     }
 }

@@ -1,8 +1,13 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s');
+?>
 
 <section class="<?= $this->class ?> ce_accordion ctm_accordion block" data-accordion-group="<?= $this->accordionGroup ?>"  data-accordion-open="<?= $this->accordionOpen ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
-  <div class="inside<?=$sm->prepare('spacing')->format(' %s')?><?=$sm->prepare('padding')->format(' %s')?><?=$sm->prepare('background')->format(' %s')?>">
+  <div class="inside<?= $insideClasses ?>">
     <div class="<?= $this->toggler ?>"<?php if ($this->headlineStyle): ?> style="<?= $this->headlineStyle ?>"<?php endif; ?>>
       <?= $this->headline ?>
     </div>

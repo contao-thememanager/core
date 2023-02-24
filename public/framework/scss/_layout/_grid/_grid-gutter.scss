@@ -1,19 +1,46 @@
-.small-gutter {
-  --v-gap:var(--gtr-btm-sml);
-  --h-gap:var(--gtr-sml);
-  --h-gap-off:calc(-1 * var(--gtr-half-sml));
+.gtr {
 
-  > .inside {
-    --gtr-item:var(--gtr-half-sml);
+  // Form specific gtr to default gutter
+  &-f {
+    --v-gap:var(--gtr-btm-sml);
+    --h-gap:var(--gtr-sml);
+    --h-gap-off:calc(-1 * var(--gtr-half-sml));
+
+    > .inside {
+      --i-gtr:var(--gtr-half-sml);
+    }
   }
-}
 
-.no-gutter {
-  --v-gap:0rem;
-  --h-gap:0rem;
-  --h-gap-off:0rem;
+  // Medium gutter // ToDo: Test new grid gutter property
+  &-2 {
+    --v-gap:var(--gtr-btm);
+    --h-gap:var(--gtr);
+    --h-gap-off:calc(-1 * var(--gtr-half));
 
-  > .inside {
-    --gtr-item:0rem;
+    > .inside {
+      --i-gtr:var(--gtr-half);
+    }
+  }
+
+  // Small gutter
+  &-1 {
+    --v-gap:var(--gtr-btm-sml);
+    --h-gap:var(--gtr-sml);
+    --h-gap-off:calc(-1 * var(--gtr-half-sml));
+
+    > .inside {
+      --i-gtr:var(--gtr-half-sml);
+    }
+  }
+
+  // No gutter
+  &-0 {
+    --v-gap:0rem;
+    --h-gap:0rem;
+    --h-gap-off:0rem;
+
+    > .inside {
+      --i-gtr:0rem;
+    }
   }
 }

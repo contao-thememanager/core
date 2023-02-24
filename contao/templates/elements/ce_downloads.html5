@@ -1,11 +1,15 @@
 <?php
   $sm = $this->styleManager;
+  $ulClasses   = $sm->prepare('eList')->format(' %s');
+  $spanClasses = $sm->prepare('eLink',['icon','direction'])->format(' %s');
+  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' class="%s"');
+
   $this->extend('block_searchable');
 ?>
 
 <?php $this->block('content'); ?>
 
-  <ul class="c_list<?=$sm->prepare('icon', ['icon'])->format(' li-icon')?><?=$sm->prepare('list')->format(' %s')?>">
+  <ul class="c_list<?= $ulClasses ?>">
     <?php foreach ($this->files as $file): ?>
       <li class="download-element ext-<?= $file['extension'] ?>">
         <?php if ($file['previews']): ?>
@@ -13,7 +17,9 @@
             <?php $this->insert('image', $preview->getLegacyTemplateData()) ?>
           <?php endforeach ?>
         <?php endif ?>
-        <a<?=$sm->prepare('button')->format(' class="%s"')?> href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>"><span class="name<?= $sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"><?= $file['link'] ?></span> <span class="size">(<?= $file['filesize'] ?>)</span></a>
+        <a<?= $aClasses ?> href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>">
+          <span class="name<?= $spanClasses ?>"><?= $file['link'] ?></span> <span class="size">(<?= $file['filesize'] ?>)</span>
+        </a>
       </li>
     <?php endforeach; ?>
   </ul>

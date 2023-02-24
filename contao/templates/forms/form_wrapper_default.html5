@@ -1,6 +1,3 @@
-<?php
-  $this->attributes = str_contains($this->attributes, 'class="') ? str_replace('class="', 'class="grid gtr-f ', $this->attributes) : $this->attributes . 'class="grid gtr-f"';
-?>
 
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
@@ -10,7 +7,7 @@
   <?php endif; ?>
 
   <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="<?= $this->method ?>" enctype="<?= $this->enctype ?>"<?= $this->attributes ?><?= $this->novalidate ?>>
-    <div class="formbody inside">
+    <div class="formbody">
       <?php if ('get' != $this->method): ?>
         <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formSubmit ?>">
         <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">

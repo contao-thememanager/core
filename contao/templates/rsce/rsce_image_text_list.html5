@@ -1,5 +1,7 @@
 <?php
   $sm = $this->styleManager;
+  $aClasses = $sm->prepare('eLink')->format(' %s');
+
   $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
 ?>
@@ -31,7 +33,7 @@
           <?= $item->text ?>
           <?php if($item->linkText && $item->url): ?>
             <p>
-              <a href="<?=$item->url?>" class="<?= $sm->prepare('button')->format('%s')?><?=$sm->prepare('icon', ['icon', 'direction'])->format(' %s')?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
+              <a href="<?=$item->url?>" class="<?= $aClasses ?>"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>><?=$item->linkText?></a>
             </p>
           <?php endif; ?>
         </div>

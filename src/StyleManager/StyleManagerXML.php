@@ -95,6 +95,17 @@ class StyleManagerXML
         // Add elements
         foreach ($elements as $k => $v)
         {
+            // Auto-enable parent selectors if specific elements are given
+            switch ($k)
+            {
+                case 'formFields':
+                    $this->groupChild->extendFormFields = 1; break;
+                case 'contentElements':
+                    $this->groupChild->extendContentElement = 1; break;
+                case 'modules':
+                    $this->groupChild->extendModule = 1; break;
+            }
+
             if (\is_array($v) && !empty($v))
             {
                 $v = serialize($v);

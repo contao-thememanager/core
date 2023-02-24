@@ -109,16 +109,19 @@ class BackgroundImageGenerator
      */
     private function createBackgroundXML(array $backgrounds, $xml): void
     {
-        $xml->addGroup(9, 'Background', 'background', 'Design', 640)
-            ->addChild('Image', 'image',   $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options'])
-            ->addChild('Image (Element)', 'elImage', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
+        $xml->addGroup(50, 'Background', 'gBackground', 'Global', 500)
+            ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
+
+        $xml->addGroup(1130, 'Background', 'cBackground', 'Component', 3300)
+            ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
 
         foreach ($backgrounds as $k => $v)
         {
             $backgrounds[$k]['key'] = 'i-'. $v['key'];
         }
 
-        $xml->addChild('Image (Items)', 'iImage', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
+        $xml->addGroup(2120, 'Background', 'eBackground', 'Element', 5200)
+            ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
     }
 
     /**

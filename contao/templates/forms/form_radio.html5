@@ -1,6 +1,8 @@
+<?php $sm = $this->styleManager ?>
+
 <div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
-  <div role="radiogroup" aria-label="legend" id="ctrl_<?= $this->id ?>" class="radio_container grid-list small-gutter<?php if ($this->class): ?> <?= $this->class ?><?php endif; ?><?= $this->styleManager ? $this->styleManager->prepare('gridList')->format(' %s') : '' ?>">
+  <div role="radiogroup" aria-label="legend" id="ctrl_<?= $this->id ?>" class="radio_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
     <?php if ($this->label): ?>
       <legend>
