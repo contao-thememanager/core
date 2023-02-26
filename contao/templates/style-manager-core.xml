@@ -1842,7 +1842,7 @@
         <field title="sorting">100</field>
         <field title="alias">color</field>
         <field title="title">Color</field>
-        <field title="description">Defines the background color of this element.</field>
+        <field title="description">Defines the background color of this element (will only work in any box mode).</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:10:"bg-primary";s:5:"value";s:7:"Primary";}i:1;a:2:{s:3:"key";s:12:"bg-secondary";s:5:"value";s:9:"Secondary";}i:2;a:2:{s:3:"key";s:8:"bg-light";s:5:"value";s:5:"Light";}i:3;a:2:{s:3:"key";s:7:"bg-dark";s:5:"value";s:4:"Dark";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
