@@ -3,9 +3,10 @@
   $insideClasses = $sm->prepare('cLayout')->format(' %s') .
                    $sm->prepare('cText')->format(' %s') .
                    $sm->prepare('eText')->format(' %s') .
-                   $sm->prepare('cSpacing')   ->format(' %s') .
-                   $sm->prepare('cPadding')   ->format(' %s') .
-                   $sm->prepare('cBackground')->format(' %s');
+                   $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s') .
+                   $sm->prepare('cBackground')->format(' %s') .
+                   $sm->prepare('ePadding')->format(' %s');
   $aClasses      = $sm->prepare('eLink')->format(' %s');
 ?>
 

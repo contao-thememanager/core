@@ -5,7 +5,8 @@
                    $sm->prepare('eText')->format(' %s') .
                    $sm->prepare('cSpacing')->format(' %s') .
                    $sm->prepare('cPadding')->format(' %s') .
-                   $sm->prepare('cBackground')->format(' %s');
+                   $sm->prepare('cBackground')->format(' %s') .
+                   $sm->prepare('ePadding')->format(' %s');
   $iconClasses   = $sm->prepare('eIcon')->format(' %s');
   $aClasses      = $sm->prepare('eLink')->format(' %s');
 ?>
