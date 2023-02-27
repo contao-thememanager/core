@@ -1,13 +1,14 @@
 <?php
   $sm = $this->styleManager;
-  $aClasses = $sm->prepare('eLink')->format(' %s');
+  $aClasses     = $sm->prepare('eLink')->format(' %s');
+  $formClasses  = $sm->prepare('cGridGutter')->format(' %s');
 
   $this->extend('block_unsearchable');
 ?>
 
 <?php $this->block('content'); ?>
 
-  <form class="grid gtr-f"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
+  <form class="grid gtr-f<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
     <div class="formbody inside">
       <div class="widget widget-text pfield">
         <label for="ctrl_keywords_<?= $this->uniqueId ?>" class="invisible"><?= $this->keywordLabel ?></label>
@@ -18,10 +19,10 @@
       </div>
       <?php if ($this->advanced): ?>
         <div class="widget widget-radio">
-          <fieldset class="radio_container">
+          <fieldset class="radio_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?>">
             <legend class="invisible"><?= $this->optionsLabel ?></legend>
-            <span><input type="radio" name="query_type" id="matchAll_<?= $this->uniqueId ?>" class="radio" value="and"<?php if ('and' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAll_<?= $this->uniqueId ?>"><?= $this->matchAll ?></label></span>
-            <span><input type="radio" name="query_type" id="matchAny_<?= $this->uniqueId ?>" class="radio" value="or"<?php if ('or' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAny_<?= $this->uniqueId ?>"><?= $this->matchAny ?></label></span>
+            <div><input type="radio" name="query_type" id="matchAll_<?= $this->uniqueId ?>" class="radio" value="and"<?php if ('and' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAll_<?= $this->uniqueId ?>"><?= $this->matchAll ?></label></div>
+            <div><input type="radio" name="query_type" id="matchAny_<?= $this->uniqueId ?>" class="radio" value="or"<?php if ('or' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAny_<?= $this->uniqueId ?>"><?= $this->matchAny ?></label></div>
           </fieldset>
         </div>
       <?php endif; ?>

@@ -37,7 +37,10 @@ class Constants
                 'changePassword',
                 'lostPassword',
                 'closeAccount',
-                'search'
+                'search',
+                'quicknav',
+                'quicklink',
+                'two_factor'
             ]
         ],
         'options' => [

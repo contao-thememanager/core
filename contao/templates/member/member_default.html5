@@ -4,6 +4,7 @@
   $insideClasses  = $sm->prepare('cSpacing')->format(' %s') .
                     $sm->prepare('cPadding')->format(' %s');
   $buttonClasses  = $sm->prepare('eLink')->format(' %s');
+  $formClasses    = $sm->prepare('cGridGutter')->format(' %s');
 ?>
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
@@ -28,12 +29,14 @@
       <p class="tl_confirm"><?= $this->message ?></p>
     <?php endif; ?>
 
-    <form id="<?= $this->formId ?>" method="post" enctype="<?= $this->enctype ?>">
-      <div class="formbody">
+    <form id="<?= $this->formId ?>" class="grid gtr-f<?= $formClasses ?>" method="post" enctype="<?= $this->enctype ?>">
+      <div class="formbody inside">
         <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formId ?>">
         <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">
-        <div class="fields">
-          <?= $this->fields ?>
+        <div class="fields grid gtr-f<?= $formClasses ?>">
+          <div class="inside">
+            <?= $this->fields ?>
+          </div>
         </div>
         <div class="widget widget-submit">
           <button type="submit" class="submit<?= $buttonClasses ?>"><?= $this->slabel ?></button>

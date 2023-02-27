@@ -4,6 +4,7 @@
   $insideClasses  = $sm->prepare('cSpacing')->format(' %s') .
                     $sm->prepare('cPadding')->format(' %s');
   $buttonClasses  = $sm->prepare('eLink')->format(' %s');
+  $formClasses    = $sm->prepare('cGridGutter')->format(' %s');
 ?>
 
 <!-- indexer::stop -->
@@ -29,17 +30,19 @@
       <p class="tl_confirm"><?= $this->message ?></p>
     <?php endif; ?>
 
-    <form id="<?= $this->formId ?>" method="post" enctype="<?= $this->enctype ?>">
-      <div class="formbody">
+    <form id="<?= $this->formId ?>" class="grid gtr-f<?= $formClasses ?>" method="post" enctype="<?= $this->enctype ?>">
+      <div class="formbody inside">
         <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formId ?>">
         <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">
 
         <?php foreach ($this->categories as $legend => $category): ?>
-          <fieldset>
+          <fieldset class="grid gtr-f<?= $formClasses ?>">
             <?php if ($legend): ?>
               <legend><?= $legend ?></legend>
             <?php endif; ?>
-            <?= implode('', $category) ?>
+            <div class="inside">
+              <?= implode('', $category) ?>
+            </div>
           </fieldset>
         <?php endforeach; ?>
 
