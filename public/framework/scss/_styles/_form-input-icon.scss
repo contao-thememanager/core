@@ -3,9 +3,7 @@
   > .input-container {
     display: flex;
 
-    border-width: $form-input-border-width;
-    border-style: $form-input-border-style;
-    border-color: $form-input-border-color;
+    border: $form-input-border-width $form-input-border-style $form-input-border-color;
     border-radius: $form-input-border-radius;
 
     &:before {
@@ -14,21 +12,18 @@
       justify-content: center;
 
       background: $form-field-icon-background;
-      border-style: $form-input-border-style;
-      border-color: inherit;
       color: $form-field-icon-color;
-      font-size: var(--fi-fs,#{$form-field-icon-size});
+      border: $form-input-border-width $form-input-border-style;
+      border-color: inherit;
 
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
+      font: normal normal 400 var(--fi-fs,#{$form-field-icon-size}) #{$form-input-font-family};
 
       -webkit-font-smoothing: antialiased;
       speak: none;
 
-      width: 40px;
+      width:     36px;
+      min-width: 36px;
 
-      border-width: $form-input-border-width;
       border-top-left-radius: inherit;
       border-bottom-left-radius: inherit;
 
@@ -77,7 +72,7 @@
     }
 
     &.mandatory {
-      > .input-container:after { right: 45px; }
+      > .input-container:after { right: 38px; }
     }
   }
 }
