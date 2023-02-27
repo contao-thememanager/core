@@ -13,7 +13,7 @@
   .mod_article {
 
     > .inside {
-      height: var(--art-hght)
+      min-height: var(--art-hght)
     }
   }
 }
