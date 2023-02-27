@@ -7,7 +7,7 @@
                    $sm->prepare('cPadding')->format(' %s') .
                    $sm->prepare('cBackground')->format(' %s');
   $hlClasses     = $sm->prepare('gHeadline')->format(' %s');
-  $aClasses      = $sm->prepare('eLink')->format(' %s');
+  $aClasses      = $sm->prepare('eLink')->format(' class="%s" ');
 ?>
 
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
@@ -36,7 +36,7 @@
     <?= $this->text ?>
     <?php if($this->linkText && $this->url): ?>
       <p>
-        <a href="<?=$this->url?>" class="<?= $aClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+        <a href="<?=$this->url?>"<?= $aClasses ?><?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
       </p>
     <?php endif; ?>
   </div>
