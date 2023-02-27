@@ -290,8 +290,9 @@ $form-label-color:                            var(--text-clr-base) !default;
 $form-label-color-invert:                     var(--text-clr-invert) !default;
 
 $form-label-font-size:                        $font-size-base !default;
-$form-label-font-weight:                      $font-weight-regular !default;
 $form-label-spacing:                          4px !default;
+$form-label-font-weight:                      $font-weight-regular !default;
+$form-legend-font-weight:                     $font-weight-semibold !default;
 
 // Form select
 $form-select-symbol:                          "\25BC" !default;

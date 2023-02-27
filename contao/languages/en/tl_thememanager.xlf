@@ -1452,17 +1452,23 @@
       <trans-unit id="tl_thememanager.form-label-font-size.1">
         <source>Here you can set the font-size for labels and legends.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-font-weight.0">
-        <source>$form-label-font-weight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-font-weight.1">
-        <source>Here you can set the font-weight for labels and legends.</source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.form-label-spacing.0">
         <source>$form-label-spacing</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form-label-spacing.1">
         <source>Here you can set the bottom-margin for labels and legends.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.0">
+        <source>$form-label-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.1">
+        <source>Here you can set the font-weight for labels.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-legend-font-weight.0">
+        <source>$form-legend-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-legend-font-weight.1">
+        <source>Here you can set the font-weight for legends.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-select-symbol.0">

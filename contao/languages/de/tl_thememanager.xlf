@@ -1916,14 +1916,6 @@
         <source>Here you can set the font-size for labels and legends.</source>
         <target>Hier können Sie die Schriftgröße für Label und Legends einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-font-weight.0">
-        <source>$form-label-font-weight</source>
-        <target>$form-label-font-weight</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.form-label-font-weight.1">
-        <source>Here you can set the font-weight for labels and legends.</source>
-        <target>Hier können Sie die Schriftdicke für Label und Legends einstellen.</target>
-      </trans-unit>
       <trans-unit id="tl_thememanager.form-label-spacing.0">
         <source>$form-label-spacing</source>
         <target>$form-label-spacing</target>
@@ -1931,6 +1923,22 @@
       <trans-unit id="tl_thememanager.form-label-spacing.1">
         <source>Here you can set the bottom-margin for labels and legends.</source>
         <target>Hier können Sie den unteren Abstand für Label und Legends einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.0">
+        <source>$form-label-font-weight</source>
+        <target>$form-label-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-label-font-weight.1">
+        <source>Here you can set the font-weight for labels.</source>
+        <target>Hier können Sie die Schriftdicke für Labels einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-legend-font-weight.0">
+        <source>$form-legend-font-weight</source>
+        <target>$form-legend-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-legend-font-weight.1">
+        <source>Here you can set the font-weight for legends.</source>
+        <target>Hier können Sie die Schriftdicke für Legenden einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-select-symbol.0">
