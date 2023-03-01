@@ -1704,10 +1704,11 @@
 
         // Form miscellaneous
         'form-validation' => [
+            'default'                 => 'Disabled',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-validation'],
             'inputType'               => 'select',
-            'options'                 => ['Focus', 'Always'],
-            'eval'                    => ['includeBlankOption'=>true, 'blankOptionLabel' =>'-', 'maxlength'=>32, 'tl_class'=>'w100 clr'],
+            'options'                 => ['Disabled', 'Focus', 'Always'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w100 clr'],
         ],
 
         'form-input-explanation-font-size' => [
