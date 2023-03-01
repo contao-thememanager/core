@@ -13,8 +13,8 @@
             '{form_general_legend:hide},form-input-font-family,form-textarea-line-height,form-input-padding,form-input-height,form-multiselect-height,form-input-font-weight,form-input-font-size,form-input-font-size-error,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-border-color,form-input-border-color-hover,form-input-border-color-focus,form-input-border-color-error,form-input-background,form-input-background-hover,form-input-background-focus,form-input-background-error,form-input-color,form-input-color-hover,form-input-color-focus,form-input-color-error,form-input-placeholder-color,form-input-placeholder-color-hover,form-input-placeholder-color-focus,form-input-placeholder-color-error,form-input-color-disabled;' .
             '{form_label_legend:hide},form-label-color,form-label-color-invert,form-label-font-size,form-label-spacing,form-label-font-weight,form-legend-font-weight;' .
             '{form_select_legend:hide},form-select-symbol,form-select-symbol-font-size,form-select-symbol-color,form-select-symbol-font-family,form-select-option-color,form-select-option-background;' .
-            '{form_checkbox_radio_legend:hide},form-checkbox-radio-symbol,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color,form-checkbox-radio-symbol-font-family,form-checkbox-radio-size,form-checkbox-radio-label-font-size,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-border-color,form-checkbox-radio-border-color-hover,form-checkbox-radio-border-color-focus,form-checkbox-radio-background,form-checkbox-radio-background-hover,form-checkbox-radio-background-focus,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert;' .
-            '{form_miscellaneous_legend:hide},form-validation,form-input-explanation-font-size,form-input-explanation-color,form-input-explanation-color-invert,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error;' .
+            '{form_checkbox_radio_legend:hide},form-checkbox-radio-symbol,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color,form-checkbox-radio-symbol-font-family,form-checkbox-radio-size,form-checkbox-radio-label-font-size,form-checkbox-radio-label-line-height,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-border-color,form-checkbox-radio-border-color-hover,form-checkbox-radio-border-color-focus,form-checkbox-radio-background,form-checkbox-radio-background-hover,form-checkbox-radio-background-focus,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert;' .
+            '{form_miscellaneous_legend:hide},form-validation,form-checkbox-radio-auto-align,form-input-explanation-font-size,form-input-explanation-color,form-input-explanation-color-invert,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error;' .
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-size,form-field-icon-color,form-field-icon-background;' .
             '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
             '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
@@ -1619,14 +1619,20 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'20px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50 clr'],
+            'eval'                    => ['placeholder'=>'20px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33 clr'],
         ],
         'form-checkbox-radio-label-font-size' => [
             'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33'],
+        ],
+        'form-checkbox-radio-label-line-height' => [
+            'default'                 => '$line-height-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-label-line-height'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$line-height-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33'],
         ],
 
         'form-checkbox-border-radius' => [
@@ -1634,21 +1640,21 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-border-radius'],
             'inputType'               => 'trbl',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50 clr'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
         ],
         'form-checkbox-radio-border-width' => [
             'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-width'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w25'],
+            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w33'],
         ],
         'form-checkbox-radio-border-style' => [
             'default'                 => 'solid',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-border-style'],
             'inputType'               => 'select',
             'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w33', 'chosen'=>true],
         ],
 
         'form-checkbox-radio-border-color' => [
@@ -1707,8 +1713,15 @@
             'default'                 => 'Disabled',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-validation'],
             'inputType'               => 'select',
-            'options'                 => ['Disabled', 'Focus', 'Always'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w100 clr'],
+            'options'                 => ['Disabled','Focus', 'Always'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w50 clr'],
+        ],
+        'form-checkbox-radio-auto-align' => [
+            'default'                 => 'Active',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['form-checkbox-radio-auto-align'],
+            'inputType'               => 'select',
+            'options'                 => ['Disabled','Active'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w50'],
         ],
 
         'form-input-explanation-font-size' => [

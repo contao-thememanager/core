@@ -311,6 +311,7 @@ $form-checkbox-radio-symbol-font-family:      "ctm-icon", var(--font-family) !de
 
 $form-checkbox-radio-size:                    20px !default;
 $form-checkbox-radio-label-font-size:         $font-size-base !default;
+$form-checkbox-radio-label-line-height:       $line-height-base !default;
 
 $form-checkbox-border-radius:                 0 !default;
 $form-checkbox-radio-border-width:            1px !default;
@@ -328,7 +329,8 @@ $form-checkbox-radio-label-color:             var(--text-clr-base) !default;
 $form-checkbox-radio-label-color-invert:      var(--text-clr-invert) !default;
 
 // Form miscellaneous
-$form-validation:                             '' !default;
+$form-validation:                             'Disabled' !default;
+$form-checkbox-radio-auto-align:              'Active' !default;
 
 $form-input-explanation-font-size:            $font-size-base !default;
 $form-input-explanation-color:                var(--text-clr-base) !default;

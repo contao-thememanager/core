@@ -195,6 +195,26 @@ textarea {
   }
 
   // checkbox & -radio styles
+
+  // Calculation for checkbox and radio offsets for pseudo or text element
+  $form-checkbox-radio-label-offset:  0;
+  $form-checkbox-radio-symbol-offset: 1px;
+  $form-checkbox-radio-label-min-height: $form-checkbox-radio-size;
+
+  @if ($form-checkbox-radio-auto-align == 'Active') {
+    $font-min-height: multiply($form-checkbox-radio-label-font-size, $form-checkbox-radio-label-line-height);
+
+    @if ($form-checkbox-radio-size < $font-min-height) {
+      $form-checkbox-radio-symbol-offset: sub(divide(sub($font-min-height, $form-checkbox-radio-size), 2), 1px);
+    }
+    @else if ($form-checkbox-radio-size > $font-min-height) {
+      $--calc-offset: sum(divide(sub($form-checkbox-radio-size, $font-min-height), 2), 1px);
+
+      $form-checkbox-radio-symbol-offset: 0;
+      $form-checkbox-radio-label-offset:  $--calc-offset;
+    }
+  }
+
   &-checkbox,
   &-radio {
 
@@ -218,7 +238,7 @@ textarea {
 
           position: absolute;
           left: 1px;
-          top: 1px;
+          top: $form-checkbox-radio-symbol-offset;
 
           width: sub($form-checkbox-radio-size, 1px, 'px');
           line-height: $form-checkbox-radio-size;
@@ -242,9 +262,13 @@ textarea {
 
       color: var(--cbx-clr-label);
       font-size: $form-checkbox-radio-label-font-size;
+      line-height: $form-checkbox-radio-label-line-height;
+
+      padding-top: $form-checkbox-radio-label-offset;
       // Calculate offset for the label
       padding-left: sum($form-checkbox-radio-size, 10px, 'px');
       margin-bottom: 0;
+      min-height: $form-checkbox-radio-label-min-height;
 
       cursor: pointer;
 
@@ -253,7 +277,7 @@ textarea {
         content: '';
 
         position: absolute;
-        top: 1px;
+        top: $form-checkbox-radio-symbol-offset;
         left: 0;
 
         width: $form-checkbox-radio-size;

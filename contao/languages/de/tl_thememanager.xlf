@@ -2040,6 +2040,14 @@
         <source>Here you can set the font-size for checkbox and radio elements.</source>
         <target>Hier können Sie die Schriftgröße von Checkbox- und Radioelementen einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-line-height.0">
+        <source>$form-checkbox-radio-label-line-height</source>
+        <target>$form-checkbox-radio-label-line-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-label-line-height.1">
+        <source>Here you can set the line-height for checkbox and radio labels.</source>
+        <target>Hier können Sie die Zeilenhöhe von Checkbox- und Radio Labels einstellen.</target>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.form-checkbox-border-radius.0">
         <source>$form-checkbox-border-radius</source>
@@ -2139,7 +2147,15 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.form-validation.1">
         <source>Here you can activate whether invalid form fields should be shown with the error color.</source>
-        <target>Hier können Sie einstellen ob invalide Formular-Felder farblich hervorgehoben werden sollen.</target>
+        <target>Hier können Sie einstellen, ob invalide Formular-Felder farblich hervorgehoben werden sollen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-auto-align.0">
+        <source>$form-checkbox-radio-auto-align</source>
+        <target>$form-checkbox-radio-auto-align</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form-checkbox-radio-auto-align.1">
+        <source>Here you can activate whether the option labels and the checkbox/radio icons should be vertically aligned according to their size.</source>
+        <target>Hier können Sie einstellen, ob die Optionsbeschriftungen und die Checkbox-/Radio-Symbole entsprechend ihrer Größe vertikal ausgerichtet werden sollen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-input-explanation-font-size.0">
