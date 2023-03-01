@@ -1,7 +1,5 @@
 ul, ol {
-  // Always reset count due to grid-lists
-  --i:1;
-  --i-v-gap:#{rem(3)};
+  --i:1;--i-v-gap:#{rem(3)}; // Always reset count due to grid-lists
   margin: 0;
   column-count:var(--i, auto);
 }
@@ -14,8 +12,7 @@ li {
 
   .c_list.flow-y & { width: calc(100% / var(--i)); }
 
-  // Avoid column breaks for MacOS and Safari
-  .c_list & {
+  .c_list & { // Avoid column breaks for MacOS and Safari
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -29,11 +26,12 @@ li {
   &.flow-auto {--i-v-gap: 0;--h-gap:var(--v-gap);justify-content:var(--flex-justify);};
 }
 
-.flow-auto {@extend %list-auto};
+.flow-auto {@extend %list-auto}; // Extend above grid list properties
 
 .li {
   &-icon { list-style: none; padding-inline-start: rem(20); }
   &-none { list-style: none; padding-inline-start: 0; }
+  &-m-i  { display: flex; } // For wrapping ce_list elements and simulating a marker
   &-clr {
     li::marker, [class^="i-"]:before, [class*=" i-"]:before {
       color: var(--li-clr, inherit);
