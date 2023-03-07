@@ -34,6 +34,10 @@ video {
   &--cover     {--objf:cover;}
   &--none      {--objf:none;}
   &--scaledown {--objf:scale-down;}
+  &--stretch   {
+    --objf:cover; // Auto-height custom property
+    img, figure, picture { height: 100%; }
+  }
 
   // Object-position horizontal | default: '50%'
   &--left    {--objx:left;}

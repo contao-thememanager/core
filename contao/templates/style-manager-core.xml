@@ -2484,7 +2484,7 @@
         <field title="alias">objectFit</field>
         <field title="title">Object-fit</field>
         <field title="description">Defines the object-fit property of the images within this component (Default: fill).</field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"obj--contain";s:5:"value";s:7:"Contain";}i:1;a:2:{s:3:"key";s:10:"obj--cover";s:5:"value";s:5:"Cover";}i:2;a:2:{s:3:"key";s:9:"obj--none";s:5:"value";s:4:"None";}i:3;a:2:{s:3:"key";s:14:"obj--scaledown";s:5:"value";s:10:"Scale down";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:12:"obj--contain";s:5:"value";s:7:"Contain";}i:1;a:2:{s:3:"key";s:10:"obj--cover";s:5:"value";s:5:"Cover";}i:2;a:2:{s:3:"key";s:9:"obj--none";s:5:"value";s:4:"None";}i:3;a:2:{s:3:"key";s:14:"obj--scaledown";s:5:"value";s:10:"Scale down";}i:4;a:2:{s:3:"key";s:12:"obj--stretch";s:5:"value";s:18:"Autoheight (cover)";}}</field>
         <field title="cssClass">separator</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
