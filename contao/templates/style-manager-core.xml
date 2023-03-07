@@ -1157,9 +1157,9 @@
         <field title="pid">1070</field>
         <field title="sorting">1000</field>
         <field title="alias">gridSelfAlignment</field>
-        <field title="title">Alignment</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:14:"col-top sticky";s:5:"value";s:6:"Sticky";}}</field>
+        <field title="title">Vertical-Alignment</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:14:"col-top sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass">clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1172,8 +1172,8 @@
         <field title="pid">1070</field>
         <field title="sorting">1100</field>
         <field title="alias">gridSelfAlignmentXS</field>
-        <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
+        <field title="title">Vertical-Alignment &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xs-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xs-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xs-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xs-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xs-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1186,8 +1186,8 @@
         <field title="pid">1070</field>
         <field title="sorting">1200</field>
         <field title="alias">gridSelfAlignmentS</field>
-        <field title="title">Alignment &amp;#40;S&amp;#41;</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
+        <field title="title">Vertical-Alignment &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-s-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-s-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-s-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-s-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-s-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1200,8 +1200,8 @@
         <field title="pid">1070</field>
         <field title="sorting">1300</field>
         <field title="alias">gridSelfAlignmentM</field>
-        <field title="title">Alignment &amp;#40;M&amp;#41;</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
+        <field title="title">Vertical-Alignment &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-m-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-m-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-m-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-m-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-m-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1214,8 +1214,8 @@
         <field title="pid">1070</field>
         <field title="sorting">1400</field>
         <field title="alias">gridSelfAlignmentL</field>
-        <field title="title">Alignment &amp;#40;L&amp;#41;</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
+        <field title="title">Vertical-Alignment &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-l-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-l-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-l-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-l-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-l-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1228,8 +1228,8 @@
         <field title="pid">1070</field>
         <field title="sorting">1500</field>
         <field title="alias">gridSelfAlignmentXL</field>
-        <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
-        <field title="description">Defines the alignment of this component within the grid.</field>
+        <field title="title">Vertical-Alignment &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xl-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xl-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xl-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xl-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xl-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
