@@ -35,6 +35,7 @@ video {
   &--none      {--objf:none;}
   &--scaledown {--objf:scale-down;}
   &--stretch   {
+    --img-hght:100%;
     --objf:cover; // Auto-height custom property
     img, figure, picture { height: 100%; }
   }
