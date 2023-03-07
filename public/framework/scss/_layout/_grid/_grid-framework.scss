@@ -1,10 +1,13 @@
 .grid {
   --v-gap:var(--gtr-btm);
-  --h-gap-off:calc(-1 * var(--gtr-half));
   --flex-justify:normal;
   --flex-items:normal;
 
   > .inside {
+    // Negative margin to counter offset
+    margin-left:  var(--h-gap-off,0);
+    margin-right: var(--h-gap-off,0);
+
     --i-gtr:var(--gtr-half);
 
     position: relative;
@@ -27,12 +30,11 @@
       padding-right: var(--i-gtr);
       padding-left:  var(--i-gtr);
     }
-  }
 
-  // Negative margin to counter offset
-  .grid > .inside {
-    margin-left:  var(--h-gap-off);
-    margin-right: var(--h-gap-off);
+    // Nested grids
+    > .grid {
+      --h-gap-off:calc(-1 * var(--i-gtr));
+    }
   }
 }
 
