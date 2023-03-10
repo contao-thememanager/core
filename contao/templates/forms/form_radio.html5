@@ -23,7 +23,7 @@
       <?php if ('option' == $option['type']): ?>
         <div>
           <input type="radio" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="radio" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
-          <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
+          <label class="lbl-tgl lbr-50" id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
         </div>
       <?php endif; ?>
 
