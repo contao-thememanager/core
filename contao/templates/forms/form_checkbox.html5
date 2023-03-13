@@ -2,7 +2,7 @@
 
 <div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
-  <div role="group" aria-label="legend" id="ctrl_<?= $this->id ?>" class="checkbox_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
+  <div role="group" aria-label="legend" id="ctrl_<?= $this->id ?>" class="checkbox_container crc grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
     <?php if ($this->label): ?>
       <legend>
@@ -24,7 +24,7 @@
 
       <?php if ('option' == $option['type']): ?>
         <div>
-          <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="checkbox" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
+          <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="checkbox crt" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
           <label class="lbl-tgl" id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
         </div>
       <?php endif; ?>
