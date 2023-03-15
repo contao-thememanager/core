@@ -82,6 +82,13 @@
   .c_image { width: calc(var(--it-wdth,100%) + calc(2 * var(--i-px,0%) * var(--ratio-x,1))) !important; }
 }
 
+@media (max-width: sub($image-text-behaviour-min-width, .02px, 'px')) {
+
+  .txt--absolute {
+    --ratio-x: 1;
+  }
+}
+
 @media (min-width: $image-text-behaviour-min-width) {
 
   @if type-of($image-text-ratio-options) == list {
