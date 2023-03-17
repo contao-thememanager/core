@@ -32,7 +32,7 @@
     &.open {--a-ico:'#{$accordion-icon-active}';}
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     column-gap: $accordion-icon-offset;
 
     margin-bottom: 0;
