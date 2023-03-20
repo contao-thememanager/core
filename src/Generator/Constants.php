@@ -122,7 +122,8 @@ class Constants
                 'newslist',
                 'eventlist',
                 'faqlist',
-                'faqpage'
+                'faqpage',
+                'recommendationlist'
             ]
         ],
         'options' => [
