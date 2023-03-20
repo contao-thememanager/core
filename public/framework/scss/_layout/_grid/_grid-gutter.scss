@@ -7,6 +7,7 @@
 
     > .inside {
       --i-gtr:var(--gtr-half-sml);
+      --h-gap-off:calc(-1 * var(--i-gtr));
     }
   }
 
