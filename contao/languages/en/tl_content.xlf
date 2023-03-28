@@ -26,7 +26,9 @@
         <source>Group</source>
       </trans-unit>
       <trans-unit id="tl_content.accordionGroup.1">
-        <source>To assign the accordion to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here.</source>
+        <source>To assign the accordion to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here. By using the
+          attribute &lt;em&gt;article_id&lt;/em&gt; the pid of the article is acquired automatically.
+        </source>
       </trans-unit>
       <trans-unit id="tl_content.accordionOpen.0">
         <source>Open</source>
