@@ -1,0 +1,9 @@
+<?php $this->extend($this->isRandomOrder ? 'block_unsearchable' : 'block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+  <?= $this->images ?>
+<?php $this->endblock(); ?>
+
+<?php $this->block('pagination'); ?>
+  <?= $this->pagination ?>
+<?php $this->endblock(); ?>
