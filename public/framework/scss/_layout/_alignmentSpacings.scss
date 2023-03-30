@@ -34,16 +34,16 @@
   // Inner spacings
   '.p': (
     '&-0': ( padding: 0 !important),
-    '&-1': ( padding: var(--px-1) var(--py-1) !important),
-    '&-2': ( padding: var(--px-2) var(--py-2) !important),
-    '&-3': ( padding: var(--px-3) var(--py-3) !important),
+    '&-1': ( padding: var(--py-1) var(--px-1) !important),
+    '&-2': ( padding: var(--py-2) var(--px-2) !important),
+    '&-3': ( padding: var(--py-3) var(--px-3) !important),
   ),
   // Element paddings
   '.i-p': (
-    '&-0': ( --i-px: 0%, --i-py: 0%),
-    '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
-    '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
-    '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
+    '&-0': ( --i-py: 0%, --i-px: 0%),
+    '&-1': ( --i-px: var(--py-1), --i-py: var(--px-1) ),
+    '&-2': ( --i-px: var(--py-2), --i-py: var(--px-2) ),
+    '&-3': ( --i-px: var(--py-3), --i-py: var(--px-3) ),
   ),
   // Element spacings (Images and text offset to each other
   '.em': (
