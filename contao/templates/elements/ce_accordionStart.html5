@@ -16,5 +16,5 @@
       <?= $this->headline ?>
     </div>
 
-    <div class="<?= $this->accordion ?> acc-content">
+    <div class="<?= $this->accordion ?> grid acc-content">
       <div class="inside">

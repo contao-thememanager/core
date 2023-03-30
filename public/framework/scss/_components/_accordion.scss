@@ -20,9 +20,22 @@
 }
 
 // Inner container for spacing and margin
-.acc-content > .inside {
-  margin: $accordion-content-margin;
-  padding: $accordion-content-padding;
+.acc-content {
+
+  > .inside {
+    margin: $accordion-content-margin;
+    padding: $accordion-content-padding;
+  }
+
+  // Accordion-start offset for inner elements
+  $acc-c-m: standardize($accordion-content-margin);
+  &.grid > .inside {
+    --h-gap-off:calc(-1 * var(--i-gtr));
+    margin: nth($acc-c-m, 1)
+            calc(var(--h-gap-off,0) + #{nth($acc-c-m,2)})
+            nth($acc-c-m,3)
+            calc(var(--h-gap-off,0) + #{nth($acc-c-m,4)});
+  }
 }
 
 .ctm-accordion {
