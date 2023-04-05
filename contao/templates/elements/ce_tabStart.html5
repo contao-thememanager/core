@@ -1,7 +1,20 @@
 <?php
   $sm = $this->styleManager;
   $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
-                   $sm->prepare('cPadding')->format(' %s');;
+                   $sm->prepare('cPadding')->format(' %s');
 ?>
-<div class="ce_tab block grid <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?> data-tab-group="<?= $this->tabGroup ?>">
+
+<?php if ($this->tabNav && !!$this->tabNavElements): ?>
+  <div class="tab-nav">
+    <ul class="tab-list">
+      <?php foreach ($this->tabNavElements as $id => $label): ?>
+        <li class="t-nav-item">
+          <button class="" data-tab-toggle="#tab_<?=$id?>"><?=$label?></button>
+        </li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+<?php endif ?>
+
+<div class="ce_tab block grid <?= $this->class ?>"<?= $this->cssID ?> data-tab-id="<?=$this->id?>"<?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?>" data-tab-group="<?= $this->tabGroup ?>">
   <div class="inside <?= $insideClasses ?>">

@@ -37,22 +37,30 @@ class TabStartController extends AbstractContentElementController
         }
         else
         {
-            $cols = ["tl_content.pid=? AND tl_content.type=?"];
+            $cols = ["tl_content.pid=? AND tl_content.type=? AND tl_content.tabGroup=?"];
 
             if (!$container->get('contao.security.token_checker')->isPreviewMode())
             {
-                $time = Date::floorToMinute();
-                $cols[] = "tl_content.invisible='' AND (tl_content.start='' OR tl_content.start<='$time') AND (tl_content.stop='' OR tl_content.stop>'$time')";
+                $time   = Date::floorToMinute();
+                $cols[] = "tl_content.invisible='' 
+                           AND (tl_content.start='' OR tl_content.start<='$time') 
+                           AND (tl_content.stop='' OR tl_content.stop>'$time')";
             }
-
-            $tabElements = ContentModel::findBy(
-                $cols,
-                [$model->pid, 'tabStart'],
-                ['order' => 'sorting ASC']
-            );
 
             $template->tabGroup = $model->tabGroup;
             $template->tabLabel = $model->tabLabel;
+
+            $tabElements = ContentModel::findBy(
+                $cols,
+                [$model->pid, 'tabStart', $model->tabGroup],
+                ['order' => 'sorting ASC']
+            );
+
+            if ($model->id === $tabElements->first()->id)
+            {
+                $template->tabNav = true;
+                $template->tabNavElements = $tabElements->fetchEach('tabLabel') ?? null;
+            }
         }
 
         return $template->getResponse();
