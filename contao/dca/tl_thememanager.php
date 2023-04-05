@@ -20,9 +20,6 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = [
         'configFile'          => 'theme-manager-config.html5',
         'fillOnEmpty'         => true,
         'multipleConfigFiles' => true,
-        'onload_callback' => [
-            ['tl_thememanager', 'checkPermission']
-        ],
 		'onsubmit_callback' => [
 			[CompilerUtils::class, 'redirectMaintenanceAndCompile']
         ]
@@ -33,34 +30,3 @@ $GLOBALS['TL_DCA']['tl_thememanager'] = [
         ]
     ]
 ];
-
-
-/**
- * Provide miscellaneous methods that are used by the data configuration array.
- *
- * @author Daniele Sciannimanica <daniele@oveleon.de>
- */
-class tl_thememanager extends Backend
-{
-    /**
-     * Import the back end user object
-     */
-    public function __construct()
-    {
-        parent::__construct();
-        $this->import(BackendUser::class, 'User');
-    }
-
-    /**
-     * Check permissions to edit the table
-     *
-     * @throws AccessDeniedException
-     */
-    public function checkPermission()
-    {
-        if ($this->User->isAdmin)
-        {
-            return;
-        }
-    }
-}
