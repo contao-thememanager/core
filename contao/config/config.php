@@ -6,8 +6,6 @@
  * (c) https://www.oveleon.de/
  */
 
-use Contao\ArrayUtil;
-
 // Contao ThemeManager
 $GLOBALS['CTM_SETTINGS']['iconFont'] = '';
 
@@ -36,18 +34,6 @@ $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\G
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateImageTextWidths'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateArticleHeight'];
 $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateAspectRatios'];
-
-// Add content elements and components group
-ArrayUtil::arrayInsert($GLOBALS['TL_CTE'], 2, [
-    'components'     => [],
-    'componentLists' => [],
-    'wrapper'        => [
-        'wrapperStart'      => 'ContaoThemeManager\Core\ContentWrapperStart',
-        'wrapperStop'       => 'ContaoThemeManager\Core\ContentWrapperStop',
-        'wrapperStartBoxed' => 'ContaoThemeManager\Core\ContentWrapperStartBoxed',
-        'wrapperStopBoxed'  => 'ContaoThemeManager\Core\ContentWrapperStopBoxed'
-    ],
-]);
 
 // Wrapper elements
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
