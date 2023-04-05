@@ -4,9 +4,6 @@
       <trans-unit id="tl_module.date_legend">
         <source>Date and time</source>
       </trans-unit>
-      <trans-unit id="tl_module.includeCtmTemplate">
-        <source>The &lt;em&gt;%s&lt;/em&gt; template needs to be included in the page layout.</source>
-      </trans-unit>
       <trans-unit id="tl_module.headlineStyle.0">
         <source>Class (Headline)</source>
       </trans-unit>
@@ -48,6 +45,12 @@
       </trans-unit>
       <trans-unit id="tl_module.faqAccordion.multi_closed">
         <source>All closed (multi mode)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.news_removeBy.0">
+        <source>Remove author prefix</source>
+      </trans-unit>
+      <trans-unit id="tl_module.news_removeBy.1">
+        <source>Remove the &lt;em&gt;by&lt;/em&gt;-prefix from the author name.</source>
       </trans-unit>
       <trans-unit id="tl_module.news_datimFormat.0">
         <source>Date format</source>

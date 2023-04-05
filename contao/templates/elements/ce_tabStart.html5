@@ -1,0 +1,7 @@
+<?php
+  $sm = $this->styleManager;
+  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+                   $sm->prepare('cPadding')->format(' %s');;
+?>
+<div class="ce_tab block grid <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?> data-tab-group="<?= $this->tabGroup ?>">
+  <div class="inside <?= $insideClasses ?>">
