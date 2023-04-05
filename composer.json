@@ -37,7 +37,7 @@
     "oveleon/contao-config-driver-bundle": "^1.1",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
     "madeyourday/contao-rocksolid-icon-picker": "^2.0",
-    "symfony/filesystem": "^5.4"
+    "symfony/filesystem": "^5.4 || ^6.0"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.3.1"

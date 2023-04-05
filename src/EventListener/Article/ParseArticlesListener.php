@@ -1,6 +1,6 @@
 <?php
 
-namespace ContaoThemeManager\Core\EventListener;
+namespace ContaoThemeManager\Core\EventListener\Article;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\Date;
