@@ -97,7 +97,7 @@ export default class Tabs
                     i.classList.add(active)
             })
 
-            e.target.parentElement.classList.add(active)
+            e.target.classList.add(active)
         }
     }
 }
