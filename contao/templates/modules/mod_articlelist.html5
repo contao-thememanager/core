@@ -1,6 +1,6 @@
 <?php
   $sm = $this->styleManager;
-  $ulClasses   = $sm->prepare('eList')->format(' class="%s"');
+  $ulClasses   = $sm->prepare('eList')->format(' %s');
   $aClasses    = $sm->prepare('eLink')->format(' class="%s" ');
 
   $this->extend('block_unsearchable');
@@ -8,9 +8,9 @@
 
 <?php $this->block('content'); ?>
 
-  <ul<?=$ulClasses?>>
+  <ul class="c_list<?=$ulClasses?>>
     <?php foreach ($this->articles as $article): ?>
-      <li><a <?=$aClasses?>href="<?= $this->request ?>#<?= $article['id'] ?>" title="<?= $article['title'] ?>"><?= $article['link'] ?></a></li>
+      <li><a<?=$aClasses?>href="<?= $this->request ?>#<?= $article['id'] ?>" title="<?= $article['title'] ?>"><?= $article['link'] ?></a></li>
     <?php endforeach; ?>
   </ul>
 
