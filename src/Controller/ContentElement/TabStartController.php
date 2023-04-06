@@ -41,7 +41,7 @@ class TabStartController extends AbstractContentElementController
         {
             $labels = [];
 
-            $template->tabGroup = $group = !!$model->tabGroup ? $model->tabGroup : 'tab_global';
+            $template->tabGroup = $group = !!$model->tabGroup ? $model->tabGroup : 'article_'.$model->pid;
             $template->tabLabel = $model->tabLabel;
 
             // Only build navigation for first item in every tab group

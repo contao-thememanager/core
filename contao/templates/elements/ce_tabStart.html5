@@ -5,8 +5,8 @@
 ?>
 
 <?php if ($this->tabNav && !!$this->tabNavElements): ?>
-  <div class="tab-nav">
-    <ul class="tab-list">
+  <div class="tab-list" data-tab-list="<?= $this->tabGroup ?>">
+    <ul class="tab-nav">
       <?php foreach ($this->tabNavElements as $id => $label): ?>
         <li class="t-nav-item">
           <button class="" data-tab-toggle="#tab_<?=$id?>"><?=$label?></button>
