@@ -10,7 +10,7 @@
 
   <ul class="c_list<?=$ulClasses?>">
     <?php foreach ($this->articles as $article): ?>
-      <li><a<?=$aClasses?>href="<?= $this->request ?>#<?= $article['id'] ?>" title="<?= $article['title'] ?>"><?= $article['link'] ?></a></li>
+      <li><a<?=$aClasses?> href="<?= $this->request ?>#<?= $article['id'] ?>" title="<?= $article['title'] ?>"><?= $article['link'] ?></a></li>
     <?php endforeach; ?>
   </ul>
 
