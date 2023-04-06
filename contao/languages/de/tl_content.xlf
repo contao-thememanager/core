@@ -42,11 +42,11 @@
         <target>Gruppe</target>
       </trans-unit>
       <trans-unit id="tl_content.tabGroup.1">
-        <source>To assign the tab to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here. By using the
-          attribute &lt;em&gt;article_id&lt;/em&gt; the pid of the article is acquired automatically.
+        <source>To assign the tab to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here. When no value has been assigned
+          the pid of the article is acquired automatically.
         </source>
         <target>Hier können Sie ein &lt;em&gt;data-group&lt;/em&gt;-Attribut eingeben, um dem Tab eine Gruppe
-          zuweisen zu können. Über das Attribut &lt;em&gt;article_id&lt;/em&gt; wird die pid des Artikels automatisch
+          zuweisen zu können. Bei einem leeren Wert wird die pid des Artikels automatisch
           ermittelt.
         </target>
       </trans-unit>

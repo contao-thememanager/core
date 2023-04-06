@@ -2,21 +2,28 @@
   $sm = $this->styleManager;
   $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
                    $sm->prepare('cPadding')->format(' %s');
+  $ulClasses     = $sm->prepare('eList')->format(' %s');
+  $tabAClasses   = $sm->prepare('eLink')->format(' %s');
+  $tabCClasses   = $sm->prepare('cLayout')->format(' %s') .
+                   $sm->prepare('ePadding')->format(' %s');
 ?>
 
 <?php if ($this->tabNav && !!$this->tabNavElements): ?>
-  <div class="ctm-tabs grid" data-tab-list="<?= $this->tabGroup ?>">
-    <div class="inside">
-      <ul class="tab-nav c_list li-none">
+  <div class="ctm-tabs grid <?= $this->class ?>"<?= $this->cssID ?> data-tab-list="<?= $this->tabGroup ?>">
+    <div class="inside<?= $insideClasses ?>">
+      <ul class="tab-nav c_list li-none<?= $ulClasses ?>">
         <?php $i=0;foreach ($this->tabNavElements as $id => $label):$i++?>
           <li class="t-nav-item">
-            <button<?=(1===$i)?' class="active"':''?> data-tab-toggle="#tab_<?=$id?>"><?=$label?></button>
+            <div class="<?=(1===$i)?'active':''?><?= $tabAClasses ?>" data-tab-toggle="#tab_<?=$id?>"><?=$label?></div>
           </li>
         <?php endforeach; ?>
       </ul>
+      <div class="tab-content item<?= $tabCClasses ?>">
+        <div class="inside"></div>
+      </div>
     </div>
   </div>
 <?php endif ?>
 
-<div class="ce_tab block grid <?= !!$this->tabNavElements?'active ':''?><?= $this->class ?>"<?= $this->cssID ?> data-tab-id="#tab_<?=$this->id?>"<?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?>" data-tab-group="<?= $this->tabGroup ?>">
-  <div class="inside <?= $insideClasses ?>">
+<div class="ce_tab grid" data-tab-id="#tab_<?=$this->id?>"<?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?>" data-tab-group="<?= $this->tabGroup ?>">
+  <div class="inside">

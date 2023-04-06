@@ -141,6 +141,9 @@ class ThemeManager extends Backend
 
                 Message::addInfo(sprintf(($GLOBALS['TL_LANG']['tl_thememanager_settings']['includeCtmTemplate'] ?? null), 'js_ctm_accordion'));
                 break;
+            case 'tabStart':
+                Message::addInfo(sprintf(($GLOBALS['TL_LANG']['tl_thememanager_settings']['includeCtmTemplate'] ?? null), 'js_ctm_tabs'));
+                break;
         }
     }
 
