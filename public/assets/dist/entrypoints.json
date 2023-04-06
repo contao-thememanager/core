@@ -4,6 +4,11 @@
       "js": [
         "/public/assets/dist/accordion.js"
       ]
+    },
+    "tabs": {
+      "js": [
+        "/public/assets/dist/tabs.js"
+      ]
     }
   }
 }

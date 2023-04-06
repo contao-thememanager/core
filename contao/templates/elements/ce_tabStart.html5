@@ -5,16 +5,18 @@
 ?>
 
 <?php if ($this->tabNav && !!$this->tabNavElements): ?>
-  <div class="tab-list" data-tab-list="<?= $this->tabGroup ?>">
-    <ul class="tab-nav">
-      <?php foreach ($this->tabNavElements as $id => $label): ?>
-        <li class="t-nav-item">
-          <button class="" data-tab-toggle="#tab_<?=$id?>"><?=$label?></button>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+  <div class="ctm-tabs grid" data-tab-list="<?= $this->tabGroup ?>">
+    <div class="inside">
+      <ul class="tab-nav c_list li-none">
+        <?php $i=0;foreach ($this->tabNavElements as $id => $label):$i++?>
+          <li class="t-nav-item">
+            <button<?=(1===$i)?' class="active"':''?> data-tab-toggle="#tab_<?=$id?>"><?=$label?></button>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
   </div>
 <?php endif ?>
 
-<div class="ce_tab block grid <?= $this->class ?>"<?= $this->cssID ?> data-tab-id="<?=$this->id?>"<?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?>" data-tab-group="<?= $this->tabGroup ?>">
+<div class="ce_tab block grid <?= !!$this->tabNavElements?'active ':''?><?= $this->class ?>"<?= $this->cssID ?> data-tab-id="#tab_<?=$this->id?>"<?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> data-tab-label="<?= $this->tabLabel ?>" data-tab-group="<?= $this->tabGroup ?>">
   <div class="inside <?= $insideClasses ?>">
