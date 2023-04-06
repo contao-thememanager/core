@@ -8,7 +8,7 @@
 
 <?php $this->block('content'); ?>
 
-  <ul class="c_list<?=$ulClasses?>>
+  <ul class="c_list<?=$ulClasses?>">
     <?php foreach ($this->articles as $article): ?>
       <li><a<?=$aClasses?>href="<?= $this->request ?>#<?= $article['id'] ?>" title="<?= $article['title'] ?>"><?= $article['link'] ?></a></li>
     <?php endforeach; ?>
