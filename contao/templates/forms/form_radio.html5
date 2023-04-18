@@ -2,7 +2,7 @@
 
 <div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
-  <div role="radiogroup" aria-label="legend" id="ctrl_<?= $this->id ?>" class="radio_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
+  <div role="radiogroup" aria-label="legend" id="ctrl_<?= $this->id ?>" class="radio_container crc grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
     <?php if ($this->label): ?>
       <legend>
@@ -22,8 +22,8 @@
 
       <?php if ('option' == $option['type']): ?>
         <div>
-          <input type="radio" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="radio" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
-          <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
+          <input type="radio" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="radio crt" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
+          <label class="lbl-tgl lbr-50" id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>"><?= $option['label'] ?></label>
         </div>
       <?php endif; ?>
 
