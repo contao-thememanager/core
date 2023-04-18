@@ -39,7 +39,7 @@
           <p class="login_info"><?= $this->loggedInAs ?><br><?= $this->lastLogin ?></p>
         <?php elseif ($this->twoFactorEnabled): ?>
           <h3><?= $this->twoFactorAuthentication ?></h3>
-          <div class="widget widget-text pfield">
+          <div class="widget widget-text">
             <label for="verify"><?= $this->authCode ?></label>
             <div class="input-container">
               <input type="text" name="verify" id="verify" class="text" value="" autocapitalize="off" autocomplete="one-time-code" required>
@@ -50,13 +50,13 @@
             <label for="trusted"><?= $this->trans('MSC.twoFactorTrustDevice') ?></label>
           </div>
         <?php else: ?>
-          <div class="widget widget-text pfield">
+          <div class="widget widget-text">
             <label for="username"><?= $this->username ?></label>
             <div class="input-container">
               <input type="text" name="username" id="username" class="text" value="<?= $this->value ?>" autocapitalize="off" autocomplete="username" required>
             </div>
           </div>
-          <div class="widget widget-password pfield">
+          <div class="widget widget-password">
             <label for="password"><?= $this->password ?></label>
             <div class="input-container">
               <input type="password" name="password" id="password" class="text password" value="" autocomplete="current-password" required>
