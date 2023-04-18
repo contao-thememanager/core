@@ -31,7 +31,7 @@
 
 label,
 legend {
-  display: inline-block;
+  //display: inline-block;
   color: var(--form-clr-label);
   font-size: $form-label-font-size;
   margin-bottom: $form-label-spacing;
@@ -133,12 +133,13 @@ textarea {
       bottom: #{divide(sub($form-input-height, $form-select-symbol-font-size, 'px'), 2)};
       right: 12px;
 
-      line-height: 1;
-      height: 1em;
-      width: 1em;
       font-size: $form-select-symbol-font-size;
+      line-height: 1;
+      //height: 1em;
+      //width: 1em;
 
-      text-align: center;
+
+      //text-align: center;
       text-decoration: inherit;
       text-transform: none;
 
