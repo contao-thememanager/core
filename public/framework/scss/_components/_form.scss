@@ -31,7 +31,6 @@
 
 label,
 legend {
-  //display: inline-block;
   color: var(--form-clr-label);
   font-size: $form-label-font-size;
   margin-bottom: $form-label-spacing;
@@ -135,11 +134,6 @@ textarea {
 
       font-size: $form-select-symbol-font-size;
       line-height: 1;
-      //height: 1em;
-      //width: 1em;
-
-
-      //text-align: center;
       text-decoration: inherit;
       text-transform: none;
 
