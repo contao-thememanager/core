@@ -5,10 +5,6 @@
         <source>Wrapper</source>
         <target>Umschlag</target>
       </trans-unit>
-      <trans-unit id="CTE.tabs">
-        <source>Tabs</source>
-        <target>Tabs</target>
-      </trans-unit>
       <trans-unit id="CTE.components">
         <source>Components</source>
         <target>Komponenten</target>
@@ -48,22 +44,6 @@
       <trans-unit id="CTE.wrapperStopBoxed.1">
         <source>Generates the closing part of the wrapper (boxed).</source>
         <target>Erzeugt den schließenden Teil des Umschlags (Boxed).</target>
-      </trans-unit>
-      <trans-unit id="CTE.tabStart.0">
-        <source>Tab start</source>
-        <target>Tab Anfang</target>
-      </trans-unit>
-      <trans-unit id="CTE.tabStart.1">
-        <source>Generates the opening part of a single tab element.</source>
-        <target>Erzeugt den öffnenden Teil eines einzelnen Tab-Elements.</target>
-      </trans-unit>
-      <trans-unit id="CTE.tabStop.0">
-        <source>Tab stop</source>
-        <target>Tab Ende</target>
-      </trans-unit>
-      <trans-unit id="CTE.tabStop.1">
-        <source>Generates the closing part of a single tab element.</source>
-        <target>Erzeugt den schließenden Teil eines einzelnen Tab-Elements.</target>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>

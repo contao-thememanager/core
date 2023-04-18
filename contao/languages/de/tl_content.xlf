@@ -1,10 +1,6 @@
 <?xml version="1.0" ?><xliff version="1.1">
   <file datatype="php" original="contao/languages/en/tl_content.php" source-language="en" target-language="de">
     <body>
-      <trans-unit id="tl_content.tab_legend">
-        <source>Tab settings</source>
-        <target>Tab-Einstellungen</target>
-      </trans-unit>
       <trans-unit id="tl_content.headlineStyle.0">
         <source>Class (Headline)</source>
         <target>Klasse (Überschrift)</target>
@@ -28,48 +24,6 @@
       <trans-unit id="tl_content.headline2Style.1">
         <source>Here you can add a class for headline 2.</source>
         <target>Hier können Sie der Überschrift 2 eine Klasse hinzufügen.</target>
-      </trans-unit>
-      <trans-unit id="tl_content.tabLabel.0">
-        <source>Label</source>
-        <target>Label</target>
-      </trans-unit>
-      <trans-unit id="tl_content.tabLabel.1">
-        <source>Here you can enter the label of a tab.</source>
-        <target>Hier können Sie das Label eines Tabs eintragen.</target>
-      </trans-unit>
-      <trans-unit id="tl_content.tabGroup.0">
-        <source>Group</source>
-        <target>Gruppe</target>
-      </trans-unit>
-      <trans-unit id="tl_content.tabGroup.1">
-        <source>To assign the tab to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here. When no value has been assigned
-          the pid of the article is acquired automatically.
-        </source>
-        <target>Hier können Sie ein &lt;em&gt;data-group&lt;/em&gt;-Attribut eingeben, um dem Tab eine Gruppe
-          zuweisen zu können. Bei einem leeren Wert wird die pid des Artikels automatisch
-          ermittelt.
-        </target>
-      </trans-unit>
-      <trans-unit id="tl_content.accordionGroup.0">
-        <source>Group</source>
-        <target>Gruppe</target>
-      </trans-unit>
-      <trans-unit id="tl_content.accordionGroup.1">
-        <source>To assign the accordion to a group, enter a &lt;em&gt;data-group&lt;/em&gt; attribute here. By using the
-          attribute &lt;em&gt;article_id&lt;/em&gt; the pid of the article is acquired automatically.
-        </source>
-        <target>Hier können Sie ein &lt;em&gt;data-group&lt;/em&gt;-Attribut eingeben, um dem Akkordeon eine Gruppe
-          zuweisen zu können. Über das Attribut &lt;em&gt;article_id&lt;/em&gt; wird die pid des Artikels automatisch
-          ermittelt.
-        </target>
-      </trans-unit>
-      <trans-unit id="tl_content.accordionOpen.0">
-        <source>Open</source>
-        <target>Offen</target>
-      </trans-unit>
-      <trans-unit id="tl_content.accordionOpen.1">
-        <source>Keep the accordion element open by default.</source>
-        <target>Das Akkordeon-Element standardmäßig offen halten.</target>
       </trans-unit>
     </body>
   </file>

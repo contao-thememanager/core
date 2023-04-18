@@ -41,8 +41,5 @@ $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartBoxed';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopBoxed';
 
-$GLOBALS['TL_WRAPPERS']['start'][] = 'tabStart';
-$GLOBALS['TL_WRAPPERS']['stop'][]  = 'tabStop';
-
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = ['ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate'];

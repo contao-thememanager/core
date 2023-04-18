@@ -1,9 +1,0 @@
-<?php
-  $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/contaothememanagercore/assets/dist/tabs.js';
-?>
-
-<script>
-  window.addEventListener('load', () => {
-    new Tabs()
-  })
-</script>

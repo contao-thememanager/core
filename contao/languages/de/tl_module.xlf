@@ -37,30 +37,6 @@
         <source>Show last change of FAQ question plus author information.</source>
         <target>Letzte Änderung der FAQ-Frage inklusive Autor-Informationen anzeigen.</target>
       </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.0">
-        <source>Accordion settings</source>
-        <target>Akkordeon-Einstellungen</target>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.1">
-        <source>Here you can select the accordion behavior.</source>
-        <target>Hier können Sie das Akkordeon-Verhalten auswählen.</target>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.single_open">
-        <source>First open (single mode)</source>
-        <target>Erstes offen (Einzelmodus)</target>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.single_closed">
-        <source>All closed (single mode)</source>
-        <target>Alle geschlossen (Einzelmodus)</target>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.multi_open">
-        <source>All open (multi mode)</source>
-        <target>Alle offen (Multimodus)</target>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.multi_closed">
-        <source>All closed (multi mode)</source>
-        <target>Alle geschlossen (Multimodus)</target>
-      </trans-unit>
       <trans-unit id="tl_module.news_removeBy.0">
         <source>Remove author prefix</source>
         <target>Autor-Prefix entfernen</target>

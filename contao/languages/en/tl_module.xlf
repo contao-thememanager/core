@@ -28,24 +28,6 @@
       <trans-unit id="tl_module.showFaqInfo.1">
         <source>Show last change of FAQ question plus author information.</source>
       </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.0">
-        <source>Accordion settings</source>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.1">
-        <source>Here you can select the accordion behavior.</source>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.single_open">
-        <source>First open (single mode)</source>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.single_closed">
-        <source>All closed (single mode)</source>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.multi_open">
-        <source>All open (multi mode)</source>
-      </trans-unit>
-      <trans-unit id="tl_module.faqAccordion.multi_closed">
-        <source>All closed (multi mode)</source>
-      </trans-unit>
       <trans-unit id="tl_module.news_removeBy.0">
         <source>Remove author prefix</source>
       </trans-unit>

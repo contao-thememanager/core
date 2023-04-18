@@ -4,9 +4,6 @@
       <trans-unit id="CTE.wrapper">
         <source>Wrapper</source>
       </trans-unit>
-      <trans-unit id="CTE.tabs">
-        <source>Tabs</source>
-      </trans-unit>
       <trans-unit id="CTE.components">
         <source>Components</source>
       </trans-unit>
@@ -36,18 +33,6 @@
       </trans-unit>
       <trans-unit id="CTE.wrapperStopBoxed.1">
         <source>Generates the closing part of the wrapper (boxed).</source>
-      </trans-unit>
-      <trans-unit id="CTE.tabStart.0">
-        <source>Tab start</source>
-      </trans-unit>
-      <trans-unit id="CTE.tabStart.1">
-        <source>Generates the opening part of a single tab element.</source>
-      </trans-unit>
-      <trans-unit id="CTE.tabStop.0">
-        <source>Tab stop</source>
-      </trans-unit>
-      <trans-unit id="CTE.tabStop.1">
-        <source>Generates the closing part of a single tab element.</source>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>
