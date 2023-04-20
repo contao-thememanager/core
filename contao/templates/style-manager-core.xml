@@ -1159,7 +1159,7 @@
         <field title="alias">gridSelfAlignment</field>
         <field title="title">Vertical-Alignment</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
-        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:14:"col-top sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:18:"col-stretch sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass">clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
