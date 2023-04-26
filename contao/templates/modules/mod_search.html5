@@ -8,7 +8,7 @@
 
 <?php $this->block('content'); ?>
 
-  <form class="grid gtr-f<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
+  <form class="grid gtr-f pl-none<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
     <div class="formbody inside">
       <div class="widget widget-text">
         <label for="ctrl_keywords_<?= $this->uniqueId ?>" class="invisible"><?= $this->keywordLabel ?></label>
