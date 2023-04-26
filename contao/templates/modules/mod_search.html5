@@ -8,34 +8,40 @@
 
 <?php $this->block('content'); ?>
 
-  <form class="grid gtr-f pl-none<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
-    <div class="formbody inside">
-      <div class="widget widget-text">
-        <label for="ctrl_keywords_<?= $this->uniqueId ?>" class="invisible"><?= $this->keywordLabel ?></label>
-        <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
-      </div>
-      <div class="widget widget-submit">
-        <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $aClasses ?>"><?= $this->search ?></button>
-      </div>
-      <?php if ($this->advanced): ?>
-        <div class="widget widget-radio">
-          <fieldset class="radio_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?>">
-            <legend class="invisible"><?= $this->optionsLabel ?></legend>
-            <div><input type="radio" name="query_type" id="matchAll_<?= $this->uniqueId ?>" class="radio" value="and"<?php if ('and' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAll_<?= $this->uniqueId ?>"><?= $this->matchAll ?></label></div>
-            <div><input type="radio" name="query_type" id="matchAny_<?= $this->uniqueId ?>" class="radio" value="or"<?php if ('or' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAny_<?= $this->uniqueId ?>"><?= $this->matchAny ?></label></div>
-          </fieldset>
+  <div class="search_container">
+    <form class="grid gtr-f pl-none<?= $formClasses ?>"<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="get">
+      <div class="formbody inside">
+        <div class="widget widget-text">
+          <label for="ctrl_keywords_<?= $this->uniqueId ?>" class="invisible"><?= $this->keywordLabel ?></label>
+          <input type="search" name="keywords" id="ctrl_keywords_<?= $this->uniqueId ?>" class="text" value="<?= $this->keyword ?>">
         </div>
+        <div class="widget widget-submit">
+          <button type="submit" id="ctrl_submit_<?= $this->uniqueId ?>" class="submit<?= $aClasses ?>"><?= $this->search ?></button>
+        </div>
+        <?php if ($this->advanced): ?>
+          <div class="widget widget-radio">
+            <fieldset class="radio_container grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?>">
+              <legend class="invisible"><?= $this->optionsLabel ?></legend>
+              <div><input type="radio" name="query_type" id="matchAll_<?= $this->uniqueId ?>" class="radio" value="and"<?php if ('and' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAll_<?= $this->uniqueId ?>"><?= $this->matchAll ?></label></div>
+              <div><input type="radio" name="query_type" id="matchAny_<?= $this->uniqueId ?>" class="radio" value="or"<?php if ('or' == $this->queryType): ?> checked<?php endif; ?>> <label for="matchAny_<?= $this->uniqueId ?>"><?= $this->matchAny ?></label></div>
+            </fieldset>
+          </div>
+        <?php endif; ?>
+      </div>
+    </form>
+
+    <?php if ($this->header): ?>
+      <p class="header"><?= $this->header ?></p>
+      <?php if ($this->keywordHint): ?>
+        <p class="info"><?= $this->keywordHint ?></p>
       <?php endif; ?>
-    </div>
-  </form>
-
-  <?php if ($this->header): ?>
-    <p class="header"><?= $this->header ?></p>
-    <?php if ($this->keywordHint): ?>
-      <p class="info"><?= $this->keywordHint ?></p>
     <?php endif; ?>
-  <?php endif; ?>
+  </div>
 
-  <?= $this->results.$this->pagination ?>
+  <?= $this->results ?>
 
+<?php $this->endblock(); ?>
+
+<?php $this->block('pagination'); ?>
+  <?= $this->pagination ?>
 <?php $this->endblock(); ?>
