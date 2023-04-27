@@ -1,6 +1,13 @@
 <?php
   $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
+
+  if ($this->fullsize) {
+    foreach ($this->list as $key => $item) {
+      $item->lb     = 'lb_'.$this->pid;
+      $item->src = (FilesModel::findByUuid($item->singleSRC))->path;
+    }
+  }
 ?>
 
 <?php $this->block('content'); ?>
@@ -8,8 +15,8 @@
 <?php foreach ($this->list as $item): ?>
   <?php if(!$item->invisible || $previewMode): ?>
     <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
-      <?php if($item->url): ?>
-        <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
+      <?php if(!!$item->src || $item->url): ?>
+        <a href="<?=!!$item->url?$item->url:$item->src?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?><?= $this->fullsize ? ' data-lightbox="'.$item->lb.'" data-group="'.$item->lb.'"':''?>>
       <?php else: ?>
         <div class="inside">
       <?php endif; ?>
@@ -25,7 +32,7 @@
         </figure>
       </div>
 
-      <?php if($item->url): ?>
+      <?php if(!!$item->src || $item->url): ?>
         </a>
       <?php else: ?>
         </div>

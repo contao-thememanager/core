@@ -27,6 +27,14 @@ return [
                 return System::getContainer()->get('contao.image.image_sizes')->getOptionsForUser(BackendUser::getInstance());
             }
         ],
+        'fullsize' => [
+            'label' => [
+                'de' => ['Großansicht/Neues Fenster', 'Großansicht der Bilder in einer Lightbox bzw. den Link in einem neuen Browserfenster öffnen.'],
+                'en' => ['Full-size view/new window', 'Open the full-size images in a lightbox or the link in a new browser window.'],
+            ],
+            'inputType' => 'checkbox',
+            'eval' => ['tl_class'=>'w50 m12'],
+        ],
         'list' => [
             'label' => [
                 'de' => [
