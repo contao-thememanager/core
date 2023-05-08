@@ -16,11 +16,11 @@ class ParseArticlesListener
         /** @var PageModel $objPage */
         global $objPage;
 
-        $template->date = self::getParsedTimeFormat('datim', $newsEntry['tstamp'], $objPage, $module->news_datimFormat);
+        $template->date = self::getParsedTimeFormat('datim', $newsEntry['time'], $objPage, $module->news_datimFormat);
 
         // Add various date variables
-        $template->year      = Date::parse('Y', $newsEntry['tstamp']);
-        $template->yearShort = Date::parse('y', $newsEntry['tstamp']);
+        $template->year      = Date::parse('Y', $newsEntry['time']);
+        $template->yearShort = Date::parse('y', $newsEntry['time']);
 
         if ($module->news_removeBy)
         {
