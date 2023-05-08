@@ -1,0 +1,14 @@
+<?php
+  $sm = $this->styleManager;
+  $iconClasses = $sm->prepare('eIcon')->format(' %s');
+
+  $this->extend('block_searchable');
+?>
+
+<?php $this->block('content'); ?>
+
+<div class="c_icon">
+  <span class="icon <?= $this->cssID ?><?= $iconClasses ?>" data-icon="&#x<?= $this->icon ?>;"></span>
+</div>
+
+<?php $this->endblock(); ?>
