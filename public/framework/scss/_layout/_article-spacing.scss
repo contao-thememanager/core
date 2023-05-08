@@ -4,6 +4,8 @@ $class-vertical-article-spacing:     'art-py';
 $class-vertical-article-spacing-top: 'art-pt';
 $class-vertical-article-spacing-btm: 'art-pb';
 
+$class-negative-article-spacing-btm: 'art-sub-pb';
+
 $art-space-abbr: (
   width:   art-wdth,
   spacing: art-px,
@@ -99,6 +101,11 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
   .#{$class-vertical-article-spacing-btm}-#{$size} {
     > .inside {
       padding-bottom: var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)});
+    }
+  }
+  .#{$class-negative-article-spacing-btm}-#{$size} {
+    > .inside {
+      margin-bottom: calc(var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)}) * -1);
     }
   }
 }

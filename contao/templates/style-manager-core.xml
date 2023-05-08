@@ -743,7 +743,7 @@
         <field title="alias">bottomSpacing</field>
         <field title="title">Bottom-Spacing</field>
         <field title="description">Defines the spacing from the bottom for this article.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:8:"art-pb-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-pb-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-pb-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"art-pb-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:8:"art-pb-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:8:"art-pb-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:12:"art-sub-pb-1";s:5:"value";s:16:"Small (negative)";}i:4;a:2:{s:3:"key";s:12:"art-sub-pb-2";s:5:"value";s:17:"Medium (negative)";}i:5;a:2:{s:3:"key";s:12:"art-sub-pb-3";s:5:"value";s:16:"Large (negative)";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
