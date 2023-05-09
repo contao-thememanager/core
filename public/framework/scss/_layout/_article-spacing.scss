@@ -48,6 +48,11 @@ main .article_inside {
   padding-bottom: var(--v-gap);
 }
 
+// z-index for negative article spacings
+[class*=#{$class-negative-article-spacing-btm}] {
+  z-index: 1;
+}
+
 $abbr-wdth: map-get($art-space-abbr, width);
 $abbr-spc:  map-get($art-space-abbr, spacing);
 
