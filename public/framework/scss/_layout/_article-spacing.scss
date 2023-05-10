@@ -7,13 +7,15 @@ $class-vertical-article-spacing-btm: 'art-pb';
 $class-negative-article-spacing-btm: 'art-sub-pb';
 
 $art-space-abbr: (
-  width:   art-wdth,
-  spacing: art-px,
+  width:    art-wdth,
+  xspacing: art-px,
+  yspacing: art-py,
   1: 1,
   2: 2,
   3: 3
 );
 
+// Y-spacings (vertical top and bottom)
 $spacings-list-init: (
   1: $article-spacing-xs-small,
   2: $article-spacing-xs-medium,
@@ -53,8 +55,9 @@ main .article_inside {
   z-index: 1;
 }
 
-$abbr-wdth: map-get($art-space-abbr, width);
-$abbr-spc:  map-get($art-space-abbr, spacing);
+$abbr-wdth:  map-get($art-space-abbr, width);
+$abbr-spc-x: map-get($art-space-abbr, xspacing);
+$abbr-spc-y: map-get($art-space-abbr, yspacing);
 
 [class*=#{$class-horizontal-article-spacing}] {
 
@@ -62,32 +65,32 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
 
     > .inside {
       max-width:     var(--#{$abbr-wdth}, auto);
-      padding-left:  var(--#{$abbr-spc}, 0);
-      padding-right: var(--#{$abbr-spc}, 0);
+      padding-left:  var(--#{$abbr-spc-x}, 0);
+      padding-right: var(--#{$abbr-spc-x}, 0);
       margin-left:   auto;
       margin-right:  auto;
     }
   }
 
   &.gtr-1 {
-    --#{$abbr-spc}: #{divide(sub($grid-gutter-width, $grid-gutter-small-width), 2)};
+    --#{$abbr-spc-x}: #{divide(sub($grid-gutter-width, $grid-gutter-small-width), 2)};
   }
 
   &.gtr-0 {
-    --#{$abbr-spc}: #{divide($grid-gutter-width, 2)};
+    --#{$abbr-spc-x}: #{divide($grid-gutter-width, 2)};
   }
 }
 
 // Set custom properties
 :root {
   @each $size, $spacing in $spacings-list-init {
-    --#{$abbr-spc}-#{map-get($art-space-abbr, $size)}: #{$spacing};
+    --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
   }
 }
 
 @each $size, $spacing in $spacings-list-init {
   .#{$class-vertical-article-spacing}-#{$size} {
-    $v-art-pd: #{$abbr-spc}-#{map-get($art-space-abbr, $size)};
+    $v-art-pd: #{$abbr-spc-y}-#{map-get($art-space-abbr, $size)};
     &, #container {
       > .inside {
         padding-top:    var(--#{$v-art-pd});
@@ -100,17 +103,17 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
 @each $size, $spacing in $spacings-list-init {
   .#{$class-vertical-article-spacing-top}-#{$size} {
     > .inside {
-      padding-top: var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)});
+      padding-top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
     }
   }
   .#{$class-vertical-article-spacing-btm}-#{$size} {
     > .inside {
-      padding-bottom: var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)});
+      padding-bottom: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
     }
   }
   .#{$class-negative-article-spacing-btm}-#{$size} {
     > .inside {
-      margin-bottom: calc(var(--#{$abbr-spc}-#{map-get($art-space-abbr, $size)}) * -1);
+      margin-bottom: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
     }
   }
 }
@@ -124,7 +127,7 @@ $abbr-spc:  map-get($art-space-abbr, spacing);
     @if map-has-key($spacings-list-bp, $bp) {
       :root {
         @each $size, $spacing in $list {
-          --#{$abbr-spc}-#{map-get($art-space-abbr, $size)}: #{$spacing};
+          --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
         }
       }
     }
