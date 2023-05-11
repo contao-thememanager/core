@@ -8,6 +8,7 @@ $class-negative-article-spacing-btm: 'art-sub-pb';
 
 $art-space-abbr: (
   width:    art-wdth,
+  xpadding: art-ox,
   xspacing: art-px,
   yspacing: art-py,
   1: 1,
@@ -45,9 +46,21 @@ $spacings-list-bp: (
   )
 );
 
+$abbr-wdth:  map-get($art-space-abbr, width);
+$abbr-pad-x: map-get($art-space-abbr, xpadding);
+$abbr-spc-x: map-get($art-space-abbr, xspacing);
+$abbr-spc-y: map-get($art-space-abbr, yspacing);
+
 // Add default bottom-padding to #main articles
 main .article_inside {
   padding-bottom: var(--v-gap);
+}
+
+.article_inside {
+  // Add default bottom-padding to #main articles
+  main & {
+    padding-bottom: var(--v-gap);
+  }
 }
 
 // z-index for negative article spacings
@@ -55,18 +68,14 @@ main .article_inside {
   z-index: 1;
 }
 
-$abbr-wdth:  map-get($art-space-abbr, width);
-$abbr-spc-x: map-get($art-space-abbr, xspacing);
-$abbr-spc-y: map-get($art-space-abbr, yspacing);
-
 [class*=#{$class-horizontal-article-spacing}] {
 
   &, #container {
 
     > .inside {
       max-width:     var(--#{$abbr-wdth}, auto);
-      padding-left:  var(--#{$abbr-spc-x}, 0);
-      padding-right: var(--#{$abbr-spc-x}, 0);
+      padding-left:  calc(var(--#{$abbr-spc-x},0px) + var(--#{$abbr-pad-x},0px));
+      padding-right: calc(var(--#{$abbr-spc-x},0px) + var(--#{$abbr-pad-x},0px));
       margin-left:   auto;
       margin-right:  auto;
     }
@@ -83,6 +92,7 @@ $abbr-spc-y: map-get($art-space-abbr, yspacing);
 
 // Set custom properties
 :root {
+  --#{$abbr-pad-x}:#{$article-outer-padding};
   @each $size, $spacing in $spacings-list-init {
     --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
   }
@@ -124,8 +134,13 @@ $abbr-spc-y: map-get($art-space-abbr, yspacing);
 
     $list: map-get($spacings-list-bp, $bp);
 
+    @if ($bp == 'xs') {
+      :root {--#{$abbr-pad-x}:#{$article-outer-padding-xs};}
+    }
+
     @if map-has-key($spacings-list-bp, $bp) {
       :root {
+        @if ($bp == 's') {--#{$abbr-pad-x}:#{$article-outer-padding-s};}
         @each $size, $spacing in $list {
           --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
         }
@@ -136,6 +151,7 @@ $abbr-spc-y: map-get($art-space-abbr, yspacing);
       .#{$class-horizontal-article-spacing} {
 
         &-#{map-get($art-space-abbr, 3)} {
+          --#{$abbr-pad-x}:0px;
           --#{$abbr-wdth}: #{$x-spacing-large-m};
         }
       }
@@ -143,21 +159,22 @@ $abbr-spc-y: map-get($art-space-abbr, yspacing);
 
     @else if ($bp == 'l') {
       [class*=#{$class-horizontal-article-spacing}].gtr-1 {
-        --art-px: 0;
+        --art-px:0px;
       }
 
       .#{$class-horizontal-article-spacing} {
 
         &-#{map-get($art-space-abbr, 2)} {
-          --#{$abbr-wdth}: #{sub(map-get($breakpoints, $bp), $grid-gutter-width,'px')};
+          --#{$abbr-pad-x}:0px;
+          --#{$abbr-wdth}:#{sub(map-get($breakpoints, $bp), $grid-gutter-width,'px')};
 
           &.gtr-1 {
-            --#{$abbr-wdth}: #{sub(map-get($breakpoints, $bp), $grid-gutter-small-width, 'px')};
+            --#{$abbr-wdth}:#{sub(map-get($breakpoints, $bp), $grid-gutter-small-width,'px')};
           }
         }
 
         &-#{map-get($art-space-abbr, 3)} {
-          --#{$abbr-wdth}: #{$x-spacing-large-l};
+          --#{$abbr-wdth}:#{$x-spacing-large-l};
         }
       }
 
@@ -174,11 +191,12 @@ $abbr-spc-y: map-get($art-space-abbr, yspacing);
   }
 }
 
-@media (min-width: sum($x-spacing-small, $grid-gutter-width, 'px')) {
+@media (min-width: sum($x-spacing-small, $grid-gutter-width,'px')) {
   .#{$class-horizontal-article-spacing} {
 
     &-#{map-get($art-space-abbr, 1)} {
-      --#{$abbr-wdth}: #{$x-spacing-small};
+      --#{$abbr-pad-x}:0px;
+      --#{$abbr-wdth}:#{$x-spacing-small};
     }
   }
 }

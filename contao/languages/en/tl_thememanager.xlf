@@ -970,6 +970,25 @@
         <source>Here you can set the content width for small horizontal spacing.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-outer-padding.0">
+        <source>$article-outer-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding.1">
+        <source>Here you can set the horizontal article padding.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.0">
+        <source>$article-outer-padding-xs</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.1">
+        <source>Here you can set the horizontal article padding for the 'xs'-breakpoint.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.0">
+        <source>$article-outer-padding-s</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.1">
+        <source>Here you can set the horizontal article padding for the 's'-breakpoint.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
         <source>$article-spacing-xs-small</source>
       </trans-unit>

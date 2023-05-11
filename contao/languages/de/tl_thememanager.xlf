@@ -1281,6 +1281,31 @@
         <target>Hier können Sie die Inhaltsbreite für den kleinen horizontalen Abstand einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-outer-padding.0">
+        <source>$article-outer-padding</source>
+        <target>$article-outer-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding.1">
+        <source>Here you can set the horizontal article padding.</source>
+        <target>Hier können Sie den horizontalen Polster (padding) von Artikeln einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.0">
+        <source>$article-outer-padding-xs</source>
+        <target>$article-outer-padding-xs</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.1">
+        <source>Here you can set the horizontal article padding for the 'xs'-breakpoint.</source>
+        <target>Hier können Sie den horizontalen Polster (padding) von Artikeln für den Bruchpunkt 'xs' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.0">
+        <source>$article-outer-padding-s</source>
+        <target>$article-outer-padding-s</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.1">
+        <source>Here you can set the horizontal article padding for the 's'-breakpoint.</source>
+        <target>Hier können Sie den horizontalen Polster (padding) von Artikeln für den Bruchpunkt 's' einstellen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
         <source>$article-spacing-xs-small</source>
         <target>$article-spacing-xs-small</target>
