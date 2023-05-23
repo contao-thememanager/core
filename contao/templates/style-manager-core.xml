@@ -1297,7 +1297,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:10:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:10:"two_factor";i:6;s:6:"search";i:7;s:8:"comments";i:8;s:8:"quicknav";i:9;s:9:"quicklink";}</field>
+        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:10:"two_factor";i:6;s:6:"search";i:7;s:8:"comments";i:8;s:8:"quicknav";i:9;s:9:"quicklink";i:10;s:9:"subscribe";}</field>
       </child>
     </children>
   </archive>
@@ -2625,7 +2625,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="size">
         <field title="pid">2090</field>
@@ -2642,7 +2642,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="fullWidth">
         <field title="pid">2090</field>
@@ -2659,7 +2659,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacing">
         <field title="pid">2090</field>
@@ -2677,7 +2677,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacingXS">
         <field title="pid">2090</field>
@@ -2694,7 +2694,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacingS">
         <field title="pid">2090</field>
@@ -2711,7 +2711,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacingM">
         <field title="pid">2090</field>
@@ -2728,7 +2728,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacingL">
         <field title="pid">2090</field>
@@ -2745,7 +2745,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
       <child alias="topSpacingXL">
         <field title="pid">2090</field>
@@ -2762,7 +2762,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";}</field>
+        <field title="modules">a:12:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:10:"two_factor";i:10;s:11:"articlelist";i:11;s:9:"subscribe";}</field>
       </child>
     </children>
   </archive>
