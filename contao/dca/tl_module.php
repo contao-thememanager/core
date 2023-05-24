@@ -10,7 +10,7 @@ use Contao\Config;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\System;
 
-$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
+$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span'];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
     'exclude'     => true,
@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
     'exclude'     => true,
     'search'      => true,
     'inputType'   => 'inputUnit',
-    'options'     => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'],
+    'options'     => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span'],
     'eval'        => ['tl_class'=>'w50 clr'],
     'sql'         => "mediumtext NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
 ];
