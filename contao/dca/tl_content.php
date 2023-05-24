@@ -16,7 +16,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopController::TYPE]
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStartBoxedController::TYPE] = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopBoxedController::TYPE]  = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
+$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span'];
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['headlineStyle'] = [
     'exclude'   => true,
@@ -30,7 +30,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['headline2'] = [
     'exclude'   => true,
     'search'    => true,
     'inputType' => 'inputUnit',
-    'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'],
+    'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span'],
     'eval'      => ['tl_class'=>'w50 clr'],
     'sql'       => "mediumtext NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
 ];
