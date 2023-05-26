@@ -1,6 +1,6 @@
 <?php return [
     'palettes' => [
-        'default'  => '{default_legend:hide},browser-context,body-bg;' .
+        'default'  => '{default_legend:hide},browser-context,body-bg,border-radius;' .
             '{color_legend:hide},primary,secondary,light,dark;' .
             '{font_legend:hide},font-family-base,font-size-base,line-height-base,text-color-regular,text-color-invert,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,strong-font-weight;' .
             '{headings_legend:hide},line-height-headline,h1-font-size-small,h1-font-size-medium,h1-font-size,h1-line-height,h2-font-size-small,h2-font-size-medium,h2-font-size,h2-line-height,h3-font-size-small,h3-font-size-medium,h3-font-size,h3-line-height,h4-font-size-small,h4-font-size-medium,h4-font-size,h4-line-height,h5-font-size-small,h5-font-size-medium,h5-font-size,h5-line-height,h6-font-size-small,h6-font-size-medium,h6-font-size,h6-line-height,h1-color,h1-color-invert,h1-font-weight,h1-letter-spacing,h1-transform,h2-color,h2-color-invert,h2-font-weight,h2-letter-spacing,h2-transform,h3-color,h3-color-invert,h3-font-weight,h3-letter-spacing,h3-transform,h4-color,h4-color-invert,h4-font-weight,h4-letter-spacing,h4-transform,h5-color,h5-color-invert,h5-font-weight,h5-letter-spacing,h5-transform,h6-color,h6-color-invert,h6-font-weight,h6-letter-spacing,h6-transform;' .
@@ -38,13 +38,20 @@
             'default'                 => '16',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['browser-context'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'16', 'rgxp'=>'natural', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'16', 'rgxp'=>'natural', 'maxlength'=>32, 'tl_class'=>'w25'],
         ],
         'body-bg' => [
             'default'                 => 'ffffff',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['body-bg'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'ffffff', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
+            'eval'                    => ['placeholder'=>'ffffff', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'border-radius' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['border-radius'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w50'],
         ],
 
         // Base colors

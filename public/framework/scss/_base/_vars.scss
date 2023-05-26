@@ -26,6 +26,9 @@
   --fw-semibold:#{$font-weight-semibold};
   --fw-bold:#{$font-weight-bold};
 
+  // Border
+  --bdr-r:#{$border-radius};
+
   // Box
   --box-shadow:#{$box-shadow};
   --b-bdr-wdth:#{$boxed-border-width};

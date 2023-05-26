@@ -107,6 +107,12 @@
       <trans-unit id="tl_thememanager.body-bg.1">
         <source>Here you can set the body background.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.border-radius.0">
+        <source>$border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.border-radius.1">
+        <source>Here you can set a global border-radius that can be used within your skin.</source>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.primary.0">
         <source>$primary</source>
