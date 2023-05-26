@@ -79,3 +79,7 @@ body {
   &--auto    {--i-bgis:auto;}
   &--contain {--i-bgis:contain;}
 }
+
+// Reset classes
+.bgi-none   {--bgi:none;}
+.i-bgi-none {--i-bgi:none;}

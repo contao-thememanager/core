@@ -439,7 +439,7 @@
         <field title="alias">image</field>
         <field title="title">Image</field>
         <field title="description">Defines the background image. Images can be set up in the file-manager.</field>
-        <field title="cssClasses">a:0:{}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"bgi-none";s:5:"value";s:4:"None";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -1858,7 +1858,7 @@
         <field title="alias">image</field>
         <field title="title">Image</field>
         <field title="description">Defines the background image for this element. Images can be set up in the file-manager.</field>
-        <field title="cssClasses">a:0:{}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"bgi-none";s:5:"value";s:4:"None";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2984,7 +2984,7 @@
         <field title="alias">image</field>
         <field title="title">Image</field>
         <field title="description">Defines the background image for items. Images can be set up in the file-manager.</field>
-        <field title="cssClasses">a:0:{}</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:10:"i-bgi-none";s:5:"value";s:4:"None";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
