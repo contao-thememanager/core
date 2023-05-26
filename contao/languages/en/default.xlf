@@ -22,17 +22,17 @@
       <trans-unit id="CTE.wrapperStop.1">
         <source>Generates the closing part of the wrapper.</source>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStartBoxed.0">
-        <source>Wrapper start (boxed)</source>
+      <trans-unit id="CTE.wrapperStartContent.0">
+        <source>Wrapper start (content)</source>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStartBoxed.1">
-        <source>Generates the opening part of the wrapper (boxed).</source>
+      <trans-unit id="CTE.wrapperStartContent.1">
+        <source>Generates the opening part of the content wrapper.</source>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStopBoxed.0">
-        <source>Wrapper stop (boxed)</source>
+      <trans-unit id="CTE.wrapperStopContent.0">
+        <source>Wrapper stop (content)</source>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStopBoxed.1">
-        <source>Generates the closing part of the wrapper (boxed).</source>
+      <trans-unit id="CTE.wrapperStopContent.1">
+        <source>Generates the closing part of the content wrapper.</source>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>

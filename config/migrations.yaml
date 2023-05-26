@@ -1,0 +1,7 @@
+services:
+  ContaoThemeManager\Core\Migration\ContentElementsMigration:
+    arguments:
+      - '@database_connection'
+      - '@contao.framework'
+    tags:
+      - { name: contao.migration, priority: 0 }

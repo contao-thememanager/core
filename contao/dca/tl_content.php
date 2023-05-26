@@ -8,13 +8,13 @@
 
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStartController;
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStopController;
-use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStartBoxedController;
-use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStopBoxedController;
+use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStartContentController;
+use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStopContentController;
 
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStartController::TYPE]      = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopController::TYPE]       = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
-$GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStartBoxedController::TYPE] = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
-$GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopBoxedController::TYPE]  = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStartContentController::TYPE] = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopContentController::TYPE]  = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span'];
 

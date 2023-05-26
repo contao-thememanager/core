@@ -29,21 +29,21 @@
         <source>Generates the closing part of the wrapper.</source>
         <target>Erzeugt den schließenden Teil des Umschlags.</target>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStartBoxed.0">
-        <source>Wrapper start (boxed)</source>
-        <target>Umschlag Anfang (Boxed)</target>
+      <trans-unit id="CTE.wrapperStartContent.0">
+        <source>Wrapper start (content)</source>
+        <target>Umschlag Anfang (Inhalt)</target>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStartBoxed.1">
-        <source>Generates the opening part of the wrapper (boxed).</source>
-        <target>Erzeugt den öffnenden Teil des Umschlags (Boxed).</target>
+      <trans-unit id="CTE.wrapperStartContent.1">
+        <source>Generates the opening part of the content wrapper.</source>
+        <target>Erzeugt den öffnenden Teil des Inhalts-Umschlags.</target>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStopBoxed.0">
-        <source>Wrapper stop (boxed)</source>
-        <target>Umschlag Ende (Boxed)</target>
+      <trans-unit id="CTE.wrapperStopContent.0">
+        <source>Wrapper stop (content)</source>
+        <target>Umschlag Ende (Inhalt)</target>
       </trans-unit>
-      <trans-unit id="CTE.wrapperStopBoxed.1">
-        <source>Generates the closing part of the wrapper (boxed).</source>
-        <target>Erzeugt den schließenden Teil des Umschlags (Boxed).</target>
+      <trans-unit id="CTE.wrapperStopContent.1">
+        <source>Generates the closing part of the content wrapper.</source>
+        <target>Erzeugt den schließenden Teil des Inhalts-Umschlags.</target>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>

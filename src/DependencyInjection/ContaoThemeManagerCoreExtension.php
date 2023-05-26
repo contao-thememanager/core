@@ -19,6 +19,7 @@ class ContaoThemeManagerCoreExtension extends Extension
             new FileLocator(__DIR__ . '/../../config')
         );
 
+        $loader->load('migrations.yaml');
         $loader->load('services.yaml');
     }
 }

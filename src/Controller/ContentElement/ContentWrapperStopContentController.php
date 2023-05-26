@@ -19,10 +19,10 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(ContentWrapperStopBoxedController::TYPE, category:'wrapper')]
-class ContentWrapperStopBoxedController extends AbstractContentElementController
+#[AsContentElement(ContentWrapperStopContentController::TYPE, category:'wrapper')]
+class ContentWrapperStopContentController extends AbstractContentElementController
 {
-    public const TYPE = 'wrapperStopBoxed';
+    public const TYPE = 'wrapperStopContent';
 
     protected function getResponse(Template $template, ContentModel $model, Request $request): ?Response
     {

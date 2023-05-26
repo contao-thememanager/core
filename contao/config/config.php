@@ -38,8 +38,8 @@ $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\G
 // Wrapper elements
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
-$GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartBoxed';
-$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopBoxed';
+$GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartContent';
+$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopContent';
 
 // Hooks
 $GLOBALS['TL_HOOKS']['parseTemplate'][]    = ['ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate'];

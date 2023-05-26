@@ -1,6 +1,6 @@
 <?php
   $sm = $this->styleManager;
-  $wrapperClasses = 'box' . $sm->prepare('cLayout')->format(' %s') . ' color-text-base';
+  $wrapperClasses = $sm->prepare('cLayout')->format(' %s');
   $insideClasses  = $sm->prepare('cSpacing')->format(' %s') .
                     $sm->prepare('cPadding')->format(' %s') .
                     $sm->prepare('cBackground')->format(' %s');
@@ -14,7 +14,7 @@
                     $sm->prepare('sliderL')->format(" data-slider-l='%s'",'json') .
                     $sm->prepare('sliderXL')->format(" data-slider-xl='%s'",'json');
 ?>
-<div class="ce_wrapper block <?= $wrapperClasses ?> <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<div class="ce_wrapper block<?= $wrapperClasses ?> <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside<?= $insideClasses ?>">
     <div class="grid wrapper-grid<?= $gridClasses ?>">
       <div class="inside c_slider"<?= $sliderConfig ?>>
