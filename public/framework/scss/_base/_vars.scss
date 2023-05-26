@@ -28,12 +28,10 @@
 
   // Box
   --box-shadow:#{$box-shadow};
-
-  // Border
-  --bdr-wdth:#{$boxed-border-width};
-  --bdr-style:#{$boxed-border-style};
-  --bdr-clr:#{$boxed-border-color};
-  --bdr-r:#{$boxed-border-radius};
+  --b-bdr-wdth:#{$boxed-border-width};
+  --b-bdr-style:#{$boxed-border-style};
+  --b-bdr-clr:#{$boxed-border-color};
+  --b-bdr-r:#{$boxed-border-radius};
 
   // Selection
   --selection-clr:#{$selection-color};

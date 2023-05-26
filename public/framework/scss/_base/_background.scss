@@ -1,22 +1,22 @@
 .bg {
 
   &-primary {
-    --box-bg:var(--clr-primary);
+    --b-bg:var(--clr-primary);
     background-color: var(--clr-primary);
   }
 
   &-secondary {
-    --box-bg:var(--clr-secondary);
+    --b-bg:var(--clr-secondary);
     background-color: var(--clr-secondary);
   }
 
   &-light {
-    --box-bg:var(--clr-light);
+    --b-bg:var(--clr-light);
     background-color: var(--clr-light);
   }
 
   &-dark {
-    --box-bg:var(--clr-dark);
+    --b-bg:var(--clr-dark);
     background-color: var(--clr-dark);
   }
 }

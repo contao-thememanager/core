@@ -1,6 +1,6 @@
 .box,
 .box-list {
-  --box-bg:#{$boxed-background-color};
+  --b-bg:#{$boxed-background-color};
   --i-bg:#{$boxed-background-color};
 }
 
@@ -8,13 +8,13 @@
 .box-list .item {
 
   > .inside {
-    border:        var(--bdr-wdth) var(--bdr-style) var(--bdr-clr);
-    border-radius: var(--bdr-r);
+    border:        var(--b-bdr-wdth) var(--b-bdr-style) var(--b-bdr-clr);
+    border-radius: var(--b-bdr-r);
   }
 }
 
 .box > .inside {
-  background-color: var(--box-bg);
+  background-color: var(--b-bg);
 }
 
 .box-shadow {
