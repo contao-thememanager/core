@@ -181,8 +181,9 @@ main .article_inside {
       // Special element offset for medium left/right spacing
       .mx-art {
         --art-mx:calc((100vw - var(--mx-off,#{sub(map-get($breakpoints,$bp),divide($grid-gutter-width,2))})) / 2);
-        .mod_article.gtr-1 & {--mx-off:#{rem(map-get($breakpoints,$bp))};}
-        .mod_article.gtr-0 & {--mx-off:#{sub(map-get($breakpoints,$bp),sum($grid-gutter-width,divide($grid-gutter-width,2)))};}
+        .mod_article .ce_wrapper.grid & {--mx-off:#{sub(map-get($breakpoints,$bp),divide($grid-gutter-width,2))};}
+        .mod_article.gtr-1 &, .ce_wrapper.grid.gtr-1 & {--mx-off:#{rem(map-get($breakpoints,$bp))};}
+        .mod_article.gtr-0 &, .ce_wrapper.grid.gtr-0 & {--mx-off:#{sub(map-get($breakpoints,$bp),sum($grid-gutter-width,divide($grid-gutter-width,2)))};}
       }
 
       .ml-art { margin-left: var(--art-mx)!important; }
