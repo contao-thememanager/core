@@ -9,17 +9,13 @@
 namespace ContaoThemeManager\Core;
 
 use Contao\Backend;
-use Contao\ContentModel;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\DataContainer;
 use Contao\File;
-use Contao\Input;
-use Contao\Message;
 use Contao\StringUtil;
 use Contao\System;
 use ContaoThemeManager\Core\StyleManager\StyleManagerXML;
-use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
+use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 
 class ThemeManager extends Backend
 {

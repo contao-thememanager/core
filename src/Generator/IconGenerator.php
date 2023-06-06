@@ -12,7 +12,7 @@ use Contao\Config;
 use Contao\StringUtil;
 use Contao\System;
 use ContaoThemeManager\Core\ThemeManager;
-use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
+use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 use SimpleXMLElement;
 use Symfony\Component\Filesystem\Path;
 

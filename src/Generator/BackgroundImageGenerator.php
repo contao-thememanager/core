@@ -11,7 +11,7 @@ namespace ContaoThemeManager\Core\Generator;
 use Contao\FilesModel;
 use Contao\StringUtil;
 use ContaoThemeManager\Core\ThemeManager;
-use Oveleon\ContaoThemeCompilerBundle\FileCompiler;
+use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 
 /**
  * Generates a background css and xml from selected files
