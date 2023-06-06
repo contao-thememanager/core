@@ -33,7 +33,7 @@
     "php": "^7.4 || ^8.0",
     "contao/core-bundle": "^4.13",
     "oveleon/contao-component-style-manager": "^3.0",
-    "oveleon/contao-theme-compiler-bundle": "^1.2",
+    "oveleon/contao-theme-compiler-bundle": "1.4.*",
     "oveleon/contao-config-driver-bundle": "^1.1",
     "madeyourday/contao-rocksolid-custom-elements": "^2.2",
     "madeyourday/contao-rocksolid-icon-picker": "^2.0",
