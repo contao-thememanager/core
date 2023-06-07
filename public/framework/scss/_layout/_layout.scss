@@ -98,23 +98,23 @@
   .layout {
 
     &-content {
-      &-1 #main { width: calc(100% - var(--lyt-col-wdth) - var(--lyt-col-gtr)); }
-      &-2 #main { width: calc(100% - ((var(--lyt-col-wdth) - var(--lyt-col-gtr)) * 2)); }
+      &-1 #main { width: calc(100% - var(--lyt-col-wdth) + var(--lyt-col-gtr)); }
+      &-2 #main { width: calc(100% - ((var(--lyt-col-wdth) + var(--lyt-col-gtr)) * 2)); }
     }
   }
 
   #left,
   #right {
-    width: var(--lyt-col-wdth);
+    width: calc(var(--lyt-col-wdth) + var(--lyt-col-gtr));
   }
 
   #left {
-    margin-right: var(--lyt-col-gtr);
     &, .left-first & { order: 5; }
+    > .inside { margin-right: var(--lyt-col-gtr); }
   }
 
   #right {
-    margin-left: var(--lyt-col-gtr);
     &, .right-first & { order: 15; }
+    > .inside { margin-left: var(--lyt-col-gtr); }
   }
 }
