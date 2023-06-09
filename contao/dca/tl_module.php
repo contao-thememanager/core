@@ -52,7 +52,7 @@ if (isset($bundles['ContaoNewsBundle']))
     $GLOBALS['TL_DCA']['tl_module']['fields']['news_removeBy'] = [
         'exclude'     => true,
         'inputType'   => 'checkbox',
-        'eval'        => ['tl_class'=>'w100'],
+        'eval'        => ['tl_class'=>'w100 clr'],
         'sql'         => "char(1) NOT NULL default ''"
     ];
 
@@ -65,7 +65,7 @@ if (isset($bundles['ContaoNewsBundle']))
     ];
 
     PaletteManipulator::create()
-        ->addField('news_removeBy', 'news_metaFields')
+        ->addField('news_removeBy', 'customTpl')
         ->applyToPalette('newslist', 'tl_module')
         ->applyToPalette('newsreader', 'tl_module')
     ;
