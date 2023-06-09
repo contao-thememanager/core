@@ -37,12 +37,12 @@
     <?php $this->endblock(); ?>
 
     <?php foreach ($this->faq as $category): ?>
-      <div class="faq-category <?= $category['class'] ?>">
+      <div class="faq-category">
         <h2><?= $category['headline'] ?></h2>
 
         <div class="c_list grid-list<?=$sm->prepare('eGridList')->format(' %s')?>">
           <?php foreach ($category['items'] as $faq): ?>
-            <div class="faq layout_list item <?= $faq['class'] ?>">
+            <div class="faq layout_list item">
 
               <div class="inside">
 

@@ -43,14 +43,14 @@
     <?php $this->endblock(); ?>
 
     <?php foreach ($this->faq as $category): ?>
-      <article class="faq-category <?= $category['class'] ?>">
+      <article class="faq-category">
         <div class="c_headline<?= $hlClasses ?>">
           <<?=$hlArchive.$sm->prepare('eHeadline',['hl1Style'])->format(' class="%s"')?>><?= $category['headline'] ?></<?=$hlArchive?>>
         </div>
 
         <div class="c_list grid-list<?=$sm->prepare('eGridList')->format(' %s')?>">
           <?php foreach ($category['items'] as $faq): ?>
-            <div class="faq layout_page item <?= $faq->class ?>">
+            <div class="faq layout_page item">
 
               <div class="inside">
 

@@ -1,4 +1,8 @@
-<?php $this->extend('block_searchable'); ?>
+<?php
+  $this->extend('block_searchable');
+
+  $blnContao5 = isset($this->body[0]) && !isset($this->body[0]['class']);
+?>
 
 <?php $this->block('content'); ?>
 
@@ -9,37 +13,71 @@
       <?php endif; ?>
 
       <?php if ($this->useHeader): ?>
-        <thead>
-        <tr>
-          <?php foreach ($this->header as $col): ?>
-            <th class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
-          <?php endforeach; ?>
-        </tr>
-        </thead>
-      <?php endif; ?>
-
-      <?php if ($this->useFooter): ?>
-        <tfoot>
+        <?php if (!$blnContao5): ?>
+          <thead>
           <tr>
-            <?php foreach ($this->footer as $col): ?>
-              <td class="<?= $col['class'] ?>"><?= $col['content'] ?></td>
+            <?php foreach ($this->header as $col): ?>
+              <th class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
             <?php endforeach; ?>
           </tr>
-        </tfoot>
-      <?php endif; ?>
-
-      <tbody>
-        <?php foreach ($this->body as $class => $row): ?>
-          <tr class="<?= $class ?>">
-            <?php foreach ($row as $i => $col): ?>
+          </thead>
+        <?php else: ?>
+          <thead>
+          <tr>
+            <?php foreach ($this->header as $i => $col): ?>
               <?php if (0 == $i && $this->useLeftTh): ?>
-                <th scope="row" class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
+                <th class="unsortable"><?= $col ?></th>
               <?php else: ?>
-                <td class="<?= $col['class'] ?>"><?= $col['content'] ?></td>
+                <th><?= $col ?></th>
               <?php endif; ?>
             <?php endforeach; ?>
           </tr>
-        <?php endforeach; ?>
+          </thead>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if ($this->useFooter): ?>
+        <?php if (!$blnContao5): ?>
+          <tfoot>
+            <tr>
+              <?php foreach ($this->footer as $col): ?>
+                <td class="<?= $col['class'] ?>"><?= $col['content'] ?></td>
+              <?php endforeach; ?>
+            </tr>
+          </tfoot>
+        <?php else: ?>
+          <?php foreach ($this->footer as $col): ?>
+            <td><?= $col ?></td>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <tbody>
+        <?php if (!$blnContao5): ?>
+          <?php foreach ($this->body as $class => $row): ?>
+            <tr class="<?= $class ?>">
+              <?php foreach ($row as $i => $col): ?>
+                <?php if (0 == $i && $this->useLeftTh): ?>
+                  <th scope="row" class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
+                <?php else: ?>
+                  <td class="<?= $col['class'] ?>"><?= $col['content'] ?></td>
+                <?php endif; ?>
+              <?php endforeach; ?>
+            </tr>
+          <?php endforeach; ?>
+        <?php else: ?>
+            <?php foreach ($this->body as $row): ?>
+              <tr>
+                <?php foreach ($row as $i => $col): ?>
+                  <?php if (0 == $i && $this->useLeftTh): ?>
+                    <th scope="row"><?= $col ?></th>
+                  <?php else: ?>
+                    <td><?= $col ?></td>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+              </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
       </tbody>
     </table>
   </div>
