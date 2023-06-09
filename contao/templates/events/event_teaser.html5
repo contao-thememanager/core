@@ -1,10 +1,4 @@
 
-<?php if ($this->header): ?>
-  <div class="header">
-    <?php if ($this->firstDay): ?><span class="day"><?= $this->firstDay ?>, </span><?php endif; ?><span class="date"><?= $this->firstDate ?></span>
-  </div>
-<?php endif; ?>
-
 <div class="event layout_teaser item block<?= $this->classList ?>">
 
   <div class="inside">
