@@ -4,13 +4,13 @@
   <div class="inside">
 
     <div class="c_text">
-      <?php if ($this->hasMetaFields): ?>
+      <?php if (!!$this->date || !!$this->author || !!$this->numberOfComments): ?>
         <div class="info">
           <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
           <?php if ($this->author): ?>
             <span class="author"><?= $this->author ?></span>
           <?php endif; ?>
-          <?php if ($this->commentCount): ?>
+          <?php if (!!$this->numberOfComments): ?>
             <span class="comments"><?= $this->commentCount ?></span>
           <?php endif; ?>
         </div>
