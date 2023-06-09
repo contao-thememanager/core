@@ -40,7 +40,6 @@ class Constants
                 'search',
                 'quicknav',
                 'quicklink',
-                'two_factor',
                 'articlelist'
             ]
         ],
