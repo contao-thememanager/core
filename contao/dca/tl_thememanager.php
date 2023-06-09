@@ -6,15 +6,13 @@
  * (c) https://www.oveleon.de/
 */
 
-use Contao\Backend;
-use Contao\BackendUser;
-use Contao\CoreBundle\Exception\AccessDeniedException;
+use Contao\DC_Config;
 use Oveleon\ContaoThemeCompilerBundle\Utils\CompilerUtils;
 
 $GLOBALS['TL_DCA']['tl_thememanager'] = [
     // Config
     'config' => [
-        'dataContainer'       => 'Config',
+        'dataContainer'       => DC_Config::class,
         'ptable'              => 'tl_theme',
         'configField'         => 'themeConfig',
         'configFile'          => 'theme-manager-config.html5',
