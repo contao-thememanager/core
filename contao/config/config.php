@@ -43,9 +43,6 @@ $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartContent';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopContent';
 
-// Hooks
-$GLOBALS['TL_HOOKS']['parseTemplate'][]    = ['ContaoThemeManager\Core\ThemeManager', 'addHeadlineFieldsToTemplate'];
-
 // Restore legacy elements -> Contao 5.1 compatibility since Twig is not supported by StyleManager yet
 // Will be removed with ThemeManager 2.1
 if (str_starts_with(ContaoCoreBundle::getVersion(), '5.'))

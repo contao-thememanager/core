@@ -53,16 +53,6 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Extends the headline field for modules and content elements.
-     */
-    public function addHeadlineFieldsToTemplate(&$context): void
-    {
-        $arrHeadline2 = StringUtil::deserialize($context->headline2);
-        $context->headline2 = \is_array($arrHeadline2) ? $arrHeadline2['value'] : $arrHeadline2;
-        $context->hl2 = \is_array($arrHeadline2) ? $arrHeadline2['unit'] : 'h1';
-    }
-
-    /**
      * Adjust the file palettes
      */
     public function adjustCustomFilePalettes(DataContainer $dc)
