@@ -550,7 +550,7 @@
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
       </child>
-      <child alias="headerBehaviour">
+      <child alias="headerPosition">
         <field title="pid">1000</field>
         <field title="sorting">400</field>
         <field title="alias">headerPosition</field>
