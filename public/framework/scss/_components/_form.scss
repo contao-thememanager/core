@@ -26,8 +26,7 @@
   --form-clr-ph: #{$form-input-placeholder-color-error};
 }
 
-::-webkit-input-placeholder { color: var(--form-clr-ph); }
-::-moz-placeholder { color: var(--form-clr-ph); }
+::placeholder { color: var(--form-clr-ph); }
 
 label,
 legend {
