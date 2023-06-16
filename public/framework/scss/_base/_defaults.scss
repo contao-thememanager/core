@@ -9,11 +9,6 @@
   background: var(--selection-bg);
 }
 
-::-moz-selection {
-  color: var(--selection-clr);
-  background: var(--selection-bg);
-}
-
 body {
   background-color: var(--body-bg);
   color: var(--text-clr-base);
