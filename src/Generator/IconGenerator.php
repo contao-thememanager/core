@@ -60,7 +60,7 @@ class IconGenerator
      */
     private function parseIconFiles(): ?string
     {
-        if (!($fontPath = (Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont'])) ?? null)
+        if (!($fontPath = (Config::get('thememanagerIconFont') ?: $GLOBALS['CTM_SETTINGS']['iconFont'])) ?? null)
         {
             $this->compiler->msg('No ThemeManager icon font specified within your settings. ',FileCompiler::MSG_NOTE);
             return null;
