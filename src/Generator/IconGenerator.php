@@ -65,7 +65,7 @@ class IconGenerator
             return null;
         }
 
-        if (!$absFontPath = realpath($relFontPath = $this->getFilePath($fontPath)))
+        if ((!$absFontPath = realpath($relFontPath = $this->getFilePath($fontPath))) || strlen($relFontPath) === 0)
         {
             $this->compiler->msg('The path: "' . $relFontPath . '" does not exist.', FileCompiler::MSG_ERROR);
             return null;
@@ -270,7 +270,7 @@ class IconGenerator
     /**
      * Check if an icon font exists and return the full path
      */
-    private function getFilePath(string $strFilePath): bool|string
+    private function getFilePath(string $strFilePath): string
     {
         $container  = System::getContainer();
         $projectDir = $container->getParameter('kernel.project_dir');
@@ -281,7 +281,17 @@ class IconGenerator
         $webDirPath  = Path::join($webDir, $fontPath);
 
         // Return the path
-        return !file_exists($projectPath) && file_exists($webDirPath) ? $webDirPath : $projectPath;
+        if (file_exists($webDirPath))
+        {
+            return $webDirPath;
+        }
+
+        if (file_exists($projectPath))
+        {
+            return $projectPath;
+        }
+
+        return '';
     }
 
     /**
