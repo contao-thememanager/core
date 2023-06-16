@@ -15,6 +15,7 @@ button,
 
   font-weight: var(--btn-fw);
   text-transform: var(--btn-tf);
+  text-decoration: var(--btn-td);
 
   border: var(--btn-bdr);
   border-color: var(--btn-1-bdr-clr);
@@ -28,7 +29,6 @@ button,
   font-family: var(--font-family);
   font-size: $button-font-size-medium;
   line-height: $button-line-height;
-  text-decoration: none;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -38,6 +38,7 @@ button,
     background-color: var(--btn-1-bg-hvr);
     color: var(--btn-1-clr-hvr);
     border-color: var(--btn-1-bdr-clr-hvr);
+    text-decoration: var(--btn-td-hvr);
   }
 
   &.size {
@@ -69,6 +70,8 @@ button,
 
     --btn-fw:#{$button-font-weight-secondary};
     --btn-tf:#{$button-transform-secondary};
+    --btn-td:#{$button-decoration-secondary};
+    --btn-td-hvr:#{$button-hover-decoration-secondary};
 
     --btn-bdr:#{$button-border-width-secondary} #{$button-border-style-secondary};
     --btn-bdr-r:#{$button-border-radius-secondary};
@@ -92,6 +95,8 @@ button,
 
     --btn-fw:#{$button-font-weight-alt};
     --btn-tf:#{$button-transform-alt};
+    --btn-td:#{$button-decoration-alt};
+    --btn-td-hvr:#{$button-hover-decoration-alt};
 
     --btn-bdr:#{$button-border-width-alt} #{$button-border-style-alt} #{$button-border-color-alt};
     --btn-bdr-r:#{$button-border-radius-alt};

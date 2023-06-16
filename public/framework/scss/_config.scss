@@ -379,6 +379,8 @@ $button-padding-super:                        1.5rem 3rem !default;
 // Button design primary
 $button-font-weight-primary:                  $font-weight-base !default;
 $button-transform-primary:                    none !default;
+$button-decoration-primary:                   none !default;
+$button-hover-decoration-primary:             none !default;
 
 $button-bg-primary:                           $primary !default;
 $button-hover-bg-primary:                     darken($button-bg-primary, 10) !default;
@@ -402,6 +404,8 @@ $button-border-style-primary:                 solid !default;
 // Button design secondary
 $button-font-weight-secondary:                $font-weight-base !default;
 $button-transform-secondary:                  none !default;
+$button-decoration-secondary:                 none !default;
+$button-hover-decoration-secondary:           none !default;
 
 $button-bg-secondary:                         $secondary !default;
 $button-hover-bg-secondary:                   darken($button-bg-secondary, 10) !default;
@@ -425,6 +429,8 @@ $button-border-style-secondary:               solid !default;
 // Button design alternative
 $button-font-weight-alt:                      $font-weight-base !default;
 $button-transform-alt:                        none !default;
+$button-decoration-alt:                       none !default;
+$button-hover-decoration-alt:                 none !default;
 
 $button-bg-alt:                               $dark !default;
 $button-hover-bg-alt:                         darken($button-bg-alt, 10) !default;

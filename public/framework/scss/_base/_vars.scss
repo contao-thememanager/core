@@ -150,6 +150,8 @@
 
   --btn-fw:#{$button-font-weight-primary};
   --btn-tf:#{$button-transform-primary};
+  --btn-td:#{$button-decoration-primary};
+  --btn-td-hvr:#{$button-hover-decoration-primary};
 
   --btn-bdr:#{$button-border-width-primary} #{$button-border-style-primary};
   --btn-bdr-r:#{$button-border-radius-primary};

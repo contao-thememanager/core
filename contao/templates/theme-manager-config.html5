@@ -18,9 +18,9 @@
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-size,form-field-icon-color,form-field-icon-background;' .
             '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
             '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
-            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
-            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
-            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
+            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-decoration-primary,button-hover-decoration-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
+            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-decoration-secondary,button-hover-decoration-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
+            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-decoration-alt,button-hover-decoration-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
             '{spacing_inner_legend:hide},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
             '{divider_legend:hide},divider-size,divider-style,divider-color;' .
@@ -1948,14 +1948,28 @@
             'default'                 => '$font-weight-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-primary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w25'],
         ],
         'button-transform-primary' => [
             'default'                 => 'none',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-primary'],
             'inputType'               => 'select',
             'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-primary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-primary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
         ],
 
         'button-bg-primary' => [
@@ -2060,14 +2074,28 @@
             'default'                 => '$font-weight-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-secondary'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w25'],
         ],
         'button-transform-secondary' => [
             'default'                 => 'none',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-secondary'],
             'inputType'               => 'select',
             'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-secondary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-secondary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
         ],
 
         'button-bg-secondary' => [
@@ -2172,14 +2200,28 @@
             'default'                 => '$font-weight-base',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-alt'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w25'],
         ],
         'button-transform-alt' => [
             'default'                 => 'none',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-alt'],
             'inputType'               => 'select',
             'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w50'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-alt' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-alt' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
         ],
 
         'button-bg-alt' => [

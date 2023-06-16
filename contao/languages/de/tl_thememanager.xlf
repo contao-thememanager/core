@@ -2428,6 +2428,22 @@
         <source>Here you can choose the text-transformation for primary buttons.</source>
         <target>Hier können Sie die Text-Transformierung (text-transform) für primäre Buttons auswählen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-primary.0">
+        <source>$button-decoration-primary</source>
+        <target>$button-decoration-primary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons.</source>
+        <target>Hier können Sie die Text-Dekoration für primäre Buttons auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.0">
+        <source>$button-hover-decoration-primary</source>
+        <target>$button-hover-decoration-primary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons when hovered.</source>
+        <target>Hier können Sie die Text-Dekoration für primäre Buttons bei hover auswählen.</target>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-primary.0">
         <source>$button-bg-primary</source>
@@ -2569,6 +2585,22 @@
         <source>Here you can choose the text-transformation for secondary buttons.</source>
         <target>Hier können Sie die Text-Transformierung (text-transform) für sekundäre Buttons auswählen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.0">
+        <source>$button-decoration-secondary</source>
+        <target>$button-decoration-secondary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons.</source>
+        <target>Hier können Sie die Text-Dekoration für sekundäre Buttons auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.0">
+        <source>$button-hover-decoration-secondary</source>
+        <target>$button-hover-decoration-secondary</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons when hovered.</source>
+        <target>Hier können Sie die Text-Dekoration für sekundäre Buttons bei hover auswählen.</target>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-secondary.0">
         <source>$button-bg-secondary</source>
@@ -2709,6 +2741,22 @@
       <trans-unit id="tl_thememanager.button-transform-alt.1">
         <source>Here you can choose the text-transformation for alternative buttons.</source>
         <target>Hier können Sie die Text-Transformierung (text-transform) für alternative Buttons auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.0">
+        <source>$button-decoration-alt</source>
+        <target>$button-decoration-alt</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons.</source>
+        <target>Hier können Sie die Text-Dekoration für alternative Buttons auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.0">
+        <source>$button-hover-decoration-alt</source>
+        <target>$button-hover-decoration-alt</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons when hovered.</source>
+        <target>Hier können Sie die Text-Dekoration für alternative Buttons bei hover auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-alt.0">
