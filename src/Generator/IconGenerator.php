@@ -9,7 +9,6 @@
 namespace ContaoThemeManager\Core\Generator;
 
 use Contao\Config;
-use Contao\StringUtil;
 use Contao\System;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
@@ -66,14 +65,14 @@ class IconGenerator
             return null;
         }
 
-        if (!$absFontPath = realpath($relFontPath = Path::join(System::getContainer()->getParameter('kernel.project_dir'), Path::getDirectory($fontPath))))
+        if (!$absFontPath = realpath($relFontPath = $this->getFilePath($fontPath)))
         {
             $this->compiler->msg('The path: "' . $relFontPath . '" does not exist.', FileCompiler::MSG_ERROR);
             return null;
         }
 
         // Scan files
-        $arrFiles = array_values(array_diff(scandir($absFontPath), ['..', '.']));
+        $arrFiles = array_values(array_diff(scandir($relFontPath), ['..', '.']));
         $arrFileInformation = [];
 
         foreach ($arrFiles as $file)
@@ -93,7 +92,7 @@ class IconGenerator
             return null;
         }
 
-        return Path::join($absFontPath, $arrFileInformation['svg']['filename']);
+        return Path::join($relFontPath, $arrFileInformation['svg']['filename']);
     }
 
     /**
@@ -227,7 +226,7 @@ class IconGenerator
         if (null !== $fontPath)
         {
             // Convert font path
-            $fontPath = '/' . Path::normalize(StringUtil::stripRootDir($fontPath)) . '.woff';
+            $fontPath = '/' . Path::normalize($this->stripRootOrWebDir($fontPath)) . '.woff';
 
             // Add font-source
             $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
@@ -266,5 +265,48 @@ class IconGenerator
         }
 
         return ThemeManager::createCSSFile('icon', $css, $this->compiler);
+    }
+
+    /**
+     * Check if an icon font exists and return the full path
+     */
+    private function getFilePath(string $strFilePath): bool|string
+    {
+        $container  = System::getContainer();
+        $projectDir = $container->getParameter('kernel.project_dir');
+        $webDir     = $container->getParameter('contao.web_dir');
+
+        $fontPath    = Path::getDirectory($strFilePath);
+        $projectPath = Path::join($projectDir, $fontPath);
+        $webDirPath  = Path::join($webDir, $fontPath);
+
+        // Return the path
+        return !file_exists($projectPath) && file_exists($webDirPath) ? $webDirPath : $projectPath;
+    }
+
+    /**
+     * Strips the web or root dir
+     */
+    private function stripRootOrWebDir(string $path): string
+    {
+        $container  = System::getContainer();
+        $directory  = Path::normalize($container->getParameter('contao.web_dir'));
+        $length     = strlen($directory);
+        $normalPath = Path::normalize($path);
+
+        if (strncmp($normalPath, $directory, $length) === 0 && \strlen($normalPath) > $length && $normalPath[$length] === '/')
+        {
+            return substr($path, strlen($directory) +1);
+        }
+
+        $directory = Path::normalize($container->getParameter('kernel.project_dir'));
+        $length    = strlen($directory);
+
+        if (strncmp($normalPath, $directory, $length) === 0 && \strlen($normalPath) > $length && $normalPath[$length] === '/')
+        {
+            return substr($path, strlen($directory) +1);
+        }
+
+        throw new \InvalidArgumentException(sprintf('Icon path "%s" is not inside the Contao root or web dir', $path));
     }
 }
