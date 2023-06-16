@@ -38,7 +38,7 @@
 
   // Selection
   --selection-clr:#{$selection-color};
-  --selection-bg:#{$selection-background-color};
+  --selection-bg:#{$selection-bg};
 
   // Breakpoints
   @each $bp in map-keys($breakpoints) {

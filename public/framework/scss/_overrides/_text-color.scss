@@ -3,6 +3,9 @@
   &-base {
     color: var(--text-clr-base);
 
+    --selection-clr:#{$selection-color};
+    --selection-bg:#{$selection-bg};
+
     --h1-clr:#{$h1-color};
     --h2-clr:#{$h2-color};
     --h3-clr:#{$h3-color};
@@ -52,6 +55,8 @@
 
   &-inv {
     color: var(--text-clr-invert);
+    --selection-clr:#{$selection-color-invert};
+    --selection-bg:#{$selection-bg-invert};
 
     --h1-clr:#{$h1-color-invert};
     --h2-clr:#{$h2-color-invert};

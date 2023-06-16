@@ -29,7 +29,7 @@
             '{image_text_legend:hide},image-text-behaviour-min-width,image-text-ratio-options;' .
             '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
             '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding,breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
-            '{misc_legend:hide},box-shadow,selection-color,selection-background-color,aspect-ratios;'
+            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;'
     ],
     'fields'   => [
 
@@ -2857,13 +2857,25 @@
             'default'                 => 'var(--text-clr-invert)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 clr wizard'],
+            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 clr wizard'],
         ],
-        'selection-background-color' => [
-            'default'                 => 'var(--clr-primary)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-background-color'],
+        'selection-color-invert' => [
+            'default'                 => 'var(--text-clr-base)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color-invert'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
+            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'selection-bg' => [
+            'default'                 => 'var(--clr-primary)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'selection-bg-invert' => [
+            'default'                 => 'var(--body-bg)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
         'aspect-ratios' => [
             'default'                 => '(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)',

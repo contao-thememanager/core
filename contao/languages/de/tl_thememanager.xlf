@@ -3493,13 +3493,29 @@
         <source>Here you can set the text color for selected text.</source>
         <target>Hier können Sie die Schriftfarbe von markiertem Text einstellen.</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.selection-background-color.0">
-        <source>$selection-background-color</source>
-        <target>$selection-background-color</target>
+      <trans-unit id="tl_thememanager.selection-color-invert.0">
+        <source>$selection-color-invert</source>
+        <target>$selection-color-invert</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.selection-background-color.1">
+      <trans-unit id="tl_thememanager.selection-color-invert.1">
+        <source>Here you can set the inverted text color for selected text.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe von markiertem Text einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg.0">
+        <source>$selection-bg</source>
+        <target>$selection-bg</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg.1">
         <source>Here you can set the background-color for selected text.</source>
         <target>Hier können Sie die Hintergrundfarbe von markiertem Text einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg-invert.0">
+        <source>$selection-bg-invert</source>
+        <target>$selection-bg-invert</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg-invert.1">
+        <source>Here you can set the inverted background-color for selected text.</source>
+        <target>Hier können Sie die invertierte Hintergrundfarbe von markiertem Text einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.aspect-ratios.0">

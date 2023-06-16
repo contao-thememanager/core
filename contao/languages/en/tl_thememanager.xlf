@@ -2612,11 +2612,23 @@
       <trans-unit id="tl_thememanager.selection-color.1">
         <source>Here you can set the text color for selected text.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.selection-background-color.0">
-        <source>$selection-background-color</source>
+      <trans-unit id="tl_thememanager.selection-color-invert.0">
+        <source>$selection-color-invert</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.selection-background-color.1">
+      <trans-unit id="tl_thememanager.selection-color-invert.1">
+        <source>Here you can set the inverted text color for selected text.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg.0">
+        <source>$selection-bg</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg.1">
         <source>Here you can set the background-color for selected text.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg-invert.0">
+        <source>$selection-bg-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.selection-bg-invert.1">
+        <source>Here you can set the inverted background-color for selected text.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.aspect-ratios.0">
