@@ -608,7 +608,7 @@
         <field title="alias">imageText</field>
         <field title="title">Mode</field>
         <field title="description">Defines the layout mode for image-text components.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"img--flex";s:5:"value";s:4:"Flex";}i:1;a:2:{s:3:"key";s:10:"img--float";s:5:"value";s:5:"Float";}i:2;a:2:{s:3:"key";s:13:"txt--absolute";s:5:"value";s:11:"Text within";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"img--flex";s:5:"value";s:4:"Flex";}i:1;a:2:{s:3:"key";s:10:"img--float";s:5:"value";s:5:"Float";}i:2;a:2:{s:3:"key";s:13:"txt--absolute";s:5:"value";s:11:"Text within";}i:3;a:2:{s:3:"key";s:24:"txt--absolute txt--hover";s:5:"value";s:19:"Text within (Hover)";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="passToTemplate">1</field>

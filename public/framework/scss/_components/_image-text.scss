@@ -44,18 +44,21 @@
   .c_image { width: 100%; }
 
   .c_text {
-    //--it-wdth: calc(100% * var(--ratio-x, 1));
     --it-wdth: calc(100% * var(--ratio-x));
 
     position: absolute;
     padding: var(--e-m);
 
     max-height: calc(100% - var(--i-py,0%) - var(--i-py,0%));
-    //width: calc(var(--it-wdth,100%) - var(--i-px,0%) - var(--i-px,0%));
     width: calc(var(--it-wdth) - var(--i-px,0%) - var(--i-px,0%));
 
     overflow: hidden;
   }
+}
+
+.txt--hover {
+  .c_text { opacity: 0; }
+  &:hover { .c_text { opacity: 1; } }
 }
 
 .img--flex {
