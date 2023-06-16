@@ -4,10 +4,8 @@
 
 @mixin box-shadow($value: $box-shadow, $inset: false) {
   @if($inset) {
-    -webkit-box-shadow: inset $value;
     box-shadow: inset $value;
   } @else {
-    -webkit-box-shadow: $value;
     box-shadow: $value;
   }
 }
