@@ -359,7 +359,7 @@
       <child alias="linkColor">
         <field title="pid">30</field>
         <field title="sorting">100</field>
-        <field title="alias">link-color</field>
+        <field title="alias">linkColor</field>
         <field title="title">Link-Color</field>
         <field title="description">Defines the color of the links.</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:15:"color-link-base";s:5:"value";s:7:"Regular";}i:1;a:2:{s:3:"key";s:14:"color-link-inv";s:5:"value";s:6:"Invert";}i:2;a:2:{s:3:"key";s:13:"color-link-ex";s:5:"value";s:5:"Extra";}}</field>
