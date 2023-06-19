@@ -41,7 +41,7 @@ return [
                         'en' => ['Icon', 'Please select an icon from the icon overview.'],
                     ],
                     'inputType' => 'rocksolid_icon_picker',
-                    'eval' => ['iconFont' => Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont']],
+                    'eval' => ['iconFont' => Config::get('thememanagerIconFont') ?: $GLOBALS['CTM_SETTINGS']['iconFont']],
                 ],
                 'text' => [
                     'label' => [

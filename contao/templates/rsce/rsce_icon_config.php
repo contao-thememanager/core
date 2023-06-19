@@ -25,7 +25,7 @@ return [
             ],
             'inputType' => 'rocksolid_icon_picker',
             'eval' => [
-                'iconFont' => Config::get('thememanagerIconFont') ?? $GLOBALS['CTM_SETTINGS']['iconFont']
+                'iconFont' => Config::get('thememanagerIconFont') ?: $GLOBALS['CTM_SETTINGS']['iconFont']
             ]
         ]
     ]
