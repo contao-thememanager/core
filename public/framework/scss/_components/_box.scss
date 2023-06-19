@@ -1,6 +1,8 @@
-.box,
-.box-list {
+.box {
   --b-bg:#{$boxed-background-color};
+}
+
+.box-list {
   --i-bg:#{$boxed-background-color};
 }
 
