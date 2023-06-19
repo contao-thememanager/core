@@ -1,6 +1,6 @@
 .grid {
   --v-gap:var(--gtr-btm);
-  --flex-justify:normal;
+  --justify:normal;
   --flex-items:normal;
 
   > .inside {
@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     flex-direction: row;
 
-    justify-content: var(--flex-justify);
+    justify-content: var(--justify);
     align-items:     var(--flex-items);
     row-gap:         var(--v-gap);
 

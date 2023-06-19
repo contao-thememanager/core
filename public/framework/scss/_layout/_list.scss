@@ -1,9 +1,9 @@
 %list-flex-direction {
-  --flex-justify:center;
+  --justify:center;
 }
 
 %list-auto {
-  --flex-justify:center;
+  --justify:center;
   --i:-!important;
 }
 
@@ -15,7 +15,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: var(--flex-justify);
+    justify-content: var(--justify);
 
     column-gap: rem(10);
   }

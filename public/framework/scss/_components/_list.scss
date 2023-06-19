@@ -23,7 +23,7 @@ li {
   &.gtr-1     {--i-v-gap:calc(var(--gtr-btm-sml)/2);}
   &.gtr-2     {--i-v-gap:calc(var(--gtr-btm)/2);}
   &.flow-y    {--i-v-gap:#{rem(3)};--h-gap:0;}
-  &.flow-auto {--i-v-gap: 0;--h-gap:var(--v-gap);justify-content:var(--flex-justify);};
+  &.flow-auto {--i-v-gap: 0;--h-gap:var(--v-gap);justify-content:var(--justify);};
 }
 
 .flow-auto {@extend %list-auto}; // Extend above grid list properties

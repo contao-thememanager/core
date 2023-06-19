@@ -3,13 +3,13 @@
   --h-gap:var(--gtr);
   --i-h-gap:var(--h-gap); // Property specificity for multi-nested grid / grid-lists
   --i:1; // If items are not set, always set it to 1
-  --flex-justify:normal;
+  --justify:normal;
   --flex-items:normal;
 
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: var(--flex-justify);
+  justify-content: var(--justify);
   align-items:     var(--flex-items);
 
   gap: var(--v-gap) var(--h-gap);

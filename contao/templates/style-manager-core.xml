@@ -386,7 +386,82 @@
         <field title="alias">justifyPagination</field>
         <field title="title">Justify-Content</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:5:"Start";}i:1;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:3:"End";}i:2;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:7:"Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:6:"Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:6:"Evenly";}}</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="justifyPaginationXS">
+        <field title="pid">40</field>
+        <field title="sorting">200</field>
+        <field title="alias">justifyPaginationXS</field>
+        <field title="title">Justify-Content &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="justifyPaginationS">
+        <field title="pid">40</field>
+        <field title="sorting">300</field>
+        <field title="alias">justifyPaginationS</field>
+        <field title="title">Justify-Content &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="justifyPaginationM">
+        <field title="pid">40</field>
+        <field title="sorting">400</field>
+        <field title="alias">justifyPaginationM</field>
+        <field title="title">Justify-Content &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="justifyPaginationL">
+        <field title="pid">40</field>
+        <field title="sorting">500</field>
+        <field title="alias">justifyPaginationL</field>
+        <field title="title">Justify-Content &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="justifyPaginationXL">
+        <field title="pid">40</field>
+        <field title="sorting">600</field>
+        <field title="alias">justifyPaginationXL</field>
+        <field title="title">Justify-Content &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -397,12 +472,87 @@
       </child>
       <child alias="alignPagination">
         <field title="pid">40</field>
-        <field title="sorting">200</field>
+        <field title="sorting">1100</field>
         <field title="alias">alignPagination</field>
         <field title="title">Text-Alignment</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="alignPaginationXS">
+        <field title="pid">40</field>
+        <field title="sorting">1200</field>
+        <field title="alias">alignPaginationXS</field>
+        <field title="title">Text-Alignment &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="alignPaginationS">
+        <field title="pid">40</field>
+        <field title="sorting">1300</field>
+        <field title="alias">alignPaginationS</field>
+        <field title="title">Text-Alignment &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="alignPaginationM">
+        <field title="pid">40</field>
+        <field title="sorting">1400</field>
+        <field title="alias">alignPaginationM</field>
+        <field title="title">Text-Alignment &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="alignPaginationL">
+        <field title="pid">40</field>
+        <field title="sorting">1500</field>
+        <field title="alias">alignPaginationL</field>
+        <field title="title">Text-Alignment &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:7:"gallery";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:9:{i:0;s:8:"comments";i:1;s:9:"faqreader";i:2;s:9:"eventlist";i:3;s:11:"eventreader";i:4;s:11:"newsarchive";i:5;s:8:"newslist";i:6;s:10:"newsreader";i:7;s:6:"search";i:8;s:7:"listing";}</field>
+      </child>
+      <child alias="alignPaginationXL">
+        <field title="pid">40</field>
+        <field title="sorting">1600</field>
+        <field title="alias">alignPaginationXL</field>
+        <field title="title">Text-Alignment &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the alignment of the pagination description.</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -788,21 +938,9 @@
         <field title="extendModule">1</field>
         <field title="modules">a:2:{i:0;s:10:"navigation";i:1;s:9:"customnav";}</field>
       </child>
-      <child alias="justifyNavigation">
-        <field title="pid">1030</field>
-        <field title="sorting">200</field>
-        <field title="alias">justifyNavigation</field>
-        <field title="title">Justify-Content</field>
-        <field title="description">Defines the alignment of first level navigation elements.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:5:"Start";}i:1;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:3:"End";}i:2;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:7:"Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:6:"Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:6:"Evenly";}}</field>
-        <field title="chosen">1</field>
-        <field title="blankOption">1</field>
-        <field title="extendModule">1</field>
-        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
-      </child>
       <child alias="direction">
         <field title="pid">1030</field>
-        <field title="sorting">300</field>
+        <field title="sorting">200</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
         <field title="description">Defines the behavior / alignment of the navigation.</field>
@@ -810,6 +948,79 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
+      </child>
+      <child alias="justifyNavigation">
+        <field title="pid">1030</field>
+        <field title="sorting">1100</field>
+        <field title="alias">justifyNavigation</field>
+        <field title="title">Justify-Content</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
+      </child>
+      <child alias="justifyNavigationXS">
+        <field title="pid">1030</field>
+        <field title="sorting">1200</field>
+        <field title="alias">justifyNavigationXS</field>
+        <field title="title">Justify-Content &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
+      </child>
+      <child alias="justifyNavigationS">
+        <field title="pid">1030</field>
+        <field title="sorting">1300</field>
+        <field title="alias">justifyNavigationS</field>
+        <field title="title">Justify-Content &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
+      </child>
+      <child alias="justifyNavigationM">
+        <field title="pid">1030</field>
+        <field title="sorting">1400</field>
+        <field title="alias">justifyNavigationM</field>
+        <field title="title">Justify-Content &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
+      </child>
+      <child alias="justifyNavigationL">
+        <field title="pid">1030</field>
+        <field title="sorting">1500</field>
+        <field title="alias">justifyNavigationL</field>
+        <field title="title">Justify-Content &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
+      </child>
+      <child alias="justifyNavigationXL">
+        <field title="pid">1030</field>
+        <field title="sorting">1600</field>
+        <field title="alias">justifyNavigationXL</field>
+        <field title="title">Justify-Content &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the alignment of first level navigation elements.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:3:{i:0;s:10:"navigation";i:1;s:9:"customnav";i:2;s:10:"breadcrumb";}</field>
       </child>
     </children>
   </archive>
@@ -1103,9 +1314,79 @@
         <field title="pid">1070</field>
         <field title="sorting">100</field>
         <field title="alias">gridHorizontalAlignment</field>
-        <field title="title">Horizontal-Alignment</field>
+        <field title="title">Horizontal-Alignment - Items</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
+      </child>
+      <child alias="gridHorizontalAlignmentXS">
+        <field title="pid">1070</field>
+        <field title="sorting">200</field>
+        <field title="alias">gridHorizontalAlignmentXS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
+      </child>
+      <child alias="gridHorizontalAlignmentS">
+        <field title="pid">1070</field>
+        <field title="sorting">300</field>
+        <field title="alias">gridHorizontalAlignmentS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
+      </child>
+      <child alias="gridHorizontalAlignmentM">
+        <field title="pid">1070</field>
+        <field title="sorting">400</field>
+        <field title="alias">gridHorizontalAlignmentM</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
+      </child>
+      <child alias="gridHorizontalAlignmentL">
+        <field title="pid">1070</field>
+        <field title="sorting">500</field>
+        <field title="alias">gridHorizontalAlignmentL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
+      </child>
+      <child alias="gridHorizontalAlignmentXL">
+        <field title="pid">1070</field>
+        <field title="sorting">600</field>
+        <field title="alias">gridHorizontalAlignmentXL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1115,11 +1396,12 @@
       </child>
       <child alias="gridVerticalAlignment">
         <field title="pid">1070</field>
-        <field title="sorting">200</field>
+        <field title="sorting">1100</field>
         <field title="alias">gridVerticalAlignment</field>
-        <field title="title">Vertical-Alignment</field>
+        <field title="title">Vertical-Alignment - Items</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
+        <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1129,11 +1411,77 @@
       </child>
       <child alias="wrapperGridHorizontalAlignment">
         <field title="pid">1070</field>
-        <field title="sorting">300</field>
+        <field title="sorting">2100</field>
         <field title="alias">wrapperGridHorizontalAlignment</field>
-        <field title="title">Horizontal-Alignment</field>
+        <field title="title">Horizontal-Alignment - Items</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:3;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:4;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:5;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:19:"wrapperStartContent";}</field>
+      </child>
+      <child alias="wrapperGridHorizontalAlignmentXS">
+        <field title="pid">1070</field>
+        <field title="sorting">2200</field>
+        <field title="alias">wrapperGridHorizontalAlignmentXS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:19:"wrapperStartContent";}</field>
+      </child>
+      <child alias="wrapperGridHorizontalAlignmentS">
+        <field title="pid">1070</field>
+        <field title="sorting">2300</field>
+        <field title="alias">wrapperGridHorizontalAlignmentS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:19:"wrapperStartContent";}</field>
+      </child>
+      <child alias="wrapperGridHorizontalAlignmentM">
+        <field title="pid">1070</field>
+        <field title="sorting">2400</field>
+        <field title="alias">wrapperGridHorizontalAlignmentM</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:19:"wrapperStartContent";}</field>
+      </child>
+      <child alias="wrapperGridHorizontalAlignmentL">
+        <field title="pid">1070</field>
+        <field title="sorting">2500</field>
+        <field title="alias">wrapperGridHorizontalAlignmentL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:19:"wrapperStartContent";}</field>
+      </child>
+      <child alias="wrapperGridHorizontalAlignmentXL">
+        <field title="pid">1070</field>
+        <field title="sorting">2600</field>
+        <field title="alias">wrapperGridHorizontalAlignmentXL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1142,11 +1490,12 @@
       </child>
       <child alias="wrapperGridVerticalAlignment">
         <field title="pid">1070</field>
-        <field title="sorting">400</field>
+        <field title="sorting">3100</field>
         <field title="alias">wrapperGridVerticalAlignment</field>
-        <field title="title">Vertical-Alignment</field>
+        <field title="title">Vertical-Alignment - Items</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
+        <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1155,12 +1504,12 @@
       </child>
       <child alias="gridSelfAlignment">
         <field title="pid">1070</field>
-        <field title="sorting">1000</field>
+        <field title="sorting">4100</field>
         <field title="alias">gridSelfAlignment</field>
         <field title="title">Vertical-Alignment</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:18:"col-stretch sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
-        <field title="cssClass">clr</field>
+        <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1170,7 +1519,7 @@
       </child>
       <child alias="gridSelfAlignmentXS">
         <field title="pid">1070</field>
-        <field title="sorting">1100</field>
+        <field title="sorting">4200</field>
         <field title="alias">gridSelfAlignmentXS</field>
         <field title="title">Vertical-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
@@ -1184,7 +1533,7 @@
       </child>
       <child alias="gridSelfAlignmentS">
         <field title="pid">1070</field>
-        <field title="sorting">1200</field>
+        <field title="sorting">4300</field>
         <field title="alias">gridSelfAlignmentS</field>
         <field title="title">Vertical-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
@@ -1198,7 +1547,7 @@
       </child>
       <child alias="gridSelfAlignmentM">
         <field title="pid">1070</field>
-        <field title="sorting">1300</field>
+        <field title="sorting">4400</field>
         <field title="alias">gridSelfAlignmentM</field>
         <field title="title">Vertical-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
@@ -1212,7 +1561,7 @@
       </child>
       <child alias="gridSelfAlignmentL">
         <field title="pid">1070</field>
-        <field title="sorting">1400</field>
+        <field title="sorting">4500</field>
         <field title="alias">gridSelfAlignmentL</field>
         <field title="title">Vertical-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
@@ -1226,7 +1575,7 @@
       </child>
       <child alias="gridSelfAlignmentXL">
         <field title="pid">1070</field>
-        <field title="sorting">1500</field>
+        <field title="sorting">4600</field>
         <field title="alias">gridSelfAlignmentXL</field>
         <field title="title">Vertical-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
@@ -2076,7 +2425,7 @@
       </child>
       <child alias="gutter">
         <field title="pid">2010</field>
-        <field title="sorting">1000</field>
+        <field title="sorting">1100</field>
         <field title="alias">gutter</field>
         <field title="title">Gutter</field>
         <field title="description">Defines the gap between list items.</field>
@@ -2094,11 +2443,97 @@
       </child>
       <child alias="justify">
         <field title="pid">2010</field>
-        <field title="sorting">1100</field>
+        <field title="sorting">2100</field>
         <field title="alias">justify</field>
-        <field title="title">Horizontal Alignment</field>
+        <field title="title">Horizontal-Alignment - Items</field>
         <field title="description">Defines the horizontal alignment of all child elements within the list.</field>
-        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:14:"justify-revert";s:5:"value";s:6:"Revert";}}</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
+      </child>
+      <child alias="justifyXS">
+        <field title="pid">1070</field>
+        <field title="sorting">2200</field>
+        <field title="alias">justifyXS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
+      </child>
+      <child alias="justifyS">
+        <field title="pid">1070</field>
+        <field title="sorting">2300</field>
+        <field title="alias">justifyS</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
+      </child>
+      <child alias="justifyM">
+        <field title="pid">1070</field>
+        <field title="sorting">2400</field>
+        <field title="alias">justifyM</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
+      </child>
+      <child alias="justifyL">
+        <field title="pid">1070</field>
+        <field title="sorting">2500</field>
+        <field title="alias">justifyL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
+      </child>
+      <child alias="justifyXL">
+        <field title="pid">1070</field>
+        <field title="sorting">2600</field>
+        <field title="alias">justifyXL</field>
+        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2111,11 +2546,12 @@
       </child>
       <child alias="alignment">
         <field title="pid">2010</field>
-        <field title="sorting">1200</field>
+        <field title="sorting">3100</field>
         <field title="alias">alignment</field>
-        <field title="title">Vertical Alignment</field>
+        <field title="title">Vertical-Alignment - Items</field>
         <field title="description">Defines the vertical alignment of all child elements within the list.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}i:1;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:2;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:3;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:4;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}}</field>
+        <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2227,7 +2663,7 @@
       </child>
       <child alias="direction">
         <field title="pid">2020</field>
-        <field title="sorting">1000</field>
+        <field title="sorting">1100</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
         <field title="description">Defines the alignment of the columns.</field>
@@ -2243,7 +2679,7 @@
       </child>
       <child alias="listGutter">
         <field title="pid">2020</field>
-        <field title="sorting">1100</field>
+        <field title="sorting">1200</field>
         <field title="alias">listGutter</field>
         <field title="title">Gutter</field>
         <field title="description">Defines the vertical gap between list items.</field>
@@ -2256,7 +2692,7 @@
       </child>
       <child alias="listStyle">
         <field title="pid">2020</field>
-        <field title="sorting">1200</field>
+        <field title="sorting">1300</field>
         <field title="alias">listStyle</field>
         <field title="title">List-style</field>
         <field title="description">Resets the list-style to not include markers and padding</field>
@@ -2268,9 +2704,94 @@
         <field title="extendModule">1</field>
         <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
       </child>
+      <child alias="justifyList">
+        <field title="pid">2020</field>
+        <field title="sorting">2100</field>
+        <field title="alias">justifyList</field>
+        <field title="title">Justify List</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">separator</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
+      <child alias="justifyListXS">
+        <field title="pid">2020</field>
+        <field title="sorting">2200</field>
+        <field title="alias">justifyListXS</field>
+        <field title="title">Justify List &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
+      <child alias="justifyListS">
+        <field title="pid">2020</field>
+        <field title="sorting">2300</field>
+        <field title="alias">justifyListS</field>
+        <field title="title">Justify List &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
+      <child alias="justifyListM">
+        <field title="pid">2020</field>
+        <field title="sorting">2400</field>
+        <field title="alias">justifyListM</field>
+        <field title="title">Justify List &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
+      <child alias="justifyListL">
+        <field title="pid">2020</field>
+        <field title="sorting">2500</field>
+        <field title="alias">justifyListL</field>
+        <field title="title">Justify List &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
+      <child alias="justifyListXL">
+        <field title="pid">2020</field>
+        <field title="sorting">2600</field>
+        <field title="alias">justifyListXL</field>
+        <field title="title">Justify List &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
+        <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+      </child>
       <child alias="markerColor">
         <field title="pid">2020</field>
-        <field title="sorting">1300</field>
+        <field title="sorting">3100</field>
         <field title="alias">markerColor</field>
         <field title="title">Marker-color</field>
         <field title="description">Here you can select the color of the list marker</field>
@@ -2280,21 +2801,6 @@
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
-        <field title="extendModule">1</field>
-        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
-      </child>
-      <child alias="justifyList">
-        <field title="pid">2020</field>
-        <field title="sorting">1400</field>
-        <field title="alias">justifyList</field>
-        <field title="title">Justify List (Auto)</field>
-        <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:5:"Start";}i:1;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:3:"End";}i:2;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:7:"Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:6:"Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:6:"Evenly";}}</field>
-        <field title="cssClass">separator</field>
-        <field title="blankOption">1</field>
-        <field title="passToTemplate">1</field>
-        <field title="extendContentElement">1</field>
-        <field title="contentElements">a:2:{i:0;s:19:"rsce_hyperlink_list";i:1;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
       </child>
