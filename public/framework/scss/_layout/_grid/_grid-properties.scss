@@ -5,7 +5,7 @@
   &-between  { --flex-justify: space-between; }
   &-around   { --flex-justify: space-around; }
   &-evenly   { --flex-justify: space-evenly; }
-  &-revert   { --flex-justify: revert; }
+  &-normal   { --flex-justify: normal; }
 }
 
 .items {
