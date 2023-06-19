@@ -1,4 +1,14 @@
 @include generate-infix-breakpoint-styles((
+  // Flex-justify
+  '.justify': (
+    '&-start':   ( --flex-justify: flex-start ),
+    '&-center':  ( --flex-justify: center ),
+    '&-end':     ( --flex-justify: flex-end ),
+    '&-between': ( --flex-justify: space-between ),
+    '&-around':  ( --flex-justify: space-around ),
+    '&-evenly':  ( --flex-justify: space-evenly ),
+    '&-normal':  ( --flex-justify: normal )
+  ),
   // Text alignments
   '.text': (
     '&-left':    ( text-align: left ),

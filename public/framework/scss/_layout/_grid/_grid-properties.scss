@@ -1,13 +1,3 @@
-.justify {
-  &-start    { --flex-justify: flex-start; }
-  &-center   { --flex-justify: center; }
-  &-end      { --flex-justify: flex-end; }
-  &-between  { --flex-justify: space-between; }
-  &-around   { --flex-justify: space-around; }
-  &-evenly   { --flex-justify: space-evenly; }
-  &-normal   { --flex-justify: normal; }
-}
-
 .items {
   &-start    { --flex-items: flex-start; }
   &-center   { --flex-items: center; }
