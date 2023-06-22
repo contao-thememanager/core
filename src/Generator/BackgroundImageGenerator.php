@@ -10,8 +10,10 @@ namespace ContaoThemeManager\Core\Generator;
 
 use Contao\FilesModel;
 use Contao\StringUtil;
+use Contao\ThemeModel;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
+use Symfony\Component\Filesystem\Path;
 
 /**
  * Generates a background css and xml from selected files
@@ -21,6 +23,7 @@ use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 class BackgroundImageGenerator
 {
     protected ?FileCompiler $compiler = null;
+    protected ?ThemeModel $objTheme = null;
 
     /**
      * Generates the background set when compiling the theme
@@ -29,6 +32,8 @@ class BackgroundImageGenerator
     public function generate($configVars, $xml, $compiler): void
     {
         $this->compiler = $compiler;
+        $this->objTheme = $compiler->objTheme;
+
         $this->compiler->msg('Backgrounds', FileCompiler::MSG_HEAD);
 
         if (empty($backgrounds = $this->getBackgroundImages()))
@@ -61,47 +66,34 @@ class BackgroundImageGenerator
      */
     private function getBackgroundImages(): array
     {
-        $backgrounds = [];
+        $bg  = [];
+        $bg2 = [];
 
-        if (null !== ($objBgImages = FilesModel::findBy('ctmBackgroundImage', 1)))
+        if (null !== ($objImages = FilesModel::findBy('ctmBackgroundImage', 1)))
         {
-            foreach ($objBgImages as $objImage)
+            $images = $this->sortOutAndOrderByIncludePath($objImages);
+
+            foreach ($images as $image)
             {
-                $name = StringUtil::sanitizeFileName(pathinfo($objImage->name, PATHINFO_FILENAME));
-                $path = $objImage->path;
-
-                // Check if same name already exists and add a suffix
-                if (array_key_exists($name, $backgrounds))
+                if ($image->themeFolder)
                 {
-                    $count = 1;
-                    $rename = $name . '_' . $count;
-
-                    while (array_key_exists($rename, $backgrounds))
-                    {
-                        $count += 1;
-                        $rename = $name . '_' . $count;
-                    }
-
-                    $name = $rename;
+                    $this->setBackgroundInformation($image, $bg);
                 }
-
-                $backgrounds[$name] = [
-                    'key'   => 'bgi-' . $name,
-                    'value' => 'BG-' . $name,
-                    'path'  => $path
-                ];
+                else
+                {
+                    $this->setBackgroundInformation($image, $bg2);
+                }
             }
 
-            // Sanitize array_keys
-            $backgrounds = array_values($backgrounds);
+            $bg = array_values(array_merge($bg, $bg2));
         }
 
-        if (!!$bgCount = count($backgrounds))
+        if (!!$bgCount = count($bg))
         {
             $this->compiler->msg($bgCount . ' background image(s) imported', FileCompiler::MSG_SUCCESS);
         }
 
-        return $backgrounds;
+        return $bg;
     }
 
     /**
@@ -147,5 +139,128 @@ class BackgroundImageGenerator
         }
 
         return ThemeManager::createCSSFile('background', $css, $this->compiler);
+    }
+
+    /**
+     * Returns the theme folder paths
+     */
+    private function getThemeFolders(?ThemeModel $objTheme): array
+    {
+        $paths = [];
+
+        if (
+            null === $objTheme ||
+            null === ($folders = $objTheme->folders) ||
+            null === ($objFolders = FilesModel::findMultipleByUuids(StringUtil::deserialize($folders)))
+        )
+        {
+            return $paths;
+        }
+
+        foreach ($objFolders as $folder)
+        {
+            $paths[] = $folder->path;
+        }
+
+        return $paths;
+    }
+
+    /**
+     * Gets paths that should be included and excluded from searching for background images
+     */
+    private function getExcludeAndIncludePaths(): array
+    {
+        $excludePaths = [];
+        $includePaths = [];
+
+        if (null !== ($objThemes = ThemeModel::findAll()))
+        {
+            foreach ($objThemes as $objTheme)
+            {
+                if ($objTheme->id !== $this->objTheme->id)
+                {
+                    $excludePaths = array_merge($excludePaths, $this->getThemeFolders($objTheme));
+                }
+                else
+                {
+                    $includePaths = $this->getThemeFolders($objTheme);
+                }
+            }
+        }
+
+        return [$includePaths, $excludePaths];
+    }
+
+    /**
+     * Sorts out backgrounds from other themes and sorts returns an array collection that is ordered by theme
+     */
+    private function sortOutAndOrderByIncludePath($objFiles): array
+    {
+        $themeFiles = [];
+        $leftover   = [];
+
+        [$includePaths, $excludePaths] = $this->getExcludeAndIncludePaths();
+
+        foreach ($objFiles as $file)
+        {
+            foreach ($includePaths as $includePath)
+            {
+                if (Path::isBasePath($includePath, $file->path))
+                {
+                    $file->themeFolder = true;
+                    $themeFiles[$file->path] = $file;
+                    continue 2;
+                }
+            }
+
+            foreach (array_flip(array_flip($excludePaths)) as $excludePath)
+            {
+                if (Path::isBasePath($excludePath, $file->path))
+                {
+                    continue 2;
+                }
+            }
+
+            $leftover[] = $file;
+        }
+
+        $otherFiles = [];
+
+        foreach ($leftover as $file)
+        {
+            $file->themeFolder = false;
+            $otherFiles[$file->path] = $file;
+        }
+
+        return $themeFiles + $otherFiles;
+    }
+
+    /**
+     * Sets the background information like class, name and path and makes sure that duplicate names will be suffixed
+     */
+    private function setBackgroundInformation(FilesModel $image, array &$backgrounds): void
+    {
+        $name = StringUtil::sanitizeFileName(pathinfo($image->name, PATHINFO_FILENAME));
+        $path = $image->path;
+
+        if (array_key_exists($name, $backgrounds))
+        {
+            $count = 1;
+            $rename = $name . '_' . $count;
+
+            while (array_key_exists($rename, $backgrounds))
+            {
+                $count += 1;
+                $rename = $name . '_' . $count;
+            }
+
+            $name = $rename;
+        }
+
+        $backgrounds[$name] = [
+            'key'         => 'bgi-' . $name,
+            'value'       => 'BG-' . $name,
+            'path'        => $path
+        ];
     }
 }
