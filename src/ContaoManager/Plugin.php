@@ -14,11 +14,14 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use Contao\ManagerPlugin\Config\ConfigPluginInterface;
 use ContaoThemeManager\Core\ContaoThemeManagerCore;
+use Exception;
 use Oveleon\ContaoComponentStyleManager\ContaoComponentStyleManager;
 use Oveleon\ContaoThemeCompilerBundle\ContaoThemeCompilerBundle;
+use Symfony\Component\Config\Loader\LoaderInterface;
 
-class Plugin implements BundlePluginInterface
+class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
     /**
      * {@inheritdoc}
@@ -30,5 +33,13 @@ class Plugin implements BundlePluginInterface
                 ->setLoadAfter([ContaoCoreBundle::class, ContaoComponentStyleManager::class, ContaoThemeCompilerBundle::class])
                 ->setReplace(['contao-thememanager']),
         ];
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
+    {
+        $loader->load('@ContaoThemeManagerCore/config/config.yaml');
     }
 }

@@ -1,0 +1,240 @@
+contao:
+  image:
+    sizes:
+      4_5_crop_small:
+        width: 600
+        height: 750
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      4_5_crop_medium:
+        width: 800
+        height: 1000
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      4_5_crop_large:
+        width: 1280
+        height: 1600
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 750
+      1_1_crop_small:
+        width: 600
+        height: 600
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      1_1_crop_medium:
+        width: 800
+        height: 800
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      1_1_crop_large:
+        width: 1280
+        height: 1280
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 600
+      4_3_crop_small:
+        width: 600
+        height: 450
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      4_3_crop_medium:
+        width: 800
+        height: 600
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      4_3_crop_large:
+        width: 1280
+        height: 960
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 450
+      3_2_crop_small:
+        width: 600
+        height: 400
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      3_2_crop_medium:
+        width: 800
+        height: 533
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      3_2_crop_large:
+        width: 1280
+        height: 853
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 400
+      16_10_crop_small:
+        width: 600
+        height: 375
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      16_10_crop_medium:
+        width: 800
+        height: 500
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      16_10_crop_large:
+        width: 1280
+        height: 800
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 375
+      16_9_crop_small:
+        width: 600
+        height: 338
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      16_9_crop_medium:
+        width: 800
+        height: 450
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      16_9_crop_large:
+        width: 1280
+        height: 720
+        resize_mode: crop
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+            height: 338
+      proportional_extra_small:
+        width: 480
+        resize_mode: proportional
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      proportional_small:
+        width: 600
+        resize_mode: proportional
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      proportional_medium:
+        width: 800
+        resize_mode: proportional
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+      proportional_large:
+        width: 1280
+        resize_mode: proportional
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+      proportional_extra_large:
+        width: 1920
+        resize_mode: proportional
+        lazy_loading: true
+        formats:
+          jpg: [ webp, jpg ]
+          webp: [ webp, jpg ]
+          png: [ webp, png ]
+        items:
+          - media: '(max-width: 599px)'
+            width: 600
+          - media: '(max-width: 1263px)'
+            width: 1280
+      lazyloading_active:
+        lazy_loading: true
+        resize_mode: proportional
