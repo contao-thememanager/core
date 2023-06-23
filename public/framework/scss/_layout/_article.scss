@@ -8,7 +8,7 @@
   }
 }
 
-@media (min-height: $article-min-vheight) {
+/*@media (min-height: $article-min-vheight) {
 
   .mod_article {
 
@@ -16,7 +16,7 @@
       min-height: var(--art-hght)
     }
   }
-}
+}*/
 
 [class*=a-vh-] {
   --dock:0px;
