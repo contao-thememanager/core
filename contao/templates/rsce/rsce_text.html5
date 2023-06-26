@@ -10,7 +10,7 @@
   $aClasses      = $sm->prepare('eLink')->format(' class="%s" ');
 ?>
 
-<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<div class="<?= $this->class ?> text block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <?php if(!$this->linkText && $this->url): ?>
     <a href="<?=$this->url?>" class="inside<?= $insideClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>>
   <?php else: ?>
