@@ -4,7 +4,8 @@ $class-vertical-article-spacing:     'art-py';
 $class-vertical-article-spacing-top: 'art-pt';
 $class-vertical-article-spacing-btm: 'art-pb';
 
-$class-negative-article-spacing-btm: 'art-sub-pb';
+$class-article-overlap-self:         'art-ol-self';
+$class-article-overlap-next:         'art-ol-next';
 
 $art-space-abbr: (
   width:    art-wdth,
@@ -63,9 +64,24 @@ main .article_inside {
   }
 }
 
-// z-index for negative article spacings
-[class*=#{$class-negative-article-spacing-btm}] {
-  z-index: 1;
+// Article overlaps
+[class*=#{$class-article-overlap-self}] {
+
+  + * {
+
+    > .inside {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+[class*=#{$class-article-overlap-next}] {
+
+  > .inside {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 [class*=#{$class-horizontal-article-spacing}] {
@@ -121,10 +137,16 @@ main .article_inside {
       padding-bottom: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
     }
   }
-  .#{$class-negative-article-spacing-btm}-#{$size} {
-    > .inside {
-      margin-bottom: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
+  .#{$class-article-overlap-self}-#{$size} {
+    padding-bottom: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
+    + * { margin-bottom: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
+      > .inside { top: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);}
     }
+  }
+  .#{$class-article-overlap-next}-#{$size} {
+    margin-top: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
+    > .inside { top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});}
+    + * { padding-top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});}
   }
 }
 
