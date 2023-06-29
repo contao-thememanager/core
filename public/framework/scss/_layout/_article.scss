@@ -8,16 +8,6 @@
   }
 }
 
-/*@media (min-height: $article-min-vheight) {
-
-  .mod_article {
-
-    > .inside {
-      min-height: var(--art-hght)
-    }
-  }
-}*/
-
 [class*=a-vh-] {
   --dock:0px;
   --art-hght:calc(var(--a-vh) - var(--dock));
@@ -30,6 +20,6 @@
 @if type-of($article-options-vheight) == list {
 
   @each $height in $article-options-vheight {
-    .a-vh-#{$height} {--a-vh:#{$height}vh;}
+    .a-vh-#{$height} {--a-vh:#{$height}dvh;}
   }
 }
