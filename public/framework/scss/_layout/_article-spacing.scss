@@ -1,225 +1,126 @@
-// Class names
-$class-horizontal-article-spacing:   'art-px';
-$class-vertical-article-spacing:     'art-py';
-$class-vertical-article-spacing-top: 'art-pt';
-$class-vertical-article-spacing-btm: 'art-pb';
-
-$class-article-overlap-self:         'art-ol-self';
-$class-article-overlap-next:         'art-ol-next';
-
-$art-space-abbr: (
-  width:    art-wdth,
-  xpadding: art-ox,
-  xspacing: art-px,
-  yspacing: art-py,
-  1: 1,
-  2: 2,
-  3: 3
-);
-
 // Y-spacings (vertical top and bottom)
 $spacings-list-init: (
-  1: $article-spacing-xs-small,
-  2: $article-spacing-xs-medium,
-  3: $article-spacing-xs-large
+       1: $article-spacing-xs-small, 2: $article-spacing-xs-medium, 3: $article-spacing-xs-large
 );
 
 $spacings-list-bp: (
-  s: (
-    1: $article-spacing-s-small,
-    2: $article-spacing-s-medium,
-    3: $article-spacing-s-large
-  ),
-  m: (
-    1: $article-spacing-m-small,
-    2: $article-spacing-m-medium,
-    3: $article-spacing-m-large
-  ),
-  l: (
-    1: $article-spacing-l-small,
-    2: $article-spacing-l-medium,
-    3: $article-spacing-l-large
-  ),
-  xl: (
-    1: $article-spacing-xl-small,
-    2: $article-spacing-xl-medium,
-    3: $article-spacing-xl-large
-  )
+  s:  (1: $article-spacing-s-small,  2: $article-spacing-s-medium,  3: $article-spacing-s-large),
+  m:  (1: $article-spacing-m-small,  2: $article-spacing-m-medium,  3: $article-spacing-m-large),
+  l:  (1: $article-spacing-l-small,  2: $article-spacing-l-medium,  3: $article-spacing-l-large),
+  xl: (1: $article-spacing-xl-small, 2: $article-spacing-xl-medium, 3: $article-spacing-xl-large)
 );
-
-$abbr-wdth:  map-get($art-space-abbr, width);
-$abbr-pad-x: map-get($art-space-abbr, xpadding);
-$abbr-spc-x: map-get($art-space-abbr, xspacing);
-$abbr-spc-y: map-get($art-space-abbr, yspacing);
 
 // Add default bottom-padding to #main articles
 main .article_inside {
   padding-bottom: var(--v-gap);
 }
 
-.article_inside {
-  // Add default bottom-padding to #main articles
-  main & {
-    padding-bottom: var(--v-gap);
+.grid > .article_inside {
+  margin-left: 0;
+  margin-right: 0;
+
+  .gtr-0&{
+    > .ce_wrapper {--gtr-x:var(--h-gap);} // Always reset gtr-0 within wrapper
+    > .gtr-1      {--gtr-x:var(--gtr);} // Set normal gutter for gtr-1
   }
 }
 
 // Article overlaps
-[class*=#{$class-article-overlap-self}] {
+[class*=art-ol-self] + * > .inside { position: relative; z-index: 1; }
+[class*=art-ol-next] > .inside     { position: relative; z-index: 1; }
 
-  + * {
-
-    > .inside {
-      position: relative;
-      z-index: 1;
-    }
-  }
+.article_inside,
+#container > .inside {
+  padding-left:  calc(var(--art-px, 0px) + var(--art-ox, 0px));
+  padding-right: calc(var(--art-px, 0px) + var(--art-ox, 0px));
 }
 
-[class*=#{$class-article-overlap-next}] {
-
-  > .inside {
-    position: relative;
-    z-index: 1;
-  }
+.mod_article:not([class*=art-px]) {
+  --art-ox:0px!important;
 }
 
-[class*=#{$class-horizontal-article-spacing}] {
-
-  &, #container {
-
-    > .inside {
-      max-width:     var(--#{$abbr-wdth}, auto);
-      padding-left:  calc(var(--#{$abbr-spc-x},0px) + var(--#{$abbr-pad-x},0px));
-      padding-right: calc(var(--#{$abbr-spc-x},0px) + var(--#{$abbr-pad-x},0px));
-      margin-left:   auto;
-      margin-right:  auto;
-    }
-  }
-
-  &.gtr-1 {
-    --#{$abbr-spc-x}: #{divide(sub($grid-gutter-width, $grid-gutter-small-width), 2)};
-  }
-
-  &.gtr-0 {
-    --#{$abbr-spc-x}: #{divide($grid-gutter-width, 2)};
-  }
+.gtr-1 {
+  --art-px:#{divide($grid-gutter-width, 4)};
 }
 
-// Set custom properties
+// Set outer padding for no gutter when x-spacing is set
+.gtr-0[class*=art-px] {
+  --art-px:#{divide($grid-gutter-width,2)};
+}
+
 :root {
-  --#{$abbr-pad-x}:#{$article-outer-padding};
-  @each $size, $spacing in $spacings-list-init {
-    --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
-  }
+  --art-ox:#{$article-outer-padding};
+  --art-py-1:#{$article-spacing-xs-small};
+  --art-py-2:#{$article-spacing-xs-medium};
+  --art-py-3:#{$article-spacing-xs-large};
 }
 
 @each $size, $spacing in $spacings-list-init {
-  .#{$class-vertical-article-spacing}-#{$size} {
-    $v-art-pd: #{$abbr-spc-y}-#{map-get($art-space-abbr, $size)};
+  .art-py-#{$size} {
     &, #container {
       > .inside {
-        padding-top:    var(--#{$v-art-pd});
-        padding-bottom: var(--#{$v-art-pd});
+        padding-top:    var(--art-py-#{$size});
+        padding-bottom: var(--art-py-#{$size});
       }
     }
   }
 }
 
 @each $size, $spacing in $spacings-list-init {
-  .#{$class-vertical-article-spacing-top}-#{$size} {
-    > .inside {
-      padding-top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
+  .art-pt-#{$size} > .inside { padding-top: var(--art-py-#{$size}); }
+  .art-pb-#{$size} > .inside { padding-bottom: var(--art-py-#{$size}); }
+  .art-ol-self-#{$size} {
+    padding-bottom: var(--art-py-#{$size});
+    + * { margin-bottom: calc(var(--art-py-#{$size}) * -1);
+      > .inside { top: calc(var(--art-py-#{$size}) * -1);}
     }
   }
-  .#{$class-vertical-article-spacing-btm}-#{$size} {
-    > .inside {
-      padding-bottom: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
-    }
-  }
-  .#{$class-article-overlap-self}-#{$size} {
-    padding-bottom: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});
-    + * { margin-bottom: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
-      > .inside { top: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);}
-    }
-  }
-  .#{$class-article-overlap-next}-#{$size} {
-    margin-top: calc(var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}) * -1);
-    > .inside { top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});}
-    + * { padding-top: var(--#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)});}
+  .art-ol-next-#{$size} {
+    margin-top: calc(var(--art-py-#{$size}) * -1);
+    > .inside { top: var(--art-py-#{$size});}
+    + * { padding-top: var(--art-py-#{$size});}
   }
 }
 
 @each $bp in map-keys($breakpoints) {
   $infix: breakpoint-infix($bp);
-  @include media-breakpoint($bp) {
-
-    $list: map-get($spacings-list-bp, $bp);
-
-    @if ($bp == 'xs') {
-      :root {--#{$abbr-pad-x}:#{$article-outer-padding-xs};}
+  $list: map-get($spacings-list-bp, $bp);
+  @if ($bp == 'l') {
+    $bp-l-gtr-none: sub(map-get($breakpoints,$bp),$grid-gutter-width,'px');
+    @media (min-width:$bp-l-gtr-none) {
+      .art-px-2 {--art-wdth:#{$bp-l-gtr-none};}
+      .art-px-3 {--art-wdth:#{$x-spacing-large-l};}
+      .mx-art {--art-mx:calc((max(var(--lvw,100lvw),#{$bp-l-gtr-none}) - #{$bp-l-gtr-none}) / 2);}
+      .gtr-0 > .article_inside .mx-art {--art-mx:calc(((max(var(--lvw,100lvw),#{$bp-l-gtr-none}) - #{$bp-l-gtr-none}) / 2) + #{divide($grid-gutter-width,2)});}
+      .ce_wrapper.grid:not(.gtr-0) > .mx-art {--art-mx:calc(((max(var(--lvw,100lvw),#{$bp-l-gtr-none}) - #{$bp-l-gtr-none}) / 2) - (var(--gtr-x) / 2));}
+      .ml-art { margin-left:var(--art-mx)!important }
+      .mr-art { margin-right:var(--art-mx)!important }
     }
-
+  }
+  @include media-breakpoint($bp) {
+    @if ($bp == 'xs') {:root {--art-ox:#{$article-outer-padding-xs};}}
     @if map-has-key($spacings-list-bp, $bp) {
       :root {
-        @if ($bp == 's') {--#{$abbr-pad-x}:#{$article-outer-padding-s};}
-        @each $size, $spacing in $list {
-          --#{$abbr-spc-y}-#{map-get($art-space-abbr, $size)}: #{$spacing};
-        }
+        @if ($bp == 's') {--art-ox:#{$article-outer-padding-s};}
+        @if ($bp == 'm') {--art-ox:0px;}
+        @each $size, $spacing in $list {--art-py-#{$size}:#{$spacing};}
       }
     }
-
     @if ($bp == 'm') {
-      .#{$class-horizontal-article-spacing} {
-
-        &-#{map-get($art-space-abbr, 3)} {
-          --#{$abbr-pad-x}:0px;
-          --#{$abbr-wdth}: #{$x-spacing-large-m};
-        }
-      }
-    }
-
-    @else if ($bp == 'l') {
-      [class*=#{$class-horizontal-article-spacing}].gtr-1 {
-        --art-px:0px;
-      }
-
-      .#{$class-horizontal-article-spacing} {
-
-        &-#{map-get($art-space-abbr, 2)} {
-          --#{$abbr-pad-x}:0px;
-          --#{$abbr-wdth}:#{sub(map-get($breakpoints, $bp), $grid-gutter-width,'px')};
-
-          &.gtr-1 {
-            --#{$abbr-wdth}:#{sub(map-get($breakpoints, $bp), $grid-gutter-small-width,'px')};
+      .art-px-3 {--art-wdth:#{$x-spacing-large-m};}
+      [class*=art-px] {
+        &, #container {
+          > .inside {
+            max-width: var(--art-wdth, auto);
+            margin-left: auto !important;
+            margin-right: auto !important;
           }
         }
-
-        &-#{map-get($art-space-abbr, 3)} {
-          --#{$abbr-wdth}:#{$x-spacing-large-l};
-        }
       }
-
-      // Special element offset for medium left/right spacing
-      .mx-art {
-        --art-mx:calc((100vw - var(--mx-off,#{sub(map-get($breakpoints,$bp),divide($grid-gutter-width,2))})) / 2);
-        .mod_article .ce_wrapper.grid & {--mx-off:#{sub(map-get($breakpoints,$bp),divide($grid-gutter-width,2))};}
-        .mod_article.gtr-1 &, .ce_wrapper.grid.gtr-1 & {--mx-off:#{rem(map-get($breakpoints,$bp))};}
-        .mod_article.gtr-0 &, .ce_wrapper.grid.gtr-0 & {--mx-off:#{sub(map-get($breakpoints,$bp),sum($grid-gutter-width,divide($grid-gutter-width,2)))};}
-      }
-
-      .ml-art { margin-left: var(--art-mx)!important; }
-      .mr-art { margin-right: var(--art-mx)!important; }
     }
   }
 }
 
-@media (min-width: sum($x-spacing-small, $grid-gutter-width,'px')) {
-  .#{$class-horizontal-article-spacing} {
-
-    &-#{map-get($art-space-abbr, 1)} {
-      --#{$abbr-pad-x}:0px;
-      --#{$abbr-wdth}:#{$x-spacing-small};
-    }
-  }
+@media (min-width: $x-spacing-small) {
+  .art-px-1 {--art-wdth:#{$x-spacing-small};}
 }
