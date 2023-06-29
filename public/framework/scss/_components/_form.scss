@@ -182,7 +182,7 @@ textarea {
   &-checkbox,
   &-radio,
   &-range {
-    --mand-r:#{sum(divide($grid-gutter-small-width, 2), 5px, 'px')};
+    --mand-r:#{sum(divide($grid-gutter-width, 4), 5px, 'px')};
 
     &.mandatory:after {
       @extend %form-mandatory-styles;

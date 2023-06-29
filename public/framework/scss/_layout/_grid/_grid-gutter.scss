@@ -2,12 +2,11 @@
 
   // Form specific gutter
   &-f {
-    --v-gap:var(--gtr-btm-sml);
-    --h-gap:var(--gtr-sml);
+    --v-gap:var(--gtr-half-btm);
+    --h-gap:var(--gtr-half);
 
     > .inside {
-      --i-gtr:var(--gtr-half-sml);
-      --h-gap-off:calc(-1 * var(--i-gtr));
+      --gtr-x:var(--gtr-half);
     }
   }
 
@@ -16,27 +15,25 @@
     --h-gap:var(--gtr);
 
     > .inside {
-      --i-gtr:var(--gtr-half);
+      --gtr-x:var(--gtr);
     }
   }
 
-  // Small gutter
   &-1 {
-    --v-gap:var(--gtr-btm-sml);
-    --h-gap:var(--gtr-sml);
+    --v-gap:var(--gtr-half-btm);
+    --h-gap:var(--gtr-half);
 
     > .inside {
-      --i-gtr:var(--gtr-half-sml);
+      --gtr-x:var(--gtr-half);
     }
   }
 
-  // No gutter
   &-0 {
     --v-gap:0rem;
     --h-gap:0rem;
 
     > .inside {
-      --i-gtr:0rem;
+      --gtr-x:0rem;
     }
   }
 }
