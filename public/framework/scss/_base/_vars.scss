@@ -55,11 +55,9 @@
   --gtr:#{$grid-gutter-width};
   --gtr-btm:#{$grid-gutter-bottom};
 
-  --gtr-sml:#{$grid-gutter-small-width};
-  --gtr-btm-sml:#{$grid-gutter-small-bottom};
-
   --gtr-half:#{divide($grid-gutter-width, 2)};
-  --gtr-half-sml:#{divide($grid-gutter-small-width, 2)};
+  --gtr-half-sml:#{divide($grid-gutter-width, 4)};
+  --gtr-half-btm:#{divide($grid-gutter-bottom,2)};
 
   // Layout
   --mx-1:#{$left-right-margin-small};
