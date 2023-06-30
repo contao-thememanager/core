@@ -16,6 +16,11 @@
       }
     }
   }
+
+  // Consider nested text blocks (e.g. news bundle)
+  .c_text & {
+    margin-bottom: $paragraph-spacing;
+  }
 }
 
 @include media-breakpoint('xs') {

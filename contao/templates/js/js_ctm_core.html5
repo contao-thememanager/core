@@ -1,0 +1,1 @@
+<?php $GLOBALS['TL_HEAD'][] = "<script>new ResizeObserver(e=>{e[0].target.style.setProperty('--lvw',e[0].contentBoxSize[0].inlineSize + 'px')}).observe(document.documentElement)</script>";

@@ -1265,18 +1265,6 @@
       <trans-unit id="tl_thememanager.grid-gutter-bottom.1">
         <source>Here you can set the vertical padding for each grid-element.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-small-width.0">
-        <source>$grid-gutter-small-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-small-width.1">
-        <source>Here you can set the small horizontal padding for each grid-element.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-small-bottom.0">
-        <source>$grid-gutter-small-bottom</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-small-bottom.1">
-        <source>Here you can set the small vertical padding for each grid-element.</source>
-      </trans-unit>
 
       <trans-unit id="tl_thememanager.form-input-font-family.0">
         <source>$form-input-font-family</source>
