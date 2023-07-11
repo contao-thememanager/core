@@ -7,9 +7,10 @@
   --bgis:cover;
 }
 
-// Only enable backgrounds within div and body
+// Only enable backgrounds within div, body and clickable component containers
 div,
-body {
+body,
+a.inside {
   &[class*="bgi-"] {
     background-image: var(--bgi);
     background-attachment: var(--bgia);
