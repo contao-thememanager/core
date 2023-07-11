@@ -16,5 +16,5 @@
 ?>
 <div class="ce_wrapper block<?= $wrapperClasses ?> <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside<?= $insideClasses ?>">
-    <div class="grid wrapper-grid<?= $gridClasses ?>">
+    <div class="grid<?= $gridClasses ?>">
       <div class="inside c_slider"<?= $sliderConfig ?>>
