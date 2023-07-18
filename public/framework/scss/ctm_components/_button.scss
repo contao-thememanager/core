@@ -13,6 +13,9 @@ button,
   background-color: var(--btn-1-bg);
   color: var(--btn-1-clr);
 
+  width: revert;
+  height: revert;
+
   font-weight: var(--btn-fw);
   text-transform: var(--btn-tf);
   text-decoration: var(--btn-td);
