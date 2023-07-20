@@ -1,7 +1,4 @@
-.box {
-  > .inside { padding: var(--py-1) var(--px-1); }
-  > [class*='i-p-'] { padding: var(--i-py) var(--i-px); }
-}
+.box > .inside { padding: var(--i-py, var(--py-1)) var(--i-px, var(--px-1)); }
 
 .box-list {
   --i-px:var(--px-1);
