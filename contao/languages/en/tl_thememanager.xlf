@@ -2320,6 +2320,12 @@
       <trans-unit id="tl_thememanager.table-border-style.1">
         <source>Here you can choose the border-style for tables.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.0">
+        <source>$table-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.1">
+        <source>Here you can set the border-width for tables.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.table-head-border-color.0">
         <source>$table-head-border-color</source>
       </trans-unit>

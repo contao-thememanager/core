@@ -3107,6 +3107,14 @@
         <source>Here you can choose the border-style for tables.</source>
         <target>Hier können Sie den Rahmen-Stil (border-style) für Tabellen auswählen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.0">
+        <source>$table-border-width</source>
+        <target>$table-border-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.1">
+        <source>Here you can set the border-width for tables.</source>
+        <target>Hier können Sie die Rahmen-Breite (border-width) für Tabellen einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.table-head-border-color.0">
         <source>$table-head-border-color</source>
         <target>$table-head-border-color</target>
