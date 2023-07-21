@@ -6,6 +6,7 @@ contao:
         height: 750
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -15,6 +16,7 @@ contao:
         height: 1000
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -24,6 +26,7 @@ contao:
         height: 1600
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -37,6 +40,7 @@ contao:
         height: 600
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -46,6 +50,7 @@ contao:
         height: 800
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -55,6 +60,7 @@ contao:
         height: 1280
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -68,6 +74,7 @@ contao:
         height: 450
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -77,6 +84,7 @@ contao:
         height: 600
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -86,6 +94,7 @@ contao:
         height: 960
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -99,6 +108,7 @@ contao:
         height: 400
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -108,6 +118,7 @@ contao:
         height: 533
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -117,6 +128,7 @@ contao:
         height: 853
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -130,6 +142,7 @@ contao:
         height: 375
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -139,6 +152,7 @@ contao:
         height: 500
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -148,6 +162,7 @@ contao:
         height: 800
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -161,6 +176,7 @@ contao:
         height: 338
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -170,6 +186,7 @@ contao:
         height: 450
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -179,6 +196,7 @@ contao:
         height: 720
         resize_mode: crop
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -191,6 +209,7 @@ contao:
         width: 480
         resize_mode: proportional
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -199,6 +218,7 @@ contao:
         width: 600
         resize_mode: proportional
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -207,6 +227,7 @@ contao:
         width: 800
         resize_mode: proportional
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -215,6 +236,7 @@ contao:
         width: 1280
         resize_mode: proportional
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -226,6 +248,7 @@ contao:
         width: 1920
         resize_mode: proportional
         lazy_loading: true
+        densities: 1x
         formats:
           jpg: [ webp, jpg ]
           webp: [ webp, jpg ]
@@ -238,3 +261,4 @@ contao:
       lazyloading_active:
         lazy_loading: true
         resize_mode: proportional
+        densities: 1x
