@@ -115,7 +115,9 @@ class Constants
                 'rsce_image_list',
                 'rsce_image_text_list',
                 'image',
-                'gallery'
+                'gallery',
+                'download',
+                'downloads'
             ],
             'modules'=> [
                 'randomImage',

@@ -2977,7 +2977,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -3002,7 +3002,7 @@
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:19:"img-align img--left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:21:"img-align img--center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:20:"img-align img--right";s:5:"value";s:5:"Right";}}</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -3016,7 +3016,7 @@
         <field title="cssClass">separator</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -3029,7 +3029,7 @@
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:9:"obj--left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"obj--right";s:5:"value";s:5:"Right";}}</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -3042,7 +3042,7 @@
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"obj--top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:8:"obj--btm";s:5:"value";s:6:"Bottom";}}</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";}</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
