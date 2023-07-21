@@ -2,9 +2,13 @@
 
 namespace ContaoThemeManager\Core\EventListener\DataContainer;
 
+use Contao\ContentModel;
 use Contao\CoreBundle\Framework\ContaoFramework;
+use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\DataContainer;
+use Contao\Input;
 use Contao\StringUtil;
+use Contao\System;
 use Doctrine\DBAL\Connection;
 use Symfony\Component\Security\Core\Security;
 use Contao\Message;
@@ -39,5 +43,32 @@ class DataContainerListener
         }
 
         return $array;
+    }
+
+    public function removeLibraryHint(DataContainer $dc): void
+    {
+        if ($_POST || Input::get('act') != 'edit')
+        {
+            return;
+        }
+
+        $security = System::getContainer()->get('security.helper');
+
+        if (!$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'themes') || !$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_LAYOUTS))
+        {
+            return;
+        }
+
+        $objCte = ContentModel::findByPk($dc->id);
+
+        if ($objCte === null)
+        {
+            return;
+        }
+
+        if ($objCte->type == 'gallery')
+        {
+            Message::reset();
+        }
     }
 }

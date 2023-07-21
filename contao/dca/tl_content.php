@@ -6,10 +6,12 @@
  * (c) https://www.oveleon.de/
 */
 
+use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStartController;
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStopController;
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStartContentController;
 use ContaoThemeManager\Core\Controller\ContentElement\ContentWrapperStopContentController;
+use ContaoThemeManager\Core\EventListener\DataContainer\DataContainerListener;
 
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStartController::TYPE]      = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['palettes'][ContentWrapperStopController::TYPE]       = '{type_legend},type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests;{invisible_legend:hide},invisible,start,stop';
@@ -44,3 +46,11 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['headline2Style'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = [DataContainerListener::class, 'removeLibraryHint'];
+
+
+// Remove gallery perRow
+PaletteManipulator::create()
+    ->removeField('perRow', 'image_legend')
+    ->applyToPalette('gallery', 'tl_content')
+;

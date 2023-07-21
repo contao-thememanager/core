@@ -2308,7 +2308,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -2334,7 +2334,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2351,7 +2351,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2368,7 +2368,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2385,7 +2385,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2402,7 +2402,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2419,7 +2419,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2437,7 +2437,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2455,7 +2455,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2472,7 +2472,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2489,7 +2489,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2506,7 +2506,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2523,7 +2523,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2540,7 +2540,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -2558,7 +2558,7 @@
         <field title="extendFormFields">1</field>
         <field title="formFields">a:2:{i:0;s:5:"radio";i:1;s:8:"checkbox";}</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:6:"search";i:5;s:11:"newsarchive";}</field>
       </child>
@@ -3379,7 +3379,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3394,7 +3394,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3409,7 +3409,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3424,7 +3424,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3440,7 +3440,7 @@
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3455,7 +3455,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:6:{i:0;s:15:"rsce_image_text";i:1;s:14:"rsce_icon_text";i:2;s:15:"rsce_image_list";i:3;s:14:"rsce_text_list";i:4;s:20:"rsce_image_text_list";i:5;s:19:"rsce_icon_text_list";}</field>
+        <field title="contentElements">a:7:{i:0;s:7:"gallery";i:1;s:15:"rsce_image_text";i:2;s:14:"rsce_icon_text";i:3;s:15:"rsce_image_list";i:4;s:14:"rsce_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:19:"rsce_icon_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3480,7 +3480,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3496,7 +3496,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3511,7 +3511,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3525,7 +3525,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3539,7 +3539,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3553,7 +3553,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
@@ -3567,7 +3567,7 @@
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:4:{i:0;s:19:"rsce_icon_text_list";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_text_list";}</field>
+        <field title="contentElements">a:5:{i:0;s:7:"gallery";i:1;s:19:"rsce_icon_text_list";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_text_list";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:5:{i:0;s:8:"newslist";i:1;s:9:"eventlist";i:2;s:7:"faqlist";i:3;s:7:"faqpage";i:4;s:11:"newsarchive";}</field>
       </child>
