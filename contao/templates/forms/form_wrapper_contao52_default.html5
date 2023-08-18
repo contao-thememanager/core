@@ -1,7 +1,3 @@
-<?php
-  $this->attributes = str_contains($this->attributes, 'class="') ? str_replace('class="', 'class="grid gtr-f ', $this->attributes) : $this->attributes . 'class="grid gtr-f"';
-?>
-
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
 
@@ -9,29 +5,10 @@
     <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
   <?php endif; ?>
 
-  <?php if (!$this->message): ?>
-    <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="<?= $this->method ?>" enctype="<?= $this->enctype ?>"<?= $this->attributes ?><?= $this->novalidate ?><?php if ($this->ajax): ?> data-ajax-form<?php endif; ?>>
-      <div class="formbody inside">
-        <?php if ($this->errors): ?>
-          <?php foreach ($this->errors as $error): ?>
-            <p class="error"><?= $error ?></p>
-          <?php endforeach; ?>
-        <?php endif; ?>
-        <?php if ('get' != $this->method): ?>
-          <input type="hidden" name="FORM_SUBMIT" value="<?= $this->formSubmit ?>">
-          <input type="hidden" name="REQUEST_TOKEN" value="<?= $this->requestToken ?>">
-          <?php if ($this->maxFileSize): ?>
-            <input type="hidden" name="MAX_FILE_SIZE" value="<?= $this->maxFileSize ?>">
-          <?php endif; ?>
-        <?php endif; ?>
-        <?= $this->hidden ?>
-        <?= $this->fields ?>
-      </div>
-    </form>
+  <?php if ($this->message): ?>
+    <?php $this->insert('form_message', $this->arrData) ?>
   <?php else: ?>
-    <div class="form-confirmation">
-      <?= $this->message ?>
-    </div>
+    <?php $this->insert('form_inline', $this->arrData) ?>
   <?php endif; ?>
 
 </div>
@@ -75,7 +52,7 @@
 
           // Send the triggered button data as well
           if (e.submitter) {
-              formData.append(e.submitter.name, e.submitter.value);
+            formData.append(e.submitter.name, e.submitter.value);
           }
 
           request(form, formData, xhr => {

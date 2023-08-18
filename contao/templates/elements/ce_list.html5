@@ -6,7 +6,7 @@
 
   $this->extend('block_searchable');
 
-  // Contao 5.1 BC layer for Contao 4.13
+  // Contao 5 BC layer for Contao 4.13
   $blnContao5 = isset($this->items[0]) && !\is_array($this->items[0]);
 ?>
 
