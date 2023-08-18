@@ -19,7 +19,7 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(ContentWrapperStartController::TYPE, category:'wrapper')]
+#[AsContentElement(ContentWrapperStartController::TYPE, category:'wrapper', template:'ce_wrapperStart')]
 class ContentWrapperStartController extends AbstractContentElementController
 {
     public const TYPE = 'wrapperStart';
