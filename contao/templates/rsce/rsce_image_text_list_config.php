@@ -1,5 +1,9 @@
 <?php
 // rsce_image_text_list.php
+
+use Contao\BackendUser;
+use Contao\System;
+
 return [
     'label' => [
         'de' => [
