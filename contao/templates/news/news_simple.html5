@@ -4,7 +4,7 @@
   <div class="inside">
 
     <div class="c_text">
-      <?php if (!!$this->date || !!$this->author || !!$this->numberOfComments): ?>
+      <?php if ($this->hasMetaFields || (null === $this->hasMetaFields)): // Contao 5.* BC layer for simultaneous Contao 4.13 support ?>
         <div class="info">
           <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
           <?php if ($this->author): ?>
