@@ -11,14 +11,13 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 $GLOBALS['TL_DCA']['tl_files']['fields']['ctmBackgroundImage'] = [
     'exclude'   => true,
     'inputType' => 'checkbox',
-    'eval'      => ['tl_class'=>'w100 clr'],
+    'eval'      => ['tl_class'=>'w50 m12'],
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 // Extend the default palette
 PaletteManipulator::create()
-    ->addLegend('thememanager_legend')
-    ->addField(['ctmBackgroundImage'], 'thememanager_legend', PaletteManipulator::POSITION_APPEND)
+    ->addField(['ctmBackgroundImage'], 'name')
     ->applyToPalette('default', 'tl_files')
 ;
 
