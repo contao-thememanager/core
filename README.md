@@ -39,7 +39,7 @@
 
 
 ### Further Links
-- [Documentation](https://github.com/contao-thememanager/docs)
+- [Documentation](https://docs.contao-thememanager.com)
 
 ### License
 This project is licensed under the AGPL-3.0 License
