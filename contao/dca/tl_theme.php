@@ -16,5 +16,5 @@ $GLOBALS['TL_DCA']['tl_theme']['list']['operations']['themeConfig'] = [
 // Add fields
 $GLOBALS['TL_DCA']['tl_theme']['fields']['themeConfig'] = [
     'inputType' => 'text',
-    'sql'       => "text NULL"
+    'sql'       => "mediumtext NULL"
 ];
