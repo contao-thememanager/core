@@ -8,7 +8,7 @@
             '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
             '{link_legend:hide},link-font-weight,link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
             '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-min-vheight,article-options-vheight;' .
+            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
             '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
             '{form_general_legend:hide},form-input-font-family,form-textarea-line-height,form-input-padding,form-input-height,form-multiselect-height,form-input-font-weight,form-input-font-size,form-input-font-size-error,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-border-color,form-input-border-color-hover,form-input-border-color-focus,form-input-border-color-error,form-input-background,form-input-background-hover,form-input-background-focus,form-input-background-error,form-input-color,form-input-color-hover,form-input-color-focus,form-input-color-error,form-input-placeholder-color,form-input-placeholder-color-hover,form-input-placeholder-color-focus,form-input-placeholder-color-error,form-input-color-disabled;' .
             '{form_label_legend:hide},form-label-color,form-label-color-invert,form-label-font-size,form-label-spacing,form-label-font-weight,form-legend-font-weight;' .
@@ -1132,19 +1132,27 @@
             'eval'                    => ['placeholder'=>'$article-spacing-l-large', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
 
+        'article-main-spacing-bottom' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:19:"var(--gtr-half-btm)";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-main-spacing-bottom'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'var(--gtr-half-btm)', 'includeBlankOption'=>true, 'preserveTags'=>true, 'maxlength'=>255, 'tl_class'=>'w100 clr'],
+        ],
+
         'article-min-vheight' => [
             'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"680";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-min-vheight'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'680px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
+            'eval'                    => ['placeholder'=>'680px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50 clr'],
         ],
 
         'article-options-vheight' => [
             'default'                 => '50,75,100',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-options-vheight'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'clr'],
+            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'w50'],
         ],
 
         // Links

@@ -1437,6 +1437,15 @@
         <target>Hier können Sie den großen vertikalen Polster (padding) für Artikel auf sehr großen Geräten einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.0">
+        <source>$article-main-spacing-bottom</source>
+        <target>$article-main-spacing-bottom</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.1">
+        <source>Here you can set a default value for the bottom padding for articles within the &lt;em&gt;#main&lt;/em&gt; column.</source>
+        <target>Hier können Sie einen Standardwert für den unteren Polster (padding) für Artikel innerhalb der Spalte &lt;em&gt;#main&lt;/em&gt; einstellen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.article-min-vheight.0">
         <source>$article-min-vheight</source>
         <target>$article-min-vheight</target>

@@ -1088,6 +1088,13 @@
         <source>Here you can set the large vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.0">
+        <source>$article-main-spacing-bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.1">
+        <source>Here you can set a default value for the bottom padding for articles within the &lt;em&gt;#main&lt;/em&gt; column.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.article-min-vheight.0">
         <source>$article-min-vheight</source>
       </trans-unit>

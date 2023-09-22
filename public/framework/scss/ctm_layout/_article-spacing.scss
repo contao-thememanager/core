@@ -12,7 +12,7 @@ $spacings-list-bp: (
 
 // Add default bottom-padding to #main articles
 main .article_inside {
-  padding-bottom: var(--gtr-half-btm);
+  padding-bottom: $article-main-spacing-bottom;
 }
 
 .grid > .article_inside {
