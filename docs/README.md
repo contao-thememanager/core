@@ -1,12 +1,13 @@
-<center>
+<p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/docs/logo_v_dark.svg">
         <source media="(prefers-color-scheme: light)" srcset="/docs/logo_v_light.svg">
         <img src="/docs/logo_v_light.svg" width="350" alt="ContaoThemeManager">
     </picture>
-</center>
-<center><small style="color:#aeaeae;">Ein Produkt von <a href="https://oveleon.de" style="color:#aeaeae; text-decoration: none;">Oveleon</a></small></center>
-
+</p>
+<p align="center">
+    <small style="color:#aeaeae;">Ein Produkt von <a href="https://oveleon.de" style="color:#aeaeae; text-decoration: none;">Oveleon</a></small>
+</p>
 <br/>
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
