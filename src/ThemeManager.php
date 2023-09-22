@@ -35,12 +35,21 @@ class ThemeManager extends Backend
      */
     public function extendHeadlineField($dc): void
     {
+        $skipTypes = [
+            '__selector__',
+            'markdown',
+            'template',
+            'form',
+        ];
+
         $objPalette = PaletteManipulator::create()
             ->addField(['headlineStyle', 'headline2', 'headline2Style'], 'headline');
 
+        $test = $GLOBALS['TL_DCA'][$dc->table]['palettes'];
+
         foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
         {
-            if ($name === '__selector__')
+            if (in_array($name, $skipTypes))
             {
                 continue;
             }
