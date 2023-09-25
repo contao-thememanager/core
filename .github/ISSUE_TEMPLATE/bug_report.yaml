@@ -50,6 +50,8 @@ body:
         - Microsoft Edge
         - Opera
         - Other
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
