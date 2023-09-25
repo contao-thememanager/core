@@ -11,7 +11,7 @@ body:
       options:
         - label: I [checked](https://github.com/contao-thememanager/core/issues?q=is%3Aissue) for duplicate issues (open and closed)
           required: true
-        - label: I am using the latest stable (version/release)[https://packagist.org/packages/contao-thememanager/core] of the Contao ThemeManager
+        - label: I am using the latest stable [version/release](https://packagist.org/packages/contao-thememanager/core) of the Contao ThemeManager Core
           required: true
         - label: I made sure that my own CSS does not interfere with the Contao ThemeManager framework
           required: true
