@@ -95,7 +95,7 @@ A german documentation (WIP - work in progress) can be found by using the follow
 
 ### Bugs
 If you think you have found a bug please follow these guidelines
-1. Search for existing issues and check if it has already been imported
+1. Search for existing issues and check if your problem has already been reported
 2. Check if you are using the latest version and if the issue has been fixed already
 3. Provide a step-by-step tutorial on how to reproduce the issue in an isolated environment using only the Contao ThemeManager Core
 
