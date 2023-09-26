@@ -12,6 +12,8 @@ body:
           required: true
         - label: I am using the latest stable [version/release](https://packagist.org/packages/contao-thememanager/core) of the Contao ThemeManager Core
           required: true
+        - label: I have read the [contributing guidelines](https://github.com/contao-thememanager/core#bugs-and-feature-requests)
+          required: true
         - label: I made sure that my own CSS does not interfere with the Contao ThemeManager framework
           required: true
   - type: dropdown

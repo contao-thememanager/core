@@ -93,6 +93,8 @@ A german documentation (WIP - work in progress) can be found by using the follow
 
 ## Bugs and feature requests
 
+We appreciate your contributions when opening issues or requesting features. To help keep our issue list tidy, we may need to close issues if questions go unanswered.
+
 ### Bugs
 If you think you have found a bug please follow these guidelines
 1. Search for existing issues and check if your problem has already been reported
