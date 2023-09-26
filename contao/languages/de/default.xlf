@@ -3,7 +3,7 @@
     <body>
       <trans-unit id="CTE.wrapper">
         <source>Wrapper</source>
-        <target>Umschlag</target>
+        <target>Umschläge</target>
       </trans-unit>
       <trans-unit id="CTE.components">
         <source>Components</source>
@@ -14,36 +14,36 @@
         <target>Komponenten-Liste</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStart.0">
-        <source>Wrapper start</source>
-        <target>Umschlag Anfang</target>
+        <source>Wrapper start (article)</source>
+        <target>Umschlag Anfang (Artikel)</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStart.1">
-        <source>Generates the opening part of the wrapper.</source>
-        <target>Erzeugt den öffnenden Teil des Umschlags.</target>
+        <source>Generates the opening part of a wrapper that simulates the presentation of an article. It provides the option to choose between using a grid layout and a layout without a grid. The wrapper allows you to divide the content within an article into multiple columns.</source>
+        <target>Erzeugt den öffnenden Teil eines Umschlags, der die Darstellung eines Artikels simuliert. Dabei besteht die Möglichkeit, zwischen der Verwendung eines Grid-Layouts und einem Layout ohne Grid zu wählen. Der Umschlag ermöglicht es, den Inhalt innerhalb eines Artikels in mehrere Spalten aufzuteilen.</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStop.0">
-        <source>Wrapper stop</source>
-        <target>Umschlag Ende</target>
+        <source>Wrapper stop (Article)</source>
+        <target>Umschlag Ende (Artikel)</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStop.1">
-        <source>Generates the closing part of the wrapper.</source>
-        <target>Erzeugt den schließenden Teil des Umschlags.</target>
+        <source>Generates the closing part of the &lt;em&gt;Wrapper start (article)&lt;/em&gt;.</source>
+        <target>Erzeugt den schließenden Teil des &lt;em&gt;Umschlag Anfang (Artikel)&lt;/em&gt;-Elements.</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStartContent.0">
         <source>Wrapper start (content)</source>
         <target>Umschlag Anfang (Inhalt)</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStartContent.1">
-        <source>Generates the opening part of the content wrapper.</source>
-        <target>Erzeugt den öffnenden Teil des Inhalts-Umschlags.</target>
+        <source>Generates the opening part of a wrapper that allows for the simulation of a content element. This wrapper can be used to ensure that the grid properties of the parent element do not affect the elements contained within this wrapper. Furthermore, it is possible to define backgrounds, padding, borders, and other properties that are typically only configurable for content elements.</source>
+        <target>Erzeugt den öffnenden Teil eines Umschlags, der die Simulation eines Inhaltselements ermöglicht. Dieser Umschlag kann verwendet werden, um sicherzustellen, dass die Grid-Eigenschaften des übergeordneten Elements innerhalb der enthaltenen Elemente in diesem Umschlag nicht wirken. Darüber hinaus ist es möglich, auch Hintergründe, Padding, Border und andere Eigenschaften zu definieren, die üblicherweise ausschließlich für Inhaltselemente konfiguriert werden können.</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStopContent.0">
         <source>Wrapper stop (content)</source>
         <target>Umschlag Ende (Inhalt)</target>
       </trans-unit>
       <trans-unit id="CTE.wrapperStopContent.1">
-        <source>Generates the closing part of the content wrapper.</source>
-        <target>Erzeugt den schließenden Teil des Inhalts-Umschlags.</target>
+        <source>Generates the closing part of the &lt;em&gt;Wrapper start (content)&lt;/em&gt;.</source>
+        <target>Erzeugt den schließenden Teil des &lt;em&gt;Umschlag Anfang (Inhalt)&lt;/em&gt;-Elements.</target>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>

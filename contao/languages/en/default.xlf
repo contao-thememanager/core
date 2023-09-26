@@ -11,28 +11,28 @@
         <source>Component lists</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStart.0">
-        <source>Wrapper start</source>
+        <source>Wrapper start (article)</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStart.1">
-        <source>Generates the opening part of the wrapper.</source>
+        <source>Generates the opening part of a wrapper that simulates the presentation of an article. It provides the option to choose between using a grid layout and a layout without a grid. The wrapper allows you to divide the content within an article into multiple columns.</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStop.0">
-        <source>Wrapper stop</source>
+        <source>Wrapper stop (Article)</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStop.1">
-        <source>Generates the closing part of the wrapper.</source>
+        <source>Generates the closing part of the &lt;em&gt;Wrapper start (article)&lt;/em&gt;.</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStartContent.0">
         <source>Wrapper start (content)</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStartContent.1">
-        <source>Generates the opening part of the content wrapper.</source>
+        <source>Generates the opening part of a wrapper that allows for the simulation of a content element. This wrapper can be used to ensure that the grid properties of the parent element do not affect the elements contained within this wrapper. Furthermore, it is possible to define backgrounds, padding, borders, and other properties that are typically only configurable for content elements.</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStopContent.0">
         <source>Wrapper stop (content)</source>
       </trans-unit>
       <trans-unit id="CTE.wrapperStopContent.1">
-        <source>Generates the closing part of the content wrapper.</source>
+        <source>Generates the closing part of the &lt;em&gt;Wrapper start (content)&lt;/em&gt;.</source>
       </trans-unit>
       <trans-unit id="MSC.commentCountOne">
         <source>1 comment</source>
