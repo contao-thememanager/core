@@ -1,3 +1,28 @@
-/.idea
+# Composer
 /composer.lock
+/vendor/
+
+# Contao Manager
+/contao-manager/
+
+# PhpUnit
+/.phpunit.result.cache
+/phpunit.xml
+
+# IDE
+/.idea
+
+# Generated folders
+/system/*
+!/system/config/
+/system/config/localconfig.php
+/system/config/tcpdf.php
+/var/
+/web/
+/assets/
+/public/
+
+# Skip files
+/system/modules/*/.skip
 /.env
+/.env.local
