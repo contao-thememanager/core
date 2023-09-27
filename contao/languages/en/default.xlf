@@ -40,6 +40,12 @@
       <trans-unit id="MSC.commentCountMultiple">
         <source>%s comments</source>
       </trans-unit>
+      <trans-unit id="COLS.mainAbove">
+        <source>Main above</source>
+      </trans-unit>
+      <trans-unit id="COLS.mainBelow">
+        <source>Main below</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

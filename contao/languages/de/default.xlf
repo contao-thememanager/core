@@ -3,7 +3,7 @@
     <body>
       <trans-unit id="CTE.wrapper">
         <source>Wrapper</source>
-        <target>Umschläge</target>
+        <target>Umschlag</target>
       </trans-unit>
       <trans-unit id="CTE.components">
         <source>Components</source>
@@ -52,6 +52,14 @@
       <trans-unit id="MSC.commentCountMultiple">
         <source>%s comments</source>
         <target>%s Kommentare</target>
+      </trans-unit>
+      <trans-unit id="COLS.mainAbove">
+        <source>Main above</source>
+        <target>Hauptspalte Oben</target>
+      </trans-unit>
+      <trans-unit id="COLS.mainBelow">
+        <source>Main below</source>
+        <target>Hauptspalte Unten</target>
       </trans-unit>
     </body>
   </file>
