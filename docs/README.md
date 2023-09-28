@@ -6,7 +6,7 @@
     </picture>
 </p>
 <p align="center">
-    <small style="color:#aeaeae;">Ein Produkt von <a href="https://oveleon.de" style="color:#aeaeae; text-decoration: none;">Oveleon</a></small>
+    <small style="color:#aeaeae;">Ein Produkt von <a href="https://www.oveleon.de/" style="color:#aeaeae; text-decoration: none;">Oveleon</a></small>
 </p>
 <br/>
 
