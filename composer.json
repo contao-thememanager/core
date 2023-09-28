@@ -2,8 +2,8 @@
   "name": "contao-thememanager/core",
   "type": "contao-bundle",
   "description": "Contao Theme-Manager",
-  "keywords": ["contao","theme","css","manager"],
-  "homepage": "https://www.oveleon.de/thememanager.html",
+  "keywords": ["contao", "theme", "css", "manager"],
+  "homepage": "https://www.contao-thememanager.com/",
   "license": "AGPL-3.0-or-later",
   "authors": [
     {
@@ -27,6 +27,12 @@
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/contao-thememanager/core/issues",
+    "source": "https://github.com/contao-thememanager/core",
+    "forum": "https://github.com/contao-thememanager/core/discussions",
+    "docs": "https://docs.contao-thememanager.com/"
+  },
   "require": {
     "ext-dom": "*",
     "ext-simplexml": "*",
@@ -41,6 +47,9 @@
   },
   "require-dev": {
     "contao/manager-plugin": "^2.3.1"
+  },
+  "suggest": {
+    "contao-thememanager/ctm-tiny-slider": "For integrating the well known tiny-slider into the thememanager"
   },
   "conflict": {
     "contao/core": "*",

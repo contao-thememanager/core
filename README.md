@@ -109,7 +109,6 @@ It's up to you to make a strong case to convince the project's developers of the
 ## Extensions / Addons
 - Slider (Tiny Slider) [🔗](https://github.com/contao-thememanager/ctm-tiny-slider)
 - Recommendation (Contao Recommendation) [🔗](https://github.com/contao-thememanager/ctm-recommendation)
-- EstateManager (Contao EstateManager) [🔗](https://github.com/contao-thememanager/ctm-estatemanager)
 - ...
 
 
