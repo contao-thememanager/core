@@ -1,6 +1,14 @@
 // Import Dart Sass math lib for divisions
 @use "sass:math";
 
+:root {
+  --tm-border: #e8e8e8;
+}
+
+html[data-color-scheme="dark"] {
+  --tm-border: #414141;
+}
+
 // Icon font-family for icon picker
 #ctrl_styleManager {
   &_eList,
@@ -15,7 +23,7 @@
 .tc_box {
   // Background image list in theme compiler
   .bg-list {
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--tm-border);
     height: 50px;
     max-height: 300px;
     overflow-y: auto;
@@ -147,7 +155,7 @@ form#tl_thememanager {
       top: 32px;
       height: 20px;
       width: #{$select-type-wdth - (7px + 3px + 1px)};
-      border-left: 1px solid #aaa;
+      border-left: 1px solid var(--form-border, #aaa);
       padding: 5px 7px 5px 3px;
     }
 
@@ -251,7 +259,7 @@ form#tl_thememanager {
 }
 
 // Tablet
-@media (max-width:1263px) {
+@media (max-width:1263.98px) {
 
   form#tl_thememanager {
     .w50, .w33, .w25, .w20 {
@@ -261,7 +269,7 @@ form#tl_thememanager {
 }
 
 // Handheld
-@media (max-width:767px) {
+@media (max-width:767.98px) {
   form#tl_thememanager {
     .w50, .w33, .w25, .w20 {
       float: none;
