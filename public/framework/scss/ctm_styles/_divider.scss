@@ -6,8 +6,8 @@
     border-color: $divider-color;
   }
 
-  &-top { border-width: $divider-size 0 0 0 }
-  &-btm { border-width: 0 0 $divider-size 0 }
+  &-top { border-top-width:    $divider-size; }
+  &-btm { border-bottom-width: $divider-size; }
 
   &-inner {
 
