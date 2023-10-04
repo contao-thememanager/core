@@ -147,8 +147,8 @@
         <target>$border-radius</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.border-radius.1">
-        <source>Here you can set a global border-radius that can be used within your skin.</source>
-        <target>Hier können Sie einen globalen Rahmen-Radius (border-radius) für die Verwendung in einem Skin einstellen.</target>
+        <source>Here you can set a global border-radius that can be used within your theme.</source>
+        <target>Hier können Sie einen globalen Rahmen-Radius (border-radius) für die Verwendung in einem Theme einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.primary.0">

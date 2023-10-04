@@ -111,7 +111,7 @@
         <source>$border-radius</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.border-radius.1">
-        <source>Here you can set a global border-radius that can be used within your skin.</source>
+        <source>Here you can set a global border-radius that can be used within your theme.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.primary.0">

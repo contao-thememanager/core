@@ -2,8 +2,8 @@
   <file datatype="php" original="contao/languages/en/tl_thememanager_settings.php" source-language="en" target-language="de">
     <body>
       <trans-unit id="tl_thememanager_settings.thememanagerIconFont.0">
-        <source>ThemeManager Icon Font</source>
-        <target>ThemeManager Icon Font</target>
+        <source>Icon Font</source>
+        <target>Icon Font</target>
       </trans-unit>
       <trans-unit id="tl_thememanager_settings.thememanagerIconFont.1">
         <source>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</source>
