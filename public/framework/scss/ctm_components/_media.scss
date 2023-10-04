@@ -37,7 +37,7 @@ video {
   &--stretch   {
     --img-hght:100%;
     --objf:cover; // Auto-height custom property
-    img, figure, picture { height: 100%; }
+    img, figure, picture, &.ce_image > .inside { height: 100%; }
   }
 
   // Object-position horizontal | default: '50%'
