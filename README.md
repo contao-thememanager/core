@@ -63,8 +63,7 @@ responsive web experiences with Contao.
 - Backend configuration for SCSS-variables [🔗](https://github.com/oveleon/contao-config-driver-bundle)
 - Asset-Compiler for generating and renewing CSS-Files from the theme configuration [🔗](https://github.com/oveleon/contao-theme-compiler-bundle)
 - Styles and component configuration using the StyleManager [🔗](https://github.com/oveleon/contao-component-style-manager)
-- Custom skin integration to customize whole websites using this framework
-- __Custom skin integration to customize the whole website based on this framework__ 🎭
+- Custom scss-file integration to customize whole websites using this framework
 
 
 ## Installation
