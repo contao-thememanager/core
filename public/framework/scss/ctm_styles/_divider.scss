@@ -2,8 +2,7 @@
 
   &-top,
   &-btm {
-    border-style: $divider-style;
-    border-color: $divider-color;
+    border: 0 $divider-style $divider-color;
   }
 
   &-top { border-top-width:    $divider-size; }
@@ -21,7 +20,7 @@
           position: absolute;
           height: $divider-size;
 
-          // inner dividers do not react to small- or no-gutter
+          // inner dividers do not need to react to small- or no-gutter due to article-spacing
           left:  divide($grid-gutter-width, 2);
           right: divide($grid-gutter-width, 2);
 
