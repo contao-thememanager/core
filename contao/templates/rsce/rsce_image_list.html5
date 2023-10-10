@@ -5,7 +5,7 @@
   if ($this->fullsize) {
     foreach ($this->list as $key => $item) {
       $item->lb     = 'lb_'.$this->pid;
-      $item->src = (FilesModel::findByUuid($item->singleSRC))->path;
+      $item->src = (Contao\FilesModel::findByUuid($item->singleSRC))->path;
     }
   }
 ?>
