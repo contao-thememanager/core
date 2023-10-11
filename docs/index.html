@@ -84,7 +84,8 @@
         docEditBase = docEditBase || docBase.replace(/\/blob\//, '/edit/')
 
         function editDoc(event, vm) {
-          var docName = vm.route.file.replace(/\/docs\//, '/edit/2.x/docs/')
+          let url = '/core/docs/' + vm.route.file.split('/').pop();
+          var docName = url.replace(/\/docs\//, '/edit/2.x/docs/')
 
           if (docName) {
             var editLink = docEditBase + docName
@@ -126,8 +127,6 @@
               return header + html
             })
           }
-
-
         }
       }
 
