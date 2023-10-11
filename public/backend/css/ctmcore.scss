@@ -9,6 +9,11 @@ html[data-color-scheme="dark"] {
   --tm-border: #414141;
 }
 
+// Revert contao 5.x grid when previewing ctm components
+.cte_preview .inside {
+  all: unset !important;
+}
+
 // Icon font-family for icon picker
 #ctrl_styleManager {
   &_eList,
