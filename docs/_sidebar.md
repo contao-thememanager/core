@@ -6,7 +6,7 @@
 * Installation
   * [Systemanforderungen](installation/requirements.md)
   * [Download und Installation](installation/installation.md)
-  * [Fehlersuche bei der Installation](installation/troubleshooting.md)
+  * [Einrichtung](installation/setup.md)
    
 * Konfiguration
   * [Theme](configuration/theme.md)
@@ -29,5 +29,6 @@
    
 * Zusätzliche Ressourcen
   * [Glossar](GLOSSARY.md)
+  * [Troubleshooting](troubleshooting.md)
   * [Fehler melden](https://github.com/contao-thememanager/core/issues)
   * [GitHub](https://github.com/contao-thememanager/core)
