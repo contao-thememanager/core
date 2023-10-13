@@ -29,12 +29,13 @@ php vendor/bin/contao-console contao:migrate [options]
 
 
 ### Über den Contao Manager
-Die Installation ist üblich wie die jeder anderen Erweiterung, welche über den Extension-Katalog von Contao zu finden
+Die Installation ist üblich wie die jeder anderen Erweiterung, welche über den Contao Manager zu finden
 ist.
 
 Der Contao Manager kann über ``example.com/contao-manager.phar.php`` aufgerufen werden,
 ``example.com`` muss hierbei  durch die eigene Domain ersetzt werden.
 
+?> Hier findest Du [weitere Informationen über den Contao Manager](https://docs.contao.org/manual/de/installation/contao-manager/)
 
 ![Contao Manager suchen](../_images/1_manager_1.png)
 1. Der Contao ThemeManager lässt sich über die Suche durch die Eingabe von ``Contao ThemeManager`` finden.

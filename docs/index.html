@@ -52,6 +52,33 @@
       color: #566974;
     }
 
+    .markdown-section p.warn{
+      border-bottom-right-radius: 2px;
+      border-left: 4px solid #ffb466;
+      border-top-right-radius: 2px;
+      margin: 2em 0;
+      padding: 12px 24px 12px 30px;
+      position: relative;
+      background-color: #f8f8f8;
+    }
+
+    .markdown-section p.warn:before {
+      background-color: #ffb466;
+      border-radius: 100%;
+      color: #fff;
+      content: "?";
+      font-family: Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      left: -12px;
+      line-height: 20px;
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      top: 14px;
+    }
+
     @media (min-width: 1300px) {
       .markdown-section {
         max-width: 950px;

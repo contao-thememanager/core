@@ -6,7 +6,8 @@
 * Installation
   * [Systemanforderungen](installation/requirements.md)
   * [Download und Installation](installation/installation.md)
-  * [Einrichtung](installation/setup.md)
+  * [Demo installieren](installation/demo.md)
+  * [Ersteinrichtung](installation/setup.md)
    
 * Konfiguration
   * [Theme](configuration/theme.md)
