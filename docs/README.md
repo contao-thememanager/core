@@ -1,7 +1,5 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://contao-thememanager.github.io/core/logo_v_dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="https://contao-thememanager.github.io/core/logo_v_light.svg">
         <img src="https://contao-thememanager.github.io/core/logo_v_light.svg" width="500" alt="ContaoThemeManager">
     </picture>
 </p>
