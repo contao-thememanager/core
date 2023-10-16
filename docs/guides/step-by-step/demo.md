@@ -29,7 +29,7 @@ Hier findest Du eine Liste der letzten Demo-Versionen. Klicke auf die Version, d
 ## 3. Demo installieren und einrichten
 Sofern der _Product Installer_ installiert und die Demo heruntergeladen ist, können wir mit der Einrichtung dieser beginnen. Im Contao-Backend erscheint nun der Punkt "Produktverwaltung", welcher bei Klick den _Product Installer_ öffnet.
 
-![product-installer.png](../_images/product-installer/product-installer.png)
+![product-installer.png](../../_images/product-installer/product-installer.png)
 
 #### Produkt registrieren
 Im nächsten Schritt möchten wir die Demo registrieren, damit die Einrichtung über den _Product Installer_ zur Verfügung gestellt wird.  
@@ -38,20 +38,20 @@ Mit Klick auf **Produkt registrieren** öffnet sich eine Maske, in der ein bis m
 
 ?> Sollten keine weiteren Schnittstellen installiert sein, kann es sein, dass Du bei Klick auf **Produkt registrieren**, direkt in die "Produkt hochladen" Maske geleitet wirst.
 
-![product-installer.png](../_images/product-installer/product-upload.png)
+![product-installer.png](../../_images/product-installer/product-upload.png)
 
 #### Produkt hochladen
 Die Schnittstelle "Produkte hochladen" bietet Dir eine Uploadmöglichkeit lokaler Produktpakete. Hier kannst Du die Produktdatei (`.content`) der Demo bequem in die gestrichelte Linie ziehen oder per Klick auf das Upload-Symbol zur Verfügung stellen. 
 Anschließend wird die Produktdatei vom _Product Installer_ geprüft und angezeigt.
 
-![product-installer.png](../_images/product-installer/product-uploader.png)
+![product-installer.png](../../_images/product-installer/product-uploader.png)
 
 #### Produktprüfung
 Hat alles funktioniert sehen wir im nächsten Schritt das soeben hochgeladene Produkt.
 
 ?> Es könnte sein, dass Du eine Fehlermeldung bekommst, mit dem Hinweis, dass Deine Contao-Version nicht für das Produkt geeignet ist. Bitte überprüfe in diesem Fall Deine Contao-Version, sowie die Version der heruntergeladenen Demo.
 
-![product-installer.png](../_images/product-installer/product-preview.png)
+![product-installer.png](../../_images/product-installer/product-preview.png)
 
 #### Contao Manager Authentifizierung
 In der nächsten Maske prüft der _Product Installer_, ob er eine Verbindung zum Contao Manager herstellen kann. Diese wird benötigt, um das Produkt ordnungsgemäß zu installieren.
@@ -67,15 +67,15 @@ In diesem Schritt könnten drei Szenarien auftreten. Bitte folgen Sie den Hinwei
 
 Sofern die Verbindung hergestellt wurde, siehst Du folgende Maske:
 
-![product-installer.png](../_images/product-installer/product-manager.png)
+![product-installer.png](../../_images/product-installer/product-manager.png)
 
 #### Produktvorbereitung und -registrierung
 Nach Klick auf **Weiter** kommen wir in die eigentliche Produktregistrierung und Installation der Abhängigkeiten. Hier erhältst du eine Übersicht der Prozesse, welche durchgeführt werden müssen, um Dein Produkt zu registrieren und anschließend einrichten zu können.
 Mit einem weiteren Klick auf **Starten** wird dieser Prozess gestartet.
 
-?> **Tipp:** Über die drei Punkte ( **⋮** ) neben einem Prozess können Details zu diesem aufgerufen werden.
+?> **Tipp:** Über die drei Punkte ( **⋮** ) neben einem Prozess können Details zu diesem aufgerufen oder Aktionen angewendet werden.
 
-![product-installer.png](../_images/product-installer/product-process-console.png)
+![product-installer.png](../../_images/product-installer/product-process-console.png)
 
 #### Produkteinrichtung
 Sofern alle Prozesse erfolgreich durchgelaufen sind, steht das Produkt, in diesem Fall unsere Demo, in der Produktübersicht des _Product Installers_ bereit und wartet auf die Einrichtung. 
@@ -83,7 +83,7 @@ Sofern alle Prozesse erfolgreich durchgelaufen sind, steht das Produkt, in diese
 
 ?> Ein registriertes Produkt kann mehrfach in Deiner Contao Instanz eingerichtet werden.
 
-![product-installer.png](../_images/product-installer/product-products.png)
+![product-installer.png](../../_images/product-installer/product-products.png)
 
 In der Einrichtungsmaske eines Produktes wird zunächst noch einmal geprüft, ob alle Abhängigkeiten installiert und auf dem neusten Stand sind. Sollte dies der Fall sein, kannst du die Einrichtung über das Menü ( **⋮** ) des hier verankerte Inhaltspaketes starten. 
 
@@ -91,6 +91,6 @@ In der Einrichtungsmaske eines Produktes wird zunächst noch einmal geprüft, ob
 
 !> Wir empfehlen vorerst stets die **schnelle Einrichtung** zu verwenden!
 
-![product-installer.png](../_images/product-installer/product-setup.png)
+![product-installer.png](../../_images/product-installer/product-setup.png)
 
 Sobald die Einrichtung abgeschlossen ist, ist die Demo installiert. Schließen Sie den _Product Installer_ und öffnen Sie die Live-Vorschau über das Contao Backend.

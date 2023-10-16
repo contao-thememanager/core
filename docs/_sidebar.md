@@ -24,12 +24,13 @@
 * Guides
   * [Anleitungen für spezifische Aufgaben](guides/instructions.md)
   * [Schritt-für-Schritt-Anleitungen](guides/step-by-step.md)
-    * [Demo installieren](installation/demo.md)
+    * [Demo installieren](guides/step-by-step/demo.md)
     * [Mein erstes Theme](guides/step-by-step/first-theme.md)
     * [Icon-Set anlegen / erweitern](guides/step-by-step/extend-create-icon-set.md)
    
 * Zusätzliche Ressourcen
   * [Glossar](GLOSSARY.md)
   * [Troubleshooting](troubleshooting.md)
+  * [Projekt-Website](https://contao-thememanager.com/)
   * [Fehler melden](https://github.com/contao-thememanager/core/issues)
   * [GitHub](https://github.com/contao-thememanager/core)
