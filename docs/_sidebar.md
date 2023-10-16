@@ -6,7 +6,6 @@
 * Installation
   * [Systemanforderungen](installation/requirements.md)
   * [Download und Installation](installation/installation.md)
-  * [Demo installieren](installation/demo.md)
   * [Ersteinrichtung](installation/setup.md)
    
 * Konfiguration
@@ -25,6 +24,7 @@
 * Guides
   * [Anleitungen für spezifische Aufgaben](guides/instructions.md)
   * [Schritt-für-Schritt-Anleitungen](guides/step-by-step.md)
+    * [Demo installieren](installation/demo.md)
     * [Mein erstes Theme](guides/step-by-step/first-theme.md)
     * [Icon-Set anlegen / erweitern](guides/step-by-step/extend-create-icon-set.md)
    
