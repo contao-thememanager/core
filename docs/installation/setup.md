@@ -25,8 +25,9 @@ eine neue Palette **Theme-Compiler** erweitert wurde.
 ?> Schau dir die offizielle [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/themes-verwalten/) an, um zu erfahren, wie ein Theme in Contao eingerichtet wird.
 
 ![Ordner im Theme einstellen](../_images/setup/3_theme_3.png)
-Wähle den zuvor erstellten Ordner aus, in dem die CSS-Dateien kompiliert werden sollen. Nach der Auswahl des Ordners 
-kannst du durch <span class="btn-preview">**Speichern und kompilieren**</span> die initialen CSS-Dateien generieren.
+Wähle den zuvor erstellten Ordner aus, in welchen die CSS-Dateien kompiliert werden sollen. Nach der Auswahl des 
+Ordners kannst du durch <span class="btn-preview">**Speichern und kompilieren**</span> die initialen Stylesheets
+generieren.
 
 #### Compiler-Report
 ![Compiler Report](../_images/setup/3_theme_6.png)
