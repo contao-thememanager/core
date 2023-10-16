@@ -43,6 +43,8 @@ Mit Klick auf **Produkt registrieren** öffnet sich eine Maske, in der ein bis m
 Die Schnittstelle "Produkte hochladen" bietet Dir eine Uploadmöglichkeit lokaler Produktpakete. Hier kannst Du die Produktdatei (`.content`) der Demo bequem in die gestrichelte Linie ziehen oder per Klick auf das Upload-Symbol zur Verfügung stellen. 
 Anschließend wird die Produktdatei vom _Product Installer_ geprüft und angezeigt.
 
+![product-installer.png](../_images/product-installer/product-uploader.png)
+
 Hat alles funktioniert sehen wir im nächsten Schritt das soeben hochgeladene Produkt.
 
 ?> Es könnte sein, dass Du eine Fehlermeldung bekommst, mit dem Hinweis, dass Deine Contao-Version nicht für das Produkt geeignet ist. Bitte überprüfe in diesem Fall Deine Contao-Version, sowie die Version der heruntergeladenen Demo.
