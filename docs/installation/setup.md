@@ -75,8 +75,7 @@ Bei der Erstellung eines neuen Layouts werden bereits folgende Einstellungen dur
 - JavaScript *(JavaScript-Template: js_ctm_core -> Polyfills)*
 - Experteneinstellungen *(Viewport-Tag)*
 
-Du musst lediglich die im vorherigen Schritt generierten Stylesheets einbinden und eine Einstellung im StyleManager 
-vornehmen.
+Du musst lediglich die im vorherigen Schritt generierten Stylesheets einbinden.
 
 ![CSS-Dateien im Layout einbinden](../_images/setup/4_layout_5.png)
 Binde nun unter **Externe Stylesheets** deine durch den [Compiler](#compiler-report) erstellten Stylesheets in folgender 
@@ -94,19 +93,6 @@ diese Datei an erster Stelle eingebunden werden. In bestimmten Ausnahmen wie z.B
 letzte Stylesheet-Datei einzubinden, damit das Überschreiben dieser über einen eigenen [Skin](configuration/skin) 
 einfacher ist.
 
-Im letzten Schritt erfolgt eine Einstellung über den StyleManager, in welcher die Layout-Spalten konfiguriert werden. 
-Dies dient dazu, dass die in Contao enthaltenen Layoutbereiche korrekt angezeigt werden.
-
-##### Layout-Columns
-| Layout Columns | Funktion                                                                                                     |
-|----------------|--------------------------------------------------------------------------------------------------------------|
-| No Column      | Blendet den verantwortlichen Bereich aus, der für Hauptspalte, Linke Spalte und Rechte Spalte verwendet wird |
-| 1 Column       | Richtet die Hauptspalte und ***eine*** linke oder rechte Spalte korrekt aus (eine Spalte)                    |
-| 2 Columns      | Richtet die Hauptspalte und ***eine*** linke und rechte Spalte korrekt aus (zwei Spalten)                    |
-
-![Layout-Columns auf No Column einstellen](../_images/setup/4_layout_6.png)
-Wähle die Option "No Column" aus und klicke auf <span class="btn-preview">**Speichern und schließen**</span>.
-
 #### Inhaltslayout
 Dieses Layout bedient sich zusätzlich der in Contao integrierten Layoutbereiche: 
 - Hauptspalte
@@ -123,11 +109,20 @@ Im nachfolgenden Beispiel nennen wir dieses Layout **Content**.
 ![Default-Layout duplizieren](../_images/setup/4_layout_7.png)
 Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die gewünschte Anzahl der Spalten an.
 
+##### Layout-Columns
+| Layout Columns | Funktion                                                                                                     |
+|----------------|--------------------------------------------------------------------------------------------------------------|
+| No Column      | Blendet den verantwortlichen Bereich ein, der für Hauptspalte, Linke Spalte und Rechte Spalte verwendet wird |
+| 1 Column       | Richtet die Hauptspalte und ***eine*** linke oder rechte Spalte korrekt aus (eine Spalte)                    |
+| 2 Columns      | Richtet die Hauptspalte und ***eine*** linke und rechte Spalte korrekt aus (zwei Spalten)                    |
+
 ![Content-Layout einstellen](../_images/setup/4_layout_8.png)
 In diesem Beispiel haben wir die Layoutbereiche **Hauptspalte** und **Reche Spalte** hinzugefügt, sodass diese jetzt 
 **zwischen** den Layoutbereichen **Hauptspalte Oben** und **Hauptspalte Unten** eingebunden werden müssen.
 
 Die StyleManager-Einstellung der [Layout-Columns](#layout-columns) hängt dabei von der genutzten Anzahl der Spalten ab.
+
+?> Der horizontale und vertikale Abstand dieser Layoutbereiche lassen sich über das Article-Spacing im Layout einstellen.
 
 ### Theme-Konfiguration
 Das CSS-Framework des Contao ThemeManagers kann an die eigenen Bedürfnisse angepasst werden.
