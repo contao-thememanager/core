@@ -77,7 +77,7 @@ Mit einem weiteren Klick auf **Starten** wird dieser Prozess gestartet.
 
 ![product-installer.png](../../_images/product-installer/product-process-console.png)
 
-!> Sollten Probleme während der Datenbankmigrierung auftreten, kann dieser Schritt übersprungen werden, bitte führe das Migrieren der Datenbank anschließend über den Contao Manager durch.
+!> Sollten Probleme während der Datenbankmigrierung auftreten, kann dieser Schritt übersprungen werden. Bitte führe das Migrieren der Datenbank anschließend über den Contao Manager durch.
 
 #### Produkteinrichtung
 Sofern alle Prozesse erfolgreich durchgelaufen sind, steht das Produkt, in diesem Fall unsere Demo, in der Produktübersicht des _Product Installers_ bereit und wartet auf die Einrichtung. 
