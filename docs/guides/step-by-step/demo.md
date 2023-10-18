@@ -77,6 +77,8 @@ Mit einem weiteren Klick auf **Starten** wird dieser Prozess gestartet.
 
 ![product-installer.png](../../_images/product-installer/product-process-console.png)
 
+Sofern die Notwendigkeit besteht, eine Datenbankmigrierung durchzuführen, muss diese manuell über das Menü ( **⋮** ) gestartet werden. 
+
 !> Sollten Probleme während der Datenbankmigrierung auftreten, kann dieser Schritt übersprungen werden. Bitte führe das Migrieren der Datenbank anschließend über den Contao Manager durch.
 
 #### Produkteinrichtung
