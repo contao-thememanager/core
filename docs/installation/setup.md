@@ -131,7 +131,7 @@ Grid, die Breakpoint-Einstellungen und vieles mehr.
 
 ![Theme-Konfiguration](../_images/setup/3_theme_4.png)
 Die Theme-Konfiguration lässt sich nun über die Theme-Übersicht mithilfe des 
-<img width="22" src="https://contao-thememanager.github.io/core/config.svg"> **Theme konfigurieren**-Buttons aufrufen.
+<img width="22" src="https://contao-thememanager.github.io/core/config.svg" data-no-zoom> **Theme konfigurieren**-Buttons aufrufen.
 
 ![Beispiel der Theme-Konfiguration](../_images/setup/5_config_1.png)
 *Änderung der primären Farbe*
