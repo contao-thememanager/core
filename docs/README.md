@@ -21,14 +21,14 @@ ___
 
 ### Systemanforderungen
 Bevor du mit der Installation beginnst, stelle sicher, dass dein System den erforderlichen Anforderungen für den 
-Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um das Theme-Management optimal zu
-nutzen.
+Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um den Theme-Manager nutzen zu
+können.
 - <a href="installation/requirements" title="Systemanforderungen">Zu den Systemanforderungen</a>
    
 
 ### Download und Installation
-Hier erfährst du, wie du den Contao ThemeManager herunterladen und erfolgreich in deine Contao-Installation 
-integrieren kannst. Schritt-für-Schritt-Anleitungen helfen dir, das Plugin reibungslos zu installieren.
+Hier erfährst du, wie du den Contao ThemeManager herunterladen und erfolgreich in deine Contao-Installation integrieren 
+kannst. Schritt-für-Schritt-Anleitungen helfen dir, das Plugin reibungslos zu installieren.
 - <a href="installation/installation" title="Installation">Installation des ThemeManagers</a>
 
 
