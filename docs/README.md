@@ -8,25 +8,44 @@
 </p>
 <br/>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+# ThemeManager Dokumentation
+
+Willkommen zur Dokumentation des Contao ThemeManagers!
+
+Derzeit befindet sich die Dokumentation noch im Aufbau, aber wir arbeiten daran, sie so schnell wie möglich für dich 
+bereitzustellen.
+
+___
+
+## Verfügbare Artikel
+
+### Systemanforderungen
+Bevor du mit der Installation beginnst, stelle sicher, dass dein System den erforderlichen Anforderungen für den 
+Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um das Theme-Management optimal zu
+nutzen.
+- <a href="installation/requirements" title="Systemanforderungen">Zu den Systemanforderungen</a>
+   
+
+### Download und Installation
+Hier erfährst du, wie du den Contao ThemeManager herunterladen und erfolgreich in deine Contao-Installation 
+integrieren kannst. Schritt-für-Schritt-Anleitungen helfen dir, das Plugin reibungslos zu installieren.
+- <a href="installation/installation" title="Installation">Installation des ThemeManagers</a>
 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+### Ersteinrichtung
+Nach der Installation ist es wichtig, den Contao ThemeManager korrekt einzurichten. Entdecke, wie du die ersten 
+Konfigurationsschritte durchführst und das Theme-Management optimal auf deine Bedürfnisse abstimmst.
+- <a href="installation/setup" title="Ersteinrichtung">Ersteinrichtung des ThemeManagers</a>
 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+### Demo installieren
+Möchtest du vor der eigentlichen Nutzung eine Testumgebung aufsetzen? Hier erfährst du, wie du die 
+[Demo](https://demo.contao-thememanager.com) des Contao ThemeManagers installierst und die wichtigsten Funktionen 
+kennenlernen kannst.
+- <a href="guides/step-by-step/demo" title="Demo installieren">ThemeManager Demo installieren</a>
+
+!> Wir arbeiten hart daran, die Dokumentation zu erweitern und weitere nützliche Informationen bereitzustellen. Bitte
+habe Verständnis dafür, dass einige Abschnitte möglicherweise noch nicht vollständig sind.
 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+Vielen Dank für dein Interesse am Contao ThemeManager!
