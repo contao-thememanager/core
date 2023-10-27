@@ -21,7 +21,7 @@ ___
 
 ### Systemanforderungen
 Bevor du mit der Installation beginnst, stelle sicher, dass dein System den erforderlichen Anforderungen für den 
-Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um den Theme-Manager nutzen zu
+Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um den Contao ThemeManager nutzen zu
 können.
 - <a href="installation/requirements" title="Systemanforderungen">Zu den Systemanforderungen</a>
    
