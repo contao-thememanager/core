@@ -74,7 +74,7 @@ class ConfigGenerator
     /**
      * Gets a specific value from the ThemeManager configuration
      */
-    private function getThemeManagerConfigVar(array $configVars, string $key): ?string
+    public function getThemeManagerConfigVar(array $configVars, string $key): ?string
     {
         if (!array_key_exists($key, $configVars) || !is_string($value = $configVars[$key]) || !strlen($value))
         {
@@ -87,7 +87,7 @@ class ConfigGenerator
     /**
      * Gets a list configuration and generates the style-manager xml options
      */
-    private function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = []): array
+    public function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = []): array
     {
         $options = [];
 
