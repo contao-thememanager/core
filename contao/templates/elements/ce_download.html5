@@ -1,7 +1,7 @@
 <?php
   $sm = $this->styleManager;
   $spanClasses = $sm->prepare('eLink',['icon','direction'])->format(' %s');
-  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' class="%s"');
+  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' %s');
 
   $this->extend('block_searchable');
 ?>
@@ -15,7 +15,7 @@
   <?php endif ?>
 
   <p class="download-element ext-<?= $this->extension ?>">
-    <a<?= $aClasses ?> href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>">
+    <a class="c_link<?= $aClasses ?>" href="<?= $this->href ?>" title="<?= $this->title ?>" type="<?= $this->mime ?>">
       <span class="name<?= $spanClasses ?>"><?= $this->link ?></span> <span class="size">(<?= $this->filesize ?>)</span>
     </a>
   </p>

@@ -2,7 +2,7 @@
   $sm = $this->styleManager;
   $ulClasses   = $sm->prepare('eList')->format(' %s');
   $spanClasses = $sm->prepare('eLink',['icon','direction'])->format(' %s');
-  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' class="%s"');
+  $aClasses    = $sm->prepare('eLink')->exclude(['icon','direction'])->format(' %s');
 
   $this->extend('block_searchable');
 ?>
@@ -17,7 +17,7 @@
             <?php $this->insert('image', $preview->getLegacyTemplateData()) ?>
           <?php endforeach ?>
         <?php endif ?>
-        <a<?= $aClasses ?> href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>">
+        <a class="c_link<?= $aClasses ?>" href="<?= $file['href'] ?>" title="<?= $file['title'] ?>" type="<?= $file['mime'] ?>">
           <span class="name<?= $spanClasses ?>"><?= $file['link'] ?></span> <span class="size">(<?= $file['filesize'] ?>)</span>
         </a>
       </li>

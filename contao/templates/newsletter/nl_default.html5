@@ -50,7 +50,7 @@
       <?php endif; ?>
 
       <div class="widget widget-submit">
-        <button type="submit" class="submit<?= $aClasses ?>"><?= $this->submit ?></button>
+        <button type="submit" class="submit c_link<?= $aClasses ?>"><?= $this->submit ?></button>
       </div>
     </div>
   </form>

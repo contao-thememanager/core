@@ -71,7 +71,7 @@
           <?php endif; ?>
         <?php endif; ?>
         <div class="widget widget-submit">
-          <button type="submit" class="submit<?= $aClasses ?>"><?= $this->slabel ?></button>
+          <button type="submit" class="submit c_link<?= $aClasses ?>"><?= $this->slabel ?></button>
           <?php if ($this->twoFactorEnabled): ?>
             <a href="<?= $this->route('contao_frontend_logout') ?>"><?= $this->cancel ?> ›</a>
           <?php endif; ?>

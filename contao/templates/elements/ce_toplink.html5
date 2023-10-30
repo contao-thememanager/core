@@ -8,7 +8,7 @@
 <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside<?= $insideClasses ?>">
-    <a href="<?= $this->request ?>#top" class="<?= $aClasses ?>" title="<?= $this->title ?>"><?= $this->label ?></a>
+    <a href="<?= $this->request ?>#top" class="c_link<?= $aClasses ?>" title="<?= $this->title ?>"><?= $this->label ?></a>
   </div>
 </div>
 <!-- indexer::continue -->

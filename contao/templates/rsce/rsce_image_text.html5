@@ -32,7 +32,7 @@
     <?= $this->text ?>
     <?php if($this->linkText && $this->url): ?>
       <p>
-        <a href="<?=$this->url?>" class="<?= $aClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
+        <a href="<?=$this->url?>" class="c_link<?= $aClasses ?>"<?= $this->titleText ? ' title="'.$this->titleText.'"' : '' ?><?= $this->rel ? ' rel="'.$this->rel.'"' : '' ?><?= ($this->target && !$this->rel) ? ' target="_blank"' : '' ?>><?=$this->linkText?></a>
       </p>
     <?php endif; ?>
   </div>

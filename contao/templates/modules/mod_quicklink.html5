@@ -21,7 +21,7 @@
         </select>
       </div>
       <div class="widget widget-submit">
-        <button type="submit" class="submit<?= $aClasses ?>"><?= $this->button ?></button>
+        <button type="submit" class="submit c_link<?= $aClasses ?>"><?= $this->button ?></button>
       </div>
     </div>
   </form>
