@@ -101,10 +101,10 @@ class BackgroundImageGenerator
      */
     private function createBackgroundXML(array $backgrounds, $xml): void
     {
-        $xml->addGroup(50, 'Background', 'gBackground', 'Global', 500)
+        $xml->addGroup('gBackground', 50, 'Background', 'Global', 500)
             ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
 
-        $xml->addGroup(1130, 'Background', 'cBackground', 'Component', 3300)
+        $xml->addGroup('cBackground', 1130, 'Background', 'Component', 3300)
             ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
 
         foreach ($backgrounds as $k => $v)
@@ -112,7 +112,7 @@ class BackgroundImageGenerator
             $backgrounds[$k]['key'] = 'i-'. $v['key'];
         }
 
-        $xml->addGroup(2120, 'Background', 'eBackground', 'Element', 5200)
+        $xml->addGroup('eBackground', 2120, 'Background', 'Element', 5200)
             ->addChild('Image', 'image', $backgrounds, Constants::BACKGROUND_IMAGE['elements'], Constants::BACKGROUND_IMAGE['options']);
     }
 

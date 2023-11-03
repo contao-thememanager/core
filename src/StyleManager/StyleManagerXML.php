@@ -25,6 +25,7 @@ class StyleManagerXML
     private \DOMNode $archives;
     private StyleManagerArchiveModel $group;
     private StyleManagerModel $groupChild;
+    private int $temporaryId;
 
     private array $groups = [];
 
@@ -53,22 +54,30 @@ class StyleManagerXML
     /**
      * Adds a style manager archive group to the xml
      */
-    public function addGroup(int $id, string $title, string $identifier, string $groupAlias = '', int $sorting = 0): self
+    public function addGroup(string $identifier, ?int $id, ?string $title, ?string $groupAlias, ?int $sorting): self
     {
         // Flush previous group and its children if it exists
-        if (null !== $this->group->id)
+        if (null !== $this->group->identifier)
         {
             $this->group = new StyleManagerArchiveModel();
         }
 
-        $this->group->id         = $id;
-        $this->group->title      = $title;
         $this->group->identifier = $identifier;
-        $this->group->groupAlias = $groupAlias;
-        $this->group->sorting    = $sorting;
 
-        // Create group array by id
-        $this->groups[$id] = [
+        $nonMandatorySettings = [
+            'id'         => $id,
+            'title'      => $title,
+            'groupAlias' => $groupAlias,
+            'sorting'    => $sorting
+        ];
+
+        foreach ($nonMandatorySettings as $k => $v)
+        {
+            $this->group->$k = $v;
+        }
+
+        // Create group array by identifier
+        $this->groups[$identifier] = [
             'archive' => $this->group,
             'children' => []
         ];
@@ -81,13 +90,11 @@ class StyleManagerXML
      */
     public function addChild(string $title, string $alias, array $cssClasses, array $elements, ?array $options): self
     {
-        // Reset previous group child
-        if (null !== $this->groupChild->pid)
-        {
-            $this->groupChild = new StyleManagerModel();
-        }
+        $this->groupChild = new StyleManagerModel();
 
+        // Add an assigned group or randomize it
         $this->groupChild->pid        = $this->validateGroup();
+
         $this->groupChild->title      = $title;
         $this->groupChild->alias      = $alias;
         $this->groupChild->cssClasses = serialize($cssClasses);
@@ -121,7 +128,7 @@ class StyleManagerXML
         }
 
         // Push settings into previously created group
-        $this->groups[$this->groupChild->pid]['children'][] = $this->groupChild;
+        $this->groups[$this->group->identifier]['children'][] = $this->groupChild;
 
         return $this;
     }
@@ -161,17 +168,20 @@ class StyleManagerXML
 
     /**
      * Validates whether the child can be appended to a group
-     *
-     * @throws LogicException
      */
-    private function validateGroup(): int
+    private function validateGroup(): ?int
     {
-        if (null === ($id = $this->group->id))
+        if (null !== ($id = $this->group->id))
         {
-            throw new LogicException('Invalid child position. Did you forget to create a group?');
+            return $id;
         }
 
-        return $id;
+        if (null === ($this->temporaryId))
+        {
+            return $this->temporaryId = rand();
+        }
+
+        return null;
     }
 
     /**
