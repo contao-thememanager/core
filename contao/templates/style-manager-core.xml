@@ -907,12 +907,23 @@
     <field title="groupAlias">Component</field>
     <field title="sorting">2200</field>
     <children>
-      <child alias="hHeight">
+      <child alias="height">
         <field title="pid">1020</field>
         <field title="sorting">100</field>
+        <field title="alias">height</field>
+        <field title="title">Height</field>
+        <field title="description">Here you can choose the article height.</field>
+        <field title="cssClasses">a:0:{}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendArticle">1</field>
+      </child>
+      <child alias="hHeight">
+        <field title="pid">1020</field>
+        <field title="sorting">200</field>
         <field title="alias">hHeight</field>
         <field title="title">Consider header</field>
-        <field title="description">Considers header height and subtracts it from the vertical height</field>
+        <field title="description">Considers header height and subtracts it from the vertical height.</field>
         <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:6:"h-hght";s:5:"value";s:3:"Yes";}}</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -2704,6 +2715,19 @@
         <field title="extendModule">1</field>
         <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
       </child>
+      <child alias="icon">
+        <field title="pid">2020</field>
+        <field title="sorting">1400</field>
+        <field title="alias">icon</field>
+        <field title="title">List-Icon</field>
+        <field title="description">Here you can choose a custom list icon.</field>
+        <field title="cssClasses">a:0:{}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:4:"list";}</field>
+      </child>
       <child alias="justifyList">
         <field title="pid">2020</field>
         <field title="sorting">2100</field>
@@ -2981,6 +3005,20 @@
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:11:"newsarchive";}</field>
       </child>
+      <child alias="aspectRatio">
+        <field title="pid">2070</field>
+        <field title="sorting">150</field>
+        <field title="alias">aspectRatio</field>
+        <field title="title">Aspect-Ratio</field>
+        <field title="description">Here you can choose an aspect-ratio.</field>
+        <field title="cssClasses">a:0:{}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:7:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:5:"image";i:4;s:7:"gallery";i:5;s:8:"download";i:6;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:18:"recommendationlist";}</field>
+      </child>
       <child alias="width">
         <field title="pid">2070</field>
         <field title="sorting">200</field>
@@ -3166,6 +3204,40 @@
         <field title="contentElements">a:11:{i:0;s:14:"rsce_icon_text";i:1;s:15:"rsce_image_text";i:2;s:9:"rsce_text";i:3;s:19:"rsce_hyperlink_list";i:4;s:19:"rsce_icon_text_list";i:5;s:20:"rsce_image_text_list";i:6;s:14:"rsce_text_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:11:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:11:"articlelist";i:10;s:9:"subscribe";}</field>
+      </child>
+      <child alias="icon">
+        <field title="pid">2090</field>
+        <field title="sorting">400</field>
+        <field title="alias">icon</field>
+        <field title="title">Icon</field>
+        <field title="description">Here you can choose an icon that will be shown within the link.</field>
+        <field title="cssClasses">a:0:{}</field>
+        <field title="cssClass">separator</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:11:{i:0;s:9:"rsce_text";i:1;s:14:"rsce_text_list";i:2;s:15:"rsce_image_text";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_icon_text";i:5;s:19:"rsce_icon_text_list";i:6;s:19:"rsce_hyperlink_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:10:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:11:"articlelist";}</field>
+      </child>
+      <child alias="direction">
+        <field title="pid">2090</field>
+        <field title="sorting">500</field>
+        <field title="alias">direction</field>
+        <field title="title">Direction</field>
+        <field title="description">Here you can choose the direction for the icon.</field>
+        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:6:"i-is-r";s:5:"value";s:5:"Right";}}</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:6:"submit";}</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:11:{i:0;s:9:"rsce_text";i:1;s:14:"rsce_text_list";i:2;s:15:"rsce_image_text";i:3;s:20:"rsce_image_text_list";i:4;s:14:"rsce_icon_text";i:5;s:19:"rsce_icon_text_list";i:6;s:19:"rsce_hyperlink_list";i:7;s:9:"hyperlink";i:8;s:7:"toplink";i:9;s:8:"download";i:10;s:9:"downloads";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:10:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:11:"articlelist";}</field>
       </child>
       <child alias="topSpacing">
         <field title="pid">2090</field>
