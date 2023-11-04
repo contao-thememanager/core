@@ -55,6 +55,13 @@ class StyleManagerXML
      */
     public function addGroup(string $identifier, int $id = 0, string $title = '', string $groupAlias = '', int $sorting = 0): self
     {
+        // If group already exists in custom configuration, use it
+        if (isset($this->groups[$identifier]['archive']))
+        {
+            $this->group = $this->groups[$identifier]['archive'];
+            return $this;
+        }
+
         $this->group = new StyleManagerArchiveModel();
         $this->group->identifier = $identifier;
 
