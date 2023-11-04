@@ -197,12 +197,6 @@ class IconGenerator
     private function generateLinkIcons(array $classes, $xml): void
     {
         $xml->addGroup('eLink')->addChild('icon', $classes);
-
-        $arrClasses = [
-            ['key'=>'i-is-r', 'value'=>'Right']
-        ];
-
-        $xml->addChild('direction', $arrClasses);
     }
 
     /**
