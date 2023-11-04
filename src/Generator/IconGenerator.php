@@ -22,6 +22,8 @@ use Symfony\Component\Filesystem\Path;
  */
 class IconGenerator
 {
+    const FONTFAMILY_ICON = 'ctm-icon';
+
     protected ?FileCompiler $compiler = null;
 
     /**
@@ -37,7 +39,7 @@ class IconGenerator
 
         if (!($iconPath = $this->parseIconFiles()))
         {
-            $this->compiler->msg('Could not create icon font: '.Constants::FONTFAMILY_ICON,FileCompiler::MSG_NOTE);
+            $this->compiler->msg('Could not create icon font: '.self::FONTFAMILY_ICON,FileCompiler::MSG_NOTE);
         }
         else if (empty($arrGlyphs = $this->parseIcons($iconPath)))
         {
@@ -46,7 +48,7 @@ class IconGenerator
         else
         {
             $this->createIconXML($arrGlyphs, $xml);
-            $this->compiler->msg('Created icon font: '.Constants::FONTFAMILY_ICON, FileCompiler::MSG_SUCCESS);
+            $this->compiler->msg('Created icon font: '.self::FONTFAMILY_ICON, FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('File saved: _icon'.FileCompiler::FILE_EXT,FileCompiler::MSG_SUCCESS);
             $this->compiler->msg('Make sure to embed the generated _icon'.FileCompiler::FILE_EXT.' within your Layout');
         }
@@ -186,8 +188,7 @@ class IconGenerator
         }
 
         // Create XML objects
-        $xml->addGroup('eFormIcon', 2030, 'Icon', 'Element', 4300)
-            ->addChild('Icon', 'icon', $arrClasses, Constants::ICON_FORM['elements'], Constants::ICON_FORM['options']);
+        $xml->addGroup('eFormIcon')->addChild('icon', $arrClasses);
     }
 
     /**
@@ -195,14 +196,13 @@ class IconGenerator
      */
     private function generateLinkIcons(array $classes, $xml): void
     {
-        $xml->addGroup('eLink', 2090, 'Link', 'Element', 4900)
-            ->addChild('Icon', 'icon', $classes, Constants::ICON_LINK['elements'], Constants::ICON_LINK['options']);
+        $xml->addGroup('eLink')->addChild('icon', $classes);
 
         $arrClasses = [
             ['key'=>'i-is-r', 'value'=>'Right']
         ];
 
-        $xml->addChild('Direction', 'direction', $arrClasses, Constants::ICON_LINK['elements'], Constants::ICON_LINK_DIRECTION['options']);
+        $xml->addChild('direction', $arrClasses);
     }
 
     /**
@@ -210,8 +210,7 @@ class IconGenerator
      */
     private function generateListIcons(array $classes, $xml): void
     {
-        $xml->addGroup('eList', 2020, 'List', 'Element', 4200)
-            ->addChild('List-Icon', 'icon', $classes, Constants::ICON_LIST['elements'], Constants::ICON_LIST['options']);
+        $xml->addGroup('eList')->addChild('icon', $classes);
     }
 
     /**
@@ -230,7 +229,7 @@ class IconGenerator
 
             // Add font-source
             $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
-                Constants::FONTFAMILY_ICON,
+                self::FONTFAMILY_ICON,
                 $fontPath,
                 'font-weight:normal;',
                 'font-style:normal;',
@@ -245,7 +244,7 @@ class IconGenerator
             $css .= vsprintf(
                 "$iconSelector1,$iconSelector2{%s}$iconSelector1$strBefore,$iconSelector2$strBefore,$formIconSelector{font-family:'%s';%s}",[
                     'vertical-align: middle;',
-                    Constants::FONTFAMILY_ICON,
+                    self::FONTFAMILY_ICON,
                     'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
                 ]
             );
