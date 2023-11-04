@@ -25,7 +25,6 @@ class StyleManagerXML
     private \DOMNode $archives;
     private StyleManagerArchiveModel $group;
     private StyleManagerModel $groupChild;
-    private int $temporaryId;
 
     private array $groups = [];
 
@@ -54,26 +53,27 @@ class StyleManagerXML
     /**
      * Adds a style manager archive group to the xml
      */
-    public function addGroup(string $identifier, ?int $id, ?string $title, ?string $groupAlias, ?int $sorting): self
+    public function addGroup(string $identifier, int $id = 0, string $title = '', string $groupAlias = '', int $sorting = 0): self
     {
-        // Flush previous group and its children if it exists
-        if (null !== $this->group->identifier)
-        {
-            $this->group = new StyleManagerArchiveModel();
-        }
-
+        $this->group = new StyleManagerArchiveModel();
         $this->group->identifier = $identifier;
 
-        $nonMandatorySettings = [
-            'id'         => $id,
-            'title'      => $title,
-            'groupAlias' => $groupAlias,
-            'sorting'    => $sorting
-        ];
-
-        foreach ($nonMandatorySettings as $k => $v)
+        // Should be set if you create new children but is not mandatory for appending classes
+        if (!!$id)
         {
-            $this->group->$k = $v;
+            $this->group->id = $id;
+        }
+
+        if (!!$title) {
+            $this->group->title = $title;
+        }
+
+        if (!!$groupAlias) {
+            $this->group->groupAlias = $groupAlias;
+        }
+
+        if (!!$sorting) {
+            $this->group->sorting = $sorting;
         }
 
         // Create group array by identifier
@@ -88,43 +88,55 @@ class StyleManagerXML
     /**
      * Adds a child to a style manager archive group
      */
-    public function addChild(string $title, string $alias, array $cssClasses, array $elements, ?array $options): self
+    public function addChild(string $alias, array $cssClasses, string $title = '', array $elements = [], array $options = []): self
     {
         $this->groupChild = new StyleManagerModel();
 
-        // Add an assigned group or randomize it
-        $this->groupChild->pid        = $this->validateGroup();
+        if (isset($this->group->id))
+        {
+            $this->groupChild->pid = $this->group->id;
+        }
 
-        $this->groupChild->title      = $title;
-        $this->groupChild->alias      = $alias;
+        if (!!$title)
+        {
+            $this->groupChild->title = $title;
+        }
+
+        $this->groupChild->alias = $alias;
         $this->groupChild->cssClasses = serialize($cssClasses);
 
         // Add elements
-        foreach ($elements as $k => $v)
+        if (!empty($elements))
         {
-            // Auto-enable parent selectors if specific elements are given
-            switch ($k)
+            foreach ($elements as $k => $v)
             {
-                case 'formFields':
-                    $this->groupChild->extendFormFields = 1; break;
-                case 'contentElements':
-                    $this->groupChild->extendContentElement = 1; break;
-                case 'modules':
-                    $this->groupChild->extendModule = 1; break;
-            }
+                // Auto-enable parent selectors if specific elements are given
+                switch ($k)
+                {
+                    case 'formFields':
+                        $this->groupChild->extendFormFields = 1; break;
+                    case 'contentElements':
+                        $this->groupChild->extendContentElement = 1; break;
+                    case 'modules':
+                        $this->groupChild->extendModule = 1; break;
+                }
 
-            if (\is_array($v) && !empty($v))
-            {
-                $v = serialize($v);
-            }
+                if (\is_array($v) && !empty($v))
+                {
+                    $v = serialize($v);
+                }
 
-            $this->groupChild->$k = $v;
+                $this->groupChild->$k = $v;
+            }
         }
 
         // Add options
-        foreach ($options as $k => $v)
+        if (!empty($options))
         {
-            $this->groupChild->$k = $v;
+            foreach ($options as $k => $v)
+            {
+                $this->groupChild->$k = $v;
+            }
         }
 
         // Push settings into previously created group
@@ -164,24 +176,6 @@ class StyleManagerXML
         $objFile->close();
 
         return $success;
-    }
-
-    /**
-     * Validates whether the child can be appended to a group
-     */
-    private function validateGroup(): ?int
-    {
-        if (null !== ($id = $this->group->id))
-        {
-            return $id;
-        }
-
-        if (null === ($this->temporaryId))
-        {
-            return $this->temporaryId = rand();
-        }
-
-        return null;
     }
 
     /**
