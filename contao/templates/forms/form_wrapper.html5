@@ -10,7 +10,7 @@
   <?php endif; ?>
 
   <?php if (!$this->message): ?>
-    <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="<?= $this->method ?>" enctype="<?= $this->enctype ?>"<?= $this->attributes ?><?= $this->novalidate ?><?php if ($this->ajax): ?> data-ajax-form<?php endif; ?>>
+    <form<?php if ($this->action): ?> action="<?= $this->action ?>"<?php endif; ?> method="<?= $this->method ?>" enctype="<?= $this->enctype ?>"<?= $this->attributes ?><?= $this->novalidate ?><?php if ($this->ajax): ?> data-ajax-form="<?= $this->id ?>"<?php endif; ?>>
       <div class="formbody inside">
         <?php if ($this->errors): ?>
           <?php foreach ($this->errors as $error): ?>
