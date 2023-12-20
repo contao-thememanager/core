@@ -5,7 +5,7 @@
         <source>Icon Font</source>
       </trans-unit>
       <trans-unit id="tl_thememanager_settings.thememanagerIconFont.1">
-        <source>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</source>
+        <source>Here you can select an icon font to be used by the ThemeManager.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager_settings.includeCtmTemplate">
         <source>The &lt;em&gt;%s&lt;/em&gt; template needs to be included in the page layout.</source>

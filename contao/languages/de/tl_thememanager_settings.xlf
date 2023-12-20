@@ -6,7 +6,7 @@
         <target>Icon Font</target>
       </trans-unit>
       <trans-unit id="tl_thememanager_settings.thememanagerIconFont.1">
-        <source>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</source>
+        <source>Here you can select an icon font to be used by the ThemeManager.</source>
         <target>Hier können Sie eine Icon-Font auswählen, welche vom ThemeManager genutzt werden soll.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager_settings.includeCtmTemplate">

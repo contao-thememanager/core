@@ -996,7 +996,7 @@
         <source>$article-spacing-xs-small</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-small.1">
-        <source>Here you can set the small vertical padding for articles for extra small devices.</source>
+        <source>Here you can set the small vertical padding for articles for tiny devices.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-s-small.0">
         <source>$article-spacing-s-small</source>
@@ -1027,7 +1027,7 @@
         <source>$article-spacing-xs-medium</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-medium.1">
-        <source>Here you can set the medium vertical padding for articles for extra small devices.</source>
+        <source>Here you can set the medium vertical padding for articles for tiny devices.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-s-medium.0">
         <source>$article-spacing-s-medium</source>
@@ -1058,7 +1058,7 @@
         <source>$article-spacing-xs-large</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-large.1">
-        <source>Here you can set the large vertical padding for articles for extra small devices.</source>
+        <source>Here you can set the large vertical padding for articles for tiny devices.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-s-large.0">
         <source>$article-spacing-s-large</source>
@@ -1833,6 +1833,18 @@
       <trans-unit id="tl_thememanager.button-transform-primary.1">
         <source>Here you can choose the text-transformation for primary buttons.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-primary.0">
+        <source>$button-decoration-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.0">
+        <source>$button-hover-decoration-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons when hovered.</source>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-primary.0">
         <source>$button-bg-primary</source>
@@ -1940,6 +1952,18 @@
       <trans-unit id="tl_thememanager.button-transform-secondary.1">
         <source>Here you can choose the text-transformation for secondary buttons.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.0">
+        <source>$button-decoration-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.0">
+        <source>$button-hover-decoration-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons when hovered.</source>
+      </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-secondary.0">
         <source>$button-bg-secondary</source>
@@ -2046,6 +2070,18 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.button-transform-alt.1">
         <source>Here you can choose the text-transformation for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.0">
+        <source>$button-decoration-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.0">
+        <source>$button-hover-decoration-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons when hovered.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.button-bg-alt.0">
