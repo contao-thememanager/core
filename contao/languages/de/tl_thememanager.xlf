@@ -121,10 +121,6 @@
         <source>Misc</source>
         <target>Sonstiges</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.tns_legend">
-        <source>Tiny-Slider</source>
-        <target>Tiny-Slider</target>
-      </trans-unit>
 
       <trans-unit id="tl_thememanager.browser-context.0">
         <source>$browser-context</source>
@@ -3526,79 +3522,6 @@
       <trans-unit id="tl_thememanager.aspect-ratios.1">
         <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
         <target>Hier können Sie durch Komma getrennte Seitenverhältnisse im Format &lt;strong&gt;(x:y)&lt;/strong&gt; eingeben, die innerhalb von Bildelementen verfügbar sein sollen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.tns-dot-size.0">
-        <source>$tns-dot-size</source>
-        <target>$tns-dot-size</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-dot-size.1">
-        <source>Here you can set the size for tiny-slider navigation buttons.</source>
-        <target>Hier können Sie die Größe von tiny-slider Navigationsbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-dot-spacing.0">
-        <source>$tns-dot-spacing</source>
-        <target>$tns-dot-spacing</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-dot-spacing.1">
-        <source>Here you can set the horizontal margin for tiny-slider navigation buttons.</source>
-        <target>Hier können Sie den horizontalen Abstand von tiny-slider Navigationsbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-controls-outer-offset.0">
-        <source>$tns-controls-outer-offset</source>
-        <target>$tns-controls-outer-offset</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-controls-outer-offset.1">
-        <source>Here you can set the outer offset for tiny-slider controls.</source>
-        <target>Hier können Sie den äußeren Versatz von tiny-slider Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-regular.0">
-        <source>$tns-color-regular</source>
-        <target>$tns-color-regular</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-regular.1">
-        <source>Here you can set the regular color for tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die reguläre Farbe für tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-regular-active.0">
-        <source>$tns-color-regular-active</source>
-        <target>$tns-color-regular-active</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-regular-active.1">
-        <source>Here you can set the regular color for active tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die reguläre Farbe für aktive tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-invert.0">
-        <source>$tns-color-invert</source>
-        <target>$tns-color-invert</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-invert.1">
-        <source>Here you can set the inverted color for tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die invertierte Farbe für tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-invert-active.0">
-        <source>$tns-color-invert-active</source>
-        <target>$tns-color-invert-active</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-invert-active.1">
-        <source>Here you can set the inverted color for active tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die invertierte Farbe für aktive tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-extra.0">
-        <source>$tns-color-extra</source>
-        <target>$tns-color-extra</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-extra.1">
-        <source>Here you can set the extra color for tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die extra Farbe für tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-extra-active.0">
-        <source>$tns-color-extra-active</source>
-        <target>$tns-color-extra-active</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.tns-color-extra-active.1">
-        <source>Here you can set the extra color for active tiny-slider buttons and controls.</source>
-        <target>Hier können Sie die extra Farbe für aktive tiny-slider Navigations- und Kontrollbuttons einstellen.</target>
       </trans-unit>
     </body>
   </file>
