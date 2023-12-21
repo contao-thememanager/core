@@ -29,17 +29,9 @@
         <source>Heading (Spacings)</source>
         <target>Überschriften (Abstände)</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.header_legend">
-        <source>Header</source>
-        <target>Header</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.nav_legend">
-        <source>Navigation</source>
-        <target>Navigation</target>
-      </trans-unit>
       <trans-unit id="tl_thememanager.button_properties_legend">
-        <source>Buttons</source>
-        <target>Buttons</target>
+        <source>Buttons: General</source>
+        <target>Buttons: Allgemein</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.button_design_primary_legend">
         <source>Button-Design (Primary)</source>
@@ -57,13 +49,13 @@
         <source>Boxed</source>
         <target>Box</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.table_legend">
-        <source>Table</source>
-        <target>Tabelle</target>
-      </trans-unit>
       <trans-unit id="tl_thememanager.divider_legend">
         <source>Divider</source>
         <target>Linien</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table_legend">
+        <source>Table</source>
+        <target>Tabelle</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.icon_legend">
         <source>Icon</source>
@@ -93,13 +85,29 @@
         <source>Form-field: Image / Icon</source>
         <target>Formular-Feld: Bild / Icon</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.nav_legend">
+        <source>Navigation</source>
+        <target>Navigation</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb_legend">
+        <source>Breadcrumb</source>
+        <target>Breadcrumb</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header_legend">
+        <source>Header</source>
+        <target>Header</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.misc_legend">
         <source>Misc</source>
         <target>Sonstiges</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout_legend">
-        <source>Layout</source>
-        <target>Layout</target>
+      <trans-unit id="tl_thememanager.breakpoint_legend">
+        <source>Breakpoints</source>
+        <target>Breakpoints</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout_behavior_legend">
+        <source>Behavior</source>
+        <target>Verhalten</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.article_legend">
         <source>Article</source>
@@ -120,6 +128,39 @@
       <trans-unit id="tl_thememanager.image_text_legend">
         <source>Image-Text</source>
         <target>Bild-Text</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.global_header">
+        <source>Global</source>
+        <target>Global</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.fonts_header">
+        <source>Fonts</source>
+        <target>Schriften</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.headline_header">
+        <source>Headings</source>
+        <target>Überschriften</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_header">
+        <source>Buttons</source>
+        <target>Buttons</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.components_header">
+        <source>Components</source>
+        <target>Komponenten</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.form_header">
+        <source>Form</source>
+        <target>Formular</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.modules_header">
+        <source>Modules</source>
+        <target>Module</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.layout_header">
+        <source>Layout</source>
+        <target>Layout</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.browser-context.0">
@@ -1368,149 +1409,6 @@
         <target>Hier können Sie den großen unteren Abstand von Überschrift-Elementen für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.header-bg.0">
-        <source>$header-bg</source>
-        <target>$header-bg</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-bg.1">
-        <source>Here you can set the background-color for the header.</source>
-        <target>Hier können Sie die Hintergrundfarbe des Headers einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-height.0">
-        <source>$header-height</source>
-        <target>$header-height</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height.1">
-        <source>Here you can set the header height.</source>
-        <target>Hier können Sie die Höhe des Headers einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xs.0">
-        <source>$header-height-xs</source>
-        <target>$header-height-xs</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xs.1">
-        <source>Here you can set the header height for the 'xs'-breakpoint.</source>
-        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xs' einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-s.0">
-        <source>$header-height-s</source>
-        <target>$header-height-s</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-s.1">
-        <source>Here you can set the header height for the 's'-breakpoint.</source>
-        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 's' einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-m.0">
-        <source>$header-height-m</source>
-        <target>$header-height-m</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-m.1">
-        <source>Here you can set the header height for the 'm'-breakpoint.</source>
-        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'm' einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-l.0">
-        <source>$header-height-l</source>
-        <target>$header-height-l</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-l.1">
-        <source>Here you can set the header height for the 'l'-breakpoint.</source>
-        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'l' einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xl.0">
-        <source>$header-height-xl</source>
-        <target>$header-height-xl</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xl.1">
-        <source>Here you can set the header height for the 'xl'-breakpoint.</source>
-        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xl' einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-padding.0">
-        <source>$header-padding</source>
-        <target>$header-padding</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-padding.1">
-        <source>Here you can set the padding for the header.</source>
-        <target>Hier können Sie das Polster / den inneren Abstand (padding) für den Header einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-alignment-vertical.0">
-        <source>$header-alignment-vertical</source>
-        <target>$header-alignment-vertical</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-vertical.1">
-        <source>Here you can select the vertical alignment of the header elements.</source>
-        <target>Hier können Sie die vertikale Anordnung der Header-Elemente einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-horizontal.0">
-        <source>$header-alignment-horizontal</source>
-        <target>$header-alignment-horizontal</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-horizontal.1">
-        <source>Here you can select the horizontal alignment of the header elements.</source>
-        <target>Hier können Sie die horizontale Anordnung der Header-Elemente einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
-        <source>$navigation-behaviour-min-width</source>
-        <target>$navigation-behaviour-min-width</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.1">
-        <source>Here you can set the minimum width for the main-navigation to change from vertical to horizontal behaviour.</source>
-        <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von vertikaler zu horizontaler Hauptnavigation einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.navigation-item-font-size.0">
-        <source>$navigation-item-font-size</source>
-        <target>$navigation-item-font-size</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-size.1">
-        <source>Here you can set the font-size for navigation items.</source>
-        <target>Hier können Sie die Schriftgröße von Navigationselementen einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-weight.0">
-        <source>$navigation-item-font-weight</source>
-        <target>$navigation-item-font-weight</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-weight.1">
-        <source>Here you can set the font-weight for navigation items.</source>
-        <target>Hier können Sie die Schriftdicke von Navigationselementen einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-padding.0">
-        <source>$navigation-item-padding</source>
-        <target>$navigation-item-padding</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-padding.1">
-        <source>Here you can set the padding for navigation-items.</source>
-        <target>Hier können Sie das Polster / den inneren Abstand (padding) von Navigationselementen einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
-        <source>$breadcrumb-separator</source>
-        <target>$breadcrumb-separator</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
-        <source>Here you can add the separator symbol for breadcrumbs.</source>
-        <target>Hier können Sie das Separator-Zeichen für Navigationspfade einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
-        <source>$breadcrumb-separator-color</source>
-        <target>$breadcrumb-separator-color</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
-        <source>Here you can set the color for the › breadcrumb separator.</source>
-        <target>Hier können Sie die Farbe für den › Navigationspfad-Separator einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
-        <source>$breadcrumb-separator-font-family</source>
-        <target>$breadcrumb-separator-font-family</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
-        <source>Here you can set the font-family for the › breadcrumb separator.</source>
-        <target>Hier können Sie die Schriftart für den › Navigationspfad-Separator einstellen.</target>
-      </trans-unit>
-
       <trans-unit id="tl_thememanager.button-line-height.0">
         <source>$button-line-height</source>
         <target>$button-line-height</target>
@@ -2097,6 +1995,31 @@
         <target>Hier können Sie den Rahmenstil (border-style) für Boxed-Elemente auswählen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.divider-size.0">
+        <source>$divider-size</source>
+        <target>$divider-size</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-size.1">
+        <source>Here you can set the height for the divider line.</source>
+        <target>Hier können Sie die Höhe für die Abgrenzungslinie einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.0">
+        <source>$divider-style</source>
+        <target>$divider-style</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.1">
+        <source>Here you can choose the style for the divider line.</source>
+        <target>Hier können Sie den Stil für die Abgrenzungslinie auswählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.0">
+        <source>$divider-color</source>
+        <target>$divider-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.1">
+        <source>Here you can choose the color for the divider line.</source>
+        <target>Hier können Sie die Farbe für die Abgrenzungslinie einstellen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.table-cell-spacing.0">
         <source>$table-cell-spacing</source>
         <target>$table-cell-spacing</target>
@@ -2336,31 +2259,6 @@
       <trans-unit id="tl_thememanager.table-body-odd-background.1">
         <source>Here you can set the background-color for odd rows.</source>
         <target>Hier können Sie die Hintergrundfarbe für ungerade Zeilen einstellen.</target>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.divider-size.0">
-        <source>$divider-size</source>
-        <target>$divider-size</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-size.1">
-        <source>Here you can set the height for the divider line.</source>
-        <target>Hier können Sie die Höhe für die Abgrenzungslinie einstellen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-style.0">
-        <source>$divider-style</source>
-        <target>$divider-style</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-style.1">
-        <source>Here you can choose the style for the divider line.</source>
-        <target>Hier können Sie den Stil für die Abgrenzungslinie auswählen.</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-color.0">
-        <source>$divider-color</source>
-        <target>$divider-color</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-color.1">
-        <source>Here you can choose the color for the divider line.</source>
-        <target>Hier können Sie die Farbe für die Abgrenzungslinie einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.icon-font-family.0">
@@ -3012,6 +2910,149 @@
       <trans-unit id="tl_thememanager.form-field-icon-background.1">
         <source>Here you can set the background-color for explanation icons for form-fields.</source>
         <target>Hier können Sie die Hintergrundfarbe für Formularfeld-Eklärungssymbole einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
+        <source>$navigation-behaviour-min-width</source>
+        <target>$navigation-behaviour-min-width</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.1">
+        <source>Here you can set the minimum width for the main-navigation to change from vertical to horizontal behaviour.</source>
+        <target>Hier können Sie den minimalen Bruchpunkt (breakpoint) für die Verhaltensänderung von vertikaler zu horizontaler Hauptnavigation einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.navigation-item-font-size.0">
+        <source>$navigation-item-font-size</source>
+        <target>$navigation-item-font-size</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-size.1">
+        <source>Here you can set the font-size for navigation items.</source>
+        <target>Hier können Sie die Schriftgröße von Navigationselementen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.0">
+        <source>$navigation-item-font-weight</source>
+        <target>$navigation-item-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.1">
+        <source>Here you can set the font-weight for navigation items.</source>
+        <target>Hier können Sie die Schriftdicke von Navigationselementen einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-padding.0">
+        <source>$navigation-item-padding</source>
+        <target>$navigation-item-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.navigation-item-padding.1">
+        <source>Here you can set the padding for navigation-items.</source>
+        <target>Hier können Sie das Polster / den inneren Abstand (padding) von Navigationselementen einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
+        <source>$breadcrumb-separator</source>
+        <target>$breadcrumb-separator</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
+        <source>Here you can add the separator symbol for breadcrumbs.</source>
+        <target>Hier können Sie das Separator-Zeichen für Navigationspfade einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
+        <source>$breadcrumb-separator-color</source>
+        <target>$breadcrumb-separator-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
+        <source>Here you can set the color for the › breadcrumb separator.</source>
+        <target>Hier können Sie die Farbe für den › Navigationspfad-Separator einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
+        <source>$breadcrumb-separator-font-family</source>
+        <target>$breadcrumb-separator-font-family</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
+        <source>Here you can set the font-family for the › breadcrumb separator.</source>
+        <target>Hier können Sie die Schriftart für den › Navigationspfad-Separator einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-bg.0">
+        <source>$header-bg</source>
+        <target>$header-bg</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-bg.1">
+        <source>Here you can set the background-color for the header.</source>
+        <target>Hier können Sie die Hintergrundfarbe des Headers einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-height.0">
+        <source>$header-height</source>
+        <target>$header-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height.1">
+        <source>Here you can set the header height.</source>
+        <target>Hier können Sie die Höhe des Headers einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xs.0">
+        <source>$header-height-xs</source>
+        <target>$header-height-xs</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xs.1">
+        <source>Here you can set the header height for the 'xs'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xs' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-s.0">
+        <source>$header-height-s</source>
+        <target>$header-height-s</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-s.1">
+        <source>Here you can set the header height for the 's'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 's' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-m.0">
+        <source>$header-height-m</source>
+        <target>$header-height-m</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-m.1">
+        <source>Here you can set the header height for the 'm'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'm' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-l.0">
+        <source>$header-height-l</source>
+        <target>$header-height-l</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-l.1">
+        <source>Here you can set the header height for the 'l'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'l' einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xl.0">
+        <source>$header-height-xl</source>
+        <target>$header-height-xl</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-height-xl.1">
+        <source>Here you can set the header height for the 'xl'-breakpoint.</source>
+        <target>Hier können Sie die Höhe des Headers für den Bruchpunkt 'xl' einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-padding.0">
+        <source>$header-padding</source>
+        <target>$header-padding</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-padding.1">
+        <source>Here you can set the padding for the header.</source>
+        <target>Hier können Sie das Polster / den inneren Abstand (padding) für den Header einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.header-alignment-vertical.0">
+        <source>$header-alignment-vertical</source>
+        <target>$header-alignment-vertical</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-vertical.1">
+        <source>Here you can select the vertical alignment of the header elements.</source>
+        <target>Hier können Sie die vertikale Anordnung der Header-Elemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.0">
+        <source>$header-alignment-horizontal</source>
+        <target>$header-alignment-horizontal</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.1">
+        <source>Here you can select the horizontal alignment of the header elements.</source>
+        <target>Hier können Sie die horizontale Anordnung der Header-Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.box-shadow.0">

@@ -206,10 +206,6 @@ form#tl_thememanager {
       padding-left:  #{28px - math.div($field-gap-offset, 2)};
       background-position-x: #{13px - math.div($field-gap-offset, 2)};
     }
-
-    &:not(.collapsed) > legend {
-      text-decoration: underline;
-    }
   }
 
   // Custom trbl with only 2 fields
@@ -230,6 +226,67 @@ form#tl_thememanager {
         padding: 0 !important;
         margin:  0 !important;
         border: none !important;
+      }
+    }
+  }
+
+  .palette-group {
+    padding-bottom: 6px;
+    border-bottom: 0;
+  }
+
+  .palette-group-header {
+    padding: 0 23px;
+    color: var(--legend, #6a6a6c);
+    font-weight: bold;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  .ctm-group {
+    border-bottom: 0 none;
+
+    margin-top: 9px;
+
+    > legend {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-position-y: 6px;
+      font-weight: revert;
+    }
+
+    + .ctm-group {
+      margin-top: 5px;
+    }
+
+    + .tl_box:not(.ctm-group) {
+      padding-bottom: 9px;
+
+      &:not(.collapsed) {
+        padding-bottom: 25px;
+      }
+
+      > legend {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-position-y: 6px;
+        font-weight: revert;
+      }
+    }
+
+    &:not(.collapsed) {
+      padding-bottom: 0;
+
+      &:after {
+        float: left;
+        content: '';
+        display: block;
+        height: 1px;
+        width: calc(100% - 16px);
+        margin: 12px 8px 8px;
+        border-bottom: 1px solid var(--border, #eaeaec);
       }
     }
   }

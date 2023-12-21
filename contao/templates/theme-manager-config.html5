@@ -1,34 +1,37 @@
 <?php return [
     'palettes' => [
-        'default'  => '{default_legend:hide},browser-context,body-bg,border-radius;' .
+        'default'  =>
+            '{default_legend:hide ctm-group palette-group[global_header]},browser-context,body-bg,border-radius;' .
             '{color_legend:hide},primary,secondary,light,dark;' .
-            '{font_legend:hide},font-family-base,font-size-base,line-height-base,text-color-regular,text-color-invert,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,strong-font-weight;' .
+            '{font_legend:hide ctm-group palette-group[fonts_header]},font-family-base,font-size-base,line-height-base,text-color-regular,text-color-invert,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,strong-font-weight;' .
             '{link_legend:hide},link-font-weight,link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
-            '{headings_legend:hide},line-height-headline,h1-font-size-small,h1-font-size-medium,h1-font-size,h1-line-height,h2-font-size-small,h2-font-size-medium,h2-font-size,h2-line-height,h3-font-size-small,h3-font-size-medium,h3-font-size,h3-line-height,h4-font-size-small,h4-font-size-medium,h4-font-size,h4-line-height,h5-font-size-small,h5-font-size-medium,h5-font-size,h5-line-height,h6-font-size-small,h6-font-size-medium,h6-font-size,h6-line-height,h1-color,h1-color-invert,h1-font-weight,h1-letter-spacing,h1-transform,h2-color,h2-color-invert,h2-font-weight,h2-letter-spacing,h2-transform,h3-color,h3-color-invert,h3-font-weight,h3-letter-spacing,h3-transform,h4-color,h4-color-invert,h4-font-weight,h4-letter-spacing,h4-transform,h5-color,h5-color-invert,h5-font-weight,h5-letter-spacing,h5-transform,h6-color,h6-color-invert,h6-font-weight,h6-letter-spacing,h6-transform;' .
-            '{content_headings_legend:hide},h1-content-font-size-small,h1-content-font-size-medium,h1-content-font-size,h1-content-line-height,h2-content-font-size-small,h2-content-font-size-medium,h2-content-font-size,h2-content-line-height,h3-content-font-size-small,h3-content-font-size-medium,h3-content-font-size,h3-content-line-height,h4-content-font-size-small,h4-content-font-size-medium,h4-content-font-size,h4-content-line-height,h5-content-font-size-small,h5-content-font-size-medium,h5-content-font-size,h5-content-line-height,h6-content-font-size-small,h6-content-font-size-medium,h6-content-font-size,h6-content-line-height,h1-content-color,h1-content-color-invert,h1-content-font-weight,h1-content-letter-spacing,h1-content-transform,h2-content-color,h2-content-color-invert,h2-content-font-weight,h2-content-letter-spacing,h2-content-transform,h3-content-color,h3-content-color-invert,h3-content-font-weight,h3-content-letter-spacing,h3-content-transform,h4-content-color,h4-content-color-invert,h4-content-font-weight,h4-content-letter-spacing,h4-content-transform,h5-content-color,h5-content-color-invert,h5-content-font-weight,h5-content-letter-spacing,h5-content-transform,h6-content-color,h6-content-color-invert,h6-content-font-weight,h6-content-letter-spacing,h6-content-transform;' .
+            '{headings_legend:hide ctm-group palette-group[headline_header]},line-height-headline,h1-font-size-small,h1-font-size-medium,h1-font-size,h1-line-height,h2-font-size-small,h2-font-size-medium,h2-font-size,h2-line-height,h3-font-size-small,h3-font-size-medium,h3-font-size,h3-line-height,h4-font-size-small,h4-font-size-medium,h4-font-size,h4-line-height,h5-font-size-small,h5-font-size-medium,h5-font-size,h5-line-height,h6-font-size-small,h6-font-size-medium,h6-font-size,h6-line-height,h1-color,h1-color-invert,h1-font-weight,h1-letter-spacing,h1-transform,h2-color,h2-color-invert,h2-font-weight,h2-letter-spacing,h2-transform,h3-color,h3-color-invert,h3-font-weight,h3-letter-spacing,h3-transform,h4-color,h4-color-invert,h4-font-weight,h4-letter-spacing,h4-transform,h5-color,h5-color-invert,h5-font-weight,h5-letter-spacing,h5-transform,h6-color,h6-color-invert,h6-font-weight,h6-letter-spacing,h6-transform;' .
+            '{content_headings_legend:hide ctm-group},h1-content-font-size-small,h1-content-font-size-medium,h1-content-font-size,h1-content-line-height,h2-content-font-size-small,h2-content-font-size-medium,h2-content-font-size,h2-content-line-height,h3-content-font-size-small,h3-content-font-size-medium,h3-content-font-size,h3-content-line-height,h4-content-font-size-small,h4-content-font-size-medium,h4-content-font-size,h4-content-line-height,h5-content-font-size-small,h5-content-font-size-medium,h5-content-font-size,h5-content-line-height,h6-content-font-size-small,h6-content-font-size-medium,h6-content-font-size,h6-content-line-height,h1-content-color,h1-content-color-invert,h1-content-font-weight,h1-content-letter-spacing,h1-content-transform,h2-content-color,h2-content-color-invert,h2-content-font-weight,h2-content-letter-spacing,h2-content-transform,h3-content-color,h3-content-color-invert,h3-content-font-weight,h3-content-letter-spacing,h3-content-transform,h4-content-color,h4-content-color-invert,h4-content-font-weight,h4-content-letter-spacing,h4-content-transform,h5-content-color,h5-content-color-invert,h5-content-font-weight,h5-content-letter-spacing,h5-content-transform,h6-content-color,h6-content-color-invert,h6-content-font-weight,h6-content-letter-spacing,h6-content-transform;' .
             '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
-            '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
-            '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding,breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
-            '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
-            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-decoration-primary,button-hover-decoration-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
-            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-decoration-secondary,button-hover-decoration-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
+            '{button_properties_legend:hide ctm-group palette-group[button_header]},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
+            '{button_design_primary_legend:hide ctm-group},button-font-weight-primary,button-transform-primary,button-decoration-primary,button-hover-decoration-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
+            '{button_design_secondary_legend:hide ctm-group},button-font-weight-secondary,button-transform-secondary,button-decoration-secondary,button-hover-decoration-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
             '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-decoration-alt,button-hover-decoration-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
-            '{boxed_legend:hide},boxed-background-color,boxed-border-color,boxed-border-radius,boxed-border-width,boxed-border-style;' .
-            '{table_legend:hide},table-cell-spacing,table-cell-padding,table-cell-border-radius,table-border-color,table-border-style,table-border-width,table-head-border-color,table-head-border-style,table-head-border-width,table-cell-border-color,table-cell-border-style,table-cell-border-width,table-caption-side,table-caption-alignment,table-caption-padding,table-caption-color,table-caption-background,table-caption-font-size,table-text-align,table-head-font-weight,table-body-font-weight,table-foot-font-weight,table-head-color,table-head-background,table-foot-color,table-foot-background,table-body-even-color,table-body-even-background,table-body-odd-color,table-body-odd-background;' .
-            '{divider_legend:hide},divider-size,divider-style,divider-color;' .
+            '{boxed_legend:hide ctm-group palette-group[components_header]},boxed-background-color,boxed-border-color,boxed-border-radius,boxed-border-width,boxed-border-style;' .
+            '{divider_legend:hide ctm-group},divider-size,divider-style,divider-color;' .
+            '{table_legend:hide ctm-group},table-cell-spacing,table-cell-padding,table-cell-border-radius,table-border-color,table-border-style,table-border-width,table-head-border-color,table-head-border-style,table-head-border-width,table-cell-border-color,table-cell-border-style,table-cell-border-width,table-caption-side,table-caption-alignment,table-caption-padding,table-caption-color,table-caption-background,table-caption-font-size,table-text-align,table-head-font-weight,table-body-font-weight,table-foot-font-weight,table-head-color,table-head-background,table-foot-color,table-foot-background,table-body-even-color,table-body-even-background,table-body-odd-color,table-body-odd-background;' .
             '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
-            '{form_general_legend:hide},form-input-font-family,form-textarea-line-height,form-input-padding,form-input-height,form-multiselect-height,form-input-font-weight,form-input-font-size,form-input-font-size-error,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-border-color,form-input-border-color-hover,form-input-border-color-focus,form-input-border-color-error,form-input-background,form-input-background-hover,form-input-background-focus,form-input-background-error,form-input-color,form-input-color-hover,form-input-color-focus,form-input-color-error,form-input-placeholder-color,form-input-placeholder-color-hover,form-input-placeholder-color-focus,form-input-placeholder-color-error,form-input-color-disabled;' .
-            '{form_label_legend:hide},form-label-color,form-label-color-invert,form-label-font-size,form-label-spacing,form-label-font-weight,form-legend-font-weight;' .
-            '{form_select_legend:hide},form-select-symbol,form-select-symbol-font-size,form-select-symbol-color,form-select-symbol-font-family,form-select-option-color,form-select-option-background;' .
-            '{form_checkbox_radio_legend:hide},form-checkbox-radio-symbol,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color,form-checkbox-radio-symbol-font-family,form-checkbox-radio-size,form-checkbox-radio-label-font-size,form-checkbox-radio-label-line-height,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-border-color,form-checkbox-radio-border-color-hover,form-checkbox-radio-border-color-focus,form-checkbox-radio-background,form-checkbox-radio-background-hover,form-checkbox-radio-background-focus,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert;' .
-            '{form_miscellaneous_legend:hide},form-validation,form-checkbox-radio-auto-align,form-input-explanation-font-size,form-input-explanation-color,form-input-explanation-color-invert,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error;' .
+            '{form_general_legend:hide ctm-group palette-group[form_header]},form-input-font-family,form-textarea-line-height,form-input-padding,form-input-height,form-multiselect-height,form-input-font-weight,form-input-font-size,form-input-font-size-error,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-border-color,form-input-border-color-hover,form-input-border-color-focus,form-input-border-color-error,form-input-background,form-input-background-hover,form-input-background-focus,form-input-background-error,form-input-color,form-input-color-hover,form-input-color-focus,form-input-color-error,form-input-placeholder-color,form-input-placeholder-color-hover,form-input-placeholder-color-focus,form-input-placeholder-color-error,form-input-color-disabled;' .
+            '{form_label_legend:hide ctm-group},form-label-color,form-label-color-invert,form-label-font-size,form-label-spacing,form-label-font-weight,form-legend-font-weight;' .
+            '{form_select_legend:hide ctm-group},form-select-symbol,form-select-symbol-font-size,form-select-symbol-color,form-select-symbol-font-family,form-select-option-color,form-select-option-background;' .
+            '{form_checkbox_radio_legend:hide ctm-group},form-checkbox-radio-symbol,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color,form-checkbox-radio-symbol-font-family,form-checkbox-radio-size,form-checkbox-radio-label-font-size,form-checkbox-radio-label-line-height,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-border-color,form-checkbox-radio-border-color-hover,form-checkbox-radio-border-color-focus,form-checkbox-radio-background,form-checkbox-radio-background-hover,form-checkbox-radio-background-focus,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert;' .
+            '{form_miscellaneous_legend:hide ctm-group},form-validation,form-checkbox-radio-auto-align,form-input-explanation-font-size,form-input-explanation-color,form-input-explanation-color-invert,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error;' .
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-size,form-field-icon-color,form-field-icon-background;' .
+            '{nav_legend:hide ctm-group palette-group[modules_header]},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
+            '{breadcrumb_legend:hide},breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
+            '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
             '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;' .
-            '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
-            '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
-            '{spacing_inner_legend:hide},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
-            '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
+            '{breakpoint_legend:hide ctm-group palette-group[layout_header]},breakpoints;' .
+            '{layout_behavior_legend:hide ctm-group},layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
+            '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
+            '{grid_legend:hide ctm-group},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
+            '{spacing_inner_legend:hide ctm-group},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
+            '{spacing_outer_legend:hide ctm-group},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
             '{image_text_legend:hide},image-text-behaviour-min-width,image-text-ratio-options;'
     ],
     'fields'   => [
@@ -1068,128 +1071,6 @@
             'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
-        // Header
-        'header-bg' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-bg'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w100 wizard clr'],
-        ],
-
-        'header-height' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'header-height-xs' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xs'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-s' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-s'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-m' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-m'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'header-height-l' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-l'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-xl' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xl'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-
-        'header-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:1:"0";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
-        ],
-
-        'header-alignment-vertical' => [
-            'default'                 => 'center',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-vertical'],
-            'inputType'               => 'select',
-            'options'                 => ['flex-start', 'center', 'flex-end', 'baseline'],
-            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
-        ],
-        'header-alignment-horizontal' => [
-            'default'                 => 'space-between',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-horizontal'],
-            'inputType'               => 'select',
-            'options'                 => ['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly', 'revert'],
-            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
-        ],
-
-        // Navigation
-        'navigation-behaviour-min-width' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"768";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-behaviour-min-width'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'768px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
-        ],
-
-        'navigation-item-font-size' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
-        ],
-        'navigation-item-font-weight' => [
-            'default'                 => '$font-weight-regular',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-weight'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
-        ],
-        'navigation-item-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-        'breadcrumb-separator' => [
-            'default'                 => '"›"',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'"›"', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w33 clr'],
-        ],
-        'breadcrumb-separator-color' => [
-            'default'                 => 'inherit',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'inherit', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
-        ],
-        'breadcrumb-separator-font-family' => [
-            'default'                 => '"ctm-icon", var(--font-family)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-font-family'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'"ctm-icon", var(--font-family)', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'w33'],
-        ],
-
         // Button properties
         'button-line-height' => [
             'default'                 => '1',
@@ -1669,6 +1550,28 @@
             'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
         ],
 
+        // Divider
+        'divider-size' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'divider-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w33', 'chosen'=>true],
+        ],
+        'divider-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
+        ],
+
         // Table
         'table-cell-spacing' => [
             'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
@@ -1877,28 +1780,6 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-odd-background'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        // Divider
-        'divider-size' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'divider-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w33', 'chosen'=>true],
-        ],
-        'divider-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
         ],
 
         // Icons
@@ -2433,6 +2314,130 @@
             'eval'                    => ['placeholder'=>'$form-input-background', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
         ],
 
+        // Navigation
+        'navigation-behaviour-min-width' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"768";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-behaviour-min-width'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'768px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
+        ],
+
+        'navigation-item-font-size' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
+        ],
+        'navigation-item-font-weight' => [
+            'default'                 => '$font-weight-regular',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-weight'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'navigation-item-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        // Breadcrumb
+        'breadcrumb-separator' => [
+            'default'                 => '"›"',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'"›"', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w33 clr'],
+        ],
+        'breadcrumb-separator-color' => [
+            'default'                 => 'inherit',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'inherit', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
+        ],
+        'breadcrumb-separator-font-family' => [
+            'default'                 => '"ctm-icon", var(--font-family)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-font-family'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'"ctm-icon", var(--font-family)', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Header
+        'header-bg' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-bg'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w100 wizard clr'],
+        ],
+
+        'header-height' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+        ],
+        'header-height-xs' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xs'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'header-height-s' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-s'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'header-height-m' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-m'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+        ],
+        'header-height-l' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-l'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'header-height-xl' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xl'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+
+        'header-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:1:"0";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
+        ],
+
+        'header-alignment-vertical' => [
+            'default'                 => 'center',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-vertical'],
+            'inputType'               => 'select',
+            'options'                 => ['flex-start', 'center', 'flex-end', 'baseline'],
+            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
+        ],
+        'header-alignment-horizontal' => [
+            'default'                 => 'space-between',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-horizontal'],
+            'inputType'               => 'select',
+            'options'                 => ['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly', 'revert'],
+            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
+        ],
+
         // Misc
         'box-shadow' => [
             'default'                 => '0 .5rem 1rem rgba(#000, .15)',
@@ -2472,7 +2477,7 @@
             'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'clr'],
         ],
 
-        // Layout
+        // Breakpoints
         'breakpoints' => [
             'default'                 => 'a:5:{i:0;a:2:{s:3:"key";s:2:"xs";s:5:"value";s:5:"600px";}i:1;a:2:{s:3:"key";s:1:"s";s:5:"value";s:5:"768px";}i:2;a:2:{s:3:"key";s:1:"m";s:5:"value";s:6:"1024px";}i:3;a:2:{s:3:"key";s:1:"l";s:5:"value";s:6:"1264px";}i:4;a:2:{s:3:"key";s:2:"xl";s:5:"value";s:6:"1921px";}}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
@@ -2480,6 +2485,7 @@
             'eval'                    => ['maxlength'=>255, 'tl_class'=>'multiKeyValWizard breakpoint clr'],
         ],
 
+        // Layout behavior
         'layout-column-small-break' => [
             'default'                 => 's',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-small-break'],
