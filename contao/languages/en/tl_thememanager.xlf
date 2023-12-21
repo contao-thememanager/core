@@ -10,6 +10,9 @@
       <trans-unit id="tl_thememanager.font_legend">
         <source>Typography</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.link_legend">
+        <source>Links</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.headings_legend">
         <source>Headings</source>
       </trans-unit>
@@ -19,17 +22,35 @@
       <trans-unit id="tl_thememanager.heading_spacing_legend">
         <source>Heading (Spacings)</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link_legend">
-        <source>Links</source>
+      <trans-unit id="tl_thememanager.header_legend">
+        <source>Header</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout_legend">
-        <source>Layout</source>
+      <trans-unit id="tl_thememanager.nav_legend">
+        <source>Navigation</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article_legend">
-        <source>Article</source>
+      <trans-unit id="tl_thememanager.button_properties_legend">
+        <source>Buttons</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid_legend">
-        <source>Grid</source>
+      <trans-unit id="tl_thememanager.button_design_primary_legend">
+        <source>Button-Design (Primary)</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_design_secondary_legend">
+        <source>Button-Design (Secondary)</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button_design_alt_legend">
+        <source>Button-Design (Alternative)</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed_legend">
+        <source>Boxed</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table_legend">
+        <source>Table</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider_legend">
+        <source>Divider</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon_legend">
+        <source>Icon</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.form_general_legend">
         <source>Form: General</source>
@@ -49,20 +70,17 @@
       <trans-unit id="tl_thememanager.form_field_legend">
         <source>Form-field: Image / Icon</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon_legend">
-        <source>Icon</source>
+      <trans-unit id="tl_thememanager.misc_legend">
+        <source>Misc</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button_properties_legend">
-        <source>Buttons</source>
+      <trans-unit id="tl_thememanager.layout_legend">
+        <source>Layout</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button_design_primary_legend">
-        <source>Button-Design (Primary)</source>
+      <trans-unit id="tl_thememanager.article_legend">
+        <source>Article</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button_design_secondary_legend">
-        <source>Button-Design (Secondary)</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button_design_alt_legend">
-        <source>Button-Design (Alternative)</source>
+      <trans-unit id="tl_thememanager.grid_legend">
+        <source>Grid</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.spacing_inner_legend">
         <source>Spacings (Inner)</source>
@@ -70,26 +88,8 @@
       <trans-unit id="tl_thememanager.spacing_outer_legend">
         <source>Spacings (Outer)</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.divider_legend">
-        <source>Divider</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed_legend">
-        <source>Boxed</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table_legend">
-        <source>Table</source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.image_text_legend">
         <source>Image-Text</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header_legend">
-        <source>Header</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.nav_legend">
-        <source>Navigation</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.misc_legend">
-        <source>Misc</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.browser-context.0">
@@ -209,6 +209,88 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.strong-font-weight.1">
         <source>Here you can set the font-weight for &quot;strong&quot; - elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.link-font-weight.0">
+        <source>$link-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-font-weight.1">
+        <source>Here you can set the font-weight for &quot;link&quot; - elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.link-color-regular.0">
+        <source>$link-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-regular.1">
+        <source>Here you can set the color for regular &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-regular.0">
+        <source>$link-hover-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-regular.1">
+        <source>Here you can set the color for regular hovered &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-regular.0">
+        <source>$link-decoration-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-regular.1">
+        <source>Here you can set the text-decoration for regular &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-regular.0">
+        <source>$link-hover-decoration-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-regular.1">
+        <source>Here you can set the text-decoration for regular hovered &quot;a&quot; - elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.link-color-invert.0">
+        <source>$link-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-invert.1">
+        <source>Here you can set the color for inverted &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-invert.0">
+        <source>$link-hover-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-invert.1">
+        <source>Here you can set the color for inverted hovered &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-invert.0">
+        <source>$link-decoration-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-invert.1">
+        <source>Here you can set the text-decoration for inverted &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-invert.0">
+        <source>$link-hover-decoration-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-invert.1">
+        <source>Here you can set the text-decoration for inverted hovered &quot;a&quot; - elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.link-color-extra.0">
+        <source>$link-color-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-color-extra.1">
+        <source>Here you can set the color for extra &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-extra.0">
+        <source>$link-hover-color-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-color-extra.1">
+        <source>Here you can set the color for extra hovered &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-extra.0">
+        <source>$link-decoration-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-decoration-extra.1">
+        <source>Here you can set the text-decoration for extra &quot;a&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-extra.0">
+        <source>$link-hover-decoration-extra</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.link-hover-decoration-extra.1">
+        <source>Here you can set the text-decoration for extra hovered &quot;a&quot; - elements.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.line-height-headline.0">
@@ -954,320 +1036,808 @@
         <source>Here you can set the large bottom margin for heading-elements for large devices (e.g. desktop).</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.x-spacing-large-m.0">
-        <source>$x-spacing-large-m</source>
+      <trans-unit id="tl_thememanager.header-bg.0">
+        <source>$header-bg</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.x-spacing-large-m.1">
-        <source>Here you can set the content width for large horizontal spacing.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.x-spacing-large-l.0">
-        <source>$x-spacing-large-l</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.x-spacing-large-l.1">
-        <source>Here you can set the content width for medium horizontal spacing.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.x-spacing-small.0">
-        <source>$x-spacing-small</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.x-spacing-small.1">
-        <source>Here you can set the content width for small horizontal spacing.</source>
+      <trans-unit id="tl_thememanager.header-bg.1">
+        <source>Here you can set the background-color for the header.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.article-outer-padding.0">
-        <source>$article-outer-padding</source>
+      <trans-unit id="tl_thememanager.header-height.0">
+        <source>$header-height</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-outer-padding.1">
-        <source>Here you can set the horizontal article padding.</source>
+      <trans-unit id="tl_thememanager.header-height.1">
+        <source>Here you can set the header height.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-outer-padding-xs.0">
-        <source>$article-outer-padding-xs</source>
+      <trans-unit id="tl_thememanager.header-height-xs.0">
+        <source>$header-height-xs</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-outer-padding-xs.1">
-        <source>Here you can set the horizontal article padding for the 'xs'-breakpoint.</source>
+      <trans-unit id="tl_thememanager.header-height-xs.1">
+        <source>Here you can set the header height for the 'xs'-breakpoint.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-outer-padding-s.0">
-        <source>$article-outer-padding-s</source>
+      <trans-unit id="tl_thememanager.header-height-s.0">
+        <source>$header-height-s</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-outer-padding-s.1">
-        <source>Here you can set the horizontal article padding for the 's'-breakpoint.</source>
+      <trans-unit id="tl_thememanager.header-height-s.1">
+        <source>Here you can set the header height for the 's'-breakpoint.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
-        <source>$article-spacing-xs-small</source>
+      <trans-unit id="tl_thememanager.header-height-m.0">
+        <source>$header-height-m</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xs-small.1">
-        <source>Here you can set the small vertical padding for articles for tiny devices.</source>
+      <trans-unit id="tl_thememanager.header-height-m.1">
+        <source>Here you can set the header height for the 'm'-breakpoint.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-small.0">
-        <source>$article-spacing-s-small</source>
+      <trans-unit id="tl_thememanager.header-height-l.0">
+        <source>$header-height-l</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-small.1">
-        <source>Here you can set the small vertical padding for articles for small devices.</source>
+      <trans-unit id="tl_thememanager.header-height-l.1">
+        <source>Here you can set the header height for the 'l'-breakpoint.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-small.0">
-        <source>$article-spacing-m-small</source>
+      <trans-unit id="tl_thememanager.header-height-xl.0">
+        <source>$header-height-xl</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-small.1">
-        <source>Here you can set the small vertical padding for articles for medium devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-small.0">
-        <source>$article-spacing-l-small</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-small.1">
-        <source>Here you can set the small vertical padding for articles for large devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-small.0">
-        <source>$article-spacing-xl-small</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-small.1">
-        <source>Here you can set the small vertical padding for articles for extra large devices.</source>
+      <trans-unit id="tl_thememanager.header-height-xl.1">
+        <source>Here you can set the header height for the 'xl'-breakpoint.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.article-spacing-xs-medium.0">
-        <source>$article-spacing-xs-medium</source>
+      <trans-unit id="tl_thememanager.header-padding.0">
+        <source>$header-padding</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xs-medium.1">
-        <source>Here you can set the medium vertical padding for articles for tiny devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-medium.0">
-        <source>$article-spacing-s-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-medium.1">
-        <source>Here you can set the medium vertical padding for articles for small devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-medium.0">
-        <source>$article-spacing-m-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-medium.1">
-        <source>Here you can set the medium vertical padding for articles for medium devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-medium.0">
-        <source>$article-spacing-l-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-medium.1">
-        <source>Here you can set the medium vertical padding for articles for large devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-medium.0">
-        <source>$article-spacing-xl-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-medium.1">
-        <source>Here you can set the medium vertical padding for articles for extra large devices.</source>
+      <trans-unit id="tl_thememanager.header-padding.1">
+        <source>Here you can set the padding for the header.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.article-spacing-xs-large.0">
-        <source>$article-spacing-xs-large</source>
+      <trans-unit id="tl_thememanager.header-alignment-vertical.0">
+        <source>$header-alignment-vertical</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xs-large.1">
-        <source>Here you can set the large vertical padding for articles for tiny devices.</source>
+      <trans-unit id="tl_thememanager.header-alignment-vertical.1">
+        <source>Here you can select the vertical alignment of the header elements.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-large.0">
-        <source>$article-spacing-s-large</source>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.0">
+        <source>$header-alignment-horizontal</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-s-large.1">
-        <source>Here you can set the large vertical padding for articles for small devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-large.0">
-        <source>$article-spacing-m-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-m-large.1">
-        <source>Here you can set the large vertical padding for articles for medium devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-large.0">
-        <source>$article-spacing-l-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-l-large.1">
-        <source>Here you can set the large vertical padding for articles for large devices.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-large.0">
-        <source>$article-spacing-xl-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-spacing-xl-large.1">
-        <source>Here you can set the large vertical padding for articles for extra large devices.</source>
+      <trans-unit id="tl_thememanager.header-alignment-horizontal.1">
+        <source>Here you can select the horizontal alignment of the header elements.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.article-main-spacing-bottom.0">
-        <source>$article-main-spacing-bottom</source>
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
+        <source>$navigation-behaviour-min-width</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.article-main-spacing-bottom.1">
-        <source>Here you can set a default value for the bottom padding for articles within the &lt;em&gt;#main&lt;/em&gt; column.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.article-min-vheight.0">
-        <source>$article-min-vheight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-min-vheight.1">
-        <source>Here you can enter the minimum device height in px at which the height of articles should be set. Below this height, a minimum height is always set.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-options-vheight.0">
-        <source>$article-options-vheight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-options-vheight.1">
-        <source>Here you can enter comma-separated vh-options that will be available within article-height.</source>
+      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.1">
+        <source>Here you can set the minimum width for the main-navigation to change from vertical to horizontal behaviour.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.link-font-weight.0">
-        <source>$link-font-weight</source>
+      <trans-unit id="tl_thememanager.navigation-item-font-size.0">
+        <source>$navigation-item-font-size</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-font-weight.1">
-        <source>Here you can set the font-weight for &quot;link&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.navigation-item-font-size.1">
+        <source>Here you can set the font-size for navigation items.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.link-color-regular.0">
-        <source>$link-color-regular</source>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.0">
+        <source>$navigation-item-font-weight</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-color-regular.1">
-        <source>Here you can set the color for regular &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.navigation-item-font-weight.1">
+        <source>Here you can set the font-weight for navigation items.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-regular.0">
-        <source>$link-hover-color-regular</source>
+      <trans-unit id="tl_thememanager.navigation-item-padding.0">
+        <source>$navigation-item-padding</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-regular.1">
-        <source>Here you can set the color for regular hovered &quot;a&quot; - elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-regular.0">
-        <source>$link-decoration-regular</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-regular.1">
-        <source>Here you can set the text-decoration for regular &quot;a&quot; - elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-regular.0">
-        <source>$link-hover-decoration-regular</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-regular.1">
-        <source>Here you can set the text-decoration for regular hovered &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.navigation-item-padding.1">
+        <source>Here you can set the padding for navigation-items.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.link-color-invert.0">
-        <source>$link-color-invert</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
+        <source>$breadcrumb-separator</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-color-invert.1">
-        <source>Here you can set the color for inverted &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
+        <source>Here you can add the separator symbol for breadcrumbs.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-invert.0">
-        <source>$link-hover-color-invert</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
+        <source>$breadcrumb-separator-color</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-invert.1">
-        <source>Here you can set the color for inverted hovered &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
+        <source>Here you can set the color for the › breadcrumb separator.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-invert.0">
-        <source>$link-decoration-invert</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
+        <source>$breadcrumb-separator-font-family</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-invert.1">
-        <source>Here you can set the text-decoration for inverted &quot;a&quot; - elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-invert.0">
-        <source>$link-hover-decoration-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-invert.1">
-        <source>Here you can set the text-decoration for inverted hovered &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
+        <source>Here you can set the font-family for the › breadcrumb separator.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.link-color-extra.0">
-        <source>$link-color-extra</source>
+      <trans-unit id="tl_thememanager.button-line-height.0">
+        <source>$button-line-height</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-color-extra.1">
-        <source>Here you can set the color for extra &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.button-line-height.1">
+        <source>Here you can set the line-height for buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-extra.0">
-        <source>$link-hover-color-extra</source>
+      <trans-unit id="tl_thememanager.button-font-size-small.0">
+        <source>$button-font-size-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-color-extra.1">
-        <source>Here you can set the color for extra hovered &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.button-font-size-small.1">
+        <source>Here you can set the font-size for small buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-extra.0">
-        <source>$link-decoration-extra</source>
+      <trans-unit id="tl_thememanager.button-font-size-medium.0">
+        <source>$button-font-size-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-decoration-extra.1">
-        <source>Here you can set the text-decoration for extra &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.button-font-size-medium.1">
+        <source>Here you can set the font-size for medium buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-extra.0">
-        <source>$link-hover-decoration-extra</source>
+      <trans-unit id="tl_thememanager.button-font-size-large.0">
+        <source>$button-font-size-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.link-hover-decoration-extra.1">
-        <source>Here you can set the text-decoration for extra hovered &quot;a&quot; - elements.</source>
+      <trans-unit id="tl_thememanager.button-font-size-large.1">
+        <source>Here you can set the font-size for large buttons.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.breakpoints.0">
-        <source>$breakpoints</source>
+      <trans-unit id="tl_thememanager.button-font-size-super.0">
+        <source>$button-font-size-super</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.breakpoints.1">
-        <source>Here you can add or change the value for media breakpoints.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.layout-column-small-break.0">
-        <source>$layout-column-small-break</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-small-break.1">
-        <source>Here you can set the breakpoint for small column behaviour in column layouts (left or right columns).</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-medium-break.0">
-        <source>$layout-column-medium-break</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-medium-break.1">
-        <source>Here you can set the breakpoint for medium column behaviour in column layouts (left or right columns).</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-large-break.0">
-        <source>$layout-column-large-break</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-large-break.1">
-        <source>Here you can set the breakpoint for large column behaviour in column layouts (left or right columns).</source>
+      <trans-unit id="tl_thememanager.button-font-size-super.1">
+        <source>Here you can set the font-size for extra large buttons.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.layout-column-width-small.0">
-        <source>$layout-column-width-small</source>
+      <trans-unit id="tl_thememanager.button-padding-small.0">
+        <source>$button-padding-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-width-small.1">
-        <source>Here you can set the width of the column for small column behaviour.</source>
+      <trans-unit id="tl_thememanager.button-padding-small.1">
+        <source>Here you can set the padding for small buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-width-medium.0">
-        <source>$layout-column-width-medium</source>
+      <trans-unit id="tl_thememanager.button-padding-medium.0">
+        <source>$button-padding-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-width-medium.1">
-        <source>Here you can set the width of the column for medium column behaviour.</source>
+      <trans-unit id="tl_thememanager.button-padding-medium.1">
+        <source>Here you can set the padding for medium buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-width-large.0">
-        <source>$layout-column-width-large</source>
+      <trans-unit id="tl_thememanager.button-padding-large.0">
+        <source>$button-padding-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-width-large.1">
-        <source>Here you can set the width of the column for large column behaviour.</source>
+      <trans-unit id="tl_thememanager.button-padding-large.1">
+        <source>Here you can set the padding for large buttons.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.layout-column-gutter-small.0">
-        <source>$layout-column-gutter-small</source>
+      <trans-unit id="tl_thememanager.button-padding-super.0">
+        <source>$button-padding-super</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-gutter-small.1">
-        <source>Here you can set the horizontal spacing between the main and side column for small column behaviour.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-gutter-medium.0">
-        <source>$layout-column-gutter-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-gutter-medium.1">
-        <source>Here you can set the horizontal spacing between the main and side column for medium column behaviour.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-gutter-large.0">
-        <source>$layout-column-gutter-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.layout-column-gutter-large.1">
-        <source>Here you can set the horizontal spacing between the main and side column for large column behaviour.</source>
+      <trans-unit id="tl_thememanager.button-padding-super.1">
+        <source>Here you can set the padding for extra large buttons.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.grid-columns.0">
-        <source>$grid-columns</source>
+      <trans-unit id="tl_thememanager.button-font-weight-primary.0">
+        <source>$button-font-weight-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-columns.1">
-        <source>Here you can set the amount of columns for the grid-framework.</source>
+      <trans-unit id="tl_thememanager.button-font-weight-primary.1">
+        <source>Here you can set the font-weight for primary buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-width.0">
-        <source>$grid-gutter-width</source>
+      <trans-unit id="tl_thememanager.button-transform-primary.0">
+        <source>$button-transform-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-width.1">
-        <source>Here you can set the horizontal padding for each grid-element.</source>
+      <trans-unit id="tl_thememanager.button-transform-primary.1">
+        <source>Here you can choose the text-transformation for primary buttons.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-bottom.0">
-        <source>$grid-gutter-bottom</source>
+      <trans-unit id="tl_thememanager.button-decoration-primary.0">
+        <source>$button-decoration-primary</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.grid-gutter-bottom.1">
-        <source>Here you can set the vertical padding for each grid-element.</source>
+      <trans-unit id="tl_thememanager.button-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.0">
+        <source>$button-hover-decoration-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-primary.1">
+        <source>Here you can set the text-decoration for primary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-bg-primary.0">
+        <source>$button-bg-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-primary.1">
+        <source>Here you can set the background for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary.0">
+        <source>$button-hover-bg-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary.1">
+        <source>Here you can set the background for primary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-primary-invert.0">
+        <source>$button-bg-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-primary-invert.1">
+        <source>Here you can set the background for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.0">
+        <source>$button-hover-bg-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.1">
+        <source>Here you can set the background for inverted primary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-color-primary.0">
+        <source>$button-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-primary.1">
+        <source>Here you can set the text color for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary.0">
+        <source>$button-hover-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary.1">
+        <source>Here you can set the text color for primary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-primary-invert.0">
+        <source>$button-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-primary-invert.1">
+        <source>Here you can set the text color for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.0">
+        <source>$button-hover-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.1">
+        <source>Here you can set the text color for inverted primary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-color-primary.0">
+        <source>$button-border-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary.1">
+        <source>Here you can set the border-color for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary.0">
+        <source>$button-hover-border-color-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary.1">
+        <source>Here you can set the border-color for primary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary-invert.0">
+        <source>$button-border-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-primary-invert.1">
+        <source>Here you can set the border-color for inverted primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.0">
+        <source>$button-hover-border-color-primary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.1">
+        <source>Here you can set the border-color for inverted primary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-primary.0">
+        <source>$button-border-radius-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-primary.1">
+        <source>Here you can set the border-radius for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.0">
+        <source>$button-border-width-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-primary.1">
+        <source>Here you can set the border-width for primary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.0">
+        <source>$button-border-style-primary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-primary.1">
+        <source>Here you can choose the border-style for primary buttons.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-font-weight-secondary.0">
+        <source>$button-font-weight-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-secondary.1">
+        <source>Here you can set the font-weight for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-secondary.0">
+        <source>$button-transform-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-secondary.1">
+        <source>Here you can choose the text-transformation for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.0">
+        <source>$button-decoration-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.0">
+        <source>$button-hover-decoration-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.1">
+        <source>Here you can set the text-decoration for secondary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-bg-secondary.0">
+        <source>$button-bg-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary.1">
+        <source>Here you can set the background for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary.0">
+        <source>$button-hover-bg-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary.1">
+        <source>Here you can set the background for secondary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary-invert.0">
+        <source>$button-bg-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-secondary-invert.1">
+        <source>Here you can set the background for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.0">
+        <source>$button-hover-bg-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.1">
+        <source>Here you can set the background for inverted secondary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-color-secondary.0">
+        <source>$button-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary.1">
+        <source>Here you can set the text color for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary.0">
+        <source>$button-hover-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary.1">
+        <source>Here you can set the text color for secondary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary-invert.0">
+        <source>$button-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-secondary-invert.1">
+        <source>Here you can set the text color for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.0">
+        <source>$button-hover-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.1">
+        <source>Here you can set the text color for inverted secondary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-color-secondary.0">
+        <source>$button-border-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary.1">
+        <source>Here you can set the border-color for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.0">
+        <source>$button-hover-border-color-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.1">
+        <source>Here you can set the border-color for secondary buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.0">
+        <source>$button-border-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.1">
+        <source>Here you can set the border-color for inverted secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.0">
+        <source>$button-hover-border-color-secondary-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.1">
+        <source>Here you can set the border-color for inverted secondary buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
+        <source>$button-border-radius-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-secondary.1">
+        <source>Here you can set the border-radius for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.0">
+        <source>$button-border-width-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-secondary.1">
+        <source>Here you can set the border-width for secondary buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.0">
+        <source>$button-border-style-secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-secondary.1">
+        <source>Here you can choose the border-style for secondary buttons.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-font-weight-alt.0">
+        <source>$button-font-weight-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-font-weight-alt.1">
+        <source>Here you can set the font-weight for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-alt.0">
+        <source>$button-transform-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-transform-alt.1">
+        <source>Here you can choose the text-transformation for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.0">
+        <source>$button-decoration-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.0">
+        <source>$button-hover-decoration-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-decoration-alt.1">
+        <source>Here you can set the text-decoration for alternative buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-bg-alt.0">
+        <source>$button-bg-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt.1">
+        <source>Here you can set the background for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt.0">
+        <source>$button-hover-bg-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt.1">
+        <source>Here you can set the background for alternative buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt-invert.0">
+        <source>$button-bg-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-bg-alt-invert.1">
+        <source>Here you can set the background for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.0">
+        <source>$button-hover-bg-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.1">
+        <source>Here you can set the background for inverted alternative buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-color-alt.0">
+        <source>$button-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt.1">
+        <source>Here you can set the text color for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt.0">
+        <source>$button-hover-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt.1">
+        <source>Here you can set the text color for alternative buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt-invert.0">
+        <source>$button-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-color-alt-invert.1">
+        <source>Here you can set the text color for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.0">
+        <source>$button-hover-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.1">
+        <source>Here you can set the text color for inverted alternative buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-color-alt.0">
+        <source>$button-border-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt.1">
+        <source>Here you can set the border-color for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt.0">
+        <source>$button-hover-border-color-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt.1">
+        <source>Here you can set the border-color for alternative buttons when hovered.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt-invert.0">
+        <source>$button-border-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-color-alt-invert.1">
+        <source>Here you can set the border-color for inverted alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.0">
+        <source>$button-hover-border-color-alt-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.1">
+        <source>Here you can set the border-color for inverted alternative buttons when hovered.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.button-border-radius-alt.0">
+        <source>$button-border-radius-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-radius-alt.1">
+        <source>Here you can set the border-radius for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-alt.0">
+        <source>$button-border-width-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-width-alt.1">
+        <source>Here you can set the border-width for alternative buttons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.0">
+        <source>$button-border-style-alt</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.button-border-style-alt.1">
+        <source>Here you can choose the border-style for alternative buttons.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.boxed-background-color.0">
+        <source>$boxed-background-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-background-color.1">
+        <source>Here you can set the background color for boxed elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-color.0">
+        <source>$boxed-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-color.1">
+        <source>Here you can set the border-color for boxed elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-radius.0">
+        <source>$boxed-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-radius.1">
+        <source>Here you can set the border-radius for boxed elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-width.0">
+        <source>$boxed-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-width.1">
+        <source>Here you can set the border-width for boxed elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-style.0">
+        <source>$boxed-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.boxed-border-style.1">
+        <source>Here you can choose the border-style for boxed elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.table-cell-spacing.0">
+        <source>$table-cell-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-spacing.1">
+        <source>Here you can set the border-spacing for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-padding.0">
+        <source>$table-cell-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-padding.1">
+        <source>Here you can set the padding for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-radius.0">
+        <source>$table-cell-border-radius</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-radius.1">
+        <source>Here you can set the border-radius for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-color.0">
+        <source>$table-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-color.1">
+        <source>Here you set the border-color for tables.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-style.0">
+        <source>$table-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-style.1">
+        <source>Here you can choose the border-style for tables.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.0">
+        <source>$table-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-border-width.1">
+        <source>Here you can set the border-width for tables.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-color.0">
+        <source>$table-head-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-color.1">
+        <source>Here you set the border-color for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-style.0">
+        <source>$table-head-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-style.1">
+        <source>Here you can choose the border-style for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-width.0">
+        <source>$table-head-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-border-width.1">
+        <source>Here you can set the border-width for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-color.0">
+        <source>$table-cell-border-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-color.1">
+        <source>Here you set the border-color for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-style.0">
+        <source>$table-cell-border-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-style.1">
+        <source>Here you can choose the border-style for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-width.0">
+        <source>$table-cell-border-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-cell-border-width.1">
+        <source>Here you can set the border-width for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-side.0">
+        <source>$table-caption-side</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-side.1">
+        <source>Here you can choose whether the table caption should be above or below.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-alignment.0">
+        <source>$table-caption-alignment</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-alignment.1">
+        <source>Here you can choose the text-alignment for table captions.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-padding.0">
+        <source>$table-caption-padding</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-padding.1">
+        <source>Here you can set the padding for table captions.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-color.0">
+        <source>$table-caption-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-color.1">
+        <source>Here you can set the color for table captions.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-background.0">
+        <source>$table-caption-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-background.1">
+        <source>Here you can set the background-color for table captions.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-font-size.0">
+        <source>$table-caption-font-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-caption-font-size.1">
+        <source>Here you can set the font-size for table captions.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-text-align.0">
+        <source>$table-text-align</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-text-align.1">
+        <source>Here you can choose the text-alignment for tables.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-font-weight.0">
+        <source>$table-head-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-font-weight.1">
+        <source>Here you can set the font-weight for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-font-weight.0">
+        <source>$table-body-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-font-weight.1">
+        <source>Here you can set the font-weight for table cells.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-font-weight.0">
+        <source>$table-foot-font-weight</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-font-weight.1">
+        <source>Here you can set the font-weight for table footers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-color.0">
+        <source>$table-head-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-color.1">
+        <source>Here you can set the color for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-background.0">
+        <source>$table-head-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-head-background.1">
+        <source>Here you can set the background-color for table headers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-color.0">
+        <source>$table-foot-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-color.1">
+        <source>Here you can set the color for table footers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-background.0">
+        <source>$table-foot-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-foot-background.1">
+        <source>Here you can set the background-color for table footers.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-color.0">
+        <source>$table-body-even-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-color.1">
+        <source>Here you can set the color for even rows.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-background.0">
+        <source>$table-body-even-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-even-background.1">
+        <source>Here you can set the background-color for even rows.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-color.0">
+        <source>$table-body-odd-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-color.1">
+        <source>Here you can set the color for odd rows.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-background.0">
+        <source>$table-body-odd-background</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.table-body-odd-background.1">
+        <source>Here you can set the background-color for odd rows.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.divider-size.0">
+        <source>$divider-size</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-size.1">
+        <source>Here you can set the height for the divider line.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.0">
+        <source>$divider-style</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-style.1">
+        <source>Here you can choose the style for the divider line.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.0">
+        <source>$divider-color</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.divider-color.1">
+        <source>Here you can choose the color for the divider line.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.icon-font-family.0">
+        <source>$icon-font-family</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-font-family.1">
+        <source>Here you can set the font-family for an icon-set (e.g. fontello).</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.icon-size-tiny.0">
+        <source>$icon-size-tiny</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-tiny.1">
+        <source>Here you can set the tiny size for icons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-small.0">
+        <source>$icon-size-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-small.1">
+        <source>Here you can set the small size for icons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-medium.0">
+        <source>$icon-size-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-medium.1">
+        <source>Here you can set the medium size for icons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-large.0">
+        <source>$icon-size-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-large.1">
+        <source>Here you can set the large size for icons.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.0">
+        <source>$icon-size-super</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-size-super.1">
+        <source>Here you can set the extra large size for icons.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.icon-shape-spacing.0">
+        <source>$icon-shape-spacing</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-shape-spacing.1">
+        <source>Here you can set the padding for icons in the filled and outlined option.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-outlined-width.0">
+        <source>$icon-outlined-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-outlined-width.1">
+        <source>Here you can set the border-width for outlined icons.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-input-font-family.0">
@@ -1714,468 +2284,277 @@
         <source>Here you can set the background-color for explanation icons for form-fields.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.icon-font-family.0">
-        <source>$icon-font-family</source>
+      <trans-unit id="tl_thememanager.box-shadow.0">
+        <source>$box-shadow</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-font-family.1">
-        <source>Here you can set the font-family for an icon-set (e.g. fontello).</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.icon-size-tiny.0">
-        <source>$icon-size-tiny</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-tiny.1">
-        <source>Here you can set the tiny size for icons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-small.0">
-        <source>$icon-size-small</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-small.1">
-        <source>Here you can set the small size for icons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-medium.0">
-        <source>$icon-size-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-medium.1">
-        <source>Here you can set the medium size for icons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-large.0">
-        <source>$icon-size-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-large.1">
-        <source>Here you can set the large size for icons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-super.0">
-        <source>$icon-size-super</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.icon-size-super.1">
-        <source>Here you can set the extra large size for icons.</source>
+      <trans-unit id="tl_thememanager.box-shadow.1">
+        <source>Here you can set a box-shadow for the &quot;box-shadow&quot; - mixin.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.icon-shape-spacing.0">
-        <source>$icon-shape-spacing</source>
+      <trans-unit id="tl_thememanager.selection-color.0">
+        <source>$selection-color</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-shape-spacing.1">
-        <source>Here you can set the padding for icons in the filled and outlined option.</source>
+      <trans-unit id="tl_thememanager.selection-color.1">
+        <source>Here you can set the text color for selected text.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-outlined-width.0">
-        <source>$icon-outlined-width</source>
+      <trans-unit id="tl_thememanager.selection-color-invert.0">
+        <source>$selection-color-invert</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.icon-outlined-width.1">
-        <source>Here you can set the border-width for outlined icons.</source>
+      <trans-unit id="tl_thememanager.selection-color-invert.1">
+        <source>Here you can set the inverted text color for selected text.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.button-line-height.0">
-        <source>$button-line-height</source>
+      <trans-unit id="tl_thememanager.selection-bg.0">
+        <source>$selection-bg</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-line-height.1">
-        <source>Here you can set the line-height for buttons.</source>
+      <trans-unit id="tl_thememanager.selection-bg.1">
+        <source>Here you can set the background-color for selected text.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-small.0">
-        <source>$button-font-size-small</source>
+      <trans-unit id="tl_thememanager.selection-bg-invert.0">
+        <source>$selection-bg-invert</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-small.1">
-        <source>Here you can set the font-size for small buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-medium.0">
-        <source>$button-font-size-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-medium.1">
-        <source>Here you can set the font-size for medium buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-large.0">
-        <source>$button-font-size-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-large.1">
-        <source>Here you can set the font-size for large buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-super.0">
-        <source>$button-font-size-super</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-size-super.1">
-        <source>Here you can set the font-size for extra large buttons.</source>
+      <trans-unit id="tl_thememanager.selection-bg-invert.1">
+        <source>Here you can set the inverted background-color for selected text.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-padding-small.0">
-        <source>$button-padding-small</source>
+      <trans-unit id="tl_thememanager.aspect-ratios.0">
+        <source>$aspect-ratios</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-small.1">
-        <source>Here you can set the padding for small buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-medium.0">
-        <source>$button-padding-medium</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-medium.1">
-        <source>Here you can set the padding for medium buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-large.0">
-        <source>$button-padding-large</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-large.1">
-        <source>Here you can set the padding for large buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-super.0">
-        <source>$button-padding-super</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-padding-super.1">
-        <source>Here you can set the padding for extra large buttons.</source>
+      <trans-unit id="tl_thememanager.aspect-ratios.1">
+        <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-font-weight-primary.0">
-        <source>$button-font-weight-primary</source>
+      <trans-unit id="tl_thememanager.breakpoints.0">
+        <source>$breakpoints</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-weight-primary.1">
-        <source>Here you can set the font-weight for primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-primary.0">
-        <source>$button-transform-primary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-primary.1">
-        <source>Here you can choose the text-transformation for primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-primary.0">
-        <source>$button-decoration-primary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-primary.1">
-        <source>Here you can set the text-decoration for primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-primary.0">
-        <source>$button-hover-decoration-primary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-primary.1">
-        <source>Here you can set the text-decoration for primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.breakpoints.1">
+        <source>Here you can add or change the value for media breakpoints.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-bg-primary.0">
-        <source>$button-bg-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-small-break.0">
+        <source>$layout-column-small-break</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-primary.1">
-        <source>Here you can set the background for primary buttons.</source>
+      <trans-unit id="tl_thememanager.layout-column-small-break.1">
+        <source>Here you can set the breakpoint for small column behaviour in column layouts (left or right columns).</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-primary.0">
-        <source>$button-hover-bg-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.0">
+        <source>$layout-column-medium-break</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-primary.1">
-        <source>Here you can set the background for primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-medium-break.1">
+        <source>Here you can set the breakpoint for medium column behaviour in column layouts (left or right columns).</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-primary-invert.0">
-        <source>$button-bg-primary-invert</source>
+      <trans-unit id="tl_thememanager.layout-column-large-break.0">
+        <source>$layout-column-large-break</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-primary-invert.1">
-        <source>Here you can set the background for inverted primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.0">
-        <source>$button-hover-bg-primary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-primary-invert.1">
-        <source>Here you can set the background for inverted primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-large-break.1">
+        <source>Here you can set the breakpoint for large column behaviour in column layouts (left or right columns).</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-color-primary.0">
-        <source>$button-color-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-width-small.0">
+        <source>$layout-column-width-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-primary.1">
-        <source>Here you can set the text color for primary buttons.</source>
+      <trans-unit id="tl_thememanager.layout-column-width-small.1">
+        <source>Here you can set the width of the column for small column behaviour.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-primary.0">
-        <source>$button-hover-color-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-width-medium.0">
+        <source>$layout-column-width-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-primary.1">
-        <source>Here you can set the text color for primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-width-medium.1">
+        <source>Here you can set the width of the column for medium column behaviour.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-primary-invert.0">
-        <source>$button-color-primary-invert</source>
+      <trans-unit id="tl_thememanager.layout-column-width-large.0">
+        <source>$layout-column-width-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-primary-invert.1">
-        <source>Here you can set the text color for inverted primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.0">
-        <source>$button-hover-color-primary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-primary-invert.1">
-        <source>Here you can set the text color for inverted primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-width-large.1">
+        <source>Here you can set the width of the column for large column behaviour.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-color-primary.0">
-        <source>$button-border-color-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-small.0">
+        <source>$layout-column-gutter-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-primary.1">
-        <source>Here you can set the border-color for primary buttons.</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-small.1">
+        <source>Here you can set the horizontal spacing between the main and side column for small column behaviour.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-primary.0">
-        <source>$button-hover-border-color-primary</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-medium.0">
+        <source>$layout-column-gutter-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-primary.1">
-        <source>Here you can set the border-color for primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-medium.1">
+        <source>Here you can set the horizontal spacing between the main and side column for medium column behaviour.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-primary-invert.0">
-        <source>$button-border-color-primary-invert</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-large.0">
+        <source>$layout-column-gutter-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-primary-invert.1">
-        <source>Here you can set the border-color for inverted primary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.0">
-        <source>$button-hover-border-color-primary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-primary-invert.1">
-        <source>Here you can set the border-color for inverted primary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.layout-column-gutter-large.1">
+        <source>Here you can set the horizontal spacing between the main and side column for large column behaviour.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-primary.0">
-        <source>$button-border-radius-primary</source>
+      <trans-unit id="tl_thememanager.x-spacing-large-m.0">
+        <source>$x-spacing-large-m</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-primary.1">
-        <source>Here you can set the border-radius for primary buttons.</source>
+      <trans-unit id="tl_thememanager.x-spacing-large-m.1">
+        <source>Here you can set the content width for large horizontal spacing.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-primary.0">
-        <source>$button-border-width-primary</source>
+      <trans-unit id="tl_thememanager.x-spacing-large-l.0">
+        <source>$x-spacing-large-l</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-primary.1">
-        <source>Here you can set the border-width for primary buttons.</source>
+      <trans-unit id="tl_thememanager.x-spacing-large-l.1">
+        <source>Here you can set the content width for medium horizontal spacing.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-primary.0">
-        <source>$button-border-style-primary</source>
+      <trans-unit id="tl_thememanager.x-spacing-small.0">
+        <source>$x-spacing-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-primary.1">
-        <source>Here you can choose the border-style for primary buttons.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.button-font-weight-secondary.0">
-        <source>$button-font-weight-secondary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-weight-secondary.1">
-        <source>Here you can set the font-weight for secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-secondary.0">
-        <source>$button-transform-secondary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-secondary.1">
-        <source>Here you can choose the text-transformation for secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-secondary.0">
-        <source>$button-decoration-secondary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-secondary.1">
-        <source>Here you can set the text-decoration for secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.0">
-        <source>$button-hover-decoration-secondary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-secondary.1">
-        <source>Here you can set the text-decoration for secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.x-spacing-small.1">
+        <source>Here you can set the content width for small horizontal spacing.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-bg-secondary.0">
-        <source>$button-bg-secondary</source>
+      <trans-unit id="tl_thememanager.article-outer-padding.0">
+        <source>$article-outer-padding</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-secondary.1">
-        <source>Here you can set the background for secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-outer-padding.1">
+        <source>Here you can set the horizontal article padding.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-secondary.0">
-        <source>$button-hover-bg-secondary</source>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.0">
+        <source>$article-outer-padding-xs</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-secondary.1">
-        <source>Here you can set the background for secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-outer-padding-xs.1">
+        <source>Here you can set the horizontal article padding for the 'xs'-breakpoint.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-secondary-invert.0">
-        <source>$button-bg-secondary-invert</source>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.0">
+        <source>$article-outer-padding-s</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-secondary-invert.1">
-        <source>Here you can set the background for inverted secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.0">
-        <source>$button-hover-bg-secondary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-secondary-invert.1">
-        <source>Here you can set the background for inverted secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-outer-padding-s.1">
+        <source>Here you can set the horizontal article padding for the 's'-breakpoint.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-color-secondary.0">
-        <source>$button-color-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
+        <source>$article-spacing-xs-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-secondary.1">
-        <source>Here you can set the text color for secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-small.1">
+        <source>Here you can set the small vertical padding for articles for tiny devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-secondary.0">
-        <source>$button-hover-color-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-small.0">
+        <source>$article-spacing-s-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-secondary.1">
-        <source>Here you can set the text color for secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-small.1">
+        <source>Here you can set the small vertical padding for articles for small devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-secondary-invert.0">
-        <source>$button-color-secondary-invert</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-small.0">
+        <source>$article-spacing-m-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-secondary-invert.1">
-        <source>Here you can set the text color for inverted secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-small.1">
+        <source>Here you can set the small vertical padding for articles for medium devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.0">
-        <source>$button-hover-color-secondary-invert</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-small.0">
+        <source>$article-spacing-l-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-secondary-invert.1">
-        <source>Here you can set the text color for inverted secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-small.1">
+        <source>Here you can set the small vertical padding for articles for large devices.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.button-border-color-secondary.0">
-        <source>$button-border-color-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-small.0">
+        <source>$article-spacing-xl-small</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-secondary.1">
-        <source>Here you can set the border-color for secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.0">
-        <source>$button-hover-border-color-secondary</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-secondary.1">
-        <source>Here you can set the border-color for secondary buttons when hovered.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.0">
-        <source>$button-border-color-secondary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-secondary-invert.1">
-        <source>Here you can set the border-color for inverted secondary buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.0">
-        <source>$button-hover-border-color-secondary-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-secondary-invert.1">
-        <source>Here you can set the border-color for inverted secondary buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-small.1">
+        <source>Here you can set the small vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-secondary.0">
-        <source>$button-border-radius-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-medium.0">
+        <source>$article-spacing-xs-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-secondary.1">
-        <source>Here you can set the border-radius for secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-medium.1">
+        <source>Here you can set the medium vertical padding for articles for tiny devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-secondary.0">
-        <source>$button-border-width-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-medium.0">
+        <source>$article-spacing-s-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-secondary.1">
-        <source>Here you can set the border-width for secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-medium.1">
+        <source>Here you can set the medium vertical padding for articles for small devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-secondary.0">
-        <source>$button-border-style-secondary</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-medium.0">
+        <source>$article-spacing-m-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-secondary.1">
-        <source>Here you can choose the border-style for secondary buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-medium.1">
+        <source>Here you can set the medium vertical padding for articles for medium devices.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.button-font-weight-alt.0">
-        <source>$button-font-weight-alt</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-medium.0">
+        <source>$article-spacing-l-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-font-weight-alt.1">
-        <source>Here you can set the font-weight for alternative buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-medium.1">
+        <source>Here you can set the medium vertical padding for articles for large devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-alt.0">
-        <source>$button-transform-alt</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-medium.0">
+        <source>$article-spacing-xl-medium</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-transform-alt.1">
-        <source>Here you can choose the text-transformation for alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-alt.0">
-        <source>$button-decoration-alt</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-decoration-alt.1">
-        <source>Here you can set the text-decoration for alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-alt.0">
-        <source>$button-hover-decoration-alt</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-decoration-alt.1">
-        <source>Here you can set the text-decoration for alternative buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-medium.1">
+        <source>Here you can set the medium vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-bg-alt.0">
-        <source>$button-bg-alt</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-large.0">
+        <source>$article-spacing-xs-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-alt.1">
-        <source>Here you can set the background for alternative buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xs-large.1">
+        <source>Here you can set the large vertical padding for articles for tiny devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-alt.0">
-        <source>$button-hover-bg-alt</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-large.0">
+        <source>$article-spacing-s-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-alt.1">
-        <source>Here you can set the background for alternative buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-s-large.1">
+        <source>Here you can set the large vertical padding for articles for small devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-alt-invert.0">
-        <source>$button-bg-alt-invert</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-large.0">
+        <source>$article-spacing-m-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-bg-alt-invert.1">
-        <source>Here you can set the background for inverted alternative buttons.</source>
+      <trans-unit id="tl_thememanager.article-spacing-m-large.1">
+        <source>Here you can set the large vertical padding for articles for medium devices.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.0">
-        <source>$button-hover-bg-alt-invert</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-large.0">
+        <source>$article-spacing-l-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-bg-alt-invert.1">
-        <source>Here you can set the background for inverted alternative buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-l-large.1">
+        <source>Here you can set the large vertical padding for articles for large devices.</source>
       </trans-unit>
-
-      <trans-unit id="tl_thememanager.button-color-alt.0">
-        <source>$button-color-alt</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-large.0">
+        <source>$article-spacing-xl-large</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-alt.1">
-        <source>Here you can set the text color for alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-alt.0">
-        <source>$button-hover-color-alt</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-alt.1">
-        <source>Here you can set the text color for alternative buttons when hovered.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-alt-invert.0">
-        <source>$button-color-alt-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-color-alt-invert.1">
-        <source>Here you can set the text color for inverted alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.0">
-        <source>$button-hover-color-alt-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-color-alt-invert.1">
-        <source>Here you can set the text color for inverted alternative buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-spacing-xl-large.1">
+        <source>Here you can set the large vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-color-alt.0">
-        <source>$button-border-color-alt</source>
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.0">
+        <source>$article-main-spacing-bottom</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-alt.1">
-        <source>Here you can set the border-color for alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-alt.0">
-        <source>$button-hover-border-color-alt</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-alt.1">
-        <source>Here you can set the border-color for alternative buttons when hovered.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-alt-invert.0">
-        <source>$button-border-color-alt-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-color-alt-invert.1">
-        <source>Here you can set the border-color for inverted alternative buttons.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.0">
-        <source>$button-hover-border-color-alt-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.button-hover-border-color-alt-invert.1">
-        <source>Here you can set the border-color for inverted alternative buttons when hovered.</source>
+      <trans-unit id="tl_thememanager.article-main-spacing-bottom.1">
+        <source>Here you can set a default value for the bottom padding for articles within the &lt;em&gt;#main&lt;/em&gt; column.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.button-border-radius-alt.0">
-        <source>$button-border-radius-alt</source>
+      <trans-unit id="tl_thememanager.article-min-vheight.0">
+        <source>$article-min-vheight</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-radius-alt.1">
-        <source>Here you can set the border-radius for alternative buttons.</source>
+      <trans-unit id="tl_thememanager.article-min-vheight.1">
+        <source>Here you can enter the minimum device height in px at which the height of articles should be set. Below this height, a minimum height is always set.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-alt.0">
-        <source>$button-border-width-alt</source>
+      <trans-unit id="tl_thememanager.article-options-vheight.0">
+        <source>$article-options-vheight</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-width-alt.1">
-        <source>Here you can set the border-width for alternative buttons.</source>
+      <trans-unit id="tl_thememanager.article-options-vheight.1">
+        <source>Here you can enter comma-separated vh-options that will be available within article-height.</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-alt.0">
-        <source>$button-border-style-alt</source>
+
+      <trans-unit id="tl_thememanager.grid-columns.0">
+        <source>$grid-columns</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.button-border-style-alt.1">
-        <source>Here you can choose the border-style for alternative buttons.</source>
+      <trans-unit id="tl_thememanager.grid-columns.1">
+        <source>Here you can set the amount of columns for the grid-framework.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-width.0">
+        <source>$grid-gutter-width</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-width.1">
+        <source>Here you can set the horizontal padding for each grid-element.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-bottom.0">
+        <source>$grid-gutter-bottom</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.grid-gutter-bottom.1">
+        <source>Here you can set the vertical padding for each grid-element.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.paragraph-spacing.0">
@@ -2280,237 +2659,6 @@
         <source>Here you can set the large horizontal margin.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.divider-size.0">
-        <source>$divider-size</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-size.1">
-        <source>Here you can set the height for the divider line.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-style.0">
-        <source>$divider-style</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-style.1">
-        <source>Here you can choose the style for the divider line.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-color.0">
-        <source>$divider-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.divider-color.1">
-        <source>Here you can choose the color for the divider line.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.boxed-background-color.0">
-        <source>$boxed-background-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-background-color.1">
-        <source>Here you can set the background color for boxed elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-color.0">
-        <source>$boxed-border-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-color.1">
-        <source>Here you can set the border-color for boxed elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.0">
-        <source>$boxed-border-radius</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-radius.1">
-        <source>Here you can set the border-radius for boxed elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-width.0">
-        <source>$boxed-border-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-width.1">
-        <source>Here you can set the border-width for boxed elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.0">
-        <source>$boxed-border-style</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.boxed-border-style.1">
-        <source>Here you can choose the border-style for boxed elements.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.table-cell-spacing.0">
-        <source>$table-cell-spacing</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-spacing.1">
-        <source>Here you can set the border-spacing for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-padding.0">
-        <source>$table-cell-padding</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-padding.1">
-        <source>Here you can set the padding for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-radius.0">
-        <source>$table-cell-border-radius</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-radius.1">
-        <source>Here you can set the border-radius for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-color.0">
-        <source>$table-border-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-color.1">
-        <source>Here you set the border-color for tables.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-style.0">
-        <source>$table-border-style</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-style.1">
-        <source>Here you can choose the border-style for tables.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-width.0">
-        <source>$table-border-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-border-width.1">
-        <source>Here you can set the border-width for tables.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-color.0">
-        <source>$table-head-border-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-color.1">
-        <source>Here you set the border-color for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-style.0">
-        <source>$table-head-border-style</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-style.1">
-        <source>Here you can choose the border-style for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-width.0">
-        <source>$table-head-border-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-border-width.1">
-        <source>Here you can set the border-width for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-color.0">
-        <source>$table-cell-border-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-color.1">
-        <source>Here you set the border-color for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-style.0">
-        <source>$table-cell-border-style</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-style.1">
-        <source>Here you can choose the border-style for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-width.0">
-        <source>$table-cell-border-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-cell-border-width.1">
-        <source>Here you can set the border-width for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-side.0">
-        <source>$table-caption-side</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-side.1">
-        <source>Here you can choose whether the table caption should be above or below.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-alignment.0">
-        <source>$table-caption-alignment</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-alignment.1">
-        <source>Here you can choose the text-alignment for table captions.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-padding.0">
-        <source>$table-caption-padding</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-padding.1">
-        <source>Here you can set the padding for table captions.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-color.0">
-        <source>$table-caption-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-color.1">
-        <source>Here you can set the color for table captions.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-background.0">
-        <source>$table-caption-background</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-background.1">
-        <source>Here you can set the background-color for table captions.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-font-size.0">
-        <source>$table-caption-font-size</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-caption-font-size.1">
-        <source>Here you can set the font-size for table captions.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-text-align.0">
-        <source>$table-text-align</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-text-align.1">
-        <source>Here you can choose the text-alignment for tables.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-font-weight.0">
-        <source>$table-head-font-weight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-font-weight.1">
-        <source>Here you can set the font-weight for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-font-weight.0">
-        <source>$table-body-font-weight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-font-weight.1">
-        <source>Here you can set the font-weight for table cells.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-font-weight.0">
-        <source>$table-foot-font-weight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-font-weight.1">
-        <source>Here you can set the font-weight for table footers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-color.0">
-        <source>$table-head-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-color.1">
-        <source>Here you can set the color for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-background.0">
-        <source>$table-head-background</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-head-background.1">
-        <source>Here you can set the background-color for table headers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-color.0">
-        <source>$table-foot-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-color.1">
-        <source>Here you can set the color for table footers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-background.0">
-        <source>$table-foot-background</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-foot-background.1">
-        <source>Here you can set the background-color for table footers.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-even-color.0">
-        <source>$table-body-even-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-even-color.1">
-        <source>Here you can set the color for even rows.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-even-background.0">
-        <source>$table-body-even-background</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-even-background.1">
-        <source>Here you can set the background-color for even rows.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-odd-color.0">
-        <source>$table-body-odd-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-odd-color.1">
-        <source>Here you can set the color for odd rows.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-odd-background.0">
-        <source>$table-body-odd-background</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.table-body-odd-background.1">
-        <source>Here you can set the background-color for odd rows.</source>
-      </trans-unit>
-
       <trans-unit id="tl_thememanager.image-text-behaviour-min-width.0">
         <source>$image-text-behaviour-min-width</source>
       </trans-unit>
@@ -2522,154 +2670,6 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.image-text-ratio-options.1">
         <source>Here you can enter comma-separated ratios that will be available within the image-text component. Only full numbers are allowed.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-bg.0">
-        <source>$header-bg</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-bg.1">
-        <source>Here you can set the background-color for the header.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-height.0">
-        <source>$header-height</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height.1">
-        <source>Here you can set the header height.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xs.0">
-        <source>$header-height-xs</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xs.1">
-        <source>Here you can set the header height for the 'xs'-breakpoint.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-s.0">
-        <source>$header-height-s</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-s.1">
-        <source>Here you can set the header height for the 's'-breakpoint.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-m.0">
-        <source>$header-height-m</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-m.1">
-        <source>Here you can set the header height for the 'm'-breakpoint.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-l.0">
-        <source>$header-height-l</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-l.1">
-        <source>Here you can set the header height for the 'l'-breakpoint.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xl.0">
-        <source>$header-height-xl</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-height-xl.1">
-        <source>Here you can set the header height for the 'xl'-breakpoint.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-padding.0">
-        <source>$header-padding</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-padding.1">
-        <source>Here you can set the padding for the header.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.header-alignment-vertical.0">
-        <source>$header-alignment-vertical</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-vertical.1">
-        <source>Here you can select the vertical alignment of the header elements.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-horizontal.0">
-        <source>$header-alignment-horizontal</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.header-alignment-horizontal.1">
-        <source>Here you can select the horizontal alignment of the header elements.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.0">
-        <source>$navigation-behaviour-min-width</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-behaviour-min-width.1">
-        <source>Here you can set the minimum width for the main-navigation to change from vertical to horizontal behaviour.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.navigation-item-font-size.0">
-        <source>$navigation-item-font-size</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-size.1">
-        <source>Here you can set the font-size for navigation items.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-weight.0">
-        <source>$navigation-item-font-weight</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-font-weight.1">
-        <source>Here you can set the font-weight for navigation items.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-padding.0">
-        <source>$navigation-item-padding</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.navigation-item-padding.1">
-        <source>Here you can set the padding for navigation-items.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.breadcrumb-separator.0">
-        <source>$breadcrumb-separator</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator.1">
-        <source>Here you can add the separator symbol for breadcrumbs.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-color.0">
-        <source>$breadcrumb-separator-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-color.1">
-        <source>Here you can set the color for the › breadcrumb separator.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.0">
-        <source>$breadcrumb-separator-font-family</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.breadcrumb-separator-font-family.1">
-        <source>Here you can set the font-family for the › breadcrumb separator.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.box-shadow.0">
-        <source>$box-shadow</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.box-shadow.1">
-        <source>Here you can set a box-shadow for the &quot;box-shadow&quot; - mixin.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.selection-color.0">
-        <source>$selection-color</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-color.1">
-        <source>Here you can set the text color for selected text.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-color-invert.0">
-        <source>$selection-color-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-color-invert.1">
-        <source>Here you can set the inverted text color for selected text.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-bg.0">
-        <source>$selection-bg</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-bg.1">
-        <source>Here you can set the background-color for selected text.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-bg-invert.0">
-        <source>$selection-bg-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.selection-bg-invert.1">
-        <source>Here you can set the inverted background-color for selected text.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.aspect-ratios.0">
-        <source>$aspect-ratios</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.aspect-ratios.1">
-        <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
       </trans-unit>
     </body>
   </file>

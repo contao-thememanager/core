@@ -25,6 +25,24 @@ $font-weight-semibold:                        600 !default;
 $font-weight-bold:                            700 !default;
 $strong-font-weight:                          $font-weight-bold !default;
 
+// Links
+$link-font-weight:                            $font-weight-base !default;
+
+$link-color-regular:                          $primary !default;
+$link-hover-color-regular:                    darken($link-color-regular, 15%) !default;
+$link-decoration-regular:                     none !default;
+$link-hover-decoration-regular:               none !default;
+
+$link-color-invert:                           $text-color-invert !default;
+$link-hover-color-invert:                     $text-color-invert !default;
+$link-decoration-invert:                      underline !default;
+$link-hover-decoration-invert:                none !default;
+
+$link-color-extra:                            #3bc !default;
+$link-hover-color-extra:                      darken($link-color-extra, 15%) !default;
+$link-decoration-extra:                       none !default;
+$link-hover-decoration-extra:                 none !default;
+
 // Headings
 $line-height-headline:                        1.2 !default;
 
@@ -176,81 +194,181 @@ $headline-spacing-large:                      1rem !default;
 $headline-spacing-s-large:                    1.875rem !default;
 $headline-spacing-l-large:                    3rem !default;
 
-// Article spacing
-$x-spacing-large-m:                           900px !default;
-$x-spacing-large-l:                           1100px !default;
-$x-spacing-small:                             1400px !default;
+// Header
+$header-height:                               60px !default;
+$header-height-xs:                            60px !default;
+$header-height-s:                             60px !default;
+$header-height-m:                             100px !default;
+$header-height-l:                             100px !default;
+$header-height-xl:                            100px !default;
 
-$article-spacing-xs-small:                    2.5rem !default;
-$article-spacing-s-small:                     3.125rem !default;
-$article-spacing-m-small:                     3.75rem !default;
-$article-spacing-l-small:                     4.375rem !default;
-$article-spacing-xl-small:                    $article-spacing-l-small !default;
+$header-padding:                              0 1rem !default;
+$header-alignment-vertical:                   center !default;
+$header-alignment-horizontal:                 space-between !default;
 
-$article-spacing-xs-medium:                   2.5rem !default;
-$article-spacing-s-medium:                    3.75rem !default;
-$article-spacing-m-medium:                    5rem !default;
-$article-spacing-l-medium:                    7.5rem !default;
-$article-spacing-xl-medium:                   $article-spacing-l-medium !default;
+$header-bg:                                   transparent !default;
 
-$article-spacing-xs-large:                    2.5rem !default;
-$article-spacing-s-large:                     4.375rem !default;
-$article-spacing-m-large:                     5.9375rem !default;
-$article-spacing-l-large:                     9.375rem !default;
-$article-spacing-xl-large:                    $article-spacing-l-large !default;
+// Navigation
+$navigation-behaviour-min-width:              768px !default;
+$navigation-item-font-size:                   $font-size-base !default;
+$navigation-item-font-weight:                 $font-weight-regular !default;
+$navigation-item-padding:                     .5rem 1rem !default;
+$breadcrumb-separator:                        "›" !default;
+$breadcrumb-separator-color:                  inherit !default;
+$breadcrumb-separator-font-family:            "ctm-icon", var(--font-family) !default;
 
-$article-outer-padding:                       0px !default;
-$article-outer-padding-xs:                    0px !default;
-$article-outer-padding-s:                     0px !default;
+// Button
+$button-line-height:                          1 !default;
+$button-font-size-small:                      1rem !default;
+$button-font-size-medium:                     1rem !default;
+$button-font-size-large:                      1rem !default;
+$button-font-size-super:                      1rem !default;
 
-$article-main-spacing-bottom:                 var(--gtr-half-btm) !default;
+$button-padding-small:                        .5rem 1rem !default;
+$button-padding-medium:                       .75rem 1.5rem !default;
+$button-padding-large:                        1rem 2rem !default;
+$button-padding-super:                        1.5rem 3rem !default;
 
-$article-min-vheight:                         680px !default;
-$article-options-vheight:                     50,75,100 !default;
+// Button design primary
+$button-font-weight-primary:                  $font-weight-base !default;
+$button-transform-primary:                    none !default;
+$button-decoration-primary:                   none !default;
+$button-hover-decoration-primary:             none !default;
 
-// Links
-$link-font-weight:                            $font-weight-base !default;
+$button-bg-primary:                           $primary !default;
+$button-hover-bg-primary:                     darken($button-bg-primary, 10) !default;
+$button-bg-primary-invert:                    transparent !default;
+$button-hover-bg-primary-invert:              darken($button-bg-primary, 10) !default;
 
-$link-color-regular:                          $primary !default;
-$link-hover-color-regular:                    darken($link-color-regular, 15%) !default;
-$link-decoration-regular:                     none !default;
-$link-hover-decoration-regular:               none !default;
+$button-color-primary:                        $text-color-invert !default;
+$button-hover-color-primary:                  $text-color-invert !default;
+$button-color-primary-invert:                 $text-color-invert !default;
+$button-hover-color-primary-invert:           $text-color-invert !default;
 
-$link-color-invert:                           $text-color-invert !default;
-$link-hover-color-invert:                     $text-color-invert !default;
-$link-decoration-invert:                      underline !default;
-$link-hover-decoration-invert:                none !default;
+$button-border-color-primary:                 $button-bg-primary !default;
+$button-hover-border-color-primary:           $button-hover-bg-primary !default;
+$button-border-color-primary-invert:          $button-color-primary !default;
+$button-hover-border-color-primary-invert:    $button-hover-bg-primary !default;
 
-$link-color-extra:                            #3bc !default;
-$link-hover-color-extra:                      darken($link-color-extra, 15%) !default;
-$link-decoration-extra:                       none !default;
-$link-hover-decoration-extra:                 none !default;
+$button-border-radius-primary:                0 !default;
+$button-border-width-primary:                 2px !default;
+$button-border-style-primary:                 solid !default;
 
-// Layout
-$breakpoints: (
-  xs: 600px,  // 37.5rem
-  s:  768px,  // 48rem
-  m:  1024px, // 64rem
-  l:  1264px, // 79rem
-  xl: 1921px  // 120rem
-) !default;
+// Button design secondary
+$button-font-weight-secondary:                $font-weight-base !default;
+$button-transform-secondary:                  none !default;
+$button-decoration-secondary:                 none !default;
+$button-hover-decoration-secondary:           none !default;
 
-$layout-column-small-break:                   's' !default;
-$layout-column-medium-break:                  'm' !default;
-$layout-column-large-break:                   'l' !default;
+$button-bg-secondary:                         $secondary !default;
+$button-hover-bg-secondary:                   darken($button-bg-secondary, 10) !default;
+$button-bg-secondary-invert:                  transparent !default;
+$button-hover-bg-secondary-invert:            darken($button-bg-secondary, 10) !default;
 
-$layout-column-width-small:                   200px !default;
-$layout-column-width-medium:                  300px !default;
-$layout-column-width-large:                   330px !default;
+$button-color-secondary:                      $text-color-invert !default;
+$button-hover-color-secondary:                $text-color-invert !default;
+$button-color-secondary-invert:               $text-color-invert !default;
+$button-hover-color-secondary-invert:         $text-color-invert !default;
 
-$layout-column-gutter-small:                  1rem !default;
-$layout-column-gutter-medium:                 2rem !default;
-$layout-column-gutter-large:                  3rem !default;
+$button-border-color-secondary:               $button-bg-secondary !default;
+$button-hover-border-color-secondary:         $button-hover-bg-secondary !default;
+$button-border-color-secondary-invert:        $button-color-secondary !default;
+$button-hover-border-color-secondary-invert:  $button-hover-bg-secondary !default;
 
-// Grid
-$grid-columns:                                12 !default;
-$grid-gutter-width:                           2rem !default;
-$grid-gutter-bottom:                          $grid-gutter-width !default;
+$button-border-radius-secondary:              0 !default;
+$button-border-width-secondary:               2px !default;
+$button-border-style-secondary:               solid !default;
+
+// Button design alternative
+$button-font-weight-alt:                      $font-weight-base !default;
+$button-transform-alt:                        none !default;
+$button-decoration-alt:                       none !default;
+$button-hover-decoration-alt:                 none !default;
+
+$button-bg-alt:                               $dark !default;
+$button-hover-bg-alt:                         darken($button-bg-alt, 10) !default;
+$button-bg-alt-invert:                        transparent !default;
+$button-hover-bg-alt-invert:                  darken($button-bg-alt, 10) !default;
+
+$button-color-alt:                            $text-color-invert !default;
+$button-hover-color-alt:                      $text-color-invert !default;
+$button-color-alt-invert:                     $text-color-invert !default;
+$button-hover-color-alt-invert:               $text-color-invert !default;
+
+$button-border-color-alt:                     $button-bg-alt !default;
+$button-hover-border-color-alt:               $button-hover-bg-alt !default;
+$button-border-color-alt-invert:              $button-color-alt !default;
+$button-hover-border-color-alt-invert:        $button-hover-bg-alt !default;
+
+$button-border-radius-alt:                    0 !default;
+$button-border-width-alt:                     2px !default;
+$button-border-style-alt:                     solid !default;
+
+// Boxed
+$boxed-background-color:                      var(--body-bg) !default;
+$boxed-border-color:                          #e3e3e3 !default;
+$boxed-border-radius:                         0 !default;
+$boxed-border-width:                          1px !default;
+$boxed-border-style:                          solid !default;
+
+// Table
+$table-cell-spacing:                          0 !default;
+$table-cell-padding:                          1rem !default;
+$table-cell-border-radius:                    0 !default;
+
+$table-border-color:                          #ccc !default;
+$table-border-style:                          solid !default;
+$table-border-width:                          0 !default;
+
+$table-head-border-color:                     #ccc !default;
+$table-head-border-style:                     solid !default;
+$table-head-border-width:                     0 0 1px !default;
+
+$table-cell-border-color:                     #ccc !default;
+$table-cell-border-style:                     solid !default;
+$table-cell-border-width:                     0 0 1px !default;
+
+$table-caption-side:                          bottom !default;
+$table-caption-alignment:                     center !default;
+$table-caption-padding:                       1rem !default;
+
+$table-caption-color:                         #ccc !default;
+$table-caption-background:                    transparent !default;
+$table-caption-font-size:                     14px !default;
+
+$table-text-align:                            inherit !default;
+$table-head-font-weight:                      600 !default;
+$table-body-font-weight:                      400 !default;
+$table-foot-font-weight:                      600 !default;
+
+$table-head-color:                            var(--text-clr-invert) !default;
+$table-head-background:                       var(--clr-primary) !default;
+
+$table-foot-color:                            var(--text-clr-invert) !default;
+$table-foot-background:                       var(--clr-primary) !default;
+
+$table-body-even-color:                       var(--text-clr-base) !default;
+$table-body-even-background:                  var(--clr-light) !default;
+
+$table-body-odd-color:                        var(--text-clr-base) !default;
+$table-body-odd-background:                   var(--body-bg) !default;
+
+// Divider
+$divider-size:                                1px !default;
+$divider-style:                               solid !default;
+$divider-color:                               #ccc !default;
+
+// Icons
+$icon-font-family:                            "ctm-icon" !default;
+
+$icon-size-tiny:                              2rem !default;
+$icon-size-small:                             3rem !default;
+$icon-size-medium:                            4rem !default;
+$icon-size-large:                             5rem !default;
+$icon-size-super:                             6rem !default;
+
+$icon-shape-spacing:                          1.5rem !default;
+$icon-outlined-width:                         2px !default;
 
 // Form general
 $form-input-font-family:                      var(--font-family) !default;
@@ -352,111 +470,80 @@ $form-field-icon-size:                        $form-input-font-size !default;
 $form-field-icon-color:                       $form-input-color !default;
 $form-field-icon-background:                  $form-input-background !default;
 
-// Icons
-$icon-font-family:                            "ctm-icon" !default;
+// Misc
+$box-shadow:                                  0 .5rem 1rem rgba(#000, .15) !default;
 
-$icon-size-tiny:                              2rem !default;
-$icon-size-small:                             3rem !default;
-$icon-size-medium:                            4rem !default;
-$icon-size-large:                             5rem !default;
-$icon-size-super:                             6rem !default;
+$selection-color:                             var(--text-clr-invert) !default;
+$selection-color-invert:                      var(--text-clr-base) !default;
+$selection-bg:                                var(--clr-primary) !default;
+$selection-bg-invert:                         var(--body-bg) !default;
 
-$icon-shape-spacing:                          1.5rem !default;
-$icon-outlined-width:                         2px !default;
+$aspect-ratios:                               ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;
 
-// Button
-$button-line-height:                          1 !default;
-$button-font-size-small:                      1rem !default;
-$button-font-size-medium:                     1rem !default;
-$button-font-size-large:                      1rem !default;
-$button-font-size-super:                      1rem !default;
+// Layout
+$breakpoints: (
+  xs: 600px,  // 37.5rem
+  s:  768px,  // 48rem
+  m:  1024px, // 64rem
+  l:  1264px, // 79rem
+  xl: 1921px  // 120rem
+) !default;
 
-$button-padding-small:                        .5rem 1rem !default;
-$button-padding-medium:                       .75rem 1.5rem !default;
-$button-padding-large:                        1rem 2rem !default;
-$button-padding-super:                        1.5rem 3rem !default;
+$layout-column-small-break:                   's' !default;
+$layout-column-medium-break:                  'm' !default;
+$layout-column-large-break:                   'l' !default;
 
-// Button design primary
-$button-font-weight-primary:                  $font-weight-base !default;
-$button-transform-primary:                    none !default;
-$button-decoration-primary:                   none !default;
-$button-hover-decoration-primary:             none !default;
+$layout-column-width-small:                   200px !default;
+$layout-column-width-medium:                  300px !default;
+$layout-column-width-large:                   330px !default;
 
-$button-bg-primary:                           $primary !default;
-$button-hover-bg-primary:                     darken($button-bg-primary, 10) !default;
-$button-bg-primary-invert:                    transparent !default;
-$button-hover-bg-primary-invert:              darken($button-bg-primary, 10) !default;
+$layout-column-gutter-small:                  1rem !default;
+$layout-column-gutter-medium:                 2rem !default;
+$layout-column-gutter-large:                  3rem !default;
 
-$button-color-primary:                        $text-color-invert !default;
-$button-hover-color-primary:                  $text-color-invert !default;
-$button-color-primary-invert:                 $text-color-invert !default;
-$button-hover-color-primary-invert:           $text-color-invert !default;
+// Article spacing
+$x-spacing-large-m:                           900px !default;
+$x-spacing-large-l:                           1100px !default;
+$x-spacing-small:                             1400px !default;
 
-$button-border-color-primary:                 $button-bg-primary !default;
-$button-hover-border-color-primary:           $button-hover-bg-primary !default;
-$button-border-color-primary-invert:          $button-color-primary !default;
-$button-hover-border-color-primary-invert:    $button-hover-bg-primary !default;
+$article-spacing-xs-small:                    2.5rem !default;
+$article-spacing-s-small:                     3.125rem !default;
+$article-spacing-m-small:                     3.75rem !default;
+$article-spacing-l-small:                     4.375rem !default;
+$article-spacing-xl-small:                    $article-spacing-l-small !default;
 
-$button-border-radius-primary:                0 !default;
-$button-border-width-primary:                 2px !default;
-$button-border-style-primary:                 solid !default;
+$article-spacing-xs-medium:                   2.5rem !default;
+$article-spacing-s-medium:                    3.75rem !default;
+$article-spacing-m-medium:                    5rem !default;
+$article-spacing-l-medium:                    7.5rem !default;
+$article-spacing-xl-medium:                   $article-spacing-l-medium !default;
 
-// Button design secondary
-$button-font-weight-secondary:                $font-weight-base !default;
-$button-transform-secondary:                  none !default;
-$button-decoration-secondary:                 none !default;
-$button-hover-decoration-secondary:           none !default;
+$article-spacing-xs-large:                    2.5rem !default;
+$article-spacing-s-large:                     4.375rem !default;
+$article-spacing-m-large:                     5.9375rem !default;
+$article-spacing-l-large:                     9.375rem !default;
+$article-spacing-xl-large:                    $article-spacing-l-large !default;
 
-$button-bg-secondary:                         $secondary !default;
-$button-hover-bg-secondary:                   darken($button-bg-secondary, 10) !default;
-$button-bg-secondary-invert:                  transparent !default;
-$button-hover-bg-secondary-invert:            darken($button-bg-secondary, 10) !default;
+$article-outer-padding:                       0px !default;
+$article-outer-padding-xs:                    0px !default;
+$article-outer-padding-s:                     0px !default;
 
-$button-color-secondary:                      $text-color-invert !default;
-$button-hover-color-secondary:                $text-color-invert !default;
-$button-color-secondary-invert:               $text-color-invert !default;
-$button-hover-color-secondary-invert:         $text-color-invert !default;
+$article-main-spacing-bottom:                 var(--gtr-half-btm) !default;
 
-$button-border-color-secondary:               $button-bg-secondary !default;
-$button-hover-border-color-secondary:         $button-hover-bg-secondary !default;
-$button-border-color-secondary-invert:        $button-color-secondary !default;
-$button-hover-border-color-secondary-invert:  $button-hover-bg-secondary !default;
+$article-min-vheight:                         680px !default;
+$article-options-vheight:                     50,75,100 !default;
 
-$button-border-radius-secondary:              0 !default;
-$button-border-width-secondary:               2px !default;
-$button-border-style-secondary:               solid !default;
-
-// Button design alternative
-$button-font-weight-alt:                      $font-weight-base !default;
-$button-transform-alt:                        none !default;
-$button-decoration-alt:                       none !default;
-$button-hover-decoration-alt:                 none !default;
-
-$button-bg-alt:                               $dark !default;
-$button-hover-bg-alt:                         darken($button-bg-alt, 10) !default;
-$button-bg-alt-invert:                        transparent !default;
-$button-hover-bg-alt-invert:                  darken($button-bg-alt, 10) !default;
-
-$button-color-alt:                            $text-color-invert !default;
-$button-hover-color-alt:                      $text-color-invert !default;
-$button-color-alt-invert:                     $text-color-invert !default;
-$button-hover-color-alt-invert:               $text-color-invert !default;
-
-$button-border-color-alt:                     $button-bg-alt !default;
-$button-hover-border-color-alt:               $button-hover-bg-alt !default;
-$button-border-color-alt-invert:              $button-color-alt !default;
-$button-hover-border-color-alt-invert:        $button-hover-bg-alt !default;
-
-$button-border-radius-alt:                    0 !default;
-$button-border-width-alt:                     2px !default;
-$button-border-style-alt:                     solid !default;
+// Grid
+$grid-columns:                                12 !default;
+$grid-gutter-width:                           2rem !default;
+$grid-gutter-bottom:                          $grid-gutter-width !default;
 
 // Spacings (Inner)
 $paragraph-spacing:                           1rem !default;
 
-$element-spacing-small:                     1rem !default;
-$element-spacing-medium:                    2rem !default;
-$element-spacing-large:                     3rem !default;
+$element-spacing-small:                       1rem !default;
+$element-spacing-medium:                      2rem !default;
+$element-spacing-large:                       3rem !default;
 
 $top-bottom-padding-small:                    1rem !default;
 $top-bottom-padding-medium:                   2rem !default;
@@ -475,93 +562,6 @@ $left-right-margin-small:                     1rem !default;
 $left-right-margin-medium:                    2rem !default;
 $left-right-margin-large:                     3rem !default;
 
-// Divider
-$divider-size:                                1px !default;
-$divider-style:                               solid !default;
-$divider-color:                               #ccc !default;
-
-// Boxed
-$boxed-background-color:                      var(--body-bg) !default;
-$boxed-border-color:                          #e3e3e3 !default;
-$boxed-border-radius:                         0 !default;
-$boxed-border-width:                          1px !default;
-$boxed-border-style:                          solid !default;
-
-// Table
-$table-cell-spacing:                          0 !default;
-$table-cell-padding:                          1rem !default;
-$table-cell-border-radius:                    0 !default;
-
-$table-border-color:                          #ccc !default;
-$table-border-style:                          solid !default;
-$table-border-width:                          0 !default;
-
-$table-head-border-color:                     #ccc !default;
-$table-head-border-style:                     solid !default;
-$table-head-border-width:                     0 0 1px !default;
-
-$table-cell-border-color:                     #ccc !default;
-$table-cell-border-style:                     solid !default;
-$table-cell-border-width:                     0 0 1px !default;
-
-$table-caption-side:                          bottom !default;
-$table-caption-alignment:                     center !default;
-$table-caption-padding:                       1rem !default;
-
-$table-caption-color:                         #ccc !default;
-$table-caption-background:                    transparent !default;
-$table-caption-font-size:                     14px !default;
-
-$table-text-align:                            inherit !default;
-$table-head-font-weight:                      600 !default;
-$table-body-font-weight:                      400 !default;
-$table-foot-font-weight:                      600 !default;
-
-$table-head-color:                            var(--text-clr-invert) !default;
-$table-head-background:                       var(--clr-primary) !default;
-
-$table-foot-color:                            var(--text-clr-invert) !default;
-$table-foot-background:                       var(--clr-primary) !default;
-
-$table-body-even-color:                       var(--text-clr-base) !default;
-$table-body-even-background:                  var(--clr-light) !default;
-
-$table-body-odd-color:                        var(--text-clr-base) !default;
-$table-body-odd-background:                   var(--body-bg) !default;
-
 // Image text
 $image-text-behaviour-min-width:              600px !default;
 $image-text-ratio-options:                    25,33,38,40,50,80,100 !default;
-
-// Header
-$header-height:                               60px !default;
-$header-height-xs:                            60px !default;
-$header-height-s:                             60px !default;
-$header-height-m:                             100px !default;
-$header-height-l:                             100px !default;
-$header-height-xl:                            100px !default;
-
-$header-padding:                              0 1rem !default;
-$header-alignment-vertical:                   center !default;
-$header-alignment-horizontal:                 space-between !default;
-
-$header-bg:                                   transparent !default;
-
-// Navigation
-$navigation-behaviour-min-width:              768px !default;
-$navigation-item-font-size:                   $font-size-base !default;
-$navigation-item-font-weight:                 $font-weight-regular !default;
-$navigation-item-padding:                     .5rem 1rem !default;
-$breadcrumb-separator:                        "›" !default;
-$breadcrumb-separator-color:                  inherit !default;
-$breadcrumb-separator-font-family:            "ctm-icon", var(--font-family) !default;
-
-// Misc
-$box-shadow:                                  0 .5rem 1rem rgba(#000, .15) !default;
-
-$selection-color:                             var(--text-clr-invert) !default;
-$selection-color-invert:                      var(--text-clr-base) !default;
-$selection-bg:                                var(--clr-primary) !default;
-$selection-bg-invert:                         var(--body-bg) !default;
-
-$aspect-ratios:                               ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;

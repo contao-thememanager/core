@@ -3,33 +3,33 @@
         'default'  => '{default_legend:hide},browser-context,body-bg,border-radius;' .
             '{color_legend:hide},primary,secondary,light,dark;' .
             '{font_legend:hide},font-family-base,font-size-base,line-height-base,text-color-regular,text-color-invert,font-weight-base,font-weight-light,font-weight-regular,font-weight-medium,font-weight-semibold,font-weight-bold,strong-font-weight;' .
+            '{link_legend:hide},link-font-weight,link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
             '{headings_legend:hide},line-height-headline,h1-font-size-small,h1-font-size-medium,h1-font-size,h1-line-height,h2-font-size-small,h2-font-size-medium,h2-font-size,h2-line-height,h3-font-size-small,h3-font-size-medium,h3-font-size,h3-line-height,h4-font-size-small,h4-font-size-medium,h4-font-size,h4-line-height,h5-font-size-small,h5-font-size-medium,h5-font-size,h5-line-height,h6-font-size-small,h6-font-size-medium,h6-font-size,h6-line-height,h1-color,h1-color-invert,h1-font-weight,h1-letter-spacing,h1-transform,h2-color,h2-color-invert,h2-font-weight,h2-letter-spacing,h2-transform,h3-color,h3-color-invert,h3-font-weight,h3-letter-spacing,h3-transform,h4-color,h4-color-invert,h4-font-weight,h4-letter-spacing,h4-transform,h5-color,h5-color-invert,h5-font-weight,h5-letter-spacing,h5-transform,h6-color,h6-color-invert,h6-font-weight,h6-letter-spacing,h6-transform;' .
             '{content_headings_legend:hide},h1-content-font-size-small,h1-content-font-size-medium,h1-content-font-size,h1-content-line-height,h2-content-font-size-small,h2-content-font-size-medium,h2-content-font-size,h2-content-line-height,h3-content-font-size-small,h3-content-font-size-medium,h3-content-font-size,h3-content-line-height,h4-content-font-size-small,h4-content-font-size-medium,h4-content-font-size,h4-content-line-height,h5-content-font-size-small,h5-content-font-size-medium,h5-content-font-size,h5-content-line-height,h6-content-font-size-small,h6-content-font-size-medium,h6-content-font-size,h6-content-line-height,h1-content-color,h1-content-color-invert,h1-content-font-weight,h1-content-letter-spacing,h1-content-transform,h2-content-color,h2-content-color-invert,h2-content-font-weight,h2-content-letter-spacing,h2-content-transform,h3-content-color,h3-content-color-invert,h3-content-font-weight,h3-content-letter-spacing,h3-content-transform,h4-content-color,h4-content-color-invert,h4-content-font-weight,h4-content-letter-spacing,h4-content-transform,h5-content-color,h5-content-color-invert,h5-content-font-weight,h5-content-letter-spacing,h5-content-transform,h6-content-color,h6-content-color-invert,h6-content-font-weight,h6-content-letter-spacing,h6-content-transform;' .
             '{heading_spacing_legend:hide},headline-spacing,headline-spacing-small,headline-spacing-s-small,headline-spacing-l-small,headline-spacing-medium,headline-spacing-s-medium,headline-spacing-l-medium,headline-spacing-large,headline-spacing-s-large,headline-spacing-l-large;' .
-            '{link_legend:hide},link-font-weight,link-color-regular,link-hover-color-regular,link-decoration-regular,link-hover-decoration-regular,link-color-invert,link-hover-color-invert,link-decoration-invert,link-hover-decoration-invert,link-color-extra,link-hover-color-extra,link-decoration-extra,link-hover-decoration-extra;' .
-            '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
-            '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
+            '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
+            '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding,breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
+            '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
+            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-decoration-primary,button-hover-decoration-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
+            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-decoration-secondary,button-hover-decoration-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
+            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-decoration-alt,button-hover-decoration-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
+            '{boxed_legend:hide},boxed-background-color,boxed-border-color,boxed-border-radius,boxed-border-width,boxed-border-style;' .
+            '{table_legend:hide},table-cell-spacing,table-cell-padding,table-cell-border-radius,table-border-color,table-border-style,table-border-width,table-head-border-color,table-head-border-style,table-head-border-width,table-cell-border-color,table-cell-border-style,table-cell-border-width,table-caption-side,table-caption-alignment,table-caption-padding,table-caption-color,table-caption-background,table-caption-font-size,table-text-align,table-head-font-weight,table-body-font-weight,table-foot-font-weight,table-head-color,table-head-background,table-foot-color,table-foot-background,table-body-even-color,table-body-even-background,table-body-odd-color,table-body-odd-background;' .
+            '{divider_legend:hide},divider-size,divider-style,divider-color;' .
+            '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
             '{form_general_legend:hide},form-input-font-family,form-textarea-line-height,form-input-padding,form-input-height,form-multiselect-height,form-input-font-weight,form-input-font-size,form-input-font-size-error,form-input-border-radius,form-input-border-width,form-input-border-style,form-input-border-color,form-input-border-color-hover,form-input-border-color-focus,form-input-border-color-error,form-input-background,form-input-background-hover,form-input-background-focus,form-input-background-error,form-input-color,form-input-color-hover,form-input-color-focus,form-input-color-error,form-input-placeholder-color,form-input-placeholder-color-hover,form-input-placeholder-color-focus,form-input-placeholder-color-error,form-input-color-disabled;' .
             '{form_label_legend:hide},form-label-color,form-label-color-invert,form-label-font-size,form-label-spacing,form-label-font-weight,form-legend-font-weight;' .
             '{form_select_legend:hide},form-select-symbol,form-select-symbol-font-size,form-select-symbol-color,form-select-symbol-font-family,form-select-option-color,form-select-option-background;' .
             '{form_checkbox_radio_legend:hide},form-checkbox-radio-symbol,form-checkbox-radio-symbol-font-size,form-checkbox-radio-symbol-color,form-checkbox-radio-symbol-font-family,form-checkbox-radio-size,form-checkbox-radio-label-font-size,form-checkbox-radio-label-line-height,form-checkbox-border-radius,form-checkbox-radio-border-width,form-checkbox-radio-border-style,form-checkbox-radio-border-color,form-checkbox-radio-border-color-hover,form-checkbox-radio-border-color-focus,form-checkbox-radio-background,form-checkbox-radio-background-hover,form-checkbox-radio-background-focus,form-checkbox-radio-label-color,form-checkbox-radio-label-color-invert;' .
             '{form_miscellaneous_legend:hide},form-validation,form-checkbox-radio-auto-align,form-input-explanation-font-size,form-input-explanation-color,form-input-explanation-color-invert,form-input-mandatory-symbol-color,form-input-mandatory-symbol-color-error;' .
             '{form_field_legend:hide},form-field-image-width,form-field-image-height,form-field-icon-size,form-field-icon-color,form-field-icon-background;' .
-            '{icon_legend:hide},icon-font-family,icon-size-tiny,icon-size-small,icon-size-medium,icon-size-large,icon-size-super,icon-shape-spacing,icon-outlined-width;' .
-            '{button_properties_legend:hide},button-line-height,button-font-size-small,button-font-size-medium,button-font-size-large,button-font-size-super,button-padding-small,button-padding-medium,button-padding-large,button-padding-super;' .
-            '{button_design_primary_legend:hide},button-font-weight-primary,button-transform-primary,button-decoration-primary,button-hover-decoration-primary,button-bg-primary,button-hover-bg-primary,button-bg-primary-invert,button-hover-bg-primary-invert,button-color-primary,button-hover-color-primary,button-color-primary-invert,button-hover-color-primary-invert,button-border-color-primary,button-hover-border-color-primary,button-border-color-primary-invert,button-hover-border-color-primary-invert,button-border-radius-primary,button-border-width-primary,button-border-style-primary;' .
-            '{button_design_secondary_legend:hide},button-font-weight-secondary,button-transform-secondary,button-decoration-secondary,button-hover-decoration-secondary,button-bg-secondary,button-hover-bg-secondary,button-bg-secondary-invert,button-hover-bg-secondary-invert,button-color-secondary,button-hover-color-secondary,button-color-secondary-invert,button-hover-color-secondary-invert,button-border-color-secondary,button-hover-border-color-secondary,button-border-color-secondary-invert,button-hover-border-color-secondary-invert,button-border-radius-secondary,button-border-width-secondary,button-border-style-secondary;' .
-            '{button_design_alt_legend:hide},button-font-weight-alt,button-transform-alt,button-decoration-alt,button-hover-decoration-alt,button-bg-alt,button-hover-bg-alt,button-bg-alt-invert,button-hover-bg-alt-invert,button-color-alt,button-hover-color-alt,button-color-alt-invert,button-hover-color-alt-invert,button-border-color-alt,button-hover-border-color-alt,button-border-color-alt-invert,button-hover-border-color-alt-invert,button-border-radius-alt,button-border-width-alt,button-border-style-alt;' .
+            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;' .
+            '{layout_legend:hide},breakpoints,layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
+            '{article_legend:hide},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
+            '{grid_legend:hide},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
             '{spacing_inner_legend:hide},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
-            '{divider_legend:hide},divider-size,divider-style,divider-color;' .
-            '{boxed_legend:hide},boxed-background-color,boxed-border-color,boxed-border-radius,boxed-border-width,boxed-border-style;' .
-            '{table_legend:hide},table-cell-spacing,table-cell-padding,table-cell-border-radius,table-border-color,table-border-style,table-border-width,table-head-border-color,table-head-border-style,table-head-border-width,table-cell-border-color,table-cell-border-style,table-cell-border-width,table-caption-side,table-caption-alignment,table-caption-padding,table-caption-color,table-caption-background,table-caption-font-size,table-text-align,table-head-font-weight,table-body-font-weight,table-foot-font-weight,table-head-color,table-head-background,table-foot-color,table-foot-background,table-body-even-color,table-body-even-background,table-body-odd-color,table-body-odd-background;' .
-            '{image_text_legend:hide},image-text-behaviour-min-width,image-text-ratio-options;' .
-            '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
-            '{nav_legend:hide},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding,breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
-            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;'
+            '{image_text_legend:hide},image-text-behaviour-min-width,image-text-ratio-options;'
     ],
     'fields'   => [
 
@@ -161,6 +161,95 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['strong-font-weight'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'$font-weight-bold', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+
+        // Links
+        'link-font-weight' => [
+            'default'                 => '$font-weight-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-font-weight'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
+        ],
+
+        'link-color-regular' => [
+            'default'                 => '$primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-regular'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'link-hover-color-regular' => [
+            'default'                 => 'darken($link-color-regular, 15%)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-regular'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($link-color-regular, 15%)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'link-decoration-regular' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-regular'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'link-hover-decoration-regular' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-regular'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+
+        'link-color-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'link-hover-color-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'link-decoration-invert' => [
+            'default'                 => 'underline',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-invert'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'link-hover-decoration-invert' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-invert'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+
+        'link-color-extra' => [
+            'default'                 => '33bbcc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-extra'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'33bbcc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'link-hover-color-extra' => [
+            'default'                 => 'darken($link-color-extra, 15%)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-extra'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($link-color-extra, 15%)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'link-decoration-extra' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-extra'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'link-hover-decoration-extra' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-extra'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
         ],
 
         // Headings
@@ -979,365 +1068,896 @@
             'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
-        // Article spacing
-        'x-spacing-large-m' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"900";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-large-m'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'900px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'x-spacing-large-l' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:4:"1100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-large-l'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1100px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'x-spacing-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:4:"1400";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1400px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        // Header
+        'header-bg' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-bg'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w100 wizard clr'],
         ],
 
-        'article-outer-padding' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding'],
+        'header-height' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
         ],
-        'article-outer-padding-xs' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding-xs'],
+        'header-height-xs' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xs'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-        'article-outer-padding-s' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding-s'],
+        'header-height-s' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-s'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-
-        'article-spacing-xs-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-small'],
+        'header-height-m' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-m'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
         ],
-        'article-spacing-s-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"3.125";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-small'],
+        'header-height-l' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-l'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.125rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-        'article-spacing-m-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-small'],
+        'header-height-xl' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xl'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-l-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-xl-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-small";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-small', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
-        'article-spacing-xs-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-medium'],
+        'header-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:1:"0";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
+        ],
+
+        'header-alignment-vertical' => [
+            'default'                 => 'center',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-vertical'],
+            'inputType'               => 'select',
+            'options'                 => ['flex-start', 'center', 'flex-end', 'baseline'],
+            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
+        ],
+        'header-alignment-horizontal' => [
+            'default'                 => 'space-between',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-horizontal'],
+            'inputType'               => 'select',
+            'options'                 => ['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly', 'revert'],
+            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
+        ],
+
+        // Navigation
+        'navigation-behaviour-min-width' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"768";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-behaviour-min-width'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'768px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
         ],
-        'article-spacing-s-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-medium'],
+
+        'navigation-item-font-size' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
         ],
-        'article-spacing-m-medium' => [
+        'navigation-item-font-weight' => [
+            'default'                 => '$font-weight-regular',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-weight'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'navigation-item-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+        'breadcrumb-separator' => [
+            'default'                 => '"›"',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'"›"', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w33 clr'],
+        ],
+        'breadcrumb-separator-color' => [
+            'default'                 => 'inherit',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'inherit', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
+        ],
+        'breadcrumb-separator-font-family' => [
+            'default'                 => '"ctm-icon", var(--font-family)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-font-family'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'"ctm-icon", var(--font-family)', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Button properties
+        'button-line-height' => [
+            'default'                 => '1',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-line-height'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'1', 'rgxp'=>'digit', 'maxlength'=>255, 'tl_class'=>'clr'],
+        ],
+        'button-font-size-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
+        ],
+        'button-font-size-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'button-font-size-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'button-font-size-super' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-super'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+
+        'button-padding-small' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-small'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+        'button-padding-medium' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:3:"1.5";s:3:"top";s:4:"0.75";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-medium'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+        'button-padding-large' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"2";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-large'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+        'button-padding-super' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"3";s:3:"top";s:3:"1.5";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-super'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        // Button design primary
+        'button-font-weight-primary' => [
+            'default'                 => '$font-weight-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'button-transform-primary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-primary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-primary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+
+        'button-bg-primary' => [
+            'default'                 => '$primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-bg-primary' => [
+            'default'                 => 'darken($button-bg-primary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-bg-primary-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-primary-invert' => [
+            'default'                 => 'darken($button-bg-primary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-color-primary' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-color-primary' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-color-primary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-primary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-color-primary' => [
+            'default'                 => '$button-bg-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-border-color-primary' => [
+            'default'                 => '$button-hover-bg-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-primary-invert' => [
+            'default'                 => '$button-color-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-primary-invert' => [
+            'default'                 => '$button-hover-bg-primary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-radius-primary' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-primary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
+        ],
+        'button-border-width-primary' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-primary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
+        ],
+        'button-border-style-primary' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-primary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Button design secondary
+        'button-font-weight-secondary' => [
+            'default'                 => '$font-weight-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'button-transform-secondary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-secondary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-secondary' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+
+        'button-bg-secondary' => [
+            'default'                 => '$secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-bg-secondary' => [
+            'default'                 => 'darken($button-bg-secondary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-bg-secondary-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-secondary-invert' => [
+            'default'                 => 'darken($button-bg-secondary, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-color-secondary' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-color-secondary' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-color-secondary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-secondary-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-color-secondary' => [
+            'default'                 => '$button-bg-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-border-color-secondary' => [
+            'default'                 => '$button-hover-bg-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-secondary-invert' => [
+            'default'                 => '$button-color-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-secondary-invert' => [
+            'default'                 => '$button-hover-bg-secondary',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-radius-secondary' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-secondary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
+        ],
+        'button-border-width-secondary' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-secondary'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
+        ],
+        'button-border-style-secondary' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-secondary'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Button design alternative
+        'button-font-weight-alt' => [
+            'default'                 => '$font-weight-base',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+        ],
+        'button-transform-alt' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-decoration-alt' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'button-hover-decoration-alt' => [
+            'default'                 => 'none',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+
+        'button-bg-alt' => [
+            'default'                 => '$dark',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$dark', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-bg-alt' => [
+            'default'                 => 'darken($button-bg-alt, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-bg-alt-invert' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-bg-alt-invert' => [
+            'default'                 => 'darken($button-bg-alt, 10)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-color-alt' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-color-alt' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-color-alt-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-color-alt-invert' => [
+            'default'                 => '$text-color-invert',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-color-alt' => [
+            'default'                 => '$button-bg-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'button-hover-border-color-alt' => [
+            'default'                 => '$button-hover-bg-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-border-color-alt-invert' => [
+            'default'                 => '$button-color-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-color-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'button-hover-border-color-alt-invert' => [
+            'default'                 => '$button-hover-bg-alt',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'button-border-radius-alt' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-alt'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
+        ],
+        'button-border-width-alt' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-alt'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
+        ],
+        'button-border-style-alt' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-alt'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Boxed
+        'boxed-background-color' => [
+            'default'                 => 'var(--body-bg)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-background-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
+        ],
+        'boxed-border-color' => [
+            'default'                 => 'e3e3e3',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'e3e3e3', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
+        ],
+
+        'boxed-border-radius' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-radius'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
+        ],
+        'boxed-border-width' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
+        ],
+        'boxed-border-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
+        ],
+
+        // Table
+        'table-cell-spacing' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-spacing'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33 trbl-2 clr'],
+        ],
+        'table-cell-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
+        ],
+        'table-cell-border-radius' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-radius'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33'],
+        ],
+
+        'table-border-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'table-border-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
+        ],
+        'table-border-width' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        'table-head-border-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'table-head-border-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
+        ],
+        'table-head-border-width' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:1:"1";s:4:"left";s:0:"";s:5:"right";s:1:"0";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        'table-cell-border-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'table-cell-border-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
+        ],
+        'table-cell-border-width' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:1:"1";s:4:"left";s:0:"";s:5:"right";s:1:"0";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-width'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        'table-caption-side' => [
+            'default'                 => 'bottom',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-side'],
+            'inputType'               => 'select',
+            'options'                 => ['top', 'bottom'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25 clr'],
+        ],
+        'table-caption-alignment' => [
+            'default'                 => 'center',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-alignment'],
+            'inputType'               => 'select',
+            'options'                 => ['inherit', 'left', 'center', 'right'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
+        ],
+        'table-caption-padding' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-padding'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+        ],
+
+        'table-caption-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard clr'],
+        ],
+        'table-caption-background' => [
+            'default'                 => 'transparent',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-background'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
+        ],
+        'table-caption-font-size' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"14";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-font-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'14px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+
+        'table-text-align' => [
+            'default'                 => 'inherit',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-text-align'],
+            'inputType'               => 'select',
+            'options'                 => ['inherit', 'left', 'center', 'right'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w100 clr'],
+        ],
+
+        'table-head-font-weight' => [
+            'default'                 => '600',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-font-weight'],
+            'inputType'               => 'select',
+            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
+            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33 clr'],
+        ],
+        'table-body-font-weight' => [
+            'default'                 => '400',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-font-weight'],
+            'inputType'               => 'select',
+            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
+            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33'],
+        ],
+        'table-foot-font-weight' => [
+            'default'                 => '600',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-font-weight'],
+            'inputType'               => 'select',
+            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
+            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33'],
+        ],
+
+        'table-head-color' => [
+            'default'                 => 'var(--text-clr-invert)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'table-head-background' => [
+            'default'                 => 'var(--clr-primary)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-background'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'table-foot-color' => [
+            'default'                 => 'var(--text-clr-invert)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'table-foot-background' => [
+            'default'                 => 'var(--clr-primary)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-background'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'table-body-even-color' => [
+            'default'                 => 'var(--text-clr-base)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-even-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+        ],
+        'table-body-even-background' => [
+            'default'                 => 'var(--clr-light)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-even-background'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--clr-light)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        'table-body-odd-color' => [
+            'default'                 => 'var(--text-clr-base)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-odd-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'table-body-odd-background' => [
+            'default'                 => 'var(--body-bg)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-odd-background'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+
+        // Divider
+        'divider-size' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-size'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'divider-style' => [
+            'default'                 => 'solid',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-style'],
+            'inputType'               => 'select',
+            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
+            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w33', 'chosen'=>true],
+        ],
+        'divider-color' => [
+            'default'                 => 'cccccc',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
+        ],
+
+        // Icons
+        'icon-font-family' => [
+            'default'                 => '"ctm-icon"',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-font-family'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'"ctm-icon"', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'clr'],
+        ],
+
+        'icon-size-tiny' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-tiny'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+        ],
+        'icon-size-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'icon-size-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"4";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'icon-size-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-medium'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => ['placeholder'=>'5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-        'article-spacing-l-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"7.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-medium'],
+        'icon-size-super' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"6";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-super'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'7.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-xl-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:25:"$article-spacing-l-medium";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-medium', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'6rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
 
-        'article-spacing-xs-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-large'],
+        'icon-shape-spacing' => [
+            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:3:"1.5";s:4:"unit";s:3:"rem";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-shape-spacing'],
+            'inputType'               => 'trbl',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
+        ],
+        'icon-outlined-width' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-outlined-width'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
-        ],
-        'article-spacing-s-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-m-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:6:"5.9375";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'5.9375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-l-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"9.375";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'9.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-        'article-spacing-xl-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-large";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-large', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
-        ],
-
-        'article-main-spacing-bottom' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:19:"var(--gtr-half-btm)";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-main-spacing-bottom'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'var(--gtr-half-btm)', 'includeBlankOption'=>true, 'preserveTags'=>true, 'maxlength'=>255, 'tl_class'=>'w100 clr'],
-        ],
-
-        'article-min-vheight' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"680";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-min-vheight'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'680px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50 clr'],
-        ],
-
-        'article-options-vheight' => [
-            'default'                 => '50,75,100',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-options-vheight'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'w50'],
-        ],
-
-        // Links
-        'link-font-weight' => [
-            'default'                 => '$font-weight-base',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-font-weight'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
-        ],
-
-        'link-color-regular' => [
-            'default'                 => '$primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-regular'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'link-hover-color-regular' => [
-            'default'                 => 'darken($link-color-regular, 15%)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-regular'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($link-color-regular, 15%)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'link-decoration-regular' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-regular'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'link-hover-decoration-regular' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-regular'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        'link-color-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'link-hover-color-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'link-decoration-invert' => [
-            'default'                 => 'underline',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-invert'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'link-hover-decoration-invert' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-invert'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        'link-color-extra' => [
-            'default'                 => '33bbcc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-color-extra'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'33bbcc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'link-hover-color-extra' => [
-            'default'                 => 'darken($link-color-extra, 15%)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-color-extra'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($link-color-extra, 15%)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'link-decoration-extra' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-decoration-extra'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'link-hover-decoration-extra' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['link-hover-decoration-extra'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        // Layout
-        'breakpoints' => [
-            'default'                 => 'a:5:{i:0;a:2:{s:3:"key";s:2:"xs";s:5:"value";s:5:"600px";}i:1;a:2:{s:3:"key";s:1:"s";s:5:"value";s:5:"768px";}i:2;a:2:{s:3:"key";s:1:"m";s:5:"value";s:6:"1024px";}i:3;a:2:{s:3:"key";s:1:"l";s:5:"value";s:6:"1264px";}i:4;a:2:{s:3:"key";s:2:"xl";s:5:"value";s:6:"1921px";}}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
-            'inputType'               => 'keyValueWizard',
-            'eval'                    => ['maxlength'=>255, 'tl_class'=>'multiKeyValWizard breakpoint clr'],
-        ],
-
-        'layout-column-small-break' => [
-            'default'                 => 's',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-small-break'],
-            'inputType'               => 'select',
-            'options'                 => ['xs','s','m','l','xl'],
-            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33 clr'],
-        ],
-        'layout-column-medium-break' => [
-            'default'                 => 'm',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-medium-break'],
-            'inputType'               => 'select',
-            'options'                 => ['xs','s','m','l','xl'],
-            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
-        ],
-        'layout-column-large-break' => [
-            'default'                 => 'l',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-large-break'],
-            'inputType'               => 'select',
-            'options'                 => ['xs','s','m','l','xl'],
-            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
-        ],
-
-        'layout-column-width-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"200";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'200px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'layout-column-width-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"300";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'300px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'layout-column-width-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"330";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'330px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-
-        'layout-column-gutter-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-small'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'layout-column-gutter-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-medium'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'layout-column-gutter-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-large'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-
-        // Grid
-        'grid-columns' => [
-            'default'                 => '12',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-columns'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'12', 'rgxp'=>'natural', 'minval'=>1, 'maxval'=>24, 'maxlength'=>2, 'tl_class'=>'w33 clr'],
-        ],
-        'grid-gutter-width' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-gutter-width'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'grid-gutter-bottom' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:18:"$grid-gutter-width";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-gutter-bottom'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$grid-gutter-width', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+            'eval'                    => ['placeholder'=>'2px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50'],
         ],
 
         // Form general
@@ -1813,506 +2433,315 @@
             'eval'                    => ['placeholder'=>'$form-input-background', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
         ],
 
-        // Icons
-        'icon-font-family' => [
-            'default'                 => '"ctm-icon"',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-font-family'],
+        // Misc
+        'box-shadow' => [
+            'default'                 => '0 .5rem 1rem rgba(#000, .15)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['box-shadow'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'"ctm-icon"', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'clr'],
+            'eval'                    => ['placeholder'=>'0 .5rem 1rem rgba(#000, .15)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w50'],
         ],
 
-        'icon-size-tiny' => [
+        'selection-color' => [
+            'default'                 => 'var(--text-clr-invert)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 clr wizard'],
+        ],
+        'selection-color-invert' => [
+            'default'                 => 'var(--text-clr-base)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'selection-bg' => [
+            'default'                 => 'var(--clr-primary)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'selection-bg-invert' => [
+            'default'                 => 'var(--body-bg)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg-invert'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+        ],
+        'aspect-ratios' => [
+            'default'                 => '(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['aspect-ratios'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'clr'],
+        ],
+
+        // Layout
+        'breakpoints' => [
+            'default'                 => 'a:5:{i:0;a:2:{s:3:"key";s:2:"xs";s:5:"value";s:5:"600px";}i:1;a:2:{s:3:"key";s:1:"s";s:5:"value";s:5:"768px";}i:2;a:2:{s:3:"key";s:1:"m";s:5:"value";s:6:"1024px";}i:3;a:2:{s:3:"key";s:1:"l";s:5:"value";s:6:"1264px";}i:4;a:2:{s:3:"key";s:2:"xl";s:5:"value";s:6:"1921px";}}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breakpoints'],
+            'inputType'               => 'keyValueWizard',
+            'eval'                    => ['maxlength'=>255, 'tl_class'=>'multiKeyValWizard breakpoint clr'],
+        ],
+
+        'layout-column-small-break' => [
+            'default'                 => 's',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-small-break'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33 clr'],
+        ],
+        'layout-column-medium-break' => [
+            'default'                 => 'm',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-medium-break'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
+        ],
+        'layout-column-large-break' => [
+            'default'                 => 'l',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-large-break'],
+            'inputType'               => 'select',
+            'options'                 => ['xs','s','m','l','xl'],
+            'eval'                    => ['maxlength'=>2, 'tl_class'=>'w33'],
+        ],
+
+        'layout-column-width-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"200";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'200px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+        ],
+        'layout-column-width-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"300";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'300px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'layout-column-width-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"330";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-width-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'330px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+
+        'layout-column-gutter-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+        ],
+        'layout-column-gutter-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-tiny'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-        'icon-size-small' => [
+        'layout-column-gutter-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"3";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-small'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['layout-column-gutter-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-        'icon-size-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"4";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-medium'],
+
+        // Article spacing
+        'x-spacing-large-m' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"900";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-large-m'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'900px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-        'icon-size-large' => [
+        'x-spacing-large-l' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:4:"1100";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-large-l'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1100px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'x-spacing-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:4:"1400";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['x-spacing-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'1400px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+
+        'article-outer-padding' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
+        ],
+        'article-outer-padding-xs' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding-xs'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+        'article-outer-padding-s' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"0";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-outer-padding-s'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
+        ],
+
+        'article-spacing-xs-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+        ],
+        'article-spacing-s-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"3.125";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'3.125rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'article-spacing-m-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'article-spacing-l-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'article-spacing-xl-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-small";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-small', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+
+        'article-spacing-xs-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+        ],
+        'article-spacing-s-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+        ],
+        'article-spacing-m-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"5";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-large'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
             'eval'                    => ['placeholder'=>'5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-        'icon-size-super' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"6";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-size-super'],
+        'article-spacing-l-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"7.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'6rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'7.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-
-        'icon-shape-spacing' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:3:"1.5";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-shape-spacing'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
-        ],
-        'icon-outlined-width' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"2";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-outlined-width'],
+        'article-spacing-xl-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:25:"$article-spacing-l-medium";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-medium', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
 
-        // Button properties
-        'button-line-height' => [
-            'default'                 => '1',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-line-height'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'1', 'rgxp'=>'digit', 'maxlength'=>255, 'tl_class'=>'clr'],
-        ],
-        'button-font-size-small' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-small'],
+        'article-spacing-xs-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
         ],
-        'button-font-size-medium' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-medium'],
+        'article-spacing-s-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-        'button-font-size-large' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-large'],
+        'article-spacing-m-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:6:"5.9375";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+            'eval'                    => ['placeholder'=>'5.9375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-        'button-font-size-super' => [
-            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-size-super'],
+        'article-spacing-l-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"9.375";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
+            'eval'                    => ['placeholder'=>'9.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-
-        'button-padding-small' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-small'],
-            'inputType'               => 'trbl',
+        'article-spacing-xl-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-large";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-large'],
+            'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-large', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
         ],
-        'button-padding-medium' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:3:"1.5";s:3:"top";s:4:"0.75";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-medium'],
-            'inputType'               => 'trbl',
+
+        'article-main-spacing-bottom' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:19:"var(--gtr-half-btm)";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-main-spacing-bottom'],
+            'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'var(--gtr-half-btm)', 'includeBlankOption'=>true, 'preserveTags'=>true, 'maxlength'=>255, 'tl_class'=>'w100 clr'],
         ],
-        'button-padding-large' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"2";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-large'],
-            'inputType'               => 'trbl',
+
+        'article-min-vheight' => [
+            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"680";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-min-vheight'],
+            'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'680px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50 clr'],
         ],
-        'button-padding-super' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"3";s:3:"top";s:3:"1.5";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-padding-super'],
-            'inputType'               => 'trbl',
+
+        'article-options-vheight' => [
+            'default'                 => '50,75,100',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-options-vheight'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'w50'],
+        ],
+
+        // Grid
+        'grid-columns' => [
+            'default'                 => '12',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-columns'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'12', 'rgxp'=>'natural', 'minval'=>1, 'maxval'=>24, 'maxlength'=>2, 'tl_class'=>'w33 clr'],
+        ],
+        'grid-gutter-width' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"2";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-gutter-width'],
+            'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'2rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
-
-        // Button design primary
-        'button-font-weight-primary' => [
-            'default'                 => '$font-weight-base',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
-        ],
-        'button-transform-primary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-primary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-decoration-primary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-primary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-hover-decoration-primary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-primary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        'button-bg-primary' => [
-            'default'                 => '$primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-bg-primary' => [
-            'default'                 => 'darken($button-bg-primary, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-bg-primary-invert' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-bg-primary-invert' => [
-            'default'                 => 'darken($button-bg-primary, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-primary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-color-primary' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-color-primary' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-color-primary-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-color-primary-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-color-primary' => [
-            'default'                 => '$button-bg-primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-border-color-primary' => [
-            'default'                 => '$button-hover-bg-primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-border-color-primary-invert' => [
-            'default'                 => '$button-color-primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-color-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-border-color-primary-invert' => [
-            'default'                 => '$button-hover-bg-primary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-primary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-primary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-radius-primary' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-primary'],
-            'inputType'               => 'trbl',
+        'grid-gutter-bottom' => [
+            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:18:"$grid-gutter-width";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['grid-gutter-bottom'],
+            'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
-        ],
-        'button-border-width-primary' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-primary'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
-        ],
-        'button-border-style-primary' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-primary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
-        ],
-
-        // Button design secondary
-        'button-font-weight-secondary' => [
-            'default'                 => '$font-weight-base',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
-        ],
-        'button-transform-secondary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-secondary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-decoration-secondary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-secondary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-hover-decoration-secondary' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-secondary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        'button-bg-secondary' => [
-            'default'                 => '$secondary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-bg-secondary' => [
-            'default'                 => 'darken($button-bg-secondary, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-bg-secondary-invert' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-bg-secondary-invert' => [
-            'default'                 => 'darken($button-bg-secondary, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-secondary, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-color-secondary' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-color-secondary' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-color-secondary-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-color-secondary-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-color-secondary' => [
-            'default'                 => '$button-bg-secondary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-border-color-secondary' => [
-            'default'                 => '$button-hover-bg-secondary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-border-color-secondary-invert' => [
-            'default'                 => '$button-color-secondary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-color-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-border-color-secondary-invert' => [
-            'default'                 => '$button-hover-bg-secondary',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-secondary-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-secondary', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-radius-secondary' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-secondary'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
-        ],
-        'button-border-width-secondary' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-secondary'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
-        ],
-        'button-border-style-secondary' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-secondary'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
-        ],
-
-        // Button design alternative
-        'button-font-weight-alt' => [
-            'default'                 => '$font-weight-base',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-font-weight-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-base', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
-        ],
-        'button-transform-alt' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-transform-alt'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'uppercase', 'lowercase', 'capitalize'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-decoration-alt' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-decoration-alt'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'button-hover-decoration-alt' => [
-            'default'                 => 'none',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-decoration-alt'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'underline', 'overline', 'line-through', 'wavy'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-
-        'button-bg-alt' => [
-            'default'                 => '$dark',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$dark', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-bg-alt' => [
-            'default'                 => 'darken($button-bg-alt, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-bg-alt-invert' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-bg-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-bg-alt-invert' => [
-            'default'                 => 'darken($button-bg-alt, 10)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-bg-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'darken($button-bg-alt, 10)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-color-alt' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-color-alt' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-color-alt-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-color-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-color-alt-invert' => [
-            'default'                 => '$text-color-invert',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-color-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$text-color-invert', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-color-alt' => [
-            'default'                 => '$button-bg-alt',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'button-hover-border-color-alt' => [
-            'default'                 => '$button-hover-bg-alt',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-border-color-alt-invert' => [
-            'default'                 => '$button-color-alt',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-color-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-color-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'button-hover-border-color-alt-invert' => [
-            'default'                 => '$button-hover-bg-alt',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-hover-border-color-alt-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$button-hover-bg-alt', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'button-border-radius-alt' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-radius-alt'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
-        ],
-        'button-border-width-alt' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"2";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-width-alt'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
-        ],
-        'button-border-style-alt' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['button-border-style-alt'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dotted', 'dotted', 'dashed', 'double', 'groove', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
+            'eval'                    => ['placeholder'=>'$grid-gutter-width', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
         // Spacings (Inner)
@@ -2434,274 +2863,6 @@
             'eval'                    => ['placeholder'=>'3rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
-        // Divider
-        'divider-size' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:1:"1";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'1px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'divider-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w33', 'chosen'=>true],
-        ],
-        'divider-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['divider-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
-        ],
-
-        // Boxed
-        'boxed-background-color' => [
-            'default'                 => 'var(--body-bg)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-background-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
-        ],
-        'boxed-border-color' => [
-            'default'                 => 'e3e3e3',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'e3e3e3', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'],
-        ],
-
-        'boxed-border-radius' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-radius'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33 clr'],
-        ],
-        'boxed-border-width' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-width'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
-        ],
-        'boxed-border-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['boxed-border-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'chosen'=>true, 'tl_class'=>'w33'],
-        ],
-
-        // Table
-        'table-cell-spacing' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-spacing'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33 trbl-2 clr'],
-        ],
-        'table-cell-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w33'],
-        ],
-        'table-cell-border-radius' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-radius'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33'],
-        ],
-
-        'table-border-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'table-border-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
-        ],
-        'table-border-width' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"0";s:4:"unit";s:0:"";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-border-width'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-
-        'table-head-border-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'table-head-border-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
-        ],
-        'table-head-border-width' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:1:"1";s:4:"left";s:0:"";s:5:"right";s:1:"0";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-border-width'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-
-        'table-cell-border-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'table-cell-border-style' => [
-            'default'                 => 'solid',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-style'],
-            'inputType'               => 'select',
-            'options'                 => ['none', 'initial', 'inherit', 'solid', 'dashed', 'dotted', 'double', 'wave', 'ridge', 'inset', 'outset', 'hidden'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25', 'chosen'=>true],
-        ],
-        'table-cell-border-width' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:1:"1";s:4:"left";s:0:"";s:5:"right";s:1:"0";s:3:"top";s:1:"0";s:4:"unit";s:2:"px";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-cell-border-width'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-
-        'table-caption-side' => [
-            'default'                 => 'bottom',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-side'],
-            'inputType'               => 'select',
-            'options'                 => ['top', 'bottom'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25 clr'],
-        ],
-        'table-caption-alignment' => [
-            'default'                 => 'center',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-alignment'],
-            'inputType'               => 'select',
-            'options'                 => ['inherit', 'left', 'center', 'right'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w25'],
-        ],
-        'table-caption-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:1:"1";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-
-        'table-caption-color' => [
-            'default'                 => 'cccccc',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'cccccc', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard clr'],
-        ],
-        'table-caption-background' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-background'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
-        ],
-        'table-caption-font-size' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"14";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-caption-font-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'14px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-
-        'table-text-align' => [
-            'default'                 => 'inherit',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-text-align'],
-            'inputType'               => 'select',
-            'options'                 => ['inherit', 'left', 'center', 'right'],
-            'eval'                    => ['maxlength'=>32, 'tl_class'=>'w100 clr'],
-        ],
-
-        'table-head-font-weight' => [
-            'default'                 => '600',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-font-weight'],
-            'inputType'               => 'select',
-            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
-            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33 clr'],
-        ],
-        'table-body-font-weight' => [
-            'default'                 => '400',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-font-weight'],
-            'inputType'               => 'select',
-            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
-            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33'],
-        ],
-        'table-foot-font-weight' => [
-            'default'                 => '600',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-font-weight'],
-            'inputType'               => 'select',
-            'options'                 => [100, 200, 300, 400, 500, 600, 700, 800, 900],
-            'eval'                    => ['rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w33'],
-        ],
-
-        'table-head-color' => [
-            'default'                 => 'var(--text-clr-invert)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'table-head-background' => [
-            'default'                 => 'var(--clr-primary)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-head-background'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'table-foot-color' => [
-            'default'                 => 'var(--text-clr-invert)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'table-foot-background' => [
-            'default'                 => 'var(--clr-primary)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-foot-background'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'table-body-even-color' => [
-            'default'                 => 'var(--text-clr-base)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-even-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
-        ],
-        'table-body-even-background' => [
-            'default'                 => 'var(--clr-light)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-even-background'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-light)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
-        'table-body-odd-color' => [
-            'default'                 => 'var(--text-clr-base)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-odd-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'table-body-odd-background' => [
-            'default'                 => 'var(--body-bg)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['table-body-odd-background'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-
         // Image Text
         'image-text-behaviour-min-width' => [
             'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"600";}',
@@ -2715,167 +2876,6 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['image-text-ratio-options'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'25,33,38,40,50,80,100', 'maxlength'=>255, 'tl_class'=>'clr'],
-        ],
-
-        // Header
-        'header-bg' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-bg'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w100 wizard clr'],
-        ],
-
-        'header-height' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'header-height-xs' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xs'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-s' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:2:"60";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-s'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'60px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-m' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-m'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33 clr'],
-        ],
-        'header-height-l' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-l'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-        'header-height-xl' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"100";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-height-xl'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'100px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
-        ],
-
-        'header-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:1:"0";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50 clr'],
-        ],
-
-        'header-alignment-vertical' => [
-            'default'                 => 'center',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-vertical'],
-            'inputType'               => 'select',
-            'options'                 => ['flex-start', 'center', 'flex-end', 'baseline'],
-            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
-        ],
-        'header-alignment-horizontal' => [
-            'default'                 => 'space-between',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['header-alignment-horizontal'],
-            'inputType'               => 'select',
-            'options'                 => ['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly', 'revert'],
-            'eval'                    => ['tl_class'=>'w25', 'chosen'=>true],
-        ],
-
-        // Navigation
-        'navigation-behaviour-min-width' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"768";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-behaviour-min-width'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'768px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'clr'],
-        ],
-
-        'navigation-item-font-size' => [
-            'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:15:"$font-size-base";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-size'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$font-size-base', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
-        ],
-        'navigation-item-font-weight' => [
-            'default'                 => '$font-weight-regular',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-font-weight'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'$font-weight-regular', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25'],
-        ],
-        'navigation-item-padding' => [
-            'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:1:"1";s:3:"top";s:3:"0.5";s:4:"unit";s:3:"rem";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['navigation-item-padding'],
-            'inputType'               => 'trbl',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'tl_class'=>'w50'],
-        ],
-        'breadcrumb-separator' => [
-            'default'                 => '"›"',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'"›"', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w33 clr'],
-        ],
-        'breadcrumb-separator-color' => [
-            'default'                 => 'inherit',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'inherit', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard'],
-        ],
-        'breadcrumb-separator-font-family' => [
-            'default'                 => '"ctm-icon", var(--font-family)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['breadcrumb-separator-font-family'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'"ctm-icon", var(--font-family)', 'maxlength'=>255, 'preserveTags'=>true, 'tl_class'=>'w33'],
-        ],
-
-        // Misc
-        'box-shadow' => [
-            'default'                 => '0 .5rem 1rem rgba(#000, .15)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['box-shadow'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'0 .5rem 1rem rgba(#000, .15)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w50'],
-        ],
-
-        'selection-color' => [
-            'default'                 => 'var(--text-clr-invert)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-invert)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 clr wizard'],
-        ],
-        'selection-color-invert' => [
-            'default'                 => 'var(--text-clr-base)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-color-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'selection-bg' => [
-            'default'                 => 'var(--clr-primary)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'selection-bg-invert' => [
-            'default'                 => 'var(--body-bg)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['selection-bg-invert'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--body-bg)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
-        ],
-        'aspect-ratios' => [
-            'default'                 => '(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['aspect-ratios'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'clr'],
         ],
     ]
 ];
