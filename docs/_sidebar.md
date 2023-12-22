@@ -10,6 +10,16 @@
    
 * Konfiguration
   * [Theme](configuration/theme.md)
+    * [Global](configuration/theme/global.md)
+    * [Schriften](configuration/theme/fonts.md)
+    * [Überschriften](configuration/theme/headings.md)
+    * [Buttons](configuration/theme/buttons.md)
+    * [Komponenten](configuration/theme/components.md)
+    * [Formular](configuration/theme/form.md)
+    * [Module](configuration/theme/modules.md)
+    * [Header](configuration/theme/header.md)
+    * [Sonstiges](configuration/theme/miscellaneous.md)
+    * [Layout](configuration/theme/layout.md)
   * [Skin](configuration/skin.md)
   * [Icon-Set](configuration/icon-set.md)
   * [Hintergründe](configuration/backgrounds.md)
