@@ -1,7 +1,5 @@
 # Theme konfigurieren
 
-# Theme konfigurieren
-
 Innerhalb der Theme-Konfiguration können sämtliche Variablen des CTM-Frameworks überschrieben werden, um das
 Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 
@@ -26,8 +24,6 @@ ___
 - [Header](#header)
 - [Sonstiges](#sonstiges)
 - [Layout](#layout)
-
-### Global
 
 ### Global
 
