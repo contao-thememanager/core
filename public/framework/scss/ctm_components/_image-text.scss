@@ -68,9 +68,9 @@
   }
 
   &.img--inset {
-    &.pos-t { --inset-y:calc(-1 * var(--i-py)); }
-    &.pos-b { --inset-y:var(--i-py); }
-    &.pos-y { --inset-x:calc(-1 * var(--i-px)); --img-mt:0; --img-mb:0; }
+    &.pos-t { --inset-y:calc(-1 * var(--i-py,var(--py-1))); }
+    &.pos-b { --inset-y:var(--i-py,var(--py-1)); }
+    &.pos-y { --inset-x:calc(-1 * var(--i-px,var(--px-1))); --img-mt:0; --img-mb:0; }
   }
 }
 
@@ -78,11 +78,11 @@
   --img-mt:0; --img-mr:0; --img-mb:0; --img-ml:0;
   --ratio-x: 1; // Always set 100% as default value
 
-  --inset-y:calc(-1 * var(--i-py));
-  --inset-x:calc(-1 * var(--i-px));
+  --inset-y:calc(-1 * var(--i-py,var(--py-1)));
+  --inset-x:calc(-1 * var(--i-px,var(--px-1)));
 
   // Set width-ratio always to 100% / 1 when none is given (limitation due to inset)
-  .c_image { width: calc(var(--it-wdth,100%) + calc(2 * var(--i-px,0%) * var(--ratio-x,1))) !important; }
+  .c_image { width: calc(var(--it-wdth,100%) + calc(2 * var(--i-px,var(--px-1)) * var(--ratio-x,1))) !important; }
 }
 
 @media (max-width: sub($image-text-behaviour-min-width, .02px, 'px')) {
@@ -115,9 +115,9 @@
     &.pos-r { --img-ml:var(--e-m); --img-float:right; }
 
     &.img--inset {
-      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px)); }
-      &.pos-r { --img-ml:0; --inset-x:var(--i-px); }
-      &.pos-x { --img-mb:0; --inset-y:calc(-1 * var(--i-py)); }
+      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px,var(--px-1))); }
+      &.pos-r { --img-ml:0; --inset-x:var(--i-px,var(--px-1)); }
+      &.pos-x { --img-mb:0; --inset-y:calc(-1 * var(--i-py,var(--py-1))); }
     }
 
     &:after { display: block; content: ''; clear: both; }
@@ -138,17 +138,17 @@
     }
 
     &.img--inset {
-      &.pos-t { --inset-y:calc(-1 * var(--i-py)); --img-mb:auto;}
-      &.pos-b { --inset-y:var(--i-py); --img-mt:auto; }
-      &.pos-y { --inset-x:calc(-1 * var(--i-px));
+      &.pos-t { --inset-y:calc(-1 * var(--i-py,var(--py-1))); --img-mb:auto;}
+      &.pos-b { --inset-y:var(--i-py,var(--py-1)); --img-mt:auto; }
+      &.pos-y { --inset-x:calc(-1 * var(--i-px,var(--px-1)));
         &[class*=it-width-] { --inset-x: 0%; }
         &:not(.pos-x) { --img-mt:0; --img-mb:0; }
       }
 
-      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px)) !important; }
-      &.pos-r { --img-ml:0; --inset-x:var(--i-px) !important; }
+      &.pos-l { --img-mr:0; --inset-x:calc(-1 * var(--i-px,var(--px-1))) !important; }
+      &.pos-r { --img-ml:0; --inset-x:var(--i-px,var(--px-1)) !important; }
       &.pos-x {
-        &.img--cover { --img-mt:0; --img-mb:calc(-2 * var(--i-py)); }
+        &.img--cover { --img-mt:0; --img-mb:calc(-2 * var(--i-py,var(--py-1))); }
       }
     }
   }
@@ -160,7 +160,7 @@
 
   .img--cover {
     &.pos-x {
-      &.img--inset { --inset-y:calc(-1 * var(--i-py)); }
+      &.img--inset { --inset-y:calc(-1 * var(--i-py,var(--py-1))); }
       &.img--flex  { --img-mt:0; --img-mb:0; }
     }
 
