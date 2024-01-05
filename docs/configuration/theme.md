@@ -3,10 +3,10 @@
 Innerhalb der Theme-Konfiguration können sämtliche Variablen des CTM-Frameworks überschrieben werden, um das
 Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 
-In Version 2.0 des Contao-ThemeManagers wurde die Konfiguration angepasst, sodass die hier dokumentierte Reihenfolge der
+In Version 2.0 des Contao ThemeManagers wurde die Konfiguration angepasst, sodass die hier dokumentierte Reihenfolge der
 Theme-Konfiguration mit der im Contao-Backend übereinstimmt.
 
-!> Jeder Bezeichner einer einzustellenden Variable entspricht der
+> Jeder Bezeichner einer einzustellenden Variable entspricht der
 jeweiligen [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](/configuration/skin.md)
 abgerufen werden kann.
 

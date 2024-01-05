@@ -5,8 +5,8 @@
 
 ## Basis-Einstellungen
 
-In den Grundlegenden Einstellungen sind Optionen für die **Schriftgröße des Root-Elements** (`$browser-context`), die *
-*Hintergrundfarbe des Body-Elements** (`$body-bg`) und den **Border-Radius** (`$border-radius`) vorhanden.
+In den Grundlegenden Einstellungen sind Optionen für die **Schriftgröße des Root-Elements** (`$browser-context`), die
+**Hintergrundfarbe des Body-Elements** (`$body-bg`) und den **Border-Radius** (`$border-radius`) vorhanden.
 
 ?> Die Variable **$browser-context** beeinflusst die Berechnung der im Framework enthaltenen Funktionen zur
 Größenanpassung, sodass die Umwandlung von px zu rem immer im Kontext der Schriftgröße des Root-Elements erfolgt.
@@ -22,34 +22,34 @@ genutzt wird.
 Buttons, Komponenten, Schriften und Überschriften verwendet werden. Zusätzlich stehen diese Farben als Icon- und
 Hintergrundfarbe innerhalb von Seiten, Artikeln, Inhaltselementen, Modulen etc. zur Verfügung.
 
-## Primäre Farbe ($primary)
+### Primäre Farbe<sup>$primary</sup>
 
 Hauptsächlich verwendet für Buttons, Komponenten, Icons oder Hervorhebungs-Backgrounds.
 
-| SCSS               | CSS                                                                   |
-|--------------------|-----------------------------------------------------------------------|
-| - Farbe `$primary` | - Farbe `var(--clr-primary)`<br/> - RGB-Wert `var(--clr-primary-rgb)` |
+| SCSS       | CSS                                                     |
+|------------|---------------------------------------------------------|
+| `$primary` | `var(--clr-primary)`<br/>`var(--clr-primary-rgb)` (RGB) |
 
-## Sekundäre Farbe ($secondary)
+### Sekundäre Farbe<sup>$secondary</sup>
 
 Hauptsächlich verwendet für alternative Buttons, Icons oder Hervorhebungs-Backgrounds.
 
-| SCSS                 | CSS                                                                       |
-|----------------------|---------------------------------------------------------------------------|
-| - Farbe `$secondary` | - Farbe `var(--clr-secondary)`<br/> - RGB-Wert `var(--clr-secondary-rgb)` |
+| SCSS         | CSS                                                         |
+|--------------|-------------------------------------------------------------|
+| `$secondary` | `var(--clr-secondary)`<br/>`var(--clr-secondary-rgb)` (RGB) |
 
-## Helle Hintergrundfarbe ($light)
+### Helle Hintergrundfarbe<sup>$light</sup>
 
 Hauptsächlich verwendet für Hintergründe, um Artikel optisch zu trennen.
 
-| SCSS             | CSS                                                               |
-|------------------|-------------------------------------------------------------------|
-| - Farbe `$light` | - Farbe `var(--clr-light)`<br/> - RGB-Wert `var(--clr-light-rgb)` |
+| SCSS     | CSS                                                 |
+|----------|-----------------------------------------------------|
+| `$light` | `var(--clr-light)`<br/>`var(--clr-light-rgb)` (RGB) |
 
-## Dunkle Hintergrundfarbe ($dark)
+### Dunkle Hintergrundfarbe<sup>$dark</sup>
 
 Hauptsächlich verwendet für Hintergründe in Artikeln, die mit einer invertierten Textfarbe herausstechen sollen.
 
-| SCSS            | CSS                                                             |
-|-----------------|-----------------------------------------------------------------|
-| - Farbe `$dark` | - Farbe `var(--clr-dark)`<br/> - RGB-Wert `var(--clr-dark-rgb)` |
+| SCSS    | CSS                                               |
+|---------|---------------------------------------------------|
+| `$dark` | `var(--clr-dark)`<br/>`var(--clr-dark-rgb)` (RGB) |
