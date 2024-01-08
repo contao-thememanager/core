@@ -1,8 +1,8 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./docs/logo_v_dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="/docs/logo_v_light.svg">
-        <img src="/docs/logo_v_light.svg" width="500" alt="ContaoThemeManager">
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/markdown/logo_v_dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="/assets/markdown/logo_v_light.svg">
+        <img src="/assets/markdown/logo_v_light.svg" width="500" alt="ContaoThemeManager">
     </picture>
 </p>
 <p align="center"><i>Contao ThemeManager: A lightweight forward-thinking CSS component-first-framework leveraging flexbox and custom properties</i></p>

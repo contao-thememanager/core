@@ -19,7 +19,8 @@
 /system/config/tcpdf.php
 /var/
 /web/
-/assets/
+/assets/*
+!/assets/markdown/
 /public/
 
 # Skip files
