@@ -25,7 +25,7 @@ Die Einstellung überschreibt die Schriftart der Webseite und kann mit mehreren 
 
 ### Schriftgröße<sup>$font-size-base</sup>
 
-Beeinflusst die Schriftgröße für normale Texte einer Webseite und kann in px und rem angegeben werden.
+Beeinflusst die Schriftgröße für normale Texte einer Webseite und kann in `px` und `rem` angegeben werden.
 
 | SCSS              | CSS              |
 |-------------------|------------------|
