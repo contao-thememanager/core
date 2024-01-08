@@ -1,1 +1,0 @@
-# Schritt-für-Schritt-Anleitungen

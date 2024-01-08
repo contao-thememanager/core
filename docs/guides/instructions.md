@@ -1,1 +1,0 @@
-# Anleitungen für spezifische Aufgaben

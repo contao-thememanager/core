@@ -1,1 +1,0 @@
-# Zielgruppe und Voraussetzungen
