@@ -24,6 +24,8 @@ class IconGenerator
 {
     const FONTFAMILY_ICON = 'ctm-icon';
 
+    protected bool $woffTwo = false;
+
     protected ?FileCompiler $compiler = null;
 
     /**
@@ -88,8 +90,11 @@ class IconGenerator
             return null;
         }
 
-        if (!\array_key_exists('woff', $arrFileInformation) || ($arrFileInformation['woff']['filename'] !== $arrFileInformation['svg']['filename']))
-        {
+        $this->woffTwo = \array_key_exists('woff2', $arrFileInformation);
+
+        if (!($this->woffTwo || \array_key_exists('woff', $arrFileInformation)) ||
+            ($arrFileInformation[$this->woffTwo ? 'woff2' : 'woff']['filename'] !== $arrFileInformation['svg']['filename'])
+        ) {
             $this->compiler->msg('Could not find a related .woff file within "' . $absFontPath . '"', FileCompiler::MSG_ERROR);
             return null;
         }
@@ -221,10 +226,16 @@ class IconGenerator
             // Convert font path
             $fontPath = '/' . Path::normalize($this->stripRootOrWebDir($fontPath)) . '.woff';
 
+            if ($this->woffTwo)
+            {
+                $fontPath .= 2;
+            }
+
             // Add font-source
-            $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff');%s%s%s}", [
+            $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff%s');%s%s%s}", [
                 self::FONTFAMILY_ICON,
                 $fontPath,
+                $this->woffTwo?2:'',
                 'font-weight:normal;',
                 'font-style:normal;',
                 'font-display:block;'
