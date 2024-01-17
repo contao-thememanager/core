@@ -744,7 +744,7 @@
         <field title="alias">iconText</field>
         <field title="title">Mode</field>
         <field title="description">Determines the appearance and alignment of icon and text.</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:8:"icon_top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:9:"icon_left";s:5:"value";s:4:"Left";}i:2;a:2:{s:3:"key";s:10:"icon_right";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"icon_float-left";s:5:"value";s:10:"Float Left";}i:4;a:2:{s:3:"key";s:16:"icon_float-right";s:5:"value";s:11:"Float Right";}}</field>
+        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:8:"icon_top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:9:"icon_left";s:5:"value";s:11:"Left (Flex)";}i:2;a:2:{s:3:"key";s:10:"icon_right";s:5:"value";s:12:"Right (Flex)";}i:3;a:2:{s:3:"key";s:15:"icon_float-left";s:5:"value";s:12:"Left (Float)";}i:4;a:2:{s:3:"key";s:16:"icon_float-right";s:5:"value";s:13:"Right (Float)";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

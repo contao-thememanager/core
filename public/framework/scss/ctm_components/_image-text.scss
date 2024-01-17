@@ -21,11 +21,6 @@
     width:    var(--it-wdth);
     height:   var(--img-hght,auto);
   }
-
-  .c_text {
-    flex: 1;
-    align-self: var(--self-align, auto);
-  }
 }
 
 .txt--absolute {

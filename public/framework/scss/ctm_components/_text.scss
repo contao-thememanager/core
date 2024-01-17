@@ -23,6 +23,15 @@
   }
 }
 
+// Element self alignment
+.image_text,
+.icon_text {
+  .c_text {
+    flex: 1;
+    align-self: var(--self-align, auto);
+  }
+}
+
 @include media-breakpoint('xs') {
 
   .ce_text {
