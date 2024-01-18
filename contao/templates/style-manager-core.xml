@@ -12,7 +12,7 @@
         <field title="pid">10</field>
         <field title="sorting">100</field>
         <field title="alias">spacingGlobal</field>
-        <field title="title">Global Spacing &amp;#40;activates the Responsive behaviour&amp;#41;</field>
+        <field title="title">Global Spacing &amp;#40;activates the responsive behavior&amp;#41;</field>
         <field title="description">Defines dynamic spacing of the headings.</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:12:"hl-mb-auto-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:12:"hl-mb-auto-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:12:"hl-mb-auto-3";s:5:"value";s:5:"Large";}}</field>
         <field title="cssClass">long</field>
@@ -902,7 +902,7 @@
   </archive>
   <archive identifier="cArticleHeight">
     <field title="id">1020</field>
-    <field title="title">Article-Height</field>
+    <field title="title">Height</field>
     <field title="identifier">cArticleHeight</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2200</field>
@@ -1037,7 +1037,7 @@
   </archive>
   <archive identifier="cGridColumn">
     <field title="id">1040</field>
-    <field title="title">Grid-Columns</field>
+    <field title="title">Columns</field>
     <field title="identifier">cGridColumn</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2400</field>
@@ -1130,7 +1130,7 @@
   </archive>
   <archive identifier="cGridOffset">
     <field title="id">1050</field>
-    <field title="title">Grid-Offset</field>
+    <field title="title">Offset</field>
     <field title="identifier">cGridOffset</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2500</field>
@@ -1223,7 +1223,7 @@
   </archive>
   <archive identifier="cGridOrder">
     <field title="id">1060</field>
-    <field title="title">Grid-Order</field>
+    <field title="title">Order</field>
     <field title="identifier">cGridOrder</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2600</field>
@@ -1316,7 +1316,7 @@
   </archive>
   <archive identifier="cGridAlignment">
     <field title="id">1070</field>
-    <field title="title">Grid-Alignment</field>
+    <field title="title">Alignment</field>
     <field title="identifier">cGridAlignment</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2700</field>
@@ -1325,7 +1325,7 @@
         <field title="pid">1070</field>
         <field title="sorting">100</field>
         <field title="alias">gridHorizontalAlignment</field>
-        <field title="title">Horizontal-Alignment - Items</field>
+        <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1339,7 +1339,7 @@
         <field title="pid">1070</field>
         <field title="sorting">200</field>
         <field title="alias">gridHorizontalAlignmentXS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1353,7 +1353,7 @@
         <field title="pid">1070</field>
         <field title="sorting">300</field>
         <field title="alias">gridHorizontalAlignmentS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1367,7 +1367,7 @@
         <field title="pid">1070</field>
         <field title="sorting">400</field>
         <field title="alias">gridHorizontalAlignmentM</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1381,7 +1381,7 @@
         <field title="pid">1070</field>
         <field title="sorting">500</field>
         <field title="alias">gridHorizontalAlignmentL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1395,7 +1395,7 @@
         <field title="pid">1070</field>
         <field title="sorting">600</field>
         <field title="alias">gridHorizontalAlignmentXL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1409,7 +1409,7 @@
         <field title="pid">1070</field>
         <field title="sorting">1100</field>
         <field title="alias">gridVerticalAlignment</field>
-        <field title="title">Vertical-Alignment - Items</field>
+        <field title="title">Vertical Item-Alignment</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass">separator</field>
@@ -1424,7 +1424,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2100</field>
         <field title="alias">wrapperGridHorizontalAlignment</field>
-        <field title="title">Horizontal-Alignment - Items</field>
+        <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="cssClass">separator</field>
@@ -1438,7 +1438,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2200</field>
         <field title="alias">wrapperGridHorizontalAlignmentXS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1451,7 +1451,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2300</field>
         <field title="alias">wrapperGridHorizontalAlignmentS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1464,7 +1464,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2400</field>
         <field title="alias">wrapperGridHorizontalAlignmentM</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1477,7 +1477,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2500</field>
         <field title="alias">wrapperGridHorizontalAlignmentL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1490,7 +1490,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2600</field>
         <field title="alias">wrapperGridHorizontalAlignmentXL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -1503,7 +1503,7 @@
         <field title="pid">1070</field>
         <field title="sorting">3100</field>
         <field title="alias">wrapperGridVerticalAlignment</field>
-        <field title="title">Vertical-Alignment - Items</field>
+        <field title="title">Vertical Item-Alignment</field>
         <field title="description">Defines the vertical alignment of the child elements within this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass">separator</field>
@@ -1517,7 +1517,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4100</field>
         <field title="alias">gridSelfAlignment</field>
-        <field title="title">Vertical-Alignment</field>
+        <field title="title">Vertical</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:18:"col-stretch sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
         <field title="cssClass">separator</field>
@@ -1532,7 +1532,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4200</field>
         <field title="alias">gridSelfAlignmentXS</field>
-        <field title="title">Vertical-Alignment &amp;#40;XS&amp;#41;</field>
+        <field title="title">Vertical &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xs-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xs-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xs-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xs-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xs-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
@@ -1546,7 +1546,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4300</field>
         <field title="alias">gridSelfAlignmentS</field>
-        <field title="title">Vertical-Alignment &amp;#40;S&amp;#41;</field>
+        <field title="title">Vertical &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-s-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-s-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-s-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-s-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-s-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
@@ -1560,7 +1560,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4400</field>
         <field title="alias">gridSelfAlignmentM</field>
-        <field title="title">Vertical-Alignment &amp;#40;M&amp;#41;</field>
+        <field title="title">Vertical &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-m-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-m-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-m-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-m-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-m-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
@@ -1574,7 +1574,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4500</field>
         <field title="alias">gridSelfAlignmentL</field>
-        <field title="title">Vertical-Alignment &amp;#40;L&amp;#41;</field>
+        <field title="title">Vertical &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-l-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-l-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-l-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-l-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-l-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
@@ -1588,7 +1588,7 @@
         <field title="pid">1070</field>
         <field title="sorting">4600</field>
         <field title="alias">gridSelfAlignmentXL</field>
-        <field title="title">Vertical-Alignment &amp;#40;XL&amp;#41;</field>
+        <field title="title">Vertical &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xl-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xl-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xl-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xl-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xl-stretch";s:5:"value";s:7:"Stretch";}}</field>
         <field title="chosen">1</field>
@@ -1602,7 +1602,7 @@
   </archive>
   <archive identifier="cGridGutter">
     <field title="id">1080</field>
-    <field title="title">Grid-Gutter</field>
+    <field title="title">Gutter</field>
     <field title="identifier">cGridGutter</field>
     <field title="groupAlias">Component</field>
     <field title="sorting">2800</field>
@@ -2337,7 +2337,7 @@
         <field title="sorting">100</field>
         <field title="alias">list</field>
         <field title="title">Columns</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:6:"list-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:6:"list-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:6:"list-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:6:"list-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:6:"list-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:6:"list-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2354,7 +2354,7 @@
         <field title="sorting">200</field>
         <field title="alias">listXS</field>
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xs-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xs-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xs-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xs-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xs-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xs-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2371,7 +2371,7 @@
         <field title="sorting">300</field>
         <field title="alias">listS</field>
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-s-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-s-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-s-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-s-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-s-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-s-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2388,7 +2388,7 @@
         <field title="sorting">400</field>
         <field title="alias">listM</field>
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-m-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-m-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-m-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-m-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-m-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-m-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2405,7 +2405,7 @@
         <field title="sorting">500</field>
         <field title="alias">listL</field>
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-l-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-l-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-l-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-l-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-l-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-l-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2422,7 +2422,7 @@
         <field title="sorting">600</field>
         <field title="alias">listXL</field>
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xl-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xl-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xl-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xl-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xl-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xl-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2456,7 +2456,7 @@
         <field title="pid">2010</field>
         <field title="sorting">2100</field>
         <field title="alias">justify</field>
-        <field title="title">Horizontal-Alignment - Items</field>
+        <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of all child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="cssClass">separator</field>
@@ -2474,7 +2474,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2200</field>
         <field title="alias">justifyXS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XS&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -2491,7 +2491,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2300</field>
         <field title="alias">justifyS</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;S&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -2508,7 +2508,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2400</field>
         <field title="alias">justifyM</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;M&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -2525,7 +2525,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2500</field>
         <field title="alias">justifyL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;L&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -2542,7 +2542,7 @@
         <field title="pid">1070</field>
         <field title="sorting">2600</field>
         <field title="alias">justifyXL</field>
-        <field title="title">Horizontal-Alignment - Items &amp;#40;XL&amp;#41;</field>
+        <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
         <field title="chosen">1</field>
@@ -2559,7 +2559,7 @@
         <field title="pid">2010</field>
         <field title="sorting">3100</field>
         <field title="alias">alignment</field>
-        <field title="title">Vertical-Alignment - Items</field>
+        <field title="title">Vertical Item-Alignment</field>
         <field title="description">Defines the vertical alignment of all child elements within the list.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:11:"auto-height";s:5:"value";s:10:"Autoheight";}i:1;a:2:{s:3:"key";s:11:"items-start";s:5:"value";s:3:"Top";}i:2;a:2:{s:3:"key";s:12:"items-center";s:5:"value";s:6:"Middle";}i:3;a:2:{s:3:"key";s:9:"items-end";s:5:"value";s:6:"Bottom";}i:4;a:2:{s:3:"key";s:14:"items-baseline";s:5:"value";s:8:"Baseline";}}</field>
         <field title="cssClass">separator</field>
@@ -2587,7 +2587,7 @@
         <field title="sorting">100</field>
         <field title="alias">list</field>
         <field title="title">Columns</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:6:"list-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:6:"list-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:6:"list-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:6:"list-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:6:"list-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:6:"list-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2602,7 +2602,7 @@
         <field title="sorting">200</field>
         <field title="alias">listXS</field>
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xs-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xs-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xs-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xs-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xs-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xs-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2617,7 +2617,7 @@
         <field title="sorting">300</field>
         <field title="alias">listS</field>
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-s-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-s-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-s-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-s-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-s-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-s-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2632,7 +2632,7 @@
         <field title="sorting">400</field>
         <field title="alias">listM</field>
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-m-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-m-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-m-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-m-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-m-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-m-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2647,7 +2647,7 @@
         <field title="sorting">500</field>
         <field title="alias">listL</field>
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-l-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-l-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-l-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-l-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-l-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-l-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2662,7 +2662,7 @@
         <field title="sorting">600</field>
         <field title="alias">listXL</field>
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
-        <field title="description">Defines the column width for child elements within the list.</field>
+        <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xl-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xl-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xl-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xl-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xl-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xl-6";s:5:"value";s:9:"6 Columns";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2970,7 +2970,7 @@
         <field title="pid">2060</field>
         <field title="sorting">100</field>
         <field title="alias">verticalAlignment</field>
-        <field title="title">Vertical-Alignment</field>
+        <field title="title">Vertical Alignment</field>
         <field title="description">Self-aligns the text (Only works in flex mode)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:10:"self-start";s:5:"value";s:5:"Start";}i:1;a:2:{s:3:"key";s:11:"self-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:8:"self-end";s:5:"value";s:3:"End";}i:3;a:2:{s:3:"key";s:13:"self-baseline";s:5:"value";s:8:"Baseline";}}</field>
         <field title="cssClass">separator</field>
