@@ -2,7 +2,7 @@
   <file datatype="php" original="contao/languages/en/tl_settings.php" source-language="en">
     <body>
       <trans-unit id="tl_settings.thememanager_legend">
-        <source>ThemeManager settings</source>
+        <source>ThemeManager</source>
       </trans-unit>
     </body>
   </file>

@@ -2,8 +2,8 @@
   <file datatype="php" original="contao/languages/en/tl_settings.php" source-language="en" target-language="de">
     <body>
       <trans-unit id="tl_settings.thememanager_legend">
-        <source>ThemeManager settings</source>
-        <target>ThemeManager-Einstellungen</target>
+        <source>ThemeManager</source>
+        <target>ThemeManager</target>
       </trans-unit>
     </body>
   </file>
