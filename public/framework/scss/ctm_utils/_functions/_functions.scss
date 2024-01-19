@@ -504,3 +504,31 @@
 
   @return $result;
 }
+
+
+// Removes an item from a Sass list
+//
+// @example
+// list-remove(['foo', 'bar', 'hello', 'world'], 1) => "['bar', 'hello', 'world']"
+// list-remove(['foo', 'bar', 'hello', 'world'], -1) => "['foo', bar', 'hello']"
+//
+// @param $list [Sass::Script::Value::List]
+// @return [Sass::Script::Value::List]
+//
+@function list-remove($list, $index) {
+  $result: ();
+
+  $bracketed: is-bracketed($list);
+  $separator: list-separator($list);
+
+  $number: if($index < 0, length($list) + $index + 1, $index);
+
+  @for $i from 1 through length($list) {
+
+    @if $i != $number {
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return join((), $result, $separator, $bracketed);
+}

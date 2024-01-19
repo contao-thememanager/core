@@ -32,9 +32,10 @@ class ConfigGenerator
      */
     public function generateArticleHeight($configVars, $xml): void
     {
-        $options = self::getListOptions($configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
+        $options    = self::getListOptions($configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
+        $additional = self::getListOptions($configVars, 'article-options-height', 'a-h-');
 
-        $xml->addGroup('cArticleHeight')->addChild('height', $options);
+        $xml->addGroup('cArticleHeight')->addChild('height', array_merge($options, $additional));
     }
 
     /**

@@ -1,5 +1,3 @@
-// Prototype
-
 .mod_article {
   --art-hght:auto;
 
@@ -17,9 +15,19 @@
   --dock: var(--hdr-hght);
 }
 
-@if type-of($article-options-vheight) == list {
+@if $article-options-vheight != '' {
 
   @each $height in $article-options-vheight {
     .a-vh-#{$height} {--a-vh:#{$height}dvh;}
+  }
+}
+
+@if $article-options-height != '' {
+  [class*=a-h-] {
+    --art-hght:calc(var(--a-h));
+  }
+
+  @each $height in $article-options-height {
+    .a-h-#{$height} {--a-h:#{$height};}
   }
 }

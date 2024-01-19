@@ -3372,14 +3372,6 @@
         <target>Hier können Sie einen Standardwert für das untere Polster (padding) von Artikeln innerhalb der Spalte &lt;em&gt;#main&lt;/em&gt; einstellen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.article-min-vheight.0">
-        <source>$article-min-vheight</source>
-        <target>$article-min-vheight</target>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.article-min-vheight.1">
-        <source>Here you can enter the minimum device height in px at which the height of articles should be set. Below this height, a minimum height is always set.</source>
-        <target>Hier können Sie die minimale Gerätehöhe in px eintragen, bei welcher die Höhe von Artikeln festgesetzt werden soll. Unterhalb dieser Höhe wird immer eine Mindesthöhe gesetzt.</target>
-      </trans-unit>
       <trans-unit id="tl_thememanager.article-options-vheight.0">
         <source>$article-options-vheight</source>
         <target>$article-options-vheight</target>
@@ -3387,6 +3379,14 @@
       <trans-unit id="tl_thememanager.article-options-vheight.1">
         <source>Here you can enter comma-separated vh-options that will be available within article-height.</source>
         <target>Hier können Sie durch Komma getrennte vh-Optionen eingeben, die innerhalb der Artikelhöhe verfügbar sein sollen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-height.0">
+        <source>$article-options-height</source>
+        <target>$article-options-height</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-options-height.1">
+        <source>Allows you to set options to create additional dynamic article heights.</source>
+        <target>Erlaubt das Setzen von Optionen, um weitere dynamische Artikelhöhen zu erstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.grid-columns.0">

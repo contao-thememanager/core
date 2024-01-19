@@ -28,7 +28,7 @@
             '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;' .
             '{breakpoint_legend:hide ctm-group palette-group[layout_header]},breakpoints;' .
             '{layout_behavior_legend:hide ctm-group},layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-            '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-min-vheight,article-options-vheight;' .
+            '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-options-vheight,article-options-height;' .
             '{grid_legend:hide ctm-group},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
             '{spacing_inner_legend:hide ctm-group},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide ctm-group},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
@@ -2713,19 +2713,18 @@
             'eval'                    => ['placeholder'=>'var(--gtr-half-btm)', 'includeBlankOption'=>true, 'preserveTags'=>true, 'maxlength'=>255, 'tl_class'=>'w100 clr'],
         ],
 
-        'article-min-vheight' => [
-            'default'                 => 'a:2:{s:4:"unit";s:2:"px";s:5:"value";s:3:"680";}',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-min-vheight'],
-            'inputType'               => 'inputUnit',
-            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'680px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w50 clr'],
-        ],
-
         'article-options-vheight' => [
             'default'                 => '50,75,100',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-options-vheight'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'w50'],
+            'eval'                    => ['placeholder'=>'50,75,100', 'maxlength'=>255, 'tl_class'=>'w50 clr'],
+        ],
+
+        'article-options-height' => [
+            'default'                 => '',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-options-height'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'', 'maxlength'=>255, 'tl_class'=>'w50']
         ],
 
         // Grid
