@@ -45,8 +45,8 @@ html[data-color-scheme="dark"] {
 // Vars for changing appearance of ThemeManager configuration
 $field-br: 5px; // Border radius
 $field-gap: 16px; // Field gap between widgets (Contao standard is 30px)
-$breakpoint-key-wdth: 60px; // Breakpoint wizard first key
-$select-type-wdth: 60px; // Select option width - Also for wizards
+$breakpoint-key-wdth: 54px; // Breakpoint wizard first key
+$select-type-wdth: 54px; // Select option width - Also for wizards
 
 form#tl_thememanager {
 
@@ -295,12 +295,13 @@ form#tl_thememanager {
   .clr { width: calc(100% - #{$field-gap}); }
   .widget { margin: 0 #{math.div($field-gap, 2)}; }
 
-  .w50, .w33, .w25, .w20 { float: left; min-height: 80px; }
+  .w50, .w33, .w25, .w20, .w16 { float: left; min-height: 80px; }
 
   .w50 { width: calc(50% - #{$field-gap});}
   .w33 { width: calc(33.3333% - #{$field-gap});}
   .w25 { width: calc(25% - #{$field-gap});}
   .w20 { width: calc(20% - #{$field-gap});}
+  .w16 { width: calc(16.6666% - #{$field-gap})}
 }
 
 #pal_style_manager_legend {
@@ -324,7 +325,7 @@ form#tl_thememanager {
 @media (max-width:1263.98px) {
 
   form#tl_thememanager {
-    .w50, .w33, .w25, .w20 {
+    .w50, .w33, .w25, .w20, .w16 {
       width: calc(50% - #{$field-gap});
     }
   }
@@ -333,7 +334,7 @@ form#tl_thememanager {
 // Handheld
 @media (max-width:767.98px) {
   form#tl_thememanager {
-    .w50, .w33, .w25, .w20 {
+    .w50, .w33, .w25, .w20, .w16 {
       float: none;
       width: calc(100% - #{$field-gap});
     }

@@ -28,7 +28,7 @@
             '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;' .
             '{breakpoint_legend:hide ctm-group palette-group[layout_header]},breakpoints;' .
             '{layout_behavior_legend:hide ctm-group},layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
-            '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-options-vheight,article-options-height;' .
+            '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-medium,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-large,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-options-vheight,article-options-height;' .
             '{grid_legend:hide ctm-group},grid-columns,grid-gutter-width,grid-gutter-bottom;' .
             '{spacing_inner_legend:hide ctm-group},paragraph-spacing,element-spacing-small,element-spacing-medium,element-spacing-large,top-bottom-padding-small,top-bottom-padding-medium,top-bottom-padding-large,left-right-padding-small,left-right-padding-medium,left-right-padding-large;' .
             '{spacing_outer_legend:hide ctm-group},top-bottom-margin-small,top-bottom-margin-medium,top-bottom-margin-large,left-right-margin-small,left-right-margin-medium,left-right-margin-large;' .
@@ -2597,112 +2597,133 @@
             'eval'                    => ['placeholder'=>'0px', 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w33'],
         ],
 
+        'article-spacing-small' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-small'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16 clr'],
+        ],
         'article-spacing-xs-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-s-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"3.125";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.125rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'3.125rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-m-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-l-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-xl-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-small";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-small'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-small', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-small', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
 
+        'article-spacing-medium' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-medium'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16 clr'],
+        ],
         'article-spacing-xs-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-s-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:4:"3.75";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'3.75rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-m-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"5";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-l-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"7.5";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'7.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'7.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-xl-medium' => [
             'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:25:"$article-spacing-l-medium";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-medium'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-medium', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-medium', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
 
+        'article-spacing-large' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-large'],
+            'inputType'               => 'inputUnit',
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16 clr'],
+        ],
         'article-spacing-xs-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xs-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20 clr'],
+            'eval'                    => ['placeholder'=>'2.5rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-s-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"4.375";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-s-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'4.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-m-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:6:"5.9375";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-m-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'5.9375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'5.9375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-l-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:5:"9.375";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-l-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'9.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'9.375rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
         'article-spacing-xl-large' => [
             'default'                 => 'a:2:{s:4:"unit";s:0:"";s:5:"value";s:24:"$article-spacing-l-large";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['article-spacing-xl-large'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'$article-spacing-l-large', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w20'],
+            'eval'                    => ['placeholder'=>'$article-spacing-l-large', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w16'],
         ],
 
         'article-main-spacing-bottom' => [
