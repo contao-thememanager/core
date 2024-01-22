@@ -2459,6 +2459,12 @@
         <source>Here you can set the horizontal article padding for the 's'-breakpoint.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-small.0">
+        <source>$article-spacing-small</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-small.1">
+        <source>Here you can set the small vertical padding for articles for mobile devices.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
         <source>$article-spacing-xs-small</source>
       </trans-unit>
@@ -2490,6 +2496,12 @@
         <source>Here you can set the small vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-medium.0">
+        <source>$article-spacing-medium</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-medium.1">
+        <source>Here you can set the medium vertical padding for articles for mobile devices.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-medium.0">
         <source>$article-spacing-xs-medium</source>
       </trans-unit>
@@ -2521,6 +2533,12 @@
         <source>Here you can set the medium vertical padding for articles for extra large devices.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-large.0">
+        <source>$article-spacing-large</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-large.1">
+        <source>Here you can set the large vertical padding for articles for mobile devices.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-large.0">
         <source>$article-spacing-xs-large</source>
       </trans-unit>

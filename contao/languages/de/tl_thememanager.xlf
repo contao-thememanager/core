@@ -3240,6 +3240,14 @@
         <target>Hier können Sie das horizontale Polster (padding) von Artikeln für den Bruchpunkt 's' einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-small.0">
+        <source>$article-spacing-small</source>
+        <target>$article-spacing-small</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-small.1">
+        <source>Here you can set the small vertical padding for articles for mobile devices.</source>
+        <target>Hier können Sie das kleine vertikale Polster (padding) von Artikeln für mobile Geräte einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-small.0">
         <source>$article-spacing-xs-small</source>
         <target>$article-spacing-xs-small</target>
@@ -3281,6 +3289,14 @@
         <target>Hier können Sie das kleine vertikale Polster (padding) von Artikeln auf sehr großen Geräten einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-medium.0">
+        <source>$article-spacing-medium</source>
+        <target>$article-spacing-medium</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-medium.1">
+        <source>Here you can set the medium vertical padding for articles for mobile devices.</source>
+        <target>Hier können Sie das mittlere vertikale Polster (padding) von Artikeln für mobile Geräte einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-medium.0">
         <source>$article-spacing-xs-medium</source>
         <target>$article-spacing-xs-medium</target>
@@ -3322,6 +3338,14 @@
         <target>Hier können Sie das mittlere vertikale Polster (padding) von Artikeln auf sehr großen Geräten einstellen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.article-spacing-large.0">
+        <source>$article-spacing-large</source>
+        <target>$article-spacing-large</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.article-spacing-large.1">
+        <source>Here you can set the large vertical padding for articles for mobile devices.</source>
+        <target>Hier können Sie das große vertikale Polster (padding) von Artikeln für mobile Geräte einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.article-spacing-xs-large.0">
         <source>$article-spacing-xs-large</source>
         <target>$article-spacing-xs-large</target>

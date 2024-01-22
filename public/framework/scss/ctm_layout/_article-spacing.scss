@@ -1,9 +1,10 @@
 // Y-spacings (vertical top and bottom)
 $spacings-list-init: (
-       1: $article-spacing-xs-small, 2: $article-spacing-xs-medium, 3: $article-spacing-xs-large
+       1: $article-spacing-small, 2: $article-spacing-medium, 3: $article-spacing-large
 );
 
 $spacings-list-bp: (
+  xs: (1: $article-spacing-xs-small, 2: $article-spacing-xs-medium, 3: $article-spacing-xs-large),
   s:  (1: $article-spacing-s-small,  2: $article-spacing-s-medium,  3: $article-spacing-s-large),
   m:  (1: $article-spacing-m-small,  2: $article-spacing-m-medium,  3: $article-spacing-m-large),
   l:  (1: $article-spacing-l-small,  2: $article-spacing-l-medium,  3: $article-spacing-l-large),
@@ -50,9 +51,9 @@ main .article_inside {
 
 :root {
   --art-ox:#{$article-outer-padding};
-  --art-py-1:#{$article-spacing-xs-small};
-  --art-py-2:#{$article-spacing-xs-medium};
-  --art-py-3:#{$article-spacing-xs-large};
+  --art-py-1:#{$article-spacing-small};
+  --art-py-2:#{$article-spacing-medium};
+  --art-py-3:#{$article-spacing-large};
 }
 
 @each $size, $spacing in $spacings-list-init {
@@ -98,11 +99,11 @@ main .article_inside {
     }
   }
   @include media-breakpoint($bp) {
-    @if ($bp == 'xs') {:root {--art-ox:#{$article-outer-padding-xs};}}
     @if map-has-key($spacings-list-bp, $bp) {
       :root {
-        @if ($bp == 's') {--art-ox:#{$article-outer-padding-s};}
-        @if ($bp == 'm') {--art-ox:0px;}
+        @if ($bp == 'xs') {--art-ox:#{$article-outer-padding-xs};}
+        @if ($bp == 's')  {--art-ox:#{$article-outer-padding-s};}
+        @if ($bp == 'm')  {--art-ox:0px;}
         @each $size, $spacing in $list {--art-py-#{$size}:#{$spacing};}
       }
     }
