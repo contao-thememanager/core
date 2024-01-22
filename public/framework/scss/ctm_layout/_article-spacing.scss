@@ -19,7 +19,7 @@ main .article_inside {
   margin-left: 0;
   margin-right: 0;
 
-  .gtr-0&{
+  @at-root #{selector-append('.gtr-0', &)} {
     > .ce_wrapper {--gtr-x:var(--h-gap);} // Always reset gtr-0 within wrapper
     > .gtr-1      {--gtr-x:var(--gtr);} // Set normal gutter for gtr-1
   }
