@@ -35,18 +35,14 @@ class ThemeConfigurationMigration extends AbstractMigration
             return false;
         }
 
-        // ToDo: Rewrite
-        /*$columns = $schemaManager->listTableColumns('tl_theme');
+        $columns = $schemaManager->listTableColumns('tl_theme');
 
-        if (!isset($columns['themeConfig'])) {
-            return false;
-        }*/
-
-        try {
-            $test = $this->connection->fetchOne("SELECT TRUE FROM tl_theme WHERE `themeConfig` NOT LIKE '%article-spacing-small%' LIMIT 1");
-        } catch (\Exception) {
+        if (!isset($columns['themeconfig']))
+        {
             return false;
         }
+
+        $test = $this->connection->fetchOne("SELECT TRUE FROM tl_theme WHERE `themeConfig` NOT LIKE '%\"article-spacing-small%' LIMIT 1");
 
         if (false !== $test)
         {
@@ -61,11 +57,7 @@ class ThemeConfigurationMigration extends AbstractMigration
      */
     public function run(): MigrationResult
     {
-        $values = $this->connection->fetchAllKeyValue("
-                SELECT id, `themeConfig`
-                FROM tl_theme
-                WHERE `themeConfig` NOT LIKE '%article-spacing-small%'
-            ");
+        $values = $this->connection->fetchAllKeyValue("SELECT id, themeconfig FROM tl_theme WHERE themeconfig NOT LIKE '%\"article-spacing-small%'");
 
         foreach ($values as $id => $value)
         {
@@ -90,9 +82,9 @@ class ThemeConfigurationMigration extends AbstractMigration
 
     private function setAndUpdateConfigVariable(string $newKey, string $oldKey, array &$config): void
     {
-        if (isset($config[$oldKey]) && !isset($config[$newKey]))
+        if (!isset($config[$newKey]))
         {
-            $config[$newKey] = $config[$oldKey];
+            $config[$newKey] = $config[$oldKey] ?? 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}';
             $config[$oldKey] = '$'.$newKey;
         }
     }
