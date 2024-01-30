@@ -265,11 +265,13 @@ $form-checkbox-radio-label-min-height: $form-checkbox-radio-size;
 
 @if ($form-checkbox-radio-auto-align == 'Active') {
   $font-min-height: multiply($form-checkbox-radio-label-font-size, $form-checkbox-radio-label-line-height);
+  $__form-checkbox-radio-size: px($form-checkbox-radio-size);
+  $__font-min-height: px($font-min-height);
 
-  @if ($form-checkbox-radio-size < $font-min-height) {
+  @if ($__form-checkbox-radio-size < $__font-min-height) {
     $form-checkbox-radio-symbol-offset: sub(divide(sub($font-min-height, $form-checkbox-radio-size), 2), 1px);
   }
-  @else if ($form-checkbox-radio-size > $font-min-height) {
+  @else if ($__form-checkbox-radio-size > $__font-min-height) {
     $--calc-offset: sum(divide(sub($form-checkbox-radio-size, $font-min-height), 2), 1px);
 
     $form-checkbox-radio-symbol-offset: 0;
