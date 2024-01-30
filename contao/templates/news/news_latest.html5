@@ -11,20 +11,22 @@
 
     <div class="c_text">
       <?php if ($this->hasMetaFields || (null === $this->hasMetaFields)): // Contao 5.* BC layer for simultaneous Contao 4.13 support ?>
-        <p class="info">
-          <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
-          <?php if ($this->author): ?>
-            <span class="author"><?= $this->author ?></span>
-          <?php endif; ?>
-          <?php if (!!$this->numberOfComments): ?>
-            <span class="comments"><?= $this->commentCount ?></span>
-          <?php endif; ?>
-        </p>
+        <?php $this->block('info'); ?>
+          <p class="info">
+            <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+            <?php if ($this->author): ?>
+              <span class="author"><?= $this->author ?></span>
+            <?php endif; ?>
+            <?php if (!!$this->numberOfComments): ?>
+              <span class="comments"><?= $this->commentCount ?></span>
+            <?php endif; ?>
+          </p>
+        <?php $this->endblock(); ?>
       <?php endif; ?>
 
       <h3><?= $this->linkHeadline ?></h3>
 
-      <?= $this->teaser ?>
+      <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
 
       <?php if ($this->hasText || $this->hasTeaser): ?>
         <p class="more"><?= $this->more ?></p>

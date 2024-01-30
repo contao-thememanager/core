@@ -63,7 +63,7 @@
                 <div class="c_text">
                   <<?=$hlItem.$sm->prepare('eHeadline',['hl2Style'])->format(' class="%s"')?> id="<?= $faq->alias ?>"><?= $faq->question ?></<?=$hlItem?>>
 
-                  <?= $faq->answer ?>
+                  <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($faq->answer) : $faq->answer ?>
 
                   <?php if ($faq->enclosure): ?>
                     <ul class="enclosure">

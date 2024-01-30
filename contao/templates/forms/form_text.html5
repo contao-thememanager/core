@@ -11,7 +11,7 @@
   <?php endif; ?>
 
   <div class="input-container">
-    <input type="<?= $this->type ?>" name="<?= $this->name ?>" id="ctrl_<?= $this->id ?>" class="text<?php if ($this->hideInput): ?> password<?php endif; ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>" value="<?= Contao\StringUtil::specialchars($this->value) ?>"<?= $this->getAttributes() ?>>
+    <input type="<?= $this->type ?>" name="<?= $this->name ?>" id="ctrl_<?= $this->id ?>" class="text<?php if ($this->hideInput): ?> password<?php endif; ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>" value="<?= Contao\StringUtil::specialchars($this->convertDate($this->value)) ?>"<?= $this->getAttributes() ?>>
   </div>
 
   <?php if ($this->hasErrors()): ?>
