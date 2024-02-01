@@ -3,17 +3,16 @@
 namespace ContaoThemeManager\Core\EventListener\DataContainer;
 
 use Contao\ContentModel;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsCallback;
 use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\CoreBundle\Security\ContaoCorePermissions;
-use Contao\Database;
 use Contao\DataContainer;
 use Contao\Input;
+use Contao\Message;
 use Contao\StringUtil;
 use Contao\System;
-use ContaoThemeManager\Core\Migration\ThemeConfigurationMigration;
 use Doctrine\DBAL\Connection;
 use Symfony\Component\Security\Core\Security;
-use Contao\Message;
 
 class DataContainerListener
 {
@@ -23,6 +22,40 @@ class DataContainerListener
         protected Security $security
     ){}
 
+    #[AsCallback(table: 'tl_layout', target: 'fields.headerHeight.load')]
+    #[AsCallback(table: 'tl_layout', target: 'fields.footerHeight.load')]
+    #[AsCallback(table: 'tl_layout', target: 'fields.widthLeft.load')]
+    #[AsCallback(table: 'tl_layout', target: 'fields.widthRight.load')]
+    public function checkLayoutMisconfiguration($value, DataContainer $dc): array|string
+    {
+        if (empty($value))
+        {
+            return '';
+        }
+
+        $array = StringUtil::deserialize($value);
+
+        if (
+            empty($array) ||
+            !is_array($array) ||
+            (empty($array['unit'] ?? '') && empty($array['value'] ?? ''))
+        ) {
+            return $value;
+        }
+
+        Message::addError(
+            vsprintf(($GLOBALS['TL_LANG']['tl_layout']['misconfiguration'] ?? null), [
+                ($GLOBALS['TL_LANG']['tl_layout']['headerHeight'][0] ?? null),
+                ($GLOBALS['TL_LANG']['tl_layout']['footerHeight'][0] ?? null),
+                ($GLOBALS['TL_LANG']['tl_layout']['widthLeft'][0] ?? null),
+                ($GLOBALS['TL_LANG']['tl_layout']['widthRight'][0] ?? null)
+            ])
+        );
+
+        return $array;
+    }
+
+    #[AsCallback(table: 'tl_layout', target: 'fields.framework.load')]
     public function checkSelectedFramework($value, DataContainer $dc): array|string
     {
         if (empty($value))

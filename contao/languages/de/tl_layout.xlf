@@ -1,9 +1,13 @@
 <?xml version="1.0" ?><xliff version="1.1">
   <file datatype="php" original="contao/languages/en/tl_layout.php" source-language="en" target-language="de">
     <body>
+      <trans-unit id="tl_layout.misconfiguration">
+        <source>The layout is configured incorrectly. By using the ThemeManager, incorrect settings can affect the layouting. Please remove all values and units in:&lt;br&gt;&lt;em&gt;%s&lt;/em&gt;, &lt;em&gt;%s&lt;/em&gt;, &lt;em&gt;%s&lt;/em&gt; and &lt;em&gt;%s&lt;/em&gt;.</source>
+        <target>Das Layout ist falsch konfiguriert. Durch den Einsatz des ThemeManagers können falsche Einstellungen das Layouting beeinflussen. Bitte entfernen Sie alle Werte und Einstellungen in:&lt;br&gt;&lt;em&gt;%s&lt;/em&gt;, &lt;em&gt;%s&lt;/em&gt;, &lt;em&gt;%s&lt;/em&gt; und &lt;em&gt;%s&lt;/em&gt;.</target>
+      </trans-unit>
       <trans-unit id="tl_layout.frameworkMessage">
-        <source>There are superfluous CSS frameworks in this layout. By using the ThemeManager the following frameworks are not needed: %s</source>
-        <target>Es befinden sich überflüssige CSS-Frameworks in diesem Layout. Durch den Einsatz des ThemeManagers werden folgende Frameworks nicht benötigt: %s</target>
+        <source>There are superfluous CSS frameworks in this layout. By using the ThemeManager the following frameworks are not needed:&lt;br&gt;%s</source>
+        <target>Es befinden sich überflüssige CSS-Frameworks in diesem Layout. Durch den Einsatz des ThemeManagers werden folgende Frameworks nicht benötigt:&lt;br&gt;%s</target>
       </trans-unit>
     </body>
   </file>
