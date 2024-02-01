@@ -24,7 +24,6 @@
 }
 
 #container {
-  display: none;
 
   > .inside {
     display: flex;
@@ -41,18 +40,6 @@
         display: block;
         clear: both;
       }
-    }
-  }
-
-  &-content {
-    &, &-1, &-2 {
-      #container {
-        display: block;
-      }
-    }
-
-    #right, #left {
-      display: none;
     }
   }
 }
@@ -90,21 +77,12 @@
   }
 
   #main {
-    width: 100%;
-  }
-
-  .layout {
-
-    &-content {
-      &-1 #main { width: calc(100% - var(--lyt-col-wdth) + var(--lyt-col-gtr)); }
-      &-2 #main { width: calc(100% - ((var(--lyt-col-wdth) + var(--lyt-col-gtr)) * 2)); }
-    }
+    flex: 1;
   }
 
   #left,
   #right {
     width: calc(var(--lyt-col-wdth) + var(--lyt-col-gtr));
-    min-width: calc(var(--lyt-col-wdth) + var(--lyt-col-gtr));;
   }
 
   #left {

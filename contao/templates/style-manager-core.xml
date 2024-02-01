@@ -667,17 +667,6 @@
     <field title="groupAlias">Component</field>
     <field title="sorting">2000</field>
     <children>
-      <child alias="layoutColumns">
-        <field title="pid">1000</field>
-        <field title="sorting">100</field>
-        <field title="alias">layoutColumns</field>
-        <field title="title">Layout Columns</field>
-        <field title="description">Define here how many columns the layout contains.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:14:"layout-content";s:5:"value";s:9:"No Column";}i:1;a:2:{s:3:"key";s:16:"layout-content-1";s:5:"value";s:8:"1 Column";}i:2;a:2:{s:3:"key";s:16:"layout-content-2";s:5:"value";s:9:"2 Columns";}}</field>
-        <field title="chosen">1</field>
-        <field title="blankOption">1</field>
-        <field title="extendLayout">1</field>
-      </child>
       <child alias="leftColumnOrder">
         <field title="pid">1000</field>
         <field title="sorting">200</field>
