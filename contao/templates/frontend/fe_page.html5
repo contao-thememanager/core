@@ -45,40 +45,42 @@
       <?php $this->sections('before'); ?>
 
       <?php $this->block('container'); ?>
-        <div id="container">
-          <div class="inside">
+        <?php if ($this->main || $this->left || $this->right): ?>
+          <div id="container">
+            <div class="inside">
 
-          <?php $this->block('main'); ?>
-            <main id="main">
-              <div class="inside">
-                <?= $this->main ?>
-              </div>
-              <?php $this->sections('main'); ?>
-            </main>
-          <?php $this->endblock(); ?>
-
-          <?php $this->block('left'); ?>
-            <?php if ($this->left): ?>
-              <aside id="left" class="grid">
+            <?php $this->block('main'); ?>
+              <main id="main">
                 <div class="inside">
-                  <?= $this->left ?>
+                  <?= $this->main ?>
                 </div>
-              </aside>
-            <?php endif; ?>
-          <?php $this->endblock(); ?>
+                <?php $this->sections('main'); ?>
+              </main>
+            <?php $this->endblock(); ?>
 
-          <?php $this->block('right'); ?>
-            <?php if ($this->right): ?>
-              <aside id="right" class="grid">
-                <div class="inside">
-                  <?= $this->right ?>
-                </div>
-              </aside>
-            <?php endif; ?>
-          <?php $this->endblock(); ?>
+            <?php $this->block('left'); ?>
+              <?php if ($this->left): ?>
+                <aside id="left" class="grid">
+                  <div class="inside">
+                    <?= $this->left ?>
+                  </div>
+                </aside>
+              <?php endif; ?>
+            <?php $this->endblock(); ?>
 
+            <?php $this->block('right'); ?>
+              <?php if ($this->right): ?>
+                <aside id="right" class="grid">
+                  <div class="inside">
+                    <?= $this->right ?>
+                  </div>
+                </aside>
+              <?php endif; ?>
+            <?php $this->endblock(); ?>
+
+            </div>
           </div>
-        </div>
+        <?php endif; ?>
       <?php $this->endblock(); ?>
 
       <?php $this->sections('after'); ?>

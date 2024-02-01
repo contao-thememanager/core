@@ -8,16 +8,15 @@ declare(strict_types=1);
  * (c) https://www.oveleon.de/
  */
 
-namespace ContaoThemeManager\Core\Migration;
+namespace ContaoThemeManager\Core\Migration\Version200;
 
 use Contao\CoreBundle\Migration\AbstractMigration;
 use Contao\CoreBundle\Migration\MigrationResult;
 use Contao\StringUtil;
-use Contao\System;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception;
 
-class ThemeConfigurationMigration extends AbstractMigration
+class LayoutContentMigration extends AbstractMigration
 {
     public function __construct(private readonly Connection $connection)
     {
@@ -42,7 +41,7 @@ class ThemeConfigurationMigration extends AbstractMigration
             return false;
         }
 
-        $test = $this->connection->fetchOne("SELECT TRUE FROM tl_theme WHERE `themeConfig` NOT LIKE '%\"article-spacing-small%' LIMIT 1");
+        $test = $this->connection->fetchOne("SELECT TRUE FROM tl_theme WHERE `themeConfig` NOT LIKE '%\"activate-content-heading-settings%' LIMIT 1");
 
         if (false !== $test)
         {
@@ -57,35 +56,17 @@ class ThemeConfigurationMigration extends AbstractMigration
      */
     public function run(): MigrationResult
     {
-        $values = $this->connection->fetchAllKeyValue("SELECT id, themeconfig FROM tl_theme WHERE themeconfig NOT LIKE '%\"article-spacing-small%'");
+        $values = $this->connection->fetchAllKeyValue("SELECT id, themeconfig FROM tl_theme WHERE themeconfig NOT LIKE '%\"activate-content-heading-settings%'");
 
         foreach ($values as $id => $value)
         {
             $config = StringUtil::deserialize($value, true);
 
-            $update = [
-                'article-spacing-xs-small'  => 'article-spacing-small',
-                'article-spacing-xs-medium' => 'article-spacing-medium',
-                'article-spacing-xs-large'  => 'article-spacing-large'
-            ];
-
-            foreach ($update as $old => $new)
-            {
-                $this->setAndUpdateConfigVariable($new, $old, $config);
-            }
+            $config['activate-content-heading-settings'] = true;
 
             $this->connection->update('tl_theme', ['themeConfig' => serialize($config)], ['id' => (int) $id]);
         }
 
         return $this->createResult(true);
-    }
-
-    private function setAndUpdateConfigVariable(string $newKey, string $oldKey, array &$config): void
-    {
-        if (!isset($config[$newKey]))
-        {
-            $config[$newKey] = $config[$oldKey] ?? 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"2.5";}';
-            $config[$oldKey] = '$'.$newKey;
-        }
     }
 }

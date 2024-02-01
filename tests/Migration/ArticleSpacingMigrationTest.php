@@ -13,16 +13,14 @@ namespace Migration;
 use Contao\CoreBundle\Migration\MigrationCollection;
 use Contao\CoreBundle\Migration\MigrationResult;
 use Contao\Database;
-use Contao\Database\Result;
-use Contao\Database\Statement;
-use Contao\TestCase\ContaoTestCase;
 use Contao\System;
-use ContaoThemeManager\Core\Migration\ThemeConfigurationMigration;
+use Contao\TestCase\ContaoTestCase;
+use ContaoThemeManager\Core\Migration\Version200\ArticleSpacingMigration;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Doctrine\DBAL\Schema\Schema;
 
-class ThemeConfigurationMigrationTest extends ContaoTestCase
+class ArticleSpacingMigrationTest extends ContaoTestCase
 {
     protected function setUp(): void
     {
@@ -98,7 +96,7 @@ class ThemeConfigurationMigrationTest extends ContaoTestCase
     public function testDoesNotRunIfNoMappings(): void
     {
         $db = $this->createMock(Connection::class);
-        $migration = new ThemeConfigurationMigration($db);
+        $migration = new ArticleSpacingMigration($db);
 
         $this->assertFalse($migration->shouldRun());
     }
@@ -116,7 +114,7 @@ class ThemeConfigurationMigrationTest extends ContaoTestCase
         $connection = System::getContainer()->get('database_connection');
 
         return [
-            new class($connection) extends ThemeConfigurationMigration {
+            new class($connection) extends ArticleSpacingMigration {
                 public function getName(): string
                 {
                     return 'Successful Migration';
@@ -132,7 +130,7 @@ class ThemeConfigurationMigrationTest extends ContaoTestCase
                     return $this->createResult(true, 'successful');
                 }
             },
-            new class($connection) extends ThemeConfigurationMigration {
+            new class($connection) extends ArticleSpacingMigration {
                 public function getName(): string
                 {
                     return 'Failing Migration';
@@ -148,7 +146,7 @@ class ThemeConfigurationMigrationTest extends ContaoTestCase
                     return $this->createResult(false, 'failing');
                 }
             },
-            new class($connection) extends ThemeConfigurationMigration {
+            new class($connection) extends ArticleSpacingMigration {
                 public function getName(): string
                 {
                     return 'Inactive Migration';

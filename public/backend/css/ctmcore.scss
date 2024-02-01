@@ -50,7 +50,7 @@ $select-type-wdth: 54px; // Select option width - Also for wizards
 
 form#tl_thememanager {
 
-  .widget label {
+  .widget > label {
     //font-size: 14px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -288,6 +288,17 @@ form#tl_thememanager {
         margin: 12px 8px 8px;
         border-bottom: 1px solid var(--border, #eaeaec);
       }
+    }
+  }
+
+  .heading-field {
+
+    [data-read-only=true] {
+      color: var(--form-text-disabled, #bbb);
+      background-color: var(--form-bg-disabled, #f9f9f9);
+      border-color: var(--form-border-disabled, #c8c8c8);
+      cursor: not-allowed;
+      outline: none;
     }
   }
 

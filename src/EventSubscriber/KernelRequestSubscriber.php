@@ -50,13 +50,15 @@ class KernelRequestSubscriber implements EventSubscriberInterface
                 $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
             }
 
+            $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/theme-config.js|static';
+
             /** @var User $user */
             $user = $this->security->getUser();
 
             if (null !== $user && $user->show_ctm_colors && file_exists('assets/ctmcore/css/_backendColors.css'))
             {
                 $GLOBALS['TL_CSS'][]        = 'assets/ctmcore/css/_backendColors.css|static';
-                $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/ctmcore.js|static';
+                $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/preview-colors.js|static';
             }
         }
     }
