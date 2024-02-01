@@ -50,6 +50,8 @@ class KernelRequestSubscriber implements EventSubscriberInterface
                 $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
             }
 
+            $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/theme-config.js|static';
+
             /** @var User $user */
             $user = $this->security->getUser();
 

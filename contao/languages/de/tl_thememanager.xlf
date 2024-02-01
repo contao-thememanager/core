@@ -22,8 +22,8 @@
         <target>Überschriften</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.content_headings_legend">
-        <source>Headings (Content)</source>
-        <target>Überschriften (Inhaltsbereich)</target>
+        <source>Headings (&lt;em&gt;Main column / Left column / Right column&lt;/em&gt;)</source>
+        <target>Überschriften (&lt;em&gt;Hauptspalte / Linke Spalte / Rechte Spalte&lt;/em&gt;)</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.heading_spacing_legend">
         <source>Heading (Spacings)</source>
@@ -881,37 +881,45 @@
         <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h6&quot; - Elemente auswählen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.disable-content-heading.0">
+        <source>Use heading values</source>
+        <target>Überschriften-Werte nutzen</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.disable-content-heading.1">
+        <source>Deactivates the following fields and uses the values set in &lt;em&gt;headings&lt;/em&gt;. The CSS is not compiled in this case.</source>
+        <target>Deaktiviert die nachfolgenden Felder und verwendet die in &lt;em&gt;Überschriften&lt;/em&gt; eingestellten Werte. Das CSS wird in diesem Fall nicht kompiliert.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-small.0">
         <source>$h1-content-font-size-small</source>
         <target>$h1-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h1&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h1&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h1&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h1&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-medium.0">
         <source>$h1-content-font-size-medium</source>
         <target>$h1-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h1&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h1&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h1&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h1&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size.0">
         <source>$h1-content-font-size</source>
         <target>$h1-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h1&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h1&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h1&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h1&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-line-height.0">
         <source>$h1-content-line-height</source>
         <target>$h1-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h1&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h1&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h2-content-font-size-small.0">
@@ -919,32 +927,32 @@
         <target>$h2-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h2&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h2&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h2&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h2&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-size-medium.0">
         <source>$h2-content-font-size-medium</source>
         <target>$h2-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h2&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h2&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h2&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h2&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-size.0">
         <source>$h2-content-font-size</source>
         <target>$h2-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h2&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h2&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h2&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h2&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-line-height.0">
         <source>$h2-content-line-height</source>
         <target>$h2-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h2&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h2&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h3-content-font-size-small.0">
@@ -952,32 +960,32 @@
         <target>$h3-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h3&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h3&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h3&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h3&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-size-medium.0">
         <source>$h3-content-font-size-medium</source>
         <target>$h3-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h3&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h3&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h3&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h3&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-size.0">
         <source>$h3-content-font-size</source>
         <target>$h3-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h3&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h3&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h3&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h3&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-line-height.0">
         <source>$h3-content-line-height</source>
         <target>$h3-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h3&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h3&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h4-content-font-size-small.0">
@@ -985,32 +993,32 @@
         <target>$h4-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h4&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h4&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h4&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h4&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-size-medium.0">
         <source>$h4-content-font-size-medium</source>
         <target>$h4-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h4&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h4&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h4&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h4&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-size.0">
         <source>$h4-content-font-size</source>
         <target>$h4-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h4&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h4&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h4&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h4&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-line-height.0">
         <source>$h4-content-line-height</source>
         <target>$h4-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h4&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h4&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h5-content-font-size-small.0">
@@ -1018,32 +1026,32 @@
         <target>$h5-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h5&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h5&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h5&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h5&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-size-medium.0">
         <source>$h5-content-font-size-medium</source>
         <target>$h5-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h5&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h5&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h5&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h5&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-size.0">
         <source>$h5-content-font-size</source>
         <target>$h5-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h5&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h5&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h5&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h5&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-line-height.0">
         <source>$h5-content-line-height</source>
         <target>$h5-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h5&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h5&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h6-content-font-size-small.0">
@@ -1051,32 +1059,32 @@
         <target>$h6-content-font-size-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-size-small.1">
-        <source>Here you can set the content font-size for &quot;h6&quot; - elements for small devices (e.g. phone).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h6&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h6&quot; - elements for small devices (e.g. phone).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h6&quot; - Elemente für kleine Geräte (z.B. Smartphones) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-size-medium.0">
         <source>$h6-content-font-size-medium</source>
         <target>$h6-content-font-size-medium</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-size-medium.1">
-        <source>Here you can set the content font-size for &quot;h6&quot; - elements for medium devices (e.g. tablet).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h6&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h6&quot; - elements for medium devices (e.g. tablet).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h6&quot; - Elemente für mittelgroße Geräte (z.B. Tablets) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-size.0">
         <source>$h6-content-font-size</source>
         <target>$h6-content-font-size</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-size.1">
-        <source>Here you can set the content font-size for &quot;h6&quot; - elements for large devices (e.g. desktop).</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftgröße der &quot;h6&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
+        <source>Here you can set thefont-size for &quot;h6&quot; - elements for large devices (e.g. desktop).</source>
+        <target>Hier können Sie die Schriftgröße der &quot;h6&quot; - Elemente für große Geräte (z.B. Desktop-Computer) einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-line-height.0">
         <source>$h6-content-line-height</source>
         <target>$h6-content-line-height</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-line-height.1">
-        <source>Here you can set the content line-height for &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Zeilenhöhe (line-height) der &quot;h6&quot; - Elemente einstellen.</target>
+        <source>Here you can set theline-height for &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie die Zeilenhöhe (line-height) der &quot;h6&quot; - Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h1-content-color.0">
@@ -1084,40 +1092,40 @@
         <target>$h1-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-color.1">
-        <source>Here you can set the content color for &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h1&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h1&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-color-invert.0">
         <source>$h1-content-color-invert</source>
         <target>$h1-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h1&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h1&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-weight.0">
         <source>$h1-content-font-weight</source>
         <target>$h1-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h1&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h1&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-letter-spacing.0">
         <source>$h1-content-letter-spacing</source>
         <target>$h1-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h1&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h1&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-transform.0">
         <source>$h1-content-transform</source>
         <target>$h1-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h1&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h1&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h1&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h1&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h2-content-color.0">
@@ -1125,40 +1133,40 @@
         <target>$h2-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-color.1">
-        <source>Here you can set the content color for &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h2&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h2&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-color-invert.0">
         <source>$h2-content-color-invert</source>
         <target>$h2-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h2&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h2&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-weight.0">
         <source>$h2-content-font-weight</source>
         <target>$h2-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h2&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h2&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-letter-spacing.0">
         <source>$h2-content-letter-spacing</source>
         <target>$h2-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h2&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h2&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-transform.0">
         <source>$h2-content-transform</source>
         <target>$h2-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h2-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h2&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h2&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h2&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h2&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h3-content-color.0">
@@ -1166,40 +1174,40 @@
         <target>$h3-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-color.1">
-        <source>Here you can set the content color for &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h3&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h3&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-color-invert.0">
         <source>$h3-content-color-invert</source>
         <target>$h3-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h3&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h3&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-weight.0">
         <source>$h3-content-font-weight</source>
         <target>$h3-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h3&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h3&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-letter-spacing.0">
         <source>$h3-content-letter-spacing</source>
         <target>$h3-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h3&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h3&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-transform.0">
         <source>$h3-content-transform</source>
         <target>$h3-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h3-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h3&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h3&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h3&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h3&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h4-content-color.0">
@@ -1207,40 +1215,40 @@
         <target>$h4-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-color.1">
-        <source>Here you can set the content color for &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h4&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h4&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-color-invert.0">
         <source>$h4-content-color-invert</source>
         <target>$h4-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h4&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h4&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-weight.0">
         <source>$h4-content-font-weight</source>
         <target>$h4-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h4&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h4&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-letter-spacing.0">
         <source>$h4-content-letter-spacing</source>
         <target>$h4-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h4&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h4&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-transform.0">
         <source>$h4-content-transform</source>
         <target>$h4-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h4-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h4&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h4&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h4&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h4&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h5-content-color.0">
@@ -1248,40 +1256,40 @@
         <target>$h5-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-color.1">
-        <source>Here you can set the content color for &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h5&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h5&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-color-invert.0">
         <source>$h5-content-color-invert</source>
         <target>$h5-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h5&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h5&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-weight.0">
         <source>$h5-content-font-weight</source>
         <target>$h5-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h5&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h5&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-letter-spacing.0">
         <source>$h5-content-letter-spacing</source>
         <target>$h5-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h5&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h5&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-transform.0">
         <source>$h5-content-transform</source>
         <target>$h5-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h5-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h5&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h5&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h5&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h5&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.h6-content-color.0">
@@ -1289,40 +1297,40 @@
         <target>$h6-content-color</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-color.1">
-        <source>Here you can set the content color for &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftfarbe (color) für &quot;h6&quot; - Elemente einstellen.</target>
+        <source>Here you can set thecolor for &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie die Schriftfarbe (color) für &quot;h6&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-color-invert.0">
         <source>$h6-content-color-invert</source>
         <target>$h6-content-color-invert</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-color-invert.1">
-        <source>Here you can set the inverted content color for &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie die invertierte Inhaltsbereich-Schriftfarbe (color) für &quot;h6&quot; - Elemente einstellen.</target>
+        <source>Here you can set the inverted color for &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie die invertierte Schriftfarbe (color) für &quot;h6&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-weight.0">
         <source>$h6-content-font-weight</source>
         <target>$h6-content-font-weight</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-font-weight.1">
-        <source>Here you can set the content font-weight for &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Schriftdicke (font-weight) für &quot;h6&quot; - Elemente einstellen.</target>
+        <source>Here you can set thefont-weight for &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) für &quot;h6&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-letter-spacing.0">
         <source>$h6-content-letter-spacing</source>
         <target>$h6-content-letter-spacing</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-letter-spacing.1">
-        <source>Here you can set the content letter-spacing for &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie den Inhaltsbereich-Buchstabenabstand (letter-spacing) für &quot;h6&quot; - Elemente einstellen.</target>
+        <source>Here you can set theletter-spacing for &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie den Buchstabenabstand (letter-spacing) für &quot;h6&quot; - Elemente einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-transform.0">
         <source>$h6-content-transform</source>
         <target>$h6-content-transform</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h6-content-transform.1">
-        <source>Here you can choose the content text-transformation &quot;h6&quot; - elements.</source>
-        <target>Hier können Sie die Inhaltsbereich-Text-Transformierung (text-transform) für &quot;h6&quot; - Elemente auswählen.</target>
+        <source>Here you can choose thetext-transformation &quot;h6&quot; - elements.</source>
+        <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h6&quot; - Elemente auswählen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.headline-spacing.0">
@@ -3195,7 +3203,7 @@
         <target>$x-spacing-large-m</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.x-spacing-large-m.1">
-        <source>Here you can set the content width for large horizontal spacing.</source>
+        <source>Here you can set thewidth for large horizontal spacing.</source>
         <target>Hier können Sie die Inhaltsbreite für den großen horizontalen Abstand einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.x-spacing-large-l.0">
@@ -3203,7 +3211,7 @@
         <target>$x-spacing-large-l</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.x-spacing-large-l.1">
-        <source>Here you can set the content width for medium horizontal spacing.</source>
+        <source>Here you can set thewidth for medium horizontal spacing.</source>
         <target>Hier können Sie die Inhaltsbreite für den mittleren horizontalen Abstand einstellen.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.x-spacing-small.0">
@@ -3211,7 +3219,7 @@
         <target>$x-spacing-small</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.x-spacing-small.1">
-        <source>Here you can set the content width for small horizontal spacing.</source>
+        <source>Here you can set thewidth for small horizontal spacing.</source>
         <target>Hier können Sie die Inhaltsbreite für den kleinen horizontalen Abstand einstellen.</target>
       </trans-unit>
 
