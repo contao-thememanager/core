@@ -29,7 +29,7 @@
   }
 }
 
-@mixin heading-typography($list, $disable-content-heading) {
+@mixin heading-typography($list, $activate-content-heading-settings) {
   @each $k, $v in get-heading-classlist(false) {
     #{$v} {
       color: var(--h#{$k}-clr);
