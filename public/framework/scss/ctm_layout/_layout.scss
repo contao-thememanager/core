@@ -45,6 +45,7 @@
 }
 
 #main {
+  flex: 1;
   order: 10;
 }
 
@@ -74,10 +75,6 @@
 
   #container > .inside {
     flex-direction: row;
-  }
-
-  #main {
-    flex: 1;
   }
 
   #left,
