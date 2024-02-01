@@ -13,12 +13,14 @@
     --h5-clr:#{$h5-color};
     --h6-clr:#{$h6-color};
 
-    --h1-c-clr:#{$h1-content-color};
-    --h2-c-clr:#{$h2-content-color};
-    --h3-c-clr:#{$h3-content-color};
-    --h4-c-clr:#{$h4-content-color};
-    --h5-c-clr:#{$h5-content-color};
-    --h6-c-clr:#{$h6-content-color};
+    @if ($disable-content-heading != 1) {
+      --h1-c-clr: #{$h1-content-color};
+      --h2-c-clr: #{$h2-content-color};
+      --h3-c-clr: #{$h3-content-color};
+      --h4-c-clr: #{$h4-content-color};
+      --h5-c-clr: #{$h5-content-color};
+      --h6-c-clr: #{$h6-content-color};
+    }
 
     --a-clr:#{$link-color-regular};
     --a-clr-hvr:#{$link-hover-color-regular};
@@ -65,12 +67,14 @@
     --h5-clr:#{$h5-color-invert};
     --h6-clr:#{$h6-color-invert};
 
-    --h1-c-clr:#{$h1-content-color-invert};
-    --h2-c-clr:#{$h2-content-color-invert};
-    --h3-c-clr:#{$h3-content-color-invert};
-    --h4-c-clr:#{$h4-content-color-invert};
-    --h5-c-clr:#{$h5-content-color-invert};
-    --h6-c-clr:#{$h6-content-color-invert};
+    @if ($disable-content-heading != 1) {
+      --h1-c-clr: #{$h1-content-color-invert};
+      --h2-c-clr: #{$h2-content-color-invert};
+      --h3-c-clr: #{$h3-content-color-invert};
+      --h4-c-clr: #{$h4-content-color-invert};
+      --h5-c-clr: #{$h5-content-color-invert};
+      --h6-c-clr: #{$h6-content-color-invert};
+    }
 
     --a-clr:#{$link-color-invert};
     --a-clr-hvr:#{$link-hover-color-invert};

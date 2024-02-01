@@ -29,7 +29,7 @@
   }
 }
 
-@mixin heading-typography($list) {
+@mixin heading-typography($list, $disable-content-heading) {
   @each $k, $v in get-heading-classlist(false) {
     #{$v} {
       color: var(--h#{$k}-clr);
@@ -37,11 +37,13 @@
       @each $class, $style in map-get(map-get($list, normal), $k) {
         #{$class}: $style;
       }
-      #main & {
-        color: var(--h#{$k}-c-clr);
-        font-size: var(--h#{$k}-c-fs);
-        @each $class, $style in map-get(map-get($list, content), $k) {
-          #{$class}: $style;
+      @if ($disable-content-heading != 1) {
+        #main & {
+          color: var(--h#{$k}-c-clr);
+          font-size: var(--h#{$k}-c-fs);
+          @each $class, $style in map-get(map-get($list, content), $k) {
+            #{$class}: $style;
+          }
         }
       }
     }
