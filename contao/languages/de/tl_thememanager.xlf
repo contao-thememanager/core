@@ -881,13 +881,13 @@
         <target>Hier können Sie die Text-Transformierung (text-transform) für &quot;h6&quot; - Elemente auswählen.</target>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.disable-content-heading.0">
-        <source>Use heading values</source>
-        <target>Überschriften-Werte nutzen</target>
+      <trans-unit id="tl_thememanager.activate-content-heading-settings.0">
+        <source>Extend heading settings</source>
+        <target>Überschriften-Einstellungen erweitern</target>
       </trans-unit>
-      <trans-unit id="tl_thememanager.disable-content-heading.1">
-        <source>Deactivates the following fields and uses the values set in &lt;em&gt;headings&lt;/em&gt;. The CSS is not compiled in this case.</source>
-        <target>Deaktiviert die nachfolgenden Felder und verwendet die in &lt;em&gt;Überschriften&lt;/em&gt; eingestellten Werte. Das CSS wird in diesem Fall nicht kompiliert.</target>
+      <trans-unit id="tl_thememanager.activate-content-heading-settings.1">
+        <source>Activates the following fields and allows you to configure the headings in these layout areas. This function generates additional CSS.</source>
+        <target>Aktiviert die nachfolgenden Felder und erlaubt es, die Überschriften in diesen Layout-Bereichen zu konfigurieren. Diese Funktion generiert zusätzliches CSS.</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-small.0">
         <source>$h1-content-font-size-small</source>

@@ -37,7 +37,7 @@
       @each $class, $style in map-get(map-get($list, normal), $k) {
         #{$class}: $style;
       }
-      @if ($disable-content-heading != 1) {
+      @if ($activate-content-heading-settings) {
         #main & {
           color: var(--h#{$k}-c-clr);
           font-size: var(--h#{$k}-c-fs);

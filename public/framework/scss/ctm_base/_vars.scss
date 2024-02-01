@@ -93,7 +93,7 @@
   --h5-clr:#{$h5-color};
   --h6-clr:#{$h6-color};
 
-  @if ($disable-content-heading != 1) {
+  @if ($activate-content-heading-settings) {
     --h1-c-clr: #{$h1-content-color};
     --h2-c-clr: #{$h2-content-color};
     --h3-c-clr: #{$h3-content-color};
@@ -109,7 +109,7 @@
   --h5-fs:#{$h5-font-size-small};
   --h6-fs:#{$h6-font-size-small};
 
-  @if ($disable-content-heading != 1) {
+  @if ($activate-content-heading-settings) {
     --h1-c-fs: #{$h1-content-font-size-small};
     --h2-c-fs: #{$h2-content-font-size-small};
     --h3-c-fs: #{$h3-content-font-size-small};
@@ -192,7 +192,7 @@
     --h5-fs:#{$h5-font-size-medium};
     --h6-fs:#{$h6-font-size-medium};
 
-    @if ($disable-content-heading != 1) {
+    @if ($activate-content-heading-settings) {
       --h1-c-fs: #{$h1-content-font-size-medium};
       --h2-c-fs: #{$h2-content-font-size-medium};
       --h3-c-fs: #{$h3-content-font-size-medium};
@@ -213,7 +213,7 @@
     --h5-fs:#{$h5-font-size};
     --h6-fs:#{$h6-font-size};
 
-    @if ($disable-content-heading != 1) {
+    @if ($activate-content-heading-settings) {
       --h1-c-fs: #{$h1-content-font-size};
       --h2-c-fs: #{$h2-content-font-size};
       --h3-c-fs: #{$h3-content-font-size};

@@ -13,7 +13,7 @@
     --h5-clr:#{$h5-color};
     --h6-clr:#{$h6-color};
 
-    @if ($disable-content-heading != 1) {
+    @if ($activate-content-heading-settings) {
       --h1-c-clr: #{$h1-content-color};
       --h2-c-clr: #{$h2-content-color};
       --h3-c-clr: #{$h3-content-color};
@@ -67,7 +67,7 @@
     --h5-clr:#{$h5-color-invert};
     --h6-clr:#{$h6-color-invert};
 
-    @if ($disable-content-heading != 1) {
+    @if ($activate-content-heading-settings) {
       --h1-c-clr: #{$h1-content-color-invert};
       --h2-c-clr: #{$h2-content-color-invert};
       --h3-c-clr: #{$h3-content-color-invert};

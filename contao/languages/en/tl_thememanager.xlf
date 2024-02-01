@@ -669,11 +669,11 @@
         <source>Here you can choose the text-transformation &quot;h6&quot; - elements.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.disable-content-heading.0">
-        <source>Use heading values</source>
+      <trans-unit id="tl_thememanager.activate-content-heading-settings.0">
+        <source>Extend heading settings</source>
       </trans-unit>
-      <trans-unit id="tl_thememanager.disable-content-heading.1">
-        <source>Deactivates the following fields and uses the values set in &lt;em&gt;headings&lt;/em&gt;. The CSS is not compiled in this case.</source>
+      <trans-unit id="tl_thememanager.activate-content-heading-settings.1">
+        <source>Activates the following fields and allows you to configure the headings in these layout areas. This function generates additional CSS.</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.h1-content-font-size-small.0">
         <source>$h1-content-font-size-small</source>
