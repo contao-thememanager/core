@@ -1,12 +1,19 @@
 services:
-  ContaoThemeManager\Core\Migration\ContentElementsMigration:
+  ContaoThemeManager\Core\Migration\Version200\ContentElementsMigration:
     arguments:
       - '@database_connection'
       - '@contao.framework'
     tags:
       - { name: contao.migration, priority: 0 }
 
-  ContaoThemeManager\Core\Migration\ThemeConfigurationMigration:
+  ContaoThemeManager\Core\Migration\Version200\ArticleSpacingMigration:
+    arguments:
+      - '@database_connection'
+      - '@contao.framework'
+    tags:
+      - { name: contao.migration, priority: 0 }
+
+  ContaoThemeManager\Core\Migration\Version200\LayoutContentMigration:
     arguments:
       - '@database_connection'
       - '@contao.framework'

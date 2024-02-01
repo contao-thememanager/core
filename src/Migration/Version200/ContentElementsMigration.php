@@ -8,7 +8,7 @@ declare(strict_types=1);
  * (c) https://www.oveleon.de/
  */
 
-namespace ContaoThemeManager\Core\Migration;
+namespace ContaoThemeManager\Core\Migration\Version200;
 
 use Contao\CoreBundle\Migration\AbstractMigration;
 use Contao\CoreBundle\Migration\MigrationResult;
