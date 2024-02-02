@@ -14,7 +14,7 @@
   --text-clr-base:#{$text-color-regular};
   --text-clr-invert:#{$text-color-invert};
 
-  --font-family:#{$font-family-base};
+  --font-family:#{inspect($font-family-base)};
   --fs-base:#{$font-size-base};
 
   --leading-base:#{$line-height-base};
