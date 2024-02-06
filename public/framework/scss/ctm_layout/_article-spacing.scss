@@ -1,9 +1,16 @@
-// Y-spacings (vertical top and bottom)
-$spacings-list-init: (
-       1: $article-spacing-small, 2: $article-spacing-medium, 3: $article-spacing-large
+// Outer paddings
+$outer-paddings-list: (
+  0:  $article-outer-padding,
+  xs: $article-outer-padding-xs,
+  s:  $article-outer-padding-s,
+  m:  0px,
+  l:  0px,
+  xl: 0px
 );
 
+// Y-spacings (vertical top and bottom)
 $spacings-list-bp: (
+  0:  (1: $article-spacing-small,    2: $article-spacing-medium,    3: $article-spacing-large),
   xs: (1: $article-spacing-xs-small, 2: $article-spacing-xs-medium, 3: $article-spacing-xs-large),
   s:  (1: $article-spacing-s-small,  2: $article-spacing-s-medium,  3: $article-spacing-s-large),
   m:  (1: $article-spacing-m-small,  2: $article-spacing-m-medium,  3: $article-spacing-m-large),
@@ -49,43 +56,10 @@ main .article_inside {
   --art-px:#{divide($grid-gutter-width,2)};
 }
 
-:root {
-  --art-ox:#{$article-outer-padding};
-  --art-py-1:#{$article-spacing-small};
-  --art-py-2:#{$article-spacing-medium};
-  --art-py-3:#{$article-spacing-large};
-}
-
-@each $size, $spacing in $spacings-list-init {
-  .art-py-#{$size} {
-    &, #container {
-      > .inside {
-        padding-top:    var(--art-py-#{$size});
-        padding-bottom: var(--art-py-#{$size});
-      }
-    }
-  }
-}
-
-@each $size, $spacing in $spacings-list-init {
-  .art-pt-#{$size} > .inside { padding-top: var(--art-py-#{$size}); }
-  .art-pb-#{$size} > .inside { padding-bottom: var(--art-py-#{$size}); }
-  .art-ol-self-#{$size} {
-    padding-bottom: var(--art-py-#{$size});
-    + * { margin-bottom: calc(var(--art-py-#{$size}) * -1);
-      > .inside { top: calc(var(--art-py-#{$size}) * -1);}
-    }
-  }
-  .art-ol-next-#{$size} {
-    margin-top: calc(var(--art-py-#{$size}) * -1);
-    > .inside { top: var(--art-py-#{$size});}
-    + * { padding-top: var(--art-py-#{$size});}
-  }
-}
-
-@each $bp in map-keys($breakpoints) {
+@each $bp in map-keys(map-merge((0:0),$breakpoints)) {
   $infix: breakpoint-infix($bp);
   $list: map-get($spacings-list-bp, $bp);
+  $index: index(map-keys(map-merge((0:0),$breakpoints)),$bp);
   @if ($bp == 'l') {
     $bp-l-gtr-none: sub(map-get($breakpoints,$bp),$grid-gutter-width,'px');
     @media (min-width:$bp-l-gtr-none) {
@@ -98,23 +72,60 @@ main .article_inside {
       .mr-art { margin-right:var(--art-mx)!important }
     }
   }
-  @include media-breakpoint($bp) {
-    @if map-has-key($spacings-list-bp, $bp) {
+  @if map-has-key($spacings-list-bp, $bp) {
+    @include media-breakpoint($bp) {
       :root {
-        @if ($bp == 'xs') {--art-ox:#{$article-outer-padding-xs};}
-        @if ($bp == 's')  {--art-ox:#{$article-outer-padding-s};}
-        @if ($bp == 'm')  {--art-ox:0px;}
-        @each $size, $spacing in $list {--art-py-#{$size}:#{$spacing};}
+        $outer-padding: map-get($outer-paddings-list, $bp);
+        // Check whether custom vars have to be set for the next breakpoint
+        @if ($bp == 0) {
+          --art-ox:#{$outer-padding};
+        } @else if #{nth(nth($outer-paddings-list,$index - 1),2)} != #{$outer-padding} {
+          --art-ox:#{map-get($outer-paddings-list, $bp)};
+        }
+        @each $size, $spacing in $list {
+          @if ($bp == 0) {
+            --art-py-#{$size}:#{$spacing};
+          } @else if(#{nth(nth(nth(nth($spacings-list-bp,$index - 1), 2), $size),2)} != #{$spacing}) {
+            --art-py-#{$size}:#{$spacing};
+          }
+        }
       }
-    }
-    @if ($bp == 'm') {
-      .art-px-3 {--art-wdth:#{$x-spacing-large-m};}
-      [class*=art-px] {
-        &, #container {
-          > .inside {
-            max-width: var(--art-wdth, auto);
-            margin-left: auto !important;
-            margin-right: auto !important;
+      @if ($bp == 0) {
+        @each $size, $spacing in $list {
+          .art-py-#{$size} {
+            &, #container {
+              > .inside {
+                padding-top:    var(--art-py-#{$size});
+                padding-bottom: var(--art-py-#{$size});
+              }
+            }
+          }
+        }
+        @each $size, $spacing in $list {
+          .art-pt-#{$size} > .inside { padding-top: var(--art-py-#{$size}); }
+          .art-pb-#{$size} > .inside { padding-bottom: var(--art-py-#{$size}); }
+          .art-ol-self-#{$size} {
+            padding-bottom: var(--art-py-#{$size});
+            + * { margin-bottom: calc(var(--art-py-#{$size}) * -1);
+              > .inside { top: calc(var(--art-py-#{$size}) * -1);}
+            }
+          }
+          .art-ol-next-#{$size} {
+            margin-top: calc(var(--art-py-#{$size}) * -1);
+            > .inside { top: var(--art-py-#{$size});}
+            + * { padding-top: var(--art-py-#{$size});}
+          }
+        }
+      }
+      @if ($bp == 'm') {
+        .art-px-3 {--art-wdth:#{$x-spacing-large-m};}
+        [class*=art-px] {
+          &, #container {
+            > .inside {
+              max-width: var(--art-wdth, auto);
+              margin-left: auto !important;
+              margin-right: auto !important;
+            }
           }
         }
       }
