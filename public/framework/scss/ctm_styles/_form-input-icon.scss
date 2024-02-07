@@ -16,7 +16,7 @@
       border: $form-input-border-width $form-input-border-style;
       border-color: inherit;
 
-      font: normal normal 400 var(--fi-fs,#{$form-field-icon-size}) #{$form-input-font-family};
+      font: normal normal 400 var(--fi-fs,#{$form-field-icon-size}) 'ctm-icon' #{$form-input-font-family};
 
       -webkit-font-smoothing: antialiased;
       speak: none;
