@@ -16,9 +16,11 @@
       border: $form-input-border-width $form-input-border-style;
       border-color: inherit;
 
-      font: normal normal 400 var(--fi-fs,#{$form-field-icon-size}) 'ctm-icon' #{$form-input-font-family};
+      font: normal normal normal var(--fi-fs,#{$form-field-icon-size}) $icon-font-family, $form-input-font-family;
 
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
       speak: none;
 
       width:     36px;

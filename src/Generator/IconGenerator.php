@@ -241,21 +241,18 @@ class IconGenerator
                 'font-display:block;'
             ]);
 
-            // Add icon styles
-            $iconSelector1 = '[class^="i-"]';
-            $iconSelector2 = '[class*=" i-"]';
-            $strBefore = ':before';
-            $formIconSelector = '.widget.fi>.input-container'.$strBefore;
+            // Add icon styles (Use specific selectors due to form-icon ('.fi-')
+            $iconSelector1 = '[class^="i-"]:before';
+            $iconSelector2 = '[class*=" i-"]:before';
             $css .= vsprintf(
-                "$iconSelector1,$iconSelector2{%s}$iconSelector1$strBefore,$iconSelector2$strBefore,$formIconSelector{font-family:'%s';%s}",[
-                    'vertical-align: middle;',
+                "$iconSelector1,$iconSelector2{%s '%s';%s%s%s}",[
+                    'font:normal normal normal 1em/1',
                     self::FONTFAMILY_ICON,
-                    'font-style:normal;font-weight:normal;font-variant:normal;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;speak:none;'
+                    'vertical-align:middle;',
+                    '-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;speak:none;',
+                    'padding-right:0.3em;content:var(--ico)'
                 ]
             );
-
-            // Prepend additional css
-            $css .= $iconSelector1.$strBefore.','.$iconSelector2.$strBefore.'{padding-right:0.3em;content:var(--ico);}';
 
             // Add icons
             foreach ($glyphs as $icon)
