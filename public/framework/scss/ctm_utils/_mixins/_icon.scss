@@ -3,6 +3,7 @@
   display: inline-block;
   font: normal normal normal #{$font-size} $icon-font-family;
   line-height: $line-height;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing:grayscale;
   speak: none;
