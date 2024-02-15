@@ -1,4 +1,4 @@
-@mixin icon($content, $font-size: 1em, $line-height: inherit) {
+@mixin icon($content, $font-size: 1em, $line-height: 1) {
   content: $content;
   display: inline-block;
   font: normal normal normal #{$font-size} $icon-font-family;
