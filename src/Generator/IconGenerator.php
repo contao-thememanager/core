@@ -246,9 +246,9 @@ class IconGenerator
             $iconSelector2 = '[class*=" i-"]:before';
             $css .= vsprintf(
                 "$iconSelector1,$iconSelector2{%s '%s';%s%s%s}",[
-                    'font:normal normal normal 1em/1',
+                    'font:normal normal normal 1em',
                     self::FONTFAMILY_ICON,
-                    'vertical-align:middle;',
+                    'line-height:inherit;vertical-align:middle;',
                     '-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;speak:none;',
                     'padding-right:0.3em;content:var(--ico)'
                 ]
