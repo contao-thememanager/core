@@ -41,7 +41,7 @@
     "oveleon/contao-component-style-manager": "^3.4.1",
     "oveleon/contao-theme-compiler-bundle": "^1.7.1",
     "oveleon/contao-config-driver-bundle": "^1.3.1",
-    "madeyourday/contao-rocksolid-custom-elements": "^2.4",
+    "madeyourday/contao-rocksolid-custom-elements": "^2.4.8",
     "madeyourday/contao-rocksolid-icon-picker": "^2.1.2",
     "symfony/filesystem": "^5.4 || ^6.0"
   },
