@@ -1,0 +1,90 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% set sm = styleManager(data) %}
+
+{% set headline2 = data.headline2|tm_deserialize %}
+
+{% set hlClasses = sm.prepare('gHeadline').format(' %s') %}
+
+{% set insideClasses =
+    sm.prepare('cLayout', ['imageText']).format(' image_text') ~
+    sm.prepare('cLayout', ['iconText']).format(' icon_text') ~
+    sm.prepare('cLayout').format(' %s') ~
+    sm.prepare('eLayout').format(' %s') ~
+    sm.prepare('cText').format(' %s') ~
+    sm.prepare('eText').format(' %s') ~
+    sm.prepare('ePadding').format(' %s') ~
+    sm.prepare('cSpacing').format(' %s') ~
+    sm.prepare('cPadding').format(' %s') ~
+    sm.prepare('cBackground').format(' %s') ~
+    sm.prepare('eBackground').format(' %s')
+%}
+
+{% set sliderConfig =
+    sm.prepare('sliderConfig',['preset']).format(" data-slider-config='%s'",'json') ~
+    sm.prepare('slider').format(" data-slider='%s'",'json') ~
+    sm.prepare('sliderXS').format(" data-slider-xs='%s'",'json') ~
+    sm.prepare('sliderS').format(" data-slider-s='%s'",'json') ~
+    sm.prepare('sliderM').format(" data-slider-m='%s'",'json') ~
+    sm.prepare('sliderL').format(" data-slider-l='%s'",'json') ~
+    sm.prepare('sliderXL').format(" data-slider-xl='%s'",'json')
+%}
+
+{% set isListOrSlider = sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
+
+{# Base #}
+
+{%- block inner %}
+    <div class="inside{{ insideClasses }}">
+
+        {% if headline.text %}
+            {{ block('headline_component') }}
+        {% endif %}
+
+        {% if isListOrSlider %}
+            <div class="c_list grid-list{{ sm.prepare('eGridList').format(' %s') }}"{{ sliderConfig }}>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+
+        {% if isListOrSlider %}
+            </div>
+        {% endif %}
+
+        {# ToDo: Check list_component #}
+        {#{% if add_pagination %}
+            <div class="pagination-container{{ sm.prepare('gPagination').format(' %s') }}">
+                {{ parent() }}
+            </div>
+        {% endif %}#}
+
+    </div>
+{% endblock %}
+
+{# Headline classes #}
+
+{% block headline_attributes %}
+    {% set headline_attributes = attrs(headline.attributes|default)
+        .addClass(data.headlineStyle)
+    %}
+    {{ headline_attributes }}
+{% endblock %}
+
+{# Headline Wrapper and Headline2 #}
+
+{% block headline_component %}
+    <div class="c_headline{{ hlClasses }}">
+        {{ parent() }}
+
+        {% if headline2.value %}
+            {% set headline_two_tag_name = headline2.unit|default('h3') %}
+            {% set headline_two_attributes = attrs(headline2.attributes|default)
+                .addClass(data.headline2Style)
+            %}
+
+            <{{ headline_two_tag_name }}{{ headline_two_attributes }}>
+                {{ headline2.value|insert_tag_raw }}
+            </{{ headline_two_tag_name }}>
+        {% endif %}
+    </div>
+{% endblock %}

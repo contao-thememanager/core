@@ -7,6 +7,7 @@ use Contao\StringUtil;
 use Contao\Template;
 
 /**
+ * @deprecated as of ThemeManager 2.1, to be removed in ThemeManager 2.2
  * @Hook("parseTemplate")
  */
 class ParseTemplateListener
