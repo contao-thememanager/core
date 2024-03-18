@@ -1,0 +1,30 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+{% use "@Contao/component/_headline.html.twig" %}
+
+{% block headline_component %}
+
+    {% set headline = headline|default(_context) %}
+    {% set tag_name = headline.tag_name|default('h1') %}
+
+    {% set headline_attributes = attrs(headline.attributes|default)
+        .addClass(data.headlineStyle)
+    %}
+
+    {# ToDo: headlineStyle #}
+    <{{ tag_name }}{% block headline_attributes %}{{ headline.attributes|default }}{% endblock %}>
+    {%- block headline_inner -%}
+        {{ headline.text|insert_tag_raw }}
+    {%- endblock -%}
+    </{{ tag_name }}>
+    {% if headline2.value %}
+        {% set headline_two_tag_name = headline2.unit|default('h3') %}
+        {% set headline_two_attributes = attrs(headline2.attributes|default)
+            .addClass(data.headline2Style)
+        %}
+
+        <{{ headline_two_tag_name }}{{ headline_two_attributes }}>
+        {{ headline2.value|insert_tag_raw }}
+        </{{ headline_two_tag_name }}>
+    {% endif %}
+
+{% endblock %}
