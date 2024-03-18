@@ -4,15 +4,14 @@ namespace ContaoThemeManager\Core\Twig;
 
 use Contao\StringUtil;
 use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Twig\TwigFunction;
 
 class ThemeManagerExtension extends AbstractExtension
 {
-    public function getFilters(): array
+    public function getFunctions(): array
     {
-        // ToDo: change to deserialize and add legacy wrapper
         return [
-            new TwigFilter('tm_deserialize', [$this, 'deserialize'])
+            new TwigFunction('tm_deserialize', [$this, 'deserialize'])
         ];
     }
 

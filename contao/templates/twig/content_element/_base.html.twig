@@ -2,7 +2,7 @@
 
 {% set sm = styleManager(data) %}
 
-{% set headline2 = data.headline2|tm_deserialize %}
+{% set headline2 = tm_deserialize(data.headline2) %}
 
 {% set hlClasses = sm.prepare('gHeadline').format(' %s') %}
 
