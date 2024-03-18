@@ -1,0 +1,5 @@
+{% extends "@Contao/content_element/teaser.html.twig" %}
+
+{% block headline %}
+    {% include "@Contao/component/_headline.html.twig" with {headline: {tag_name: 'h2', text: article.title}} %}
+{% endblock %}

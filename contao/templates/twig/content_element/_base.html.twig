@@ -6,6 +6,8 @@
 
 {% set hlClasses = sm.prepare('gHeadline').format(' %s') %}
 
+{% set aClasses = sm.prepare('eLink').format(' %s') %}
+
 {% set insideClasses =
     sm.prepare('cLayout', ['imageText']).format(' image_text') ~
     sm.prepare('cLayout', ['iconText']).format(' icon_text') ~
@@ -32,10 +34,21 @@
 
 {% set isListOrSlider = sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
 
+{% set isImage = type == 'image' %}
+{% set isHeadline = type == 'headline' %}
+{% set contentHeadlineClasses = 'c_headline' ~ hlClasses %}
+
+{# Add legacy classes for certain types #}
+{% set attributes = attrs()
+    .addClass('ce_image', isImage)
+    .addClass('ce_headline', isHeadline)
+    .mergeWith(attributes|default)
+%}
+
 {# Base #}
 
 {%- block inner %}
-    <div class="inside{{ insideClasses }}">
+    <div class="{{ isHeadline ? contentHeadlineClasses : 'inside' }}{{ insideClasses }}">
 
         {% if headline.text %}
             {{ block('headline_component') }}

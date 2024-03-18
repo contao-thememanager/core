@@ -1,0 +1,20 @@
+{% extends "@Contao/content_element/downloads.html.twig" %}
+
+{% set sm = styleManager(data) %}
+
+{% set listClasses = sm.prepare('eList').format(' %s') %}
+
+{% set aClasses = sm.prepare('eLink').exclude(['icon','direction']).format(' %s') %}
+
+{% set spanClasses = sm.prepare('eLink',['icon','direction']).format(' %s') %}
+
+{% block download_link_attributes %}
+    {% block list_attributes %}
+        {{ list_attributes.addClass(listClasses) }}
+    {% endblock %}
+    {{ download_link_attributes.addClass('c_link').addClass(aClasses) }}
+{% endblock %}
+
+{%- block download_link_inner %}
+    <span class="name{{ spanClasses }}">{{ text }}</span>
+{% endblock -%}

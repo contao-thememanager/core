@@ -1,0 +1,9 @@
+{% extends "@Contao/content_element/hyperlink.html.twig" %}
+
+{% block text_link %}
+    {% set link_attributes = attrs(link_attributes|default)
+        .addClass('c_link')
+        .addClass(aClasses)
+    %}
+    {{ parent() }}
+{% endblock %}
