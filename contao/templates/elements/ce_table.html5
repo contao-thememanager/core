@@ -13,43 +13,37 @@
       <?php endif; ?>
 
       <?php if ($this->useHeader): ?>
-        <?php if (!$blnContao5): ?>
-          <thead>
+        <thead>
           <tr>
-            <?php foreach ($this->header as $col): ?>
-              <th class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
-            <?php endforeach; ?>
+            <?php if (!$blnContao5): ?>
+              <?php foreach ($this->header as $col): ?>
+                <th class="<?= $col['class'] ?>"><?= $col['content'] ?></th>
+              <?php endforeach; ?>
+            <?php else: ?>
+              <?php foreach ($this->header as $i => $col): ?>
+                <?php if (0 == $i && $this->useLeftTh): ?>
+                  <th class="unsortable"><?= $col ?></th>
+                <?php else: ?>
+                  <th><?= $col ?></th>
+                <?php endif; ?>
+              <?php endforeach; ?>
+            <?php endif; ?>
           </tr>
-          </thead>
-        <?php else: ?>
-          <thead>
-          <tr>
-            <?php foreach ($this->header as $i => $col): ?>
-              <?php if (0 == $i && $this->useLeftTh): ?>
-                <th class="unsortable"><?= $col ?></th>
-              <?php else: ?>
-                <th><?= $col ?></th>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          </tr>
-          </thead>
-        <?php endif; ?>
+        </thead>
       <?php endif; ?>
 
       <?php if ($this->useFooter): ?>
-        <?php if (!$blnContao5): ?>
-          <tfoot>
-            <tr>
-              <?php foreach ($this->footer as $col): ?>
+        <tfoot>
+          <tr>
+            <?php foreach ($this->footer as $col): ?>
+              <?php if (!$blnContao5): ?>
                 <td class="<?= $col['class'] ?>"><?= $col['content'] ?></td>
-              <?php endforeach; ?>
-            </tr>
-          </tfoot>
-        <?php else: ?>
-          <?php foreach ($this->footer as $col): ?>
-            <td><?= $col ?></td>
-          <?php endforeach; ?>
-        <?php endif; ?>
+              <?php else: ?>
+                <td><?= $col ?></td>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </tr>
+        </tfoot>
       <?php endif; ?>
 
       <tbody>
@@ -66,17 +60,17 @@
             </tr>
           <?php endforeach; ?>
         <?php else: ?>
-            <?php foreach ($this->body as $row): ?>
-              <tr>
-                <?php foreach ($row as $i => $col): ?>
-                  <?php if (0 == $i && $this->useLeftTh): ?>
-                    <th scope="row"><?= $col ?></th>
-                  <?php else: ?>
-                    <td><?= $col ?></td>
-                  <?php endif; ?>
-                <?php endforeach; ?>
-              </tr>
-            <?php endforeach; ?>
+          <?php foreach ($this->body as $row): ?>
+            <tr>
+              <?php foreach ($row as $i => $col): ?>
+                <?php if (0 == $i && $this->useLeftTh): ?>
+                  <th scope="row"><?= $col ?></th>
+                <?php else: ?>
+                  <td><?= $col ?></td>
+                <?php endif; ?>
+              <?php endforeach; ?>
+            </tr>
+          <?php endforeach; ?>
         <?php endif; ?>
       </tbody>
     </table>
