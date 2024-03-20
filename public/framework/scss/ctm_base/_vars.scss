@@ -48,7 +48,10 @@
   // Header
   --hdr-hght:#{$header-height};
   --header-bg:#{$header-bg};
+
+  // Navigation
   --nav-bhr:#{$navigation-behaviour-min-width};
+  --nav-fs:#{$navigation-item-font-size};
 
   // Grid
   --columns:#{$grid-columns};
@@ -80,6 +83,7 @@
   --e-m:#{$element-spacing-small};
 
   // Typography
+  --a-fw:#{$link-font-weight};
   --a-clr:#{$link-color-regular};
   --a-clr-hvr:#{$link-hover-color-regular};
   --a-td:#{$link-decoration-regular};
