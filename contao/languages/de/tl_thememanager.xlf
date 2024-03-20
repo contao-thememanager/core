@@ -3114,6 +3114,15 @@
         <target>Hier können Sie durch Komma getrennte Seitenverhältnisse im Format &lt;strong&gt;(x:y)&lt;/strong&gt; eingeben, die innerhalb von Bildelementen verfügbar sein sollen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.background-sizes.0">
+        <source>$background-sizes</source>
+        <target>$background-sizes</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.background-sizes.1">
+        <source>Here you can enter comma-separated background sizes &lt;em&gt;(e.g.: 50px, 20% 30%)&lt;/em&gt; that will be available within the background options.</source>
+        <target>Hier können Sie durch Komma getrennte Hintergrundgrößen &lt;em&gt;(z.B.: 50px, 20% 30%)&lt;/em&gt; eingeben, die innerhalb der Hintergrundoptionen verfügbar sein sollen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.breakpoints.0">
         <source>$breakpoints</source>
         <target>$breakpoints</target>

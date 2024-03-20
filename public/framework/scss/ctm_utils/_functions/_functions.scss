@@ -462,7 +462,7 @@
 //
 @function selector-split($string, $separator) {
   $split-arr: ();
-  $index : str-index($string, $separator);
+  $index: str-index($string, $separator);
 
   @while $index != null {
     $item:      str-slice($string, 1, $index - 1);
@@ -531,4 +531,25 @@
   }
 
   @return join((), $result, $separator, $bracketed);
+}
+
+// Replace `$search` with `$replace` in `$string`
+// @author Kitty Giraudel
+//
+// @example
+// str-replace('foo % bar', '%', 'baz') => "foo baz bar"
+//
+// @param $string [Sass::Script::Value::String]
+// @param $string [Sass::Script::Value::String]
+// @param $string [Sass::Script::Value::String]
+// @return [Sass::Script::Value::String]
+//
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
 }

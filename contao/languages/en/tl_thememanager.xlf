@@ -2363,6 +2363,13 @@
         <source>Here you can enter comma-separated aspect ratios in the format &lt;strong&gt;(x:y)&lt;/strong&gt; that will be available within image elements.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.background-sizes.0">
+        <source>$background-sizes</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.background-sizes.1">
+        <source>Here you can enter comma-separated background sizes &lt;em&gt;(e.g.: 50px, 20% 30%)&lt;/em&gt; that will be available within the background options.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.breakpoints.0">
         <source>$breakpoints</source>
       </trans-unit>

@@ -483,6 +483,7 @@ $selection-bg:                                var(--clr-primary) !default;
 $selection-bg-invert:                         var(--body-bg) !default;
 
 $aspect-ratios:                               ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;
+$background-sizes:                            '' !default;
 
 // Breakpoints
 $breakpoints: (
