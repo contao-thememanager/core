@@ -9,7 +9,7 @@ p {
 }
 
 a {
-  font-weight: $link-font-weight;
+  font-weight: var(--a-fw);
 
   color: var(--a-clr);
   text-decoration: var(--a-td);

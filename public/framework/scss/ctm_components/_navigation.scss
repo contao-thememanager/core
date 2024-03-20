@@ -16,7 +16,7 @@
     strong {
       display: block;
       padding: $navigation-item-padding;
-      font-size: $navigation-item-font-size;
+      font-size: var(--nav-fs);
       font-weight: $navigation-item-font-weight;
       white-space: nowrap;
     }

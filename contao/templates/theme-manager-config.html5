@@ -25,7 +25,7 @@
             '{nav_legend:hide ctm-group palette-group[modules_header]},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
             '{breadcrumb_legend:hide},breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
             '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
-            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios;' .
+            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios,background-sizes;' .
             '{breakpoint_legend:hide ctm-group palette-group[layout_header]},breakpoints;' .
             '{layout_behavior_legend:hide ctm-group},layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
             '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-medium,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-large,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-options-vheight,article-options-height;' .
@@ -2480,7 +2480,13 @@
             'default'                 => '(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['aspect-ratios'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'clr'],
+            'eval'                    => ['placeholder'=>'(4:5),(1:1),(4:3),(3:2),(16:10),(16:9)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w50 clr'],
+        ],
+        'background-sizes' => [
+            'default'                 => '',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['background-sizes'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w50'],
         ],
 
         // Breakpoints

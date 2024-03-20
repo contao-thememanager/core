@@ -8,6 +8,10 @@
 
 // Contao ThemeManager
 use Contao\CoreBundle\ContaoCoreBundle;
+use ContaoThemeManager\Core\Generator\BackgroundImageGenerator;
+use ContaoThemeManager\Core\Generator\ConfigGenerator;
+use ContaoThemeManager\Core\Generator\IconGenerator;
+use ContaoThemeManager\Core\ThemeManager;
 
 $GLOBALS['CTM_SETTINGS']['iconFont'] = '';
 
@@ -28,14 +32,11 @@ $GLOBALS['TC_SOURCES'] = [
     ]
 ];
 
-$GLOBALS['TC_HOOKS']['compilerParseConfig'][] = ['ContaoThemeManager\Core\ThemeManager', 'onParseThemeManagerConfiguration'];
+$GLOBALS['TC_HOOKS']['compilerParseConfig'][] = [ThemeManager::class, 'onParseThemeManagerConfiguration'];
 
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\IconGenerator', 'generate'];
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\BackgroundImageGenerator', 'generate'];
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateBackendCss'];
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateImageTextWidths'];
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateArticleHeight'];
-$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = ['ContaoThemeManager\Core\Generator\ConfigGenerator', 'generateAspectRatios'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = [IconGenerator::class, 'generate'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = [BackgroundImageGenerator::class, 'generate'];
+$GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = [ConfigGenerator::class, 'generate'];
 
 // Wrapper elements
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';

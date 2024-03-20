@@ -39,6 +39,10 @@ a.inside {
   // Background size | default: 'cover'
   &--auto    {--bgis:auto;}
   &--contain {--bgis:contain;}
+
+  @if $background-sizes != '' {
+    @include generate-properties('&s','bgis',$background-sizes);
+  }
 }
 
 [class*="i-bgi-"] {
@@ -79,6 +83,10 @@ a.inside {
   // Background size | default: 'cover'
   &--auto    {--i-bgis:auto;}
   &--contain {--i-bgis:contain;}
+
+  @if $background-sizes != '' {
+    @include generate-properties('&s','i-bgis',$background-sizes);
+  }
 }
 
 // Reset classes
