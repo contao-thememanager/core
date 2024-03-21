@@ -25,7 +25,7 @@
             '{nav_legend:hide ctm-group palette-group[modules_header]},navigation-behaviour-min-width,navigation-item-font-size,navigation-item-font-weight,navigation-item-padding;' .
             '{breadcrumb_legend:hide},breadcrumb-separator,breadcrumb-separator-color,breadcrumb-separator-font-family;' .
             '{header_legend:hide},header-bg,header-height,header-height-xs,header-height-s,header-height-m,header-height-l,header-height-xl,header-padding,header-alignment-vertical,header-alignment-horizontal;' .
-            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios,background-sizes;' .
+            '{misc_legend:hide},box-shadow,selection-color,selection-color-invert,selection-bg,selection-bg-invert,aspect-ratios,background-sizes,activate-display-utilities,display-properties;' .
             '{breakpoint_legend:hide ctm-group palette-group[layout_header]},breakpoints;' .
             '{layout_behavior_legend:hide ctm-group},layout-column-small-break,layout-column-medium-break,layout-column-large-break,layout-column-width-small,layout-column-width-medium,layout-column-width-large,layout-column-gutter-small,layout-column-gutter-medium,layout-column-gutter-large;' .
             '{article_legend:hide ctm-group},x-spacing-large-m,x-spacing-large-l,x-spacing-small,article-outer-padding,article-outer-padding-xs,article-outer-padding-s,article-spacing-small,article-spacing-xs-small,article-spacing-s-small,article-spacing-m-small,article-spacing-l-small,article-spacing-xl-small,article-spacing-medium,article-spacing-xs-medium,article-spacing-s-medium,article-spacing-m-medium,article-spacing-l-medium,article-spacing-xl-medium,article-spacing-large,article-spacing-xs-large,article-spacing-s-large,article-spacing-m-large,article-spacing-l-large,article-spacing-xl-large,article-main-spacing-bottom,article-options-vheight,article-options-height;' .
@@ -2487,6 +2487,18 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['background-sizes'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w50'],
+        ],
+        'activate-display-utilities' => [
+            'default'                 => false,
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['activate-display-utilities'],
+            'inputType'               => 'checkbox',
+            'eval'                    => ['tl_class'=>'w100 clr'],
+        ],
+        'display-properties' => [
+            'default'                 => '',
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['display-properties'],
+            'inputType'               => 'text',
+            'eval'                    => ['placeholder'=>'', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w100'],
         ],
 
         // Breakpoints

@@ -1,0 +1,5 @@
+@if $activate-display-utilities and '' != $display-properties {
+  $map:();
+  @each $val in $display-properties{$map: map-merge($map,('&-#{$val}':(display:#{$val}!important)))}
+  @include generate-infix-breakpoint-styles(('.d':$map))
+}

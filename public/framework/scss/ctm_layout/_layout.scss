@@ -2,21 +2,11 @@
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.inline-flex {
-  display: inline-flex;
-}
-
-.flex {
-  display: flex;
-}
+// @deprecated - to be removed in CTM 3
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.inline-flex { display: inline-flex; }
+.flex { display: flex; }
 
 .sticky > .inside {
   position: sticky;

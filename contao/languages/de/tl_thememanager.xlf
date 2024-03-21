@@ -3123,6 +3123,23 @@
         <target>Hier können Sie durch Komma getrennte Hintergrundgrößen &lt;em&gt;(z.B.: 50px, 20% 30%)&lt;/em&gt; eingeben, die innerhalb der Hintergrundoptionen verfügbar sein sollen.</target>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.activate-display-utilities.0">
+        <source>Activate display utilities</source>
+        <target>Display-Utilities aktivieren</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.activate-display-utilities.1">
+        <source>Create display properties for each breakpoint that will be available in the global options.</source>
+        <target>Erstellen von Display-Eigenschaften für jeden Bruchpunkt, die in den globalen Optionen verfügbar sein sollen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.display-properties.0">
+        <source>$display-properties</source>
+        <target>$display-properties</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.display-properties.1">
+        <source>Here you can enter display properties&lt;em&gt;(block none flex)&lt;/em&gt; that will be available within the global options.</source>
+        <target>Hier können Sie Display-Eigenschaften &lt;em&gt;(block none flex)&lt;/em&gt; eingeben, die innerhalb der globalen Optionen verfügbar sein sollen.</target>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.breakpoints.0">
         <source>$breakpoints</source>
         <target>$breakpoints</target>

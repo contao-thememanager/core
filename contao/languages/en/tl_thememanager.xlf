@@ -2370,6 +2370,19 @@
         <source>Here you can enter comma-separated background sizes &lt;em&gt;(e.g.: 50px, 20% 30%)&lt;/em&gt; that will be available within the background options.</source>
       </trans-unit>
 
+      <trans-unit id="tl_thememanager.activate-display-utilities.0">
+        <source>Activate display utilities</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.activate-display-utilities.1">
+        <source>Create display properties for each breakpoint that will be available in the global options.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.display-properties.0">
+        <source>$display-properties</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.display-properties.1">
+        <source>Here you can enter display properties&lt;em&gt;(block none flex)&lt;/em&gt; that will be available within the global options.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.breakpoints.0">
         <source>$breakpoints</source>
       </trans-unit>
