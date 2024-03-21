@@ -18,15 +18,7 @@
         <?php endif; ?>
 
         <div class="c_image">
-          <figure class="image_container">
-            <?php if ($image = $this->getImageObject($item->singleSRC, $this->size)): ?>
-              <?php $this->insert('picture_default', $image->picture) ?>
-
-              <?php if($image->caption): ?>
-                <figcaption><?php echo $image->caption ?></figcaption>
-              <?php endif; ?>
-            <?php endif ?>
-          </figure>
+          <?= $this->figure($item->singleSRC, $this->size) ?>
         </div>
 
         <div class="c_text">
@@ -37,12 +29,7 @@
             </p>
           <?php endif; ?>
         </div>
-
-        <?php if(!$item->linkText && $item->url): ?>
-          </a>
-        <?php else: ?>
-          </div>
-        <?php endif; ?>
+        <?= (!$item->linkText && $item->url) ? '</a>' : '</div>' ?>
       </div>
     <?php endif; ?>
   <?php endforeach ?>

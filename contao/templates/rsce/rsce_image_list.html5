@@ -12,33 +12,20 @@
 
 <?php $this->block('content'); ?>
 
-<?php foreach ($this->list as $item): ?>
-  <?php if(!$item->invisible || $previewMode): ?>
-    <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
-      <?php if(!!$item->src || $item->url): ?>
-        <a href="<?=!!$item->url?$item->url:$item->src?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?><?= $this->fullsize ? ' data-lightbox="'.$item->lb.'" data-group="'.$item->lb.'"':''?>>
-      <?php else: ?>
-        <div class="inside">
-      <?php endif; ?>
-
-      <div class="c_image">
-        <figure class="image_container">
-        <?php if ($image = $this->getImageObject($item->singleSRC, $this->size)): ?>
-          <?php $this->insert('picture_default', $image->picture) ?>
-          <?php if($image->caption): ?>
-            <figcaption><?php echo $image->caption ?></figcaption>
-          <?php endif; ?>
-        <?php endif ?>
-        </figure>
+  <?php foreach ($this->list as $item): ?>
+    <?php if(!$item->invisible || $previewMode): ?>
+      <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
+        <?php if(!!$item->src || $item->url): ?>
+          <a href="<?=!!$item->url?$item->url:$item->src?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?><?= $this->fullsize ? ' data-lightbox="'.$item->lb.'" data-group="'.$item->lb.'"':''?>>
+        <?php else: ?>
+          <div class="inside">
+        <?php endif; ?>
+          <div class="c_image">
+            <?= $this->figure($item->singleSRC, $this->size) ?>
+          </div>
+        <?= (!!$item->src || $item->url) ? '</a>' : '</div>' ?>
       </div>
-
-      <?php if(!!$item->src || $item->url): ?>
-        </a>
-      <?php else: ?>
-        </div>
-      <?php endif; ?>
-    </div>
-  <?php endif; ?>
-<?php endforeach ?>
+    <?php endif; ?>
+  <?php endforeach ?>
 
 <?php $this->endblock(); ?>
