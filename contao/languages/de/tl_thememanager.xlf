@@ -2327,6 +2327,14 @@
         <source>Here you can set the padding for icons in the filled and outlined option.</source>
         <target>Hier können Sie das Polster (padding) für Icons in der gefüllten und umrandeten Option einstellen.</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.icon-rounded-border-radius.0">
+        <source>$icon-rounded-border-radius</source>
+        <target>$icon-rounded-border-radius</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.icon-rounded-border-radius.1">
+        <source>Here you can set the border-radius for rounded icon element elements.</source>
+        <target>Hier können Sie den Rahmen-Radius (border-radius) für Rounded Icon-Elemente einstellen.</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.icon-outlined-width.0">
         <source>$icon-outlined-width</source>
         <target>$icon-outlined-width</target>
