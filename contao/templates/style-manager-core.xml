@@ -943,8 +943,63 @@
         <field title="sorting">200</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
-        <field title="description">Defines the behavior / alignment of the navigation.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}}</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:9:"nav-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionXS">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionXS</field>
+        <field title="title">Direction &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xs-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionS">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionS</field>
+        <field title="title">Direction &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-s-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionM">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionM</field>
+        <field title="title">Direction &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-m-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionL">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionL</field>
+        <field title="title">Direction &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-l-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionXL">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionXL</field>
+        <field title="title">Direction &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xl-right";s:5:"value";s:5:"Right";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>

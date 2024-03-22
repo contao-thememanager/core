@@ -62,5 +62,10 @@
     '&-1': ( --e-m: #{$element-spacing-small}),
     '&-2': ( --e-m: #{$element-spacing-medium}),
     '&-3': ( --e-m: #{$element-spacing-large}),
+  ),
+  // Navigation direction
+  'li.nav': (
+    '&-right': (--nlr: 'initial', --nlr2: 'initial', --nll: 100%, --nll2: 'initial'),
+    '&-left':  (--nlr: 100%, --nlr2: 0, --nll: 'initial', --nll2: 'initial'),
   )
 ));

@@ -78,19 +78,19 @@
 
           ul ul {
             top: 0;
-            left: 100%;
           }
         }
 
-        li.nav-left {
+        li {
 
           ul {
-            right: 100%;
-            left: initial;
+            right:var(--nlr,initial);
+            left:var(--nll,100%);
           }
 
           .level_2 {
-            right: 0;
+            right: var(--nlr2,initial);
+            left: var(--nll2,initial);
           }
         }
 
