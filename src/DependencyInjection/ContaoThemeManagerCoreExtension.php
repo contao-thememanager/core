@@ -16,6 +16,8 @@ class ContaoThemeManagerCoreExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container): void
     {
+        $config = $this->processConfiguration(new Configuration(), $configs);
+
         $loader = new YamlFileLoader(
             $container,
             new FileLocator(__DIR__ . '/../../config')
@@ -23,5 +25,7 @@ class ContaoThemeManagerCoreExtension extends Extension
 
         $loader->load('migrations.yaml');
         $loader->load('services.yaml');
+
+        $container->setParameter('contao_theme_manager_core.config.css_units', $config['config']['css_units']);
     }
 }

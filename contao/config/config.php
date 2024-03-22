@@ -16,6 +16,7 @@ use ContaoThemeManager\Core\ThemeManager;
 $GLOBALS['CTM_SETTINGS']['iconFont'] = '';
 
 // Register the supported CSS units for ThemeManager
+// @deprecated - to be removed in CTM 3
 $GLOBALS['CTM_CSS_UNITS'] = ['px', 'rem'];
 
 // Add configuration dca for themes
