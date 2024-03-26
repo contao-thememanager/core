@@ -2924,7 +2924,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
-        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="formFields">a:11:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:4:"text";i:3;s:8:"password";i:4;s:8:"textarea";i:5;s:6:"select";i:6;s:5:"radio";i:7;s:8:"checkbox";i:8;s:6:"upload";i:9;s:5:"range";i:10;s:7:"captcha";}</field>
       </child>
       <child alias="alignment">
         <field title="pid">2040</field>
@@ -2936,7 +2936,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
-        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="formFields">a:11:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:4:"text";i:3;s:8:"password";i:4;s:8:"textarea";i:5;s:6:"select";i:6;s:5:"radio";i:7;s:8:"checkbox";i:8;s:6:"upload";i:9;s:5:"range";i:10;s:7:"captcha";}</field>
       </child>
     </children>
   </archive>

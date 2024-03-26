@@ -88,7 +88,7 @@ class ConfigGenerator
             return [];
         }
 
-        return $this->getArrayRecursiveKeys($GLOBALS['TL_CTE'], 'Stop');
+        return $this->getArrayRecursiveKeys($GLOBALS['TL_CTE'], ['Stop']);
     }
 
     /**
@@ -101,7 +101,7 @@ class ConfigGenerator
             return [];
         }
 
-        return $this->getArrayRecursiveKeys($GLOBALS['FE_MOD']);
+        return $this->getArrayRecursiveKeys($GLOBALS['FE_MOD'], ['root_page_dependent_modules']);
     }
 
     /**
@@ -285,7 +285,7 @@ class ConfigGenerator
         ThemeManager::createCSSFile('backendColors', $css);
     }
 
-    private function getArrayRecursiveKeys(array $array, ?string $filter = null): array
+    private function getArrayRecursiveKeys(array $array, ?array $filters = []): array
     {
         $return = [];
 
@@ -294,7 +294,12 @@ class ConfigGenerator
             $return = array_merge($group, $return);
         }
 
-        if (null !== $filter)
+        if (empty($filters))
+        {
+            return $return;
+        }
+
+        foreach ($filters as $filter)
         {
             foreach ($return as $k => $v)
             {
