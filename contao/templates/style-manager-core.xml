@@ -852,6 +852,8 @@
         <field title="blankOption">1</field>
         <field title="extendLayout">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="xSpacing">
         <field title="pid">1010</field>
@@ -864,6 +866,8 @@
         <field title="blankOption">1</field>
         <field title="extendLayout">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="topSpacing">
         <field title="pid">1010</field>
@@ -875,6 +879,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="bottomSpacing">
         <field title="pid">1010</field>
@@ -886,6 +892,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
     </children>
   </archive>
