@@ -640,7 +640,7 @@ return [
             'default'                 => false,
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['activate-content-heading-settings'],
             'inputType'               => 'checkbox',
-            'eval'                    => ['tl_class'=>'w100 activate-content-headings'],
+            'eval'                    => ['tl_class'=>'w100 activate-content-headings cbx'],
         ],
         'h1-content-font-size-small' => [
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:3:"1.5";}',
@@ -2505,7 +2505,7 @@ return [
             'default'                 => false,
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['activate-display-utilities'],
             'inputType'               => 'checkbox',
-            'eval'                    => ['tl_class'=>'w100 clr'],
+            'eval'                    => ['tl_class'=>'w100 clr cbx'],
         ],
         'display-properties' => [
             'default'                 => '',

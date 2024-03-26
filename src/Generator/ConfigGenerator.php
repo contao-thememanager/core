@@ -197,6 +197,7 @@ class ConfigGenerator
     private function generateDisplayUtilities(): void
     {
         if (
+            !isset($this->configVars['activate-display-utilities']) ||
             (!$this->configVars['activate-display-utilities'] ?? false) ||
             (null === ($values = self::getThemeManagerConfigVar($this->configVars, 'display-properties'))) ||
             (empty($values = explode(' ', $values)))
