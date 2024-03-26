@@ -10,5 +10,5 @@
                    $sm->prepare('sliderL')->format(" data-slider-l='%s'",'json') .
                    $sm->prepare('sliderXL')->format(" data-slider-xl='%s'",'json');
 ?>
-<div class="ce_wrapper block grid <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<div class="ce_wrapper article-wrapper block grid <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside c_slider<?= $insideClasses ?>"<?= $sliderConfig ?>>

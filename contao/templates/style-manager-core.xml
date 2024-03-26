@@ -914,6 +914,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="hHeight">
         <field title="pid">1020</field>
@@ -924,6 +926,8 @@
         <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:6:"h-hght";s:5:"value";s:3:"Yes";}}</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
     </children>
   </archive>
