@@ -2965,7 +2965,7 @@
         <field title="alias">hl1Type</field>
         <field title="title">Headline (Archive)</field>
         <field title="description">Here you can select the headline for the archive title (Default: h2).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}i:6;a:2:{s:3:"key";s:6:"strong";s:5:"value";s:6:"strong";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2992,7 +2992,7 @@
         <field title="alias">hl2Type</field>
         <field title="title">Headline (Item)</field>
         <field title="description">Here you can select the type for the item title (Default: h3).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}i:6;a:2:{s:3:"key";s:6:"strong";s:5:"value";s:6:"strong";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
