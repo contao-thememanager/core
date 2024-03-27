@@ -18,7 +18,14 @@
   <?php endif; ?>
 
   <div class="c_image">
-    <?= $this->figure($this->singleSRC, $this->size) ?>
+    <?= $this->figure($this->singleSRC, $this->size, $this->overwriteMeta ? [
+      'metadata' => array_filter([
+        'alt' => $this->alt ?? null,
+        'imageTitle' => $this->imageTitle ?? null,
+        'imageUrl' => $this->imageUrl ?? null,
+        'caption' => $this->caption ?? null,
+      ], fn($val) => $val !== '')
+    ] : []) ?>
   </div>
   <div class="c_text">
     <?= $this->text ?>

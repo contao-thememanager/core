@@ -129,6 +129,62 @@ return [
                     'inputType' => 'checkbox',
                     'eval' => ['tl_class' => 'w50 m12']
                 ],
+                'overwriteMeta' => [
+                    'label' => [
+                        'de' => ['Metadaten überschreiben', 'Die Metadaten des Bildes überschreiben. Bitte beachten Sie, dass alle Werte eingetragen werden müssen.'],
+                        'en' => ['Overwrite metadata', 'Overwrite the metadata of the image. Please note that all values must be entered.'],
+                    ],
+                    'inputType' => 'checkbox',
+                    'eval' => ['tl_class' => 'w50 m12 clr']
+                ],
+                'alt' => [
+                    'dependsOn' => [
+                        'field' => 'overwriteMeta',
+                        'value' => true
+                    ],
+                    'label' => [
+                        'de' => ['Alternativer Text', 'Hier können Sie einen alternativen Text für das Bild eingeben (&lt;em&gt;alt&lt;/em&gt;-Attribut).'],
+                        'en' => ['Alternate text', 'Here you can enter an alternate text for the image (&lt;em&gt;alt&lt;/em&gt; attribute).'],
+                    ],
+                    'inputType' => 'text',
+                    'eval' => ['maxlength'=>255, 'tl_class'=>'w50 clr']
+                ],
+                'imageTitle' => [
+                    'dependsOn' => [
+                        'field' => 'overwriteMeta',
+                        'value' => true
+                    ],
+                    'label' => [
+                        'de' => ['Bildtitel', 'Hier können Sie den Titel des Bildes eingeben (&lt;em&gt;title&lt;/em&gt;-Attribut).'],
+                        'en' => ['Image title', 'Here you can enter the image title (&lt;em&gt;title&lt;/em&gt; attribute).']
+                    ],
+                    'inputType' => 'text',
+                    'eval' => ['maxlength'=>255, 'tl_class'=>'w50']
+                ],
+                'imageUrl' => [
+                    'dependsOn' => [
+                        'field' => 'overwriteMeta',
+                        'value' => true
+                    ],
+                    'label' => [
+                        'de' => ['Bildlink-Adresse', 'Eine eigene Bildlink-Adresse überschreibt den Lightbox-Link, sodass das Bild nicht mehr in der Großansicht dargestellt werden kann.'],
+                        'en' => ['Image link target', 'A custom image link target will override the lightbox link, so the image cannot be viewed fullsize anymore.']
+                    ],
+                    'inputType' => 'text',
+                    'eval' => ['rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>2048, 'dcaPicker'=>true, 'tl_class'=>'w50']
+                ],
+                'caption' => [
+                    'dependsOn' => [
+                        'field' => 'overwriteMeta',
+                        'value' => true
+                    ],
+                    'label' => [
+                        'de' => ['Bildunterschrift', 'Hier können Sie einen kurzen Text eingeben, der unterhalb des Bildes angezeigt wird.'],
+                        'en' => ['Image caption', 'Here you can enter a short text that will be displayed below the image.']
+                    ],
+                    'inputType' => 'text',
+                    'eval' => ['maxlength'=>255, 'allowHtml'=>true, 'tl_class'=>'w50']
+                ]
             ]
         ]
     ]

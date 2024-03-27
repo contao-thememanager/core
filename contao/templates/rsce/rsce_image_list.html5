@@ -21,7 +21,14 @@
           <div class="inside">
         <?php endif; ?>
           <div class="c_image">
-            <?= $this->figure($item->singleSRC, $this->size) ?>
+            <?= $this->figure($item->singleSRC, $this->size, $item->overwriteMeta ? [
+              'metadata' => array_filter([
+                'alt' => $item->alt ?? null,
+                'imageTitle' => $item->imageTitle ?? null,
+                'imageUrl' => $item->imageUrl ?? null,
+                'caption' => $item->caption ?? null,
+              ], fn($val) => $val !== '')
+            ] : []) ?>
           </div>
         <?= (!!$item->src || $item->url) ? '</a>' : '</div>' ?>
       </div>
