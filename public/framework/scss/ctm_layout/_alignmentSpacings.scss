@@ -51,10 +51,10 @@
   ),
   // Element paddings
   '.i-p': (
-    '&-0': ( --i-py: 0%, --i-px: 0%),
-    '&-1': ( --i-px: var(--py-1), --i-py: var(--px-1) ),
-    '&-2': ( --i-px: var(--py-2), --i-py: var(--px-2) ),
-    '&-3': ( --i-px: var(--py-3), --i-py: var(--px-3) ),
+    '&-0': ( --i-px: 0%, --i-py: 0%),
+    '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
+    '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
+    '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
   ),
   // Element spacings (Images and text offset to each other
   '.em': (
@@ -69,3 +69,20 @@
     '&-left':  (--nlr: 100%, --nlr2: 0, --nll: 'initial', --nll2: 'initial'),
   )
 ));
+
+
+.art-ox {
+  --art-ox:#{$article-outer-padding};
+
+  @include media-breakpoint('xs') {
+    --art-ox:#{$article-outer-padding-xs};
+  }
+
+  @include media-breakpoint('s') {
+    --art-ox:#{$article-outer-padding-s};
+  }
+
+  @include media-breakpoint('m') {
+    --art-ox:0;
+  }
+}
