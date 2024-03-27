@@ -69,20 +69,3 @@
     '&-left':  (--nlr: 100%, --nlr2: 0, --nll: 'initial', --nll2: 'initial'),
   )
 ));
-
-
-.art-ox {
-  --art-ox:#{$article-outer-padding};
-
-  @include media-breakpoint('xs') {
-    --art-ox:#{$article-outer-padding-xs};
-  }
-
-  @include media-breakpoint('s') {
-    --art-ox:#{$article-outer-padding-s};
-  }
-
-  @include media-breakpoint('m') {
-    --art-ox:0;
-  }
-}
