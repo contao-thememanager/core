@@ -18,6 +18,7 @@
   > .inside {
     display: flex;
     flex-direction: column;
+    row-gap: var(--gtr-btm);
   }
 }
 
@@ -65,20 +66,19 @@
 
   #container > .inside {
     flex-direction: row;
+    column-gap: var(--lyt-col-gtr);
   }
 
   #left,
   #right {
-    width: calc(var(--lyt-col-wdth) + var(--lyt-col-gtr));
+    width: var(--lyt-col-wdth);
   }
 
   #left {
     &, .left-first & { order: 5; }
-    > .inside { margin-right: var(--lyt-col-gtr); }
   }
 
   #right {
     &, .right-first & { order: 15; }
-    > .inside { margin-left: var(--lyt-col-gtr); }
   }
 }
