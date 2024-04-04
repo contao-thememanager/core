@@ -33,7 +33,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['headline2'] = [
     'search'    => true,
     'inputType' => 'inputUnit',
     'options'   => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span', 'strong'],
-    'eval'      => ['tl_class'=>'w50 clr'],
+    'eval'      => ['basicEntities' => true, 'tl_class'=>'w50 clr'],
     'sql'       => "varchar(1022) NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
 ];
 
