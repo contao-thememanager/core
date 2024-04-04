@@ -10,6 +10,9 @@
       <trans-unit id="tl_thememanager.font_legend">
         <source>Typography</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.strong_legend">
+        <source>Strong</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.link_legend">
         <source>Links</source>
       </trans-unit>
@@ -181,6 +184,12 @@
       <trans-unit id="tl_thememanager.font-size-base.1">
         <source>Here you can set the body font-size for the theme.</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-base.0">
+        <source>$font-weight-base</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.font-weight-base.1">
+        <source>Here you can set the body font-weight the theme.</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.line-height-base.0">
         <source>$line-height-base</source>
       </trans-unit>
@@ -188,25 +197,6 @@
         <source>Here you can set the body line-height for the theme.</source>
       </trans-unit>
 
-      <trans-unit id="tl_thememanager.text-color-regular.0">
-        <source>$text-color-regular</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.text-color-regular.1">
-        <source>Here you can set the body color for text.</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.text-color-invert.0">
-        <source>$text-color-invert</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.text-color-invert.1">
-        <source>Here you can set the invert color for text.</source>
-      </trans-unit>
-
-      <trans-unit id="tl_thememanager.font-weight-base.0">
-        <source>$font-weight-base</source>
-      </trans-unit>
-      <trans-unit id="tl_thememanager.font-weight-base.1">
-        <source>Here you can set the body font-weight the theme.</source>
-      </trans-unit>
       <trans-unit id="tl_thememanager.font-weight-light.0">
         <source>$font-weight-light</source>
       </trans-unit>
@@ -237,11 +227,38 @@
       <trans-unit id="tl_thememanager.font-weight-bold.1">
         <source>Here you can set the bold font-weight for the theme.</source>
       </trans-unit>
+
+      <trans-unit id="tl_thememanager.text-color-regular.0">
+        <source>$text-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-regular.1">
+        <source>Here you can set the body color for text.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-invert.0">
+        <source>$text-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.text-color-invert.1">
+        <source>Here you can set the invert color for text.</source>
+      </trans-unit>
+
       <trans-unit id="tl_thememanager.strong-font-weight.0">
         <source>$strong-font-weight</source>
       </trans-unit>
       <trans-unit id="tl_thememanager.strong-font-weight.1">
         <source>Here you can set the font-weight for &quot;strong&quot; - elements.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.strong-color-regular.0">
+        <source>$strong-color-regular</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.strong-color-regular.1">
+        <source>Here you can set the color for &quot;strong&quot; - elements.</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.strong-color-invert.0">
+        <source>$strong-color-invert</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.strong-color-invert.1">
+        <source>Here you can set the invert color for &quot;strong&quot; - elements.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.link-font-weight.0">

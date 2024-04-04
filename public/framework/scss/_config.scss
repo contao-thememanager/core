@@ -13,17 +13,22 @@ $dark:                                        #2b2b2b !default;
 $font-family-base:                            Arial, sans-serif !default;
 $font-size-base:                              $browser-context * 1px !default;
 $line-height-base:                            1.687 !default;
-
-$text-color-regular:                          #000 !default;
-$text-color-invert:                           #fff !default;
-
 $font-weight-base:                            400 !default;
+
 $font-weight-light:                           300 !default;
 $font-weight-regular:                         400 !default;
 $font-weight-medium:                          500 !default;
 $font-weight-semibold:                        600 !default;
 $font-weight-bold:                            700 !default;
+
+$text-color-regular:                          #000 !default;
+$text-color-invert:                           #fff !default;
+
+// Strong
 $strong-font-weight:                          $font-weight-bold !default;
+
+$strong-color-regular:                        var(--text-clr-base) !default;
+$strong-color-invert:                         var(--text-clr-invert) !default;
 
 // Links
 $link-font-weight:                            $font-weight-base !default;
