@@ -12,7 +12,7 @@
 
     @each $val in $entry {
       $selector: $selector + '-' + str-replace(#{$val},'%','pct'); // Replace % within class names
-      $value: join($val,$value);
+      $value: join($value, $val);
     }
 
     #{$classPrefix}#{$selector}{--#{$propertyName}:#{$value}}
