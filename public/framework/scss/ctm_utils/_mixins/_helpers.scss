@@ -5,7 +5,8 @@
 //
 
 // Generates dynamic custom property options
-@mixin generate-properties($classPrefix, $propertyName, $list) {
+@mixin generate-properties($classPrefix, $propertyName, $list, $separator: comma) {
+  @if length($list) > 1 and list-separator($list) != $separator { $list: #{list-to-string($list)} }
   @each $entry in $list {
     $selector: '-';
     $value: ();
