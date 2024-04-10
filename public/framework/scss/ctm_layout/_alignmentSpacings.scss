@@ -51,10 +51,10 @@
   ),
   // Element paddings
   '.i-p': (
-    '&-0': ( --i-py: 0%, --i-px: 0%),
-    '&-1': ( --i-px: var(--py-1), --i-py: var(--px-1) ),
-    '&-2': ( --i-px: var(--py-2), --i-py: var(--px-2) ),
-    '&-3': ( --i-px: var(--py-3), --i-py: var(--px-3) ),
+    '&-0': ( --i-px: 0%, --i-py: 0%),
+    '&-1': ( --i-px: var(--px-1), --i-py: var(--py-1) ),
+    '&-2': ( --i-px: var(--px-2), --i-py: var(--py-2) ),
+    '&-3': ( --i-px: var(--px-3), --i-py: var(--py-3) ),
   ),
   // Element spacings (Images and text offset to each other
   '.em': (
@@ -62,5 +62,10 @@
     '&-1': ( --e-m: #{$element-spacing-small}),
     '&-2': ( --e-m: #{$element-spacing-medium}),
     '&-3': ( --e-m: #{$element-spacing-large}),
+  ),
+  // Navigation direction
+  'li.nav': (
+    '&-right': (--nlr: 'initial', --nlr2: 'initial', --nll: 100%, --nll2: 'initial'),
+    '&-left':  (--nlr: 100%, --nlr2: 0, --nll: 'initial', --nll2: 'initial'),
   )
 ));

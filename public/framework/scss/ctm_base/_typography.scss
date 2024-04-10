@@ -22,6 +22,7 @@ a {
 
 b,
 strong {
+  color: var(--strong-clr);
   font-weight: $strong-font-weight;
 }
 

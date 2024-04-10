@@ -13,17 +13,22 @@ $dark:                                        #2b2b2b !default;
 $font-family-base:                            Arial, sans-serif !default;
 $font-size-base:                              $browser-context * 1px !default;
 $line-height-base:                            1.687 !default;
-
-$text-color-regular:                          #000 !default;
-$text-color-invert:                           #fff !default;
-
 $font-weight-base:                            400 !default;
+
 $font-weight-light:                           300 !default;
 $font-weight-regular:                         400 !default;
 $font-weight-medium:                          500 !default;
 $font-weight-semibold:                        600 !default;
 $font-weight-bold:                            700 !default;
+
+$text-color-regular:                          #000 !default;
+$text-color-invert:                           #fff !default;
+
+// Strong
 $strong-font-weight:                          $font-weight-bold !default;
+
+$strong-color-regular:                        var(--text-clr-base) !default;
+$strong-color-invert:                         var(--text-clr-invert) !default;
 
 // Links
 $link-font-weight:                            $font-weight-base !default;
@@ -347,6 +352,7 @@ $icon-size-large:                             5rem !default;
 $icon-size-super:                             6rem !default;
 
 $icon-shape-spacing:                          1.5rem !default;
+$icon-rounded-border-radius:                  50% !default;
 $icon-outlined-width:                         2px !default;
 
 // Form general
@@ -484,6 +490,9 @@ $selection-bg-invert:                         var(--body-bg) !default;
 
 $aspect-ratios:                               ((4:5),(1:1),(4:3),(3:2),(16:10),(16:9)) !default;
 $background-sizes:                            '' !default;
+
+$activate-display-utilities:                  false !default;
+$display-properties:                          '';
 
 // Breakpoints
 $breakpoints: (

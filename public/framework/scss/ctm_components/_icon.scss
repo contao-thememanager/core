@@ -43,7 +43,7 @@
   }
 
   &.rounded {
-    border-radius: 50%;
+    border-radius: shorthandList(standardize($icon-rounded-border-radius));
   }
 
   // Filled design

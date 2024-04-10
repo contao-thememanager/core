@@ -1,3 +1,6 @@
+contao_theme_manager_core:
+  config:
+    css_units: [ px, rem ]
 contao:
   image:
     sizes:

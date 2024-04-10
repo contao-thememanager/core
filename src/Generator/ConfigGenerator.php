@@ -36,6 +36,7 @@ class ConfigGenerator
         $this->generateArticleHeight();
         $this->generateAspectRatios();
         $this->generateBackgroundSizes();
+        $this->generateDisplayUtilities();
         $this->generateBackendCss();
     }
 
@@ -75,6 +76,32 @@ class ConfigGenerator
         }
 
         return $value;
+    }
+
+    /**
+     * Returns all content elements
+     */
+    public function getAllContentElements(): array
+    {
+        if (!isset($GLOBALS['TL_CTE']))
+        {
+            return [];
+        }
+
+        return $this->getArrayRecursiveKeys($GLOBALS['TL_CTE'], ['Stop']);
+    }
+
+    /**
+     * Returns all frontend modules
+     */
+    public function getAllFrontendModules(): array
+    {
+        if (!isset($GLOBALS['FE_MOD']))
+        {
+            return [];
+        }
+
+        return $this->getArrayRecursiveKeys($GLOBALS['FE_MOD'], ['root_page_dependent_modules']);
     }
 
     /**
@@ -167,6 +194,49 @@ class ConfigGenerator
         $this->xml->addGroup('eBackground')->addChild('size', $itemOptions);
     }
 
+    private function generateDisplayUtilities(): void
+    {
+        if (
+            !isset($this->configVars['activate-display-utilities']) ||
+            (!$this->configVars['activate-display-utilities'] ?? false) ||
+            (null === ($values = self::getThemeManagerConfigVar($this->configVars, 'display-properties'))) ||
+            (empty($values = explode(' ', $values)))
+        ) {
+            return;
+        }
+
+        $contentElements = $this->getAllContentElements();
+        $frontendModules = $this->getAllFrontendModules();
+
+        $this->xml->addGroup('gDisplay', 505, 'Display', 'Global', 600);
+
+        foreach (['','-xs','-s','-m','-l','-xl'] as $i => $bp)
+        {
+            $options = [];
+
+            foreach ($values as $option)
+            {
+                $options[] = ['key' => 'd'. $bp . '-' . strtolower($option), 'value' => ucfirst($option)];
+            }
+
+            $this->xml->addChild(
+                'display'.$bp,
+                $options,
+                'Display'. ($bp ? ' ('. strtoupper(substr($bp,1)) . ')' : ''),
+                [
+                    'extendArticle' => 1,
+                    'contentElements' => $contentElements,
+                    'modules' => $frontendModules
+                ],
+                [
+                    'description'    => 'Here you can choose the display property for this component',
+                    'blankOption'    => 1,
+                    'sorting'        => 100 + $i,
+                ]
+            );
+        }
+    }
+
     /**
      * Generates the theme manager backend css
      *
@@ -213,5 +283,33 @@ class ConfigGenerator
         }
 
         ThemeManager::createCSSFile('backendColors', $css);
+    }
+
+    private function getArrayRecursiveKeys(array $array, ?array $filters = []): array
+    {
+        $return = [];
+
+        foreach (array_map('array_keys', $array) as $group)
+        {
+            $return = array_merge($group, $return);
+        }
+
+        if (empty($filters))
+        {
+            return $return;
+        }
+
+        foreach ($filters as $filter)
+        {
+            foreach ($return as $k => $v)
+            {
+                if (str_contains($v, $filter))
+                {
+                    unset($return[$k]);
+                }
+            }
+        }
+
+        return $return;
     }
 }

@@ -40,10 +40,5 @@
       </p>
     <?php endif; ?>
   </div>
-
-  <?php if(!$this->linkText && $this->url): ?>
-    </a>
-  <?php else: ?>
-    </div>
-  <?php endif; ?>
+  <?= (!$this->linkText && $this->url) ? '</a>' : '</div>' ?>
 </div>

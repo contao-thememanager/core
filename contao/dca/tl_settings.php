@@ -32,7 +32,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['thememanagerIconFont'] = [
             return '';
         }
 
-        return FilesModel::findByPath($strValue)->uuid;
+        return FilesModel::findByPath($strValue)?->uuid;
     }],
     'save_callback' => [ static function ($strValue) {
         if (!strlen($strValue) || null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath))

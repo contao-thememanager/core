@@ -3,5 +3,5 @@
   $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
                    $sm->prepare('cPadding')->format(' %s');
 ?>
-<div class="ce_wrapper block <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<div class="ce_wrapper article-wrapper block <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
   <div class="inside<?= $insideClasses ?>">

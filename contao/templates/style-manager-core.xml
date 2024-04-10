@@ -852,6 +852,8 @@
         <field title="blankOption">1</field>
         <field title="extendLayout">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="xSpacing">
         <field title="pid">1010</field>
@@ -864,6 +866,8 @@
         <field title="blankOption">1</field>
         <field title="extendLayout">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="topSpacing">
         <field title="pid">1010</field>
@@ -875,6 +879,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="bottomSpacing">
         <field title="pid">1010</field>
@@ -886,6 +892,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
     </children>
   </archive>
@@ -906,6 +914,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
       <child alias="hHeight">
         <field title="pid">1020</field>
@@ -916,6 +926,8 @@
         <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:6:"h-hght";s:5:"value";s:3:"Yes";}}</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:12:"wrapperStart";}</field>
       </child>
     </children>
   </archive>
@@ -943,8 +955,63 @@
         <field title="sorting">200</field>
         <field title="alias">direction</field>
         <field title="title">Direction</field>
-        <field title="description">Defines the behavior / alignment of the navigation.</field>
-        <field title="cssClasses">a:1:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}}</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:9:"nav-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionXS">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionXS</field>
+        <field title="title">Direction &amp;#40;XS&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xs-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionS">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionS</field>
+        <field title="title">Direction &amp;#40;S&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-s-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionM">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionM</field>
+        <field title="title">Direction &amp;#40;M&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-m-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionL">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionL</field>
+        <field title="title">Direction &amp;#40;L&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-l-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="extendPage">1</field>
+      </child>
+      <child alias="directionXL">
+        <field title="pid">1030</field>
+        <field title="sorting">200</field>
+        <field title="alias">directionXL</field>
+        <field title="title">Direction &amp;#40;XL&amp;#41;</field>
+        <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xl-right";s:5:"value";s:5:"Right";}}</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -2869,7 +2936,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
-        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="formFields">a:11:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:4:"text";i:3;s:8:"password";i:4;s:8:"textarea";i:5;s:6:"select";i:6;s:5:"radio";i:7;s:8:"checkbox";i:8;s:6:"upload";i:9;s:5:"range";i:10;s:7:"captcha";}</field>
       </child>
       <child alias="alignment">
         <field title="pid">2040</field>
@@ -2881,7 +2948,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
-        <field title="formFields">a:12:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:12:"fieldsetStop";i:3;s:4:"text";i:4;s:8:"password";i:5;s:8:"textarea";i:6;s:6:"select";i:7;s:5:"radio";i:8;s:8:"checkbox";i:9;s:6:"upload";i:10;s:5:"range";i:11;s:7:"captcha";}</field>
+        <field title="formFields">a:11:{i:0;s:11:"explanation";i:1;s:13:"fieldsetStart";i:2;s:4:"text";i:3;s:8:"password";i:4;s:8:"textarea";i:5;s:6:"select";i:6;s:5:"radio";i:7;s:8:"checkbox";i:8;s:6:"upload";i:9;s:5:"range";i:10;s:7:"captcha";}</field>
       </child>
     </children>
   </archive>
@@ -2898,7 +2965,7 @@
         <field title="alias">hl1Type</field>
         <field title="title">Headline (Archive)</field>
         <field title="description">Here you can select the headline for the archive title (Default: h2).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}i:6;a:2:{s:3:"key";s:6:"strong";s:5:"value";s:6:"strong";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
@@ -2925,7 +2992,7 @@
         <field title="alias">hl2Type</field>
         <field title="title">Headline (Item)</field>
         <field title="description">Here you can select the type for the item title (Default: h3).</field>
-        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}}</field>
+        <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}i:6;a:2:{s:3:"key";s:6:"strong";s:5:"value";s:6:"strong";}}</field>
         <field title="cssClass">separator</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>

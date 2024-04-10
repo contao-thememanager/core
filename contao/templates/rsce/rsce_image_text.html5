@@ -18,15 +18,14 @@
   <?php endif; ?>
 
   <div class="c_image">
-    <figure class="image_container">
-      <?php if ($image = $this->getImageObject($this->singleSRC, $this->size)): ?>
-        <?php $this->insert('picture_default', $image->picture) ?>
-
-        <?php if($image->caption): ?>
-          <figcaption><?php echo $image->caption ?></figcaption>
-        <?php endif; ?>
-      <?php endif ?>
-    </figure>
+    <?= $this->figure($this->singleSRC, $this->size, $this->overwriteMeta ? [
+      'metadata' => array_filter([
+        'alt' => $this->alt ?? null,
+        'imageTitle' => $this->imageTitle ?? null,
+        'imageUrl' => $this->imageUrl ?? null,
+        'caption' => $this->caption ?? null,
+      ], fn($val) => $val !== '')
+    ] : []) ?>
   </div>
   <div class="c_text">
     <?= $this->text ?>
@@ -37,9 +36,5 @@
     <?php endif; ?>
   </div>
 
-  <?php if(!$this->linkText && $this->url): ?>
-    </a>
-  <?php else: ?>
-    </div>
-  <?php endif; ?>
+  <?= (!$this->linkText && $this->url) ? '</a>' : '</div>' ?>
 </div>

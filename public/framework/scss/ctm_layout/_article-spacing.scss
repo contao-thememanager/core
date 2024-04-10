@@ -19,8 +19,9 @@ $spacings-list-bp: (
 );
 
 // Add default bottom-padding to #main articles
-main .article_inside {
-  padding-bottom: $article-main-spacing-bottom;
+main {
+  .mod_article:nth-last-child(n+2) { --mpb:#{$article-main-spacing-bottom}; }
+  .article_inside { padding-bottom: var(--mpb,0); }
 }
 
 .grid > .article_inside {
