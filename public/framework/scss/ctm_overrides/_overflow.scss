@@ -3,3 +3,9 @@
     overflow: visible;
   }
 }
+
+.oh {
+  &, & >.inside {
+    overflow: hidden;
+  }
+}
