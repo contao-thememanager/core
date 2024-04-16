@@ -49,6 +49,9 @@
       <trans-unit id="tl_thememanager.icon_legend">
         <source>Icon</source>
       </trans-unit>
+      <trans-unit id="tl_thememanager.media_legend">
+        <source>Media</source>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form_general_legend">
         <source>Form: General</source>
       </trans-unit>
@@ -1791,6 +1794,13 @@
       </trans-unit>
       <trans-unit id="tl_thememanager.icon-outlined-width.1">
         <source>Here you can set the border-width for outlined icons.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.video-bg.0">
+        <source>$video-bg</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.video-bg.1">
+        <source>Here you can set the background-color for video elements.</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-input-font-family.0">
