@@ -3086,7 +3086,7 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
-        <field title="contentElements">a:8:{i:0;s:4:"text";i:1;s:15:"rsce_image_text";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:5:"image";i:5;s:7:"gallery";i:6;s:8:"download";i:7;s:9:"downloads";}</field>
+        <field title="contentElements">a:9:{i:0;s:4:"text";i:1;s:15:"rsce_image_text";i:2;s:15:"rsce_image_list";i:3;s:20:"rsce_image_text_list";i:4;s:5:"image";i:5;s:7:"gallery";i:6;s:8:"download";i:7;s:9:"downloads";i:8;s:6:"player";}</field>
         <field title="extendModule">1</field>
         <field title="modules">a:6:{i:0;s:11:"randomImage";i:1;s:8:"newslist";i:2;s:9:"eventlist";i:3;s:7:"faqlist";i:4;s:7:"faqpage";i:5;s:18:"recommendationlist";}</field>
       </child>
