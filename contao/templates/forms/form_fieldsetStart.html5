@@ -1,6 +1,19 @@
+<?php
+$gutterBC = (str_contains($this->class,'gtr-2')?' gtr-2':'').(str_contains($this->class,'gtr-0')?' gtr-0':'');
 
-<div class="grid gtr-f<?=$this->class?' '.$this->class:''?>" role="group">
-  <div class="inside">
-    <?php if ($this->label): ?>
-      <legend><?= $this->label ?></legend>
-    <?php endif; ?>
+$sm = $this->styleManager;
+$outerClasses  = $sm->prepare('cLayout')->exclude(['overflow'])->format(' %s');
+$insideClasses = $sm->prepare('cLayout',['overflow'])->format(' %s') .
+                 $sm->prepare('cSpacing')->format(' %s') .
+                 $sm->prepare('cPadding')->format(' %s') .
+                 $sm->prepare('cBackground')->format(' %s');
+$gridClasses   = $sm->prepare('cGridAlignment')->format(' %s').
+                 $sm->prepare('cGridGutter')->format(' %s');
+?>
+<fieldset<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
+  <div class="inside<?= $insideClasses ?>">
+    <div class="grid gtr-f<?= $gutterBC ?><?= $gridClasses ?>">
+      <div class="inside">
+        <?php if ($this->label): ?>
+          <legend><?= $this->label ?></legend>
+        <?php endif; ?>
