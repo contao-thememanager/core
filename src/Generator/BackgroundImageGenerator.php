@@ -85,6 +85,10 @@ class BackgroundImageGenerator
                 }
             }
 
+            // Sort options by file name
+            ksort($bg);
+            ksort($bg2);
+
             $bg = array_values(array_merge($bg, $bg2));
         }
 
