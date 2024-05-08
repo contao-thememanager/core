@@ -1,8 +1,12 @@
-<?php $sm = $this->styleManager ?>
+<?php
+  $sm = $this->styleManager;
+  $fieldsetClasses = ' crc grid-list gtr-f' . ($sm ? $sm->prepare('eGridList')->format(' %s') : '');
 
-<div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
+  $this->extend('form_row');
+?>
 
-  <div role="group" aria-label="legend" id="ctrl_<?= $this->id ?>" class="checkbox_container crc grid-list gtr-f<?= $sm ? $sm->prepare('eGridList')->format(' %s') : '' ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
+<?php $this->block('field'); ?>
+  <fieldset id="ctrl_<?= $this->id ?>" class="checkbox_container<?= $fieldsetClasses ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
 
     <?php if ($this->label): ?>
       <legend>
@@ -38,5 +42,5 @@
       <p class="error"><?= $this->getErrorAsString() ?></p>
     <?php endif; ?>
 
-  </div>
-</div>
+  </fieldset>
+<?php $this->endblock(); ?>

@@ -224,11 +224,7 @@ textarea {
 
   &-captcha {
     display: flex;
-    flex-direction: column;
-
-    > *           { order: 1; }
-    .captcha_text { order: 2; }
-    input         { order: 3; }
+    flex-flow: column;
   }
 }
 

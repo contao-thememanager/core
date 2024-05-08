@@ -1,5 +1,6 @@
-<div class="<?= $this->prefix ?><?php if ($this->class): ?> <?= $this->class ?><?php endif; ?>">
+<?php $this->extend('form_row'); ?>
 
+<?php $this->block('label'); ?>
   <?php if ($this->label): ?>
     <label for="ctrl_<?= $this->id ?>"<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
       <?php if ($this->mandatory): ?>
@@ -9,7 +10,9 @@
       <?php endif; ?>
     </label>
   <?php endif; ?>
+<?php $this->endblock(); ?>
 
+<?php $this->block('field'); ?>
   <?php if ($this->multiple): ?>
     <input type="hidden" name="<?= '[]' == substr($this->name, -2) ? substr($this->name, 0, -2) : $this->name ?>" value="">
   <?php endif; ?>
@@ -35,4 +38,4 @@
   <?php if ($this->hasErrors()): ?>
     <p class="error"><?= $this->getErrorAsString() ?></p>
   <?php endif; ?>
-</div>
+<?php $this->endblock(); ?>
