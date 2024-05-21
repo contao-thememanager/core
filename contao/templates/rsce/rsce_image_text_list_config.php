@@ -31,6 +31,14 @@ return [
                 return System::getContainer()->get('contao.image.sizes')->getOptionsForUser(BackendUser::getInstance());
             }
         ],
+        'fullsize' => [
+            'label' => [
+                'de' => ['Großansicht/Neues Fenster', 'Großansicht der Bilder in einer Lightbox bzw. in einem neuen Browserfenster öffnen.'],
+                'en' => ['Full-size view/new window', 'Open the full-size images in a lightbox or in a new browser window.'],
+            ],
+            'inputType' => 'checkbox',
+            'eval' => ['tl_class'=>'w50 m12'],
+        ],
         'list' => [
             'label' => [
                 'de' => [
@@ -67,8 +75,8 @@ return [
                 ],
                 'url' => [
                     'label' => [
-                        'de' => ['Link-Adresse', 'Geben Sie eine Web-Adresse (https://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein.'],
-                        'en' => ['Link target', 'Please enter a web address (https://…), an e-mail address (mailto:…) or an insert tag.'],
+                        'de' => ['Link-Adresse', 'Geben Sie eine Web-Adresse (https://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein. Überschreibt die Großansicht.'],
+                        'en' => ['Link target', 'Please enter a web address (https://…), an e-mail address (mailto:…) or an insert tag. Overrides the Full-size view.'],
                     ],
                     'inputType' => 'text',
                     'eval' => ['rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 255, 'dcaPicker' => true, 'tl_class' => 'w50 wizard'],

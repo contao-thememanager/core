@@ -159,9 +159,7 @@
       &.img--flex  { --img-mt:0; --img-mb:0; }
     }
 
-    img,
-    figure,
-    picture {
+    :is(img, figure, figure > a, picture) {
       height: 100%;
     }
 

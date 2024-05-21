@@ -9,7 +9,26 @@
 <?php $this->block('content'); ?>
 
   <?php foreach ($this->list as $item): ?>
-    <?php if(!$item->invisible || $previewMode): ?>
+    <?php
+      $imgData = [];
+
+      if ($item->overwriteMeta) {
+        $imgData['metadata'] = array_filter([
+          'alt' => $item->alt ?? null,
+          'imageTitle' => $item->imageTitle ?? null,
+          'imageUrl' => $item->imageUrl ?? null,
+          'caption' => $item->caption ?? null,
+        ], fn($val) => $val !== '');
+      }
+
+      if ($this->fullsize && ($item->linkText || !$item->url)) {
+        $imgData['enableLightbox'] = true;
+        $imgData['lightboxGroupIdentifier'] = 'lb_'.$this->pid;
+        $imgData['setLinkAttributes'] = ['data-group' => 'lb_'.$this->pid];
+      }
+
+      if(!$item->invisible || $previewMode):
+    ?>
       <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
         <?php if(!$item->linkText && $item->url): ?>
           <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
@@ -18,14 +37,7 @@
         <?php endif; ?>
 
         <div class="c_image">
-          <?= $this->figure($item->singleSRC, $this->size, $item->overwriteMeta ? [
-            'metadata' => array_filter([
-              'alt' => $item->alt ?? null,
-              'imageTitle' => $item->imageTitle ?? null,
-              'imageUrl' => $item->imageUrl ?? null,
-              'caption' => $item->caption ?? null,
-            ], fn($val) => $val !== '')
-          ] : []) ?>
+          <?= $this->figure($item->singleSRC, $this->size, $imgData) ?>
         </div>
 
         <div class="c_text">
