@@ -1,39 +1,41 @@
 <?php
-  $container = Contao\System::getContainer();
-  $previewMode = $container->get('contao.security.token_checker')->isPreviewMode();
+  $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
-
-  if ($this->fullsize) {
-    $imageStudio = $container->get('contao.image.studio');
-
-    foreach ($this->list as $key => $item) {
-      $item->lb = 'lb_'.$this->pid;
-      $item->src = $imageStudio?->createLightboxImage((Contao\FilesModel::findByUuid($item->singleSRC))->getAbsolutePath())?->getImage()?->getImageSrc();
-    }
-  }
 ?>
 
 <?php $this->block('content'); ?>
 
   <?php foreach ($this->list as $item): ?>
-    <?php if(!$item->invisible || $previewMode): ?>
+    <?php
+      $imgData = [];
+
+      if ($item->overwriteMeta) {
+        $imgData['metadata'] = array_filter([
+          'alt' => $item->alt ?? null,
+          'imageTitle' => $item->imageTitle ?? null,
+          'imageUrl' => $item->imageUrl ?? null,
+          'caption' => $item->caption ?? null,
+        ], fn($val) => $val !== '');
+      }
+
+      if ($this->fullsize && !$item->url) {
+        $imgData['enableLightbox'] = true;
+        $imgData['lightboxGroupIdentifier'] = 'lb_'.$this->pid;
+        $imgData['setLinkAttributes'] = ['data-group' => 'lb_'.$this->pid];
+      }
+
+      if(!$item->invisible || $previewMode):
+    ?>
       <div class="item<?=$item->cssClass?' '.$item->cssClass:''?> block">
-        <?php if(!!$item->src || $item->url): ?>
-          <a href="<?=!!$item->url?$item->url:$item->src?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?><?= $this->fullsize ? ' data-lightbox="'.$item->lb.'" data-group="'.$item->lb.'"':''?>>
+        <?php if($item->url): ?>
+          <a href="<?=$item->url?>" class="inside"<?= $item->titleText ? ' title="'.$item->titleText.'"' : '' ?><?= $item->rel ? ' rel="'.$item->rel.'"' : '' ?><?= ($item->target && !$item->rel) ? ' target="_blank"' : '' ?>>
         <?php else: ?>
           <div class="inside">
         <?php endif; ?>
           <div class="c_image">
-            <?= $this->figure($item->singleSRC, $this->size, $item->overwriteMeta ? [
-              'metadata' => array_filter([
-                'alt' => $item->alt ?? null,
-                'imageTitle' => $item->imageTitle ?? null,
-                'imageUrl' => $item->imageUrl ?? null,
-                'caption' => $item->caption ?? null,
-              ], fn($val) => $val !== '')
-            ] : []) ?>
+            <?= $this->figure($item->singleSRC, $this->size, $imgData) ?>
           </div>
-        <?= (!!$item->src || $item->url) ? '</a>' : '</div>' ?>
+        <?= $item->url ? '</a>' : '</div>' ?>
       </div>
     <?php endif; ?>
   <?php endforeach ?>
