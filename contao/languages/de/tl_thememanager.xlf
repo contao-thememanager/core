@@ -65,6 +65,10 @@
         <source>Icon</source>
         <target>Icon</target>
       </trans-unit>
+      <trans-unit id="tl_thememanager.media_legend">
+        <source>Media</source>
+        <target>Medien</target>
+      </trans-unit>
       <trans-unit id="tl_thememanager.form_general_legend">
         <source>Form: General</source>
         <target>Formular: Allgemein</target>
@@ -2364,6 +2368,15 @@
       <trans-unit id="tl_thememanager.icon-outlined-width.1">
         <source>Here you can set the border-width for outlined icons.</source>
         <target>Hier können Sie die Rahmenbreite (border-width) für umrandete Icons einstellen.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.video-bg.0">
+        <source>$video-bg</source>
+        <target>$video-bg</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.video-bg.1">
+        <source>Here you can set the background-color for video element.</source>
+        <target>Hier können Sie die Hintergrundfarbe für Video-Elemente einstellen.</target>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.form-input-font-family.0">

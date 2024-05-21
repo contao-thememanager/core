@@ -38,7 +38,7 @@
         #{$class}: $style;
       }
       @if ($activate-content-heading-settings) {
-        #main & {
+        #container & {
           color: var(--h#{$k}-c-clr);
           font-size: var(--h#{$k}-c-fs);
           @each $class, $style in map-get(map-get($list, content), $k) {

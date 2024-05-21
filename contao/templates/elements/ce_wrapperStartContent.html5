@@ -1,7 +1,8 @@
 <?php
   $sm = $this->styleManager;
-  $wrapperClasses = $sm->prepare('cLayout')->format(' %s');
-  $insideClasses  = $sm->prepare('cSpacing')->format(' %s') .
+  $wrapperClasses = $sm->prepare('cLayout')->exclude(['overflow'])->format(' %s');
+  $insideClasses  = $sm->prepare('cLayout',['overflow'])->format(' %s') .
+                    $sm->prepare('cSpacing')->format(' %s') .
                     $sm->prepare('cPadding')->format(' %s') .
                     $sm->prepare('cBackground')->format(' %s');
   $gridClasses    = $sm->prepare('cGridAlignment')->format(' %s').

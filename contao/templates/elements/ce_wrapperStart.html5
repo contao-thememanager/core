@@ -1,6 +1,7 @@
 <?php
   $sm = $this->styleManager;
-  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+  $insideClasses = $sm->prepare('cLayout',['overflow'])->format(' %s') .
+                   $sm->prepare('cSpacing')->format(' %s') .
                    $sm->prepare('cPadding')->format(' %s');
   $sliderConfig  = $sm->prepare('sliderConfig',['preset'])->format(" data-slider-config='%s'",'json') .
                    $sm->prepare('slider')->format(" data-slider='%s'",'json') .

@@ -1,5 +1,8 @@
 .ov {
-  &, & >.inside {
-    overflow: visible;
-  }
+  // Backport for old overflow visible
+  &, & > .inside { overflow: visible; }
+
+  &-h { overflow: hidden; }
+
+  &-v { overflow: visible; }
 }

@@ -1,6 +1,7 @@
 <?php
   $sm = $this->styleManager;
-  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+  $insideClasses = $sm->prepare('cLayout',['overflow'])->format(' %s') .
+                   $sm->prepare('cSpacing')->format(' %s') .
                    $sm->prepare('cPadding')->format(' %s');
 ?>
 <div class="ce_wrapper article-wrapper block <?= $this->class ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>

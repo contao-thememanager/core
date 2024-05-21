@@ -28,6 +28,11 @@ video {
   aspect-ratio: var(--ar,auto);
 }
 
+video {
+  --objf: contain;
+  background: $video-bg;
+}
+
 .obj {
   // Object-fit | default: 'fill'
   &--contain   {--objf:contain;}
