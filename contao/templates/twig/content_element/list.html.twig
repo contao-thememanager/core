@@ -1,0 +1,30 @@
+{% extends "@Contao/content_element/list.html.twig" %}
+
+{% set sm = styleManager(data) %}
+
+{% set liIcon = sm.get('eList', ['icon']) %}
+
+{% set ulClasses =
+    sm.prepare('eList', ['icon']).format(' li-icon') ~
+    sm.prepare('eList', ['icon']).exclude(['icon']).format(' %s')
+%}
+
+{% block list_attributes %}
+    {{ list_attributes.addClass('c_list') }}
+{% endblock %}
+
+{% block list_item_attributes %}
+    {% set list_item_attributes = attrs(list.item_attributes|default)
+        .addClass('li-m-i', liIcon is not empty)
+    %}
+    {{ list_item_attributes }}
+{% endblock %}
+
+{% block list_item %}
+    {% if liIcon is not empty %}
+        <span class="{{ liIcon }}"></span>
+    {% endif %}
+    <span class="li-content">
+        {{- item|insert_tag|raw -}}
+    </span>
+{% endblock %}
