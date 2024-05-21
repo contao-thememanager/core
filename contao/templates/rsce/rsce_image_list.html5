@@ -1,11 +1,14 @@
 <?php
-  $previewMode = Contao\System::getContainer()->get('contao.security.token_checker')->isPreviewMode();
+  $container = Contao\System::getContainer();
+  $previewMode = $container->get('contao.security.token_checker')->isPreviewMode();
   $this->extend('block_searchable');
 
   if ($this->fullsize) {
+    $imageStudio = $container->get('contao.image.studio');
+
     foreach ($this->list as $key => $item) {
-      $item->lb     = 'lb_'.$this->pid;
-      $item->src = (Contao\FilesModel::findByUuid($item->singleSRC))->path;
+      $item->lb = 'lb_'.$this->pid;
+      $item->src = $imageStudio?->createLightboxImage((Contao\FilesModel::findByUuid($item->singleSRC))->getAbsolutePath())?->getImage()?->getImageSrc();
     }
   }
 ?>
