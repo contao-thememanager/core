@@ -1,5 +1,9 @@
 {% extends "@Contao/content_element/hyperlink.html.twig" %}
 
+{% set sm = styleManager(data) %}
+
+{% set aClasses = sm.prepare('eLink').format(' %s') %}
+
 {% block text_link %}
     {% set link_attributes = attrs(link_attributes|default)
         .addClass('c_link')
