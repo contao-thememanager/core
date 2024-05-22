@@ -14,7 +14,7 @@
 
   gap: var(--v-gap) var(--h-gap);
 
-  > div {
+  > :is(div, .item) {
     width: calc((100% / var(--i)) - (((var(--i) - 1) / var(--i)) * var(--i-h-gap)));
   }
 }

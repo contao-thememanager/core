@@ -17,6 +17,10 @@ li {
     page-break-inside: avoid;
     break-inside: avoid;
   }
+
+  .grid-list & {
+    --i-v-gap:0;
+  }
 }
 
 .c_list {

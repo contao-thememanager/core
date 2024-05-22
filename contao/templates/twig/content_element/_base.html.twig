@@ -22,17 +22,19 @@
     sm.prepare('eBackground').format(' %s')
 %}
 
+{% set listClasses = sm.prepare('eGridList').format(' %s') %}
+
 {% set sliderConfig =
-    sm.prepare('sliderConfig',['preset']).format(" data-slider-config='%s'",'json') ~
-    sm.prepare('slider').format(" data-slider='%s'",'json') ~
-    sm.prepare('sliderXS').format(" data-slider-xs='%s'",'json') ~
-    sm.prepare('sliderS').format(" data-slider-s='%s'",'json') ~
-    sm.prepare('sliderM').format(" data-slider-m='%s'",'json') ~
-    sm.prepare('sliderL').format(" data-slider-l='%s'",'json') ~
-    sm.prepare('sliderXL').format(" data-slider-xl='%s'",'json')
+    sm.prepare('sliderConfig',['preset']).format(' data-slider-config=%s','json') ~
+    sm.prepare('slider').format(' data-slider=%s','json') ~
+    sm.prepare('sliderXS').format(' data-slider-xs=%s','json') ~
+    sm.prepare('sliderS').format(' data-slider-s=%s','json') ~
+    sm.prepare('sliderM').format(' data-slider-m=%s','json') ~
+    sm.prepare('sliderL').format(' data-slider-l=%s','json') ~
+    sm.prepare('sliderXL').format(' data-slider-xl=%s','json')
 %}
 
-{% set isListOrSlider = sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
+{% set isListOrSlider = type != 'gallery' and (sm.get('eGridList') is not empty or 'init-slider' in element_css_classes) %}
 
 {% set isHeadline = type == 'headline' %}
 {% set contentHeadlineClasses = 'c_headline' ~ hlClasses %}
@@ -44,6 +46,10 @@
     .addClass('ce_youtube', type == 'youtube')
     .addClass('ce_vimeo', type == 'vimeo')
     .mergeWith(attributes|default)
+%}
+
+{% set figure_attributes = attrs(figure_attributes|default)
+    .addClass('image_container', figure.media.type|default is empty)
 %}
 
 {# Base #}
@@ -64,14 +70,6 @@
         {% if isListOrSlider %}
             </div>
         {% endif %}
-
-        {# ToDo: Check list_component #}
-        {#{% if add_pagination %}
-            <div class="pagination-container{{ sm.prepare('gPagination').format(' %s') }}">
-                {{ parent() }}
-            </div>
-        {% endif %}#}
-
     </div>
 {% endblock %}
 
