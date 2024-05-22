@@ -1,0 +1,38 @@
+{% extends "@Contao/content_element/gallery.html.twig" %}
+
+{% block list_attributes %}
+    {% if sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
+        {{ list_attributes.addClass('c_list grid-list li-none').addClass(listClasses) }}
+        {{ sliderConfig }}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block list_item_attributes %}
+    {{ attrs(list.item_attributes|default).addClass('item') }}
+{% endblock %}
+
+{% block pagination %}
+    <div class="pagination-container{{ sm.prepare('gPagination').format(' %s') }}">
+        {% set pagination_attributes = attrs(list.pagination_attributes|default)
+            .addClass('pagination')
+            .set('data-pagination')
+            .set('aria-label', 'MSC.pagination'|trans)
+        %}
+        <nav{{ pagination_attributes }}>
+            <ul>
+                {% for page in range(1, number_of_pages) %}
+                    <li>
+                        {% set link_attributes = attrs()
+                            .set('href', '#')
+                            .set('data-page', page)
+                            .set('title', 'MSC.goToPage'|trans([page]))
+                        %}
+                        <a{{ link_attributes }}>{{ page }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
