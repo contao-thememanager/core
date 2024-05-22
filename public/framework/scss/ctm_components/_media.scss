@@ -33,6 +33,19 @@ video {
   background: $video-bg;
 }
 
+[data-splash-screen] {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+
+  > span {
+    position: absolute;
+    inset: auto 0 0;
+    text-align: center;
+    line-height: var(--leading-base);
+  }
+}
+
 .obj {
   // Object-fit | default: 'fill'
   &--contain   {--objf:contain;}

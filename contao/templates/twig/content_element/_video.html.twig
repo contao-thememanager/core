@@ -1,0 +1,9 @@
+{% extends "@Contao/content_element/_video.html.twig" %}
+
+{% block content %}
+    {% set video_attributes = attrs(video_attributes|default)
+        .addClass('video_container')
+    %}
+
+    {{  parent() }}
+{% endblock %}

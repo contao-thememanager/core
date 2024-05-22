@@ -34,14 +34,15 @@
 
 {% set isListOrSlider = sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
 
-{% set isImage = type == 'image' %}
 {% set isHeadline = type == 'headline' %}
 {% set contentHeadlineClasses = 'c_headline' ~ hlClasses %}
 
 {# Add legacy classes for certain types #}
 {% set attributes = attrs()
-    .addClass('ce_image', isImage)
     .addClass('ce_headline', isHeadline)
+    .addClass('ce_image', type == 'image')
+    .addClass('ce_youtube', type == 'youtube')
+    .addClass('ce_vimeo', type == 'vimeo')
     .mergeWith(attributes|default)
 %}
 

@@ -1,0 +1,9 @@
+{% extends "@Contao/content_element/player.html.twig" %}
+
+{% block figure_component %}
+    {% set figure_attributes = attrs(figure_attributes|default)
+        .addClass(figure.media.type ~ '_container')
+    %}
+
+    {{  parent() }}
+{% endblock %}
