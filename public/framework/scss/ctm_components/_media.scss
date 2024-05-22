@@ -35,8 +35,11 @@ video {
 
 [data-splash-screen] {
   all: unset;
-  cursor: pointer;
+  display: block;
+  width: 100%;
   position: relative;
+
+  cursor: pointer;
 
   > span {
     position: absolute;
