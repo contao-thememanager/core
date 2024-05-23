@@ -1,17 +1,14 @@
-{% extends "@Contao/content_element/downloads.html.twig" %}
+{% extends "@Contao/content_element/download.html.twig" %}
 
 {% set sm = styleManager(data) %}
-{% set listClasses = sm.prepare('eList').format(' %s') %}
 {% set linkClasses = sm.prepare('eLink').exclude(['icon','direction']).format(' %s') %}
 {% set spanClasses = sm.prepare('eLink',['icon','direction']).format(' %s') %}
 
-{% block list_attributes %}
-    {{ list_attributes.addClass('c_list').addClass(listClasses) }}
-{% endblock %}
-
-{% block list_item_attributes %}
-    {{- attrs(list.item_attributes|default).addClass(['download-element reverse', "ext-#{item.file.extension(true)}"]) -}}
-{% endblock %}
+{% if downloads %}
+    {% set attributes = attrs(attributes|default)
+        .addClass('reverse')
+    %}
+{% endif %}
 
 {% block download_link_attributes %}
     {{ download_link_attributes.addClass('c_link').addClass(linkClasses) }}

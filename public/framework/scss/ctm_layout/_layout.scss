@@ -8,6 +8,12 @@
 .inline-flex { display: inline-flex; }
 .flex { display: flex; }
 
+// CSS instead of template changes -> See download-element (C5)
+.reverse {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
 .sticky > .inside {
   position: sticky;
   top: 0;
