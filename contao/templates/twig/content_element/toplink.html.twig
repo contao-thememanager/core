@@ -1,9 +1,8 @@
 {% extends "@Contao/content_element/toplink.html.twig" %}
 
 {% set sm = styleManager(data) %}
-
-{% set aClasses = sm.prepare('eLink').format(' %s') %}
+{% set linkClasses = sm.prepare('eLink').format(' %s') %}
 
 {% block link_attributes %}
-    {{ link_attributes.addClass('c_link').addClass(aClasses) }}
+    {{ link_attributes.addClass('c_link').addClass(linkClasses) }}
 {% endblock %}

@@ -1,11 +1,8 @@
 {% extends "@Contao/content_element/_base.html.twig" %}
 
 {% set sm = styleManager(data) %}
-
 {% set headline2 = data.headline2|deserialize %}
-
-{% set hlClasses = sm.prepare('gHeadline').format(' %s') %}
-
+{% set headlineClasses = sm.prepare('gHeadline').format(' %s') %}
 {% set insideClasses =
     sm.prepare('cLayout', ['imageText']).format(' image_text') ~
     sm.prepare('cLayout', ['iconText']).format(' icon_text') ~
@@ -19,9 +16,6 @@
     sm.prepare('cBackground').format(' %s') ~
     sm.prepare('eBackground').format(' %s')
 %}
-
-{% set listClasses = sm.prepare('eGridList').format(' %s') %}
-
 {% set sliderConfig =
     sm.prepare('sliderConfig',['preset']).format(' data-slider-config=%s','json') ~
     sm.prepare('slider').format(' data-slider=%s','json') ~
@@ -31,11 +25,9 @@
     sm.prepare('sliderL').format(' data-slider-l=%s','json') ~
     sm.prepare('sliderXL').format(' data-slider-xl=%s','json')
 %}
-
 {% set isListOrSlider = type != 'gallery' and (sm.get('eGridList') is not empty or 'init-slider' in element_css_classes) %}
-
 {% set isHeadline = type == 'headline' %}
-{% set contentHeadlineClasses = 'c_headline' ~ hlClasses %}
+{% set contentHeadlineClasses = 'c_headline' ~ headlineClasses %}
 
 {# Add legacy classes for certain types #}
 {% set attributes = attrs()
@@ -45,26 +37,20 @@
     .addClass('ce_vimeo', type == 'vimeo')
     .mergeWith(attributes|default)
 %}
-
 {% set figure_attributes = attrs(figure_attributes|default)
     .addClass('image_container', figure.media.type|default is empty)
 %}
 
 {# Base #}
-
 {%- block inner %}
     <div class="{{ isHeadline ? contentHeadlineClasses : 'inside' }}{{ insideClasses }}">
-
         {% if headline.text %}
             {{ block('headline_component') }}
         {% endif %}
-
         {% if isListOrSlider %}
             <div class="c_list grid-list{{ sm.prepare('eGridList').format(' %s') }}"{{ sliderConfig }}>
         {% endif %}
-
         {% block content %}{% endblock %}
-
         {% if isListOrSlider %}
             </div>
         {% endif %}
@@ -72,7 +58,6 @@
 {% endblock %}
 
 {# Headline classes #}
-
 {% block headline_attributes %}
     {% set headline_attributes = attrs(headline.attributes|default)
         .addClass(data.headlineStyle)
@@ -81,17 +66,14 @@
 {% endblock %}
 
 {# Headline Wrapper and Headline2 #}
-
 {% block headline_component %}
-    <div class="c_headline{{ hlClasses }}">
+    <div class="c_headline{{ headlineClasses }}">
         {{ parent() }}
-
         {% if headline2.value %}
             {% set headline_two_tag_name = headline2.unit|default('h3') %}
             {% set headline_two_attributes = attrs(headline2.attributes|default)
                 .addClass(data.headline2Style)
             %}
-
             <{{ headline_two_tag_name }}{{ headline_two_attributes }}>
                 {{ headline2.value|insert_tag_raw }}
             </{{ headline_two_tag_name }}>

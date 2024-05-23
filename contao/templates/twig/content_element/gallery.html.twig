@@ -2,7 +2,7 @@
 
 {% block list_attributes %}
     {% if sm.get('eGridList') is not empty or 'init-slider' in element_css_classes %}
-        {{ list_attributes.addClass('c_list grid-list li-none').addClass(listClasses) }}
+        {{ list_attributes.addClass('c_list grid-list li-none').addClass(sm.prepare('eGridList').format(' %s')) }}
         {{ sliderConfig }}
     {% else %}
         {{ parent() }}

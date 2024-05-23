@@ -35,7 +35,7 @@ $list-responsive-ratios: (
 
 @each $ratio in $list-responsive-ratios {
   @each $x, $y in $ratio {
-    .ratio-#{$x}#{$y} {padding-bottom: shortPercentage(divide($y,$x))} // @deprecated - to be removed in CTM 2.1
+    .ratio-#{$x}#{$y} {padding-bottom: shortPercentage(divide($y,$x))} // @deprecated - to be removed in CTM 2.2
     .aspect--#{$x}\:#{$y} {aspect-ratio: #{$x}/#{$y}}
   }
 }
