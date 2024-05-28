@@ -8,3 +8,17 @@
     display: inline-block; // Override button inline-flex to properly display filesize
   }
 }
+
+// CSS instead of full template override
+.dl-reverse {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    order: 1;
+  }
+
+  figure {
+    flex-basis: 100%;
+  }
+}

@@ -4,12 +4,6 @@
 {% set linkClasses = sm.prepare('eLink').exclude(['icon','direction']).format(' %s') %}
 {% set spanClasses = sm.prepare('eLink',['icon','direction']).format(' %s') %}
 
-{% if downloads %}
-    {% set attributes = attrs(attributes|default)
-        .addClass('reverse')
-    %}
-{% endif %}
-
 {% block download_link_attributes %}
     {{ download_link_attributes.addClass('c_link').addClass(linkClasses) }}
 {% endblock %}
@@ -17,3 +11,13 @@
 {%- block download_link_inner %}
     <span class="name{{ spanClasses }}">{{ text }}</span>
 {% endblock -%}
+
+{% block download_component %}
+    {% if download.show_file_previews is defined and download.show_file_previews %}
+        <span class="dl-reverse">
+            {{ parent() }}
+        </span>
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
