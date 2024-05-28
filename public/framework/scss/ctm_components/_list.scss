@@ -17,6 +17,10 @@ li {
     page-break-inside: avoid;
     break-inside: avoid;
   }
+
+  .grid-list & {
+    --i-v-gap:0;
+  }
 }
 
 .c_list {
@@ -31,7 +35,7 @@ li {
 .li {
   &-icon { list-style: none; padding-inline-start: rem(20); }
   &-none { list-style: none; padding-inline-start: 0; }
-  &-m-i  { display: flex; } // For wrapping ce_list elements and simulating a marker
+  &-m-i  { display: flex; } // For wrapping list items and simulating a marker
   &-clr {
     li::marker, [class^="i-"]:before, [class*=" i-"]:before {
       color: var(--li-clr, inherit);

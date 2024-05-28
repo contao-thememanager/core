@@ -1,0 +1,6 @@
+{% extends "@Contao/content_element/teaser.html.twig" %}
+
+{% block headline_component %}
+    {% set headline = attrs(headline|default).mergeWith({'tag_name': 'h2'}) %}
+    {{ parent() }}
+{% endblock %}

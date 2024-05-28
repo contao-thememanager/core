@@ -1,20 +1,8 @@
 .ce_text {
 
-  .image_container {
+  figure {
     width: var(--img-wdth, 100%);
-
-    &.float {
-
-      &_right,
-      &_left,
-      &_above {
-        margin-bottom: divide($grid-gutter-width, 2);
-      }
-
-      &_below {
-        margin-top: divide($grid-gutter-width, 2);
-      }
-    }
+    margin: var(--img-mt,0) var(--img-mr,0) var(--img-mb,0) var(--img-ml,0);
   }
 
   // Consider nested text blocks (e.g. news bundle)
@@ -23,9 +11,22 @@
   }
 }
 
+.float_right,
+.float_left,
+.float_above,
+.media--right,
+.media--left,
+.media--above {
+  --img-mb:var(--gtr-half);
+}
+
+.float_below,
+.media--below {
+  --img-mt:var(--gtr-half);
+}
+
 // Element self alignment
-.image_text,
-.icon_text {
+:is(.image_text, .icon_text) {
   .c_text {
     flex: 1;
     align-self: var(--self-align, auto);
@@ -34,19 +35,17 @@
 
 @include media-breakpoint('xs') {
 
-  .ce_text {
+  .width-25 { --img-wdth:25%; }
+  .width-33 { --img-wdth:33.3333%; }
+  .width-50 { --img-wdth:50%; }
 
-    &.width-25 { --img-wdth: 25%; }
-    &.width-33 { --img-wdth: 33.3333%; }
-    &.width-50 { --img-wdth: 50%; }
+  .float_right,
+  .media--right {
+    --img-ml:var(--gtr-half);
+  }
 
-    .image_container {
-
-      &.float {
-
-        &_right { margin-left:  divide($grid-gutter-width, 2) }
-        &_left  { margin-right: divide($grid-gutter-width, 2) }
-      }
-    }
+  .float_left,
+  .media--left {
+    --img-mr:var(--gtr-half);
   }
 }
