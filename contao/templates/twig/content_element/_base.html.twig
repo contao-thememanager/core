@@ -32,6 +32,8 @@
 {# Add legacy classes for certain types #}
 {% set attributes = attrs()
     .addClass('ce_headline', isHeadline)
+    .addClass('ce_text', type == 'text')
+    .addClass('ce_list', type == 'list')
     .addClass('ce_image', type == 'image')
     .addClass('ce_youtube', type == 'youtube')
     .addClass('ce_vimeo', type == 'vimeo')
