@@ -1,7 +1,7 @@
 <?php foreach ($this->body as $class => $row): ?>
   <?php foreach ($row as $col): ?>
     <?php if ($col->addImage): ?>
-      <div class="item <?= $class ?> block">
+      <div class="item<?= !is_numeric($class) ? ' ' . $class : '' ?> block">
         <div class="inside">
           <?php $this->insert('image', (array) $col); ?>
         </div>
