@@ -10,35 +10,27 @@
 
   &-inner {
 
-    &-top,
-    &-btm {
-
-      > .inside {
-
-        &:before,
-        &:after {
-          position: absolute;
-          height: $divider-size;
-
-          // inner dividers do not need to react to small- or no-gutter due to article-spacing
-          left:  divide($grid-gutter-width, 2);
-          right: divide($grid-gutter-width, 2);
-
-          background-color: $divider-color;
-        }
-      }
-    }
-
-    &-top > .inside:before {
-      content: '';
-      display: block;
-      top: 0;
-    }
-
+    &-top > .inside:before,
     &-btm > .inside:after {
       content: '';
       display: block;
+      position: absolute;
+
+      // inner dividers do not need to react to small- or no-gutter due to article-spacing
+      left:  divide($grid-gutter-width, 2);
+      right: divide($grid-gutter-width, 2);
+
+      border: 0 $divider-style $divider-color;
+    }
+
+    &-top > .inside:before {
+      top: 0;
+      border-top-width: $divider-size;
+    }
+
+    &-btm > .inside:after {
       bottom: 0;
+      border-bottom-width: $divider-size;
     }
   }
 }
