@@ -2,7 +2,7 @@
 
 **Actively maintained**
 
-+ [Version 2.0.*](#version-20)
++ [Version 2.x](#version-2x)
 
 **No longer supported**
 
@@ -14,7 +14,7 @@
 
 ------
 
-## Version 2.0.*
+## Version 2.x
 
 - Major Release - ThemeManager Version 2
 - An upgrade from the previous 1.x is **NOT possible and NOT recommended**.
@@ -30,7 +30,8 @@ this documentation on how to [restore from a backup](https://docs.contao.org/man
 
 #### Global / Quality of Life Changes
 
-- Simultaneous support for Contao 4.13.x, 5.1.x, 5.2.x
+- Simultaneous support for Contao 4.13 and 5.3
+- Use Twig templates
 - Complete rewrite of the framework to use [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 - Configure images within the filesystem as backgrounds and automatically generate the CSS after compiling
 - Prefilled layout settings when creating a new layout
