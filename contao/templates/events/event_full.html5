@@ -9,7 +9,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="c_text">
+    <div class="c_text<?= $this->details ? ' grid':''?>">
       <p class="info">
         <?php if ($this->recurring): ?>
           <span class="recurring"><?= $this->recurring ?></span>
@@ -24,7 +24,9 @@
       <h1><?= $this->title ?></h1>
 
       <?php if ($this->details): ?>
-        <?= $this->details ?>
+        <div class="inside">
+          <?= $this->details ?>
+        </div>
       <?php else: ?>
         <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
       <?php endif; ?>

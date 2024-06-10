@@ -4,9 +4,17 @@
     width: var(--img-wdth, 100%);
     margin: var(--img-mt,0) var(--img-mr,0) var(--img-mb,0) var(--img-ml,0);
   }
+}
 
-  // Consider nested text blocks (e.g. news bundle)
-  .c_text & {
+// Consider nested text blocks (e.g. news bundle)
+.c_text {
+
+  &.grid {
+    --v-gap:#{$paragraph-spacing};
+  }
+
+  // BC-layer (see #37)
+  > .ce_text {
     margin-bottom: $paragraph-spacing;
   }
 }

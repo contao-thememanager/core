@@ -9,7 +9,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="c_text">
+    <div class="c_text<?= $this->hasText ? ' grid':''?>">
       <?php if ($this->hasMetaFields || (null === $this->hasMetaFields)): // Contao 5.* BC layer for simultaneous Contao 4.13 support ?>
         <?php $this->block('info'); ?>
           <p class="info">
@@ -31,7 +31,9 @@
       <?php endif; ?>
 
       <?php if ($this->hasText): ?>
-        <?= $this->text ?>
+        <div class="inside">
+          <?= $this->text ?>
+        </div>
       <?php else: ?>
         <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
       <?php endif; ?>
