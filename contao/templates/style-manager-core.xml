@@ -2865,7 +2865,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+        <field title="modules">a:2:{i:0;s:11:"articlelist";i:1;s:8:"newsmenu";}</field>
       </child>
       <child alias="listStyle">
         <field title="pid">2020</field>
@@ -2879,7 +2879,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+        <field title="modules">a:2:{i:0;s:11:"articlelist";i:1;s:8:"newsmenu";}</field>
       </child>
       <child alias="icon">
         <field title="pid">2020</field>
@@ -2893,6 +2893,8 @@
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:1:{i:0;s:4:"list";}</field>
+        <field title="extendModule">1</field>
+        <field title="modules">a:1:{i:0;s:8:"newsmenu";}</field>
       </child>
       <child alias="justifyList">
         <field title="pid">2020</field>
@@ -2992,7 +2994,7 @@
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:3:{i:0;s:4:"list";i:1;s:19:"rsce_hyperlink_list";i:2;s:9:"downloads";}</field>
         <field title="extendModule">1</field>
-        <field title="modules">a:1:{i:0;s:11:"articlelist";}</field>
+        <field title="modules">a:2:{i:0;s:11:"articlelist";i:1;s:8:"newsmenu";}</field>
       </child>
     </children>
   </archive>
