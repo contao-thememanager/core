@@ -25,6 +25,10 @@ table {
 
   border-collapse: $tcollapse;
   border-spacing:  $table-cell-spacing;
+
+  &:has(+ *) {
+    margin-bottom: $paragraph-spacing;
+  }
 }
 
 caption {
