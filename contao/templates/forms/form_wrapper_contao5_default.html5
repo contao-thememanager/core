@@ -55,7 +55,7 @@
             formData.append(e.submitter.name, e.submitter.value);
 
             // Prevent double form submission
-            e.submitter.disabled = true;
+            setTimeout(() => e.submitter.disabled = true);
             setTimeout(() => e.submitter.disabled = false, 30000);
           }
 
