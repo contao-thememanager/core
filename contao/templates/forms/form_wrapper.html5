@@ -1,4 +1,6 @@
 <?php
+  $version = Contao\CoreBundle\ContaoCoreBundle::getVersion();
+
   $this->attributes = str_contains($this->attributes, 'class="') ? str_replace('class="', 'class="grid gtr-f ', $this->attributes) : $this->attributes . 'class="grid gtr-f"';
 ?>
 
@@ -37,86 +39,88 @@
 </div>
 <!-- indexer::continue -->
 
-<?php if ($this->ajax): ?>
-  <script<?= $this->attr()->setIfExists('nonce', $this->nonce('script-src')) ?>>
-    window.addEventListener('DOMContentLoaded', () => {
-      const el = document.querySelector('[data-ajax-form="<?= $this->id ?>"]');
+<?php if (version_compare($version, '5.0', '>')): ?>
+  <?php if ($this->ajax): ?>
+    <script<?= $this->attr()->setIfExists('nonce', $this->nonce('script-src')) ?>>
+      window.addEventListener('DOMContentLoaded', () => {
+        const el = document.querySelector('[data-ajax-form="<?= $this->id ?>"]');
 
-      function request(form, body, callback) {
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', form.action, true);
-        xhr.setRequestHeader('Accept', 'text/html');
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        xhr.setRequestHeader('X-Contao-Ajax-Form', form.querySelector('[name="FORM_SUBMIT"]').value);
+        function request(form, body, callback) {
+          const xhr = new XMLHttpRequest();
+          xhr.open('POST', form.action, true);
+          xhr.setRequestHeader('Accept', 'text/html');
+          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+          xhr.setRequestHeader('X-Contao-Ajax-Form', form.querySelector('[name="FORM_SUBMIT"]').value);
 
-        form.ariaBusy = 'true';
-        form.dataset.ajaxForm = 'loading';
+          form.ariaBusy = 'true';
+          form.dataset.ajaxForm = 'loading';
 
-        xhr.onload = () => {
-          form.dispatchEvent(new CustomEvent('ajax-form-onload', {
-            bubbles: true,
-            detail: { body, form, xhr },
-          }));
+          xhr.onload = () => {
+            form.dispatchEvent(new CustomEvent('ajax-form-onload', {
+              bubbles: true,
+              detail: { body, form, xhr },
+            }));
 
-          form.ariaBusy = 'false';
-          form.dataset.ajaxForm = '';
+            form.ariaBusy = 'false';
+            form.dataset.ajaxForm = '';
 
-          callback(xhr);
-        };
+            callback(xhr);
+          };
 
-        xhr.send(body || null)
-      }
+          xhr.send(body || null)
+        }
 
-      function initForm(form) {
-        form.addEventListener('submit', e => {
-          e.preventDefault();
+        function initForm(form) {
+          form.addEventListener('submit', e => {
+            e.preventDefault();
 
-          const formData = new FormData(form);
+            const formData = new FormData(form);
 
-          // Send the triggered button data as well
-          if (e.submitter) {
-            formData.append(e.submitter.name, e.submitter.value);
+            // Send the triggered button data as well
+            if (e.submitter) {
+              formData.append(e.submitter.name, e.submitter.value);
 
-            // Prevent double form submission
-            e.submitter.disabled = true;
-            setTimeout(() => e.submitter.disabled = false, 30000);
-          }
-
-          request(form, formData, xhr => {
-            const location = xhr.getResponseHeader('X-Ajax-Location');
-
-            // Handle the redirect header
-            if (location) {
-              window.location.href = location;
-              return;
+              // Prevent double form submission
+              e.submitter.disabled = true;
+              setTimeout(() => e.submitter.disabled = false, 30000);
             }
 
-            const range = document.createRange();
-            range.selectNode(form.parentNode);
+            request(form, formData, xhr => {
+              const location = xhr.getResponseHeader('X-Ajax-Location');
 
-            const newForm = range.createContextualFragment(xhr.responseText).firstElementChild;
-            form.replaceWith(newForm);
+              // Handle the redirect header
+              if (location) {
+                window.location.href = location;
+                return;
+              }
 
-            if (!newForm.getAttribute('action')) {
-              newForm.action = xhr.responseURL;
-            }
+              const range = document.createRange();
+              range.selectNode(form.parentNode);
 
-            initForm(newForm);
+              const newForm = range.createContextualFragment(xhr.responseText).firstElementChild;
+              form.replaceWith(newForm);
+
+              if (!newForm.getAttribute('action')) {
+                newForm.action = xhr.responseURL;
+              }
+
+              initForm(newForm);
+            });
           });
-        });
-      }
+        }
 
-      initForm(el);
-    });
-  </script>
-<?php else: ?>
-  <script<?= $this->attr()->setIfExists('nonce', $this->nonce('script-src')) ?>>
-    document.currentScript.previousElementSibling.querySelector('form').addEventListener('submit', e => {
-      // Prevent double form submission
-      if (e.submitter) {
-        setTimeout(() => e.submitter.disabled = true);
-        setTimeout(() => e.submitter.disabled = false, 30000);
-      }
-    });
-  </script>
+        initForm(el);
+      });
+    </script>
+  <?php else: ?>
+    <script<?= $this->attr()->setIfExists('nonce', $this->nonce('script-src')) ?>>
+      document.currentScript.previousElementSibling.querySelector('form').addEventListener('submit', e => {
+        // Prevent double form submission
+        if (e.submitter) {
+          setTimeout(() => e.submitter.disabled = true);
+          setTimeout(() => e.submitter.disabled = false, 30000);
+        }
+      });
+    </script>
+  <?php endif; ?>
 <?php endif; ?>
