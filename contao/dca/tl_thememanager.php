@@ -8,7 +8,7 @@
 use Contao\Backend;
 use Contao\BackendUser;
 use Contao\CoreBundle\Exception\AccessDeniedException;
-use Oveleon\ContaoThemeCompilerBundle\CompilerUtils;
+use Oveleon\ContaoThemeCompilerBundle\Utils\CompilerUtils;
 
 $GLOBALS['TL_DCA']['tl_thememanager'] = [
     // Config
