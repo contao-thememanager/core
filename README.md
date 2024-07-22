@@ -73,7 +73,7 @@ responsive web experiences with Contao.
 
 #### Via composer
 ```
-composer require oveleon/contao-glossary-bundle
+composer require contao-thememanager/core
 ```
 
 #### Via contao-manager
