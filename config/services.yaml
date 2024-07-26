@@ -5,5 +5,5 @@ services:
         public: true
 
     ContaoThemeManager\Core\:
-      resource: '../src/'
-      exclude: '../src/{Model,DependencyInjection,Resources}'
+        resource: '../src/'
+        exclude: '../src/{Model,DependencyInjection,Resources}'

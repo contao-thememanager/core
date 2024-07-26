@@ -10,7 +10,8 @@
 namespace ContaoThemeManager\Core\StyleManager;
 
 use Contao\File;
-use LogicException;
+use DOMException;
+use DomNode;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerArchiveModel;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
 
@@ -22,14 +23,14 @@ use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
 class StyleManagerXML
 {
     private \DOMDocument $xml;
-    private \DOMNode $archives;
+    private DOMNode $archives;
     private StyleManagerArchiveModel $group;
     private StyleManagerModel $groupChild;
 
     private array $groups = [];
 
     /**
-     * @throws \DOMException
+     * @throws DOMException
      */
     public function __construct()
     {
@@ -188,7 +189,7 @@ class StyleManagerXML
     /**
      * Adds an archive data row to the XML document
      *
-     * @throws \DOMException
+     * @throws DOMException
      */
     private function addArchiveData(StyleManagerArchiveModel $objArchive, array $arrChildren): void
     {
@@ -204,9 +205,9 @@ class StyleManagerXML
     /**
      * Adds a child data row to the XML document
      *
-     * @throws \DOMException
+     * @throws DOMException
      */
-    private function addChildrenData(\DomNode $archive, array $arrChildren): void
+    private function addChildrenData(DomNode $archive, array $arrChildren): void
     {
         // Add children node
         $children = $this->xml->createElement('children');
@@ -227,9 +228,9 @@ class StyleManagerXML
     /**
      * Adds row data to the XML document
      *
-     * @throws \DOMException
+     * @throws DOMException
      */
-    private function addRowData(\DOMNode $row, array $arrData): void
+    private function addRowData(DOMNode $row, array $arrData): void
     {
         foreach ($arrData as $k=>$v)
         {
