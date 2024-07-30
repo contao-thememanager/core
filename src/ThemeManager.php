@@ -12,10 +12,11 @@ use Contao\Backend;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\DataContainer;
 use Contao\File;
-use Contao\StringUtil;
 use Contao\System;
 use ContaoThemeManager\Core\StyleManager\StyleManagerXML;
 use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Filesystem\Path;
 
 class ThemeManager extends Backend
 {
@@ -129,8 +130,11 @@ class ThemeManager extends Backend
      */
     public static function createCSSFile(string $name, string $css = '', ?FileCompiler $compiler = null): ?string
     {
+        // Get assets dir
+        $componentDir = self::getContaoComponentDir();
+
         // Prepare CSS
-        $objFile = new File($path = 'assets/ctmcore/css/_'. $name . FileCompiler::FILE_EXT);
+        $objFile = new File($path = $componentDir . DIRECTORY_SEPARATOR . 'ctmcore/css/_'.  $name . FileCompiler::FILE_EXT);
         $blnSuccess = $objFile->write($css);
         $objFile->close();
 
@@ -142,5 +146,24 @@ class ThemeManager extends Backend
         $compiler?->msg('Could not create _' . $name . FileCompiler::FILE_EXT, FileCompiler::MSG_ERROR);
 
         return null;
+    }
+
+    public static function getContaoComponentDir(): string|null
+    {
+        $projectDir = System::getContainer()->getParameter('kernel.project_dir');
+
+        $fs = new Filesystem();
+
+        if (!$fs->exists($composerJsonFilePath = Path::join($projectDir, 'composer.json'))) {
+            return 'assets';
+        }
+
+        $composerConfig = json_decode(file_get_contents($composerJsonFilePath), true, 512, JSON_THROW_ON_ERROR);
+
+        if (null === ($componentDir = $composerConfig['extra']['contao-component-dir'] ?? null)) {
+            return 'assets';
+        }
+
+        return $componentDir;
     }
 }
