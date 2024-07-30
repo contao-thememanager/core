@@ -4,29 +4,24 @@ namespace ContaoThemeManager\Core\EventListener\DataContainer;
 
 use Contao\ContentModel;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsCallback;
-use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\CoreBundle\Security\ContaoCorePermissions;
 use Contao\DataContainer;
 use Contao\Input;
 use Contao\Message;
 use Contao\StringUtil;
-use Contao\System;
-use Doctrine\DBAL\Connection;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
 class DataContainerListener
 {
     public function __construct(
-        protected ContaoFramework $framework,
-        protected Connection $connection,
-        protected Security $security
+        protected AuthorizationCheckerInterface $security,
     ){}
 
     #[AsCallback(table: 'tl_layout', target: 'fields.headerHeight.load')]
     #[AsCallback(table: 'tl_layout', target: 'fields.footerHeight.load')]
     #[AsCallback(table: 'tl_layout', target: 'fields.widthLeft.load')]
     #[AsCallback(table: 'tl_layout', target: 'fields.widthRight.load')]
-    public function checkLayoutMisconfiguration($value, DataContainer $dc): array|string
+    public static function checkLayoutMisconfiguration($value, DataContainer $dc): array|string
     {
         if (empty($value))
         {
@@ -56,7 +51,7 @@ class DataContainerListener
     }
 
     #[AsCallback(table: 'tl_layout', target: 'fields.framework.load')]
-    public function checkSelectedFramework($value, DataContainer $dc): array|string
+    public static function checkSelectedFramework($value, DataContainer $dc): array|string
     {
         if (empty($value))
         {
@@ -87,10 +82,10 @@ class DataContainerListener
             return;
         }
 
-        $security = System::getContainer()->get('security.helper');
-
-        if (!$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'themes') || !$security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_LAYOUTS))
-        {
+        if (
+            !$this->security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'themes')
+            || !$this->security->isGranted(ContaoCorePermissions::USER_CAN_ACCESS_LAYOUTS)
+        ) {
             return;
         }
 

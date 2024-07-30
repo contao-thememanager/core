@@ -14,17 +14,14 @@ use Contao\User;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 class KernelRequestSubscriber implements EventSubscriberInterface
 {
-    protected $scopeMatcher;
-    protected $security;
-
-    public function __construct(ScopeMatcher $scopeMatcher, Security $security)
-    {
-        $this->scopeMatcher = $scopeMatcher;
-        $this->security     = $security;
+    public function __construct(
+        protected ScopeMatcher $scopeMatcher,
+        protected TokenStorageInterface $tokenStorage
+    ) {
     }
 
     public static function getSubscribedEvents()
@@ -53,7 +50,7 @@ class KernelRequestSubscriber implements EventSubscriberInterface
             $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/theme-config.js|static';
 
             /** @var User $user */
-            $user = $this->security->getUser();
+            $user = $this->tokenStorage->getToken()?->getUser();
 
             if (null !== $user && $user->show_ctm_colors && file_exists('assets/ctmcore/css/_backendColors.css'))
             {
