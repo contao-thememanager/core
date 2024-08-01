@@ -2,14 +2,14 @@
 
 namespace ContaoThemeManager\Core\EventListener\Template;
 
-use Contao\CoreBundle\ServiceAnnotation\Hook;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\StringUtil;
 use Contao\Template;
 
 /**
  * @deprecated as of ThemeManager 2.1, to be removed in ThemeManager 2.2
- * @Hook("parseTemplate")
  */
+#[AsHook('parseTemplate')]
 class ParseTemplateListener
 {
     public function __invoke(Template $template): void
