@@ -9,6 +9,7 @@
 namespace ContaoThemeManager\Core\EventSubscriber;
 
 use Contao\ArrayUtil;
+use Contao\BackendUser;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\User;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -49,11 +50,14 @@ class KernelRequestSubscriber implements EventSubscriberInterface
 
             $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/theme-config.js|static';
 
-            /** @var User $user */
+            /** @var BackendUser $user */
             $user = $this->tokenStorage->getToken()?->getUser();
 
-            if (null !== $user && $user->show_ctm_colors && file_exists('assets/ctmcore/css/_backendColors.css'))
-            {
+            if (
+                $user instanceof BackendUser
+                && $user->show_ctm_colors &&
+                file_exists('assets/ctmcore/css/_backendColors.css')
+            ) {
                 $GLOBALS['TL_CSS'][]        = 'assets/ctmcore/css/_backendColors.css|static';
                 $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/preview-colors.js|static';
             }
