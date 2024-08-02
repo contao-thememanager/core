@@ -5,6 +5,9 @@
         <img src="/assets/markdown/logo_v_light.svg" width="500" alt="ContaoThemeManager">
     </picture>
 </p>
+<p align="center">
+    <a href="https://github.com/sponsors/oveleon"><img src="https://img.shields.io/github/sponsors/oveleon?label=Sponsor&logo=GitHub&color=%23fe8e86"/></a>
+</p>
 <p align="center"><i>Contao ThemeManager: A lightweight forward-thinking CSS component-first-framework leveraging flexbox and custom properties</i></p>
 <p align="center">
     <a href="https://github.com/contao-thememanager/core"><img src="https://img.shields.io/github/v/release/contao-thememanager/core?color=ef9838"/></a>
@@ -17,15 +20,35 @@
 <a title="Contao ThemeManager Documentation" href="https://docs.contao-thememanager.com"><strong>Read the Docs</strong></a>
 </p>
 
+---
+
+## Support
+
+If you like this extension, we'd love your support in keeping the open-source spirit alive.
+
+If you think this plugin is useful, please consider [sponsoring us](https://github.com/sponsors/oveleon) to help
+contribute to our time invested and to further development of this and other open source projects.
+
+Your contributions, whether through `coding`, `testing`, `providing feedback`, or even
+a [donation](https://github.com/sponsors/oveleon), help ensure that we can continue offering free open source software.
+Join us in making a difference, and thank you for your support! - [Oveleon](https://www.oveleon.de).
+
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/oveleon)
+
+---
+
+> Working with **Contao 4.13** and **Contao ^5.3** (PHP ^8.1)
+
+---
 
 ## About
 
 Built with a focus on customization, efficiency, and adherence to industry best practices,
 the Contao ThemeManager offers a fully configurable system eliminating the need for knowing or writing CSS.
-Features include an integrated scssphp-based asset compiler, CSS versioning, dynamic CSS background image generation, 
+Features include an integrated scssphp-based asset compiler, CSS versioning, dynamic CSS background image generation,
 icon font management, an array of new content elements and much more.
 
-With comprehensive customization options via the backend, it's the technical cornerstone for crafting modern, 
+With comprehensive customization options via the backend, it's the technical cornerstone for crafting modern,
 responsive web experiences with Contao.
 
 
@@ -45,14 +68,14 @@ responsive web experiences with Contao.
 ## Features
 - Lightweight (~55.8 kB (minified), ~11.4 kB (gzipped))
 - Grid-System (based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes))
-- Working with Contao 4.13 and Contao 5.2
+- Working with Contao 4.13 and Contao ^5.3
 - In-built SCSS and asset compiler (based on [scssphp](https://github.com/scssphp/scssphp/))
 - Fully customizable CSS framework configuration in the Contao Backend
 - Default styles and layout for almost every Contao component
 - Fully customizable contao components using the [Contao Component StyleManager](https://github.com/oveleon/contao-component-style-manager)
 - Extended Headline configuration
 - Enhancing Contao standard components (Table, gallery, news and more)
-- New content elements (wrappers, text- / image- / icon- / list-components) 
+- New content elements (wrappers, text- / image- / icon- / list-components)
 - Create CSS backgrounds within the filesystem
 - Changing and integrating icon-fonts easily
 - Dynamically generated StyleManager options
@@ -101,7 +124,7 @@ If you think you have found a bug please follow these guidelines
 3. Provide a step-by-step tutorial on how to reproduce the issue in an isolated environment using only the Contao ThemeManager Core
 
 ### Feature requests
-Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. 
+Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project.
 It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
 
 
