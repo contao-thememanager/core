@@ -1,5 +1,5 @@
-@mixin icon($content, $font-size: 1em, $line-height: 1) {
-  content: $content;
+@mixin icon($content, $font-size: 1em, $line-height: 1, $alt: '') {
+  content: $content / $alt;
   display: inline-block;
   font: normal normal normal #{$font-size} $icon-font-family;
   line-height: $line-height;
