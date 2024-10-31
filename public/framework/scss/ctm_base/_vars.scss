@@ -185,6 +185,11 @@
 
   --cbx-bdr-clr:#{$form-checkbox-radio-border-color};
   --cbx-bdr-clr-hvr:#{$form-checkbox-radio-border-color-hover};
+
+  // A11y
+  --focus-clr: var(--clr-primary);
+  --focus-style: 3px dotted var(--focus-clr);
+  --focus-offset: 2px;
 }
 
 // Typography

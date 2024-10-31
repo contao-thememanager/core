@@ -348,6 +348,14 @@ $form-checkbox-radio-label-min-height: $form-checkbox-radio-size;
       background-color: $form-checkbox-radio-background-focus;
     }
   }
+
+  &:focus-visible + label {
+
+    &:before {
+      outline: var(--focus-style);
+      outline-offset: var(--focus-offset);
+    }
+  }
 }
 
 // Checkbox radio container
