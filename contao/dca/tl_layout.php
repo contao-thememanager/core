@@ -46,7 +46,7 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['modules']['default'] = [
 ];
 
 // Set custom viewport
-$GLOBALS['TL_DCA']['tl_layout']['fields']['viewport']['default'] = 'width=device-width,initial-scale=1.0,user-scalable=no';
+$GLOBALS['TL_DCA']['tl_layout']['fields']['viewport']['default'] = 'width=device-width,initial-scale=1.0,maximum-scale=5.0';
 
 // Include ThemeManager JavaScript template
 $GLOBALS['TL_DCA']['tl_layout']['fields']['scripts']['default'] = [0 => 'js_ctm_core'];
