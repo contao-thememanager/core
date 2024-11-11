@@ -52,7 +52,7 @@
               <div class="inside">
 
               <?php $this->block('main'); ?>
-                <div id="main">
+                <div id="main" class="main-section">
                   <div class="inside">
                     <?= $this->main ?>
                   </div>
