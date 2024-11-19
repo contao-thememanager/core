@@ -13,12 +13,16 @@
     {%- endblock -%}
     </{{ tag_name }}>
     {% if headline2.value %}
-        {% set headline_two_tag_name = headline2.unit|default('h3') %}
-        {% set headline_two_attributes = attrs(headline2.attributes|default)
-            .addClass(data.headline2Style)
-        %}
-        <{{ headline_two_tag_name }}{{ headline_two_attributes }}>
-        {{ headline2.value|insert_tag_raw }}
-        </{{ headline_two_tag_name }}>
+        {% block headline_two_component %}
+            {% set headline_two_tag_name = headline2.unit|default('h3') %}
+            {% set headline_two_attributes = attrs(headline2.attributes|default)
+                .addClass(data.headline2Style)
+            %}
+            <{{ headline_two_tag_name }}{% block headline_two_attributes %}{{ headline_two_attributes }}{% endblock %}>
+                {%- block headline_two_inner -%}
+                    {{ headline2.value|insert_tag_raw }}
+                {%- endblock -%}
+            </{{ headline_two_tag_name }}>
+        {% endblock %}
     {% endif %}
 {% endblock %}
