@@ -234,7 +234,7 @@ class IconGenerator
             // Add font-source
             $css .= vsprintf("@font-face{font-family:%s;src:url('%s') format('woff%s');%s%s%s}", [
                 self::FONTFAMILY_ICON,
-                $fontPath,
+                $fontPath . '?' . time(),
                 $this->woffTwo?2:'',
                 'font-weight:normal;',
                 'font-style:normal;',
