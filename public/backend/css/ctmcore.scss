@@ -200,7 +200,8 @@ form#tl_thememanager {
     padding-left: #{math.div($field-gap-offset, 2)};
     padding-right: #{math.div($field-gap-offset, 2)};
 
-    > legend {
+    > legend:not(:has( > button)),
+    > legend > button {
       width: 100%;
       padding-right: #{12px - math.div($field-gap-offset, 2)};
       padding-left:  #{28px - math.div($field-gap-offset, 2)};
@@ -241,7 +242,8 @@ form#tl_thememanager {
     font-weight: bold;
   }
 
-  legend {
+  legend,
+  legend > button {
     font-weight: bold;
   }
 
@@ -250,7 +252,8 @@ form#tl_thememanager {
 
     margin-top: 9px;
 
-    > legend {
+    > legend:not(:has( > button)),
+    > legend > button {
       padding-top: 5px;
       padding-bottom: 5px;
       background-position-y: 6px;
@@ -268,7 +271,8 @@ form#tl_thememanager {
         padding-bottom: 25px;
       }
 
-      > legend {
+      > legend:not(:has( > button)),
+      > legend > button {
         padding-top: 5px;
         padding-bottom: 5px;
         background-position-y: 6px;
