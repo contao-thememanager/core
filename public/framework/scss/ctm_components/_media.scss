@@ -80,3 +80,10 @@ video {
     }
   }
 }
+
+// Responsive ratio for YouTube shorts
+@media (max-width: #{map-get($breakpoints, 's') - .02px}) and (orientation: portrait) {
+  .yt-shorts figure {
+    aspect-ratio: 9 / 16;
+  }
+}

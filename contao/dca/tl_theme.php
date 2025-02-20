@@ -11,6 +11,7 @@ $GLOBALS['TL_DCA']['tl_theme']['list']['operations']['themeConfig'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_theme']['themeConfig'],
     'href'      => 'table=tl_thememanager',
     'icon'      => 'bundles/contaothememanagercore/icons/config.svg',
+    'primary'   => true
 ];
 
 // Add fields

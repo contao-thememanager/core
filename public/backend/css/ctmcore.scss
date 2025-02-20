@@ -164,6 +164,27 @@ form#tl_thememanager {
       padding: 5px 7px 5px 3px;
     }
 
+    .pickr {
+      position: absolute;
+      right: 0;
+      top: 32px;
+      height: 28px;
+      width: #{$select-type-wdth - (7px + 3px + 1px)};
+      border-radius: 0 5px 5px 0;
+
+      > button {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+
+    .pcr-button {
+
+      &:after,
+      &:before {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+
     .tl_text, .tl_select {
       width: 100%;
       padding-right: #{$select-type-wdth + 8px};
@@ -200,7 +221,8 @@ form#tl_thememanager {
     padding-left: #{math.div($field-gap-offset, 2)};
     padding-right: #{math.div($field-gap-offset, 2)};
 
-    > legend {
+    > legend:not(:has( > button)),
+    > legend > button {
       width: 100%;
       padding-right: #{12px - math.div($field-gap-offset, 2)};
       padding-left:  #{28px - math.div($field-gap-offset, 2)};
@@ -241,7 +263,8 @@ form#tl_thememanager {
     font-weight: bold;
   }
 
-  legend {
+  legend,
+  legend > button {
     font-weight: bold;
   }
 
@@ -250,7 +273,8 @@ form#tl_thememanager {
 
     margin-top: 9px;
 
-    > legend {
+    > legend:not(:has( > button)),
+    > legend > button {
       padding-top: 5px;
       padding-bottom: 5px;
       background-position-y: 6px;
@@ -268,7 +292,8 @@ form#tl_thememanager {
         padding-bottom: 25px;
       }
 
-      > legend {
+      > legend:not(:has( > button)),
+      > legend > button {
         padding-top: 5px;
         padding-bottom: 5px;
         background-position-y: 6px;
