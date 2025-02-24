@@ -25,6 +25,14 @@ html[data-color-scheme="dark"] {
   }
 }
 
+.choices:has(:is(
+  select[name="styleManager[eLink_icon]"],
+  select[name="styleManager[eList_icon]"],
+  select[name="styleManager[eFormIcon_icon]"]
+)) {
+  font-family: ctm-icon,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
 .tc_box {
   // Background image list in theme compiler
   .bg-list {
