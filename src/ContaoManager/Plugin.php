@@ -10,11 +10,15 @@ declare(strict_types=1);
 
 namespace ContaoThemeManager\Core\ContaoManager;
 
+use Contao\CalendarBundle\ContaoCalendarBundle;
+use Contao\CommentsBundle\ContaoCommentsBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
+use Contao\FaqBundle\ContaoFaqBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
+use Contao\NewsBundle\ContaoNewsBundle;
 use ContaoThemeManager\Core\ContaoThemeManagerCore;
 use Exception;
 use Oveleon\ContaoComponentStyleManager\ContaoComponentStyleManager;
@@ -30,7 +34,14 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
     {
         return [
             BundleConfig::create(ContaoThemeManagerCore::class)
-                ->setLoadAfter([ContaoCoreBundle::class, ContaoComponentStyleManager::class, ContaoThemeCompilerBundle::class])
+                ->setLoadAfter([
+                    ContaoCoreBundle::class,
+                    ContaoCalendarBundle::class,
+                    ContaoFaqBundle::class,
+                    ContaoNewsBundle::class,
+                    ContaoComponentStyleManager::class,
+                    ContaoThemeCompilerBundle::class,
+                ])
                 ->setReplace(['contao-thememanager']),
         ];
     }
