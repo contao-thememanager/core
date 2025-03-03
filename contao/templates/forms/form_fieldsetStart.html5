@@ -2,13 +2,13 @@
 $gutterBC = (str_contains($this->class,'gtr-2')?' gtr-2':'').(str_contains($this->class,'gtr-0')?' gtr-0':'');
 
 $sm = $this->styleManager;
-$outerClasses  = $sm->prepare('cLayout')->exclude(['overflow'])->format(' %s');
-$insideClasses = $sm->prepare('cLayout',['overflow'])->format(' %s') .
-                 $sm->prepare('cSpacing')->format(' %s') .
-                 $sm->prepare('cPadding')->format(' %s') .
-                 $sm->prepare('cBackground')->format(' %s');
-$gridClasses   = $sm->prepare('cGridAlignment')->format(' %s').
-                 $sm->prepare('cGridGutter')->format(' %s');
+$outerClasses  = $sm?->prepare('cLayout')->exclude(['overflow'])->format(' %s');
+$insideClasses = $sm?->prepare('cLayout',['overflow'])->format(' %s') .
+                 $sm?->prepare('cSpacing')->format(' %s') .
+                 $sm?->prepare('cPadding')->format(' %s') .
+                 $sm?->prepare('cBackground')->format(' %s');
+$gridClasses   = $sm?->prepare('cGridAlignment')->format(' %s').
+                 $sm?->prepare('cGridGutter')->format(' %s');
 ?>
 <fieldset<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
   <div class="inside<?= $insideClasses ?>">
