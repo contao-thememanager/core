@@ -228,6 +228,11 @@ textarea {
   }
 }
 
+// Do not show the fieldset legend if the captcha is not shown
+fieldset:has(.widget-captcha[style]) > legend {
+  display: none;
+}
+
 // Form-validation
 @if ($form-validation == 'Focus') {
   input,
