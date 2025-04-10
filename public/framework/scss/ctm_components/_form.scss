@@ -228,8 +228,8 @@ textarea {
   }
 }
 
-// Do not show the fieldset legend if the captcha is not shown
-fieldset:has(.widget-captcha[style]) > legend {
+// Always hide the legend (see #43)
+fieldset:has(.widget-captcha) > legend {
   display: none;
 }
 
