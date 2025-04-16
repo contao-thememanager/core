@@ -17,7 +17,7 @@
   }
 }
 
-div[class*="hl-mb-"] {
+[class*="hl-mb-"] {
   margin-bottom: var(--hl-mb,#{$headline-spacing}) !important;
 }
 
@@ -28,6 +28,7 @@ $hl-bps: map-merge((0:0),$breakpoints);
     .hl-mb {
 
       @if ($bp == 0) {
+        &-0 {--hl-mb: 0 }
         &-auto {
           &-1 {--hl-mb: var(--hl-mb-1)}
           &-2 {--hl-mb: var(--hl-mb-2)}

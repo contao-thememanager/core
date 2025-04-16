@@ -14,11 +14,13 @@
         <field title="alias">spacingGlobal</field>
         <field title="title">Global Spacing &amp;#40;activates the responsive behavior&amp;#41;</field>
         <field title="description">Defines dynamic spacing of the headings.</field>
-        <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:12:"hl-mb-auto-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:12:"hl-mb-auto-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:12:"hl-mb-auto-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"hl-mb-auto-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:12:"hl-mb-auto-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:12:"hl-mb-auto-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:7:"hl-mb-0";s:5:"value";s:5:"Reset";}}</field>
         <field title="cssClass">long</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -35,6 +37,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -50,6 +54,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -65,6 +71,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -80,6 +88,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -95,6 +105,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -110,6 +122,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -126,6 +140,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -141,6 +157,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -156,6 +174,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -171,6 +191,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -186,6 +208,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -201,6 +225,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -217,6 +243,8 @@
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:22:{i:0;s:8:"headline";i:1;s:4:"text";i:2;s:4:"list";i:3;s:5:"table";i:4;s:4:"code";i:5;s:9:"rsce_text";i:6;s:9:"rsce_icon";i:7;s:19:"rsce_hyperlink_list";i:8;s:19:"rsce_icon_text_list";i:9;s:15:"rsce_image_list";i:10;s:20:"rsce_image_text_list";i:11;s:14:"rsce_text_list";i:12;s:11:"sliderStart";i:13;s:9:"hyperlink";i:14;s:5:"image";i:15;s:7:"gallery";i:16;s:6:"player";i:17;s:7:"youtube";i:18;s:5:"vimeo";i:19;s:8:"download";i:20;s:9:"downloads";i:21;s:8:"comments";}</field>
         <field title="extendModule">1</field>
@@ -3083,6 +3111,19 @@
     <field title="groupAlias">Element</field>
     <field title="sorting">4500</field>
     <children>
+      <child alias="hlStyle">
+        <field title="pid">2050</field>
+        <field title="sorting">100</field>
+        <field title="alias">hlStyle</field>
+        <field title="title">Class</field>
+        <field title="description">Here you can select a headline class.</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:2:"h1";s:5:"value";s:2:"h1";}i:1;a:2:{s:3:"key";s:2:"h2";s:5:"value";s:2:"h2";}i:2;a:2:{s:3:"key";s:2:"h3";s:5:"value";s:2:"h3";}i:3;a:2:{s:3:"key";s:2:"h4";s:5:"value";s:2:"h4";}i:4;a:2:{s:3:"key";s:2:"h5";s:5:"value";s:2:"h5";}i:5;a:2:{s:3:"key";s:2:"h6";s:5:"value";s:2:"h6";}}</field>
+        <field title="chosen">1</field>
+        <field title="blankOption">1</field>
+        <field title="passToTemplate">1</field>
+        <field title="extendFormFields">1</field>
+        <field title="formFields">a:1:{i:0;s:13:"fieldsetStart";}</field>
+      </child>
       <child alias="hl1Type">
         <field title="pid">2050</field>
         <field title="sorting">100</field>
