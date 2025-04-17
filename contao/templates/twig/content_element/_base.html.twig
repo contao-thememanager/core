@@ -46,7 +46,7 @@
 {# Base #}
 {%- block inner %}
     <div class="{{ isHeadline ? contentHeadlineClasses : 'inside' }}{{ insideClasses }}">
-        {% if headline.text %}
+        {% if headline.text or headline2.value|default %}
             {{ block('headline_component') }}
         {% endif %}
         {% if isListOrSlider %}
