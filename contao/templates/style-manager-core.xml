@@ -33,7 +33,7 @@
         <field title="title">Spacing</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:7:"hl-mb-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:7:"hl-mb-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:7:"hl-mb-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">clr</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -51,6 +51,7 @@
         <field title="title">Spacing &amp;#40;XS&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"hl-mb-xs-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"hl-mb-xs-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:10:"hl-mb-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -68,6 +69,7 @@
         <field title="title">Spacing &amp;#40;S&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-s-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-s-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -85,6 +87,7 @@
         <field title="title">Spacing &amp;#40;M&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-m-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-m-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -102,6 +105,7 @@
         <field title="title">Spacing &amp;#40;L&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:9:"hl-mb-l-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:9:"hl-mb-l-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:9:"hl-mb-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -119,6 +123,7 @@
         <field title="title">Spacing &amp;#40;XL&amp;#41;</field>
         <field title="description">Define the spacing of headings to the following elements</field>
         <field title="cssClasses">a:3:{i:0;a:2:{s:3:"key";s:10:"hl-mb-xl-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:10:"hl-mb-xl-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:10:"hl-mb-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -136,7 +141,7 @@
         <field title="title">Alignment</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -154,6 +159,7 @@
         <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -171,6 +177,7 @@
         <field title="title">Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -188,6 +195,7 @@
         <field title="title">Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -205,6 +213,7 @@
         <field title="title">Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -222,6 +231,7 @@
         <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the headings</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -266,6 +276,7 @@
         <field title="title">Alignment</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -283,6 +294,7 @@
         <field title="title">Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -300,6 +312,7 @@
         <field title="title">Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -317,6 +330,7 @@
         <field title="title">Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -334,6 +348,7 @@
         <field title="title">Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -351,6 +366,7 @@
         <field title="title">Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the texts.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -417,6 +433,7 @@
         <field title="title">Justify-Content</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -432,6 +449,7 @@
         <field title="title">Justify-Content &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -447,6 +465,7 @@
         <field title="title">Justify-Content &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -462,6 +481,7 @@
         <field title="title">Justify-Content &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -477,6 +497,7 @@
         <field title="title">Justify-Content &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -492,6 +513,7 @@
         <field title="title">Justify-Content &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the paginations (and comments pagination).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -507,7 +529,7 @@
         <field title="title">Text-Alignment</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:9:"text-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:10:"text-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:11:"text-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:12:"text-justify";s:5:"value";s:7:"Justify";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -523,6 +545,7 @@
         <field title="title">Text-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xs-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xs-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xs-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -538,6 +561,7 @@
         <field title="title">Text-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-s-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-s-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-s-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -553,6 +577,7 @@
         <field title="title">Text-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-m-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-m-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-m-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -568,6 +593,7 @@
         <field title="title">Text-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:11:"text-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"text-l-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:13:"text-l-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:14:"text-l-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -583,6 +609,7 @@
         <field title="title">Text-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the pagination description.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:12:"text-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:13:"text-xl-right";s:5:"value";s:5:"Right";}i:2;a:2:{s:3:"key";s:14:"text-xl-center";s:5:"value";s:6:"Center";}i:3;a:2:{s:3:"key";s:15:"text-xl-justify";s:5:"value";s:7:"Justify";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1018,6 +1045,7 @@
         <field title="title">Direction</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:8:"nav-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:9:"nav-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1029,6 +1057,7 @@
         <field title="title">Direction &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xs-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xs-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1040,6 +1069,7 @@
         <field title="title">Direction &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-s-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-s-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1051,6 +1081,7 @@
         <field title="title">Direction &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-m-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-m-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1062,6 +1093,7 @@
         <field title="title">Direction &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:10:"nav-l-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:11:"nav-l-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1073,6 +1105,7 @@
         <field title="title">Direction &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the behavior / alignment of the navigation for this Breakpoint.</field>
         <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:11:"nav-xl-left";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:12:"nav-xl-right";s:5:"value";s:5:"Right";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendPage">1</field>
@@ -1084,7 +1117,7 @@
         <field title="title">Justify-Content</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1097,6 +1130,7 @@
         <field title="title">Justify-Content &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1109,6 +1143,7 @@
         <field title="title">Justify-Content &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1121,6 +1156,7 @@
         <field title="title">Justify-Content &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1133,6 +1169,7 @@
         <field title="title">Justify-Content &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1145,6 +1182,7 @@
         <field title="title">Justify-Content &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of first level navigation elements.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendModule">1</field>
@@ -1166,6 +1204,7 @@
         <field title="title">Columns</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:5:"col-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:5:"col-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:5:"col-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:5:"col-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:5:"col-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:5:"col-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:5:"col-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:5:"col-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:5:"col-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:6:"col-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:6:"col-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:6:"col-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:8:"col-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1180,6 +1219,7 @@
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:8:"col-xs-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:8:"col-xs-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:8:"col-xs-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:8:"col-xs-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:8:"col-xs-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:8:"col-xs-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:8:"col-xs-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:8:"col-xs-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:8:"col-xs-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:9:"col-xs-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:9:"col-xs-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:9:"col-xs-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:11:"col-xs-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1194,6 +1234,7 @@
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:7:"col-s-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:7:"col-s-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:7:"col-s-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:7:"col-s-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:7:"col-s-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:7:"col-s-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:7:"col-s-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:7:"col-s-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:7:"col-s-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:8:"col-s-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:8:"col-s-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:8:"col-s-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:10:"col-s-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1208,6 +1249,7 @@
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:7:"col-m-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:7:"col-m-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:7:"col-m-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:7:"col-m-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:7:"col-m-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:7:"col-m-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:7:"col-m-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:7:"col-m-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:7:"col-m-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:8:"col-m-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:8:"col-m-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:8:"col-m-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:10:"col-m-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1222,6 +1264,7 @@
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:7:"col-l-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:7:"col-l-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:7:"col-l-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:7:"col-l-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:7:"col-l-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:7:"col-l-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:7:"col-l-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:7:"col-l-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:7:"col-l-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:8:"col-l-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:8:"col-l-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:8:"col-l-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:10:"col-l-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1236,6 +1279,7 @@
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the width within the grid for this component.</field>
         <field title="cssClasses">a:13:{i:0;a:2:{s:3:"key";s:8:"col-xl-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:8:"col-xl-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:8:"col-xl-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:8:"col-xl-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:8:"col-xl-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:8:"col-xl-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:8:"col-xl-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:8:"col-xl-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:8:"col-xl-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:9:"col-xl-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:9:"col-xl-11";s:5:"value";s:15:"11 / 12 Columns";}i:11;a:2:{s:3:"key";s:9:"col-xl-12";s:5:"value";s:15:"12 / 12 Columns";}i:12;a:2:{s:3:"key";s:11:"col-xl-auto";s:5:"value";s:9:"Automatic";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1259,6 +1303,7 @@
         <field title="title">Offset</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:11:{i:0;a:2:{s:3:"key";s:8:"offset-1";s:5:"value";s:14:"1 / 12 Columns";}i:1;a:2:{s:3:"key";s:8:"offset-2";s:5:"value";s:14:"2 / 12 Columns";}i:2;a:2:{s:3:"key";s:8:"offset-3";s:5:"value";s:14:"3 / 12 Columns";}i:3;a:2:{s:3:"key";s:8:"offset-4";s:5:"value";s:14:"4 / 12 Columns";}i:4;a:2:{s:3:"key";s:8:"offset-5";s:5:"value";s:14:"5 / 12 Columns";}i:5;a:2:{s:3:"key";s:8:"offset-6";s:5:"value";s:14:"6 / 12 Columns";}i:6;a:2:{s:3:"key";s:8:"offset-7";s:5:"value";s:14:"7 / 12 Columns";}i:7;a:2:{s:3:"key";s:8:"offset-8";s:5:"value";s:14:"8 / 12 Columns";}i:8;a:2:{s:3:"key";s:8:"offset-9";s:5:"value";s:14:"9 / 12 Columns";}i:9;a:2:{s:3:"key";s:9:"offset-10";s:5:"value";s:15:"10 / 12 Columns";}i:10;a:2:{s:3:"key";s:9:"offset-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1273,6 +1318,7 @@
         <field title="title">Offset &amp;#40;XS&amp;#41;</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:12:{i:0;a:2:{s:3:"key";s:11:"offset-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:11:"offset-xs-1";s:5:"value";s:14:"1 / 12 Columns";}i:2;a:2:{s:3:"key";s:11:"offset-xs-2";s:5:"value";s:14:"2 / 12 Columns";}i:3;a:2:{s:3:"key";s:11:"offset-xs-3";s:5:"value";s:14:"3 / 12 Columns";}i:4;a:2:{s:3:"key";s:11:"offset-xs-4";s:5:"value";s:14:"4 / 12 Columns";}i:5;a:2:{s:3:"key";s:11:"offset-xs-5";s:5:"value";s:14:"5 / 12 Columns";}i:6;a:2:{s:3:"key";s:11:"offset-xs-6";s:5:"value";s:14:"6 / 12 Columns";}i:7;a:2:{s:3:"key";s:11:"offset-xs-7";s:5:"value";s:14:"7 / 12 Columns";}i:8;a:2:{s:3:"key";s:11:"offset-xs-8";s:5:"value";s:14:"8 / 12 Columns";}i:9;a:2:{s:3:"key";s:11:"offset-xs-9";s:5:"value";s:14:"9 / 12 Columns";}i:10;a:2:{s:3:"key";s:12:"offset-xs-10";s:5:"value";s:15:"10 / 12 Columns";}i:11;a:2:{s:3:"key";s:12:"offset-xs-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1287,6 +1333,7 @@
         <field title="title">Offset &amp;#40;S&amp;#41;</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:12:{i:0;a:2:{s:3:"key";s:10:"offset-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:10:"offset-s-1";s:5:"value";s:14:"1 / 12 Columns";}i:2;a:2:{s:3:"key";s:10:"offset-s-2";s:5:"value";s:14:"2 / 12 Columns";}i:3;a:2:{s:3:"key";s:10:"offset-s-3";s:5:"value";s:14:"3 / 12 Columns";}i:4;a:2:{s:3:"key";s:10:"offset-s-4";s:5:"value";s:14:"4 / 12 Columns";}i:5;a:2:{s:3:"key";s:10:"offset-s-5";s:5:"value";s:14:"5 / 12 Columns";}i:6;a:2:{s:3:"key";s:10:"offset-s-6";s:5:"value";s:14:"6 / 12 Columns";}i:7;a:2:{s:3:"key";s:10:"offset-s-7";s:5:"value";s:14:"7 / 12 Columns";}i:8;a:2:{s:3:"key";s:10:"offset-s-8";s:5:"value";s:14:"8 / 12 Columns";}i:9;a:2:{s:3:"key";s:10:"offset-s-9";s:5:"value";s:14:"9 / 12 Columns";}i:10;a:2:{s:3:"key";s:11:"offset-s-10";s:5:"value";s:15:"10 / 12 Columns";}i:11;a:2:{s:3:"key";s:11:"offset-s-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1301,6 +1348,7 @@
         <field title="title">Offset &amp;#40;M&amp;#41;</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:12:{i:0;a:2:{s:3:"key";s:10:"offset-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:10:"offset-m-1";s:5:"value";s:14:"1 / 12 Columns";}i:2;a:2:{s:3:"key";s:10:"offset-m-2";s:5:"value";s:14:"2 / 12 Columns";}i:3;a:2:{s:3:"key";s:10:"offset-m-3";s:5:"value";s:14:"3 / 12 Columns";}i:4;a:2:{s:3:"key";s:10:"offset-m-4";s:5:"value";s:14:"4 / 12 Columns";}i:5;a:2:{s:3:"key";s:10:"offset-m-5";s:5:"value";s:14:"5 / 12 Columns";}i:6;a:2:{s:3:"key";s:10:"offset-m-6";s:5:"value";s:14:"6 / 12 Columns";}i:7;a:2:{s:3:"key";s:10:"offset-m-7";s:5:"value";s:14:"7 / 12 Columns";}i:8;a:2:{s:3:"key";s:10:"offset-m-8";s:5:"value";s:14:"8 / 12 Columns";}i:9;a:2:{s:3:"key";s:10:"offset-m-9";s:5:"value";s:14:"9 / 12 Columns";}i:10;a:2:{s:3:"key";s:11:"offset-m-10";s:5:"value";s:15:"10 / 12 Columns";}i:11;a:2:{s:3:"key";s:11:"offset-m-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1315,6 +1363,7 @@
         <field title="title">Offset &amp;#40;L&amp;#41;</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:12:{i:0;a:2:{s:3:"key";s:10:"offset-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:10:"offset-l-1";s:5:"value";s:14:"1 / 12 Columns";}i:2;a:2:{s:3:"key";s:10:"offset-l-2";s:5:"value";s:14:"2 / 12 Columns";}i:3;a:2:{s:3:"key";s:10:"offset-l-3";s:5:"value";s:14:"3 / 12 Columns";}i:4;a:2:{s:3:"key";s:10:"offset-l-4";s:5:"value";s:14:"4 / 12 Columns";}i:5;a:2:{s:3:"key";s:10:"offset-l-5";s:5:"value";s:14:"5 / 12 Columns";}i:6;a:2:{s:3:"key";s:10:"offset-l-6";s:5:"value";s:14:"6 / 12 Columns";}i:7;a:2:{s:3:"key";s:10:"offset-l-7";s:5:"value";s:14:"7 / 12 Columns";}i:8;a:2:{s:3:"key";s:10:"offset-l-8";s:5:"value";s:14:"8 / 12 Columns";}i:9;a:2:{s:3:"key";s:10:"offset-l-9";s:5:"value";s:14:"9 / 12 Columns";}i:10;a:2:{s:3:"key";s:11:"offset-l-10";s:5:"value";s:15:"10 / 12 Columns";}i:11;a:2:{s:3:"key";s:11:"offset-l-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1329,6 +1378,7 @@
         <field title="title">Offset &amp;#40;XL&amp;#41;</field>
         <field title="description">Moves this component forward within the grid by the specified column width.</field>
         <field title="cssClasses">a:12:{i:0;a:2:{s:3:"key";s:11:"offset-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:11:"offset-xl-1";s:5:"value";s:14:"1 / 12 Columns";}i:2;a:2:{s:3:"key";s:11:"offset-xl-2";s:5:"value";s:14:"2 / 12 Columns";}i:3;a:2:{s:3:"key";s:11:"offset-xl-3";s:5:"value";s:14:"3 / 12 Columns";}i:4;a:2:{s:3:"key";s:11:"offset-xl-4";s:5:"value";s:14:"4 / 12 Columns";}i:5;a:2:{s:3:"key";s:11:"offset-xl-5";s:5:"value";s:14:"5 / 12 Columns";}i:6;a:2:{s:3:"key";s:11:"offset-xl-6";s:5:"value";s:14:"6 / 12 Columns";}i:7;a:2:{s:3:"key";s:11:"offset-xl-7";s:5:"value";s:14:"7 / 12 Columns";}i:8;a:2:{s:3:"key";s:11:"offset-xl-8";s:5:"value";s:14:"8 / 12 Columns";}i:9;a:2:{s:3:"key";s:11:"offset-xl-9";s:5:"value";s:14:"9 / 12 Columns";}i:10;a:2:{s:3:"key";s:12:"offset-xl-10";s:5:"value";s:15:"10 / 12 Columns";}i:11;a:2:{s:3:"key";s:12:"offset-xl-11";s:5:"value";s:15:"11 / 12 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1352,6 +1402,7 @@
         <field title="title">Order</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:11:"order-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:10:"order-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:7:"order-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:7:"order-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:7:"order-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:7:"order-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:7:"order-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:7:"order-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:7:"order-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:7:"order-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:7:"order-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:7:"order-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:8:"order-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:8:"order-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:8:"order-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1366,6 +1417,7 @@
         <field title="title">Order &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:14:"order-xs-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:13:"order-xs-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:10:"order-xs-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:10:"order-xs-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:10:"order-xs-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:10:"order-xs-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:10:"order-xs-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:10:"order-xs-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:10:"order-xs-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:10:"order-xs-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:10:"order-xs-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:10:"order-xs-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:11:"order-xs-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:11:"order-xs-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:11:"order-xs-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1380,6 +1432,7 @@
         <field title="title">Order &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:13:"order-s-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:12:"order-s-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:9:"order-s-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:9:"order-s-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:9:"order-s-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:9:"order-s-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:9:"order-s-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:9:"order-s-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:9:"order-s-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:9:"order-s-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:9:"order-s-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:9:"order-s-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:10:"order-s-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:10:"order-s-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:10:"order-s-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1394,6 +1447,7 @@
         <field title="title">Order &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:13:"order-m-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:12:"order-m-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:9:"order-m-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:9:"order-m-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:9:"order-m-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:9:"order-m-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:9:"order-m-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:9:"order-m-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:9:"order-m-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:9:"order-m-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:9:"order-m-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:9:"order-m-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:10:"order-m-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:10:"order-m-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:10:"order-m-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1408,6 +1462,7 @@
         <field title="title">Order &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:13:"order-l-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:12:"order-l-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:9:"order-l-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:9:"order-l-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:9:"order-l-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:9:"order-l-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:9:"order-l-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:9:"order-l-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:9:"order-l-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:9:"order-l-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:9:"order-l-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:9:"order-l-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:10:"order-l-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:10:"order-l-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:10:"order-l-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1422,6 +1477,7 @@
         <field title="title">Order &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the position within the grid for this component.</field>
         <field title="cssClasses">a:15:{i:0;a:2:{s:3:"key";s:14:"order-xl-first";s:5:"value";s:5:"First";}i:1;a:2:{s:3:"key";s:13:"order-xl-last";s:5:"value";s:4:"Last";}i:2;a:2:{s:3:"key";s:10:"order-xl-0";s:5:"value";s:6:"Pos. 0";}i:3;a:2:{s:3:"key";s:10:"order-xl-1";s:5:"value";s:6:"Pos. 1";}i:4;a:2:{s:3:"key";s:10:"order-xl-2";s:5:"value";s:6:"Pos. 2";}i:5;a:2:{s:3:"key";s:10:"order-xl-3";s:5:"value";s:6:"Pos. 3";}i:6;a:2:{s:3:"key";s:10:"order-xl-4";s:5:"value";s:6:"Pos. 4";}i:7;a:2:{s:3:"key";s:10:"order-xl-5";s:5:"value";s:6:"Pos. 5";}i:8;a:2:{s:3:"key";s:10:"order-xl-6";s:5:"value";s:6:"Pos. 6";}i:9;a:2:{s:3:"key";s:10:"order-xl-7";s:5:"value";s:6:"Pos. 7";}i:10;a:2:{s:3:"key";s:10:"order-xl-8";s:5:"value";s:6:"Pos. 8";}i:11;a:2:{s:3:"key";s:10:"order-xl-9";s:5:"value";s:6:"Pos. 9";}i:12;a:2:{s:3:"key";s:11:"order-xl-10";s:5:"value";s:7:"Pos. 10";}i:13;a:2:{s:3:"key";s:11:"order-xl-11";s:5:"value";s:7:"Pos. 11";}i:14;a:2:{s:3:"key";s:11:"order-xl-12";s:5:"value";s:7:"Pos. 12";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1445,6 +1501,7 @@
         <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1459,6 +1516,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1473,6 +1531,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1487,6 +1546,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1501,6 +1561,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1515,6 +1576,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendArticle">1</field>
@@ -1544,7 +1606,7 @@
         <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1560,6 +1622,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1575,6 +1638,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1590,6 +1654,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1605,6 +1670,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1620,6 +1686,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within this component.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1651,7 +1718,7 @@
         <field title="title">Vertical</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:7:{i:0;a:2:{s:3:"key";s:7:"col-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:10:"col-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:10:"col-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:12:"col-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:11:"col-stretch";s:5:"value";s:7:"Stretch";}i:5;a:2:{s:3:"key";s:18:"col-stretch sticky";s:5:"value";s:6:"Sticky";}i:6;a:2:{s:3:"key";s:23:"col-stretch auto-height";s:5:"value";s:10:"Autoheight";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1666,6 +1733,7 @@
         <field title="title">Vertical &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xs-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xs-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xs-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xs-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xs-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1680,6 +1748,7 @@
         <field title="title">Vertical &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-s-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-s-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-s-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-s-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-s-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1694,6 +1763,7 @@
         <field title="title">Vertical &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-m-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-m-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-m-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-m-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-m-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1708,6 +1778,7 @@
         <field title="title">Vertical &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:9:"col-l-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:12:"col-l-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:12:"col-l-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:14:"col-l-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:13:"col-l-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1722,6 +1793,7 @@
         <field title="title">Vertical &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the vertical alignment of this component within the grid.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:10:"col-xl-top";s:5:"value";s:3:"Top";}i:1;a:2:{s:3:"key";s:13:"col-xl-middle";s:5:"value";s:6:"Middle";}i:2;a:2:{s:3:"key";s:13:"col-xl-bottom";s:5:"value";s:6:"Bottom";}i:3;a:2:{s:3:"key";s:15:"col-xl-baseline";s:5:"value";s:8:"Baseline";}i:4;a:2:{s:3:"key";s:14:"col-xl-stretch";s:5:"value";s:7:"Stretch";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="extendFormFields">1</field>
@@ -1832,7 +1904,7 @@
         <field title="title">Margin-Top</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"mt-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:4:"mt-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:4:"mt-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:4:"mt-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1850,6 +1922,7 @@
         <field title="title">Margin-Top &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mt-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mt-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mt-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mt-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1867,6 +1940,7 @@
         <field title="title">Margin-Top &amp;#40;S&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1884,6 +1958,7 @@
         <field title="title">Margin-Top &amp;#40;M&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1901,6 +1976,7 @@
         <field title="title">Margin-Top &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1918,6 +1994,7 @@
         <field title="title">Margin-Top &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mt-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mt-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mt-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mt-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1935,7 +2012,7 @@
         <field title="title">Margin-Bottom</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"mb-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:4:"mb-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:4:"mb-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:4:"mb-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1953,6 +2030,7 @@
         <field title="title">Margin-Bottom &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mb-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mb-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mb-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mb-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1970,6 +2048,7 @@
         <field title="title">Margin-Bottom &amp;#40;S&amp;#41;</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mb-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mb-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mb-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mb-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -1987,6 +2066,7 @@
         <field title="title">Margin-Bottom &amp;#40;M&amp;#41;</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mb-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mb-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mb-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mb-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2004,6 +2084,7 @@
         <field title="title">Margin-Bottom &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mb-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mb-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mb-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mb-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2021,6 +2102,7 @@
         <field title="title">Margin-Bottom &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines an additional margin from the bottom for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mb-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mb-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mb-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mb-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2038,7 +2120,7 @@
         <field title="title">Margin-Left</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"ml-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:4:"ml-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:4:"ml-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:4:"ml-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2056,6 +2138,7 @@
         <field title="title">Margin-Left &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"ml-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"ml-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"ml-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"ml-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2073,6 +2156,7 @@
         <field title="title">Margin-Left &amp;#40;S&amp;#41;</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"ml-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"ml-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"ml-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"ml-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2090,6 +2174,7 @@
         <field title="title">Margin-Left &amp;#40;M&amp;#41;</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"ml-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"ml-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"ml-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"ml-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2107,6 +2192,7 @@
         <field title="title">Margin-Left &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:6:"ml-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"ml-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"ml-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"ml-l-3";s:5:"value";s:5:"Large";}i:4;a:2:{s:3:"key";s:13:"mx-art ml-art";s:5:"value";s:22:"Article spacing medium";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2124,6 +2210,7 @@
         <field title="title">Margin-Left &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines an additional margin from the left for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"ml-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"ml-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"ml-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"ml-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2141,7 +2228,7 @@
         <field title="title">Margin-Right</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"mr-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:4:"mr-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:4:"mr-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:4:"mr-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2159,6 +2246,7 @@
         <field title="title">Margin-Right &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mr-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mr-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mr-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mr-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2176,6 +2264,7 @@
         <field title="title">Margin-Right &amp;#40;S&amp;#41;</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mr-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mr-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mr-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mr-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2193,6 +2282,7 @@
         <field title="title">Margin-Right &amp;#40;M&amp;#41;</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mr-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mr-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mr-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mr-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2210,6 +2300,7 @@
         <field title="title">Margin-Right &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:6:"mr-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mr-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mr-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mr-l-3";s:5:"value";s:5:"Large";}i:4;a:2:{s:3:"key";s:13:"mx-art mr-art";s:5:"value";s:22:"Article spacing medium";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2227,6 +2318,7 @@
         <field title="title">Margin-Right &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines an additional margin from the right for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mr-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mr-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mr-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mr-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2253,7 +2345,7 @@
         <field title="title">Padding</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:3:"p-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:3:"p-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:3:"p-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:3:"p-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2271,6 +2363,7 @@
         <field title="title">Padding &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"p-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"p-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"p-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"p-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2288,6 +2381,7 @@
         <field title="title">Padding &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2305,6 +2399,7 @@
         <field title="title">Padding &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2322,6 +2417,7 @@
         <field title="title">Padding &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"p-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:5:"p-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"p-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"p-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2339,6 +2435,7 @@
         <field title="title">Padding &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the padding for this component.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"p-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"p-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"p-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"p-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2545,6 +2642,7 @@
         <field title="title">Columns</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:6:"list-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:6:"list-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:6:"list-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:6:"list-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:6:"list-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:6:"list-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2562,6 +2660,7 @@
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xs-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xs-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xs-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xs-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xs-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xs-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2579,6 +2678,7 @@
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-s-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-s-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-s-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-s-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-s-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-s-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2596,6 +2696,7 @@
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-m-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-m-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-m-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-m-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-m-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-m-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2613,6 +2714,7 @@
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-l-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-l-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-l-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-l-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-l-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-l-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2630,6 +2732,7 @@
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xl-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xl-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xl-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xl-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xl-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xl-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2665,7 +2768,7 @@
         <field title="title">Horizontal Item-Alignment</field>
         <field title="description">Defines the horizontal alignment of all child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2683,6 +2786,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2700,6 +2804,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2717,6 +2822,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2734,6 +2840,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2751,6 +2858,7 @@
         <field title="title">Horizontal Item-Alignment &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the horizontal alignment of the child elements within the list.</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2795,6 +2903,7 @@
         <field title="title">Columns</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:6:"list-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:6:"list-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:6:"list-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:6:"list-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:6:"list-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:6:"list-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16 clr</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2810,6 +2919,7 @@
         <field title="title">Columns &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xs-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xs-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xs-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xs-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xs-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xs-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2825,6 +2935,7 @@
         <field title="title">Columns &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-s-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-s-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-s-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-s-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-s-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-s-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2840,6 +2951,7 @@
         <field title="title">Columns &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-m-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-m-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-m-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-m-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-m-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-m-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2855,6 +2967,7 @@
         <field title="title">Columns &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:8:"list-l-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:8:"list-l-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:8:"list-l-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:8:"list-l-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:8:"list-l-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:8:"list-l-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2870,6 +2983,7 @@
         <field title="title">Columns &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the amount of child elements within a row.</field>
         <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:9:"list-xl-1";s:5:"value";s:8:"1 Column";}i:1;a:2:{s:3:"key";s:9:"list-xl-2";s:5:"value";s:9:"2 Columns";}i:2;a:2:{s:3:"key";s:9:"list-xl-3";s:5:"value";s:9:"3 Columns";}i:3;a:2:{s:3:"key";s:9:"list-xl-4";s:5:"value";s:9:"4 Columns";}i:4;a:2:{s:3:"key";s:9:"list-xl-5";s:5:"value";s:9:"5 Columns";}i:5;a:2:{s:3:"key";s:9:"list-xl-6";s:5:"value";s:9:"6 Columns";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -2943,7 +3057,7 @@
         <field title="title">Justify List</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:13:"justify-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:14:"justify-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:11:"justify-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:15:"justify-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:14:"justify-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:14:"justify-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:15:"justify-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:14:"justify-normal";s:5:"value";s:6:"Normal";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -2958,6 +3072,7 @@
         <field title="title">Justify List &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xs-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xs-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xs-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xs-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xs-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xs-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xs-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xs-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -2972,6 +3087,7 @@
         <field title="title">Justify List &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-s-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-s-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-s-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-s-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-s-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-s-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-s-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-s-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -2986,6 +3102,7 @@
         <field title="title">Justify List &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-m-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-m-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-m-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-m-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-m-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-m-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-m-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-m-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -3000,6 +3117,7 @@
         <field title="title">Justify List &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:15:"justify-l-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:16:"justify-l-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:13:"justify-l-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:17:"justify-l-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:16:"justify-l-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:16:"justify-l-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:17:"justify-l-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:16:"justify-l-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -3014,6 +3132,7 @@
         <field title="title">Justify List &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the alignment of the items (Direction: Vertical Auto items).</field>
         <field title="cssClasses">a:8:{i:0;a:2:{s:3:"key";s:16:"justify-xl-start";s:5:"value";s:4:"Left";}i:1;a:2:{s:3:"key";s:17:"justify-xl-center";s:5:"value";s:6:"Center";}i:2;a:2:{s:3:"key";s:14:"justify-xl-end";s:5:"value";s:5:"Right";}i:3;a:2:{s:3:"key";s:18:"justify-xl-between";s:5:"value";s:13:"Space Between";}i:4;a:2:{s:3:"key";s:17:"justify-xl-around";s:5:"value";s:12:"Space Around";}i:5;a:2:{s:3:"key";s:17:"justify-xl-evenly";s:5:"value";s:12:"Space Evenly";}i:6;a:2:{s:3:"key";s:18:"justify-xl-stretch";s:5:"value";s:7:"Stretch";}i:7;a:2:{s:3:"key";s:17:"justify-xl-normal";s:5:"value";s:6:"Normal";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
         <field title="extendContentElement">1</field>
@@ -3460,6 +3579,7 @@
         <field title="extendModule">1</field>
         <field title="modules">a:10:{i:0;s:5:"login";i:1;s:12:"personalData";i:2;s:12:"registration";i:3;s:14:"changePassword";i:4;s:12:"lostPassword";i:5;s:12:"closeAccount";i:6;s:6:"search";i:7;s:8:"quicknav";i:8;s:9:"quicklink";i:9;s:11:"articlelist";}</field>
       </child>
+
       <child alias="topSpacing">
         <field title="pid">2090</field>
         <field title="sorting">1100</field>
@@ -3467,7 +3587,7 @@
         <field title="title">Margin-Top</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"mt-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:4:"mt-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:4:"mt-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:4:"mt-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3485,6 +3605,7 @@
         <field title="title">Margin-Top &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mt-xs-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mt-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mt-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mt-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3502,6 +3623,7 @@
         <field title="title">Margin-Top &amp;#40;S&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-s-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3519,6 +3641,7 @@
         <field title="title">Margin-Top &amp;#40;M&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-m-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3536,6 +3659,7 @@
         <field title="title">Margin-Top &amp;#40;L&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"mt-l-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:6:"mt-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:6:"mt-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:6:"mt-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3553,6 +3677,7 @@
         <field title="title">Margin-Top &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines an additional margin from the top for this element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"mt-xl-0";s:5:"value";s:5:"Reset";}i:1;a:2:{s:3:"key";s:7:"mt-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"mt-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"mt-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3579,7 +3704,7 @@
         <field title="title">Spacing</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:4:"em-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:4:"em-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:4:"em-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:4:"em-0";s:5:"value";s:4:"None";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3593,6 +3718,7 @@
         <field title="title">Spacing &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"em-xs-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:7:"em-xs-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:7:"em-xs-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:7:"em-xs-0";s:5:"value";s:4:"None";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3606,6 +3732,7 @@
         <field title="title">Spacing &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"em-s-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:6:"em-s-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:6:"em-s-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:6:"em-s-0";s:5:"value";s:4:"None";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3619,6 +3746,7 @@
         <field title="title">Spacing &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"em-m-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:6:"em-m-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:6:"em-m-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:6:"em-m-0";s:5:"value";s:4:"None";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3632,6 +3760,7 @@
         <field title="title">Spacing &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:6:"em-l-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:6:"em-l-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:6:"em-l-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:6:"em-l-0";s:5:"value";s:4:"None";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3645,6 +3774,7 @@
         <field title="title">Spacing &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the spacing of the element (e.g. image-margin, text-margin)</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"em-xl-1";s:5:"value";s:5:"Small";}i:1;a:2:{s:3:"key";s:7:"em-xl-2";s:5:"value";s:6:"Medium";}i:2;a:2:{s:3:"key";s:7:"em-xl-3";s:5:"value";s:5:"Large";}i:3;a:2:{s:3:"key";s:7:"em-xl-0";s:5:"value";s:4:"None";}}</field>
+        <field title="cssClass">w16</field>
         <field title="blankOption">1</field>
         <field title="extendContentElement">1</field>
         <field title="contentElements">a:5:{i:0;s:15:"rsce_image_text";i:1;s:15:"rsce_image_list";i:2;s:20:"rsce_image_text_list";i:3;s:14:"rsce_icon_text";i:4;s:19:"rsce_icon_text_list";}</field>
@@ -3667,7 +3797,7 @@
         <field title="title">Padding</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:5:"i-p-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:5:"i-p-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:5:"i-p-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:5:"i-p-3";s:5:"value";s:5:"Large";}}</field>
-        <field title="cssClass">separator</field>
+        <field title="cssClass">separator w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3683,6 +3813,7 @@
         <field title="title">Padding &amp;#40;XS&amp;#41;</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:8:"i-p-xs-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:8:"i-p-xs-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:8:"i-p-xs-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:8:"i-p-xs-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3698,6 +3829,7 @@
         <field title="title">Padding &amp;#40;S&amp;#41;</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-s-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-s-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-s-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-s-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3713,6 +3845,7 @@
         <field title="title">Padding &amp;#40;M&amp;#41;</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-m-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-m-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-m-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-m-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3728,6 +3861,7 @@
         <field title="title">Padding &amp;#40;L&amp;#41;</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:7:"i-p-l-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:7:"i-p-l-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:7:"i-p-l-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:7:"i-p-l-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
@@ -3744,6 +3878,7 @@
         <field title="title">Padding &amp;#40;XL&amp;#41;</field>
         <field title="description">Defines the padding of the element.</field>
         <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:8:"i-p-xl-0";s:5:"value";s:4:"None";}i:1;a:2:{s:3:"key";s:8:"i-p-xl-1";s:5:"value";s:5:"Small";}i:2;a:2:{s:3:"key";s:8:"i-p-xl-2";s:5:"value";s:6:"Medium";}i:3;a:2:{s:3:"key";s:8:"i-p-xl-3";s:5:"value";s:5:"Large";}}</field>
+        <field title="cssClass">w16</field>
         <field title="chosen">1</field>
         <field title="blankOption">1</field>
         <field title="passToTemplate">1</field>
