@@ -13,6 +13,8 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\DataContainer;
 use Contao\File;
 use Contao\System;
+use ContaoThemeManager\Core\Event\ExcludeHeadlineStyleEvent;
+use ContaoThemeManager\Core\Event\ExcludeSecondHeadlineEvent;
 use ContaoThemeManager\Core\StyleManager\StyleManagerXML;
 use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 use Symfony\Component\Filesystem\Filesystem;
@@ -43,29 +45,70 @@ class ThemeManager extends Backend
             'form',
         ];
 
-        $objPalette = PaletteManipulator::create()
-            ->addField(['headlineStyle', 'headline2', 'headline2Style'], 'headline');
+        $eventDispatcher = System::getContainer()->get('event_dispatcher');
 
-        $test = $GLOBALS['TL_DCA'][$dc->table]['palettes'];
+        $excludeHeadlineStyleEvent = new ExcludeHeadlineStyleEvent($skipTypes);
+        $excludeSecondHeadlineEvent = new ExcludeSecondHeadlineEvent($skipTypes);
+
+        $eventDispatcher->dispatch($excludeHeadlineStyleEvent);
+        $eventDispatcher->dispatch($excludeSecondHeadlineEvent);
+
+        $excludeHeadlineStyleTypes = $excludeHeadlineStyleEvent->getTypes();
+        $excludeSecondHeadlineTypes = $excludeSecondHeadlineEvent->getTypes();
 
         foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
         {
-            if (in_array($name, $skipTypes))
+            if (is_array($palette))
             {
                 continue;
             }
 
-            if (!is_array($palette) && strpos($palette, 'headlineStyle') === false && strpos($palette, 'headline') !== false)
+            if (!str_contains($palette, 'headline') || str_contains($palette, 'headlineStyle'))
             {
-                $objPalette->applyToPalette($name, $dc->table);
+                continue;
             }
+
+            $includeHeadlineStyle = !in_array($name, $excludeHeadlineStyleTypes, true);
+            $includeSecondHeadline = !in_array($name, $excludeSecondHeadlineTypes, true);
+
+            if (!$includeHeadlineStyle && !$includeSecondHeadline)
+            {
+                continue;
+            }
+
+            $fields = [];
+
+            if ($includeHeadlineStyle)
+            {
+                $fields[] = 'headlineStyle';
+            }
+
+            if ($includeSecondHeadline)
+            {
+                $fields[] = 'headline2';
+
+                if ($includeHeadlineStyle)
+                {
+                    $fields[] = 'headline2Style';
+                }
+            }
+
+            if ([] === $fields)
+            {
+                continue;
+            }
+
+            PaletteManipulator::create()
+                ->addField($fields, 'headline')
+                ->applyToPalette($name, $dc->table)
+            ;
         }
     }
 
     /**
      * Adjust the file palettes
      */
-    public function adjustCustomFilePalettes(DataContainer $dc)
+    public function adjustCustomFilePalettes(DataContainer $dc): void
     {
         if (!$dc->id)
         {
@@ -109,7 +152,7 @@ class ThemeManager extends Backend
                 }
             }
 
-            // Delete existing file if no custom config could be parsed
+            // Delete the existing file if no custom config could be parsed
             if (0 === $counter && file_exists($path = $this->rootDir . '/' . $xmlPath))
             {
                 unlink($path);
@@ -124,7 +167,7 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Creates a css file within assets
+     * Creates a CSS file within assets
      *
      * @throws \Exception
      */
