@@ -13,8 +13,8 @@
                    $sm?->prepare('eHeadline',['hlStyle'])->format(' %s')
 
 ?>
-<div class="grid gtr-f<?= $gutterBC . $gridClasses . $insideClasses ?>">
-  <fieldset class="<?= ltrim($this->class . ' inside')  ?>">
+<div class="<?= $this->class ? $this->class . ' ' : ''?>grid gtr-f<?= $gutterBC . $gridClasses . $insideClasses ?>">
+  <fieldset class="inside">
     <?php if ($this->label): ?>
       <legend<?= strlen(trim($legendClasses)) !== 0 ? (' class="' . trim($legendClasses) .'"') : ''?>><?= $this->label ?></legend>
     <?php endif; ?>
