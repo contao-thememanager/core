@@ -22,7 +22,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
     'inputType'   => 'select',
     'options'     => $headlineStyles,
     'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
-    'sql'         => "varchar(2) NOT NULL default ''"
+    'sql'         => ['type' => 'string', 'length' => 64, 'default' => ''],
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
@@ -39,7 +39,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
     'inputType'   => 'select',
     'options'     => $headlineStyles,
     'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
-    'sql'         => "varchar(2) NOT NULL default ''"
+    'sql'         => ['type' => 'string', 'length' => 64, 'default' => ''],
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
