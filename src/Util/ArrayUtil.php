@@ -15,46 +15,41 @@ namespace ContaoThemeManager\Core\Util;
  */
 class ArrayUtil
 {
-	/**
-	 * Add, remove or replace values from the current array based on your configuration.
-	 */
-	public static function alterListByConfig(array $list, array $config): array
-	{
+    /**
+     * Add, remove or replace values from the current array based on your configuration.
+     */
+    public static function alterListByConfig(array $list, array $config): array
+    {
         $isList = array_is_list($list);
 
-		$newList = array_filter($config, static fn ($newValue) => !\in_array($newValue[0], array('-', '+'), true), $isList ? 0 : ARRAY_FILTER_USE_KEY);
+        $newList = array_filter($config, static fn($newValue) => !\in_array($newValue[0], array('-', '+'), true), $isList ? 0 : ARRAY_FILTER_USE_KEY);
 
-		if ($newList)
-		{
-			$list = $newList;
-		}
+        if ($newList) {
+            $list = $newList;
+        }
 
-		foreach ($config as $k => $v)
-		{
+        foreach ($config as $k => $v) {
             $item = $isList ? $v : $k;
-			$prefix = $item[0];
-			$value = substr($item, 1);
+            $prefix = $item[0];
+            $value = substr($item, 1);
 
-			if ('-' === $prefix)
-			{
+            if ('-' === $prefix) {
                 if (!$isList) {
                     unset($list[$value]);
                 } elseif (\in_array($value, $list, true)) {
                     unset($list[array_search($value, $list, true)]);
                 }
-			}
-			elseif ('+' === $prefix)
-			{
+            } elseif ('+' === $prefix) {
                 if (!$isList) {
                     $list[$value] = $v;
                 } elseif (!\in_array($value, $list, true)) {
                     $list[] = $value;
                 }
-			}
-		}
+            }
+        }
 
-		$isList ? sort($list) : ksort($list);
+        $isList ? sort($list) : ksort($list);
 
-		return $list;
-	}
+        return $list;
+    }
 }
