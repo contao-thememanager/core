@@ -6,4 +6,4 @@ services:
 
     ContaoThemeManager\Core\:
         resource: '../src/'
-        exclude: '../src/{Model,DependencyInjection,Event}'
+        exclude: '../src/{Model,DependencyInjection,Event,Util}'

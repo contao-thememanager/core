@@ -26,6 +26,8 @@ class ContaoThemeManagerCoreExtension extends Extension
         $loader->load('migrations.yaml');
         $loader->load('services.yaml');
 
-        $container->setParameter('contao_theme_manager_core.config.css_units', $config['config']['css_units']);
+        $container->setParameter('contao_thememanager.config.css_units', $config['config']['css_units']);
+        $container->setParameter('contao_thememanager.headline.units', $config['headline']['units']);
+        $container->setParameter('contao_thememanager.headline.styles', $config['headline']['styles']);
     }
 }
