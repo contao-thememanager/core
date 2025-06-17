@@ -91,7 +91,7 @@ class Configuration implements ConfigurationInterface
                                 ->ifTrue(
                                     static function (array $options): bool {
                                         foreach (array_keys($options) as $option) {
-                                            if (!preg_match('/^[+-]?[a-z0-9]+$/', $option) || strlen($option) > 64) {
+                                            if (!preg_match('/^[+-]?[a-z0-9_\-\s]++$/', $option) || strlen($option) > 64) {
                                                 return true;
                                             }
                                         }
