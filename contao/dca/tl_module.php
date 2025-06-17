@@ -10,12 +10,17 @@ use Contao\Config;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\System;
 
-$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span', 'strong'];
+$container = System::getContainer();
+
+$headlineOptions = $container->getParameter('contao_thememanager.headline.units') ?? [];
+$headlineStyles =  $container->getParameter('contao_thememanager.headline.styles') ?? [];
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = $headlineOptions;
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
     'exclude'     => true,
     'inputType'   => 'select',
-    'options'     => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    'options'     => $headlineStyles,
     'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
     'sql'         => "varchar(2) NOT NULL default ''"
 ];
@@ -24,7 +29,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
     'exclude'     => true,
     'search'      => true,
     'inputType'   => 'inputUnit',
-    'options'     => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div', 'span', 'strong'],
+    'options'     => $headlineOptions,
     'eval'        => ['basicEntities' => true, 'tl_class'=>'w50 clr'],
     'sql'         => "varchar(1022) NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
 ];
@@ -32,7 +37,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
     'exclude'     => true,
     'inputType'   => 'select',
-    'options'     => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    'options'     => $headlineStyles,
     'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
     'sql'         => "varchar(2) NOT NULL default ''"
 ];
@@ -42,7 +47,7 @@ $GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeMa
 /**
  * Get bundle information
  */
-$bundles = System::getContainer()->getParameter('kernel.bundles');
+$bundles = $container->getParameter('kernel.bundles');
 
 /**
  * Add News bundle related fields
