@@ -1859,7 +1859,7 @@ return [
             'default'                 => 'a:5:{s:6:"bottom";s:0:"";s:4:"left";s:0:"";s:5:"right";s:0:"";s:3:"top";s:2:"50";s:4:"unit";s:1:"%";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['icon-rounded-border-radius'],
             'inputType'               => 'trbl',
-            'options'                 => ['%', ...$cssUnits],
+            'options'                 => ['%', 'px', 'rem'],
             'eval'                    => ['includeBlankOption'=>true, 'rgxp'=>'digit_', 'tl_class'=>'w33'],
         ],
         'icon-outlined-width' => [
