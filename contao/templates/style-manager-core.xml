@@ -716,6 +716,27 @@
       </child>
     </children>
   </archive>
+  <archive identifier="gHeader">
+    <field title="id">60</field>
+    <field title="title">Header</field>
+    <field title="identifier">gHeader</field>
+    <field title="groupAlias">Global</field>
+    <field title="sorting">600</field>
+  </archive>
+  <archive identifier="gMain">
+    <field title="id">70</field>
+    <field title="title">Main</field>
+    <field title="identifier">gMain</field>
+    <field title="groupAlias">Global</field>
+    <field title="sorting">700</field>
+  </archive>
+  <archive identifier="gFooter">
+    <field title="id">80</field>
+    <field title="title">Footer</field>
+    <field title="identifier">gFooter</field>
+    <field title="groupAlias">Global</field>
+    <field title="sorting">800</field>
+  </archive>
 
   <archive identifier="cLayout">
     <field title="id">1000</field>

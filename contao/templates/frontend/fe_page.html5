@@ -34,7 +34,7 @@
 
       <?php $this->block('header'); ?>
         <?php if ($this->header): ?>
-          <header id="header">
+          <header id="header"<?= $this->styleManager?->prepare('gHeader')?->format(' class="%s"') ?>>
             <div class="inside">
               <?= $this->header ?>
             </div>
@@ -45,7 +45,7 @@
       <?php $this->sections('before'); ?>
 
       <?php $this->block('container'); ?>
-        <main id="main-wrapper">
+        <main id="main-wrapper"<?= $this->styleManager?->prepare('gMain')?->format(' class="%s"') ?>>
           <?php $this->section('main-above'); ?>
           <?php if ($this->main || $this->left || $this->right): ?>
             <div id="container">
@@ -91,7 +91,7 @@
 
       <?php $this->block('footer'); ?>
         <?php if ($this->footer): ?>
-          <footer id="footer">
+          <footer id="footer"<?= $this->styleManager?->prepare('gFooter')?->format(' class="%s"') ?>>
             <div class="inside">
               <?= $this->footer ?>
             </div>
