@@ -1,0 +1,82 @@
+{% extends '@Contao/fe_page' %}
+
+{% set header_attributes = attrs()
+    .set('id', 'header')
+    .addClass(styleManager.get('gHeader'), styleManager is defined)
+%}
+
+{% set main_attributes = attrs()
+    .set('id', 'main-wrapper')
+    .addClass(styleManager.get('gMain'), styleManager is defined)
+%}
+
+{% set footer_attributes = attrs()
+    .set('id', 'footer')
+    .addClass(styleManager.get('gFooter'), styleManager is defined)
+%}
+
+{% block header %}
+    {% if header %}
+        <header{{ header_attributes }}>
+            <div class="inside">
+                {{ header|join|raw }}
+            </div>
+        </header>
+    {% endif %}
+{% endblock %}
+
+{% block container %}
+    <main{{ main_attributes }}>
+
+        {{ contao_section('main-above')}}
+
+        {% if main or left or right %}
+            <div id="container">
+                <div class="inside">
+
+                    {% block main %}
+                        <div id="main" class="main-section">
+                            <div class="inside">
+                                {{ main|join|raw }}
+                            </div>
+                            {{ contao_sections('main') }}
+                        </div>
+                    {% endblock %}
+
+                    {% block left %}
+                        {% if left %}
+                            <aside id="left" class="grid">
+                                <div class="inside">
+                                    {{ left|join|raw }}
+                                </div>
+                            </aside>
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block right %}
+                        {% if right %}
+                            <aside id="right" class="grid">
+                                <div class="inside">
+                                    {{ right|join|raw }}
+                                </div>
+                            </aside>
+                        {% endif %}
+                    {% endblock %}
+                </div>
+            </div>
+        {% endif %}
+
+        {{ contao_section('main-below')}}
+
+    </main>
+{% endblock %}
+
+{% block footer %}
+    {% if footer %}
+        <footer{{ footer_attributes }}>
+            <div class="inside">
+                {{ footer|join|raw }}
+            </div>
+        </footer>
+    {% endif %}
+{% endblock %}
