@@ -1,0 +1,9 @@
+{% extends '@Contao/mod_article' %}
+
+{% set class = (class ~ ' grid')|trim %}
+
+{% block content %}
+    <div class="inside article_inside">
+        {{ parent() }}
+    </div>
+{% endblock %}
