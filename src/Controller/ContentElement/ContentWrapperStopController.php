@@ -19,6 +19,10 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @deprecated Deprecated since CTM 2.3, to be removed in a future version;
+ *             use the element_group instead.
+ */
 #[AsContentElement(ContentWrapperStopController::TYPE, category:'wrapper', template:'ce_wrapperStop')]
 class ContentWrapperStopController extends AbstractContentElementController
 {

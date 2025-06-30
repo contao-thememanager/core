@@ -7,7 +7,7 @@ use Contao\StringUtil;
 use Contao\Template;
 
 /**
- * @deprecated as of ThemeManager 2.1, to be removed in ThemeManager 2.2
+ * @deprecated as of CTM 2.1, to be removed in a future version
  */
 #[AsHook('parseTemplate')]
 class ParseTemplateListener
