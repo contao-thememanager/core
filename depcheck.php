@@ -6,7 +6,12 @@ use ShipMonk\ComposerDependencyAnalyser\Config\Configuration;
 use ShipMonk\ComposerDependencyAnalyser\Config\ErrorType;
 
 return (new Configuration())
-    ->ignoreUnknownClasses([DomNode::class])
+    ->ignoreUnknownClasses([
+        DomNode::class,
+        \Contao\CalendarBundle\ContaoCalendarBundle::class,
+        \Contao\FaqBundle\ContaoFaqBundle::class,
+        \Contao\NewsBundle\ContaoNewsBundle::class
+    ])
 
     ->ignoreErrorsOnPackage('contao/manager-plugin', [ErrorType::DEV_DEPENDENCY_IN_PROD])
     ->ignoreErrorsOnPackage('madeyourday/contao-rocksolid-custom-elements', [ErrorType::UNUSED_DEPENDENCY])
