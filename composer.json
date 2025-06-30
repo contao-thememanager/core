@@ -46,7 +46,7 @@
     "contao/core-bundle": "^5.3.32",
     "madeyourday/contao-rocksolid-custom-elements": "^2.4.13",
     "madeyourday/contao-rocksolid-icon-picker": "^2.1.2",
-    "oveleon/contao-component-style-manager": "^3.8",
+    "oveleon/contao-component-style-manager": "^3.9.5",
     "oveleon/contao-config-driver-bundle": "^1.5.1",
     "oveleon/contao-theme-compiler-bundle": "^1.11",
     "doctrine/dbal": "^3.3",
@@ -89,7 +89,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-main": "2.1.x-dev"
+      "dev-main": "2.3.x-dev"
     },
     "contao-manager-plugin": "ContaoThemeManager\\Core\\ContaoManager\\Plugin"
   },
