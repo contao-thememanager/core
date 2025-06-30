@@ -10,19 +10,17 @@
     <?php endif; ?>
 
     <div class="c_text<?= $this->hasText ? ' grid':''?>">
-      <?php if ($this->hasMetaFields || (null === $this->hasMetaFields)): // Contao 5.* BC layer for simultaneous Contao 4.13 support ?>
-        <?php $this->block('info'); ?>
-          <p class="info">
-            <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
-            <?php if ($this->author): ?>
-              <span class="author"><?= $this->author ?></span>
-            <?php endif; ?>
-            <?php if (!!$this->numberOfComments): ?>
-              <span class="comments"><?= $this->commentCount ?></span>
-            <?php endif; ?>
-          </p>
-        <?php $this->endblock(); ?>
-      <?php endif; ?>
+      <?php $this->block('info'); ?>
+        <p class="info">
+          <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+          <?php if ($this->author): ?>
+            <span class="author"><?= $this->author ?></span>
+          <?php endif; ?>
+          <?php if (!!$this->numberOfComments): ?>
+            <span class="comments"><?= $this->commentCount ?></span>
+          <?php endif; ?>
+        </p>
+      <?php $this->endblock(); ?>
 
       <h1><?= $this->newsHeadline ?></h1>
 
@@ -35,7 +33,7 @@
           <?= $this->text ?>
         </div>
       <?php else: ?>
-        <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
+        <?= $this->cspInlineStyles($this->teaser) ?>
       <?php endif; ?>
 
       <?php if ($this->enclosure): ?>

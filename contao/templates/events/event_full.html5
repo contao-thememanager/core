@@ -28,7 +28,7 @@
           <?= $this->details ?>
         </div>
       <?php else: ?>
-        <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
+        <?= $this->cspInlineStyles($this->teaser) ?>
       <?php endif; ?>
 
       <?php if ($this->enclosure): ?>

@@ -16,7 +16,7 @@
   </div>
 
   <?php if (!$this->hasErrors()): ?>
-    <div style="<?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles('display:none') : 'display:none' ?>">
+    <div style="<?= $this->cspInlineStyles('display:none') ?>">
       <label for="ctrl_<?= $this->id ?>_hp">Do not fill in this field</label>
       <input type="text" name="<?= $this->name ?>_name" id="ctrl_<?= $this->id ?>_hp" value="">
     </div>

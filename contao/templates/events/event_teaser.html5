@@ -19,7 +19,7 @@
 
       <h3><a href="<?= $this->href ?>" title="<?= $this->title ?> (<?php if ($this->day): ?><?= $this->day ?>, <?php endif; ?><?= $this->date ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?>)"<?= $this->target ?>><?= $this->link ?></a></h3>
 
-      <?= method_exists($this, 'cspInlineStyles') ? $this->cspInlineStyles($this->teaser) : $this->teaser ?>
+      <?= $this->cspInlineStyles($this->teaser) ?>
     </div>
 
   </div>

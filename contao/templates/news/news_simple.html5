@@ -4,17 +4,15 @@
   <div class="inside">
 
     <div class="c_text">
-      <?php if ($this->hasMetaFields || (null === $this->hasMetaFields)): // Contao 5.* BC layer for simultaneous Contao 4.13 support ?>
-        <div class="info">
-          <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
-          <?php if ($this->author): ?>
-            <span class="author"><?= $this->author ?></span>
-          <?php endif; ?>
-          <?php if (!!$this->numberOfComments): ?>
-            <span class="comments"><?= $this->commentCount ?></span>
-          <?php endif; ?>
-        </div>
-      <?php endif; ?>
+      <div class="info">
+        <time datetime="<?= $this->datetime ?>"><?= $this->date ?></time>
+        <?php if ($this->author): ?>
+          <span class="author"><?= $this->author ?></span>
+        <?php endif; ?>
+        <?php if (!!$this->numberOfComments): ?>
+          <span class="comments"><?= $this->commentCount ?></span>
+        <?php endif; ?>
+      </div>
 
       <?= $this->linkHeadline ?>
     </div>
