@@ -3,7 +3,11 @@
 {% set class = (class ~ ' grid')|trim %}
 
 {% block content %}
-    <div class="inside article_inside">
+    {% if not noMarkup %}
+        <div class="inside article_inside">
+            {{ parent() }}
+        </div>
+    {% else %}
         {{ parent() }}
-    </div>
+    {% endif %}
 {% endblock %}
