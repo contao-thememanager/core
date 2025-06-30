@@ -1,0 +1,37 @@
+{% extends "@Contao/content_element/element_group.html.twig" %}
+
+{% set sm = styleManager(data) %}
+
+{% set attributes = attrs()
+    .mergeWith(attributes|default)
+    .addClass(['ce_wrapper', 'article-wrapper'])
+%}
+
+{% set grid_attributes = attrs()
+    .addClass('grid')
+    .addClass(sm.get('cGridAlignment'), sm is defined)
+    .addClass(sm.get('cGridGutter'), sm is defined)
+    .mergeWith(gridClasses|default)
+%}
+
+{% block content %}
+    {% for fragment in nested_fragments %}
+        {{ content_element(fragment) }}
+    {% endfor %}
+{% endblock %}
+
+{%- block inner %}
+    <div class="inside{{ insideClasses }}">
+        {% if headline.text or headline2.value|default %}
+            {{ block('headline_component') }}
+        {% endif %}
+
+        <div{{ grid_attributes }}>
+            <div class="inside c_slider"{{ sliderConfig }}>
+                {% for fragment in nested_fragments %}
+                    {{ content_element(fragment) }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
