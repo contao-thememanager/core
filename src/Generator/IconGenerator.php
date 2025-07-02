@@ -13,6 +13,7 @@ use Contao\System;
 use ContaoThemeManager\Core\ThemeManager;
 use Oveleon\ContaoThemeCompilerBundle\Compiler\FileCompiler;
 use SimpleXMLElement;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\Filesystem\Path;
 
 /**
@@ -27,6 +28,12 @@ class IconGenerator
     protected bool $woffTwo = false;
 
     protected ?FileCompiler $compiler = null;
+
+    public function __construct(
+        #[Autowire(param: 'contao_thememanager.compiler.icon_font_display_swap')]
+        private readonly bool $iconFontDisplaySwap,
+    ) {
+    }
 
     /**
      * Generates the icon set when compiling the theme
@@ -238,7 +245,7 @@ class IconGenerator
                 $this->woffTwo?2:'',
                 'font-weight:normal;',
                 'font-style:normal;',
-                'font-display:block;'
+                'font-display:' . ($this->iconFontDisplaySwap ? 'swap' : 'block') . ';'
             ]);
 
             // Add icon styles (Use specific selectors due to form-icon ('.fi-')

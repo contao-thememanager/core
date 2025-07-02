@@ -113,6 +113,15 @@ class Configuration implements ConfigurationInterface
                         ->end()
                     ->end()
                 ->end()
+                ->arrayNode('compiler')
+                    ->addDefaultsIfNotSet()
+                        ->children()
+                            ->booleanNode('icon_font_display_swap')
+                                ->defaultFalse()
+                            ->info('Sets the generated icon font to display swap.')
+                        ->end()
+                    ->end()
+                ->end()
             ->end()
         ;
 

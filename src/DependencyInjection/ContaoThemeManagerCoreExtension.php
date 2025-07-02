@@ -29,5 +29,6 @@ class ContaoThemeManagerCoreExtension extends Extension
         $container->setParameter('contao_thememanager.config.css_units', $config['config']['css_units']);
         $container->setParameter('contao_thememanager.headline.units', $config['headline']['units']);
         $container->setParameter('contao_thememanager.headline.styles', $config['headline']['styles']);
+        $container->setParameter('contao_thememanager.compiler.icon_font_display_swap', $config['compiler']['icon_font_display_swap']);
     }
 }
