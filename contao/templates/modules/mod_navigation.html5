@@ -1,11 +1,20 @@
 <?php
-  $sm = $this->styleManager;
-  $hlClasses     = $sm->prepare('gHeadline')->format(' %s');
-  $insideClasses = $sm->prepare('cSpacing')->format(' %s') .
-                   $sm->prepare('cPadding')->format(' %s');
+$sm = $this->styleManager;
+$hlClasses     = $sm->prepare('gHeadline')->format(' %s');
+$insideClasses = $sm->prepare('cSpacing')->format(' %s') .
+                 $sm->prepare('cPadding')->format(' %s');
+
+$this->wrapperAttributes = $this
+  ->attr($this->cssID)
+  ->addClass([$this->class, 'block'])
+  ->addStyle($this->style ?? '')
+  ->setIfExists('aria-label', $this->ariaLabel)
+  ->mergeWith($this->wrapperAttributes)
+;
+
 ?>
 <!-- indexer::stop -->
-<nav class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<nav<?= $this->wrapperAttributes ?>>
   <div class="inside<?= $insideClasses ?>">
 
     <?php if ($this->headline || $this->headline2): ?>
@@ -25,7 +34,7 @@
 
     <?= $this->items ?>
 
-    <a id="<?= $this->skipId ?>" class="invisible">&nbsp;</a>
+    <span id="<?= $this->skipId ?>" class="invisible"></span>
 
   </div>
 </nav>
