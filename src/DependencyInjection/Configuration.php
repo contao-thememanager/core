@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\DependencyInjection;
 
 use ContaoThemeManager\Core\Util\ArrayUtil;
@@ -82,7 +84,7 @@ class Configuration implements ConfigurationInterface
                         ->end()
                         ->arrayNode('styles')
                             ->info('Available headline styles that are available throughout the system.')
-                            ->useAttributeAsKey(true)
+                            ->useAttributeAsKey('name')
                             ->normalizeKeys(false)
                             ->scalarPrototype()->end()
                             ->defaultValue(['h1' => 'h1', 'h2' => 'h2', 'h3' => 'h3', 'h4' => 'h4', 'h5' => 'h5', 'h6' => 'h6'])
