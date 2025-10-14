@@ -20,6 +20,8 @@ use Symfony\Component\Filesystem\Path;
  * Generates a complete icon set with css and xml to be used by the theme manager
  *
  * @author Sebastian Zoglowek <https://github.com/zoglo>
+ *
+ * @internal
  */
 class IconGenerator
 {

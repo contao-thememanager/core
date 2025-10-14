@@ -19,6 +19,8 @@ use Symfony\Component\Filesystem\Path;
  * Generates a background css and xml from selected files
  *
  * @author Sebastian Zoglowek <https://github.com/zoglo>
+ *
+ * @internal
  */
 class BackgroundImageGenerator
 {

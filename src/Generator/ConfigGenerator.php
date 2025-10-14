@@ -15,6 +15,8 @@ use ContaoThemeManager\Core\ThemeManager;
  * Generates css and xml for various theme manager components
  *
  * @author Sebastian Zoglowek <https://github.com/zoglo>
+ *
+ * @internal
  */
 class ConfigGenerator
 {
