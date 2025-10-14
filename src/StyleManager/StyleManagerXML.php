@@ -19,6 +19,8 @@ use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
  * Creates a xml file that is parsed by the style manager bundle config
  *
  * @author Sebastian Zoglowek <https://github.com/zoglo>
+ *
+ * @internal
  */
 class StyleManagerXML
 {
@@ -110,7 +112,6 @@ class StyleManagerXML
             $this->groupChild->title = $title;
         }
 
-        $this->groupChild->alias = $alias;
         $this->groupChild->cssClasses = serialize($cssClasses);
 
         // Add elements
@@ -148,7 +149,7 @@ class StyleManagerXML
         }
 
         // Push settings into previously created group
-        $this->groups[$this->group->identifier]['children'][] = $this->groupChild;
+        $this->groups[$this->group->identifier]['children'][$alias] = $this->groupChild;
 
         return $this;
     }
@@ -213,11 +214,11 @@ class StyleManagerXML
         $children = $this->xml->createElement('children');
         $children = $archive->appendChild($children);
 
-        foreach ($arrChildren as $objChild)
+        foreach ($arrChildren as $alias => $objChild)
         {
             $row = $this->xml->createElement('child');
 
-            $row->setAttribute('alias', $objChild->alias);
+            $row->setAttribute('alias', $alias);
             $row = $children->appendChild($row);
 
             // Add field data
