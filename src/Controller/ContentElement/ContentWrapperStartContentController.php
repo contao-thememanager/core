@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Response;
  * @deprecated Deprecated since CTM 2.3, to be removed in a future version;
  *             use the element_group instead.
  */
-#[AsContentElement(ContentWrapperStartContentController::TYPE, category:'wrapper', template:'ce_wrapperStartContent')]
+#[AsContentElement(ContentWrapperStartContentController::TYPE, category: 'wrapper', template: 'ce_wrapperStartContent')]
 class ContentWrapperStartContentController extends AbstractContentElementController
 {
     public const TYPE = 'wrapperStartContent';
@@ -31,8 +31,7 @@ class ContentWrapperStartContentController extends AbstractContentElementControl
     protected function getResponse(Template $template, ContentModel $model, Request $request): Response
     {
         // Do not display template in backend
-        if (System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
-        {
+        if (System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request)) {
             $template = new BackendTemplate('be_wildcard');
         }
 

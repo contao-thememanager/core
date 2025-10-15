@@ -11,7 +11,6 @@ declare(strict_types=1);
 namespace ContaoThemeManager\Core\ContaoManager;
 
 use Contao\CalendarBundle\ContaoCalendarBundle;
-use Contao\CommentsBundle\ContaoCommentsBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\FaqBundle\ContaoFaqBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
@@ -20,16 +19,12 @@ use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
 use Contao\NewsBundle\ContaoNewsBundle;
 use ContaoThemeManager\Core\ContaoThemeManagerCore;
-use Exception;
 use Oveleon\ContaoComponentStyleManager\ContaoComponentStyleManager;
 use Oveleon\ContaoThemeCompilerBundle\ContaoThemeCompilerBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function getBundles(ParserInterface $parser): array
     {
         return [
@@ -47,7 +42,7 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
     }
 
     /**
-     * @throws Exception
+     * @throws \Exception
      */
     public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
     {

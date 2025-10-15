@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -15,16 +17,16 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['cols']['default'] = '1cl';
 // Create custom layout sections that are part of the ThemeManager framework
 $GLOBALS['TL_DCA']['tl_layout']['fields']['sections']['default'] = [
     [
-        'title'     => &$GLOBALS['TL_LANG']['COLS']['mainAbove'],
-        'id'        => 'main-above',
-        'template'  => 'block_section',
-        'position'  => 'before'
+        'title' => &$GLOBALS['TL_LANG']['COLS']['mainAbove'],
+        'id' => 'main-above',
+        'template' => 'block_section',
+        'position' => 'before',
     ],
     [
-        'title'     => &$GLOBALS['TL_LANG']['COLS']['mainBelow'],
-        'id'        => 'main-below',
-        'template'  => 'block_section',
-        'position'  => 'after'
+        'title' => &$GLOBALS['TL_LANG']['COLS']['mainBelow'],
+        'id' => 'main-below',
+        'template' => 'block_section',
+        'position' => 'after',
     ],
 ];
 
@@ -34,19 +36,21 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['framework']['default'] = '';
 // Predefine layout modules
 $GLOBALS['TL_DCA']['tl_layout']['fields']['modules']['default'] = [
     [
-        'mod'       => '0',
-        'col'       => 'main-above',
-        'enable'    => '1',
+        'mod' => '0',
+        'col' => 'main-above',
+        'enable' => '1',
     ],
     [
-        'mod'       => '0',
-        'col'       => 'main-below',
-        'enable'    => '1',
-    ]
+        'mod' => '0',
+        'col' => 'main-below',
+        'enable' => '1',
+    ],
 ];
 
 // Set custom viewport
 $GLOBALS['TL_DCA']['tl_layout']['fields']['viewport']['default'] = 'width=device-width,initial-scale=1.0,maximum-scale=5.0';
 
 // Include ThemeManager JavaScript template
-$GLOBALS['TL_DCA']['tl_layout']['fields']['scripts']['default'] = [0 => 'js_ctm_core'];
+$GLOBALS['TL_DCA']['tl_layout']['fields']['scripts']['default'] = [
+    0 => 'js_ctm_core',
+];

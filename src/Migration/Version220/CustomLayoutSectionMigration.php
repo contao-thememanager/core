@@ -18,8 +18,9 @@ use Doctrine\DBAL\Exception;
 
 class CustomLayoutSectionMigration extends AbstractMigration
 {
-    public function __construct(private readonly Connection $connection)
-    {
+    public function __construct(
+        private readonly Connection $connection,
+    ) {
     }
 
     /**
@@ -29,26 +30,19 @@ class CustomLayoutSectionMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_layout'))
-        {
+        if (!$schemaManager->tablesExist('tl_layout')) {
             return false;
         }
 
         $columns = $schemaManager->listTableColumns('tl_layout');
 
-        if (!isset($columns['sections']))
-        {
+        if (!isset($columns['sections'])) {
             return false;
         }
 
         $test = $this->connection->fetchOne("SELECT TRUE FROM tl_layout WHERE sections LIKE '%s:2:\"id\";s:10:\"main-above\";s:8:\"template\";s:13:\"block_section\";s:8:\"position\";s:6:\"before\";%' OR sections LIKE '%s:2:\"id\";s:10:\"main-below\";s:8:\"template\";s:13:\"block_section\";s:8:\"position\";s:5:\"after\";%' LIMIT 1");
 
-        if (false !== $test)
-        {
-            return true;
-        }
-
-        return false;
+        return $test !== false;
     }
 
     /**
@@ -58,16 +52,17 @@ class CustomLayoutSectionMigration extends AbstractMigration
     {
         $values = $this->connection->fetchAllKeyValue("SELECT id, sections FROM tl_layout WHERE sections LIKE '%s:2:\"id\";s:10:\"main-above\";s:8:\"template\";s:13:\"block_section\";s:8:\"position\";s:6:\"before\";%' OR sections LIKE '%s:2:\"id\";s:10:\"main-below\";s:8:\"template\";s:13:\"block_section\";s:8:\"position\";s:5:\"after\";%'");
 
-        foreach ($values as $id => $value)
-        {
+        foreach ($values as $id => $value) {
             $blnUpdate = false;
 
             $sections = StringUtil::deserialize($value, true);
 
-            foreach ($sections as &$section)
-            {
-                if (!isset($section['id']) || !in_array($section['id'], ['main-above', 'main-below']))
-                {
+            foreach ($sections as &$section) {
+                if (!isset($section['id'])) {
+                    continue;
+                }
+
+                if (!\in_array($section['id'], ['main-above', 'main-below'], true)) {
                     continue;
                 }
 
@@ -75,9 +70,16 @@ class CustomLayoutSectionMigration extends AbstractMigration
                 $blnUpdate = true;
             }
 
-            if ($blnUpdate)
-            {
-                $this->connection->update('tl_layout', ['sections' => serialize($sections)], ['id' => (int) $id]);
+            if ($blnUpdate) {
+                $this->connection->update(
+                    'tl_layout',
+                    [
+                        'sections' => serialize($sections),
+                    ],
+                    [
+                        'id' => (int) $id,
+                    ],
+                );
             }
         }
 

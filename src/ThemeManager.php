@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -24,7 +26,7 @@ class ThemeManager extends Backend
 {
     const NAME_SM_CONFIG = 'tm-config';
 
-    private string $rootDir;
+    private readonly string $rootDir;
 
     public function __construct()
     {
@@ -56,45 +58,41 @@ class ThemeManager extends Backend
         $excludeHeadlineStyleTypes = $excludeHeadlineStyleEvent->getTypes();
         $excludeSecondHeadlineTypes = $excludeSecondHeadlineEvent->getTypes();
 
-        foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette)
-        {
-            if (is_array($palette))
-            {
+        foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $name => $palette) {
+            if (\is_array($palette)) {
                 continue;
             }
 
-            if (!str_contains($palette, 'headline') || str_contains($palette, 'headlineStyle'))
-            {
+            if (!str_contains((string) $palette, 'headline')) {
                 continue;
             }
 
-            $includeHeadlineStyle = !in_array($name, $excludeHeadlineStyleTypes, true);
-            $includeSecondHeadline = !in_array($name, $excludeSecondHeadlineTypes, true);
+            if (str_contains((string) $palette, 'headlineStyle')) {
+                continue;
+            }
 
-            if (!$includeHeadlineStyle && !$includeSecondHeadline)
-            {
+            $includeHeadlineStyle = !\in_array($name, $excludeHeadlineStyleTypes, true);
+            $includeSecondHeadline = !\in_array($name, $excludeSecondHeadlineTypes, true);
+
+            if (!$includeHeadlineStyle && !$includeSecondHeadline) {
                 continue;
             }
 
             $fields = [];
 
-            if ($includeHeadlineStyle)
-            {
+            if ($includeHeadlineStyle) {
                 $fields[] = 'headlineStyle';
             }
 
-            if ($includeSecondHeadline)
-            {
+            if ($includeSecondHeadline) {
                 $fields[] = 'headline2';
 
-                if ($includeHeadlineStyle)
-                {
+                if ($includeHeadlineStyle) {
                     $fields[] = 'headline2Style';
                 }
             }
 
-            if ([] === $fields)
-            {
+            if ($fields === []) {
                 continue;
             }
 
@@ -106,12 +104,11 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Adjust the file palettes
+     * Adjust the file palettes.
      */
     public function adjustCustomFilePalettes(DataContainer $dc): void
     {
-        if (!$dc->id)
-        {
+        if (!$dc->id) {
             return;
         }
 
@@ -119,8 +116,7 @@ class ThemeManager extends Backend
         $blnIsFolder = is_dir($projectDir . '/' . $dc->id);
 
         // Only show the background option for images
-        if ($blnIsFolder || !in_array(strtolower(substr($dc->id, strrpos($dc->id, '.') + 1)), System::getContainer()->getParameter('contao.image.valid_extensions')))
-        {
+        if ($blnIsFolder || !\in_array(strtolower(substr((string) $dc->id, strrpos((string) $dc->id, '.') + 1)), System::getContainer()->getParameter('contao.image.valid_extensions'), true)) {
             PaletteManipulator::create()
                 ->removeField(['ctmBackgroundImage'])
                 ->applyToPalette('default', $dc->table)
@@ -129,60 +125,54 @@ class ThemeManager extends Backend
     }
 
     /**
-     * Method is called whilst ThemeManager configuration is parsed when compiling the theme
+     * Method is called whilst ThemeManager configuration is parsed when compiling the theme.
      * @throws \Exception
      */
     public function onParseThemeManagerConfiguration($compiler, $configVars): void
     {
-        if (is_array($configVars))
-        {
+        if (\is_array($configVars)) {
             $xmlPath = 'templates/style-manager-' . self::NAME_SM_CONFIG . '.xml';
             $xml = StyleManagerXML::create();
             $counter = 0;
 
             // HOOK: add custom logic
-            if (isset($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig']) && \is_array($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig']))
-            {
-                foreach ($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'] as $callback)
-                {
+            if (isset($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig']) && \is_array($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'])) {
+                foreach ($GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'] as $callback) {
                     $this->import($callback[0]);
                     $this->{$callback[0]}->{$callback[1]}($configVars, $xml, $compiler, $this);
 
-                    $counter++;
+                    ++$counter;
                 }
             }
 
             // Delete the existing file if no custom config could be parsed
-            if (0 === $counter && file_exists($path = $this->rootDir . '/' . $xmlPath))
-            {
+            if ($counter === 0 && file_exists($path = $this->rootDir . '/' . $xmlPath)) {
                 unlink($path);
             }
-            else
-            {
+            else {
                 $success = $xml->save(self::NAME_SM_CONFIG);
                 $compiler->msg('Bundle Configuration', FileCompiler::MSG_HEAD);
-                $compiler->msg(($success ? 'File saved: ': 'Could not create ') . $xmlPath, ($success ? FileCompiler::MSG_SUCCESS : FileCompiler::MSG_ERROR));
+                $compiler->msg(($success ? 'File saved: ' : 'Could not create ') . $xmlPath, $success ? FileCompiler::MSG_SUCCESS : FileCompiler::MSG_ERROR);
             }
         }
     }
 
     /**
-     * Creates a CSS file within assets
+     * Creates a CSS file within assets.
      *
      * @throws \Exception
      */
-    public static function createCSSFile(string $name, string $css = '', ?FileCompiler $compiler = null): ?string
+    public static function createCSSFile(string $name, string $css = '', FileCompiler|null $compiler = null): string|null
     {
         // Get assets dir
         $componentDir = self::getContaoComponentDir();
 
         // Prepare CSS
-        $objFile = new File($path = $componentDir . DIRECTORY_SEPARATOR . 'ctmcore/css/_'.  $name . FileCompiler::FILE_EXT);
+        $objFile = new File($path = $componentDir . \DIRECTORY_SEPARATOR . 'ctmcore/css/_' . $name . FileCompiler::FILE_EXT);
         $blnSuccess = $objFile->write($css);
         $objFile->close();
 
-        if ($blnSuccess)
-        {
+        if ($blnSuccess) {
             return $path;
         }
 

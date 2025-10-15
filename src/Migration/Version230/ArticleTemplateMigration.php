@@ -12,14 +12,14 @@ namespace ContaoThemeManager\Core\Migration\Version230;
 
 use Contao\CoreBundle\Migration\AbstractMigration;
 use Contao\CoreBundle\Migration\MigrationResult;
-use Contao\StringUtil;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception;
 
 class ArticleTemplateMigration extends AbstractMigration
 {
-    public function __construct(private readonly Connection $connection)
-    {
+    public function __construct(
+        private readonly Connection $connection,
+    ) {
     }
 
     /**
@@ -29,26 +29,19 @@ class ArticleTemplateMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_article'))
-        {
+        if (!$schemaManager->tablesExist('tl_article')) {
             return false;
         }
 
         $columns = $schemaManager->listTableColumns('tl_article');
 
-        if (!isset($columns['customtpl']))
-        {
+        if (!isset($columns['customtpl'])) {
             return false;
         }
 
         $test = $this->connection->fetchOne("SELECT TRUE FROM tl_article WHERE customTpl = 'mod_article_contao53_default' LIMIT 1");
 
-        if (false !== $test)
-        {
-            return true;
-        }
-
-        return false;
+        return $test !== false;
     }
 
     /**
@@ -58,9 +51,16 @@ class ArticleTemplateMigration extends AbstractMigration
     {
         $values = $this->connection->fetchAllKeyValue("SELECT id, customTpl FROM tl_article WHERE customTpl = 'mod_article_contao53_default'");
 
-        foreach ($values as $id => $value)
-        {
-            $this->connection->update('tl_article', ['customTpl' => 'mod_article_default'], ['id' => (int) $id]);
+        foreach (array_keys($values) as $id) {
+            $this->connection->update(
+                'tl_article',
+                [
+                    'customTpl' => 'mod_article_default',
+                ],
+                [
+                    'id' => (int) $id,
+                ],
+            );
         }
 
         return $this->createResult(true);

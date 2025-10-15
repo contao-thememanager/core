@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\EventListener\DataContainer;
 
 use Contao\ContentModel;
@@ -15,7 +17,8 @@ class DataContainerListener
 {
     public function __construct(
         protected AuthorizationCheckerInterface $security,
-    ){}
+    ) {
+    }
 
     #[AsCallback(table: 'tl_layout', target: 'fields.headerHeight.load')]
     #[AsCallback(table: 'tl_layout', target: 'fields.footerHeight.load')]
@@ -23,28 +26,27 @@ class DataContainerListener
     #[AsCallback(table: 'tl_layout', target: 'fields.widthRight.load')]
     public static function checkLayoutMisconfiguration($value, DataContainer $dc): array|string
     {
-        if (empty($value))
-        {
+        if (empty($value)) {
             return '';
         }
 
         $array = StringUtil::deserialize($value);
 
         if (
-            empty($array) ||
-            !is_array($array) ||
-            (empty($array['unit'] ?? '') && empty($array['value'] ?? ''))
+            empty($array)
+            || !\is_array($array)
+            || (empty($array['unit'] ?? '') && empty($array['value'] ?? ''))
         ) {
             return $value;
         }
 
         Message::addError(
-            vsprintf(($GLOBALS['TL_LANG']['tl_layout']['misconfiguration'] ?? null), [
-                ($GLOBALS['TL_LANG']['tl_layout']['headerHeight'][0] ?? null),
-                ($GLOBALS['TL_LANG']['tl_layout']['footerHeight'][0] ?? null),
-                ($GLOBALS['TL_LANG']['tl_layout']['widthLeft'][0] ?? null),
-                ($GLOBALS['TL_LANG']['tl_layout']['widthRight'][0] ?? null)
-            ])
+            vsprintf($GLOBALS['TL_LANG']['tl_layout']['misconfiguration'] ?? null, [
+                $GLOBALS['TL_LANG']['tl_layout']['headerHeight'][0] ?? null,
+                $GLOBALS['TL_LANG']['tl_layout']['footerHeight'][0] ?? null,
+                $GLOBALS['TL_LANG']['tl_layout']['widthLeft'][0] ?? null,
+                $GLOBALS['TL_LANG']['tl_layout']['widthRight'][0] ?? null,
+            ]),
         );
 
         return $array;
@@ -53,22 +55,19 @@ class DataContainerListener
     #[AsCallback(table: 'tl_layout', target: 'fields.framework.load')]
     public static function checkSelectedFramework($value, DataContainer $dc): array|string
     {
-        if (empty($value))
-        {
+        if (empty($value)) {
             return '';
         }
 
         $array = StringUtil::deserialize($value);
 
-        if (empty($array) || !is_array($array))
-        {
+        if (empty($array) || !\is_array($array)) {
             return $value;
         }
 
-        if (in_array('responsive.css', $array) || in_array('layout.css', $array))
-        {
+        if (\in_array('responsive.css', $array, true) || \in_array('layout.css', $array, true)) {
             Message::addInfo(
-                sprintf(($GLOBALS['TL_LANG']['tl_layout']['frameworkMessage'] ?? null), ($GLOBALS['TL_LANG']['tl_layout']['responsive.css'][0] ?? null) . ' (responsive.css), ' . ($GLOBALS['TL_LANG']['tl_layout']['layout.css'][0] ?? null) . ' (layout.css)')
+                \sprintf($GLOBALS['TL_LANG']['tl_layout']['frameworkMessage'] ?? null, ($GLOBALS['TL_LANG']['tl_layout']['responsive.css'][0] ?? null) . ' (responsive.css), ' . ($GLOBALS['TL_LANG']['tl_layout']['layout.css'][0] ?? null) . ' (layout.css)'),
             );
         }
 
@@ -77,8 +76,7 @@ class DataContainerListener
 
     public function removeLibraryHint(DataContainer $dc): void
     {
-        if ($_POST || Input::get('act') != 'edit')
-        {
+        if ($_POST || Input::get('act') !== 'edit') {
             return;
         }
 
@@ -89,15 +87,13 @@ class DataContainerListener
             return;
         }
 
-        $objCte = ContentModel::findByPk($dc->id);
+        $objCte = ContentModel::findById($dc->id);
 
-        if ($objCte === null)
-        {
+        if ($objCte === null) {
             return;
         }
 
-        if ($objCte->type == 'gallery')
-        {
+        if ($objCte->type === 'gallery') {
             Message::reset();
         }
     }

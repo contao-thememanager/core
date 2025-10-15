@@ -1,5 +1,6 @@
 <?php
-// rsce_image_text_list.php
+
+declare(strict_types=1);
 
 use Contao\BackendUser;
 use Contao\System;
@@ -26,10 +27,13 @@ return [
             ],
             'inputType' => 'imageSize',
             'reference' => &$GLOBALS['TL_LANG']['MSC'],
-            'eval' => ['rgxp' => 'natural', 'includeBlankOption' => true, 'nospace' => true, 'tl_class' => 'w50'],
-            'options_callback' => function () {
-                return System::getContainer()->get('contao.image.sizes')->getOptionsForUser(BackendUser::getInstance());
-            }
+            'eval' => [
+                'rgxp' => 'natural',
+                'includeBlankOption' => true,
+                'nospace' => true,
+                'tl_class' => 'w50',
+            ],
+            'options_callback' => static fn () => System::getContainer()->get('contao.image.sizes')->getOptionsForUser(BackendUser::getInstance()),
         ],
         'fullsize' => [
             'label' => [
@@ -37,7 +41,9 @@ return [
                 'en' => ['Full-size view/new window', 'Open the full-size images in a lightbox or in a new browser window.'],
             ],
             'inputType' => 'checkbox',
-            'eval' => ['tl_class'=>'w50 m12'],
+            'eval' => [
+                'tl_class' => 'w50 m12',
+            ],
         ],
         'list' => [
             'label' => [
@@ -62,7 +68,13 @@ return [
                         'en' => ['Image', 'Please select an image file from the files directory.'],
                     ],
                     'inputType' => 'fileTree',
-                    'eval' => ['filesOnly' => true, 'fieldType' => 'radio', 'extensions' => '%contao.image.valid_extensions%', 'mandatory' => true, 'tl_class' => 'clr'],
+                    'eval' => [
+                        'filesOnly' => true,
+                        'fieldType' => 'radio',
+                        'extensions' => '%contao.image.valid_extensions%',
+                        'mandatory' => true,
+                        'tl_class' => 'clr',
+                    ],
                 ],
                 'text' => [
                     'label' => [
@@ -70,7 +82,12 @@ return [
                         'en' => ['Text', 'You can use HTML tags to format the text.'],
                     ],
                     'inputType' => 'textarea',
-                    'eval' => ['mandatory' => true, 'rte' => 'tinyMCE', 'helpwizard' => true, 'tl_class' => 'clr'],
+                    'eval' => [
+                        'mandatory' => true,
+                        'rte' => 'tinyMCE',
+                        'helpwizard' => true,
+                        'tl_class' => 'clr',
+                    ],
                     'explanation' => 'insertTags',
                 ],
                 'url' => [
@@ -79,7 +96,13 @@ return [
                         'en' => ['Link target', 'Please enter a web address (https://…), an e-mail address (mailto:…) or an insert tag. Overrides the Full-size view.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 255, 'dcaPicker' => true, 'tl_class' => 'w50 wizard'],
+                    'eval' => [
+                        'rgxp' => 'url',
+                        'decodeEntities' => true,
+                        'maxlength' => 255,
+                        'dcaPicker' => true,
+                        'tl_class' => 'w50 wizard',
+                    ],
                 ],
                 'target' => [
                     'label' => [
@@ -87,7 +110,9 @@ return [
                         'en' => ['Open in new window', 'Open the link in a new browser window.'],
                     ],
                     'inputType' => 'checkbox',
-                    'eval' => ['tl_class' => 'w50 m12'],
+                    'eval' => [
+                        'tl_class' => 'w50 m12',
+                    ],
                 ],
                 'linkText' => [
                     'label' => [
@@ -95,7 +120,10 @@ return [
                         'en' => ['Link text', 'The link text indicates if a link would be printed or if the whole component is clickable.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'titleText' => [
                     'label' => [
@@ -103,7 +131,10 @@ return [
                         'en' => ['Link title', 'The link title is added as <em>title</em> attribute in the HTML markup.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'rel' => [
                     'label' => [
@@ -111,7 +142,10 @@ return [
                         'en' => ['Lightbox', 'To trigger the lightbox, enter a <em>rel</em> attribute here.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 64, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 64,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'expert_legend' => [
                     'label' => [
@@ -119,7 +153,9 @@ return [
                         'en' => ['Expert settings', ''],
                     ],
                     'inputType' => 'group',
-                    'eval' => ['tl_class' => 'collapsed'],
+                    'eval' => [
+                        'tl_class' => 'collapsed',
+                    ],
                 ],
                 'cssClass' => [
                     'label' => [
@@ -127,7 +163,9 @@ return [
                         'en' => ['CSS class', 'Here you can enter one or more classes.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['tl_class' => 'w50']
+                    'eval' => [
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'invisible' => [
                     'label' => [
@@ -135,7 +173,9 @@ return [
                         'en' => ['Invisible', 'Hide the element on the website.'],
                     ],
                     'inputType' => 'checkbox',
-                    'eval' => ['tl_class' => 'w50 m12']
+                    'eval' => [
+                        'tl_class' => 'w50 m12',
+                    ],
                 ],
                 'overwriteMeta' => [
                     'label' => [
@@ -143,57 +183,75 @@ return [
                         'en' => ['Overwrite metadata', 'Overwrite the metadata of the image. Please note that all values must be entered.'],
                     ],
                     'inputType' => 'checkbox',
-                    'eval' => ['tl_class' => 'w50 m12 clr']
+                    'eval' => [
+                        'tl_class' => 'w50 m12 clr',
+                    ],
                 ],
                 'alt' => [
                     'dependsOn' => [
                         'field' => 'overwriteMeta',
-                        'value' => true
+                        'value' => true,
                     ],
                     'label' => [
                         'de' => ['Alternativer Text', 'Hier können Sie einen alternativen Text für das Bild eingeben (&lt;em&gt;alt&lt;/em&gt;-Attribut).'],
                         'en' => ['Alternate text', 'Here you can enter an alternate text for the image (&lt;em&gt;alt&lt;/em&gt; attribute).'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength'=>255, 'tl_class'=>'w50 clr']
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50 clr',
+                    ],
                 ],
                 'imageTitle' => [
                     'dependsOn' => [
                         'field' => 'overwriteMeta',
-                        'value' => true
+                        'value' => true,
                     ],
                     'label' => [
                         'de' => ['Bildtitel', 'Hier können Sie den Titel des Bildes eingeben (&lt;em&gt;title&lt;/em&gt;-Attribut).'],
-                        'en' => ['Image title', 'Here you can enter the image title (&lt;em&gt;title&lt;/em&gt; attribute).']
+                        'en' => ['Image title', 'Here you can enter the image title (&lt;em&gt;title&lt;/em&gt; attribute).'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength'=>255, 'tl_class'=>'w50']
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'imageUrl' => [
                     'dependsOn' => [
                         'field' => 'overwriteMeta',
-                        'value' => true
+                        'value' => true,
                     ],
                     'label' => [
                         'de' => ['Bildlink-Adresse', 'Eine eigene Bildlink-Adresse überschreibt den Lightbox-Link, sodass das Bild nicht mehr in der Großansicht dargestellt werden kann.'],
-                        'en' => ['Image link target', 'A custom image link target will override the lightbox link, so the image cannot be viewed fullsize anymore.']
+                        'en' => ['Image link target', 'A custom image link target will override the lightbox link, so the image cannot be viewed fullsize anymore.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>2048, 'dcaPicker'=>true, 'tl_class'=>'w50']
+                    'eval' => [
+                        'rgxp' => 'url',
+                        'decodeEntities' => true,
+                        'maxlength' => 2048,
+                        'dcaPicker' => true,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'caption' => [
                     'dependsOn' => [
                         'field' => 'overwriteMeta',
-                        'value' => true
+                        'value' => true,
                     ],
                     'label' => [
                         'de' => ['Bildunterschrift', 'Hier können Sie einen kurzen Text eingeben, der unterhalb des Bildes angezeigt wird.'],
-                        'en' => ['Image caption', 'Here you can enter a short text that will be displayed below the image.']
+                        'en' => ['Image caption', 'Here you can enter a short text that will be displayed below the image.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength'=>255, 'allowHtml'=>true, 'tl_class'=>'w50']
-                ]
-            ]
-        ]
-    ]
+                    'eval' => [
+                        'maxlength' => 255,
+                        'allowHtml' => true,
+                        'tl_class' => 'w50',
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

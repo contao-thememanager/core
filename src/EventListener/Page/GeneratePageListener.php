@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\EventListener\Page;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
-use Contao\PageRegular;
 use Contao\LayoutModel;
 use Contao\PageModel;
+use Contao\PageRegular;
 
 #[AsHook('generatePage')]
 class GeneratePageListener

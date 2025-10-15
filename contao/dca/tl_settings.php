@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -23,26 +25,30 @@ System::loadLanguageFile('tl_thememanager_settings');
 
 // Add fields to tl_settings
 $GLOBALS['TL_DCA']['tl_settings']['fields']['thememanagerIconFont'] = [
-    'label'         => &$GLOBALS['TL_LANG']['tl_thememanager_settings']['thememanagerIconFont'],
-    'inputType'     => 'fileTree',
-    'load_callback' => [ static function ($strValue) {
-        if (null === $strValue || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strValue))
-        {
+    'label' => &$GLOBALS['TL_LANG']['tl_thememanager_settings']['thememanagerIconFont'],
+    'inputType' => 'fileTree',
+    'load_callback' => [static function (string|null $strValue) {
+        if ($strValue === null || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strValue)) {
             Config::set('thememanagerIconFont', null);
+
             return '';
         }
 
         return FilesModel::findByPath($strValue)?->uuid;
     }],
-    'save_callback' => [ static function ($strValue) {
-        if (!strlen($strValue) || null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath))
-        {
+    'save_callback' => [static function ($strValue) {
+        if ((string) $strValue === '' || null === ($strPath = FilesModel::findByUuid($strValue)->path) || !is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $strPath)) {
             Config::set('thememanagerIconFont', null);
+
             return '';
         }
 
         return $strPath;
-
     }],
-    'eval'          => ['fieldType'=>'radio', 'filesOnly'=>true, 'isGallery'=>false, 'extensions'=>'svg']
+    'eval' => [
+        'fieldType' => 'radio',
+        'filesOnly' => true,
+        'isGallery' => false,
+        'extensions' => 'svg',
+    ],
 ];

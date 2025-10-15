@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -10,33 +12,32 @@
 namespace ContaoThemeManager\Core\StyleManager;
 
 use Contao\File;
-use DOMException;
-use DomNode;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerArchiveModel;
 use Oveleon\ContaoComponentStyleManager\Model\StyleManagerModel;
 
 /**
- * Creates a xml file that is parsed by the style manager bundle config
- *
- * @author Sebastian Zoglowek <https://github.com/zoglo>
+ * Creates a xml file that is parsed by the style manager bundle config.
  *
  * @internal
  */
 class StyleManagerXML
 {
-    private \DOMDocument $xml;
-    private DOMNode $archives;
+    private readonly \DOMDocument $xml;
+
+    private readonly \DomNode $archives;
+
     private StyleManagerArchiveModel $group;
+
     private StyleManagerModel $groupChild;
 
     private array $groups = [];
 
     /**
-     * @throws DOMException
+     * @throws \DOMException
      */
     public function __construct()
     {
-        $this->group      = new StyleManagerArchiveModel();
+        $this->group = new StyleManagerArchiveModel();
         $this->groupChild = new StyleManagerModel();
 
         $this->xml = new \DOMDocument('1.0', 'UTF-8');
@@ -46,7 +47,7 @@ class StyleManagerXML
     }
 
     /**
-     * Creates a new style-manager-*.xml
+     * Creates a new style-manager-*.xml.
      */
     public static function create(): self
     {
@@ -54,14 +55,14 @@ class StyleManagerXML
     }
 
     /**
-     * Adds a style manager archive group to the xml
+     * Adds a style manager archive group to the xml.
      */
     public function addGroup(string $identifier, int $id = 0, string $title = '', string $groupAlias = '', int $sorting = 0): self
     {
         // If group already exists in custom configuration, use it
-        if (isset($this->groups[$identifier]['archive']))
-        {
+        if (isset($this->groups[$identifier]['archive'])) {
             $this->group = $this->groups[$identifier]['archive'];
+
             return $this;
         }
 
@@ -69,83 +70,73 @@ class StyleManagerXML
         $this->group->identifier = $identifier;
 
         // Should be set if you create new children but is not mandatory for appending classes
-        if (!!$id)
-        {
+        if ((bool) $id) {
             $this->group->id = $id;
         }
 
-        if (!!$title) {
+        if ((bool) $title) {
             $this->group->title = $title;
         }
 
-        if (!!$groupAlias) {
+        if ((bool) $groupAlias) {
             $this->group->groupAlias = $groupAlias;
         }
 
-        if (!!$sorting) {
+        if ((bool) $sorting) {
             $this->group->sorting = $sorting;
         }
 
         // Create group array by identifier
         $this->groups[$identifier] = [
             'archive' => $this->group,
-            'children' => []
+            'children' => [],
         ];
 
         return $this;
     }
 
     /**
-     * Adds a child to a style manager archive group
+     * Adds a child to a style manager archive group.
      */
     public function addChild(string $alias, array $cssClasses, string $title = '', array $elements = [], array $options = []): self
     {
         $this->groupChild = new StyleManagerModel();
 
-        if (isset($this->group->id))
-        {
+        if (isset($this->group->id)) {
             $this->groupChild->pid = $this->group->id;
         }
 
-        if (!!$title)
-        {
+        if ((bool) $title) {
             $this->groupChild->title = $title;
         }
 
         $this->groupChild->cssClasses = serialize($cssClasses);
 
         // Add elements
-        if (!empty($elements))
-        {
-            foreach ($elements as $k => $v)
-            {
-                // Auto-enable parent selectors if specific elements are given
-                switch ($k)
-                {
-                    case 'formFields':
-                        $this->groupChild->extendFormFields = 1; break;
-                    case 'contentElements':
-                        $this->groupChild->extendContentElement = 1; break;
-                    case 'modules':
-                        $this->groupChild->extendModule = 1; break;
-                }
-
-                if (\is_array($v) && !empty($v))
-                {
-                    $v = serialize($v);
-                }
-
-                $this->groupChild->$k = $v;
+        foreach ($elements as $k => $v) {
+            // Auto-enable parent selectors if specific elements are given
+            switch ($k) {
+                case 'formFields':
+                    $this->groupChild->extendFormFields = 1;
+                    break;
+                case 'contentElements':
+                    $this->groupChild->extendContentElement = 1;
+                    break;
+                case 'modules':
+                    $this->groupChild->extendModule = 1;
+                    break;
             }
+
+            if (!empty($v) && \is_array($v)) {
+                $v = serialize($v);
+            }
+
+            $this->groupChild->{$k} = $v;
         }
 
         // Add options
-        if (!empty($options))
-        {
-            foreach ($options as $k => $v)
-            {
-                $this->groupChild->$k = $v;
-            }
+        foreach ($options as $k => $v) {
+            $this->groupChild->{$k} = $v;
         }
 
         // Push settings into previously created group
@@ -155,28 +146,25 @@ class StyleManagerXML
     }
 
     /**
-     * Saves and creates the style-manager-*.xml file
+     * Saves and creates the style-manager-*.xml file.
      *
      * @throws \Exception
      */
     public function save(string $name): bool
     {
-        if (empty($this->groups))
-        {
+        if ($this->groups === []) {
             return false;
         }
 
-        foreach ($this->groups as $group)
-        {
-            $objArchive    = $group['archive'];
+        foreach ($this->groups as $group) {
+            $objArchive = $group['archive'];
             $groupChildren = $group['children'];
 
             self::addArchiveData($objArchive, $groupChildren);
         }
 
         // Empty content
-        if ((!$file = $this->xml->saveXML()) || !strlen($file))
-        {
+        if ((!$file = $this->xml->saveXML()) || (string) $file === '') {
             return false;
         }
 
@@ -188,9 +176,9 @@ class StyleManagerXML
     }
 
     /**
-     * Adds an archive data row to the XML document
+     * Adds an archive data row to the XML document.
      *
-     * @throws DOMException
+     * @throws \DOMException
      */
     private function addArchiveData(StyleManagerArchiveModel $objArchive, array $arrChildren): void
     {
@@ -204,18 +192,17 @@ class StyleManagerXML
     }
 
     /**
-     * Adds a child data row to the XML document
+     * Adds a child data row to the XML document.
      *
-     * @throws DOMException
+     * @throws \DOMException
      */
-    private function addChildrenData(DomNode $archive, array $arrChildren): void
+    private function addChildrenData(\DomNode $archive, array $arrChildren): void
     {
         // Add children node
         $children = $this->xml->createElement('children');
         $children = $archive->appendChild($children);
 
-        foreach ($arrChildren as $alias => $objChild)
-        {
+        foreach ($arrChildren as $alias => $objChild) {
             $row = $this->xml->createElement('child');
 
             $row->setAttribute('alias', $alias);
@@ -227,24 +214,22 @@ class StyleManagerXML
     }
 
     /**
-     * Adds row data to the XML document
+     * Adds row data to the XML document.
      *
-     * @throws DOMException
+     * @throws \DOMException
      */
-    private function addRowData(DOMNode $row, array $arrData): void
+    private function addRowData(\DomNode $row, array $arrData): void
     {
-        foreach ($arrData as $k=>$v)
-        {
+        foreach ($arrData as $k => $v) {
             $field = $this->xml->createElement('field');
             $field->setAttribute('title', $k);
             $field = $row->appendChild($field);
 
-            if ($v === null)
-            {
+            if ($v === null) {
                 $v = 'NULL';
             }
 
-            $value = $this->xml->createTextNode($v);
+            $value = $this->xml->createTextNode((string) $v);
             $field->appendChild($value);
         }
     }

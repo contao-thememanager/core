@@ -1,5 +1,6 @@
 <?php
-// rsce_icon.php
+
+declare(strict_types=1);
 
 use Contao\Config;
 
@@ -25,8 +26,8 @@ return [
             ],
             'inputType' => 'rocksolid_icon_picker',
             'eval' => [
-                'iconFont' => Config::get('thememanagerIconFont') ?: $GLOBALS['CTM_SETTINGS']['iconFont']
-            ]
-        ]
-    ]
+                'iconFont' => Config::get('thememanagerIconFont') ?: $GLOBALS['CTM_SETTINGS']['iconFont'],
+            ],
+        ],
+    ],
 ];

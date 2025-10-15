@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao.
  *
@@ -11,7 +13,7 @@
 namespace ContaoThemeManager\Core\Util;
 
 /**
- * Provides array manipulation methods
+ * Provides array manipulation methods.
  */
 class ArrayUtil
 {
@@ -22,27 +24,30 @@ class ArrayUtil
     {
         $isList = array_is_list($list);
 
-        $newList = array_filter($config, static fn($newValue) => !\in_array($newValue[0], array('-', '+'), true), $isList ? 0 : ARRAY_FILTER_USE_KEY);
+        $newList = array_filter($config, static fn ($newValue): bool => !\in_array($newValue[0], ['-', '+'], true), $isList ? 0 : ARRAY_FILTER_USE_KEY);
 
-        if ($newList) {
+        if ($newList !== []) {
             $list = $newList;
         }
 
         foreach ($config as $k => $v) {
             $item = $isList ? $v : $k;
             $prefix = $item[0];
-            $value = substr($item, 1);
+            $value = substr((string) $item, 1);
 
-            if ('-' === $prefix) {
+            if ($prefix === '-') {
                 if (!$isList) {
                     unset($list[$value]);
-                } elseif (\in_array($value, $list, true)) {
+                }
+                elseif (\in_array($value, $list, true)) {
                     unset($list[array_search($value, $list, true)]);
                 }
-            } elseif ('+' === $prefix) {
+            }
+            elseif ($prefix === '+') {
                 if (!$isList) {
                     $list[$value] = $v;
-                } elseif (!\in_array($value, $list, true)) {
+                }
+                elseif (!\in_array($value, $list, true)) {
                     $list[] = $value;
                 }
             }

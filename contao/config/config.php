@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -24,12 +26,12 @@ $GLOBALS['BE_MOD']['design']['themes']['tables'][] = 'tl_thememanager';
 // Add sources
 $GLOBALS['TC_SOURCES'] = [
     'configFiles' => [
-        'bundles/contaothememanagercore/framework/scss/_config.scss'
+        'bundles/contaothememanagercore/framework/scss/_config.scss',
     ],
     'configField' => 'themeConfig',
-    'files'       => [
-        'bundles/contaothememanagercore/framework/scss/_theme.scss'
-    ]
+    'files' => [
+        'bundles/contaothememanagercore/framework/scss/_theme.scss',
+    ],
 ];
 
 $GLOBALS['TC_HOOKS']['compilerParseConfig'][] = [ThemeManager::class, 'onParseThemeManagerConfiguration'];
@@ -40,6 +42,6 @@ $GLOBALS['CTM_HOOKS']['onCreateCustomXmlConfig'][] = [ConfigGenerator::class, 'g
 
 // Wrapper elements
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
-$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
+$GLOBALS['TL_WRAPPERS']['stop'][] = 'wrapperStop';
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStartContent';
-$GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStopContent';
+$GLOBALS['TL_WRAPPERS']['stop'][] = 'wrapperStopContent';

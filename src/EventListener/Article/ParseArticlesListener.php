@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\EventListener\Article;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
@@ -19,34 +21,30 @@ class ParseArticlesListener
         $template->date = self::getParsedTimeFormat('datim', $newsEntry['time'], $objPage, $module->news_datimFormat);
 
         // Add various date variables
-        $template->year      = Date::parse('Y', $newsEntry['time']);
+        $template->year = Date::parse('Y', $newsEntry['time']);
         $template->yearShort = Date::parse('y', $newsEntry['time']);
 
-        if ($module->news_removeBy)
-        {
-            $template->author = ltrim($template->author, ($GLOBALS['TL_LANG']['MSC']['by'] . ' '));
+        if ($module->news_removeBy) {
+            $template->author = ltrim($template->author, $GLOBALS['TL_LANG']['MSC']['by'] . ' ');
         }
 
         // Modify comment variables
-        if (1 === $template->numberOfComments)
-        {
+        if ($template->numberOfComments === 1) {
             $template->commentCount = $GLOBALS['TL_LANG']['MSC']['commentCountOne'];
         }
-        else if (!!$template->numberOfComments)
-        {
-            $template->commentCount = sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
+        elseif ((bool) $template->numberOfComments) {
+            $template->commentCount = \sprintf($GLOBALS['TL_LANG']['MSC']['commentCountMultiple'], $template->numberOfComments);
         }
 
-        $template->hasComments = !!$template->numberOfComments;
+        $template->hasComments = (bool) $template->numberOfComments;
     }
 
-    private function getParsedTimeFormat(string $type, int $tstamp, $objPage, ?string $format): string
+    private function getParsedTimeFormat(string $type, int $tstamp, $objPage, string|null $format): string
     {
-        if ($format && Date::isNumericFormat($format))
-        {
+        if ($format && Date::isNumericFormat($format)) {
             return Date::parse($format, $tstamp);
         }
 
-        return Date::parse($objPage->{$type.'Format'}, $tstamp);
+        return Date::parse($objPage->{$type . 'Format'}, $tstamp);
     }
 }

@@ -1,72 +1,97 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
  * (c) https://www.oveleon.de/
 */
-
 use Contao\Config;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\System;
+use ContaoThemeManager\Core\ThemeManager;
 
 $container = System::getContainer();
 
 $headlineOptions = $container->getParameter('contao_thememanager.headline.units') ?? [];
-$headlineStyles =  $container->getParameter('contao_thememanager.headline.styles') ?? [];
+$headlineStyles = $container->getParameter('contao_thememanager.headline.styles') ?? [];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = $headlineOptions;
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headlineStyle'] = [
-    'exclude'     => true,
-    'inputType'   => 'select',
-    'options'     => $headlineStyles,
-    'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
-    'sql'         => ['type' => 'string', 'length' => 64, 'default' => ''],
+    'exclude' => true,
+    'inputType' => 'select',
+    'options' => $headlineStyles,
+    'eval' => [
+        'includeBlankOption' => true,
+        'tl_class' => 'w50',
+    ],
+    'sql' => [
+        'type' => 'string',
+        'length' => 64,
+        'default' => '',
+    ],
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2'] = [
-    'exclude'     => true,
-    'search'      => true,
-    'inputType'   => 'inputUnit',
-    'options'     => $headlineOptions,
-    'eval'        => ['basicEntities' => true, 'tl_class'=>'w50 clr'],
-    'sql'         => "varchar(1022) NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'"
+    'exclude' => true,
+    'search' => true,
+    'inputType' => 'inputUnit',
+    'options' => $headlineOptions,
+    'eval' => [
+        'basicEntities' => true,
+        'tl_class' => 'w50 clr',
+    ],
+    'sql' => "varchar(1022) NULL default 'a:2:{s:5:\"value\";s:0:\"\";s:4:\"unit\";s:2:\"h3\";}'",
 ];
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['headline2Style'] = [
-    'exclude'     => true,
-    'inputType'   => 'select',
-    'options'     => $headlineStyles,
-    'eval'        => ['includeBlankOption'=>true, 'tl_class'=>'w50'],
-    'sql'         => ['type' => 'string', 'length' => 64, 'default' => ''],
+    'exclude' => true,
+    'inputType' => 'select',
+    'options' => $headlineStyles,
+    'eval' => [
+        'includeBlankOption' => true,
+        'tl_class' => 'w50',
+    ],
+    'sql' => [
+        'type' => 'string',
+        'length' => 64,
+        'default' => '',
+    ],
 ];
 
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['ContaoThemeManager\Core\ThemeManager', 'extendHeadlineField'];
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = [ThemeManager::class, 'extendHeadlineField'];
 
 /**
- * Get bundle information
+ * Get bundle information.
  */
 $bundles = $container->getParameter('kernel.bundles');
 
-/**
+/*
  * Add News bundle related fields
  */
-if (isset($bundles['ContaoNewsBundle']))
-{
+if (isset($bundles['ContaoNewsBundle'])) {
     $GLOBALS['TL_DCA']['tl_module']['fields']['news_removeBy'] = [
-        'exclude'     => true,
-        'inputType'   => 'checkbox',
-        'eval'        => ['tl_class'=>'w100 clr'],
-        'sql'         => "char(1) NOT NULL default ''"
+        'exclude' => true,
+        'inputType' => 'checkbox',
+        'eval' => [
+            'tl_class' => 'w100 clr',
+        ],
+        'sql' => "char(1) NOT NULL default ''",
     ];
 
     $GLOBALS['TL_DCA']['tl_module']['fields']['news_datimFormat'] = [
-        'exclude'     => true,
-        'inputType'   => 'text',
-        'eval'        => ['helpwizard'=>true, 'decodeEntities'=>true, 'placeholder'=>Config::get('datimFormat'), 'tl_class'=>'w50'],
+        'exclude' => true,
+        'inputType' => 'text',
+        'eval' => [
+            'helpwizard' => true,
+            'decodeEntities' => true,
+            'placeholder' => Config::get('datimFormat'),
+            'tl_class' => 'w50',
+        ],
         'explanation' => 'dateFormat',
-        'sql'         => "varchar(32) NOT NULL default ''"
+        'sql' => "varchar(32) NOT NULL default ''",
     ];
 
     PaletteManipulator::create()
@@ -83,16 +108,17 @@ if (isset($bundles['ContaoNewsBundle']))
     ;
 }
 
-/**
+/*
  * Add FAQ bundle related fields
  */
-if (isset($bundles['ContaoFaqBundle']))
-{
+if (isset($bundles['ContaoFaqBundle'])) {
     $GLOBALS['TL_DCA']['tl_module']['fields']['showFaqInfo'] = [
-        'exclude'     => true,
-        'inputType'   => 'checkbox',
-        'eval'        => ['tl_class'=>'w50 m12'],
-        'sql'         => "char(1) NOT NULL default ''"
+        'exclude' => true,
+        'inputType' => 'checkbox',
+        'eval' => [
+            'tl_class' => 'w50 m12',
+        ],
+        'sql' => "char(1) NOT NULL default ''",
     ];
 
     PaletteManipulator::create()

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -11,7 +13,6 @@ namespace ContaoThemeManager\Core\EventSubscriber;
 use Contao\ArrayUtil;
 use Contao\BackendUser;
 use Contao\CoreBundle\Routing\ScopeMatcher;
-use Contao\User;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -21,30 +22,29 @@ class KernelRequestSubscriber implements EventSubscriberInterface
 {
     public function __construct(
         protected ScopeMatcher $scopeMatcher,
-        protected TokenStorageInterface $tokenStorage
+        protected TokenStorageInterface $tokenStorage,
     ) {
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
-        return [KernelEvents::REQUEST => 'onKernelRequest'];
+        return [
+            KernelEvents::REQUEST => 'onKernelRequest',
+        ];
     }
 
     public function onKernelRequest(RequestEvent $e): void
     {
         $request = $e->getRequest();
 
-        if ($this->scopeMatcher->isContaoRequest($request))
-        {
+        if ($this->scopeMatcher->isContaoRequest($request)) {
             ArrayUtil::arrayInsert($GLOBALS['TL_CSS'][], 0, 'bundles/contaothememanagercore/css/charset.css|static');
         }
 
-        if ($this->scopeMatcher->isBackendRequest($request))
-        {
+        if ($this->scopeMatcher->isBackendRequest($request)) {
             $GLOBALS['TL_CSS'][] = 'bundles/contaothememanagercore/backend/css/ctmcore.css|static';
 
-            if (file_exists('assets/ctmcore/css/_icon.css'))
-            {
+            if (file_exists('assets/ctmcore/css/_icon.css')) {
                 $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_icon.css|static';
             }
 
@@ -55,10 +55,10 @@ class KernelRequestSubscriber implements EventSubscriberInterface
 
             if (
                 $user instanceof BackendUser
-                && $user->show_ctm_colors &&
-                file_exists('assets/ctmcore/css/_backendColors.css')
+                && $user->show_ctm_colors
+                && file_exists('assets/ctmcore/css/_backendColors.css')
             ) {
-                $GLOBALS['TL_CSS'][]        = 'assets/ctmcore/css/_backendColors.css|static';
+                $GLOBALS['TL_CSS'][] = 'assets/ctmcore/css/_backendColors.css|static';
                 $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaothememanagercore/backend/js/preview-colors.js|static';
             }
         }

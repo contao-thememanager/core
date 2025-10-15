@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -24,65 +26,59 @@ use Symfony\Component\Filesystem\Path;
  */
 class BackgroundImageGenerator
 {
-    protected ?FileCompiler $compiler = null;
-    protected ?ThemeModel $objTheme = null;
+    protected FileCompiler|null $compiler = null;
+
+    protected ThemeModel|null $objTheme = null;
 
     /**
-     * Generates the background set when compiling the theme
+     * Generates the background set when compiling the theme.
      * @throws \Exception
      */
-    public function generate($configVars, $xml, $compiler): void
+    public function generate($configVars, $xml, FileCompiler|null $compiler): void
     {
         $this->compiler = $compiler;
         $this->objTheme = $compiler->objTheme;
 
         $this->compiler->msg('Backgrounds', FileCompiler::MSG_HEAD);
 
-        if (empty($backgrounds = $this->getBackgroundImages()))
-        {
+        if (($backgrounds = $this->getBackgroundImages()) === []) {
             $this->compiler->msg('Could not find any background images');
         }
-        else
-        {
+        else {
             $this->createBackgroundXML($backgrounds, $xml);
 
             // Display all background images in a list after compiling the theme
             $bgList = '';
 
-            foreach ($backgrounds as $background)
-            {
+            foreach ($backgrounds as $background) {
                 $bgList .= '<div class="bg-file">' . $background['value'] . ' <span class="tl_gray">(' . $background['path'] . ')</span></div>';
             }
 
             $this->compiler->msg($bgList, 'bg-list');
 
-            $this->compiler->msg('File saved: _background'.FileCompiler::FILE_EXT, FileCompiler::MSG_SUCCESS);
-            $this->compiler->msg('Make sure to embed the generated _background'.FileCompiler::FILE_EXT.' within your Layout');
+            $this->compiler->msg('File saved: _background' . FileCompiler::FILE_EXT, FileCompiler::MSG_SUCCESS);
+            $this->compiler->msg('Make sure to embed the generated _background' . FileCompiler::FILE_EXT . ' within your Layout');
         }
 
-        $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ?: '');
+        $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ? '' : $this->generateBackgroundCSS($backgrounds));
     }
 
     /**
-     * Checks for background images in the file system
+     * Checks for background images in the file system.
      */
     private function getBackgroundImages(): array
     {
-        $bg  = [];
+        $bg = [];
         $bg2 = [];
 
-        if (null !== ($objImages = FilesModel::findBy('ctmBackgroundImage', 1)))
-        {
+        if (null !== ($objImages = FilesModel::findBy('ctmBackgroundImage', 1))) {
             $images = $this->sortOutAndOrderByIncludePath($objImages);
 
-            foreach ($images as $image)
-            {
-                if ($image->themeFolder)
-                {
+            foreach ($images as $image) {
+                if ($image->themeFolder) {
                     $this->setBackgroundInformation($image, $bg);
                 }
-                else
-                {
+                else {
                     $this->setBackgroundInformation($image, $bg2);
                 }
             }
@@ -94,8 +90,7 @@ class BackgroundImageGenerator
             $bg = array_values(array_merge($bg, $bg2));
         }
 
-        if (!!$bgCount = count($bg))
-        {
+        if ((bool) $bgCount = \count($bg)) {
             $this->compiler->msg($bgCount . ' background image(s) imported', FileCompiler::MSG_SUCCESS);
         }
 
@@ -103,40 +98,38 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Adds the background options to the style-manager-tm-config.xml
+     * Adds the background options to the style-manager-tm-config.xml.
      */
     private function createBackgroundXML(array $backgrounds, $xml): void
     {
         $xml->addGroup('gBackground')->addChild('image', $backgrounds);
         $xml->addGroup('cBackground')->addChild('image', $backgrounds);
 
-        foreach ($backgrounds as $k => $v)
-        {
-            $backgrounds[$k]['key'] = 'i-'. $v['key'];
+        foreach ($backgrounds as $k => $v) {
+            $backgrounds[$k]['key'] = 'i-' . $v['key'];
         }
 
         $xml->addGroup('eBackground')->addChild('image', $backgrounds);
     }
 
     /**
-     * Generates the background css
+     * Generates the background css.
      *
      * @throws \Exception
      */
-    private function generateBackgroundCSS(array $backgrounds): ?string
+    private function generateBackgroundCSS(array $backgrounds): string|null
     {
         $css = '';
 
-        foreach ($backgrounds as $background)
-        {
-            $css .= vsprintf(".%s{--bgi:url(/%s)}", [
+        foreach ($backgrounds as $background) {
+            $css .= vsprintf('.%s{--bgi:url(/%s)}', [
                 $background['key'],
-                $background['path']
+                $background['path'],
             ]);
 
-            $css .= vsprintf(".%s{--i-bgi:url(/%s)}", [
+            $css .= vsprintf('.%s{--i-bgi:url(/%s)}', [
                 'i-' . $background['key'],
-                $background['path']
+                $background['path'],
             ]);
         }
 
@@ -144,23 +137,21 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Returns the theme folder paths
+     * Returns the theme folder paths.
      */
-    private function getThemeFolders(?ThemeModel $objTheme): array
+    private function getThemeFolders(ThemeModel|null $objTheme): array
     {
         $paths = [];
 
         if (
-            null === $objTheme ||
-            null === ($folders = $objTheme->folders) ||
-            null === ($objFolders = FilesModel::findMultipleByUuids(StringUtil::deserialize($folders)))
-        )
-        {
+            !$objTheme instanceof ThemeModel
+            || null === ($folders = $objTheme->folders)
+            || null === ($objFolders = FilesModel::findMultipleByUuids(StringUtil::deserialize($folders)))
+        ) {
             return $paths;
         }
 
-        foreach ($objFolders as $folder)
-        {
+        foreach ($objFolders as $folder) {
             $paths[] = $folder->path;
         }
 
@@ -168,23 +159,18 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Gets paths that should be included and excluded from searching for background images
+     * Gets paths that should be included and excluded from searching for background images.
      */
     private function getExcludeAndIncludePaths(): array
     {
         $excludePaths = [];
         $includePaths = [];
 
-        if (null !== ($objThemes = ThemeModel::findAll()))
-        {
-            foreach ($objThemes as $objTheme)
-            {
-                if ($objTheme->id !== $this->objTheme->id)
-                {
+        if (null !== ($objThemes = ThemeModel::findAll())) {
+            foreach ($objThemes as $objTheme) {
+                if ($objTheme->id !== $this->objTheme->id) {
                     $excludePaths = array_merge($excludePaths, $this->getThemeFolders($objTheme));
-                }
-                else
-                {
+                } else {
                     $includePaths = $this->getThemeFolders($objTheme);
                 }
             }
@@ -194,31 +180,26 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Sorts out backgrounds from other themes and sorts returns an array collection that is ordered by theme
+     * Sorts out backgrounds from other themes and sorts returns an array collection that is ordered by theme.
      */
     private function sortOutAndOrderByIncludePath($objFiles): array
     {
         $themeFiles = [];
-        $leftover   = [];
+        $leftover = [];
 
         [$includePaths, $excludePaths] = $this->getExcludeAndIncludePaths();
 
-        foreach ($objFiles as $file)
-        {
-            foreach ($includePaths as $includePath)
-            {
-                if (Path::isBasePath($includePath, $file->path))
-                {
+        foreach ($objFiles as $file) {
+            foreach ($includePaths as $includePath) {
+                if (Path::isBasePath($includePath, $file->path)) {
                     $file->themeFolder = true;
                     $themeFiles[$file->path] = $file;
                     continue 2;
                 }
             }
 
-            foreach (array_flip(array_flip($excludePaths)) as $excludePath)
-            {
-                if (Path::isBasePath($excludePath, $file->path))
-                {
+            foreach (array_flip(array_flip($excludePaths)) as $excludePath) {
+                if (Path::isBasePath($excludePath, $file->path)) {
                     continue 2;
                 }
             }
@@ -228,8 +209,7 @@ class BackgroundImageGenerator
 
         $otherFiles = [];
 
-        foreach ($leftover as $file)
-        {
+        foreach ($leftover as $file) {
             $file->themeFolder = false;
             $otherFiles[$file->path] = $file;
         }
@@ -238,21 +218,19 @@ class BackgroundImageGenerator
     }
 
     /**
-     * Sets the background information like class, name and path and makes sure that duplicate names will be suffixed
+     * Sets the background information like class, name and path and makes sure that duplicate names will be suffixed.
      */
     private function setBackgroundInformation(FilesModel $image, array &$backgrounds): void
     {
         $name = StringUtil::sanitizeFileName(pathinfo($image->name, PATHINFO_FILENAME));
         $path = $image->path;
 
-        if (array_key_exists($name, $backgrounds))
-        {
+        if (\array_key_exists($name, $backgrounds)) {
             $count = 1;
             $rename = $name . '_' . $count;
 
-            while (array_key_exists($rename, $backgrounds))
-            {
-                $count += 1;
+            while (\array_key_exists($rename, $backgrounds)) {
+                ++$count;
                 $rename = $name . '_' . $count;
             }
 
@@ -260,9 +238,9 @@ class BackgroundImageGenerator
         }
 
         $backgrounds[$name] = [
-            'key'         => 'bgi-' . $name,
-            'value'       => 'BG-' . $name,
-            'path'        => $path
+            'key' => 'bgi-' . $name,
+            'value' => 'BG-' . $name,
+            'path' => $path,
         ];
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -21,10 +23,11 @@ use ContaoThemeManager\Core\ThemeManager;
 class ConfigGenerator
 {
     public array $configVars;
+
     public StyleManagerXML $xml;
 
     /**
-     * Generates the config vars
+     * Generates the config vars.
      *
      * @throws \Exception
      * @internal
@@ -43,37 +46,35 @@ class ConfigGenerator
     }
 
     /**
-     * Gets a list configuration and generates the style-manager xml options
+     * Gets a list configuration and generates the style-manager xml options.
      */
     public function getListOptions(array $configVars, string $configKey, string $classPrefix = '', string $labelSuffix = '', array $defaults = []): array
     {
         $options = [];
 
         // Fallback to default values
-        if (null === ($configOptions = self::getThemeManagerConfigVar($configVars, $configKey)))
-        {
+        if (null === ($configOptions = self::getThemeManagerConfigVar($configVars, $configKey))) {
             $configOptions = $defaults;
-        }
-        else
-        {
+        } else {
             $configOptions = explode(',', $configOptions);
         }
 
-        foreach ($configOptions as $option)
-        {
-            $options[] = ['key' =>$classPrefix.$option,'value' =>$option.$labelSuffix];
+        foreach ($configOptions as $option) {
+            $options[] = [
+                'key' => $classPrefix . $option,
+                'value' => $option . $labelSuffix,
+            ];
         }
 
         return $options;
     }
 
     /**
-     * Gets a specific value from the ThemeManager configuration
+     * Gets a specific value from the ThemeManager configuration.
      */
-    public function getThemeManagerConfigVar(array $configVars, string $key): ?string
+    public function getThemeManagerConfigVar(array $configVars, string $key): string|null
     {
-        if (!array_key_exists($key, $configVars) || !is_string($value = $configVars[$key]) || !strlen($value))
-        {
+        if (!\array_key_exists($key, $configVars) || !\is_string($value = $configVars[$key]) || $value === '') {
             return null;
         }
 
@@ -81,12 +82,11 @@ class ConfigGenerator
     }
 
     /**
-     * Returns all content elements
+     * Returns all content elements.
      */
     public function getAllContentElements(): array
     {
-        if (!isset($GLOBALS['TL_CTE']))
-        {
+        if (!isset($GLOBALS['TL_CTE'])) {
             return [];
         }
 
@@ -94,12 +94,11 @@ class ConfigGenerator
     }
 
     /**
-     * Returns all frontend modules
+     * Returns all frontend modules.
      */
     public function getAllFrontendModules(): array
     {
-        if (!isset($GLOBALS['FE_MOD']))
-        {
+        if (!isset($GLOBALS['FE_MOD'])) {
             return [];
         }
 
@@ -107,87 +106,103 @@ class ConfigGenerator
     }
 
     /**
-     * Gets all image text widths for the image-text components adds it to the style-manager-tm-config.xml
+     * Gets all image text widths for the image-text components adds it to the style-manager-tm-config.xml.
      */
     private function generateImageTextWidths(): void
     {
-        $options = self::getListOptions($this->configVars, 'image-text-ratio-options', 'it-width-', '%', [25,33,38,40,50,80,100]);
+        $options = self::getListOptions($this->configVars, 'image-text-ratio-options', 'it-width-', '%', [25, 33, 38, 40, 50, 80, 100]);
 
         $this->xml->addGroup('cLayout')->addChild('imageTextWidth', $options);
     }
 
     /**
-     * Gets all vertical article heights from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
+     * Gets all vertical article heights from the ThemeManager configuration and adds it to the style-manager-tm-config.xml.
      */
     private function generateArticleHeight(): void
     {
-        $options    = self::getListOptions($this->configVars, 'article-options-vheight', 'a-vh-', 'vh', [50,75,100]);
+        $options = self::getListOptions($this->configVars, 'article-options-vheight', 'a-vh-', 'vh', [50, 75, 100]);
         $additional = self::getListOptions($this->configVars, 'article-options-height', 'a-h-');
 
         $this->xml->addGroup('cArticleHeight')->addChild('height', array_merge($options, $additional));
     }
 
     /**
-     * Gets all aspect ratios from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
+     * Gets all aspect ratios from the ThemeManager configuration and adds it to the style-manager-tm-config.xml.
      */
     private function generateAspectRatios(): void
     {
         $options = [];
 
         // Fallback to default values
-        if (null === ($aspectRatios = self::getThemeManagerConfigVar($this->configVars, 'aspect-ratios')))
-        {
-            $aspectRatios = ['(4:5)','(1:1)','(4:3)','(3:2)','(16:10)','(16:9)'];
+        if (null === ($aspectRatios = self::getThemeManagerConfigVar($this->configVars, 'aspect-ratios'))) {
+            $aspectRatios = ['(4:5)', '(1:1)', '(4:3)', '(3:2)', '(16:10)', '(16:9)'];
         }
-        else
-        {
+        else {
             $aspectRatios = explode(',', $aspectRatios);
         }
 
-        foreach ($aspectRatios as $value)
-        {
-            if (!!$value = substr($value, 1, -1))
-            {
-                if (2 === count($ratios = explode(':', $value)))
-                {
-                    $options[] = ['key' =>'ar-'.$ratios[0].'-'.$ratios[1],'value' => $value];
-                }
+        foreach ($aspectRatios as $value) {
+            if (!(bool) $value = substr($value, 1, -1)) {
+                continue;
             }
+
+            if (\count($ratios = explode(':', $value)) !== 2) {
+                continue;
+            }
+
+            $options[] = [
+                'key' => 'ar-' . $ratios[0] . '-' . $ratios[1],
+                'value' => $value,
+            ];
         }
 
         $this->xml->addGroup('eImage')->addChild('aspectRatio', $options);
     }
 
     /**
-     * Gets all background sizes from the ThemeManager configuration and adds it to the style-manager-tm-config.xml
+     * Gets all background sizes from the ThemeManager configuration and adds it to the style-manager-tm-config.xml.
      */
     private function generateBackgroundSizes(): void
     {
-        if (null === ($additional = self::getThemeManagerConfigVar($this->configVars, 'background-sizes')))
-        {
+        if (null === ($additional = self::getThemeManagerConfigVar($this->configVars, 'background-sizes'))) {
             return;
         }
 
         // Prefill defaults for order
-        $options = [['key' => 'bg--auto', 'value' => 'Auto'], ['key' => 'bg--contain', 'value' => 'Contain']];
-        $itemOptions = [['key' => 'i-bg--auto', 'value' => 'Auto'], ['key' => 'i-bg--contain', 'value' => 'Contain']];
+        $options = [[
+            'key' => 'bg--auto',
+            'value' => 'Auto',
+        ], [
+            'key' => 'bg--contain',
+            'value' => 'Contain',
+        ]];
+        $itemOptions = [[
+            'key' => 'i-bg--auto',
+            'value' => 'Auto',
+        ], [
+            'key' => 'i-bg--contain',
+            'value' => 'Contain',
+        ]];
 
-        foreach (explode(',', $additional) as $option)
-        {
-            if (!!$value = ltrim($option))
-            {
+        foreach (explode(',', $additional) as $option) {
+            if ((bool) $value = ltrim($option)) {
                 $sizes = explode(' ', $value);
 
-                $classSuffix = match(count($sizes))
-                {
+                $classSuffix = match (\count($sizes)) {
                     1 => $sizes[0],
-                    default => $sizes[0].'-'.$sizes[1],
+                    default => $sizes[0] . '-' . $sizes[1],
                 };
 
                 $classSuffix = str_replace('%', 'pct', $classSuffix);
 
-                $options[] = ['key' => 'bgs--'. $classSuffix, 'value' => $value];
-                $itemOptions[] = ['key' => 'i-bgs--'. $classSuffix, 'value' => $value];
+                $options[] = [
+                    'key' => 'bgs--' . $classSuffix,
+                    'value' => $value,
+                ];
+                $itemOptions[] = [
+                    'key' => 'i-bgs--' . $classSuffix,
+                    'value' => $value,
+                ];
             }
         }
 
@@ -199,10 +214,10 @@ class ConfigGenerator
     private function generateDisplayUtilities(): void
     {
         if (
-            !isset($this->configVars['activate-display-utilities']) ||
-            (!$this->configVars['activate-display-utilities'] ?? false) ||
-            (null === ($values = self::getThemeManagerConfigVar($this->configVars, 'display-properties'))) ||
-            (empty($values = explode(' ', $values)))
+            !isset($this->configVars['activate-display-utilities'])
+            || (!$this->configVars['activate-display-utilities'] ?? false)
+            || (null === ($values = self::getThemeManagerConfigVar($this->configVars, 'display-properties')))
+            || (($values = explode(' ', $values)) === [])
         ) {
             return;
         }
@@ -212,35 +227,36 @@ class ConfigGenerator
 
         $this->xml->addGroup('gDisplay', 505, 'Display', 'Global', 600);
 
-        foreach (['','-xs','-s','-m','-l','-xl'] as $i => $bp)
-        {
+        foreach (['', '-xs', '-s', '-m', '-l', '-xl'] as $i => $bp) {
             $options = [];
 
-            foreach ($values as $option)
-            {
-                $options[] = ['key' => 'd'. $bp . '-' . strtolower($option), 'value' => ucfirst($option)];
+            foreach ($values as $option) {
+                $options[] = [
+                    'key' => 'd' . $bp . '-' . strtolower($option),
+                    'value' => ucfirst($option),
+                ];
             }
 
             $this->xml->addChild(
-                'display'.$bp,
+                'display' . $bp,
                 $options,
-                'Display'. ($bp ? ' ('. strtoupper(substr($bp,1)) . ')' : ''),
+                'Display' . ($bp !== '' && $bp !== '0' ? ' (' . strtoupper(substr($bp, 1)) . ')' : ''),
                 [
                     'extendArticle' => 1,
                     'contentElements' => $contentElements,
-                    'modules' => $frontendModules
+                    'modules' => $frontendModules,
                 ],
                 [
-                    'description'    => 'Here you can choose the display property for this component',
-                    'blankOption'    => 1,
-                    'sorting'        => 100 + $i,
-                ]
+                    'description' => 'Here you can choose the display property for this component',
+                    'blankOption' => 1,
+                    'sorting' => 100 + $i,
+                ],
             );
         }
     }
 
     /**
-     * Generates the theme manager backend css
+     * Generates the theme manager backend css.
      *
      * @throws \Exception
      */
@@ -248,38 +264,35 @@ class ConfigGenerator
     {
         $configVars = $this->configVars;
 
-        $css        = '';
-        $bgColors   = ['primary','secondary','light','dark'];
-        $textColors = ['text-color-regular' => 'color-text-base', 'text-color-invert' => 'color-text-inv'];
+        $css = '';
+        $bgColors = ['primary', 'secondary', 'light', 'dark'];
+        $textColors = [
+            'text-color-regular' => 'color-text-base',
+            'text-color-invert' => 'color-text-inv',
+        ];
 
-        foreach ($bgColors as $color)
-        {
-            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $color)))
-            {
-                if (6 === strlen($value) || 3 === strlen($value))
-                {
+        foreach ($bgColors as $color) {
+            if ((bool) \strlen((string) $value = self::getThemeManagerConfigVar($configVars, $color))) {
+                if (\strlen((string) $value) === 6 || \strlen((string) $value) === 3) {
                     $value = '#' . $value;
                 }
 
-                $css .= vsprintf("%s:before{background:%s!important;}", [
-                    '#pal_style_manager_legend .chzn-results [class*=bg-'.$color.']',
-                    $value
+                $css .= vsprintf('%s:before{background:%s!important;}', [
+                    '#pal_style_manager_legend .chzn-results [class*=bg-' . $color . ']',
+                    $value,
                 ]);
             }
         }
 
-        foreach ($textColors as $identifier => $class)
-        {
-            if (!!strlen($value = self::getThemeManagerConfigVar($configVars, $identifier)))
-            {
-                if (6 === strlen($value) || 3 === strlen($value))
-                {
+        foreach ($textColors as $identifier => $class) {
+            if ((bool) \strlen((string) $value = self::getThemeManagerConfigVar($configVars, $identifier))) {
+                if (\strlen((string) $value) === 6 || \strlen((string) $value) === 3) {
                     $value = '#' . $value;
                 }
 
-                $css .= vsprintf("%s:before{background:%s!important;}", [
+                $css .= vsprintf('%s:before{background:%s!important;}', [
                     '#pal_style_manager_legend .chzn-results .' . $class,
-                    $value
+                    $value,
                 ]);
             }
         }
@@ -287,12 +300,11 @@ class ConfigGenerator
         ThemeManager::createCSSFile('backendColors', $css);
     }
 
-    private function getArrayRecursiveKeys(array $array, ?array $filters = []): array
+    private function getArrayRecursiveKeys(array $array, array|null $filters = []): array
     {
         $return = [];
 
-        foreach (array_map('array_keys', $array) as $group)
-        {
+        foreach (array_map('array_keys', $array) as $group) {
             $return = array_merge($group, $return);
         }
 
@@ -301,12 +313,9 @@ class ConfigGenerator
             return $return;
         }
 
-        foreach ($filters as $filter)
-        {
-            foreach ($return as $k => $v)
-            {
-                if (str_contains($v, $filter))
-                {
+        foreach ($filters as $filter) {
+            foreach ($return as $k => $v) {
+                if (str_contains((string) $v, (string) $filter)) {
                     unset($return[$k]);
                 }
             }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\EventListener;
 
 use Oveleon\ContaoComponentStyleManager\Event\AddStyleManagerPaletteEvent;
@@ -15,11 +17,10 @@ class AddStyleManagerPaletteEventListener extends Event
         $palette = $event->palette;
 
         if (
-            'tl_module' === $table && in_array($palette, ['root_page_dependent_modules', 'unfiltered_html', 'html'])
-            || 'tl_content' === $table && in_array($palette, ['unfiltered_html', 'html', 'accordionStop', 'sliderStop', 'wrapperStopContent', 'wrapperStop'])
-            || 'tl_form_field' === $table && in_array($palette, ['html', 'fieldsetStop', 'hidden', 'hiddencustom'])
-        )
-        {
+            $table === 'tl_module' && \in_array($palette, ['root_page_dependent_modules', 'unfiltered_html', 'html'], true)
+            || $table === 'tl_content' && \in_array($palette, ['unfiltered_html', 'html', 'accordionStop', 'sliderStop', 'wrapperStopContent', 'wrapperStop'], true)
+            || $table === 'tl_form_field' && \in_array($palette, ['html', 'fieldsetStop', 'hidden', 'hiddencustom'], true)
+        ) {
             $event->skipPalette();
         }
     }

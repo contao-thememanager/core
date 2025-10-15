@@ -1,5 +1,7 @@
 <?php
-// rsce_text_list.php
+
+declare(strict_types=1);
+
 return [
     'label' => [
         'de' => [
@@ -38,7 +40,12 @@ return [
                         'en' => ['Text', 'You can use HTML tags to format the text.'],
                     ],
                     'inputType' => 'textarea',
-                    'eval' => ['mandatory' => true, 'rte' => 'tinyMCE', 'helpwizard' => true, 'tl_class' => 'clr'],
+                    'eval' => [
+                        'mandatory' => true,
+                        'rte' => 'tinyMCE',
+                        'helpwizard' => true,
+                        'tl_class' => 'clr',
+                    ],
                     'explanation' => 'insertTags',
                 ],
                 'url' => [
@@ -47,7 +54,13 @@ return [
                         'en' => ['Link target', 'Please enter a web address (https://…), an e-mail address (mailto:…) or an insert tag.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 255, 'dcaPicker' => true, 'tl_class' => 'w50 wizard'],
+                    'eval' => [
+                        'rgxp' => 'url',
+                        'decodeEntities' => true,
+                        'maxlength' => 255,
+                        'dcaPicker' => true,
+                        'tl_class' => 'w50 wizard',
+                    ],
                 ],
                 'target' => [
                     'label' => [
@@ -55,7 +68,9 @@ return [
                         'en' => ['Open in new window', 'Open the link in a new browser window.'],
                     ],
                     'inputType' => 'checkbox',
-                    'eval' => ['tl_class' => 'w50 m12'],
+                    'eval' => [
+                        'tl_class' => 'w50 m12',
+                    ],
                 ],
                 'linkText' => [
                     'label' => [
@@ -63,7 +78,10 @@ return [
                         'en' => ['Link text', 'The link text indicates if a link would be printed or if the whole component is clickable.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'titleText' => [
                     'label' => [
@@ -71,7 +89,10 @@ return [
                         'en' => ['Link title', 'The link title is added as <em>title</em> attribute in the HTML markup.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 255,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'rel' => [
                     'label' => [
@@ -79,7 +100,10 @@ return [
                         'en' => ['Lightbox', 'To trigger the lightbox, enter a <em>rel</em> attribute here.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['maxlength' => 64, 'tl_class' => 'w50'],
+                    'eval' => [
+                        'maxlength' => 64,
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'expert_legend' => [
                     'label' => [
@@ -87,7 +111,9 @@ return [
                         'en' => ['Expert settings', ''],
                     ],
                     'inputType' => 'group',
-                    'eval' => ['tl_class' => 'collapsed'],
+                    'eval' => [
+                        'tl_class' => 'collapsed',
+                    ],
                 ],
                 'cssClass' => [
                     'label' => [
@@ -95,7 +121,9 @@ return [
                         'en' => ['CSS class', 'Here you can enter one or more classes.'],
                     ],
                     'inputType' => 'text',
-                    'eval' => ['tl_class' => 'w50']
+                    'eval' => [
+                        'tl_class' => 'w50',
+                    ],
                 ],
                 'invisible' => [
                     'label' => [
@@ -103,9 +131,11 @@ return [
                         'en' => ['Invisible', 'Hide the element on the website.'],
                     ],
                     'inputType' => 'checkbox',
-                    'eval' => ['tl_class' => 'w50 m12']
+                    'eval' => [
+                        'tl_class' => 'w50 m12',
+                    ],
                 ],
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

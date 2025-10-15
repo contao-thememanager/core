@@ -18,8 +18,9 @@ use Doctrine\DBAL\Exception;
 
 class LayoutContentMigration extends AbstractMigration
 {
-    public function __construct(private readonly Connection $connection)
-    {
+    public function __construct(
+        private readonly Connection $connection,
+    ) {
     }
 
     /**
@@ -29,26 +30,19 @@ class LayoutContentMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_theme'))
-        {
+        if (!$schemaManager->tablesExist('tl_theme')) {
             return false;
         }
 
         $columns = $schemaManager->listTableColumns('tl_theme');
 
-        if (!isset($columns['themeconfig']))
-        {
+        if (!isset($columns['themeconfig'])) {
             return false;
         }
 
         $test = $this->connection->fetchOne("SELECT TRUE FROM tl_theme WHERE `themeConfig` NOT LIKE '%\"activate-content-heading-settings%' LIMIT 1");
 
-        if (false !== $test)
-        {
-            return true;
-        }
-
-        return false;
+        return $test !== false;
     }
 
     /**
@@ -58,13 +52,20 @@ class LayoutContentMigration extends AbstractMigration
     {
         $values = $this->connection->fetchAllKeyValue("SELECT id, themeconfig FROM tl_theme WHERE themeconfig NOT LIKE '%\"activate-content-heading-settings%'");
 
-        foreach ($values as $id => $value)
-        {
+        foreach ($values as $id => $value) {
             $config = StringUtil::deserialize($value, true);
 
             $config['activate-content-heading-settings'] = true;
 
-            $this->connection->update('tl_theme', ['themeConfig' => serialize($config)], ['id' => (int) $id]);
+            $this->connection->update(
+                'tl_theme',
+                [
+                    'themeConfig' => serialize($config),
+                ],
+                [
+                    'id' => (int) $id,
+                ],
+            );
         }
 
         return $this->createResult(true);

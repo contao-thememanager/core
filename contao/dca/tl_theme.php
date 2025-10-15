@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao ThemeManager Core.
  *
@@ -8,14 +10,14 @@
 
 // Add operations
 $GLOBALS['TL_DCA']['tl_theme']['list']['operations']['themeConfig'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_theme']['themeConfig'],
-    'href'      => 'table=tl_thememanager',
-    'icon'      => 'bundles/contaothememanagercore/icons/config.svg',
-    'primary'   => true
+    'label' => &$GLOBALS['TL_LANG']['tl_theme']['themeConfig'],
+    'href' => 'table=tl_thememanager',
+    'icon' => 'bundles/contaothememanagercore/icons/config.svg',
+    'primary' => true,
 ];
 
 // Add fields
 $GLOBALS['TL_DCA']['tl_theme']['fields']['themeConfig'] = [
     'inputType' => 'text',
-    'sql'       => "mediumtext NULL"
+    'sql' => 'mediumtext NULL',
 ];

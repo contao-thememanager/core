@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ContaoThemeManager\Core\EventListener\Template;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
@@ -16,7 +18,7 @@ class ParseTemplateListener
     {
         $headline2 = StringUtil::deserialize($template->headline2);
 
-        $template->headline2 = is_array($headline2) ? $headline2['value'] : $headline2;
-        $template->hl2 = is_array($headline2) ? $headline2['unit'] : 'h1';
+        $template->headline2 = \is_array($headline2) ? $headline2['value'] : $headline2;
+        $template->hl2 = \is_array($headline2) ? $headline2['unit'] : 'h1';
     }
 }

@@ -17,8 +17,9 @@ use Doctrine\DBAL\Exception;
 
 class ContentElementsMigration extends AbstractMigration
 {
-    public function __construct(private readonly Connection $connection)
-    {
+    public function __construct(
+        private readonly Connection $connection,
+    ) {
     }
 
     /**
@@ -30,9 +31,8 @@ class ContentElementsMigration extends AbstractMigration
 
         if (
             !$schemaManager->tablesExist('tl_content')
-            || !array_key_exists('type', $schemaManager->listTableColumns('tl_content'))
-        )
-        {
+            || !\array_key_exists('type', $schemaManager->listTableColumns('tl_content'))
+        ) {
             return false;
         }
 
@@ -45,15 +45,13 @@ class ContentElementsMigration extends AbstractMigration
     public function run(): MigrationResult
     {
         $results = $this->connection->fetchAllKeyValue(
-            "SELECT id, type FROM tl_content WHERE type='wrapperStartBoxed' OR type='wrapperStopBoxed'"
+            "SELECT id, type FROM tl_content WHERE type='wrapperStartBoxed' OR type='wrapperStopBoxed'",
         );
 
-        foreach ($results as $id => $type)
-        {
+        foreach ($results as $id => $type) {
             $newType = '';
 
-            switch ($type)
-            {
+            switch ($type) {
                 case 'wrapperStartBoxed':
                     $newType = 'wrapperStartContent';
                     break;
@@ -62,11 +60,15 @@ class ContentElementsMigration extends AbstractMigration
                     $newType = 'wrapperStopContent';
             }
 
-            if (!!$newType)
-            {
-                $this->connection->update('tl_content',
-                    ['type' => $newType],
-                    ['id'   => $id]
+            if ((bool) $newType) {
+                $this->connection->update(
+                    'tl_content',
+                    [
+                        'type' => $newType,
+                    ],
+                    [
+                        'id' => $id,
+                    ],
                 );
             }
         }
