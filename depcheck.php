@@ -16,4 +16,5 @@ return (new Configuration())
     ->ignoreErrorsOnPackage('contao/manager-plugin', [ErrorType::DEV_DEPENDENCY_IN_PROD])
     ->ignoreErrorsOnPackage('madeyourday/contao-rocksolid-custom-elements', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('madeyourday/contao-rocksolid-icon-picker', [ErrorType::UNUSED_DEPENDENCY])
+    ->ignoreErrorsOnPackage('oveleon/contao-config-driver-bundle', [ErrorType::UNUSED_DEPENDENCY])
 ;
