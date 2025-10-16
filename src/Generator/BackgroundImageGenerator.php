@@ -60,7 +60,7 @@ class BackgroundImageGenerator
             $this->compiler->msg('Make sure to embed the generated _background' . FileCompiler::FILE_EXT . ' within your Layout');
         }
 
-        $this->compiler->add($filePath = $this->generateBackgroundCSS($backgrounds) ? '' : $this->generateBackgroundCSS($backgrounds));
+        $this->compiler->add($this->generateBackgroundCSS($backgrounds) ?: '');
     }
 
     /**
