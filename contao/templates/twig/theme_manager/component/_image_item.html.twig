@@ -1,0 +1,28 @@
+{% use "@Contao/component/_figure.html.twig" %}
+
+{% block image_item %}
+    {% if overwriteMeta %}
+        {% set configuration = {
+            metadata: {
+                alt: alt ?? null,
+                imageTitle: imageTitle ?? null,
+                imageUrl: imageUrl ?? null,
+                caption: caption ?? null
+            } | filter(val => val != '')
+        } %}
+    {% endif %}
+
+    {% if fullsize %}
+        {% set configuration = configuration|default({}) | merge({
+            enableLightbox: true,
+            lightboxGroupIdentifier: 'lb_' ~ pid,
+            setLinkAttributes: { 'data-group': 'lb_' ~ pid }
+        }) %}
+    {% endif %}
+
+    {% with {figure: figure(singleSRC, size, configuration)} %}
+        <div class="c_image">
+            {{ block('figure_component') }}
+        </div>
+    {% endwith %}
+{% endblock %}

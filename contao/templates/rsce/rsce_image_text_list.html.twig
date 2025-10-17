@@ -1,0 +1,34 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+{% use "@Contao/theme_manager/component/_media_text.html.twig" %}
+{% use "@Contao/theme_manager/component/_image_item.html.twig" %}
+
+{% block content %}
+
+    {% for item in list %}
+        {% with {
+            class: item.cssClass|default,
+            text: item.text|default,
+            linkText: item.linkText|default,
+            titleText: item.titleText|default,
+            rel: item.rel|default,
+            url: item.url|default
+        } %}
+            {{ block('media_text') }}
+        {% endwith %}
+    {% endfor %}
+
+{% endblock %}
+
+{% block media_inner %}
+    {% with {
+        singleSRC: item.singleSRC|default,
+        fullsize: fullsize and (linkText|default or not url|default),
+        overwriteMeta: item.overwriteMeta|default,
+        alt: item.alt|default,
+        imageTitle: item.imageTitle|default,
+        imageUrl: item.imageUrl|default,
+        caption: item.caption|default
+    } %}
+        {{ block('image_item') }}
+    {% endwith %}
+{% endblock %}

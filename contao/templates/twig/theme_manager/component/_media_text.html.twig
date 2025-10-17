@@ -1,0 +1,37 @@
+{% use "@Contao/component/_figure.html.twig" %}
+{% use "@Contao/component/_rich_text.html.twig" %}
+
+{% block media_text %}
+    {% set link_attributes = attrs()
+        .set('href', url|insert_tag_raw)
+        .setIfExists('title', titleText|insert_tag_raw)
+        .setIfExists('rel', rel)
+        .set('target', '_blank', target and not rel)
+    %}
+
+    {% set tag_name = url and not linkText ? 'a' : 'div' %}
+    {% set tag_attributes = attrs(url and not linkText ? link_attributes : null).addClass('inside') %}
+
+    {% if list|default|length %}
+        <div class="item{{ class|default ? ' ' ~ class : '' }}">
+    {% endif %}
+        <{{ tag_name }}{{ tag_attributes }}>
+            {% block media_inner %}{% endblock %}
+            {% block text_inner %}
+                {% with {text, attributes: attrs().addClass('c_text content--text')} %}
+                    {{ block('rich_text_component') }}
+                {% endwith %}
+            {% endblock %}
+        </{{ tag_name }}>
+    {% if list|default|length %}
+        </div>
+    {% endif %}
+
+{% endblock %}
+
+{% block rich_text_inner %}
+    {{ parent() }}
+    {% if linkText and url %}
+        <p><a{{ link_attributes.addClass(['c_link', sm.get('eLink')]) }}>{{ linkText }}</a></p>
+    {% endif %}
+{% endblock %}
