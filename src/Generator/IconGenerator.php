@@ -146,12 +146,14 @@ class IconGenerator
                 // Name exists
                 if (isset($glyph['glyph-name'])) {
                     // Do not import control characters
-                    if (hexdec($code) > 32 && !empty($glyph['d']) && $glyph['d']->getName() !== 'M0 0v0v0v0v0z') {
+                    if (hexdec($code) > 32 && !empty($glyph['d']) && (string) $glyph['d'] !== 'M0 0v0v0v0v0z') {
+                        $name = (string) $glyph['glyph-name'];
+
                         $glyphs[] = [
-                            'key' => 'i-' . $glyph['glyph-name']->getName(),
-                            'value' => $char . ' ' . ucwords(str_replace('_', ' ', $glyph['glyph-name']->getName())),
+                            'key' => 'i-' . $name,
+                            'value' => $char . ' ' . ucwords(str_replace('_', ' ', $name)),
                             'code' => $code,
-                            'fkey' => 'fi-' . $glyph['glyph-name']->getName(),
+                            'fkey' => 'fi-' . $name,
                         ];
 
                         ++$intSuccessCount;
