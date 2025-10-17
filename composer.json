@@ -43,7 +43,7 @@
         "ext-dom": "*",
         "ext-mbstring": "*",
         "ext-simplexml": "*",
-        "contao/core-bundle": "5.3.40",
+        "contao/core-bundle": "^5.3.40",
         "madeyourday/contao-rocksolid-custom-elements": "^2.4.13",
         "madeyourday/contao-rocksolid-icon-picker": "^2.1.2",
         "oveleon/contao-component-style-manager": "^3.11",
