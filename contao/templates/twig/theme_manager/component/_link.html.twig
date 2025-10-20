@@ -3,10 +3,11 @@
     {% if item.url|default and item.linkText|default %}
         {% set link_attributes = attrs()
             .set('href', item.url|insert_tag_raw)
+            .addClass(['c_link', sm.get('eLink')])
             .setIfExists('title', item.titleText|insert_tag_raw)
             .setIfExists('rel', item.rel|default)
             .set('target', '_blank', item.target|default and not rel|default)
         %}
-        <p><a{{ link_attributes.addClass(['c_link', sm.get('eLink')]) }}>{{ item.linkText }}</a></p>
+        <p><a{{ link_attributes }}>{{ item.linkText }}</a></p>
     {% endif %}
 {% endblock %}
