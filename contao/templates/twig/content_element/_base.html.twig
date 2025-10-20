@@ -1,75 +1,70 @@
 {% extends "@Contao/content_element/_base.html.twig" %}
 
 {% set sm = styleManager(data) %}
+{% set is_list = type != 'gallery' and (sm.get('eGridList') is not empty or 'init-slider' in element_css_classes) %}
+
 {% set headline2 = data.headline2|deserialize %}
-{% set headlineClasses = sm.prepare('gHeadline').format(' %s') %}
-{% set insideClasses =
-    sm.prepare('cLayout', ['imageText']).format(' image_text') ~
-    sm.prepare('cLayout', ['iconText']).format(' icon_text') ~
-    sm.prepare('cLayout').format(' %s') ~
-    sm.prepare('eLayout').format(' %s') ~
-    sm.prepare('cText').format(' %s') ~
-    sm.prepare('eText').format(' %s') ~
-    sm.prepare('ePadding').format(' %s') ~
-    sm.prepare('cSpacing').format(' %s') ~
-    sm.prepare('cPadding').format(' %s') ~
-    sm.prepare('cBackground').format(' %s') ~
-    sm.prepare('eBackground').format(' %s')
+{% set headline_classes = sm.prepare('gHeadline').format('c_headline %s') %}
+
+{% set inner_attributes = attrs()
+    .addClass([
+        type != 'headline' ? 'inside' : headline_classes,
+        sm.get(['cLayout', 'eLayout', 'cText', 'eText', 'ePadding', 'cSpacing', 'cPadding', 'cBackground', 'eBackground']),
+        is_list ? sm.prepare('cLayout', ['imageText']).format('image_text') : '',
+        is_list ? sm.prepare('cLayout', ['iconText']).format('icon_text') : '',
+    ])
+    .mergeWith(inner_attributes|default)
 %}
-{% set sliderConfig =
-    sm.prepare('sliderConfig',['preset']).format(' data-slider-config=%s','json') ~
-    sm.prepare('slider').format(' data-slider=%s','json') ~
-    sm.prepare('sliderXS').format(' data-slider-xs=%s','json') ~
-    sm.prepare('sliderS').format(' data-slider-s=%s','json') ~
-    sm.prepare('sliderM').format(' data-slider-m=%s','json') ~
-    sm.prepare('sliderL').format(' data-slider-l=%s','json') ~
-    sm.prepare('sliderXL').format(' data-slider-xl=%s','json')
+
+{% set list_attributes = attrs()
+    .addClass(['c_list', 'grid-list', sm.get('eGridList')])
+    .setIfExists('data-slider-config', sm.prepare('sliderConfig', ['preset']).format('%s', 'json'))
+    .setIfExists('data-slider', sm.prepare('slider').format('%s', 'json'))
+    .setIfExists('data-slider-xs', sm.prepare('sliderXS').format('%s', 'json'))
+    .setIfExists('data-slider-s', sm.prepare('sliderS').format('%s', 'json'))
+    .setIfExists('data-slider-m', sm.prepare('sliderM').format('%s', 'json'))
+    .setIfExists('data-slider-l', sm.prepare('sliderL').format('%s', 'json'))
+    .setIfExists('data-slider-xl', sm.prepare('sliderXL').format('%s', 'json'))
+    .mergeWith(list_attributes|default)
 %}
-{% set isListOrSlider = type != 'gallery' and (sm.get('eGridList') is not empty or 'init-slider' in element_css_classes) %}
-{% set isHeadline = type == 'headline' %}
-{% set contentHeadlineClasses = 'c_headline' ~ headlineClasses %}
 
 {# Add legacy classes for certain types #}
-{% set attributes = attrs()
-    .addClass('ce_headline', isHeadline)
-    .addClass('ce_text', type == 'text')
-    .addClass('ce_list', type == 'list')
-    .addClass('ce_image', type == 'image')
-    .addClass('ce_youtube', type == 'youtube')
-    .addClass('ce_vimeo', type == 'vimeo')
-    .mergeWith(attributes|default)
-%}
+{% set legacy_core_elements = ['headline', 'text', 'list', 'image', 'youtube', 'vimeo'] %}
+{% set legacy_rsce_elements = ['rsce_hyperlink_list', 'rsce_icon', 'rsce_icon_text', 'rsce_icon_text_list', 'rsce_image_list', 'rsce_image_text', 'rsce_image_text_list', 'rsce_text', 'rsce_text_list'] %}
+{% set legacy_elements = legacy_core_elements|merge(legacy_rsce_elements) %}
+
+{% if type in legacy_elements %}
+    {% set attributes = attrs(attributes|default).addClass('ce_' ~ type) %}
+{% endif %}
+
 {% set figure_attributes = attrs(figure_attributes|default)
     .addClass('image_container', figure.media.type|default is empty)
 %}
 
 {# Base #}
 {%- block inner %}
-    <div class="{{ isHeadline ? contentHeadlineClasses : 'inside' }}{{ insideClasses }}">
+    <div{{ inner_attributes }}>
         {% if headline.text or headline2.value|default %}
             {{ block('headline_component') }}
         {% endif %}
-        {% if isListOrSlider %}
-            <div class="c_list grid-list{{ sm.prepare('eGridList').format(' %s') }}"{{ sliderConfig }}>
+        {% if is_list %}
+            <div{{ list_attributes }}>
         {% endif %}
         {% block content %}{% endblock %}
-        {% if isListOrSlider %}
+        {% if is_list %}
             </div>
         {% endif %}
     </div>
 {% endblock %}
 
 {# Headline classes #}
-{% block headline_attributes %}
-    {% set headline_attributes = attrs(headline.attributes|default)
-        .addClass(data.headlineStyle)
-    %}
-    {{ headline_attributes }}
-{% endblock %}
+{%- block headline_attributes %}
+    {{ attrs(headline.attributes|default).addClass(data.headlineStyle) }}
+{% endblock -%}
 
 {# Headline Wrapper and Headline2 #}
 {% block headline_component %}
-    <div class="c_headline{{ headlineClasses }}">
+    <div class="{{ headline_classes }}">
         {{ parent() }}
         {% if headline2.value %}
             {% block headline_two_component %}
