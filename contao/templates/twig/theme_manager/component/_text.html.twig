@@ -1,7 +1,15 @@
 {% use "@Contao/component/_rich_text.html.twig" %}
+{% use "@Contao/theme_manager/component/_link.html.twig" %}
 
+{# Text #}
 {% block text_component %}
     {% with {text, attributes: attrs().addClass('c_text content--text')} %}
         {{ block('rich_text_component') }}
     {% endwith %}
+{% endblock %}
+
+{# Link #}
+{% block rich_text_inner %}
+    {{ parent() }}
+    {{ block('link_component') }}
 {% endblock %}
