@@ -2,6 +2,26 @@
 
 {% block media_text_list_component %}
     {% for item in list|filter(val => not val.invisible|default(false) or contao.is_preview_mode) %}
-        {{ block('media_text_component') }}
+        {% set tag_name = 'div' %}
+        {% set inside_attributes = attrs().addClass('inside') %}
+
+        {% if item.url|default and not item.linkText|default %}
+            {% set tag_name = 'a' %}
+            {% set inside_attributes = attrs()
+                .mergeWith(inside_attributes)
+                .set('href', item.url|insert_tag_raw)
+                .setIfExists('title', item.titleText|insert_tag_raw)
+                .setIfExists('rel', item.rel|default)
+                .set('target', '_blank', item.target|default and not rel|default)
+            %}
+        {% endif %}
+
+        {%- block media_text_item %}
+            <div class="item{{ item.cssClass|default ? ' ' ~ item.cssClass : '' }}">
+                <{{ tag_name }}{{ inside_attributes }}>
+                    {{ block('media_text_component') }}
+                </{{ tag_name }}>
+            </div>
+        {% endblock -%}
     {% endfor %}
 {% endblock %}
