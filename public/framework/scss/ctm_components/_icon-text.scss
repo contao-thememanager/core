@@ -1,11 +1,9 @@
-.icon_text {
-
-  &.item, .item {
-    > .inside {
-      display: var(--itm-dsp, block);
-      flex-direction: var(--itm-flow, row);
-    }
-  }
+:is(
+  .icon_text .item > .inside,
+  .icon_text.item > .inside
+) {
+  display: var(--itm-dsp, block);
+  flex-direction: var(--itm-flow, row);
 }
 
 .icon {

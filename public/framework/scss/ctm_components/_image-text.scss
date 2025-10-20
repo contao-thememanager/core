@@ -1,17 +1,6 @@
 .image_text {
   --ratio-x:auto; // Reset due to possible inheritance from parents
 
-  &.item, .item {
-    > .inside {
-      position: relative;
-      overflow: hidden;
-      display:         var(--itm-dsp, block);
-      flex-direction:  var(--itm-flow, column);
-      justify-content: var(--itm-justify, normal);
-      align-items:     var(--itm-align, normal);
-    }
-  }
-
   .c_image {
     --it-wdth:calc(100% * var(--ratio-x)); // No default value to force auto -> calc will intentionally fail
     position: relative;
@@ -21,6 +10,18 @@
     width:    var(--it-wdth);
     height:   var(--img-hght,auto);
   }
+}
+
+:is(
+  .image_text .item > .inside,
+  .image_text.item > .inside
+) {
+  position: relative;
+  overflow: hidden;
+  display:         var(--itm-dsp, block);
+  flex-direction:  var(--itm-flow, column);
+  justify-content: var(--itm-justify, normal);
+  align-items:     var(--itm-align, normal);
 }
 
 .txt--absolute {
