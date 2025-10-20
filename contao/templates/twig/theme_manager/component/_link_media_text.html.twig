@@ -1,0 +1,43 @@
+{% use "@Contao/theme_manager/component/_text.html.twig" %}
+
+{% block link_media_text_component %}
+    {% set item = item|default(_context) %}
+    {% set link_wrap = item.url|default and not item.linkText|default %}
+
+    {% set link_attributes = attrs()
+        .setIfExists('href', item.url|default|insert_tag_raw)
+        .setIfExists('title', item.titleText|insert_tag_raw)
+        .setIfExists('rel', item.rel|default)
+        .set('target', '_blank', item.target|default and not rel|default)
+    %}
+
+    {% set tag_name = link_wrap ? 'a' : 'div' %}
+    {% set tag_attributes = attrs(link_wrap ? link_attributes : null).addClass('inside') %}
+
+    {% if list|default|length %}
+<div class="item{{ item.cssClass|default ? ' ' ~ item.cssClass : '' }}">
+    {% endif %}
+    <{{ tag_name }}{{ tag_attributes }}>
+
+    {# Media #}
+    {% block media_inner %}{% endblock %}
+
+    {# Text #}
+    {% block text_inner %}
+        {% with { text: item.text|default } %}{{ block('text_component') }}{% endwith %}
+    {% endblock %}
+
+    </{{ tag_name }}>
+    {% if list|default|length %}
+</div>
+    {% endif %}
+
+{% endblock %}
+
+{# Link #}
+{% block rich_text_inner %}
+    {{ parent() }}
+    {% if item.url|default and item.linkText|default %}
+        <p><a{{ link_attributes.addClass(['c_link', sm.get('eLink')]) }}>{{ item.linkText }}</a></p>
+    {% endif %}
+{% endblock %}

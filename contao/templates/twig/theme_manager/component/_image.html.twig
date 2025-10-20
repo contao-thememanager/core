@@ -1,0 +1,30 @@
+{% use "@Contao/component/_figure.html.twig" %}
+
+{% block image_component %}
+    {% set item = item|default(_context) %}
+
+    {% if item.overwriteMeta %}
+        {% set configuration = {
+            metadata: {
+                alt: item.alt|default,
+                imageTitle: item.imageTitle|default,
+                imageUrl: item.imageUrl|default,
+                caption: item.caption|default
+            } | filter(val => val != '')
+        } %}
+    {% endif %}
+
+    {% if fullsize and (item.linkText|default or not item.url|default) %}
+        {% set configuration = configuration|default({})|merge({
+            enableLightbox: true,
+            lightboxGroupIdentifier: 'lb_' ~ id,
+            setLinkAttributes: { 'data-group': 'lb_' ~ id }
+        }) %}
+    {% endif %}
+
+    {% with {figure: figure(item.singleSRC, size, configuration|default({}))} %}
+        <div class="c_image">
+            {{ block('figure_component') }}
+        </div>
+    {% endwith %}
+{% endblock %}

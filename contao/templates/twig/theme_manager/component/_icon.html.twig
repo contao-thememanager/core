@@ -1,0 +1,6 @@
+{% block icon_component %}
+    {% set item = item|default(_context) %}
+    <div class="c_icon">
+        <span class="{{ 'icon ' ~ sm.get('eIcon') -}}" data-icon="&#x{{ item.icon }};"></span>
+    </div>
+{% endblock %}

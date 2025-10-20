@@ -1,0 +1,7 @@
+{% use "@Contao/component/_rich_text.html.twig" %}
+
+{% block text_component %}
+    {% with {text, attributes: attrs().addClass('c_text content--text')} %}
+        {{ block('rich_text_component') }}
+    {% endwith %}
+{% endblock %}
