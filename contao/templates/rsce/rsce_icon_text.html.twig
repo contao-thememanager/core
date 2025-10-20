@@ -1,0 +1,13 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+{% use "@Contao/theme_manager/component/_media_text.html.twig" %}
+{% use "@Contao/theme_manager/component/_icon.html.twig" %}
+
+{% set attributes = attrs(attributes|default).addClass(['icon_text', 'item']) %}
+
+{% block content %}
+    {{ block('media_text_component') }}
+{% endblock %}
+
+{% block media_inner %}
+    {{ block('icon_component') }}
+{% endblock %}
