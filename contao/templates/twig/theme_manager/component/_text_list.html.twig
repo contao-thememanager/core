@@ -1,7 +1,0 @@
-{% use "@Contao/theme_manager/component/_link_media_text.html.twig" %}
-
-{% block text_list_component %}
-    {% for item in list|filter(val => not val.invisible|default(false) or contao.is_preview_mode) %}
-        {{ block('link_media_text_component') }}
-    {% endfor %}
-{% endblock %}
