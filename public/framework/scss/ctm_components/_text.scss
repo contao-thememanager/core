@@ -1,4 +1,4 @@
-:is(.content-text, .ce_text) {
+:is(.content--text, .ce_text) {
 
   figure {
     width: var(--img-wdth, 100%);
@@ -7,14 +7,14 @@
 }
 
 // Consider nested text blocks (e.g. news bundle)
-.c_text {
+:is(.c_text, .content--text) {
 
   &.grid {
     --v-gap:#{$paragraph-spacing};
   }
 
   // BC-layer (see #37)
-  > :is(.content-text, .ce_text) {
+  > :is(.content--text, .ce_text) {
     margin-bottom: $paragraph-spacing;
   }
 }
@@ -35,7 +35,7 @@
 
 // Element self alignment
 :is(.image_text, .icon_text) {
-  .c_text {
+  :is(.c_text, .content--text) {
     flex: 1;
     align-self: var(--self-align, auto);
   }

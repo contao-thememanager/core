@@ -39,7 +39,7 @@
 
   .c_image { width: 100%; }
 
-  .c_text {
+  :is(.c_text, .content--text) {
     --it-wdth: calc(100% * var(--ratio-x));
 
     position: absolute;
@@ -53,7 +53,7 @@
 }
 
 .txt--hover {
-  .c_text { opacity: 0; }
+  :is(.c_text, .content--text) { opacity: 0; }
   &:hover { .c_text { opacity: 1; } }
 }
 
