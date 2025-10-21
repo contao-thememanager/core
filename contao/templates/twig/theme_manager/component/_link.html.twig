@@ -6,7 +6,7 @@
             .addClass(['c_link', sm.get('eLink')])
             .setIfExists('title', item.titleText|insert_tag_raw)
             .setIfExists('rel', item.rel|default)
-            .set('target', '_blank', item.target|default and not rel|default)
+            .set('target', '_blank', item.target|default and not item.rel|default)
         %}
         <p><a{{ link_attributes }}>{{ item.linkText }}</a></p>
     {% endif %}

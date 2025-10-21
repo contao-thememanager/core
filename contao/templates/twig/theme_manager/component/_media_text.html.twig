@@ -7,8 +7,9 @@
     {% block media_inner %}{% endblock %}
 
     {# Text #}
-    {% block text_inner %}
-        {% with { text: item.text|default } %}{{ block('text_component') }}{% endwith %}
-    {% endblock %}
-
+    {% if item.text|default %}
+        {% block text_inner %}
+            {% with { text: item.text|default } %}{{ block('text_component') }}{% endwith %}
+        {% endblock %}
+    {% endif %}
 {% endblock %}

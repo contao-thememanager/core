@@ -3,7 +3,7 @@
 {% block image_component %}
     {% set item = item|default(_context) %}
 
-    {% if item.overwriteMeta %}
+    {% if item.overwriteMeta|default %}
         {% set configuration = {
             metadata: {
                 alt: item.alt|default,
