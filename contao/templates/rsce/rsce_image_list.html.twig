@@ -1,0 +1,11 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+{% use "@Contao/theme_manager/component/_media_text_list.html.twig" %}
+{% use "@Contao/theme_manager/component/_image.html.twig" %}
+
+{% block content %}
+    {{ block('media_text_list_component') }}
+{% endblock %}
+
+{% block media_inner %}
+    {{ block('image_component') }}
+{% endblock %}

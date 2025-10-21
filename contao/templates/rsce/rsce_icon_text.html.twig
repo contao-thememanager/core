@@ -4,6 +4,17 @@
 
 {% set attributes = attrs(attributes|default).addClass(['icon_text', 'item']) %}
 
+{% if url|default and not linkText|default %}
+    {% set inside_tag_name = 'a' %}
+    {% set inside_attributes = attrs()
+        .mergeWith(inside_attributes|default)
+        .set('href', url|insert_tag_raw)
+        .setIfExists('title', titleText|insert_tag_raw)
+        .setIfExists('rel', rel|default)
+        .set('target', '_blank', target|default and not rel|default)
+    %}
+{% endif %}
+
 {% block content %}
     {{ block('media_text_component') }}
 {% endblock %}
