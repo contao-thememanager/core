@@ -6,14 +6,14 @@
 {% set headline2 = data.headline2|deserialize %}
 {% set headline_classes = sm.prepare('gHeadline').format('c_headline %s') %}
 
-{% set inner_attributes = attrs()
+{% set inside_attributes = attrs()
     .addClass([
         type != 'headline' ? 'inside' : headline_classes,
         sm.get(['cLayout', 'eLayout', 'cText', 'eText', 'ePadding', 'cSpacing', 'cPadding', 'cBackground', 'eBackground']),
         is_list ? sm.prepare('cLayout', ['imageText']).format('image_text') : '',
         is_list ? sm.prepare('cLayout', ['iconText']).format('icon_text') : '',
     ])
-    .mergeWith(inner_attributes|default)
+    .mergeWith(inside_attributes|default)
 %}
 
 {% set list_attributes = attrs()
@@ -43,7 +43,7 @@
 
 {# Base #}
 {%- block inner %}
-    <div{{ inner_attributes }}>
+    <{{ inside_tag_name|default('div') }}{{ inside_attributes }}>
         {% if headline.text or headline2.value|default %}
             {{ block('headline_component') }}
         {% endif %}
@@ -54,7 +54,7 @@
         {% if is_list %}
             </div>
         {% endif %}
-    </div>
+    </{{ inside_tag_name|default('div') }}>
 {% endblock %}
 
 {# Headline classes #}
