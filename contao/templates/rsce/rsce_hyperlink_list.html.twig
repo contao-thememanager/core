@@ -1,0 +1,22 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+{% use "@Contao/component/_list.html.twig" %}
+
+{% block content %}
+    {% with {list: {
+        items: list|filter(val => not val.invisible|default(false) or contao.is_preview_mode),
+        list_attributes: attrs().addClass(['c_list', sm.get('eList')])
+    }} %}
+        {{ block('list_component') }}
+    {% endwith %}
+{% endblock %}
+
+{% block list_item %}
+    {% set hyperlink_attributes = attrs()
+        .addClass([item.cssClass|default, sm.get('eLink')])
+        .setIfExists('href', item.url|default)
+        .setIfExists('title', item.titleText|default)
+        .setIfExists('rel', item.rel)
+        .set('target', '_blank', item.target|default and not item.rel|default)
+    %}
+    <a{{ hyperlink_attributes }}>{{ item.linkText|default }}</a>
+{% endblock %}
