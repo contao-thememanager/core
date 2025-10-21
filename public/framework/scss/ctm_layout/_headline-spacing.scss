@@ -2,7 +2,7 @@
   margin-bottom: $headline-spacing;
 }
 
-.ce_headline {
+:is(.content-headline, .ce_headline) {
 
   &:not(:last-child) {
     // Remove row gap from headlines for proper layout above elements

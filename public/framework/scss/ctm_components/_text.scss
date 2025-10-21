@@ -1,4 +1,4 @@
-.ce_text {
+:is(.content-text, .ce_text) {
 
   figure {
     width: var(--img-wdth, 100%);
@@ -14,7 +14,7 @@
   }
 
   // BC-layer (see #37)
-  > .ce_text {
+  > :is(.content-text, .ce_text) {
     margin-bottom: $paragraph-spacing;
   }
 }

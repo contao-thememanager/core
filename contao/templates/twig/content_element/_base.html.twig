@@ -28,14 +28,17 @@
     .mergeWith(list_attributes|default)
 %}
 
-{# Add legacy classes for certain types #}
-{% set legacy_core_elements = ['headline', 'text', 'list', 'image', 'youtube', 'vimeo'] %}
-{% set legacy_rsce_elements = ['rsce_hyperlink_list', 'rsce_icon', 'rsce_icon_text', 'rsce_icon_text_list', 'rsce_image_list', 'rsce_image_text', 'rsce_image_text_list', 'rsce_text', 'rsce_text_list'] %}
-{% set legacy_elements = legacy_core_elements|merge(legacy_rsce_elements) %}
+{% block legacy_classlist %}
+    {# Add legacy classes for certain types #}
+    {% set legacy_core_elements = ['headline', 'text', 'list', 'image', 'youtube', 'vimeo'] %}
+    {% set legacy_rsce_elements = ['rsce_hyperlink_list', 'rsce_icon', 'rsce_icon_text', 'rsce_icon_text_list', 'rsce_image_list', 'rsce_image_text', 'rsce_image_text_list', 'rsce_text', 'rsce_text_list'] %}
+    {% set legacy_elements = legacy_core_elements|merge(legacy_rsce_elements) %}
 
-{% if type in legacy_elements %}
-    {% set attributes = attrs(attributes|default).addClass('ce_' ~ type) %}
-{% endif %}
+    {% if type in legacy_elements %}
+        {% set attributes = attrs(attributes|default).addClass('ce_' ~ type) %}
+        {% deprecated 'Including the legacy_classes within the "_base.html.twig" template is deprecated and will be removed in ThemeManager 3.0, use the modern twig-classes instead.' %}
+    {% endif %}
+{% endblock %}
 
 {% set figure_attributes = attrs(figure_attributes|default)
     .addClass('image_container', figure.media.type|default is empty)
