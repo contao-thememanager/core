@@ -1,0 +1,14 @@
+{% extends "@Contao/block_searchable" %}
+
+{% block content %}
+
+    {{ comments|join|raw }}
+
+{% endblock %}
+
+{% block pagination %}
+
+    {{ pagination|default }}
+    {% include "@Contao/mod_comment_form" %}
+
+{% endblock %}

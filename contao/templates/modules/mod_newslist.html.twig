@@ -1,0 +1,17 @@
+{% extends "@Contao/block_unsearchable" %}
+
+{% block content %}
+
+    {% if articles is empty %}
+        <p class="empty">{{ empty }}</p>
+    {% else %}
+        {{ articles|join|raw }}
+    {% endif %}
+
+{% endblock %}
+
+{% block pagination %}
+
+    {{ pagination|default }}
+
+{% endblock %}

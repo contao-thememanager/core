@@ -1,0 +1,14 @@
+{% extends "@Contao/block_unsearchable" %}
+
+{% set ul_classes = ('c_list ' ~ styleManager.get('eList'))|trim %}
+{% set link_classes = ('c_link ' ~ styleManager.get('eLink'))|trim %}
+
+{% block content %}
+
+    <ul class="{{ ul_classes }}">
+        {% for article in articles %}
+            <li><a class="{{ link_classes }}" href="{{ request }}#{{ article.id }}" title="{{ article.title }}">{{ article.link }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
