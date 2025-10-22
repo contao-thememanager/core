@@ -4,7 +4,7 @@
 {% set is_list = type != 'gallery' and (sm.get('eGridList') is not empty or 'init-slider' in element_css_classes) %}
 
 {% set headline2 = data.headline2|deserialize %}
-{% set headline_classes = sm.prepare('gHeadline').format('c_headline %s') %}
+{% set headline_classes = sm.prepare('gHeadline').format(' %s') %}
 
 {% set inside_attributes = attrs()
     .addClass([
@@ -67,7 +67,7 @@
 
 {# Headline Wrapper and Headline2 #}
 {% block headline_component %}
-    <div class="{{ headline_classes }}">
+    <div class="c_headline{{ headline_classes }}">
         {{ parent() }}
         {% if headline2.value %}
             {% block headline_two_component %}
