@@ -1,5 +1,8 @@
 <?php
 
+$sm = $this->styleManager;
+$isList = !empty($sm->get('eGridList')) || str_contains($this->class, 'init-slider');
+
 $this->wrapperAttributes = $this
   ->attr($this->cssID)
   ->addClass([$this->class, 'block'])
@@ -7,34 +10,40 @@ $this->wrapperAttributes = $this
   ->mergeWith($this->wrapperAttributes)
 ;
 
-$sm = $this->styleManager;
-$hlClasses     = $sm->prepare('gHeadline')->format(' %s');
-$insideClasses = $sm->prepare('cLayout',['imageText'])->format(' image_text') .
-                 $sm->prepare('cLayout',['iconText'])->format(' icon_text') .
-                 $sm->prepare('cLayout')->format(' %s') .
-                 $sm->prepare('eLayout')->format(' %s') .
-                 $sm->prepare('cText')->format(' %s') .
-                 $sm->prepare('eText')->format(' %s') .
-                 $sm->prepare('ePadding')->format(' %s') .
-                 $sm->prepare('cSpacing')->format(' %s') .
-                 $sm->prepare('cPadding')->format(' %s') .
-                 $sm->prepare('cBackground')->format(' %s') .
-                 $sm->prepare('eBackground')->format(' %s');
-$sliderConfig  = $sm->prepare('sliderConfig',['preset'])->format(" data-slider-config='%s'",'json') .
-                 $sm->prepare('slider')->format(" data-slider='%s'",'json') .
-                 $sm->prepare('sliderXS')->format(" data-slider-xs='%s'",'json') .
-                 $sm->prepare('sliderS')->format(" data-slider-s='%s'",'json') .
-                 $sm->prepare('sliderM')->format(" data-slider-m='%s'",'json') .
-                 $sm->prepare('sliderL')->format(" data-slider-l='%s'",'json') .
-                 $sm->prepare('sliderXL')->format(" data-slider-xl='%s'",'json');
+$headlineWrapperClasses = $sm->prepare('gHeadline')->format(' %s"');
+
+$this->insideAttributes = $this
+  ->attr($this->cssID)
+  ->addClass([
+    $sm->prepare('cLayout',['imageText'])->format('image_text'),
+    $sm->prepare('cLayout',['iconText'])->format('icon_text'),
+    $sm->get(['cLayout', 'eLayout', 'cText', 'eText', 'ePadding', 'cSpacing', 'cPadding', 'cBackground', 'eBackground'])
+  ])
+  ->setIfExists('style', $this->style)
+  ->mergeWith($this->insideAttributes)
+;
+
+$this->listAttributes = $this
+  ->attr()
+  ->addClass(['c_list', 'grid-list', $sm->get('eGridList')])
+  ->setIfExists('data-slider-config', $sm->prepare('sliderConfig', ['preset'])->format('%s', 'json'))
+  ->setIfExists('data-slider', $sm->prepare('slider')->format('%s', 'json'))
+  ->setIfExists('data-slider-xs', $sm->prepare('sliderXS')->format('%s', 'json'))
+  ->setIfExists('data-slider-s', $sm->prepare('sliderS')->format('%s', 'json'))
+  ->setIfExists('data-slider-m', $sm->prepare('sliderM')->format('%s', 'json'))
+  ->setIfExists('data-slider-l', $sm->prepare('sliderL')->format('%s', 'json'))
+  ->setIfExists('data-slider-xl', $sm->prepare('sliderXL')->format('%s', 'json'))
+  ->mergeWith($this->listAttributes)
+;
+
 ?>
 
 <?php $this->block('wrapper'); ?>
   <div<?= $this->wrapperAttributes ?>>
-    <div class="inside<?= $insideClasses ?>"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <div<?= $this->insideAttributes ?>>
       <?php $this->block('headline'); ?>
         <?php if ($this->headline || $this->headline2): ?>
-          <div class="c_headline<?= $hlClasses ?>">
+          <div class="c_headline<?= $headlineWrapperClasses ?>">
         <?php endif; ?>
 
         <?php if ($this->headline): ?>
@@ -50,14 +59,14 @@ $sliderConfig  = $sm->prepare('sliderConfig',['preset'])->format(" data-slider-c
         <?php endif; ?>
       <?php $this->endblock(); ?>
 
-      <?php if (!empty($sm->get('eGridList')) || str_contains($this->class, 'init-slider')): ?>
-        <div class="c_list grid-list<?=$sm->prepare('eGridList')->format(' %s')?>"<?= $sliderConfig ?>>
+      <?php if ($isList): ?>
+        <div<?= $this->listAttributes ?>>
       <?php endif; ?>
 
       <?php $this->block('content'); ?>
       <?php $this->endblock(); ?>
 
-      <?php if (!empty($sm->get('eGridList')) || str_contains($this->class, 'init-slider')): ?>
+      <?php if ($isList): ?>
         </div>
       <?php endif; ?>
 
