@@ -1,15 +1,26 @@
-{% use "@Contao/component/_rich_text.html.twig" %}
+{# Unlock once support for 5.3 ends #}
+{# use "@Contao/component/_rich_text.html.twig" #}
 {% use "@Contao/theme_manager/component/_link.html.twig" %}
 
 {# Text #}
 {% block text_component %}
-    {% with {text, attributes: attrs().addClass('content--text c_text')} %}
+    {#{% with {text, attributes: attrs().addClass('content--text c_text')} %}
         {{ block('rich_text_component') }}
-    {% endwith %}
+    {% endwith %}#}
+    {% set rich_text_attributes = attrs()
+        .addClass('content--text c_text')
+        .mergeWith(rich_text_attributes|default)
+    %}
+    <div{{ rich_text_attributes }}>
+        {% block rich_text_inner %}
+            {{ text|csp_inline_styles|insert_tag_raw|encode_email|raw }}
+            {{ block('link_component') }}
+        {% endblock %}
+    </div>
 {% endblock %}
 
 {# Link #}
-{% block rich_text_inner %}
+{#{% block rich_text_inner %}
     {{ parent() }}
     {{ block('link_component') }}
-{% endblock %}
+{% endblock %}#}
