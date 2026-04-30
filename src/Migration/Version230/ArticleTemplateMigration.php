@@ -29,7 +29,7 @@ class ArticleTemplateMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_article')) {
+        if (!$schemaManager->tablesExist(['tl_article'])) {
             return false;
         }
 
