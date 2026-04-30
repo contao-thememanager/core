@@ -30,7 +30,7 @@ class ArticleSpacingMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_theme')) {
+        if (!$schemaManager->tablesExist(['tl_theme'])) {
             return false;
         }
 
