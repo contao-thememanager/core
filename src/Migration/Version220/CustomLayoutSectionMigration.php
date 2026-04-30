@@ -30,7 +30,7 @@ class CustomLayoutSectionMigration extends AbstractMigration
     {
         $schemaManager = $this->connection->createSchemaManager();
 
-        if (!$schemaManager->tablesExist('tl_layout')) {
+        if (!$schemaManager->tablesExist(['tl_layout'])) {
             return false;
         }
 

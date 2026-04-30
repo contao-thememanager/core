@@ -30,7 +30,7 @@ class ContentElementsMigration extends AbstractMigration
         $schemaManager = $this->connection->createSchemaManager();
 
         if (
-            !$schemaManager->tablesExist('tl_content')
+            !$schemaManager->tablesExist(['tl_content'])
             || !\array_key_exists('type', $schemaManager->listTableColumns('tl_content'))
         ) {
             return false;
