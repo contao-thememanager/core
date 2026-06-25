@@ -33,3 +33,10 @@ services:
             - '@contao.framework'
         tags:
             - { name: contao.migration, priority: 0 }
+
+    ContaoThemeManager\Core\Migration\Version240\RootPageDependentModulesMigration:
+        arguments:
+            - '@database_connection'
+            - '@contao.framework'
+        tags:
+            - { name: contao.migration, priority: 0 }
